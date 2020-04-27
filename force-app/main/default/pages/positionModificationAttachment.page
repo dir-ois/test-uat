@@ -1,0 +1,362 @@
+<apex:page standardController="X607__c" extensions="form607_Controller"
+	sidebar="false" showHeader="false" standardStylesheets="false"
+	renderAs="PDF">
+	<html>
+
+<head>
+<style type="text/css">
+@page {
+	size: landscape;
+	margin-left: 0.2cm;
+	margin-right: 0.2cm;
+	margin-top: 0cm;
+	margin-bottom: 0cm
+}
+
+.s1 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.s2 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+.s3 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 14pt;
+}
+
+.s4 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.s5 {
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+.s6 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.s7 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 5pt;
+}
+
+.s8 {
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+	vertical-align: 1pt;
+}
+
+.s9 {
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.s10 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.s12 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 7pt;
+}
+
+p {
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 8pt;
+	margin: 0pt;
+}
+
+h1 {
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 8pt;
+}
+
+h2 {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.tableHeader {
+	border: 1px solid;
+	text-align: center;
+	font-weight: normal;
+	font-family: "times";
+}
+
+h1.attachmentTitle {
+	text-align: center;
+	font-family: times;
+	font-size: 14pt
+}
+
+.output {
+	display: inline;
+	text-align: left;
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	padding-left: 5pt;
+}
+
+.eoutput {
+	display: inline;
+	text-align: left;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	text-decoration: none;
+	padding-left: 5pt;
+}
+
+.outputcenter {
+	display: inline;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+	text-decoration: none;
+	padding-left: 5pt;
+}
+
+.lineup {
+	display: inline;
+	color: black;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+}
+
+.lineupsalary {
+	display: inline;
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 6pt;
+}
+/*.positionModifications { page:rotated }*/
+/*td>p {display: inline; }*/
+</style>
+</head>
+
+<body>
+
+	<apex:repeat value="{!output}" var="o">
+		<h1 class="attachmentTitle">
+			<br /> <br /> ATTACHMENT 607 LISTING<br /> DOCUMENT #
+			<apex:outputText value="{!documentNo}" />
+		</h1>
+		<table style="margin-left: 25px; border-collapse: collapse">
+			<apex:outputPanel rendered="{!outputAdditions!=null&&outputDeletions==null}">
+				<tr>
+					<td style="padding-left: 20px; width: 50%;">ADDITION TO ROSTER<br />
+						FISCAL YEAR:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!fiscalYear}" /><br /> EFFECTIVE DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!effectiveDate_4a}" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPIRATION
+						DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!expirationDate_4b}" />
+					</td>
+				</tr>
+			</apex:outputPanel>
+			<apex:outputPanel rendered="{!outputAdditions==null&&outputDeletions!=null}">
+				<tr>
+					<td style="padding-left: 30px; width: 50%;">DELETION FROM
+						ROSTER<br /> FISCAL YEAR:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!fiscalYear}" /><br /> EFFECTIVE DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!effectiveDate_7a}" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPIRATION
+						DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!disencumberTo_7b}" />
+					</td>
+				</tr>
+			</apex:outputPanel>
+			<apex:outputPanel rendered="{!outputAdditions!=null&&outputDeletions!=null}">
+				<tr>
+					<td style="padding-left: 20px; width: 50%;">ADDITION TO ROSTER<br />
+						FISCAL YEAR:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!fiscalYear}" /><br /> EFFECTIVE DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!effectiveDate_4a}" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPIRATION
+						DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!expirationDate_4b}" />
+					</td>
+					<td style="padding-left: 40px; width: 50%;">DELETION FROM
+						ROSTER<br /> FISCAL YEAR:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!fiscalYear}" /><br /> EFFECTIVE DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!effectiveDate_7a}" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EXPIRATION
+						DATE:&nbsp;&nbsp;&nbsp;<apex:outputText value="{!disencumberTo_7b}" />
+					</td>
+				</tr>
+			</apex:outputPanel>
+		</table>
+		<apex:pageBlock >
+			<apex:pageBlockSection >
+				<apex:outputPanel style="padding-left:20px"
+					rendered="{!outputAdditions!=null}">POSITION NUMBER</apex:outputPanel>
+				<apex:pageBlockSectionItem rendered="{!outputDeletions==null}" />
+				<apex:outputPanel style="padding-left:20px"
+					rendered="{!outputDeletions!=null}">POSITION NUMBER</apex:outputPanel>
+				<apex:pageBlockSectionItem rendered="{!outputAdditions==null}" />
+				<apex:pageBlockTable rendered="{!outputAdditions!=null}"
+					style="padding-left:20px;" headerClass="tableHeader"
+					value="{!o.add}" var="a">
+					<apex:column style="width:20px;border: 1px solid; text-align:left"
+						value="{!a.pos.Department__c}">
+						<apex:facet name="header">
+							<br />
+							<br />AGY</apex:facet>
+					</apex:column>
+					<apex:column style="width:30px;border: 1px solid;text-align:right;"
+						value="{!a.pos.Reporting_Unit_CodeNo__c}">
+						<apex:facet name="header">
+							<br />
+							<br />RU</apex:facet>
+					</apex:column>
+					<apex:column style="width:36px;border: 1px solid;text-align:right;"
+						value="{!a.pos.Class_Title_CodeNo__c}">
+						<apex:facet name="header">
+							<br />
+							<br />CC</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 3px 0px 3px;width:30px;border: 1px solid;text-align:left;"
+						value="{!a.pos.Serial_Number__c}">
+						<apex:facet name="header">
+							<br />
+							<br />SER</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 5px 0px 5px;width:40px;border: 1px solid;text-align:center;"
+						value="{!a.pos.Type__c}">
+						<apex:facet name="header">
+							<br />POS TYPE</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 5px 0px 5px;width:40px;border: 1px solid;text-align:center;">
+						<apex:facet name="header">
+							<br />TIME BASE</apex:facet>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Full-Time'}">FT</apex:outputText>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Part-Time'}">{!a.pos.Part_Time_Fraction__c}</apex:outputText>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Intermittent'}">INT</apex:outputText>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Indeterminate'}">IND</apex:outputText>
+					</apex:column>
+					<apex:column style="border: 1px solid;text-align:left;"
+						value="{!a.pos.Class_Title__c}">
+						<apex:facet name="header">
+							<br />
+							<br />CLASS TITLE</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 8px 0px 8px;width:60px;border: 1px solid;text-align:right;"
+						value="${!a.pos.Salary_Rate__c}">
+						<apex:facet name="header">
+							<br />SALARY RATE</apex:facet>
+					</apex:column>
+				</apex:pageBlockTable>
+				<apex:pageBlockTable rendered="{!outputDeletions!=null}"
+					style="padding-left:20px;" headerClass="tableHeader"
+					value="{!o.del}" var="a">
+					<apex:column style="width:20px;border: 1px solid; text-align:left"
+						value="{!a.pos.Department__c}">
+						<apex:facet name="header">
+							<br />
+							<br />AGY</apex:facet>
+					</apex:column>
+					<apex:column style="width:30px;border: 1px solid;text-align:right;"
+						value="{!a.pos.Reporting_Unit_CodeNo__c}">
+						<apex:facet name="header">
+							<br />
+							<br />RU</apex:facet>
+					</apex:column>
+					<apex:column style="width:36px;border: 1px solid;text-align:right;"
+						value="{!a.pos.Class_Title_CodeNo__c}">
+						<apex:facet name="header">
+							<br />
+							<br />CC</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 3px 0px 3px;width:30px;border: 1px solid;text-align:left;"
+						value="{!a.pos.Serial_Number__c}">
+						<apex:facet name="header">
+							<br />
+							<br />SER</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 5px 0px 5px;width:40px;border: 1px solid;text-align:center;"
+						value="{!a.pos.Type__c}">
+						<apex:facet name="header">
+							<br />POS TYPE</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 5px 0px 5px;width:40px;border: 1px solid;text-align:center;">
+						<apex:facet name="header">
+							<br />TIME BASE</apex:facet>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Full-Time'}">FT</apex:outputText>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Part-Time'}">{!a.pos.Part_Time_Fraction__c}</apex:outputText>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Intermittent'}">INT</apex:outputText>
+						<apex:outputText rendered="{!a.pos.Time_Basis__c=='Indeterminate'}">IND</apex:outputText>
+					</apex:column>
+					<apex:column style="border: 1px solid;text-align:left;"
+						value="{!a.pos.Class_Title__c}">
+						<apex:facet name="header">
+							<br />
+							<br />CLASS TITLE</apex:facet>
+					</apex:column>
+					<apex:column style="padding:0px 8px 0px 8px;width:60px;border: 1px solid;text-align:right;"
+						value="${!a.pos.Salary_Rate__c}">
+						<apex:facet name="header">
+							<br />SALARY RATE</apex:facet>
+					</apex:column>
+				</apex:pageBlockTable>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:repeat>
+</body>
+	</html>
+</apex:page>

@@ -1,0 +1,30 @@
+<!-- controller PAGASearchController.cls -->
+<apex:page controller="PAGASearchController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="true" title="PAGA Search">
+
+    <apex:composition template="PAGATemplate">
+        
+        <apex:define name="body">
+            <br/>
+            <h1>Login</h1>
+            <br/>
+            <div class="row">
+                <div class="form-group col-xs-12 col-sm-6 col-lg-4">
+                    <label for="">Username</label>
+                    <input class="form-control"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12 col-sm-6 col-lg-4">
+                    <label for="">Password</label>
+                    <input class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-12 col-sm-6 col-lg-4">
+                    <button class="btn-custom btn-lg">Login</button>
+                </div>
+            </div>
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

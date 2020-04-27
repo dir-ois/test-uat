@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>323</locationX>
+        <locationY>84</locationY>
+        <assignmentItems>
+            <assignToReference>varRegistrationID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varVIPTemplateStatus</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs?</label>
+        <locationX>321</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varVIPTemplateStatus</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varVIPTemplateStatus</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Template_Status</targetReference>
+            </connector>
+            <label>valid</label>
+        </rules>
+    </decisions>
+    <description>Runs all actions when registration enters defect status 
+- sets all form sections to incomplete</description>
+    <formulas>
+        <description>Sets the template status for all sections to Incomplete</description>
+        <name>flaIncomplete</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE( {!varVIPTemplateStatus} , &#39;Completed&#39;, &#39;Incomplete&#39; )</expression>
+    </formulas>
+    <interviewLabel>Registration Defect Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Registration Defect Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Template_Status</name>
+        <label>Set Template Status</label>
+        <locationX>555</locationX>
+        <locationY>249</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varRegistrationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>VIP_Template_Status__c</field>
+            <value>
+                <elementReference>flaIncomplete</elementReference>
+            </value>
+        </inputAssignments>
+        <object>License_Registration__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>varRegistrationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varVIPTemplateStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

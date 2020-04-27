@@ -1,0 +1,57 @@
+<apex:page standardController="Payee__c" extensions="RequestChecksController" standardStylesheets="true" recordSetVar="payees">   
+    
+    <apex:form >
+        <apex:pageBlock title="Request Checks" rendered="{!NOT(showErrors)}" >
+
+            <apex:pageBlockSection >
+                <apex:outputText value="Requesting Check(s) for {0} Payee(s) under {1} Office Account(s) and under {2} Case(s)." >
+                    <apex:param value="{!numberOfPayees}" />
+                    <apex:param value="{!numberOfOfficeAccounts}" />
+                    <apex:param value="{!numberOfCases}" />
+                </apex:outputText>
+                <br />
+                <apex:commandButton action="{!requestChecks}" value="Request Checks" id="myButton" />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Issues creating Checks:" rendered="{!showErrors}" >
+            <apex:outputPanel >
+                <apex:pageBlockSection >
+
+                    <apex:messages styleClass="errorMsg" layout="block" title="Errors" />
+
+                </apex:pageBlockSection>
+                <apex:pageBlockSection >
+                    <apex:commandButton value="Return to Payee List View" action="{!returnToList}" />
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Payees selected:" rendered="{!NOT(showErrors)}" >
+                
+            <apex:pageBlockTable value="{!payeeList}" var="payee">
+
+                <apex:column headerValue="ID" value="{!payee.Name}" />
+                <apex:column headerValue="Name" value="{!payee.Payee_Name__c}" />
+                <apex:column headerValue="Amount of Check" >
+                    <apex:outputText value="{0, number, currency}" >
+                        <apex:param value="{!payeeIdToCheckAmount[payee.Id]}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Office" value="{!payee.DIR_Office__c}" />
+                <apex:column headerValue="Case" value="{!payee.Case_Management__c}" />
+                <apex:column headerValue="Type" value="{!payee.Payee_Type__c}" />
+                <apex:column headerValue="Status" value="{!payee.Status__c}" />
+                <apex:column headerValue="Latest RCT Hold Date" value="{!payeeIdToLatestReceiptHoldDateText[payee.Id]}" />
+                <apex:column headerValue="Subj to Garnish/Lien" >
+                    <apex:inputCheckbox value="{!payeeIdToGarnishmentLien[payee.Id]}" disabled="true" />
+                </apex:column>
+                <apex:column headerValue="Wage Payable Bal" value="{!payee.Wage_Payable_Balance__c}" />
+                <apex:column headerValue="Penalty Payable Bal" value="{!payee.Penalty_Payable_Balance__c}" />
+                <apex:column headerValue="Interest/Other Payable Bal" value="{!payee.Other_Payable_Balance__c}" />
+
+            </apex:pageBlockTable>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

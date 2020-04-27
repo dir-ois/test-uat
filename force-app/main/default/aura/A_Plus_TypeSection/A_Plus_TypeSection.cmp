@@ -1,0 +1,55 @@
+<!--  
+// @author: Oswin Correa           
+// @date: 4/4/2018
+// @description: Component that displays the accordtion section corresponding to the file type
+-->
+<aura:component controller="A_Plus_Controller">
+    
+    <aura:attribute name="recordId" type="String" description="Context parent Record Id"/>    
+    <aura:attribute name="fileType" type="String" description="To store the file type of the Context Attachment + record"/>
+    <aura:attribute name="index" type="Integer" description="Stores the id of the accordion section"/>
+    <aura:attribute name="filesInfoWrapper" type="Object" default="{}" description="Wrapper to store field info and data to be displayed corresponding to the field type"/>                   
+    <aura:attribute name="headersAndDataInfo" type="Object" default="{}" description="Wrapper to store field info and data to be displayed corresponding to all field types"/>
+    <aura:attribute name="columns" type="List" default="[]" description="Columns to be displayed in the data table"/>
+    <aura:attribute name="searchKey" type="String" default="" description="Key entered in file type accordion section search"/>
+	<aura:attribute name="internalcontentDocId" type="String" default="" description="To store the internal Content Document Id created via lightning file upload component" />
+    
+	<aura:handler name="init" value="{!this}" action="{!c.init}" description="init method that runs on component load"/>
+    <aura:handler event="c:A_Plus_FetchAttachmentInfo" action="{!c.fetchAttachmentinfo}" description="To display recently fecthed data to be shown in the data table corresponding to the file type"/>        
+	<aura:handler event="c:A_Plus_DeleteInternalRecords" action="{!c.setInternalcontentDocId}" description="Application event to delete attachment plus and related records created internally while uploading file using lighning:fileupload component"/>
+    
+    <lightning:spinner aura:id="sectionSpinner" class="slds-hide"/>
+    
+    <lightning:overlayLibrary aura:id="fileDialog"/>
+	<lightning:accordionSection name="{!v.index}" label="{!v.fileType}">
+         
+         <aura:if isTrue="{!and(v.filesInfoWrapper.columns.length == 0,v.fileType != 'Related Files')}">
+            
+             <div class="slds-box">
+                <p>No proper configuration found for this file type.</p> 
+             </div>
+             
+            <aura:set attribute="else">
+                
+               <aura:if isTrue="{!v.fileType != 'Related Files'}">         
+                   <lightning:card >
+                        <aura:set attribute="title">   
+                            <lightning:input type="search" label="Search" name="search" value="{!v.searchKey}" class="search" onchange="{!c.onSearchClear}"/>
+                        </aura:set>
+                        <aura:set attribute="actions">
+                            <lightning:button variant="brand" label="Search"  onclick="{!c.search}" />
+                            <lightning:button variant="brand" label="Add File"  onclick="{!c.handleShowModal}"/>
+                            <lightning:helptext content="{!'Sharing: '+v.filesInfoWrapper.details.Sharing_Permissions__c + (!empty(v.filesInfoWrapper.details.Collaboration_Group_Names__c) ? '| Groups: '+v.filesInfoWrapper.details.Collaboration_Group_Names__c : '')}" class="slds-m-left_small"/>  
+                        </aura:set>
+                    </lightning:card>
+                 </aura:if> 
+                
+                 <lightning:datatable data="{!v.filesInfoWrapper.data}" 
+                                             columns="{!v.columns}" 
+                                             keyField="id"
+                                             hideCheckboxColumn="true" 
+                                             onrowaction="{!c.handleRowAction}"/>
+            </aura:set>
+          </aura:if> 
+    </lightning:accordionSection>  
+</aura:component>

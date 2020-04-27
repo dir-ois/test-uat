@@ -1,0 +1,87 @@
+<apex:page standardController="Appeal__c" extensions="ScheduleHearing">
+
+    <apex:form >
+    
+        <apex:pageBlock title="Schedule Hearing Citations">
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    Appeal
+                    <apex:outputText value="{!app.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Case Number
+                    <apex:outputText value="{!app.Case__r.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Estimated Length Of Meeting
+                    <apex:outputText value="{!app.Estimated_Length_of_Hearing_In_Minutes__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Appeal Received On
+                    <apex:outputText value="{0,date,MM/dd/yyyy}"><apex:param value="{!app.Request_Receipt_Date__c}" /> </apex:outputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Deputy
+                    <apex:outputText value="{!app.Case__r.Assigned_Deputy__r.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Unavailable Dates
+                    <apex:outputText value="{!app.Unavailable_dates__c}" />
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Senior Deputy
+                    <apex:outputText value="{!app.Case__r.Assigned_Deputy__r.Manager__r.Name}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:selectRadio value="{!listType}">
+                        <apex:selectOption itemLabel="List Citations on This Appeal" itemValue="appeal" />
+                        <apex:selectOption itemLabel="List All Citation Appeals for this Case" itemValue="all" />
+                        <apex:actionSupport event="onchange" action="{!SelectCitations}" />
+                    </apex:selectRadio>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable value="{!citations}" var="cit">
+                    <apex:column >
+                        <apex:inputCheckbox value="{!cit.selected}" />
+                    </apex:column>
+                    <apex:column headerValue="Citation Number">
+                        {!cit.liability.Liability__r.Citation_Number__c}
+                    </apex:column>
+                    <apex:column headerValue="Issue Date">
+                        <apex:outputText value="{0,date,MM/dd/yyyy}"> <apex:param value="{!cit.liability.Liability__r.CreatedDate}" /> </apex:outputText>
+                    </apex:column>
+                    <apex:column headerValue="Waiver">
+                        {!cit.liability.Appeal__r.Waive_Time_Limit__c}
+                    </apex:column>
+                    <apex:column headerValue="Last Day to Schedule Hearing">
+                        {!cit.liability.Appeal__r.Hearing_Must_Be_Set_No_Later_Than__c}
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    Hearing Set for Date and Time
+                    <apex:inputField value="{!hearing.Meeting_Start_Date_Time__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Hearing Officer
+                    <apex:inputField value="{!hearing.Meeting_Scheduled_For__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                WCA Office
+                   <apex:inputField value="{!hearing.WCA_Office__c}" />
+                <!--     <apex:inputField value="{!hearing.Office__c}" /> -->  
+                </apex:pageBlockSectionItem>
+                <apex:pageMessages />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Schedule" action="{!Schedule}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    
+    </apex:form>
+
+</apex:page>

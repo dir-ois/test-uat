@@ -1,0 +1,11 @@
+<apex:page >
+	<apex:sectionHeader title="Statistics"/>
+	<apex:form >
+		<apex:pageBlock >
+			<apex:commandLink value="Stats 732" action="/apex/stats732report" /><br/><br/>
+			<apex:commandLink value="98a Statistical Data" action="/apex/nintyeightastatisticaldata" /><br/><br/>
+			<apex:commandLink value="Deputy Performance Profile" action="/apex/deputyperformanceprofile" /><br/><br/>
+			<apex:commandLink value="BOFE Summary" action="/apex/bofesummary" />
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

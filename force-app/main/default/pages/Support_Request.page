@@ -1,0 +1,56 @@
+<apex:page standardController="Support_Request__c">
+    <script>function setFocusOnLoad(){}</script>
+    <apex:form >
+        <apex:outputPanel rendered="{!Support_Request__c.Id == null}">
+            <apex:sectionHeader title="New Request" />
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!Support_Request__c.Id != null}">
+            <apex:sectionHeader title="Request Edit" subtitle="{!Support_Request__c.name}" />
+        </apex:outputPanel>
+        <apex:pageBlock title="Request Details" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit Request" action="{!save}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection rendered="{!Support_Request__c.RecordTypeId == '012d0000001tZk2'}" columns="1">
+                <apex:inputField value="{!Support_Request__c.Subject__c}" required="true"/> 
+                <apex:inputField value="{!Support_Request__c.Priority__c}"/> 
+                <apex:inputField value="{!Support_Request__c.Select_Queue__c}"/> 
+                <apex:inputField value="{!Support_Request__c.Support_Request_For__c}"/>
+                <apex:outputPanel >           
+               <apex:outputText value="                                                                    **To attach a file, please upload to Notes & Attachments (visible after you click Submit Request)" style="color:red; white-space:pre-wrap"/>     
+               </apex:outputPanel>
+                <apex:inputField value="{!Support_Request__c.Description__c}"/>
+                <apex:inputField value="{!Support_Request__c.Steps_to_Reproduce__c}"/>     
+             </apex:pageBlockSection>
+             <apex:pageBlockSection rendered="{!Support_Request__c.RecordTypeId == '012d0000001tZk1'}" columns="1">
+                <apex:inputField value="{!Support_Request__c.Subject__c}" required="true"/> 
+                <apex:inputField value="{!Support_Request__c.Priority__c}"/> 
+                <apex:inputField value="{!Support_Request__c.Select_Queue__c}"/> 
+                <apex:inputField value="{!Support_Request__c.Support_Request_For__c}"/>
+                <apex:outputPanel >           
+               <apex:outputText value="                                                                    **To attach a file, please upload to Notes & Attachments (visible after you click Submit Request)" style="color:red; white-space:pre-wrap"/>     
+               </apex:outputPanel>
+                 <apex:inputField value="{!Support_Request__c.Situation_Description__c}"/>
+                 <apex:inputField value="{!Support_Request__c.Proposed_Change_Solution__c}"/>
+                  <apex:inputField value="{!Support_Request__c.Impact_if_not_Implemented__c}"/>
+                  <apex:inputField value="{!Support_Request__c.Workaround__c}"/>                 
+             </apex:pageBlockSection>
+             <apex:pageBlockSection rendered="{!Support_Request__c.RecordTypeId == '012d0000001tZk3'}" columns="1" >
+                <apex:inputField value="{!Support_Request__c.User_Account_Request_For__c}" />
+                <apex:inputField value="{!Support_Request__c.Account_Request_Type__c}" />
+                <apex:inputField value="{!Support_Request__c.Effective_Date__c}" />
+                <apex:inputField value="{!Support_Request__c.Role_Type__c}" />
+                <apex:inputField value="{!Support_Request__c.Division__c}" />
+                <apex:inputField value="{!Support_Request__c.First_Name__c}" />
+                <apex:inputField value="{!Support_Request__c.Last_Name__c}" />
+                <apex:inputField value="{!Support_Request__c.Email__c}" />
+                <apex:inputField value="{!Support_Request__c.Phone__c}" />
+                <apex:inputField value="{!Support_Request__c.Title__c}" />
+                <apex:inputField value="{!Support_Request__c.Office__c}" />
+                <apex:inputField value="{!Support_Request__c.Manager__c}" />
+                <apex:inputField value="{!Support_Request__c.Description__c}" />
+             </apex:pageBlockSection>
+           </apex:pageBlock> 
+     </apex:form>  
+</apex:page>

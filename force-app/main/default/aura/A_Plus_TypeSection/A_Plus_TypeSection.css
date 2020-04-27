@@ -1,0 +1,19 @@
+.THIS .search label{
+    display:none;
+}
+.THIS .slds-scrollable_y{
+    overflow: unset!important;
+    overflow-y: unset!important;
+    overflow-x: unset!important;
+}
+.THIS .slds-scrollable_x{
+    overflow: unset!important;
+    overflow-y: unset!important;
+    overflow-x: unset!important;
+}
+.THIS .slds-icon-utility-check + *{
+    display:none!important;
+}
+.THIS .slds-icon-utility-close + *{
+    display:none!important;
+}

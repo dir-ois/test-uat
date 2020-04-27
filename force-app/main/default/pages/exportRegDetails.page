@@ -1,0 +1,45 @@
+<apex:page controller="exportRegDetailsController" sidebar="false" contentType="application/vnd.ms-excel#RegistrationDetails.xls">
+    
+    <table>
+        
+        <th>
+            <td>Registration Number</td>
+            <td>Legal Entity Name</td>
+            <td>Registration Start Date</td>
+            <td>Registration Expiration Date</td>
+            <td>Status</td>
+            <td>Mailing Address</td>
+            <td>DBA Name</td>
+            <td>Craft Name</td>
+        </th>
+     <apex:repeat id="regDetails" value="{!regList}" var="newreg">
+        <tr>
+            <td></td>
+            <td>{!newReg.License_Registration_Number__c}</td>
+            <td>{!newreg.Legal_Entity_Name__c}</td>
+            <td><apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!newReg.Effective_Date__c}" /> </apex:outputText></td>
+            <td><apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!newReg.Expiration_Date__c}" /> </apex:outputText></td>
+            <td>{!newReg.status__c}</td>
+            <td>{!newReg.Mailing_Address_Line_1__c} {!newreg.Mailing_Address_Line_2__c}
+                    {!newreg.Mailing_City__c} {!newreg.Mailing_Country__c} {!newreg.Mailing_Postal_Code__c}</td>
+            <td></td>        
+            <td>{!newReg.Crafts__c}</td>
+        </tr>   
+        <apex:repeat id="dbaDetails" value="{!newreg.DBAS__r}" var="newDba">
+        <tr>
+            <td></td>
+            <td>{!newReg.License_Registration_Number__c}</td>
+            <td>{!newreg.Legal_Entity_Name__c}</td>
+            <td><apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!newReg.Effective_Date__c}" /> </apex:outputText></td>
+            <td><apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!newReg.Expiration_Date__c}" /> </apex:outputText></td>
+            <td>{!newReg.status__c}</td>
+            <td>{!newReg.Mailing_Address_Line_1__c} {!newreg.Mailing_Address_Line_2__c}
+                    {!newreg.Mailing_City__c} {!newreg.Mailing_Country__c} {!newreg.Mailing_Postal_Code__c}</td>
+            <td>{!newDba.Name}</td>      
+            <td></td>
+        </tr>             
+        </apex:repeat>
+     </apex:repeat>      
+    </table>
+    
+</apex:page>

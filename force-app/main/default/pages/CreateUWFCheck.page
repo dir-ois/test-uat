@@ -1,0 +1,67 @@
+<apex:page controller="CreateUWFCheckController">
+    <apex:form >
+        <apex:pageMessages escape="false"/>
+        <apex:pageBlock >
+            <apex:pageBlockButtons location="top">
+                <apex:actionStatus id="btnStatus">
+                    <apex:facet name="start">
+                        <apex:outputPanel >
+                            <apex:commandButton value="Return Home" disabled="true"/>
+                            <apex:commandButton value="Create UWF Check" disabled="true"/>
+                        </apex:outputPanel>
+                    </apex:facet>
+                    <apex:facet name="stop">
+                        <apex:outputPanel >
+                            <apex:commandButton value="Return Home" action="{!returnHome}" />
+                            <apex:commandButton value="Recalculate Totals" action="{!updateList}" disabled="{!updatelist}" status="btnStatus"/>
+                            <apex:commandButton value="Create UWF Check" action="{!createCheckBatchRecords}" disabled="{!disableCreate}" status="btnStatus"/>
+                        </apex:outputPanel>
+                    </apex:facet>
+                </apex:actionStatus>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!shellObject.Office_Account__c}" />
+            </apex:pageBlockSection>
+            <br/>
+            <apex:pageBlockTable value="{!paymentRecords}" var="pmt" style="width:50%;">
+            <apex:column >
+                    <apex:facet name="header">Include</apex:facet>
+                    <apex:outputField value="{!pmt.Payee__r.Include__c}">
+                    <apex:inlineEditSupport event="ondblClick" />
+                    </apex:outputField>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Payee ID</apex:facet>
+                    <apex:outputText value="{!pmt.Payee__r.Name}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Payee Name</apex:facet>
+                    <apex:outputText value="{!pmt.Payee__r.Payee_Name__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">DIR Office</apex:facet>
+                    <apex:outputText value="{!pmt.DIR_Office__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Case Number</apex:facet>
+                    <apex:outputText value="{!pmt.Payee__r.Case_Number__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Payment Applies to</apex:facet>
+                    <apex:outputText value="{!pmt.Payment_applies_to__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Payment Amount</apex:facet>   
+                    <apex:outputText value="${0, number, ###,###,##0.00}" escape="false">
+                        <apex:param value="{!pmt.Payment_Amount__c}" />
+                    </apex:outputText>
+                    <apex:facet name="footer">
+                        <apex:outputText value="<b>Total:</b> ${0, number, ###,###,##0.00}" escape="false">
+                            <apex:param value="{!pmtTotal}" />
+                        </apex:outputText>
+                    </apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

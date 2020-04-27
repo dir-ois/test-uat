@@ -1,0 +1,302 @@
+<apex:page controller="CommunityRegistration" title="My Registrations" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+   <apex:slds />
+     <style>
+        th { font-size: 12px; }
+        td { font-size: 12px; }
+        a.disabled {
+            background: linear-gradient(to bottom, #A9A9A9 100%,#D3D3D3 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A9A9A9', endColorstr='#D3D3D3',GradientType=0 );
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 0;
+            padding: 8px 12px;
+            font-size: 15px;
+            line-height: 1.42857143;
+            pointer-events: none;
+            cursor: default;
+        }
+         .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            padding:10px;
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 100%;
+            margin-left: -250px;            
+            height: 300px;
+            top: 0;
+            left: 50%;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+        
+    </style>
+    <script>
+        $j = jQuery.noConflict();
+    </script>
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body">
+        
+            <apex:form style="margin-bottom:75px;" >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li class="active">My Registrations</li>
+                </ol>
+                 
+                <h1>My Dashboard</h1>
+                <br/>
+                <font color="red"><apex:pageMessages /></font>
+                <div class="row mb">
+                    <div class="col-md-3">
+                        <apex:selectList value="{!currentRecordType}" multiselect="false" size="1" styleClass="form-control">
+                            <apex:selectOptions value="{!RegistrationRecordTypes}"/>
+                        </apex:selectList>
+                    </div>
+                    <div class="col-lg-5">
+                    <!--AddRegistration-->
+                    
+                        <apex:commandLink action="{!checkActiveRegistration}" value="New" style="text-decoration:none;" styleclass="btn btn-custom" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <apex:commandLink action="{!LinkRegistration}" value="Link Existing Registration" style="text-decoration:none;" styleclass="btn btn-custom" />
+                        <!--<button class="btn btn-custom">New Registration</button>-->
+                        <!-- added BY Kavya Somashekar on 12/11/2018-->
+                        <apex:outputPanel id="tstpopup">
+                        
+                        
+                            <!--
+                            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}" style="overflow:scroll;height:250px;width:400px"/>
+                            <b>A duplicate registration has been found. 
+                                <br/>
+                                An active registration linked to your account has been found. You may be creating a duplicate registration. <br/><br/>
+                                If you continue, fees will be required and refunds are not permitted. Do you want to proceed?</b><br/><br/><br/>
+                                <apex:commandButton value="No" action="{!closePopup}" rerender="tstpopup"/>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;
+                                <apex:commandButton value="Yes" action="{!AddRegistration}" onclick="this.disabled=true;" rerender="tstpopup"/>
+                            -->
+                            <apex:outputPanel layout="block" rendered="{!displayPopup}" >
+                                
+                            
+                          
+                          
+                            <div class="demo-only slds-scope">
+                            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+                            <div class="slds-modal__container">
+                            <header class="slds-modal__header" style="height:45px; font-weight:500;font-size:small;">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                            <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close" />
+                            </svg>
+                            <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>{!$Label.duplicateRegRecord}</b></h2>
+                            </header>
+                            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="height:105px; font-weight:500;font-size:small;">
+                            {!$Label.refundUnavailable}
+                            </div>
+                            <footer class="slds-modal__footer" style="height:45px; font-weight:500;font-size:small;">
+                            <apex:commandButton value="No" action="{!closePopup}" rerender="tstpopup" style="text-decoration:none;color: #fff;" styleclass="btn btn-custom"/>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;
+                                <apex:commandButton value="Yes" action="{!AddRegistration}" onclick="this.disabled=true;" rerender="tstpopup" style="text-decoration:none;color: #fff;" styleclass="btn btn-custom">
+                                    <apex:param name="dupRecordId" value="true" assignTo="{!dupRecordFound}"/>
+                                </apex:commandButton>
+                                
+                            <!--<button class="slds-button slds-button_neutral">No</button>
+                            <button class="slds-button slds-button_brand">yes</button>-->
+                            </footer>
+                            </div>
+                            </section>
+                            <div class="slds-backdrop slds-backdrop_open"></div>
+                            </div>
+
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                    </div>
+                </div>
+                
+                <div>
+                    Instructions:
+                    <ul>
+                        <li>To transfer an active registration from the old system, click <b>Link Existing Registration.</b></li>
+                        <li>To start a new application, select from the dropdown menu above and click <b>New.</b></li>
+                        <li>To revise the existing registration, click <b>Update.</b></li>
+                        <li>To edit a saved application, click on the registration number. You cannot edit once the application status is "Submitted","Payment Pending", “In Review”, "Expired", "Resubmitted" or "Renewed".</li>
+                        <li>To renew an application, click <b>Renew</b>  Link will be available 90-days <b>(30-days for Entertainment Work Permit, 60-days for Public Works contractor registration)</b> before the license expiration date, until the expire date. </li>
+                        <li>To pay registration fees, click the <b>Pay Now</b> link in the Registration # column.</li>
+                        <li>Car Wash: To complete the registration process, you must print the submitted application or a copy of your email stating your 
+                          application has been submitted and send it with the <u><a href="http://www.dir.ca.gov/dlse/IRS8821-Form.pdf" target="_blank">IRS Form 8821</a></u>. Upon receipt of the IRS response, please return to attach the 
+                          IRS Clearance letter to your application.  <u><a href="http://www.dir.ca.gov/dlse/IRS8821-Instructions.pdf" target="_blank">IRS form 8821 Instructions</a></u>.
+                         </li>
+                    </ul>
+               </div>
+                <div>
+                    <button onclick="reloadFunction()"> Reload page </button>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-responsive">
+                            <table id="table" data-order="[[ 2, &quot;asc&quot; ]]" class="cell-border stripe" cellspacing="0">
+                                <!-- table header -->
+                                <thead>
+                                    <tr> 
+                                        <th style="text-align:center;">Actions</th>
+                                        <th>Business Name / Individual Person</th>
+                                        <th>Registration #</th>
+                                        <th>Registration Type</th>
+                                        <th>Submitted Date</th>
+                                        <th>Status</th>
+                                        <th>Effective Date</th>
+                                        <th>Expiration Date</th>
+                                        <th>Payment Status</th>
+                                        <th>Balance Due</th>
+                                        <!--<th>Submit Payment</th>-->
+                                        <th>Exam Status</th>
+                                        <th>Registration Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!AllRegistrations}" var="reg">
+                                        <tr> 
+                                            <td style="text-align:center;">
+                                                <apex:outputPanel rendered="{!IF(AND(reg.Expiration_Date__c != null, reg.Expiration_Date__c  <= Today() + 90, reg.Expiration_Date__c  >= Today(), reg.Status__c == 'Approved', reg.Service_Type__c != 'Temporary'), true, false)}"><br/></apex:outputPanel>
+                                                <apex:commandLink onclick="return confirm('A copy of the application will be sent to your email');" action="{!PrintApplication}" value="Email a Copy" rendered="{!IF(OR (reg.Status__c == 'Approved', reg.Status__c == 'Submitted', reg.Status__c == 'Resubmitted', reg.Status__c == 'Under Review', reg.Status__c == 'Pending / Defect', reg.Status__c == 'Pending Payment'), true, false)}">
+                                                    <apex:param id="printId" name="printId" value="{!reg.Id}" />
+                                                </apex:commandLink>
+                                                <apex:outputPanel rendered="{!IF(OR (reg.Status__c == 'Approved', reg.Status__c == 'Submitted', reg.Status__c == 'Resubmitted', reg.Status__c == 'Under Review', reg.Status__c == 'Pending / Defect', reg.Status__c == 'Pending Payment' ), true, false)}"><br /></apex:outputPanel>
+                                                <apex:commandLink onclick="return confirm('A PDF copy of your certificate will be sent to your email.');" action="{!sendLicenseRegistrationPermitPDF}" value="Email Certificate" rendered="{!IF(AND(OR(reg.Status__c == 'Approved', reg.Status__c == 'Renewed'), reg.Expiration_Date__c  >= Today()), true, false)}">
+                                                    <!--<apex:commandButton value="Open Registration Permit"/> -->
+                                                     <apex:param id="permitId" name="permitId" value="{!reg.Id}" />
+                                                </apex:commandLink>
+                                                <apex:outputPanel rendered="{!IF(OR (reg.Status__c == 'Approved', reg.Status__c == 'Submitted', reg.Status__c == 'Resubmitted', reg.Status__c == 'Under Review', reg.Status__c == 'Pending / Defect', reg.Status__c == 'Pending Payment' ), true, false)}"><br /></apex:outputPanel>
+                                                <apex:commandLink onclick="return confirm('Are you sure?');" action="{!DeleteRegistration}" value="Delete" rendered="{!IF(reg.Status__c == 'Incomplete', true, false)}"><!--AND(reg.Status__c != 'Submitted', reg.Status__c != 'Approved', reg.Status__c != 'In Review', reg.Status__c != 'Pending / Defect')-->
+                                                    <apex:param id="recId" name="recId" value="{!reg.Id}" />
+                                                </apex:commandLink>
+                                            </td>
+                                            <td>
+                                                {!reg.Legal_Entity_Name__c}
+                                            </td>
+                                            
+                                            <td>
+                                                <apex:outputPanel >
+                                                   {!reg.License_Registration_Number__c}
+                                                </apex:outputPanel>
+                                                <br/>
+                                                <apex:outputPanel rendered="{!IF(AND(NOT(CONTAINS(reg.Status__c,'Closed')), reg.Status__c != 'In Review', reg.Status__c != 'Expired', reg.Status__c != 'Pending Payment', reg.Status__c != 'Submitted', reg.Status__c != 'Resubmitted',reg.Status__c != 'Renewed',reg.License_Registration_Type__c != 'Public Works', reg.License_Registration_Type__c != 'Entertainment Work', ISNULL(reg.Imported_From__c)), true, false)}">
+                                                  <a href="/registrations/VIPForm__VIP_FormWizard?id={!reg.Id}"><b>Update</b></a>   
+                                                </apex:outputPanel>
+                                                
+                                                <apex:outputPanel rendered="{!IF((reg.License_Registration_Type__c = 'Public Works'), true, false)}">
+                                                  <a href="/registrations/VIPForm__VIP_FormWizard?id={!reg.Id}"><b>Update</b></a>   
+                                                </apex:outputPanel>                                                
+                                               
+                                                <apex:outputPanel rendered="{!IF(AND(NOT(CONTAINS(reg.Status__c,'Closed')), reg.Status__c != 'In Review', reg.Status__c != 'Expired', reg.Status__c != 'Pending Payment', reg.Status__c != 'Submitted', reg.Status__c != 'Resubmitted',reg.Status__c != 'Renewed', reg.Status__c != 'Approved', ISNULL(reg.Imported_From__c), reg.License_Registration_Type__c == 'Entertainment Work'), true, false)}">
+                                                    <a href="/registrations/VIPForm__VIP_FormWizard?id={!reg.Id}"><b>Update</b></a>   
+                                                </apex:outputPanel> 
+                                                
+                                                <apex:outputPanel ><div><!--10/18/2018 Bao added style="font-weight:bold and changed "Submit Payment" link to "Pay Now" to line below for SR-004911-->                               
+                                                <apex:commandLink action="{!SubmitPayment}" style="font-weight:bold;" value="Pay Now" rendered="{!IF(reg.Status__c == 'Pending Payment', true, false)}"><!--Pending Payment // onclick="return confirm('Are you sure?');"-->
+                                                    <apex:param id="rId" name="rId" value="{!reg.Id}" />
+                                                </apex:commandLink>  
+                                                </div>
+                                                </apex:outputPanel>
+                                                <br/>
+                                                <apex:commandLink onclick="return confirm('Thank you for renewing your registration.')" style="font-weight: bold;color: #52BE80;" action="{!RenewRegistration}" value="Renew" rendered="{!reg.displayRenewalButton__c}">
+                                                 <apex:param id="publicowrksrenewid" name="publicowrksrenewid" value="{!reg.Id}" />
+                                                </apex:commandLink>
+                                                                                          
+                                                <apex:commandLink onclick="return confirm('This process may take a few minutes to complete. Please be patient. You will be taken to the renewal screen momentarily.')" action="{!RenewRegistration}" style="font-weight: bold;color: #52BE80;" value="Renew" rendered="{!IF(AND(reg.Expiration_Date__c != null, reg.Expiration_Date__c  <= Today() + 90, reg.Expiration_Date__c  >= Today(), reg.Status__c == 'Approved', reg.Service_Type__c != 'Temporary', reg.License_Registration_Type__c != 'Entertainment Work'), true, false)}">
+                                                    <apex:param id="renewId" name="renewId" value="{!reg.Id}" />
+                                                </apex:commandLink>
+
+                                                <apex:commandLink onclick="return confirm('This process may take a few minutes to complete. Please be patient. You will be taken to the renewal screen momentarily.')" action="{!RenewRegistration}" style="font-weight: bold;color: #52BE80;" value="Renew" rendered="{!IF(AND(reg.Expiration_Date__c != null, reg.Expiration_Date__c  <= Today() + 30,  (reg.Status__c == 'Approved'  ||  reg.Status__c == 'Expired'), reg.Service_Type__c != 'Temporary', reg.Registration_Duration__c != '10 Days - Temporary Permit', reg.License_Registration_Type__c == 'Entertainment Work'), true, false)}">
+                                                    <apex:param id="renewIdEWP" name="renewId" value="{!reg.Id}" />
+                                                </apex:commandLink>
+                                                
+                                            </td>
+                                            <td>
+                                                {!reg.License_Registration_Type__c}
+                                            </td>
+                                            <td style="text-align:center;">
+                                                <apex:outputText value="{0,date,MM/dd/yy}"> 
+                                                    <apex:param value="{!reg.Submitted_Date__c}" /> 
+                                                </apex:outputText>
+                                            </td>
+                                            <td>{!reg.Status__c}</td>
+                                            <td style="text-align:center;">
+                                                <apex:outputText value="{0,date,MM/dd/yy}"> 
+                                                    <apex:param value="{!reg.Effective_Date__c}" /> 
+                                                </apex:outputText>
+                                            </td>                                            
+                                            <td style="text-align:center;">
+                                                <apex:outputText value="{0,date,MM/dd/yy}"> 
+                                                    <apex:param value="{!reg.Expiration_Date__c}" /> 
+                                                </apex:outputText>
+                                            </td>
+                                            <td>{!reg.Status_of_Payment__c}</td>
+                                            <td>{!reg.Balance__c}</td>
+                                            <!--<td style="text-align:center;">                                            
+                                            10/18/2018 Bao added style="font-weight:bold and changed "Submit Payment" link to "Pay Now" to line below for SR-004911                                    
+                                                <!--<apex:commandLink action="{!SubmitPayment}" style="font-weight:bold;" value="Pay Now" rendered="{!IF(reg.Status__c == 'Pending Payment', true, false)}"><!--Pending Payment // onclick="return confirm('Are you sure?');"-->
+                                                    <!--<apex:param id="rId" name="rId" value="{!reg.Id}" />
+                                                </apex:commandLink>
+                                            </td> -->
+                                            <td style="text-align:center;"> 
+                                                {!reg.Exam_Status__c}
+                                            </td>
+                                            <td>{!reg.Registration_Duration__c}</td>
+                                        </tr>
+                                     </apex:repeat>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <script type="text/javascript">
+                    $j(document).ready(function(){
+                        /*$j('#table').DataTable({
+                            "bPaginate": true,
+                            "bLengthChange": false,
+                            "bFilter": false,
+                            "bSort": true,
+                        });*/
+                        $j('#table').DataTable({
+                            responsive: true,
+                            destroy: true,
+                            select: true,
+                            "bPaginate": true,
+                            "bLengthChange": false,
+                            "bFilter": false,
+                            "bSort": true,
+                            "order": [[ 1, "asc" ]],
+                            "bInfo": true,
+                            "bAutoWidth": true,
+                            "pageLength": 30,
+                            "lengthMenu": [5, 50, 100],
+                            "language": {
+                              "emptyTable": "No matching records found"
+                            }
+                        });
+                    });
+                    
+                </script>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

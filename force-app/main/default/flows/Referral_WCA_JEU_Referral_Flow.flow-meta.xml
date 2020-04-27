@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Allows setting of any input variables for testing the flow</description>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>276</locationX>
+        <locationY>89</locationY>
+        <assignmentItems>
+            <assignToReference>varReferralID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCaseID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Validates that all variables are set as expected to start the flow</description>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>277</locationX>
+        <locationY>227</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varReferralID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCaseID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_Stage</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Handles all actions related to a JEU Referral</description>
+    <interviewLabel>Referral - WCA JEU Referral Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Referral - WCA JEU Referral Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case_Stage</name>
+        <label>Update Case Stage</label>
+        <locationX>498</locationX>
+        <locationY>229</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Case_Stage__c</field>
+            <value>
+                <stringValue>JEU Referral</stringValue>
+            </value>
+        </inputAssignments>
+        <object>DIR_Case__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>ID of the parent case to the referral that triggered the flow</description>
+        <name>varCaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the referral that triggered the flow</description>
+        <name>varReferralID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

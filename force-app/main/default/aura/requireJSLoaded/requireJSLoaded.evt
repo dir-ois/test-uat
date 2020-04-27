@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION">
+    <aura:attribute name="Pass_Lookup_Id" type="String"/>
+    <aura:attribute name="Pass_Lookup_Id_Deputy" type="String"/>
+</aura:event>

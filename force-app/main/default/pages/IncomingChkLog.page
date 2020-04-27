@@ -1,0 +1,87 @@
+<apex:page showheader="true" sidebar="true" doctype="html-5.0" standardstylesheets="false" applyhtmltag="true" applybodytag="false">
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="-1"/>
+    
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS105, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <apex:includescript value="/lightning/lightning.out.js" />
+    <apex:includelightning />
+    <style>
+        body {
+        overflow-X: scroll;
+        }
+        
+        h1 {
+        padding: 30px;
+        font-size: 1.5em;
+        }
+        .content{
+        font-size: 1.5em;
+        font-weight: bold;
+        font-color: fff;
+        }
+        
+    </style>
+    <div class="newStyle slds-scope">
+        <div class="content">
+            <h1 class="pageType">Incoming Check Log<span class="titleSeparatingColon">:</span></h1>
+            <div class="blank">&nbsp;</div>
+        </div>
+        <!-- Page Content-->
+        <div class="slds page-content" id="pageContentReceiptId">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-size--1-of-1">
+                    <div class="slds-size--1-of-1">
+                        <div id="receiptLog"></div>
+                    </div>
+                    <div class="slds-size--1-of-1">
+                        <div id="receiptsGrid"></div>
+                    </div>
+                    
+                    <div class="slds-size--1-of-1">
+                        <div id="receiptCases"></div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var isRendered = 'true';
+    var list = location.search.split("&")[1];
+    var aux = null;
+    if(list != null){
+        var x = list.split("=");
+        aux = x;
+    }
+    
+    if(aux != null && aux[0] == "isR"){
+        isRendered = aux[1];
+    }
+    
+    if(isRendered == 'true'){
+        //ReceiptLogForm component
+        $Lightning.use("c:ReceiptLogApp", function() {
+            $Lightning.createComponent("c:ReceiptLogForm",{},"receiptLog",function(cmp){
+                console.log("Component created receiptLog!");
+            });
+        });
+        
+        
+        //ReceiptsGrid component
+        $Lightning.use("c:ReceiptLogApp", function() {
+            $Lightning.createComponent("c:ReceiptsGrid",{},"receiptsGrid",function(cmp) {
+                console.log("Component created receiptsGrid!");
+            });
+        });
+        
+        //ReceiptsCase component
+        $Lightning.use("c:ReceiptLogApp", function() {
+            $Lightning.createComponent("c:ReceiptCasesDialog",{},"receiptCases",function(cmp) {
+                console.log("Component created receiptsCase!");
+            });
+        });
+        
+    }
+    
+   
+    </script>    
+</apex:page>

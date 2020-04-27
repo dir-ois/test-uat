@@ -1,0 +1,142 @@
+<apex:page standardController="DIR_Case__c" extensions="AddAppeal" title="Add Appeal">
+
+    <script src="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"></script>
+    
+    <script>
+        function DeselectOthers(ctrl) {
+            $('.accountsCB').prop('checked', false);
+            $(ctrl).prop('checked', true);
+            ReselectCitations();
+        }
+    </script>
+
+    <apex:form >
+    
+        <apex:actionStatus id="counterStatus">
+            <apex:facet name="start">
+                <div style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; background-color: white; opacity: 0.6; text-align: center; padding-top: 200px; z-index: 1000;">
+                    <img src="/img/loading32.gif" />
+                </div>
+            </apex:facet>
+        </apex:actionStatus>
+        <apex:actionFunction name="ReselectCitations" action="{!LoadCitations}" status="counterStatus" rerender="entirePB" />
+        
+        <apex:pageBlock id="entirePB" title="Add Appeal">
+            <apex:pageBlockSection title="Appellant" columns="1" >
+            <apex:pageBlockTable value="{!Accounts}" var="account">
+                <apex:column headerValue="Select">
+                    <apex:inputCheckbox value="{!account.selected}" styleclass="accountsCB" onchange="DeselectOthers(this);" />
+                </apex:column>
+                <apex:column headerValue="Name"> 
+                    {!account.acc.Affiliated_Account__r.Name}
+                </apex:column>
+                <apex:column headerValue="Title"> 
+                    {!account.acc.Affiliation_Type__c}
+                </apex:column>
+                <apex:column headerValue="Phone"> 
+                    {!account.acc.Affiliated_Account__r.Phone}
+                </apex:column>
+                <apex:column headerValue="Employer"> 
+                    {!cs.Employer__r.Name}
+                </apex:column>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <br /><br />
+            <apex:pageBlockSection title="Citations being appealed" columns="1">
+            <apex:pageBlockTable value="{!Citations}" var="citation">
+                <apex:column headerValue="Select" style="background:{!IF(citation.highlight, 'lightgreen','white')};">                                            
+                <apex:inputCheckbox value="{!citation.selected}" />
+                </apex:column>
+                <apex:column headerValue="Citation Number" style="background:{!IF(citation.highlight, 'lightgreen','white')};"> 
+                    {!citation.liab.Citation_Number__c}
+                </apex:column>
+                <apex:column headerValue="Issue Date" style="background:{!IF(citation.highlight, 'lightgreen','white')};"> 
+                    <apex:outputField value="{!citation.liab.CreatedDate}" />
+                </apex:column>
+                <apex:column headerValue="Within Appeal Window" style="background:{!IF(citation.highlight, 'lightgreen','white')};"> 
+                    {!citation.lastDay}
+                </apex:column>
+                <apex:column headerValue="Violation" style="background:{!IF(citation.highlight, 'lightgreen','white')};"> 
+                    {!citation.violations}
+                </apex:column>
+                <apex:column headerValue="Last Day of Appeal" style="background:{!IF(citation.highlight, 'lightgreen','white')};"> 
+                    <apex:outputField value="{!citation.liab.Appeal_Deadline__c}" />
+                </apex:column>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <br /><br />
+            
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionitem >
+                    Waiver of Time Limit
+                    <apex:selectRadio value="{!appeal.Waive_Time_Limit__c}" layout="pageDirection">
+                        <apex:selectOption itemValue="Yes" itemLabel="Yes, I hereby voluntarily waive this time limit." />
+                        <apex:selectOption itemValue="No" itemLabel="No, I do not voluntarily waive this time limit." />
+                    </apex:selectRadio>
+                </apex:pageBlockSectionitem>
+                <apex:pageBlockSectionItem >
+                    Estimated Length of Hearing in Minutes
+                    <apex:inputField value="{!appeal.Estimated_Length_of_Hearing_In_Minutes__c}" required="true" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionitem >
+                    Requested translator language
+                    <apex:inputField value="{!appeal.Translator_Requested_Language__c}" />
+                </apex:pageBlockSectionitem>
+                <apex:pageBlockSectionitem >
+                    Request for Citation Appeal hearing received by DLSE on
+                    <apex:inputField value="{!appeal.Request_Receipt_Date__c}" required="true" />
+                </apex:pageBlockSectionitem>
+                <apex:pageBlockSectionItem >
+                    Unavailable Dates
+                    <apex:inputField value="{!appeal.Unavailable_dates__c}" required="true" />
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionitem >
+                    2810.3 Case
+                    <apex:selectRadio value="{!appeal.X2810_3_Case__c}" layout="pageDirection">
+                        <apex:selectOption itemValue="Yes" itemLabel="Yes" />
+                        <apex:selectOption itemValue="No" itemLabel="No" />
+                    </apex:selectRadio>
+                </apex:pageBlockSectionitem>
+                <apex:pageBlockSectionitem >
+                    2810.4 Case
+                    <apex:selectRadio value="{!appeal.X2810_4_Case__c}" layout="pageDirection">
+                        <apex:selectOption itemValue="Yes" itemLabel="Yes" />
+                        <apex:selectOption itemValue="No" itemLabel="No" />
+                    </apex:selectRadio>
+                </apex:pageBlockSectionitem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Hearing Participants" columns="1">
+            <apex:pageBlockTable value="{!Accounts}" var="account">
+                <apex:column headerValue="Select">
+                    <apex:inputCheckbox value="{!account.selected2}" />
+                </apex:column>
+                <apex:column headerValue="Name"> 
+                    {!account.acc.Affiliated_Account__r.Name}
+                </apex:column>
+                <apex:column headerValue="Title"> 
+                    {!account.acc.Affiliation_Type__c}
+                </apex:column>
+                <apex:column headerValue="Phone"> 
+                    {!account.acc.Affiliated_Account__r.Phone}
+                </apex:column>
+                <apex:column headerValue="Employer"> 
+                    {!cs.Employer__r.Name}
+                </apex:column>
+                <apex:column headerValue="Appeal Role">
+                     <apex:inputField value="{!account.party.Role__c}" />
+                </apex:column>
+            </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:pageMessages />
+            
+            <br /><br />
+            
+            <apex:pageBlockButtons location="bottom"> 
+                <apex:commandButton value="Save" action="{!SaveAppeal}" />
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

@@ -1,0 +1,41 @@
+.inProgress{
+
+	color: #ff5517;
+
+}
+.btn-primary{
+	background-color: #2e73bf;
+}
+.form-control{
+	border-radius: 3px;
+	border-color: #2d3033;
+}
+select.form-control{
+	border-radius: 3px;
+	border-color: #2d3033;
+}
+
+.form-control.user-success{
+	border-radius: 3px;
+	border-color: #2d3033;
+}
+.form-group .input-group > select{
+	border-radius: 3px;
+	border-color: #2d3033;
+}
+
+a{
+	color:#0254b7;
+}
+
+.navbar-default h1 {
+    color: #ffffff;
+}
+.text-white{
+    color: #ffffff;
+    
+}
+
+//.jumbotron.primarycolor-bg {
+	background-color: #ddd;    
+}

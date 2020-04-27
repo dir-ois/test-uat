@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>all input variables are defined here and can be used for testing the flow</description>
+        <name>Test_inputs</name>
+        <label>Test inputs</label>
+        <locationX>121</locationX>
+        <locationY>59</locationY>
+        <assignmentItems>
+            <assignToReference>CaseID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a0om0000000pVp4</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Input_valid</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Holds the latest date from all the hearings</description>
+        <name>Track_Latest_Date</name>
+        <label>Track Latest Date</label>
+        <locationX>636</locationX>
+        <locationY>450</locationY>
+        <assignmentItems>
+            <assignToReference>latestHearingDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>currentHearing.Meeting_Start_Date_Time__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_Collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Input_valid</name>
+        <label>Input valid</label>
+        <locationX>118</locationX>
+        <locationY>169</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CaseID</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_Child_Hearings</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>evaluates the date of the hearing in the current Hearing against the latest date stored in the temp variable LatestDate</description>
+        <name>Later_Date</name>
+        <label>Later Date?</label>
+        <locationX>633</locationX>
+        <locationY>294</locationY>
+        <defaultConnector>
+            <targetReference>Iterate_Collection</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Later</defaultConnectorLabel>
+        <rules>
+            <name>Later</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>latestHearingDate</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>currentHearing.Meeting_Start_Date_Time__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Track_Latest_Date</targetReference>
+            </connector>
+            <label>Later</label>
+        </rules>
+    </decisions>
+    <description>Iterates over all hearings on a case and sets the hearing date on the case to be the latest hearing date from all hearings</description>
+    <interviewLabel>BOFE Update Hearing Date on Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BOFE Update Hearing Date on Case</label>
+    <loops>
+        <description>Iterates over the collection of hearings looking for the last hearing date</description>
+        <name>Iterate_Collection</name>
+        <label>Iterate Collection</label>
+        <locationX>344</locationX>
+        <locationY>294</locationY>
+        <assignNextValueToReference>currentHearing</assignNextValueToReference>
+        <collectionReference>childHearings</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Later_Date</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Hearing_Date_on_Case</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets all the hearings that are a child of the case</description>
+        <name>Get_All_Child_Hearings</name>
+        <label>Get All Child Hearings</label>
+        <locationX>117</locationX>
+        <locationY>294</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_Collection</targetReference>
+        </connector>
+        <filters>
+            <field>Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseID</elementReference>
+            </value>
+        </filters>
+        <object>Hearing__c</object>
+        <outputReference>childHearings</outputReference>
+        <queriedFields>Meeting_Start_Date_Time__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets the hearing date on the case to be the LatestDate found by iterating over all the hearings on the case.</description>
+        <name>Update_Hearing_Date_on_Case</name>
+        <label>Update Hearing Date on Case</label>
+        <locationX>345</locationX>
+        <locationY>443</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Hearing_Date_and_Time__c</field>
+            <value>
+                <elementReference>latestHearingDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DIR_Case__c</object>
+    </recordUpdates>
+    <startElementReference>Input_valid</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>ID of the parent case of the hearing</description>
+        <name>CaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Collection of all the child hearings of the case</description>
+        <name>childHearings</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Hearing__c</objectType>
+    </variables>
+    <variables>
+        <description>The current hearing being evaluated in the loop</description>
+        <name>currentHearing</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Hearing__c</objectType>
+    </variables>
+    <variables>
+        <description>Set by iterating over all the hearings on the case.</description>
+        <name>latestHearingDate</name>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

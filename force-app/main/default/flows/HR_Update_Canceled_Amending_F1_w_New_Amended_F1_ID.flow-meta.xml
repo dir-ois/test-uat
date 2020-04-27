@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>HR Update Canceled Amending F1 w New Amended F1 ID {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>HR Update Canceled Amending F1 w New Amended F1 ID</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Canceled_F1_w_New_amended_F1_ID</name>
+        <label>Update Canceled F1 w New amended F1 ID</label>
+        <locationX>302</locationX>
+        <locationY>135</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue/>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>VarCanceledF1ID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Amended_New_Form_1_ID__c</field>
+            <value>
+                <elementReference>VarNewAmendedF1ID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Form_1__c</object>
+    </recordUpdates>
+    <startElementReference>Update_Canceled_F1_w_New_amended_F1_ID</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>CurrentAmendedID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>F1RecordID</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Form_1__c</objectType>
+    </variables>
+    <variables>
+        <description>Accept value passed on from PB &quot;HR Update Canceled Amend F1 w New F1 ID&quot;</description>
+        <name>VarCanceledF1ID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>VarNewAmendedF1ID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

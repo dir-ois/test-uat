@@ -1,0 +1,124 @@
+<aura:component controller="ReceiptCasesDialogController">
+    <ltng:require scripts="/resource/jquery214" />
+    
+    <aura:attribute name="allCaseList" type="Case_Payment__c[]" />
+    <aura:attribute name="cases" type="DIR_Case__c[]" />
+    <aura:attribute name="caseIds" type="String[]" />
+    <aura:attribute name="casesMap" type="DIR_Case__c[]" />
+    <aura:attribute name="caseDetail" type="DIR_Case__c[]" />
+    <aura:attribute name="ids" type="String" /> 
+    <aura:attribute name="Rindex" type="Integer" default="0" />
+    <aura:attribute name="receipt" type="Receipt__c" />
+	<aura:attribute name="receiptList" type="Receipt__c[]" />    
+    <!--<aura:attribute name="totAlloc" type="Double"/>-->
+    
+    <aura:attribute name="RctCase_Details" type="Receipt__c[]" default="[{rctId:'', rctDetail: {}, caseDetail: []}]" access="GLOBAL"/>
+    
+    <aura:handler event="c:CaseEvent" action="{!c.getCasesFromEvent}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:RIndexToCase" action="{!c.getRctDetails}" />
+    
+    <div class="modal-pop-up" id="CasesModal" style="display:none;">
+        <div aria-hidden="false" role="dialog" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h2 class="slds-text-heading--medium caseHead">Case Selection Interface</h2>
+                </div>
+                <div class="slds-modal__content">
+                    <div id="searchIndexCases">
+                        <div class="tableModal">
+                            <div class="receiptInfo">
+                                <label id="lbl_InstNo">Instrument Number: {!v.receipt.Instrument_Number__c}</label><br></br>
+                                <label id="lbl_PaymDeduc"></label> 
+                                <br></br>
+                            </div>
+                            
+                            <input type="text" class="slds-input search_case" id="searchInputId"
+                                   placeholder="Search Case" onkeyup="{!c.searchKeyChange}" /> <br></br>
+                            <label id="lbl_SearchRes">Search Results</label>
+                            
+                            <table class="slds-table slds-table--bordered">
+                                <thead>
+                                    <tr class="slds-text-heading--label">
+                                        <th class="slds-is-sortable" scope="col">
+                                            <label class="slds-checkbox" id="headChk">
+                                                <ui:inputcheckbox aura:id="headChk1" change="{!c.selectAll}" name="options" />
+                                                <span class="slds-checkbox--faux"></span>
+                                                <span class="slds-assistive-text">Select All</span>
+                                            </label>
+                                        </th>
+                                        <th class="slds-is-sortable" scope="col">Case Number</th>
+                                        <th class="slds-is-sortable" scope="col">Assigned Deputy</th>
+                                        <th class="slds-is-sortable" scope="col">Employer</th>
+                                        <th class="slds-is-sortable" scope="col">Record Type</th>
+                                        <!-- <th class="slds-is-sortable" scope="col" style="width:15px;">JEU</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <aura:iteration items="{!v.cases}" var="case">
+                                        <tr class="slds-hint-parent">
+                                            <td class="slds-cell-shrink" data-label="Select Row">
+                                                <label class="slds-checkbox">
+                                                    <ui:inputcheckbox aura:id="allChk" name="options" class="{!'caseId-'+case.Id}" />
+                                                    <span class="slds-checkbox--faux"></span>
+                                                    <span class="slds-assistive-text">Select Row</span>
+                                                </label>
+                                            </td>
+                                            <td>{!case.Case_Number__c}</td>
+                                            <td>{!case.Assigned_Deputy__r.Name}</td>
+                                            <td class="emplName">{!case.Employer__r.Name}</td>
+                                            <td>{!case.RecordType.Name}</td>
+                                            <!-- <td><ui:outputcheckbox value="{!case.Liabilities_Referred_to_JEU__c}" /></td> -->
+                                        </tr>
+                                    </aura:iteration>
+                                </tbody>
+                            </table>
+                            <button type="button" class="slds-button slds-button--neutral slds-button--brand addBtn" onclick="{!c.addCases}">Add</button>
+                        </div>
+                    </div>
+                    <div class="tableModal">
+                        <label id="lbl_CaseAdd">Case(s) Added</label><br></br>
+                        <label id="lbl_AllocBal" >Amount Remaining: </label><label id="lbl_AmtBal" >${!v.receipt.Amount_Remaining__c}</label>
+                        <label id="lbl_AllocErr" class="allocErr" style="Display:none;">Allocation amount exceeds total available amount</label>
+                        <table class="slds-table slds-table--bordered">
+                            <thead>
+                                <tr class="slds-text-heading--label">
+                                    <th width="44px"></th>
+                                    <th class="slds-is-sortable customW1" scope="col">Select Case</th>
+                                    <th class="slds-is-sortable customW1" scope="col">Record Type</th>
+                                    <th class="slds-is-sortable customW1" scope="col">EMPLOYER</th>
+                                    <th class="slds-is-sortable customW" scope="col">Allocated Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <aura:iteration items="{!v.casesMap}" var="case">
+                                    <tr class="slds-hint-parent caseReciptTrList cListqw" data-index="{!case.index}">
+                                        <td>
+                                            <a href="#" data-index="{!case.index}" onclick="{!c.delCase}" class="delimg">
+                                                <img src="/resource/slds105/assets/icons/action/delete.svg" width="15" style="display:block" />
+                                            </a>
+                                        </td>
+                                        <td>{!case.caseDetail.caseNo}</td>
+                                        <td>{!case.caseDetail.recType}</td>
+                                        <td><p class="empName" title="{!case.employer}">{!case.caseDetail.employer}</p></td>
+                                        <td>               
+                                            <input type="text" placeholder="$ 0.00" aura:id="caseAmountfieldsId" class="slds-input amtIP"
+                                                   data-index="{!case.index}" data-caseid="{!case.caseDetail.IdCase}" onchange="{!c.saveAllocAmt}" value="{!case.caseDetail.allocatedAmount}" />   
+                                        </td>
+                                    </tr>
+                                </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="slds-modal__footer">
+                    <div class="slds-x-small-buttons--horizontal">
+                        <button type="button" class="slds-button slds-button--neutral" onclick="{!c.saveRctCase}">Save</button>
+                        <button type="button" class="slds-button slds-button--neutral" onclick="{!c.closeDialog}">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </div>
+</aura:component>

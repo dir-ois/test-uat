@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>flow_started</name>
+        <label>flow started</label>
+        <locationX>488</locationX>
+        <locationY>508</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Check_Validity_Changed</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>txtDebugCheckStatuses</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>check status change flow started</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>jeremy@vertiba.com</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>flow_started_0</name>
+        <label>Update Necessary</label>
+        <locationX>784</locationX>
+        <locationY>382</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Get_Payment_Records</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>necessary</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Update Necessary</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>jeremy@vertiba.com</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Add_payment_to_update_collection</name>
+        <label>Add payment to update collection</label>
+        <locationX>1118</locationX>
+        <locationY>691</locationY>
+        <assignmentItems>
+            <assignToReference>colUpdatePaymentRecords</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>objPaymentRecord</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_over_payment_records_collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>197</locationX>
+        <locationY>128</locationY>
+        <assignmentItems>
+            <assignToReference>varCheckID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a2R63000000H9rt</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCheckStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Printed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varPriorCheckStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Voided</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>boolUpdateNecessary</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varRecordType</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Check_Issued</name>
+        <label>Set Check Issued</label>
+        <locationX>926</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>objPaymentRecord.Check_Issued__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaCheckIssued</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_payment_to_update_collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Defines whether the status change was materially important. It was previously invalid and is now valid or vise versa.</description>
+        <name>Check_Validity_Changed</name>
+        <label>Check Validity Changed</label>
+        <locationX>612</locationX>
+        <locationY>265</locationY>
+        <defaultConnector>
+            <targetReference>Update_Check_Status_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Changed</defaultConnectorLabel>
+        <rules>
+            <name>Changed</name>
+            <conditionLogic>( 1 AND 2 ) OR ( 3 AND 4 )</conditionLogic>
+            <conditions>
+                <leftValueReference>flaValidCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Valid</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>flaPriorCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Invalid</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>flaValidCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Invalid</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>flaPriorCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Valid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Payment_Records</targetReference>
+            </connector>
+            <label>Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Payment_records_to_update</name>
+        <label>Payment records to update?</label>
+        <locationX>984</locationX>
+        <locationY>397</locationY>
+        <defaultConnector>
+            <targetReference>Update_Check_Status_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>colPaymentRecords</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_over_payment_records_collection</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Printed_Status</name>
+        <label>Printed Status</label>
+        <locationX>368</locationX>
+        <locationY>158</locationY>
+        <defaultConnector>
+            <targetReference>Check_Validity_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Status_Printed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Printed</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Status = Printed</label>
+        </rules>
+        <rules>
+            <name>Status_Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varPriorCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Secondary Approval Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Check</targetReference>
+            </connector>
+            <label>Status = Approved</label>
+        </rules>
+        <rules>
+            <name>Approved_Locked</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varPriorCheckStatus</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Secondary Approval Needed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Approved_check_record_update</targetReference>
+            </connector>
+            <label>Approved Locked</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Recs_to_update</name>
+        <label>Recs to update</label>
+        <locationX>1203</locationX>
+        <locationY>538</locationY>
+        <defaultConnector>
+            <targetReference>Update_Check_Status_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NoUpdate</defaultConnectorLabel>
+        <rules>
+            <name>Update</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>colUpdatePaymentRecords</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Payment_Records</targetReference>
+            </connector>
+            <label>Update</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>196</locationX>
+        <locationY>268</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCheckStatus</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Printed_Status</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Updated record type to lock approved check records</description>
+    <formulas>
+        <description>Determines what to set check issued to based on the status of the check</description>
+        <name>flaCheckIssued</name>
+        <dataType>Boolean</dataType>
+        <expression>IF (
+{!varCheckStatus} = &#39;Pending Approval&#39; ||
+{!varCheckStatus} = &#39;Secondary Approval Needed&#39; ||
+{!varCheckStatus} = &#39;Approved&#39; ||
+{!varCheckStatus} = &#39;Printed&#39; ||
+{!varCheckStatus} = &#39;Uncleared&#39; ||
+{!varCheckStatus} = &#39;Cleared&#39; ,
+TRUE, FALSE )</expression>
+    </formulas>
+    <formulas>
+        <description>Groups the statuses of the prior value into valid/invalid for comparison against the current value to determine if the value has changed meaningfully.</description>
+        <name>flaPriorCheckStatus</name>
+        <dataType>String</dataType>
+        <expression>IF (
+	{!varPriorCheckStatus} = &#39;Pending Approval&#39; ||
+	{!varPriorCheckStatus} = &#39;Secondary Approval Needed&#39; ||
+	{!varPriorCheckStatus} = &#39;Approved&#39; ||
+	{!varPriorCheckStatus} = &#39;Printed&#39; ||
+	{!varPriorCheckStatus} = &#39;Uncleared&#39; ||
+	{!varPriorCheckStatus} = &#39;Cleared&#39;
+	, &#39;Valid&#39; , &#39;Invalid&#39;
+   )</expression>
+    </formulas>
+    <formulas>
+        <description>Returns today&#39;s date</description>
+        <name>flaToday</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <description>Sets as valid/invalid based on the status of the check passed in. It groups the statuses</description>
+        <name>flaValidCheckStatus</name>
+        <dataType>String</dataType>
+        <expression>IF (
+	{!varCheckStatus} = &#39;Pending Approval&#39; ||
+	{!varCheckStatus} = &#39;Secondary Approval Needed&#39; ||
+	{!varCheckStatus} = &#39;Approved&#39; ||
+	{!varCheckStatus} = &#39;Printed&#39; ||
+	{!varCheckStatus} = &#39;Uncleared&#39; ||
+	{!varCheckStatus} = &#39;Cleared&#39;
+	, &#39;Valid&#39; , &#39;Invalid&#39;
+   )</expression>
+    </formulas>
+    <interviewLabel>Checks - Status Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Checks - Status Change</label>
+    <loops>
+        <name>Loop_over_payment_records_collection</name>
+        <label>Loop over payment records collection</label>
+        <locationX>984</locationX>
+        <locationY>538</locationY>
+        <assignNextValueToReference>objPaymentRecord</assignNextValueToReference>
+        <collectionReference>colPaymentRecords</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Set_Check_Issued</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Recs_to_update</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Payment_Records</name>
+        <label>Get Payment Records</label>
+        <locationX>984</locationX>
+        <locationY>258</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Payment_records_to_update</targetReference>
+        </connector>
+        <filters>
+            <field>Check__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCheckID</elementReference>
+            </value>
+        </filters>
+        <object>Payment_Record__c</object>
+        <outputReference>colPaymentRecords</outputReference>
+        <queriedFields>Check_Issued__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Approved_check_record_update</name>
+        <label>Approved check record update</label>
+        <locationX>651</locationX>
+        <locationY>143</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCheckID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012t0000000PHGn</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Check__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Check</name>
+        <label>Update Check</label>
+        <locationX>548</locationX>
+        <locationY>57</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCheckID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Approved_Check__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012t0000000PHGm</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Check__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Check_Status_Date</name>
+        <label>Update Check Status Date</label>
+        <locationX>1259</locationX>
+        <locationY>97</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCheckID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status_Date__c</field>
+            <value>
+                <elementReference>flaToday</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Check__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Payment_Records</name>
+        <label>Update Payment Records</label>
+        <locationX>1419</locationX>
+        <locationY>538</locationY>
+        <connector>
+            <targetReference>Update_Check_Status_Date</targetReference>
+        </connector>
+        <inputReference>colUpdatePaymentRecords</inputReference>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <description>Displays check statuses and their validity for use in debug</description>
+        <name>txtDebugCheckStatuses</name>
+        <text>Check Status: {!varCheckStatus}
+Status validity: {!flaValidCheckStatus}
+
+Prior Status: {!varPriorCheckStatus}
+Prior Status Validity: {!flaPriorCheckStatus}</text>
+    </textTemplates>
+    <variables>
+        <description>Flags value passed from PB depending on the prior and current status value. If the value has change to make a check valid when previously invalid this will be true and vise versa</description>
+        <name>boolUpdateNecessary</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Payment records related to the check</description>
+        <name>colPaymentRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Payment_Record__c</objectType>
+    </variables>
+    <variables>
+        <description>collection of payments that need to be updated</description>
+        <name>colUpdatePaymentRecords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Payment_Record__c</objectType>
+    </variables>
+    <variables>
+        <description>Payment record that is current in the loop</description>
+        <name>objPaymentRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Payment_Record__c</objectType>
+    </variables>
+    <variables>
+        <description>ID of check that triggered the flow passed from PB</description>
+        <name>varCheckID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Status of check that started the flow</description>
+        <name>varCheckStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Prior value of check status passed from pb</description>
+        <name>varPriorCheckStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Record type of object</description>
+        <name>varRecordType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

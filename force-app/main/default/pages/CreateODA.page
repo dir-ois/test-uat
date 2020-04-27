@@ -1,0 +1,97 @@
+<apex:page standardController="Hearing__c" extensions="CreateODAController" docType="html-5.0" >
+    <style>
+        .loadingSpinner{
+            z-index:5;
+            position: fixed;
+            left: 50%;
+            top:50%;
+        }
+        .loadingBG{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 4;
+        }
+    </style>
+    <apex:form id="theForm">
+        <apex:actionStatus id="ajaxStatus" style="position: relative;">
+            <apex:facet name="start">
+                <apex:outputPanel >
+                    <apex:outputPanel styleClass="loadingBG" />
+                    <apex:outputPanel styleClass="loadingSpinner">
+                        <apex:image value="{!$Resource.LoadingSpinnerRed}"/>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+            </apex:facet>
+        </apex:actionStatus>
+        <apex:pageMessages />
+        <apex:pageBlock title="Create ODA">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Back to Meeting" action="{!cancel}"/>
+                <apex:commandButton value="Create ODA" Action="{!createODA}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="roles" value="Select a Case Role:" style="margin-right:10px;"/>
+                    <apex:selectList value="{!selectedRole}" multiSelect="false" size="1" id="roles">
+                        <apex:selectOptions value="{!caseRoleList}" />
+                        <apex:actionSupport event="onchange" action="{!getCaseViolations}" rerender="theForm" status="ajaxStatus" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="odadd" value="Decision Date:" style="margin-right:10px;"/>
+                    <apex:inputField value="{!oda.Decision_Date__c}" id="odadd" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Minutes to Create ODA (Minutes)
+                    <apex:inputText value="{!oda.Minutes_to_Create_ODA__c}" />
+                </apex:pageBlockSectionItem>
+                                <apex:pageBlockSectionItem >
+                    Number of Pages
+                    <apex:inputText value="{!oda.Number_of_Pages__c}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock title="Related Case Issues" id="violBlock">
+            <apex:pageBlockTable value="{!violations}" var="v" >
+                <apex:column >
+                    <apex:facet name="header">Name</apex:facet>
+                    <apex:outputLink value="/{!v.thisViol.Id}" target="_blank">{!v.thisViol.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Violation Type</apex:facet>
+                    <apex:outputText value="{!v.thisViol.Violation_Type__r.Name}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Short Description</apex:facet>
+                    <apex:outputText value="{!v.thisViol.Violation_Short_Description_Conga__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Status</apex:facet>
+                    <apex:outputText value="{!v.thisViol.Status__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Modified Wage to Assessment Amount</apex:facet>
+                    <apex:outputText value="{!v.thisViol.Wages_Due__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Wage Balance Due</apex:facet>
+                    <apex:outputText value="{!v.thisViol.Wage_Balance_Due__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Interest Balance Due</apex:facet>
+                    <apex:outputText value="{!v.thisViol.Interest_Balance_Due__c}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Wages Due Date</apex:facet>
+                    <apex:inputField value="{!v.thisViol.Wages_Due_Date__c}" />
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

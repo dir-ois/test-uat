@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Event template" >
+    <aura:attribute name="Pass_Case_Result_List" type="DIR_Case__c[]"/>
+</aura:event>

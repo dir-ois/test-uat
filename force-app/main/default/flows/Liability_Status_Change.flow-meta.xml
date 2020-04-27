@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>143</locationX>
+        <locationY>66</locationY>
+        <assignmentItems>
+            <assignToReference>varLiabilityID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1P630000002b6X</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCaseID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1B630000006FzS</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varLiabilityStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Affirmed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varLiabilityStatusPriorValue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Under Appeal</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varAccountBankruptcyStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Dismissed</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks the bankruptcy status of the account from the case. Account bankruptcy status is passed from PB</description>
+        <name>Account_in_Bankruptcy</name>
+        <label>Account in Bankruptcy</label>
+        <locationX>1346</locationX>
+        <locationY>659</locationY>
+        <defaultConnector>
+            <targetReference>Set_Collection_Hold_On_Case_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Bankruptcy does NOT apply</defaultConnectorLabel>
+        <rules>
+            <name>Bankruptcy_Applies</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>varAccountBankruptcyStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chapter 7</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varAccountBankruptcyStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chapter 11</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varAccountBankruptcyStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chapter 12</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varAccountBankruptcyStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chapter 13</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Bankruptcy Applies</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Liabilities_Found_With_Hold</name>
+        <label>Liabilities Found With Hold</label>
+        <locationX>546</locationX>
+        <locationY>678</locationY>
+        <defaultConnector>
+            <targetReference>Get_all_liabilities_that_are_subject_to_writ_require_HOLD</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>None Found</defaultConnectorLabel>
+        <rules>
+            <name>Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>colLiabilitiesWithHold</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Liabilities_Subject_to_Writ_Found</name>
+        <label>Liabilities Subject to Writ Found</label>
+        <locationX>1050</locationX>
+        <locationY>347</locationY>
+        <defaultConnector>
+            <targetReference>Get_Open_Writs</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>None Found</defaultConnectorLabel>
+        <rules>
+            <name>Liab_Subject_to_Writ_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>colLiabilitiesWithHold</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Liab Subject to Writ Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Do not clear HOLD, this triggers Violation Update PB to wait for 55 days then determine if it meets all the conditions for clearing Collection HOLD.</description>
+        <name>New_Status_Affirmed_or_Modified</name>
+        <label>New Status Affirmed or Modified</label>
+        <locationX>386</locationX>
+        <locationY>468</locationY>
+        <defaultConnector>
+            <targetReference>Prior_Value_Required_Hold</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Affirmed or Modified does NOT apply</defaultConnectorLabel>
+        <rules>
+            <name>Status_Affirmedo_r_Modified</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>varLiabilityStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Affirmed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varLiabilityStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Modified</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Status Affirmed or Modified</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>New_Status_requires_HOLD</name>
+        <label>New Status requires HOLD</label>
+        <locationX>386</locationX>
+        <locationY>235</locationY>
+        <defaultConnector>
+            <targetReference>Violation_Appeal_Deadline_NOT_Passed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Hold Required</defaultConnectorLabel>
+        <rules>
+            <name>Hold</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varLiabilityStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Under Appeal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Collection_Hold_On_Case</targetReference>
+            </connector>
+            <label>Hold</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Open_Writs_Found</name>
+        <label>Open Writs Found</label>
+        <locationX>1125</locationX>
+        <locationY>658</locationY>
+        <defaultConnector>
+            <targetReference>Account_in_Bankruptcy</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Writs Found</defaultConnectorLabel>
+        <rules>
+            <name>Writs_found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>colOpenWrits</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Writs found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Prior_Value_Required_Hold</name>
+        <label>Prior Value Required Hold</label>
+        <locationX>387</locationX>
+        <locationY>685</locationY>
+        <defaultConnectorLabel>Prior Value NO Hold</defaultConnectorLabel>
+        <rules>
+            <name>PriorValueHold</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varLiabilityStatusPriorValue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Under Appeal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_Liabilities_on_case_that_require_HOLD</targetReference>
+            </connector>
+            <label>Prior Value Hold</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>141</locationX>
+        <locationY>234</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varLiabilityID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCaseID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varLiabilityStatus</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>New_Status_requires_HOLD</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Violation_Appeal_Deadline_NOT_Passed</name>
+        <label>Violation Appeal Deadline NOT Passed</label>
+        <locationX>384</locationX>
+        <locationY>347</locationY>
+        <defaultConnector>
+            <targetReference>New_Status_Affirmed_or_Modified</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Violation Appeal Deadline NOT Passed DOES NOT Apply</defaultConnectorLabel>
+        <rules>
+            <name>Violation_Appeal_Deadline_NOT_Passed_Applied</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>objCase.Collection_Hold_by_Appeal_Deadline__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Violation Appeal Deadline NOT Passed Applied</label>
+        </rules>
+    </decisions>
+    <description>Set flow back to autolaunch flow and removed the steps.</description>
+    <interviewLabel>Liability Status Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Liability Status Change</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_all_Liabilities_on_case_that_require_HOLD</name>
+        <label>Get all Liabilities on case that require HOLD</label>
+        <locationX>638</locationX>
+        <locationY>413</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Liabilities_Found_With_Hold</targetReference>
+        </connector>
+        <filters>
+            <field>Case_Management__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Under Appeal</stringValue>
+            </value>
+        </filters>
+        <object>Liability__c</object>
+        <outputReference>colLiabilitiesWithHold</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_all_liabilities_that_are_subject_to_writ_require_HOLD</name>
+        <label>Get all liabilities that are subject to writ require HOLD</label>
+        <locationX>865</locationX>
+        <locationY>347</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Liabilities_Subject_to_Writ_Found</targetReference>
+        </connector>
+        <filters>
+            <field>Case_Management__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Subject_to_Writs__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Liability__c</object>
+        <outputReference>colLiabilitiesWithHold</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Looks for open writs on the case to determine if the hold is necessary or not</description>
+        <name>Get_Open_Writs</name>
+        <label>Get Open Writs</label>
+        <locationX>969</locationX>
+        <locationY>663</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Open_Writs_Found</targetReference>
+        </connector>
+        <filters>
+            <field>Case_Management__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <object>Writ__c</object>
+        <outputReference>colOpenWrits</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Set_Collection_Hold_On_Case</name>
+        <label>Set Collection Hold On Case</label>
+        <locationX>631</locationX>
+        <locationY>233</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Collections_Hold__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>DIR_Case__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Collection_Hold_On_Case_0</name>
+        <label>Clear Collection Hold On Case</label>
+        <locationX>1348</locationX>
+        <locationY>804</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Collections_Hold__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>DIR_Case__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Collection of liabilities on the case that have a hold required. Will be null if none require a hold</description>
+        <name>colLiabilitiesWithHold</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Liability__c</objectType>
+    </variables>
+    <variables>
+        <description>Collection of writs returned from querying for open writs on the case</description>
+        <name>colOpenWrits</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Writ__c</objectType>
+    </variables>
+    <variables>
+        <name>objCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Case__c</objectType>
+    </variables>
+    <variables>
+        <description>Bankruptcy status of the account from the case. Passed from PB</description>
+        <name>varAccountBankruptcyStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Record ID that is the parent of the liability that triggered the flow. Passed from PB</description>
+        <name>varCaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Record ID of the liability that triggered the flow</description>
+        <name>varLiabilityID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Status value of the liability that triggered the flow passed from PB</description>
+        <name>varLiabilityStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Prior value of status field on liability that triggered the flow passed from PB</description>
+        <name>varLiabilityStatusPriorValue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

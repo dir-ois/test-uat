@@ -1,0 +1,98 @@
+<apex:page controller="StandardAddressFormat" sidebar="false" action="{!CheckAddressFormat}" tabStyle="Account">
+    <style type="text/css">
+        .changed {background-color : #f4eb85;}
+        .valid {background-color : #c8f4a4;}
+    </style>
+    <script type="text/javascript">
+        function SetSel(elem) {
+            
+            var elems = document.getElementsByClassName('chkclass');
+            var elemsLength = elems.length;
+        
+            for(i=0; i<elemsLength; i++)
+                elems[i].checked = false; 
+                     
+        
+            elem.checked = true;
+        }
+    </script>
+    <apex:form >
+       
+        <apex:pageBlock >
+            
+            <apex:pageBlockSection title="Values Entered" columns="1">
+               
+                <apex:outputPanel >
+                <table>
+                        <tr>
+                            <td width="40"></td>
+                            <td>Street </td>
+                            <td>City</td>
+                            <td>State</td>
+                            <td>Postal Code</td>
+                        </tr>
+                    <tr>
+                        <td></td>
+                        <td><apex:inputText value="{!StreetValue}" disabled="false"  size="80"/>&nbsp;&nbsp;</td> 
+                        <td><apex:inputText value="{!CityValue}" disabled="false" size="40"/>&nbsp;&nbsp;</td> 
+                        <td><apex:inputText value="{!StateValue}" disabled="false" size="2"/>&nbsp;&nbsp;</td> 
+                        <td><apex:inputText value="{!PostalCodeValue}" disabled="false" size="12"/>&nbsp;&nbsp;</td> 
+                    </tr>   
+                </table>
+
+                <br />
+                <apex:commandButton action="{!CheckAddressFormat}" value="Validate this Address" /><br /><br />
+                </apex:outputPanel>
+                  
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="1" title="USPS Valid Results" id="validAdd" >
+                <apex:outputPanel rendered="{!IF(messageError!='', true, false)}">
+                    <font color="red">{!messageError}</font><br /><br />
+                </apex:outputPanel>
+
+                <apex:outputPanel rendered="{!IF(msgNotChanged!='', true, false)}">
+                    <font color="green">{!msgNotChanged}</font><br /><br />
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!IF(msgChanged!='', true, false)}">
+                    <font color="red">{!msgChanged}</font><br /><br />
+                </apex:outputPanel>
+
+                <apex:outputPanel rendered="{!displayResults}"> 
+                    <table>
+                        <tr>
+                            <td width="40"></td>
+                            <td>Street </td>
+                            <td>City</td>
+                            <td>State</td>
+                            <td>Postal Code</td>
+                        </tr>
+                        <apex:repeat value="{!objectsList}" var="obj">
+                            <tr>
+                                <td><apex:inputCheckbox value="{!obj.selected}" styleClass="chkclass" onchange="SetSel(this);" />&nbsp;&nbsp;</td>
+                                <td><apex:inputText value="{!obj.sObj[StreetField]}" disabled="true" size="80" styleclass="{!changedStr}"/>&nbsp;&nbsp;</td>
+                                <td><apex:inputText value="{!obj.sObj[CityField]}" disabled="true" size="40" styleclass="{!changedCit}"/>&nbsp;&nbsp;</td>
+                                <td><apex:inputText value="{!obj.sObj[StateField]}" disabled="true" size="2" styleclass="{!changedSta}"/>&nbsp;&nbsp;</td>
+                                <td><apex:inputText value="{!obj.sObj[PostalCodeField]}" disabled="true" size="12" styleclass="{!changedZip}"/></td>
+                            </tr>
+                        </apex:repeat>
+                        <tr>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;&nbsp;</td>
+                            <td colspan="4"><i>Address will be converted to all-CAPS to meet the USPS format standards.</i></td>
+                        </tr>
+                    </table>
+                    
+                    <p><apex:commandButton action="{!ReturnToTheRecord}" value="Save Selected and Return to Record" rerender="validAdd, pcode" /></p>
+
+                    <p><apex:commandButton action="{!CancAndReturn}" value="Cancel and Return to Record" rerender="validAdd, pcode" /></p>
+
+
+                </apex:outputPanel>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>  
+    </apex:form>
+</apex:page>

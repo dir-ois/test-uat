@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Flow_Start_Debug_Notice</name>
+        <label>Flow Start Debug Notice</label>
+        <locationX>461</locationX>
+        <locationY>162</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Update_Assigned_Deputy_on_Inspection_Request</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varCaseViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>In Set Assigned Senior Deputy on CV Create flow</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>272</locationX>
+        <locationY>105</locationY>
+        <defaultConnectorLabel>invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCaseViolationID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCaseAssignedSeniorDeputy</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCaseAssignedDeputy</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Assigned_Deputy_on_Inspection_Request</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Sets the Assigned Senior Deputy on the Case Violation for Create</description>
+    <interviewLabel>Set Assigned Senior Deputy on Case Violation Create {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Assigned Senior Deputy on Case Violation Create</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Assigned_Deputy_on_Inspection_Request</name>
+        <label>Update Assigned Deputy on Inspection Request</label>
+        <locationX>272</locationX>
+        <locationY>258</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varCaseViolationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>DIR_Employee__c</field>
+            <value>
+                <elementReference>varCaseAssignedDeputy</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Senior_Deputy__c</field>
+            <value>
+                <elementReference>varCaseAssignedSeniorDeputy</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DIR_Violation__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Assigned Deputy on Case</description>
+        <name>varCaseAssignedDeputy</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Caase Assigned Senior Deputy</description>
+        <name>varCaseAssignedSeniorDeputy</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Case ID on Inspection Request</description>
+        <name>varCaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Case Owner ID</description>
+        <name>varCaseOwnerID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Case Violation that was just Created</description>
+        <name>varCaseViolationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>This will hold a Queue ID if the Owner ID is a Queue.</description>
+        <name>varISAQueue</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Owner ID Record for Assigned Deputy</description>
+        <name>varOwnerEmployeeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

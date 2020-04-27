@@ -1,0 +1,30 @@
+<apex:page controller="CommunityRenewals" title="Renewals" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+    <style>
+        .helptext {
+            font-size: 12px;
+            font-style: italic;
+            color: #999999;
+        }
+    </style>
+    
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li>My Registrations</li>
+                    <li class="active">Renewals</li>
+                </ol>
+                <h1>Renewals</h1>
+                <br />
+                <apex:outputPanel id="errorPanel">
+                    <div style="display:{!errorDisplay}" class="{!errortype}">
+                        <center>{!errormessage}</center> 
+                    </div>
+                </apex:outputPanel>
+                <br />
+                
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

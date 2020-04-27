@@ -1,0 +1,51 @@
+<apex:page docType="html-5.0" controller="GenerateDailyCalendarController" >
+    <apex:pagemessages ></apex:pagemessages>
+    <apex:form >
+        <apex:actionFunction name="getDoc" action="{!setURL}" onComplete="goToRedirect();" rerender="scriptPanel">
+            <apex:param name="urlParam" value="" assignTo="{!docURL}" />
+        </apex:actionFunction>
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <button type="button" onclick="goToDocument();">Get Calendar</button>
+                <button type="button" onclick="window.location.assign('/home/home.jsp');">Close</button>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Meeting Location (Office)" for="wcaOffice" />
+                    <apex:inputField value="{!hearing.WCA_Office__c}" required="true" id="wcaOffice"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Record Type" for="rtSelect" />
+                    <apex:selectList value="{!selectedRT}" id="rtSelect" size="1" multiselect="false">
+                        <apex:selectOptions value="{!rtList}" />
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Meeting Start Date/Time" for="startDate" />
+                    <apex:inputField value="{!hearing.Meeting_Start_Date_Time__c}" required="true" id="startDate"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Meeting End Date/Time" for="endDate" />
+                    <apex:inputField value="{!hearing.Meeting_End_Date_Time__c}" required="true" id="endDate"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:outputPanel id="scriptPanel">
+            <script>
+                function goToDocument(){
+                    var URL = ''
+                    +'https://composer.congamerge.com'
+                    +'?sessionId='+'{!$Api.Session_ID}'
+                    +'&serverUrl='+'{!$Api.Partner_Server_URL_290}';
+                    console.log('URL: '+URL);
+                    getDoc(URL);
+                }
+                
+                function goToRedirect(){
+                    console.log('DOC URL: '+'{!docURL}');
+                    window.open('{!docURL}');
+                }
+            </script>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

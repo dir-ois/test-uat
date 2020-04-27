@@ -1,0 +1,7 @@
+<aura:event type="APPLICATION">
+    <aura:attribute name="Pass_Result_List" type="Receipt__c"/>
+    <aura:attribute name="Pass_Case_To_Payments" type="DIR_Case__c[]"/>
+    <aura:attribute name="Pass_OfficeUnit_VAL" type="String"/>
+    <aura:attribute name="Pass_DepositAcc_VAL" type="String"/>
+    <aura:attribute name="Pass_Reset_Edit" type="Boolean"/>
+</aura:event>

@@ -1,0 +1,12 @@
+<!--
+// @author: Oswin Correa
+// @date: 26/6/2018
+// @description: Application event to delete attachment plus and related records created internally while uploading 
+                 file using lighning:fileupload component
+-->
+<aura:event type="APPLICATION">
+	<aura:attribute name="internalcontentDocId" type="String"
+		description="Content Document Id of the file uploaded using lighning:fileupload component" />
+	<aura:attribute name="fileType" type="String"
+		description="File type specifier when passed obtains attachment data of corresponding file Type for the context record" />
+</aura:event>

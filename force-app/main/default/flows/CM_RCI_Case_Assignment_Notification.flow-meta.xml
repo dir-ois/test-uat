@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Assign_Task</name>
+        <label>Assign Task</label>
+        <locationX>269</locationX>
+        <locationY>322</locationY>
+        <actionName>NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>AssignedDeputyUserID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>CaseID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Status</name>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <stringValue>New Case Assignment</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ActivityDate</name>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Verify that flow triggers properly when data is populated.</description>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>267</locationX>
+        <locationY>47</locationY>
+        <assignmentItems>
+            <assignToReference>CaseID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1B350000005jIj</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AssignedDeputyUserID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>00535000000e1NC</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks to see all data entry is valid for Case ID and Assigned Deputy User ID.</description>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>268</locationX>
+        <locationY>179</locationY>
+        <defaultConnectorLabel>Invalid Input</defaultConnectorLabel>
+        <rules>
+            <name>Valid_Input</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AssignedDeputyUserID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CaseID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Task</targetReference>
+            </connector>
+            <label>Valid Input</label>
+        </rules>
+    </decisions>
+    <description>When Assign Deputy changes this creates a task for the new owner to review the case.</description>
+    <interviewLabel>CM: RCI Case Assignment Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CM: RCI Case Assignment Notification</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <description>Chatters the Assigned Deputy for a new WCA/Garment case.</description>
+        <name>ChatterDeputyonAssign</name>
+        <text>@[{!AssignedDeputyUserID}] - This case has been assigned to you; please review.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NotifyDeputyAssignment</name>
+        <text>@[{!AssignedDeputyUserID}] - A new case has been assigned to you.</text>
+    </textTemplates>
+    <variables>
+        <name>AssignedDeputyUserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

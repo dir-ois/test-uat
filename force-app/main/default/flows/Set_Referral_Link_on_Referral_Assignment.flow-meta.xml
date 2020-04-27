@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Error_Getting_Base_URL_chatter</name>
+        <label>Error Getting Base URL</label>
+        <locationX>65</locationX>
+        <locationY>401</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>ReferralID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[Salesforce Support Team] Set Referral Data on Referral Assignment flow: Error getting base URL.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notifies BOFE Admins that there was a problem with updating the records</description>
+        <name>Fault_Updating_Records_chatter</name>
+        <label>Fault Updating Records</label>
+        <locationX>882</locationX>
+        <locationY>288</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>ReferralID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[Salesforce Support Team] {!ErrorUpdating} {!$Flow.FaultMessage}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Builds the assignment values based on the inputs</description>
+        <name>Build_Assignments</name>
+        <label>Build Assignments</label>
+        <locationX>344</locationX>
+        <locationY>271</locationY>
+        <assignmentItems>
+            <assignToReference>FirstReminderAssignment</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>FirstReminderDays</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SecondReminderAssignment</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SecondReminderDays</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Referral_RT</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Test_Inputs</name>
+        <label>Test Inputs</label>
+        <locationX>74</locationX>
+        <locationY>16</locationY>
+        <assignmentItems>
+            <assignToReference>Referral_AssignmentID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1um00000002XyS</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ReferredToEmployee</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a13m00000006L01</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ReferralID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1tm0000003Jpw0</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>EmployeeEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>jeremydcase@gmail.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecTypeDevName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>012m00000004RPx</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FirstReminderDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <dateValue>2015-03-02</dateValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SecondReminderDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <dateValue>2015-03-09</dateValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>FirstReminderDays</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SecondReminderDays</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>8.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CurrentlyAssigned</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Currently_Assigned</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks the value current assignment variable</description>
+        <name>Currently_Assigned</name>
+        <label>Currently Assigned</label>
+        <locationX>70</locationX>
+        <locationY>149</locationY>
+        <defaultConnectorLabel>False</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CurrentlyAssigned</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Base_URL</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Identifies which &quot;bucket&quot; the referral falls into based on the record type of the referral. Different updates take place based on the referral RT.</description>
+        <name>Referral_RT</name>
+        <label>Referral RT</label>
+        <locationX>542</locationX>
+        <locationY>271</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>BOFE_Civil_Litigation</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>RecTypeDevName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BOFE_Civil_Litigation_Referral</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Referral_data_0</targetReference>
+            </connector>
+            <label>BOFE Civil Litigation Referral</label>
+        </rules>
+        <rules>
+            <name>BOFE_Other_Legal</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>RecTypeDevName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BOFE_Request_for_Legal_Services</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RecTypeDevName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BOFE_Request_for_Legal_Court_Action</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Referral_data</targetReference>
+            </connector>
+            <label>BOFE Other Legal</label>
+        </rules>
+    </decisions>
+    <description>Sets the Referral data on the referral Assignment to the parent referral. Used in standard workflows for time based notifications</description>
+    <formulas>
+        <description>Creates the link to the referral record from the base URL and the referral ID</description>
+        <name>CreateURLLink</name>
+        <dataType>String</dataType>
+        <expression>{!BaseURL}&amp;{!ReferralID}</expression>
+    </formulas>
+    <interviewLabel>Set Referral Data on Referral Assignment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Referral Data on Referral Assignment</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the base URL of the org from the custom setting</description>
+        <name>Get_Base_URL</name>
+        <label>Get Base URL</label>
+        <locationX>67</locationX>
+        <locationY>271</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Build_Assignments</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Getting_Base_URL_chatter</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>BaseURL</stringValue>
+            </value>
+        </filters>
+        <object>Key_Value_Store__c</object>
+        <outputAssignments>
+            <assignToReference>BaseURL</assignToReference>
+            <field>Value__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets the data on the referral assignment so that it can be used in a standard workflow. A standard workflow is needed in order to create</description>
+        <name>Set_Referral_data</name>
+        <label>Set Referral data</label>
+        <locationX>713</locationX>
+        <locationY>420</locationY>
+        <faultConnector>
+            <targetReference>Fault_Updating_Records_chatter</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Referral_AssignmentID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Employee_Email__c</field>
+            <value>
+                <elementReference>EmployeeEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Referral_Link__c</field>
+            <value>
+                <elementReference>CreateURLLink</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Referral_Assignment__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the data on the referral assignment so that it can be used in a standard workflow. A standard workflow is needed in order to create</description>
+        <name>Set_Referral_data_0</name>
+        <label>Set Referral data- Civil Lit.</label>
+        <locationX>707</locationX>
+        <locationY>135</locationY>
+        <faultConnector>
+            <targetReference>Fault_Updating_Records_chatter</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Referral_AssignmentID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Employee_Email__c</field>
+            <value>
+                <elementReference>EmployeeEmail</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>First_Reminder_Date__c</field>
+            <value>
+                <elementReference>FirstReminderDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Referral_Link__c</field>
+            <value>
+                <elementReference>CreateURLLink</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Second_Reminder_Date__c</field>
+            <value>
+                <elementReference>SecondReminderDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Referral_Assignment__c</object>
+    </recordUpdates>
+    <startElementReference>Currently_Assigned</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <description>Template sent to the referred to attorney to notify that the case has been referred</description>
+        <name>CaseReferralEmailTemplate</name>
+        <text>A BOFE Case has been referred to you for a legal consultation. Please view the referral below:
+{!RecordLink}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Shows all values as a debug tool.</description>
+        <name>CheckValues1</name>
+        <text>Record applies - Field values as of now:
+
+ReferralAssignmentID: {!Referral_AssignmentID}
+Referral RT: {!RecTypeDevName}
+Referred To Employee: {!ReferredToEmployee}
+Employee Email: {!EmployeeEmail}
+FirstReminder Date: {!FirstReminderDate}
+Second Reminder Date: {!SecondReminderDate}
+First Reminder Days: {!FirstReminderDays}
+Second Reminder Days: {!SecondReminderDays}
+Base URL: {!BaseURL}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>CheckValues2</name>
+        <text>Second value check - Values are currently:
+
+ReferralAssignmentID: {!Referral_AssignmentID}
+Referral RT: {!RecTypeDevName}
+Referred To Employee: {!ReferredToEmployee}
+Employee Email: {!EmployeeEmail}
+FirstReminder Date: {!FirstReminderDate}
+Second Reminder Date: {!SecondReminderDate}
+First Reminder Days: {!FirstReminderDays}
+Second Reminder Days: {!SecondReminderDays}
+Base URL: {!BaseURL}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Email body for when an error occurs updating the referral assignments</description>
+        <name>ErrorUpdating</name>
+        <text>Unsuccessful attempt made to update referral assignment records. Please debug.
+
+Referral ID: {!ReferralID}
+Referral Assignment causing fault: {!Referral_AssignmentID}</text>
+    </textTemplates>
+    <variables>
+        <description>Collection of attorney email addresses</description>
+        <name>AttorneyEmailcoll</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the Base URL of the org so that a link can be generated</description>
+        <name>BaseURL</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Takes the value of the currently assigned field from the assignment for use as decision criteria</description>
+        <name>CurrentlyAssigned</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Holds the employee records that need to have the email address looked up</description>
+        <name>employeeCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <description>Email address looked up from the linked employee record</description>
+        <name>EmployeeEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>employeeList</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <name>Employees</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Referral_Assignment__c</objectType>
+    </variables>
+    <variables>
+        <description>Holds a value of a dynamically created assignment date based on the current date and the first assignment days input. Used to set reminder dates based on current day and offset</description>
+        <name>FirstReminderAssignment</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDate</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Holds the first reminder date pushed in from the parent referral. Used to set the reminder dates for reminders based on the parent referral&#39;s reminder date</description>
+        <name>FirstReminderDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Takes as input the first reminder days from the parent referral to update the referral assignment when necessary</description>
+        <name>FirstReminderDays</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>The record link to the referral record.</description>
+        <name>RecordLink</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Captures the record type ID for use in decision within flow to determine which update to perform.</description>
+        <name>RecTypeDevName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The triggering referral assignment</description>
+        <name>Referral_AssignmentID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Input value for referral ID</description>
+        <name>ReferralID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Collection of referred attorneys</description>
+        <name>ReferredAttorneys</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Referral_Assignment__c</objectType>
+    </variables>
+    <variables>
+        <description>Holds the referred to employee record used to lookup the related user record</description>
+        <name>ReferredToEmployee</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>a13m00000006L01</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Holds a value of a dynamically created assignment date based on the current date and the Second assignment days input. Used to set reminder dates based on current day and offset</description>
+        <name>SecondReminderAssignment</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Flow.CurrentDate</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <description>Holds the Second reminder date pushed in from the parent referral. Used to set the reminder dates for reminders based on the parent referral&#39;s reminder date</description>
+        <name>SecondReminderDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Takes as input the second reminder days from the parent referral to set on the assignment when necessary</description>
+        <name>SecondReminderDays</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

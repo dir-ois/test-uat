@@ -1,0 +1,214 @@
+<apex:page controller="RegistrationSearchController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="true" title="Registration Search">
+    <script>
+        $j = jQuery.noConflict();
+    </script> 
+    <style>
+        .multiSelectPicklistRow select option:before,
+        .multiSelectPicklistRow select option:after {display:none;}
+    </style>
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body"> 
+            <apex:form >     
+                <apex:outputPanel id="mainPanel">
+                    <ol class="breadcrumb">
+                        <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                        <li class="active">Registration Search</li>
+                    </ol>
+                    <h1>Registration Search</h1>
+                    <br />
+ 
+                    <!--tken 06/27/2018 add list of record types -->
+                    <div class="row mb">
+                        <div class="col-md-5">
+                            <i>Use the drop-down menu under <b>"Registration Type"</b> to select the registration type you are searching, and enter at least one other search criteria.</i>
+                            <br/> 
+                        <label>Registration Type: * </label>
+                        <apex:selectList id="selectedRecordType" value="{!searchClassObj.selectedRecordType}" multiselect="false" size="1" styleClass="form-control">
+                            <apex:selectOptions value="{!registrationRecordTypes}"/>
+                        </apex:selectList>
+                        </div>                  
+                    </div>
+                    <div class="row mb">
+                        <div class="col-md-5">
+                            <label>Registration Status: * </label>
+                            <apex:selectList id="selectedStatus" value="{!searchClassObj.selectedStatus}" multiselect="false" size="1" styleClass="form-control">
+                                <apex:selectOptions value="{!registrationStatus}"/>
+                            </apex:selectList>
+                        </div>                  
+                    </div>
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Registration Number:</label>
+                            <apex:inputText id="registrationNumberStr" value="{!searchClassObj.registrationNumberStr}" styleclass="form-control" />
+                            
+                        </div>
+                    </div>  
+                    
+                    
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Legal Entity Name:</label>
+                            <apex:inputText id="legalEntityStr" value="{!searchClassObj.legalEntityStr}" styleclass="form-control" />
+                            
+                        </div>
+                    </div>  
+
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>DBA Name:</label>
+                            <apex:inputText id="dbaNameStr" value="{!searchClassObj.dbaNameStr}" styleclass="form-control" />
+                        </div>
+                    </div>
+
+
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Location Address:</label>
+                            <apex:inputText id="locationAddressStr" value="{!searchClassObj.locationAddressStr}" styleclass="form-control" />
+                        </div>
+                    </div> 
+
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Location City:</label>
+                            <apex:inputText id="locationCityStr" value="{!searchClassObj.locationCityStr}" styleclass="form-control" />
+                        </div>
+                    </div> 
+                    
+                    
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Location State:</label>
+                            <apex:inputText id="locationStateStr" value="{!searchClassObj.locationStateStr}" styleclass="form-control" />
+                        </div>
+                    </div>                     
+
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Location Zip:</label>
+                            <apex:inputText id="locationZipStr" value="{!searchClassObj.locationZipStr}" styleclass="form-control" />
+                        </div>
+                    </div> 
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label><b>Effective Date Range</b></label>
+                            
+                        </div>
+                    </div>  
+                    <div class="row mb">
+                        <div class="form-group col-md-2">
+                            <label>Start Date:</label>
+                            <apex:input id="effectiveDateStart" value="{!searchClassObj.effectiveDateStart}" styleclass="form-control" type="date" />
+                            
+                        </div>
+                        <div class="form-group col-md-1"></div>
+                        <div class="form-group col-md-2">
+                            <label>End Date:</label>
+                            <apex:input id="effectiveDateEnd" value="{!searchClassObj.effectiveDateEnd}" styleclass="form-control" type="date" />
+                            
+                        </div>
+                    </div>
+                      
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label><b>Expiration Date Range</b></label>
+                            
+                        </div>
+                    </div>  
+                    <div class="row mb">
+                        <div class="form-group col-md-2">
+                            <label>Start Date:</label>
+                            <apex:input id="expirationDateStart" value="{!searchClassObj.expirationDateStart}" styleclass="form-control" type="date" />
+                            
+                        </div>
+                        <div class="form-group col-md-1"></div>
+                        <div class="form-group col-md-2">
+                            <label>End Date:</label>
+                            <apex:input id="expirationDateEnd" value="{!searchClassObj.expirationDateEnd}" styleclass="form-control" type="date" />
+                            
+                        </div>
+                    </div> 
+
+                    <!--<div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Workers Comp Type:</label>                            
+                            <apex:selectList id="workersCompTypeStr" value="{!searchClassObj.workersCompTypeStr}"
+                                     size="1" styleclass="form-control">
+                              <apex:selectOptions value="{!compType}"/>
+                            </apex:selectList>
+                            
+                        </div>
+                    </div> 
+ 
+ 
+                     <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Workers Comp Insurer:</label>
+                            <apex:inputText id="workersCompInsurerStr" value="{!searchClassObj.workersCompInsurerStr}" styleclass="form-control" />
+                        </div>
+                    </div> 
+
+                     <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Bond Issuer:</label>
+                            <apex:inputText id="bondIssuerStr" value="{!searchClassObj.bondIssuerStr}" styleclass="form-control" />
+                        </div>
+                    </div> 
+<div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label><b>Bond Effective Range</b></label>
+                            
+                        </div>
+                    </div>  
+                    <div class="row mb">
+                        <div class="form-group col-md-2">
+                            <label>Start Date:</label>
+                            <apex:input id="bondEffectiveStart" value="{!searchClassObj.bondEffectiveStart}" styleclass="form-control" type="date" />
+                            
+                        </div>
+                        <div class="form-group col-md-1"></div>
+                        <div class="form-group col-md-2">
+                            <label>End Date:</label>
+                            <apex:input id="bondEffectiveEnd" value="{!searchClassObj.bondEffectiveEnd}" styleclass="form-control" type="date" />
+                            
+                        </div>
+                    </div> -->
+                    <!-- <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Bond Effective Date:</label>
+                            <apex:input id="bondEffectiveDate" value="{!searchClassObj.bondEffectiveDate}" styleclass="form-control" type="date"/>
+                        </div>
+                    </div> -->
+                    
+                    <!-- redirects to RegistrationSearchResults.page (view action SearchRegistration() on RegistrationSearchController.cls) -->
+                    <apex:commandLink id="searchbt" action="{!SearchRegistration}" value="Search" style="text-decoration:none;" styleclass="btn-custom btn-lg" />&nbsp;&nbsp;
+                    
+                    <!-- empty fields (view action ClearFields() on PAGASearchController.cls) -->
+                    <apex:commandLink id="clearbt" onclick="clearDataFields();" action="{!ClearFields}" value="Clear Fields" rerender="mainPanel" />
+                    
+                    
+                </apex:outputPanel>
+                <!-- start press enter to initiate a search -->
+                <script type="text/javascript">
+                    $j(document).keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                             document.getElementById('{!$Component.searchbt}').click();
+                             
+                        }
+                    });
+                    function clearDataFields() {
+                        document.getElementById('{!$Component.bondEffectiveDate}').value = '';
+                        document.getElementById('{!$Component.effectiveDate}').value = '';
+                        document.getElementById('{!$Component.expirationDate}').value = '';
+                    }
+                </script> 
+                <!-- end press enter to initiate a search -->
+                <!-- end press enter to initiate a search -->
+            </apex:form>
+              
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

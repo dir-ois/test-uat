@@ -1,0 +1,157 @@
+<!-- controller PAGASearchController.cls -->
+<apex:page controller="PAGASearchController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="true" title="PAGA Search">
+    
+    <style>
+        .multiSelectPicklistRow select option:before,
+        .multiSelectPicklistRow select option:after {display:none;}
+    </style>
+    <script type="text/javascript"> 
+        $j = jQuery.noConflict();
+        $j( document ).ready(function() {
+        
+            $j("#calYearPicker").html('')
+            for(var i = 2010; i <= (new Date()).getFullYear(); i++){
+                $j("#calYearPicker").append("<option value='" + i + "'>" + i + "</option>")
+            }
+        });
+    </script>
+    <apex:composition template="PAGATemplate">
+        
+        <apex:define name="body">
+            <apex:form >    
+                <apex:outputPanel id="mainPanel">
+                    <ol class="breadcrumb">
+                        <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                        <li class="active">PAGA Case Search</li>
+                    </ol>
+                    <h1>Private Attorneys General Act (PAGA) Case Search</h1>
+                    <div class="row" id="messageInfo">
+                        <div class="col-xs-12">
+                            <div class="alert alert-info">
+                                Please enter one or more search criteria to find filings submitted to the LWDA pursuant to the Private Attorneys General Act (PAGA).
+                                <br /><i>Note: The searchable database includes most PAGA claims filed with the LWDA since 2004. Prior to June 27, 2016, only employee claims, employer cure notices, and employee cure disputes were required to be filed. Since that time, parties have also been required to file copies of court complaints, settlements, and certain orders, first by email (through 9/5/2016) and then through the current online filing system.</i>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row mb">
+                        <div class="form-group col-md-4">
+                            <label for="{!$Component.searchName}" styleclass="form-label">Business, Lawfirm, or Individual Name</label>
+                            <apex:inputText id="searchName" value="{!searchString}" styleclass="form-control" />
+                        </div>
+                    </div>  
+                    <div class="row mb">
+                        <div class="form-group col-md-3">
+                            <label for="{!$Component.lwdaNum}">LWDA Number</label>
+                            <apex:inputText id="lwdaNum" value="{!dummyCase.LWDA_Number__c}" styleclass="form-control" />
+                        </div>
+                    </div> 
+                    <div class="row mb">
+                        <div class="col-md-5">
+                            <div class="panel row">
+                                <div class="panel-body">
+                                    <div class="col-xs-12">
+                                        <label><b>Date Range of PAGA Notice Submission</b></label>
+                                        <!--<span class="help-block"><i>The online system only has notices filed online on or after 9/6/2016.</i></span>-->
+                                    </div>
+                                    <div class="form-group col-xs-12 col-md-6">
+                                        <label for="{!$Component.startDate}">From</label>
+                                        <apex:inputField id="startDate" value="{!dummyCase.PAGA_Investigation_Decision_Date__c}" styleclass="form-control" style="width:100%!important;"/>
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <div class="form-group col-xs-12 col-md-6">
+                                        <label for="{!$Component.endDate}">Until</label>
+                                        <apex:inputField id="endDate" value="{!dummyCase.Court_Filing_Date_for_PAGA_Cases__c}" styleclass="form-control" style="width:100%!important;"/>
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row mb">
+                        <div class="form-group col-md-3">
+                            <label for="{!$Component.empcity}">Employer City</label>
+                            <apex:inputText id="empcity" value="{!employeeCity}" styleclass="form-control" />
+                        </div>
+                    </div> 
+                    <div class="row mb">
+                        <div class="form-group col-md-3">
+                            <label for="{!$Component.empzip}">Employer Zip Code</label>
+                            <apex:inputText id="empzip" value="{!employeeZipCode}" styleclass="form-control" style="width:50%;" />
+                        </div>
+                    </div> 
+                    <div class="row mb">
+                        <div class="form-group col-md-3">
+                            <label for="{!$Component.empcasenum}">Court Case Number</label>
+                            <apex:inputText id="empcasenum" value="{!dummyCase.Court_Case_Number_for_PAGA_Case__c}" styleclass="form-control" />
+                        </div>
+                    </div> 
+                    <div class="row mb">
+                        <div class="form-group col-md-3">
+                            <label for="{!$Component.courttype}">Court Type</label>
+                            <apex:inputField id="courttype" value="{!dummyCase.Court_Type__c}" styleclass="form-control" />     
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                            <label for="{!$Component.courtname}">Court Name</label>
+                            <apex:inputField id="courtName" value="{!dummyCase.Court_Name__c}" styleclass="form-control" />     
+                        </div>
+                    </div> 
+<!------------------------------------------------------------------------------------
+                    <div class="row mb">
+                        <div class="form-group col-md-6">
+                            <label for="{!$Component.vitype}">Violation Type</label>
+                             <apex:inputField id="vitype" value="{!dummyCase.Violation_Type__c}" styleclass="form-control" />
+                        </div>
+                    </div>
+--------------------------------------------------------------------------------------->
+                    <div class="row mb">
+                        <div class="form-group col-md-6">
+                            <label for="{!$Component.subType}">Submission Type</label>
+                             <apex:inputField id="subType" value="{!dummyCase.Submission_Detail_Type__c}" styleclass="form-control" />
+                        </div>
+                    </div>
+                    
+                    <!-- redirects to PAGASearchResults.page (view action SearchCases() on PAGASearchController.cls) -->
+                    <apex:commandLink id="searchbt" action="{!SearchCases}" value="Search" style="text-decoration:none;" styleclass="btn-custom btn-lg" />&nbsp;&nbsp;
+                    
+                    <!-- empty fields (view action ClearFields() on PAGASearchController.cls) -->
+                    <apex:commandLink id="clearbt" onclick="clearDataFields();" action="{!ClearFields}" value="Clear Fields" rerender="mainPanel" />
+                    
+                </apex:outputPanel>
+                <!-- start press enter to initiate a search -->
+                <script type="text/javascript">
+                    $j( document ).ready(function() {
+                        var x = document.getElementById('calYearPicker');
+                        document.getElementById('calYearPicker').innerHTML = "";
+                        for(var y = 2017 ; y >= 1900 ; y--){
+                         var option = document.createElement("option");
+                         option.text = y;
+                         x.add(option);
+                        }
+                    });
+                    
+                    $j(document).keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                             document.getElementById('{!$Component.searchbt}').click();
+                             
+                        }
+                    });
+                    function clearDataFields() {
+                        document.getElementById('{!$Component.startDate}').value = '';
+                        document.getElementById('{!$Component.endDate}').value = '';
+                    }
+                </script> 
+                <!-- end press enter to initiate a search -->
+            </apex:form>
+              
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

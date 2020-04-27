@@ -1,0 +1,19 @@
+<apex:page controller="JudgmentCreateController">
+    <flow:interview name="Judgment_Create" Interview="{!Judgment_Create}" finishLocation="{!Judgment}">
+        <apex:param name="vObjectType" assignTo="{!vObjectType}" value="{!ObjectType}" />
+        <!-- pass Case ID to flow -->
+        <apex:param name="vCaseId" assignTo="{!vCaseID}" value="{!CaseID}" />
+        <!-- pass settlement ID to flow -->
+        <apex:param name="varRecordId" assignTo="{!varRecordId}" value="{!RecordID}"  />
+        <apex:param name="vAmountsDueAccrueInterest" assignTo="{!vAmountsDueAccrueInterest}" value="{!AmountAccruesInterest}"  />
+        <!--   
+        <apex:param name="vJudgmentId" assignTo="{!JudgmentId}" value="{!Judgment.Id}"  />
+        -->
+        <!-- pass Liability penalties and wages to Judgement -->
+         <!-- pass Liability penalties and wages to Judgement -->
+        <apex:param name="varPenalties" assignTo="{!varPenalties}" value="{!Penalties}"  />
+        <apex:param name="varWages" assignTo="{!varWages}" value="{!Wages}"  />
+        <apex:param name="varInterest" assignTo="{!varInterest}" value="{!Interest}"  />
+    </flow:interview>
+    
+</apex:page>

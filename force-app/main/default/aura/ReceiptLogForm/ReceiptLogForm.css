@@ -1,0 +1,103 @@
+.THIS {
+}
+
+.THIS .container{
+	width: 100%;
+}
+
+.THIS .inputData .inputArea{
+    margin-left: 20em;
+}
+
+.THIS .inputData label{
+    position: absolute;
+}
+
+.THIS .uiInputDate{
+	display:inline-block;
+}
+
+.THIS .slds-select, .THIS .slds-input, .THIS textArea {
+    width:200px!important;
+    margin-left:20px;
+    margin-top:5px;
+}
+
+.THIS .canPmt-chk{
+    margin:5px 20px 0 0px;
+    text-align: left;
+}
+
+.THIS .addDeduc-chk{
+    margin:5px 20px 0 0px;
+    text-align: left;
+}
+
+.THIS .paymReason{
+    margin-left: 10px;
+}
+
+.THIS .wage-chk{
+    margin:5px 20px 0 0px;
+    text-align: left;
+}
+
+.THIS .cInputLookup {
+    display:inline-block;
+    margin-left: 18.5em;
+}
+
+.THIS .uiInputText{
+    margin-left: 18.5em;
+}
+
+.THIS .change-id {
+    display:none;
+}
+
+.THIS .changeRequired {
+    border-left: solid 3px #cc0000 !important;
+}
+
+.THIS .txtArea {
+    width: 200px!important;
+    height: 40px;
+    margin-left: 20em;
+}
+
+.THIS .addPaymBtn {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.THIS .pageErr {
+    color: red;
+    margin: 5px;
+    font-size: 12px;
+    position: relative;	
+}
+
+.THIS .recvDateErr{
+    margin-left: -6px;
+}
+
+.THIS .srDepErr{
+    margin: -25px;
+    padding-left: 490px;
+}
+
+.THIS .canProcErr{
+    margin-top: -2px;
+}
+
+.THIS .addERR {
+    border: solid 1px #cc0000 !important;
+    border-left: solid 5px #cc0000 !important;
+}
+
+.THIS .addChBxErr{
+    border-color: rgb(255, 0, 0); /*Choose your color*/
+    box-shadow: 0 0 1px #cc0000; /*Choose a darker color for the shadow*/
+    background-color: rgb(255, 0, 0);
+}

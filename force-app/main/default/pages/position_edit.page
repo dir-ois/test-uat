@@ -1,0 +1,98 @@
+<apex:page standardController="Position__c"
+	extensions="position_Extension">
+	<script>function setFocusOnLoad(){}</script>
+	<apex:form >
+		<apex:outputPanel rendered="{!position.Id == null}">
+			<apex:sectionHeader title="New Position" />
+		</apex:outputPanel>
+		<apex:outputPanel rendered="{!position.Id != null}">
+			<apex:sectionHeader title="Position Edit" subtitle="{!position.name}" />
+		</apex:outputPanel>
+		<apex:pageBlock title="Position Details">
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Save" action="{!save}" />
+				<apex:commandButton value="Cancel" action="{!cancel}" />
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection >
+				<apex:inputField value="{!position.Effective_Date__c}" />
+				<apex:inputField value="{!position.Expiration_Date__c}" />
+				<apex:pageBlockSectionItem >
+					<apex:outputPanel >
+						<apex:outputText style="color:red" value="*" />&nbsp;
+                        <apex:outputLabel value="Department CodeNo" />
+					</apex:outputPanel>
+					<apex:outputPanel >
+						<apex:inputText value="{!departmentCode}" />&nbsp;
+                        <apex:outputText style="color:red"
+							rendered="{!departmentCodeError!=''}"
+							value="{!departmentCodeError}" />
+					</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+				<apex:inputField value="{!position.Organizational_Unit__c}" />
+
+				<apex:pageBlockSectionItem >
+					<apex:outputPanel >
+						<apex:outputText style="color:red" value="*" />&nbsp;
+                        <apex:outputLabel value="Unit CodeNo" />
+					</apex:outputPanel>
+					<apex:outputPanel >
+						<apex:inputField value="{!position.Reporting_Unit_CodeNo__c}">
+							<apex:actionSupport event="onkeyup" action="{!searchUnit}"
+								rerender="reportingUnit" />
+						</apex:inputField>&nbsp;
+                        <apex:outputText style="color:red"
+							rendered="{!unitCodeError!=''}" value="{!unitCodeError}" />
+					</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+				<apex:inputField id="reportingUnit"
+					value="{!position.Reporting_Unit__c}" />
+
+				<apex:pageBlockSectionItem >
+					<apex:outputPanel >
+						<apex:outputText style="color:red" value="*" />&nbsp;
+                        <apex:outputLabel value="Classification CodeNo" />
+					</apex:outputPanel>
+					<apex:outputPanel >
+						<apex:inputField value="{!position.Class_Title_CodeNo__c}">
+							<apex:actionSupport event="onkeyup"
+								action="{!searchClassification}"
+								rerender="classTitle, rate, per, timeBasis" />
+						</apex:inputField>&nbsp;
+                        <apex:outputText style="color:red"
+							rendered="{!classCodeError!=''}" value="{!classCodeError}" />
+					</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+				<apex:inputField id="classTitle" value="{!position.Class_Title__c}" />
+
+				<apex:pageBlockSectionItem >
+					<apex:outputPanel >
+						<apex:outputText style="color:red" value="*" />&nbsp;
+                        <apex:outputLabel value="Serial Number" />
+					</apex:outputPanel>
+					<apex:outputPanel >
+						<apex:inputField value="{!position.Serial_Number__c}" />&nbsp;
+                        <apex:outputText style="color:red"
+							rendered="{!serialCodeError!=''}" value="{!serialCodeError}" />
+					</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem />
+
+				<apex:inputField id="rate" value="{!position.Salary_Rate__c}" />
+				<apex:inputField id="per" value="{!position.Salary_Per__c}" />
+				<apex:inputField id="timeBasis" value="{!position.Time_Basis__c}" />
+				<apex:inputField value="{!position.Part_Time_Fraction__c}" />
+				<apex:inputField value="{!position.Status__c}" />
+				<apex:inputField value="{!position.Comments__c}" />
+				<apex:inputField value="{!position.Term_Type__c}" />
+				<apex:inputField value="{!position.Type__c}" />
+				<apex:inputField value="{!position.Separation_Date__c}" />
+				<apex:inputField value="{!position.Last_Pay_Period__c}" />
+				<apex:inputField value="{!position.X6_Month_Lapsed_Date__c}" />
+				<apex:inputField value="{!position.PY__c}" />
+				<apex:inputField value="{!position.Location__c}" />
+				<apex:inputField value="{!position.IsActive__c}" />
+				<apex:inputField value="{!position.BU__c}" />
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

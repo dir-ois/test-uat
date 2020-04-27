@@ -1,0 +1,259 @@
+<apex:page standardController="Receipt__c" extensions="PartyPaymentController" title="PartyParty/Deduction {!cs.Name}">
+
+    <style>
+        .headerRow{
+            text-align:center;
+        }
+    </style>
+
+    <apex:includeScript value="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"/>
+    <apex:form id="theForm">
+        <apex:pageBlock title=" Party to Party/Deduction Payments ">
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionitem >
+                    <apex:outputPanel id="topPanel">
+                        <apex:actionRegion >
+                        <apex:pageMessages id="pgMsgs"/>
+                        <table width="100%">
+                            <tr>
+                                <td width="20%">
+                                    <b>Case Name</b><br/>
+                                    <apex:outputField value="{!cs.Name}" />
+                                </td>
+                                <td width="20%">
+                                    <b>Case Number</b><br/>
+                                    <apex:outputField value="{!cs.Case_Number__c}" />
+                                </td>
+                                <td width="20%">
+                                    <b>Assigned Deputy</b><br/>
+                                    <apex:outputField value="{!cs.Assigned_Deputy__c}" />
+                                </td>
+                            </tr>
+                        </table>
+                    </apex:actionRegion>
+                </apex:outputPanel>
+            </apex:pageBlockSectionitem>
+            <apex:pageBlockSectionitem >
+                <apex:outputPanel id="middlePanel" >
+                    <apex:actionRegion >
+                        <table width="100%">
+                            <tr>
+                                <td width="16%">
+                                    <b>Payment Exchange</b><br/>
+                                    <apex:selectList value="{!selectedPaymentExchange}" multiSelect="false" size="1" required="true" >
+                                        <apex:selectOptions value="{!paymentExchangeList}" />
+                                    </apex:selectList>
+                                </td>
+                                <td width="16%" >
+                                    <b>Payment Amount</b><br/>
+                                    $<apex:inputText value="{!paymentAmount}" style="width:120px" required="true" />
+                                </td>
+                                <td width="16%">
+                                    <b>Date Received</b><br/>
+                                    <apex:inputField value="{!rct.Date_Received__c}" >
+                                    </apex:inputField>
+                                </td>
+                                <td width="16%">
+                                    <b>Payor</b><br/>
+                                    <apex:actionRegion >
+                                        <apex:inputField value="{!rct.Payor__c}" style="width:180px" >
+                                            <apex:actionSupport action="{!fetchJWList}" event="onchange" rerender="paymentPlans,tablePanel,pgMsgs" status="payorChangeStatus" />
+                                        </apex:inputField>
+                                        <apex:actionStatus id="payorChangeStatus" >
+                                            <apex:facet name="start">
+                                                <img src="/img/loading32.gif" width="12" height="12"/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                    </apex:actionRegion>
+
+                                </td>
+                                <td width="16%">
+                                    <b>Payment On Behalf Of:</b><br/>
+                                    <apex:actionRegion >
+                                        <apex:selectList value="{!selectedBehalf}" multiSelect="false" size="1" >
+                                            <apex:selectOptions value="{!Behalfs}" />
+                                            <apex:actionSupport action="{!fetchJWList}" event="onchange" rerender="tablePanel" status="poboChangesStatus" />
+                                        </apex:selectList>
+                                        <apex:actionStatus id="poboChangesStatus">
+                                            <apex:facet name="start">
+                                                <img src="/img/loading32.gif" width="12" height="12"/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                    </apex:actionRegion>
+                                </td>
+                                <td width="16%">
+                                    <apex:outputPanel id="paymentPlans" >
+                                    <b>Payment Plan</b><br/>
+                                        <apex:outputText escape="false" value="Enter Payor first" rendered="{!rct.Payor__c = null}" />
+                                        <apex:selectList value="{!selectedPlan}" multiSelect="false" size="1" rendered="{!rct.Payor__c != null}" >
+                                            <apex:selectOptions value="{!Plans}" />
+                                            <apex:actionSupport event="onchange" rerender="paymentPlanBal" status="ppChangeStatus" action="{!setPaymentPlan}" />
+                                        </apex:selectList>
+                                        <apex:actionStatus id="ppChangeStatus">
+                                            <apex:facet name="start">
+                                                <img src="/img/loading32.gif" width="12" height="12"/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                        <br/>
+                                        <apex:outputText id="paymentPlanBal" escape="false" value="{!IF(OR( paymentPlan != null, rct.Payor__c != null ), '<b>Balance Due</b>&nbsp;{0, number, $###,###,##0.00}', '<br/>')}" >
+                                        
+                                        <apex:param value="{!IF(selectedPlan = '', '', paymentPlan.Payment_Plan_Balance__c)}" />
+                                        </apex:outputText>
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionitem>
+            </apex:pageBlockSection>
+            <br />
+            <apex:outputPanel id="tablePanel">
+                <apex:pageBlockTable value="{!ciwList}" var="ciw" id="caseIssueTable" rendered="{!NOT(ciwList.empty)}" >
+
+                    <apex:column ><apex:facet name="header">LC Violation<br/>&nbsp;</apex:facet>
+                        <a href="/{!ciw.thisCaseIssue.Id}"
+                            id="lookup{!ciw.thisCaseIssue.Id}LCV"
+                            onblur="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV').hide();"
+                            onfocus="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV', '/{!ciw.thisCaseIssue.Id}/m?retURL=/{!ciw.thisCaseIssue.Id}&isAjaxRequest=1').show();"
+                            onmouseout="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV').hide();"
+                            onmouseover="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV','/{!ciw.thisCaseIssue.Id}/m?retURL=/{!ciw.thisCaseIssue.Id}&isAjaxRequest=1').show();">
+                            {!ciw.thisCaseIssue.Violation_Type__r.Name} </a>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Citation<br/>Number</apex:facet>
+                        {!ciw.citations}
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">EE(s) Amount<br/>Assessed</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right" >
+                            <apex:Param value="{!ciw.thisCaseIssue.Wages_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Balance<br/>Due EE(s)</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right" >
+                            <apex:Param value="{!ciw.thisCaseIssue.Wage_Balance_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Allocation to<br/>Amts Due EE(s)</apex:facet>
+                        <div align="right">
+                            $<apex:inputText value="{!ciw.allocationToWages}" style="width:80px" />
+                        </div>
+                    </apex:column>
+
+
+                    <apex:column ><apex:facet name="header">Interest<br/>Assessed</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right" >
+                            <apex:Param value="{!ciw.thisCaseIssue.Total_Interest_Amount__c}" />
+                        </apex:outputText>
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Interest<br/>Balance Due</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right" >
+                            <apex:Param value="{!ciw.thisCaseIssue.Interest_Balance_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Allocation to<br/>Interest</apex:facet>
+                        <div align="right">
+                            $<apex:inputText value="{!ciw.allocationToInterest}" style="width:80px" />
+                        </div>
+                    </apex:column>
+
+                </apex:pageBlockTable>
+                <br/>
+                
+                <apex:pageBlockTable value="{!jwList}" var="jw" id="judgmentsTable" rendered="{!NOT(jwList.empty)}"> 
+                    
+                    <apex:column ><apex:facet name="header">Judgment<br/>Name</apex:facet>
+                        <a href="/{!jw.thisJudgment.Id}"
+                            id="lookup{!jw.thisJudgment.Id}LCV"
+                            onblur="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}LCV').hide();"
+                            onfocus="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}LCV', '/{!jw.thisJudgment.Id}/m?retURL=/{!jw.thisJudgment.Id}&isAjaxRequest=1').show();"
+                            onmouseout="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}LCV').hide();"
+                            onmouseover="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}LCV','/{!jw.thisJudgment.Id}/m?retURL=/{!jw.thisJudgment.Id}&isAjaxRequest=1').show();">
+                            {!jw.thisJudgment.Name} </a>
+                    </apex:column>
+                    
+                    
+                    <apex:column ><apex:facet name="header">Court<br/>Name</apex:facet>
+                        {!jw.thisJudgment.Court__r.Name}
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Status<br/>&nbsp;</apex:facet>
+                        {!jw.thisJudgment.Status__c}
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Post-Hearing<br/>Int Bal Due</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                            <apex:param value="{!jw.thisJudgment.Post_hearing_Interest_Balance_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Allocation to<br/>Post-Hearing Int</apex:facet>
+                        <div align="right">
+                            $<apex:inputText value="{!jw.postHearingInterestAllocation}" style="width:80px" />
+                        </div>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Post-Judgment<br/>Int Bal Due</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                            <apex:param value="{!jw.thisJudgment.Post_judgment_Interest_Balance_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Allocation to<br/>Post-Judgment Int</apex:facet>
+                        <div align="right">
+                            $<apex:inputText value="{!jw.postJudgmentInterestAllocation}" style="width:80px" />
+                        </div>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Attorney Fees<br/>Bal Due</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                            <apex:param value="{!jw.thisJudgment.Attorney_Fees_Balance_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Allocation to<br/>Attorney Fees</apex:facet>
+                        <div align="right">
+                            $<apex:inputText value="{!jw.attorneyFeesAllocation}" style="width:80px" />
+                        </div>
+                    </apex:column>
+                    
+                    <apex:column ><apex:facet name="header">Filing Fees<br/>Bal Due</apex:facet>
+                        <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                            <apex:param value="{!jw.thisJudgment.Filing_Fees_Balance_Due__c}" />
+                        </apex:outputText>
+                    </apex:column>
+
+                    <apex:column ><apex:facet name="header">Allocation to<br/>Filing Fees</apex:facet>
+                        <div align="right">
+                            $<apex:inputText value="{!jw.filingFeesAllocation}" style="width:80px" />
+                        </div>
+                    </apex:column>
+
+                </apex:pageBlockTable>
+            </apex:outputPanel>
+            <br/>
+
+            <br />
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="top">
+                <apex:actionStatus id="btnStatus">
+                    <apex:facet name="start">
+                        <apex:outputPanel >
+                            <apex:commandButton value="Post Payment" disabled="true"/>
+                        </apex:outputPanel>
+                    </apex:facet>
+                    <apex:facet name="stop">
+                        <apex:outputPanel >
+                            <apex:commandButton value="Post Payment" action="{!SaveRecords}" status="btnStatus" rerender="topPanel,tablePanel,pgMsgs"/>
+                        </apex:outputPanel>
+                    </apex:facet>
+                </apex:actionStatus>
+             </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

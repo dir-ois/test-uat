@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sends error when no sr is located</description>
+        <name>Fault_Email</name>
+        <label>Fault Email</label>
+        <locationX>835</locationX>
+        <locationY>39</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>lorem ipsum</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Fault - no sr located</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>bgreenhaw@vertiba.com</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Test_Input_Variables</name>
+        <label>Test Input Variables</label>
+        <locationX>180</locationX>
+        <locationY>98</locationY>
+        <assignmentItems>
+            <assignToReference>ReferralID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1tm0000003JnCE</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ReferringDeputyID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a13m000000054KG</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ReferringDeputySeniorID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a13m000000054KL</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SrDeputyUserID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Senior_Deputy_Data</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Validates that the Senior Deputy user ID is valid from the lookup</description>
+        <name>Senior_User_ID_Valid</name>
+        <label>Senior User ID Valid</label>
+        <locationX>569</locationX>
+        <locationY>87</locationY>
+        <defaultConnector>
+            <targetReference>Fault_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid_Sr_ID</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SeniorDeputyRecord.User__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SeniorDeputyRecord.User__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Referral_Record</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Validate_Inputs</name>
+        <label>Validate Inputs</label>
+        <locationX>179</locationX>
+        <locationY>221</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReferringDeputyID</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Senior_Deputy_Data</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Sets lookup field values when creating a referral</description>
+    <interviewLabel>Set Referral lookup values {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Referral lookup values</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Senior_Deputy_Data</name>
+        <label>Get Senior Deputy Data</label>
+        <locationX>396</locationX>
+        <locationY>220</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Senior_User_ID_Valid</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ReferringDeputySeniorID</elementReference>
+            </value>
+        </filters>
+        <object>DIR_Employee__c</object>
+        <outputReference>SeniorDeputyRecord</outputReference>
+        <queriedFields>User__c</queriedFields>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the referral lookup values</description>
+        <name>Update_Referral_Record</name>
+        <label>Update Referral Record</label>
+        <locationX>772</locationX>
+        <locationY>219</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ReferralID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Sr_User_Record__c</field>
+            <value>
+                <elementReference>SrDeputyUserID</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Referral__c</object>
+    </recordUpdates>
+    <startElementReference>Validate_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Referral ID that triggers the flow</description>
+        <name>ReferralID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the Referring Deputy</description>
+        <name>ReferringDeputyID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the referring deputy&#39;s senior</description>
+        <name>ReferringDeputySeniorID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Holding point for the Senior Deputy data</description>
+        <name>SeniorDeputyRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <name>SrDeputyUserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

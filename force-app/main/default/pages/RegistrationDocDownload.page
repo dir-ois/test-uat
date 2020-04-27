@@ -1,0 +1,94 @@
+<apex:page controller="RegistrationDocDownloadController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+    <apex:slds />
+    <style>
+        th { font-size: 20px; }
+        td { font-size: 20px; }
+        a.disabled {
+        background: linear-gradient(to bottom, #A9A9A9 100%,#D3D3D3 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A9A9A9', endColorstr='#D3D3D3',GradientType=0 );
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 0;
+        padding: 8px 12px;
+        font-size: 15px;
+        line-height: 1.42857143;
+        pointer-events: none;
+        cursor: default;
+        }
+        .custPopup{
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 9999;
+        padding:10px;
+        position: absolute;
+        /* These are the 3 css properties you will need to change so the popup 
+        displays in the center of the screen. First set the width. Then set 
+        margin-left to negative half of what the width is. You can add 
+        the height property for a fixed size pop up if you want.*/
+        width: 100%;
+        margin-left: -250px;            
+        height: 300px;
+        top: 0;
+        left: 50%;
+        }
+        .popupBackground{
+        background-color:black;
+        opacity: 0.20;
+        filter: alpha(opacity = 20);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        }
+        
+    </style>
+    
+    <apex:define name="body">
+        <apex:form >
+            <div style="font-size: 16px; font-family: Open Sans; color : grey">
+                
+                <tr><apex:outputText style="font-weight: bold" value="If your child is between 15 to 30 days old, or has an impairment, please download the following form:"/>
+                    <br/>
+                    <apex:outputText style="font-style: italic;font-weight: bold" value="Medical Record Form"/>
+                    <br/>
+                    The medical form must be downloaded, printed and certified by a physician when any of these are true:
+                    <br/>
+                    &nbsp;&nbsp; •               The minor is between 15 to 30 days old
+                    <br/>
+                    &nbsp;&nbsp; •               The minor requires medical certification
+                    <br/>
+                    <apex:commandLink target="_blank" action="{!openMedicalInfoToPdf}">
+                        <apex:commandButton value="Download Medical Form"/>
+                    </apex:commandLink>
+                </tr>
+                
+                <br/><br/>
+                
+                <tr><apex:outputText style="font-weight: bold" value="If your child is in school grades 1 thru 12, please download the following form:"/>
+                    <br/>
+                    <apex:outputText style="font-style: italic;font-weight: bold" value="School Record Form"/>
+                    <br/>
+                    The school form must be downloaded, printed and certified by an authorized school official when both of the following are true:
+                    <br/>
+                    &nbsp;&nbsp; •               The minor is in grade 1 through grade 12
+                    <br/>
+                    &nbsp;&nbsp; •               AND School is in session
+                    <br/>
+                    <apex:commandLink target="_blank" action="{!openSchoolInfoToPdf}">
+                        <apex:commandButton value="Download School Form"/>
+                    </apex:commandLink>
+                    <br/>
+                    <br/>
+                    
+                    <span style="font-weight:bold"> Instructions on how to make your embossed seal visible, which is require for processing:</span>
+                    <br/>
+                    <apex:outputLink target="_blank" value="{!$Resource.embossedtip}">Embossed Seal Tip</apex:outputLink> 
+                </tr>                                                                                                 
+            </div>     
+        </apex:form>   
+    </apex:define>
+</apex:page>

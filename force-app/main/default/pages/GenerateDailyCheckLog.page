@@ -1,0 +1,41 @@
+<apex:page docType="html-5.0" controller="GenerateDailyCheckLogController" >
+    <apex:pagemessages ></apex:pagemessages>
+    <apex:form >
+        <apex:actionFunction name="getDoc" action="{!setURL}" onComplete="goToRedirect();" rerender="scriptPanel">
+            <apex:param name="urlParam" value="" assignTo="{!docURL}" />
+        </apex:actionFunction>
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <button type="button" onclick="goToDocument();">Print Daily Check Log</button>
+                <button type="button" onclick="window.location.assign('/home/home.jsp');">Close</button>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Date" for="cDate" />
+                    <apex:inputField value="{!check.Issue_Date__c}" required="true" id="cDate"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Office" for="cOffice" />
+                    <apex:inputField value="{!check.Office_Account__c}" required="true" id="cOffice"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:outputPanel id="scriptPanel">
+            <script>
+                function goToDocument(){
+                    var URL = ''
+                    +'https://composer.congamerge.com'
+                    +'?sessionId='+'{!$Api.Session_ID}'
+                    +'&serverUrl='+'{!$Api.Partner_Server_URL_290}';
+                    console.log('URL: '+URL);
+                    getDoc(URL);
+                }
+                
+                function goToRedirect(){
+                    console.log('DOC URL: '+'{!docURL}');
+                    window.open('{!docURL}');
+                }
+            </script>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

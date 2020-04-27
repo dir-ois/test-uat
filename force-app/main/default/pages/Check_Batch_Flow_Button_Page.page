@@ -1,0 +1,11 @@
+<apex:page Controller="Check_Batch_Flow_Button_Controller" tabStyle="Check_Batch__c" >
+   
+    <flow:interview name="Check_Batch_Approval" finishLocation="{!CheckBatch}" >
+        <apex:param name="startvar_check_batch_id" value="{!startvar_check_batch_id}"/>
+        <apex:param name="var_reviewed_by" value="{!var_reviewed_by}"/>
+        <apex:param name="var_check_batch_status" value="{!var_check_batch_status}"/>
+        <apex:param name="var_check_batch_name" value="{!var_check_batch_name}"/>
+        
+
+    </flow:interview>
+</apex:page>

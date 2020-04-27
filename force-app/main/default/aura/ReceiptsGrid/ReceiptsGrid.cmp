@@ -1,0 +1,100 @@
+<aura:component controller="ReceiptsGridController" access="global" implements="forceCommunity:availableForAllPageTypes">
+    <ltng:require scripts="/resource/jquery214" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:ResultPayment" action="{!c.getReceiptsFromEvent}" />
+    <aura:handler event="c:ReceiptCasePayment" action="{!c.getRctCaseDetails}" />
+    <!-- <aura:registerevent name="loadMyEvent" type="c:ResultPayment" /> -->
+    <aura:registerevent name="loadRctIndex" type="c:RIndexToCase" />
+    
+    <aura:attribute name="btnDisable" type="Boolean" default="false" />
+    <aura:attribute name="receipts" type="Receipt__c[]" />
+    <aura:attribute name="cpRecTypes" type="RecordType[]" />
+    <aura:attribute name="officeUnit" type="String" />
+    <aura:attribute name="depositeAcc" type="String" />
+    <aura:attribute name="editPage" type="Boolean" default="false" />
+    <aura:attribute name="officeUnitVal" type="String" />
+    <aura:attribute name="depositAccVal" type="String" />
+    <aura:attribute name="cases" type="DIR_Case__c[]" />
+    <aura:attribute name="caseReceiptMap" type="Map" />
+    <aura:attribute name="receiptProcess" type="Boolean" default="true"/> 
+    <aura:attribute name="caseTotal" type="Double" default="0.00" />
+    <aura:attribute name="newReceipts" type="Receipt__c[]" />
+    <!--<aura:attribute name="newReceiptCase" type="Receipt__c[]"/>-->
+    <aura:attribute name="receiptCases" type="Receipt__c[]"/>
+    <aura:attribute name="allCaseList" type="Case_Payment__c[]" />
+    
+    <div class="container">
+        <table class="slds-table slds-table--bordered">
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th class="slds-is-sortable" scope="col">Edit/Delete</th>
+                    <th class="slds-is-sortable" scope="col">Payment Type</th>
+                    <th class="slds-is-sortable" scope="col">Instrument number</th>
+                    <th class="slds-is-sortable" scope="col">Date Received</th>
+                    <th class="slds-is-sortable" scope="col">Bank Location</th>
+                    <th class="slds-is-sortable" scope="col">Deposit Account</th>
+                    <th class="slds-is-sortable" scope="col">Payor</th>
+                    <th class="slds-is-sortable" scope="col">Payment Amount</th>
+                    <th class="slds-is-sortable" scope="col">Deduction Amount</th>
+                    <!--<th class="slds-is-sortable" scope="col">Amount Remaining</th>-->
+                    <th class="slds-is-sortable" scope="col">Cases</th>
+                    <th class="slds-is-sortable" scope="col">Case Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.receipts}" var="receipt">
+                    <tr class="slds-hint-parent ">
+                        <td class="slds-cell-shrink " data-label="Select Row">
+                            <a href="#" data-index="{!receipt.Id}" onclick="{!c.editReceipt}" class="editImg">
+                                <img src="/resource/slds105/assets/icons/action/edit.svg" width="15" style="display:block" />
+                            </a>&nbsp;
+                            <a href="#" data-index="{!receipt.Id}" onclick="{!c.deleteReceipt}" class="delImg">
+                                <img src="/resource/slds105/assets/icons/action/delete.svg" width="15" style="display:block" />
+                            </a>
+                            <!-- /slds-->
+                        </td>
+                        <td> {!receipt.Payment_Type__c} </td>
+                        <td>{!receipt.Instrument_Number__c}</td>
+                        <td><ui:outputdate value="{!receipt.Date_Received__c}" format="MM/DD/YYYY" /></td>
+                        <td> {!receipt.Bank_Location__c} </td>
+                        <td> {!receipt.Deposit_Account__c} </td>
+                        <td title="{!receipt.Payor__r.Name}" class="paymNameGrid"> {!receipt.Payor__r.Name} </td>
+                        <td> <ui:outputCurrency class="slds-truncate" value="{!receipt.Payment_Amount__c}"  /> </td>
+                        <td> <ui:outputCurrency class="slds-truncate" value="{!receipt.Deduction_Amount__c}"  /> </td>
+                        <td>
+                            <ui:inputcheckbox aura:id="caseChk" class="caseChk inputArea" value="{!receipt.Case_Assigned__c}" disabled="true"  />
+                        </td>
+                        <!--<td> $<ui:outputnumber class="slds-truncate" value="{!receipt.Amount_Remaining__c}" format=".00" /> </td>-->
+                        <td>
+                            <a href="#" data-index="{!receipt.Id}" onclick="{!c.openDialog}" class="casses-btn">Add/View</a> 
+                            <!--<button class="slds-button slds-button-neutral casses-btn" onclick="{!c.openDialog}">Add/View</button> -->
+                            <!-- <ui:button data-index="{!receipt.Id}" class="slds-button slds-button-neutral casses-btn" label="Add/View" aura:id="addViewCaseBtn" press="{!c.openDialog}"/> -->
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        
+        <div class="save-btn slds">
+            <!-- <ui:button class="slds-button savebtn" label="Save" aura:id="saveReceiptsBtn" press="{!c.saveReceiptCase}"/> -->
+            <lightning:button  aura:id="saveReceiptsBtn" label="Save" value="Save" class="slds-button savebtn" disabled="{!v.btnDisable}" onclick="{!c.saveReceiptCase}"/>
+            <!-- <ui:button class="slds-button savebtn" label="Save &amp; New" aura:id="saveNewReceiptBtn" press="{!c.saveReceiptCase}"/>  -->
+            <lightning:button  aura:id="saveNewReceiptBtn" label="Save &amp; New" value="Save &amp; New" class="slds-button savebtn" disabled="{!v.btnDisable}" onclick="{!c.saveReceiptCase}"/>
+            <!-- <ui:button class="slds-button savebtn" label="Cancel" aura:id="cancelBtn" press="{!c.cancelReceipts}"/>  -->
+            <lightning:button  aura:id="cancelBtn" label="Cancel" value="Cancel" class="slds-button savebtn" disabled="{!v.btnDisable}" onclick="{!c.cancelReceipts}"/>
+        </div>
+        
+        <div><label id="lbl_SaveErr"></label></div>
+    </div>
+    <!--
+    <div class="spinner uiSpinner" role="alert" data-aura-rendered-by="11:2;a" data-aura-class="uiSpinner">
+        <div data-aura-rendered-by="12:2;a">
+            <span data-aura-rendered-by="15:2;a" class="uiImage" data-aura-class="uiImage">
+                <img data-aura-rendered-by="13:2;a" src="/auraFW/resources/aura/images/spinner.gif" class="spinner-img" alt="Loading" />
+            </span>
+        </div>
+    </div>
+	-->
+    
+</aura:component>

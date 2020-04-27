@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Delete_fault</name>
+        <label>Delete fault</label>
+        <locationX>425</locationX>
+        <locationY>622</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>MeetingId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Attempted to delete events on this meeting and failed. Please delete them manually.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Check_for_Valid_Data</name>
+        <label>Check for Valid Data</label>
+        <locationX>419</locationX>
+        <locationY>114</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Validate_Data</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>MeetingId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_events_associated_with_Meeting</targetReference>
+            </connector>
+            <label>Validate Data</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks to see that there are events to delete before calling delete</description>
+        <name>Events_to_delete</name>
+        <label>Events to delete?</label>
+        <locationX>423</locationX>
+        <locationY>357</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>svarEvents</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fast_Delete_Events</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Updated to check that events exist on meeting before attempting delete.</description>
+    <interviewLabel>Meetings - Delete events {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Meetings - Delete events</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Fast_Delete_Events</name>
+        <label>Fast Delete - Events</label>
+        <locationX>422</locationX>
+        <locationY>488</locationY>
+        <faultConnector>
+            <targetReference>Delete_fault</targetReference>
+        </faultConnector>
+        <inputReference>svarEvents</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_all_events_associated_with_Meeting</name>
+        <label>Get all events associated with Meeting</label>
+        <locationX>420</locationX>
+        <locationY>250</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Events_to_delete</targetReference>
+        </connector>
+        <filters>
+            <field>WhatId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>MeetingId</elementReference>
+            </value>
+        </filters>
+        <object>Event</object>
+        <outputReference>svarEvents</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <startElementReference>Check_for_Valid_Data</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>MeetingId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+    <variables>
+        <name>svarEventIds</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Event</objectType>
+    </variables>
+    <variables>
+        <name>svarEvents</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Event</objectType>
+    </variables>
+    <variables>
+        <name>test</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Event</objectType>
+    </variables>
+    <variables>
+        <name>varEventId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Event</objectType>
+    </variables>
+    <variables>
+        <name>varEventLoop</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Event</objectType>
+    </variables>
+</Flow>

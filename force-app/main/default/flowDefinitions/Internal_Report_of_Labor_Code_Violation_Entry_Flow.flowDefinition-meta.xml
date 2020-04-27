@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>22</activeVersionNumber>
+    <description>Fixed bug attaching RLLV&#39;s to closed BOFE cases</description>
+    <masterLabel>Internal RLLV - Wage Update</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,536 @@
+<apex:page controller="NewViolation" showheader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" action="{!LoadCase}" docType="html-5.0">
+
+    <html>
+        <head>    
+            <link rel="stylesheet" href="{!URLFOR($Resource.jquery_mobile, 'jquery.mobile-1.4.5.min.css')}" id="cssId"/>
+            <script src="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"></script>
+            <script src="{!URLFOR($Resource.jquery_mobile,'jquery.mobile-1.4.5.min.js')}"></script>
+            
+            <!-- Added for pageMessages Style -->
+            <link class="user" href="/sCSS/45.0/sprites/1550791836000/Theme3/default/gc/elements.css" rel="stylesheet" type="text/css"/>
+                                            
+            <meta http-equiv="Cache-Control" content="no-store" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        </head>
+        <style type="text/css">
+            .messageCell h4 {
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;}
+        </style>
+        <body>
+            
+            <apex:pageMessages rendered="{!IF(rtError,true,false)}" />
+            <apex:form id="theForm" rendered="{!IF(rtError,false,true)}">
+                <apex:pageBlock >
+                        <div data-role="page" data-rel="dialog">
+                            <div data-role="header" data-add-back-btn="true">
+                                <h1>
+                                    Add Case Issues: {!c.Case_Number__c}
+                                </h1>
+                            </div>
+                            
+                            <div data-role="content" id="theDiv">
+                                    <apex:outputPanel id="step1OP">
+                                        <apex:outputPanel rendered="{!NOT(secondStep)}">
+                                            <div id="firststepDiv">
+                                                <input id="filterTB" type="text" placeholder="Enter Search Term(s)" />
+                                                <script type="text/javascript">
+                                                    $(function() {
+                                                        SearchCI();
+                                                    });
+                                                
+                                                    function SearchCI(){
+                                                        $('#filterTB').keydown(function (e) {
+                                                            var code = (e.keyCode ? e.keyCode : e.which);
+                                                            if (code == 13) {
+                                                                e.preventDefault();
+                                                                return;
+                                                            }
+                                                        }); 
+                                                        $('#filterTB').keyup(function (e) {
+                                                            var needle = $('#filterTB').val().toLowerCase();
+                                                            $('#vTypelist').find('.panelClass').each(function() {
+                                                                $(this).hide();
+                                                                var haystack = $(this).find('.vTypeNameClass').text().toLowerCase();
+                                                                if (haystack.indexOf(needle) > -1) {
+                                                                    $(this).show();
+                                                                }
+                                                            });
+                                                        });
+                                                    }
+                                                </script>
+                                                <apex:actionFunction name="saveVarValues" action="{!saveVarValues}" rerender="urlParamStr">
+                                                    <apex:param name="urlParamStr" value="" id="urlParamStr" assignTo="{!valueString}"/>
+                                                </apex:actionFunction>
+                                                <apex:actionFunction name="addViolation" action="{!addViolation}" onComplete="$('#firststepDiv').trigger('create');" rerender="violId, DetailsText2, pgMsgs">
+                                                    <apex:param name="violId" value="" id="violId" assignTo="{!violationId}"/>
+                                                </apex:actionFunction>
+                                                <apex:actionFunction name="removeViolation" action="{!removeViolation}" onComplete="$('#firststepDiv').trigger('create'); CalculateTotal();" rerender="violIndex, DetailsText2, pgMsgs">
+                                                    <apex:param name="violId" value="" id="violIndex" assignTo="{!violationIndex}"/>
+                                                </apex:actionFunction>
+                                                
+                                                <apex:actionFunction name="reviseCaseIssue" action="{!BackTo1stStep}" onComplete="$('#firststepDiv').trigger('create');" rerender="step1OP,step2OP, pgMsgs">
+                                                    
+                                                </apex:actionFunction>
+                                                
+                                                <script type="text/javascript">
+                                                    Function showAlert(VioID){
+                                                        alert(VioID);
+                                                    }
+                                                </script>
+                                                
+                                                <div style="overflow-y: scroll; border: 1px solid black;" class="violDiv">
+                                                    <fieldset data-role="controlgroup" data-mini="true" data-corners="false" id="vTypelist" style="margin: 0px; width:95%;">
+                                                        <apex:repeat value="{!ViolationsTypes}" var="vType">
+                                                            <apex:outputPanel styleClass="panelClass">
+                                                                <h3>
+                                                                    <apex:commandLink value="Add" onClick="doAddViolation('{!vType.vType.Id}'); return false;" rerender="pgMsgs"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <apex:outputText value="{!vType.vType.Name} - {!vType.vType.Wizard_Search_Text__c}" id="vTypeNameId" styleClass="vTypeNameClass"/><br/>
+                                                                </h3>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                {!vType.vType.Help_Text__c}
+                                                                <br/>
+                                                                <!--  
+                                                                <apex:inputCheckbox id="cTypeSelect" value="{!vType.selected}"> 
+                                                                    <apex:actionSupport event="onchange" action="{!DisplayDetails}" rerender="DetailsText, DetailsText2" oncomplete="$('#firststepDiv').trigger('create');" />
+                                                                </apex:inputCheckbox>
+                                                                
+                                                                
+                                                                
+                                                                <label class="ctype-label" for="{!$Component.cTypeSelect}">{!vType.vType.Name} - {!vType.vType.Civil_Penalty_Section__c} - {!vType.vType.Violation_Type__c} - {!vType.vType.Help_Text__c}</label>
+                                                                -->
+                                                            </apex:outputPanel>
+                                                        </apex:repeat>
+                                                    </fieldset>
+                                                </div>
+                                            <apex:outputPanel id="DetailsText2">
+                                                <apex:outputPanel rendered="{!SelectedSize > 0}"><br /><br /></apex:outputPanel>
+                                                
+                                                <ul data-role="listview" id="detailsList">
+                                                    <apex:repeat value="{!SelectedTypes}" var="selType">
+                                                        <li style="white-space: normal;">
+                                                            <b>{!selType.vType.Name} - {!selType.vType.Civil_Penalty_Section__c} - {!selType.vType.Violation_Type__c} - {!selType.vType.Help_Text__c} </b>
+                                                            <br />{!selType.vType.Violation_Text__c}
+                                                            <br /><br />
+                                                            <small>
+                                                                <b>
+                                                                    <apex:commandLink value="Remove" onClick="removeViolation('{!selType.indexCounter}'); return false;" html-data-theme="b"/>
+                                                                    <br/>
+                                                                    <apex:repeat value="{!selType.vtvWrapperList}" var="vtv" id="testID">
+                                                                        <apex:variable value="{!selType.indexCounter}{!vtv.indexCounter}" var="vtvIdentifier" />
+                                                                        <apex:outputPanel >
+                                                                        {!vtv.vTypeVar.Description__c} :
+                                                                        <br/>
+                                                                        </apex:outputPanel>
+                                                                        <apex:outputPanel rendered="{!vtv.isUserInput}">
+                                                                            <!--  <apex:inputText value="{!vtv.varValue}" onchange="alert('{!vtvIdentifier}');" />-->
+                                                                            <input type="text" id="input{!vtvIdentifier}" onchange="valChanged{!vtvIdentifier}();"  value="{!vtv.varValue}"/><br />
+                                                                        </apex:outputPanel>
+                                                                        <apex:outputPanel rendered="{!NOT(vtv.isUserInput)}">
+                                                                            <output name="output{!vtvIdentifier}" id="output{!vtvIdentifier}">{!vtv.varValue}</output><br/><br/>
+                                                                        </apex:outputPanel>                                                         
+                                                                        <apex:inputHidden id="selVal" value="{!vtv.varValue}" />
+                                                                        <input type="hidden" id="selVal{!vtvIdentifier}" value="{!vtv.varValue}" />
+                                                                        <script>
+                                                                            function valChanged{!vtvIdentifier}() {
+                                                                                var varVal = document.getElementById('input{!vtvIdentifier}').value;
+                                                                                document.getElementById('selVal{!vtvIdentifier}').value = varVal;
+                                                                                CalculateTotal();
+                                                                            }
+                                                                        </script>
+                                                                    </apex:repeat>
+                                                                </b>
+                                                            </small>
+                                                        </li>
+                                                        <apex:panelGrid id="subTotals" columns="3" cellspacing="10">
+                                                            <apex:outputPanel >
+                                                                Subtotal of Civil Penalties to State:&nbsp;
+                                                                <input type="text" id="selVal{!selType.indexCounter}a" value="0" readonly="true"/>
+                                                            </apex:outputPanel>
+                                                            <apex:outputPanel >
+                                                                Subtotal of Amount Payable to Employee(s):&nbsp;
+                                                                <input type="text" id="selVal{!selType.indexCounter}w" value="0" readonly="true"/>
+                                                            </apex:outputPanel>
+                                                            <apex:outputPanel >
+                                                                Subtotal of Interest Amount Payable to Employee(s):&nbsp;
+                                                                <input type="text" id="selVal{!selType.indexCounter}iw" value="0" readonly="true"/>
+                                                            </apex:outputPanel>
+                                                        </apex:panelGrid>
+                                                        <hr color="Black" width="100%" size="6"/>
+                                                    </apex:repeat>
+                                                </ul>
+                                                <br /><br />
+                                                <apex:pageMessages id="pgMsgs"></apex:pageMessages>
+                                                <small><b>
+                                                Total Case Issue Count: {!SelectedSize}<br />
+                                                Total Amount of Civil Penalties to State: $<span id="totalAmount">0</span><br />
+                                                Total Amount Payable to Employee(s): $<span id="totalWages">0</span><br />
+     						                    Total Amount Payable to Employee(s): $<span id="totalInterestWages">0</span>
+                                                </b></small><br /><br />
+                                                <apex:inputHidden id="totalAmountOnPage" value="{!TotalAmount}" />
+                                                <apex:inputHidden id="totalWagesOnPage" value="{!TotalWages}" />
+                                                <apex:inputHidden id="totalInterestWagesOnPage" value="{!TotalInterestWages}" />
+                                                <script>
+                                                    var paramStr;
+                                                    function CalculateTotal() {
+                                                        var totalA = 0;
+                                                        var totalW = 0;
+                                                        var totalIW = 0;
+                                                        paramStr = '';
+                                                        <apex:repeat value="{!SelectedTypes}" var="selType">
+                                                            var formulaStrA = String('{!selType.formula}');
+                                                            var formulaStrW = String('{!selType.wageformula}');
+                                                       		var formulaStrIW = String('{!selType.wageinterestformula}');
+                                                            var formulaStrAP = String('{!selType.amountPaidFormula}');
+                                                            var formulaStrAE = String('{!selType.amountEarnedFormula}');
+                                                            var totalAP = 0;
+                                                            var totalAE = 0;
+                                                            <apex:repeat value="{!selType.vtvWrapperList}" var="vtv">
+                                                                var vtvDataType = String('{!vtv.dataType}');
+                                                                var sId = String('{!vtv.vtvName}');
+                                                                var sVal = document.getElementById('selVal{!selType.indexCounter}{!vtv.indexCounter}').value;
+                                                                if(vtvDataType == 'Currency' || vtvDataType == 'Decimal' || vtvDataType == 'Integer'){
+                                                                    while(sVal.indexOf(',') > -1){
+                                                                        sVal = sVal.replace(',', '');
+                                                                    }
+                                                                    if(isNaN(parseFloat(sVal))) sVal = 0;
+                                                                    while(formulaStrA != '' && formulaStrA.indexOf(sId) > -1){
+                                                                        formulaStrA = formulaStrA.replace(sId, sVal);
+                                                                    }
+                                                                    while(formulaStrW != '' && formulaStrW.indexOf(sId) > -1){
+                                                                        formulaStrW = formulaStrW.replace(sId, sVal);
+                                                                    }
+                                                                    while(formulaStrIW != '' && formulaStrIW.indexOf(sId) > -1){
+                                                                        formulaStrIW = formulaStrIW.replace(sId, sVal);
+                                                                    }
+                                                                    while(formulaStrAP != '' && formulaStrAP.indexOf(sId) > -1){
+                                                                        formulaStrAP = formulaStrAP.replace(sId, sVal);
+                                                                    }
+                                                                    while(formulaStrAE != '' && formulaStrAE.indexOf(sId) > -1){
+                                                                        formulaStrAE = formulaStrAE.replace(sId, sVal);
+                                                                    }
+                                                                }
+                                                                if(sVal == '') sVal = '[No Value]';
+                                                                paramStr += {!selType.indexCounter}{!vtv.indexCounter}+':'+sVal+'::';
+                                                            </apex:repeat>
+                                                            
+                                                            var a;
+                                                            if(formulaStrA != ''){
+                                                                totalA += eval(formulaStrA);
+                                                                var varValA = document.getElementById('selVal{!selType.indexCounter}a');
+                                                                a = eval(formulaStrA).toFixed(2);
+                                                                if(isNaN(parseFloat(a))) a = 0;
+                                                                varValA.value = a;
+                                                            }
+                                                            else{
+                                                                a = 0;
+                                                            }
+                                                            
+                                                            var w;
+                                                            if(formulaStrW != ''){
+                                                                totalW += eval(formulaStrW);
+                                                                var varValW = document.getElementById('selVal{!selType.indexCounter}w');
+                                                                w = eval(formulaStrW).toFixed(2);
+                                                                console.log(w);
+                                                                if(isNaN(parseFloat(w))) w = 0;
+                                                                varValW.value = w;
+                                                            }
+                                                            else{
+                                                                w = 0;
+                                                            }
+                                                             
+                                                            var iw;
+                                                            if(formulaStrIW != ''){
+                                                                totalIW += eval(formulaStrIW);
+                                                                var varValW = document.getElementById('selVal{!selType.indexCounter}iw');
+                                                                iw = eval(formulaStrIW).toFixed(2);
+                                                                console.log(iw);
+                                                                if(isNaN(parseFloat(iw))) iw = 0;
+                                                                varValW.value = iw;
+                                                            }
+                                                            else{
+                                                                iw = 0;
+                                                            }
+                                                            
+                                                            var AP;
+                                                            if(formulaStrAP != ''){
+                                                                AP = eval(formulaStrAP).toFixed(2);
+                                                                console.log(AP);
+                                                                if(isNaN(parseFloat(AP))) AP = 0;
+                                                            }
+                                                            else{
+                                                                AP = 0;
+                                                            }
+                                                            
+                                                            var AE;
+                                                            if(formulaStrAE != ''){
+                                                                AE = eval(formulaStrAE).toFixed(2);
+                                                                console.log(AP);
+                                                                if(isNaN(parseFloat(AE))) AE = 0;
+                                                            }
+                                                            else{
+                                                                AE = 0;
+                                                            }
+                                                            console.log('AP: '+AP);
+                                                            console.log('AE: '+AE);
+                                                            paramStr += {!selType.indexCounter}+'TOTALW'+':'+w+'::';
+                                                            paramStr += {!selType.indexCounter}+'TOTALIW'+':'+iw+'::';
+                                                            paramStr += {!selType.indexCounter}+'TOTALA'+':'+a+'::';
+                                                            paramStr += {!selType.indexCounter}+'AMTP'+':'+AP+'::';
+                                                            paramStr += {!selType.indexCounter}+'AMTE'+':'+AE+'::';
+                                                        </apex:repeat>
+                                                        var sfCtrl = document.getElementById('{!$Component.totalAmountOnPage}');
+                                                        if(isNaN(totalA)) totalA = 0;
+                                                        $(sfCtrl).val(totalA);
+                                                        $('#totalAmount').text(totalA.toFixed(2));
+                                                        
+                                                        var sfCtrl2 = document.getElementById('{!$Component.totalWagesOnPage}');
+                                                        if(isNaN(totalW)) totalW = 0;
+                                                        $(sfCtrl2).val(totalW);
+                                                        $('#totalWages').text(totalW.toFixed(2));
+                                                        
+                                                        var sfCtrl3 = document.getElementById('{!$Component.totalInterestWagesOnPage}');
+                                                        if(isNaN(totalIW)) totalIW = 0;
+                                                        $(sfCtrl3).val(totalIW);
+                                                        $('#totalInterestWages').text(totalIW.toFixed(2));
+                                                        paramStr = paramStr.substr(0, paramStr.length - 2);
+                                                        saveVarValues(paramStr);
+                                                    }
+                                                    
+                                                    function doSaveVarValues(){
+                                                        console.log(paramStr);
+                                                        saveVarValues(paramStr);
+                                                    }
+                                                    
+                                                    function doAddViolation(thisId){
+                                                        addViolation(thisId);
+                                                    }
+                                                    
+                                                    function selectAllCbs(thisCB){
+                                                        var cbs = document.getElementsByTagName('input');
+                                                        for(var i=0; i < cbs.length; i++){
+                                                            if(cbs[i].type == 'checkbox'){
+                                                                cbs[i].checked = thisCB.checked;
+                                                            }
+                                                        }
+                                                        //$('#lookupHTML').trigger('create');
+                                                        $('#liabilitylist').controlgroup();
+                                                    }
+                                                    
+                                                    function calcPercentTotal(){
+                                                        var totalPercent = parseFloat(0);
+                                                        var inpts = document.getElementsByTagName('input');
+                                                        for(var i=0; i < inpts.length; i++){
+                                                            if(inpts[i].id.contains('propShare')){
+                                                                var pVal = inpts[i].value;
+                                                                if(isNaN(parseFloat(pVal))){ 
+                                                                    pVal = 0;
+                                                                }
+                                                                totalPercent += parseFloat(pVal);
+                                                                if(totalPercent > 100){
+                                                                    alert('You cannot exceed 100% when assigning proportaionate share.');
+                                                                    totalPercent -= parseFloat(pVal);
+                                                                    document.getElementById(inpts[i].id).value = 0;
+                                                                    //$('#lookupHTML').trigger('create');
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    
+                                                    function disableButtons(){
+                                                        $('[type="submit"]').button('disable');
+                                                        $('[type="submit"]').button('refresh');
+                                                    }
+                                                    
+                                                    CalculateTotal();
+                                                </script> 
+                                            </apex:outputPanel>
+                                            <apex:outputPanel >
+                                                <table>
+                                                    <tr>
+                                                        <td>When you've reviewed your issues for accuracy, click here before assigning liabilities:</td>
+                                                        <td><input type="checkbox" onclick="toggleAssignBtn(this);" id="validateCB"/></td>
+                                                    </tr>
+                                                </table>
+                                            </apex:outputPanel>
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="50%">
+                                                        <a href="/{!c.Id}" data-role="button" data-ajax="false">Back to Case / Cancel</a>
+                                                    </td>
+                                                    <td>
+                                                        <apex:commandButton value="Assign Liabilities" styleClass="assignBtn" action="{!GoToSecondStep}" rerender="step1OP,step2OP" oncomplete="$('#selectAllcb1').controlgroup();$('#selViolationslist').controlgroup();$('#liabilitylist').controlgroup();$('#citationTypeDiv').trigger('create');$('#finalizeDiv').trigger('create');$('#lookupHTML').trigger('create');" onClick="$(this).button('disable');"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                
+                                <apex:outputPanel id="step2OP">
+                                    <apex:outputPanel rendered="{!secondStep}">
+                                    
+                                        <div style="height: 106px; overflow-y: scroll;">
+                                            <fieldset data-role="controlgroup" data-mini="true" data-corners="false" id="selViolationslist" style="margin: 0px;">
+                                                <apex:repeat value="{!SelectedTypes}" var="selType">
+                                                    <a href="#" class="ui-btn ui-corner-all">{!selType.vType.Name}</a>
+                                                </apex:repeat>
+                                            </fieldset>
+                                        </div>
+                                        
+                                        <small><b>
+                                        Total Case Issue Count: {!SelectedSize}<br />
+                                        Total Amount of Civil Penalties to State: ${!TotalAmount}<br />
+                                        Total Amount Payable to Employee(s): ${!TotalWages}<br />
+                                        Total Amount Payable to Employee(s): ${!TotalInterestWages}<br />
+                                        </b></small><br /> 
+                                        
+                                        <div id="citationTypeDiv">
+                                            <apex:selectList value="{!SelectedCitation}" size="1">
+                                                <apex:selectOption itemValue="Single" itemLabel="Single Citation One Number" />
+                                                <apex:selectOption itemValue="Multi" itemLabel="Separate Citations Multiple Citation Numbers" />
+                                                <apex:actionSupport event="onchange" rerender="lookupWrapper" action="{!emptyMethod}" oncomplete="$('#lookupHTML').trigger('create');" />
+                                            </apex:selectList>
+                                        </div>
+                                    
+                                        <br />
+                                        Select Individual(s) Liable for these case issue(s) <br /><br />
+                                        <div data-role="fieldcontain">
+                                            <fieldset data-role="controlgroup" id="selectAllcb1" data-mini="true" data-corners="false" style="margin: 0px;">
+                                                <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" onClick="selectAllCbs(this);" />
+                                                <!--<apex:actionSupport event="onchange" rerender="cbPanel" oncomplete="$('#selViolationslist').controlgroup();$('#liabilitylist').controlgroup();$('#citationTypeDiv').trigger('create');$('#finalizeDiv').trigger('create');$('#lookupHTML').trigger('create');"/>-->
+                                                <label for="checkbox-1">Select All</label>
+                                            </fieldset>
+                                        </div>
+                                        <br/>
+                                        <apex:outputPanel id="cbPanel" >
+                                            <div style="height: 250px; overflow-y: scroll;">
+                                                <fieldset data-role="controlgroup" data-mini="true" data-corners="false" id="liabilitylist" style="margin: 0px;">
+                                                    <table width="70%">
+                                                        <apex:repeat value="{!Liabilities}" var="liab">
+                                                            <tr>
+                                                                <td width="30%">
+                                                                    <apex:inputCheckbox id="liabSelect" value="{!liab.selected}" >
+                                                                        <!--  <apex:actionSupport event="onchange" rerender="lookupWrapper" action="{!emptyMethod}" oncomplete="$('#lookupHTML').trigger('create');" /> -->
+                                                                    </apex:inputCheckbox>
+                                                                    <label class="ctype-label" for="{!$Component.liabSelect}">{!liab.Name} ({!liab.Affiliation})</label>
+                                                                </td>
+                                                                <td align="right">
+                                                                    <apex:outputText value="Proportionate Share %" />
+                                                                </td>
+                                                                <td>
+                                                                    <apex:inputText value="{!liab.propShare}" id="propShare"/>
+                                                                    <!--  onChange="calcPercentTotal();" -->
+                                                                </td>
+                                                                <td align="right">
+                                                                    <apex:outputText value="Basis for Liability" />
+                                                                </td>
+                                                                <td >
+                                                                    <apex:inputField value="{!liab.thisLiabParty.Basis_for_Liability__c}" />
+                                                                </td>
+                                                            </tr>
+                                                        </apex:repeat>
+                                                    </table>
+                                                </fieldset>
+                                            </div>
+                                        </apex:outputPanel>
+                                        <apex:actionRegion >
+                                            <apex:outputPanel id="lookupWrapper">
+                                                <div id="lookupHTML">
+                                                    <apex:outputPanel id="lookupDiv" rendered="{!LegalConsultVisible}">
+                                                        Legal Consult: {!EmployeeName}
+                                                        <a href="#employeeDialog" data-rel="popup" id="employeeDialogOpener" data-position-to="window" data-role="button" data-inline="true" data-transition="pop" data-theme="b">Change</a>
+                                                        <apex:outputPanel rendered="{!ShowEmployeeDialog}">
+                                                            <script type="text/javascript">
+                                                                $(function() {
+                                                                    var clicker = document.getElementById('employeeDialogOpener');
+                                                                    $(clicker).click();
+                                                                });
+                                                            </script>
+                                                        </apex:outputPanel>
+                                                        <div data-role="popup" id="employeeDialog" data-overlay-theme="a" data-theme="c" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+                                                            <div data-role="header" data-theme="a" class="ui-corner-top">
+                                                                <h1>Search Employee</h1>
+                                                            </div>
+                                                            <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+                                                                <div style="width:370px;">
+                                                                    <apex:inputText value="{!EmployeeSearchKey}" />
+                                                                    <apex:commandLink action="{!SearchEmployee}" id="EmployeeSearchButton" html-data-role="button" html-data-theme="b" value="Search" />
+                                                                </div>
+                                                                <ul data-role="listview" data-autodividers="true" data-filter="false" data-inset="true">
+                                                                    <apex:repeat value="{!EmployeeSearchResults}" var="Employee">
+                                                                        <li>
+                                                                            <apex:commandLink action="{!SelectEmployee}" value="{!Employee.Name}">
+                                                                                <apex:param name="employeeId" value="{!Employee.Id}" />
+                                                                                <apex:param name="employeeName" value="{!Employee.Name}" /> 
+                                                                            </apex:commandLink>
+                                                                        </li>
+                                                                    </apex:repeat>
+                                                                </ul>
+                                                                <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancel</a>
+                                                            </div>
+                                                        </div>
+                                                    </apex:outputPanel>
+                                                </div>
+                                            </apex:outputPanel>
+                                        </apex:actionRegion>
+                                        <div id="finalizeDiv">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="50%">
+                                                        <apex:commandButton value="Revise Case Issues" action="{!BackTo1stStep}" rerender="step1OP,step2OP" oncomplete="$('#firststepDiv').trigger('create'); SearchCI(); docReady();" onclick="" />
+                                                        <!--<apex:commandButton value="Revise Case Issues" onclick="reviseCaseIssue();" />-->
+                                                    </td>
+                                                    <td>
+                                                        <apex:commandLink id="finalizeBtn" type="submit" action="{!Finalize}"  value="Finish Assessing Case Issues" html-data-role="button" html-data-ajax="false" styleClass="saveBtn" onClick="$('.saveBtn').addClass('ui-disabled');"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </apex:outputPanel>
+                                    
+                                </apex:outputPanel>
+                        </div>
+                    </div>
+                    <script>
+        
+                        function toggleAssignBtn(thisCB){
+                            console.log('got here: '+thisCB);
+                            $(".assignBtn").each( function(){
+                                if(thisCB.checked === true){
+                                    $(this).button('enable');
+                                    $(this).button('refresh');
+                                }
+                                else{
+                                    $(this).button('disable');
+                                    $(this).button('refresh');
+                                }
+                            });
+                        }
+        
+                        $(document).ready(function(){
+                           docReady();
+                        });
+                    
+                        function docReady(){
+                            var ht = screen.availHeight * .45;
+                            $(".violDiv").css("height", ht+"px");
+                            console.log("{!getRTError}");
+                            $(".assignBtn").each( function(){
+                                $(this).button('disable');
+                            });
+                            if("{!getRTError}" === "true"){
+                                alert("There was an error with the Record Type mapping.\nIf you have recently added or updated Case Management Record Type, please update the 'Record Type Mapping' Custom Settings table to with your changes.");
+                            }
+                            $("#filterTB").focus().val(inputText).prop('selectionStart', 0).prop('selectionEnd', 0);
+                        }
+                    </script>
+                </apex:pageBlock>
+            </apex:form>
+        </body>
+    </html>
+
+</apex:page>

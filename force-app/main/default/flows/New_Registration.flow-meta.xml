@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>entered_flow</name>
+        <label>entered flow</label>
+        <locationX>366</locationX>
+        <locationY>107</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>valid_inputs</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varRegistrationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Entered New Registration Flow</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Renewal_chatter_0</name>
+        <label>Not Renewal chatter</label>
+        <locationX>1055</locationX>
+        <locationY>108</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Update_Registration</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varRegistrationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Took not renewal path</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>input_variables</name>
+        <label>input variables</label>
+        <locationX>180</locationX>
+        <locationY>108</locationY>
+        <assignmentItems>
+            <assignToReference>varRegistrationRecTypeName</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varRegistrationName</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varUserProfileType</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_Renewal</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_LR_Number</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>entered_flow</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Imported_check</name>
+        <label>Imported?</label>
+        <locationX>920</locationX>
+        <locationY>331</locationY>
+        <defaultConnector>
+            <targetReference>Update_Registration</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Imported</defaultConnectorLabel>
+        <rules>
+            <name>Imported</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varImportedFrom</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varImportedFrom</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <label>Imported</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>set the account linked</description>
+        <name>Public_Works</name>
+        <label>Public Works</label>
+        <locationX>1353</locationX>
+        <locationY>324</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Public_works_record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegistrationRecTypeName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Public Works</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Account_linked</targetReference>
+            </connector>
+            <label>Public works record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Renewal</name>
+        <label>Renewal?</label>
+        <locationX>642</locationX>
+        <locationY>254</locationY>
+        <defaultConnector>
+            <targetReference>Imported_check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not a Renewal</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Renewal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_Renewal</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Yes Renewal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>valid_inputs</name>
+        <label>valid inputs</label>
+        <locationX>186</locationX>
+        <locationY>254</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegistrationName</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varRegistrationRecTypeName</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varRegistrationID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varUserProfileType</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Renewal</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Public Works Updates to set the Already linked on all new and non imported registrtations
+
+Handles all actions for new registrations
+- Skips updating reg if imported
+- Add CPS
+- Add EWP, Automated process = Online Type
+- change EWP record type label and api</description>
+    <formulas>
+        <description>Generates the registration number based on the registration record type name</description>
+        <name>flaGenerateRegNumber</name>
+        <dataType>String</dataType>
+        <expression>CASE( {!varRegistrationRecTypeName},
+&quot;Car Wash&quot;, &quot;CW-&quot;,
+&quot;Farm Labor&quot;, &quot;FL-&quot;,
+&quot;Janitorial&quot;, &quot;JS-&quot;,
+&quot;Public Works&quot;, &quot;PW-&quot;,
+&quot;Child Performer Services&quot;, &quot;CPS-&quot;,
+&quot;Entertainment Work&quot;, &quot;EWP-&quot;,
+&quot;Talent Agency&quot;, &quot;TA-&quot;,
+&quot;&quot;)
+&amp; {!varRegistrationName}</expression>
+    </formulas>
+    <formulas>
+        <description>Determines the submission type using the profile type as the input.</description>
+        <name>flaSubmissionType</name>
+        <dataType>String</dataType>
+        <expression>IF ( {!varUserProfileType} = &#39;CspLitePortal&#39;, &#39;Online&#39;, IF( {!varUserProfileType} = &#39;AutomatedProcess&#39; &amp;&amp; {!varRegistrationRecTypeName} = &#39;Entertainment Work&#39;, &#39;Online&#39;, &#39;Paper&#39;))</expression>
+    </formulas>
+    <interviewLabel>New Registration {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>New Registration</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>sets the account linked for all new and non migrated ones.</description>
+        <name>Set_Account_linked</name>
+        <label>Set Account linked</label>
+        <locationX>1360</locationX>
+        <locationY>90</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varRegistrationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>regLinked__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>License_Registration__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Registration</name>
+        <label>Update Registration</label>
+        <locationX>1117</locationX>
+        <locationY>329</locationY>
+        <connector>
+            <targetReference>Public_Works</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varRegistrationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>License_Registration_Number__c</field>
+            <value>
+                <elementReference>flaGenerateRegNumber</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submission_Type__c</field>
+            <value>
+                <elementReference>flaSubmissionType</elementReference>
+            </value>
+        </inputAssignments>
+        <object>License_Registration__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>valid_inputs</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>sobject variable for updating multiple fields on a registration</description>
+        <name>objRegistration</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>License_Registration__c</objectType>
+    </variables>
+    <variables>
+        <description>License/Registration Number</description>
+        <name>var_LR_Number</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_Renewal</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>imported from flag from initiating registration</description>
+        <name>varImportedFrom</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varRegistrationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Name field from registration</description>
+        <name>varRegistrationName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Rec Type from registration record</description>
+        <name>varRegistrationRecTypeName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>User type from profile of creating user</description>
+        <name>varUserProfileType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

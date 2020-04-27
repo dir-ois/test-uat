@@ -1,0 +1,36 @@
+<apex:page controller="CommunityPaymentConfirmation" title="Confirm Pay Credit" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li class="active">My Registrations</li>
+                    <li class="active">Submit Payment</li>
+                </ol>
+                <h1>Payment Confirmation</h1>
+                <br/>
+                <apex:outputPanel id="errorPanel">
+                    <div class="row mb">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div style="display:{!errorDisplay}" class="{!errortype}">
+                                <center>{!errormessage}</center> 
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </apex:outputPanel>
+               
+                <br />
+                <div class="row mb">
+                    <div class="col-lg-5"></div>
+                    <div class="col-lg-2">
+                        <apex:commandLink action="{!BackToRegistrations}" value="Back To Registrations" style="text-decoration:none;" styleclass="btn btn-custom" rerender="errorPanel" />
+                    </div>
+                    <div class="col-lg-5"></div>
+                    
+                </div>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

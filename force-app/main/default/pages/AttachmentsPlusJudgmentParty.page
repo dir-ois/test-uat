@@ -1,0 +1,256 @@
+<apex:page standardController="Liability_Judgement__c" extensions="AttachmentsPlusController" showHeader="false" sideBar="false" docType="html-5.0" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+<html>
+        <head>    
+            <link rel="stylesheet" href="{!URLFOR($Resource.jquery_mobile, 'jquery.mobile-1.4.5.min.css')}" id="cssId"/>
+            <script src="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"></script>
+            <script src="{!URLFOR($Resource.jquery_mobile,'jquery.mobile-1.4.5.min.js')}"></script>
+            
+        
+            <meta http-equiv="Cache-Control" content="no-store" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        </head>
+        
+        <body>
+            <apex:form id="theForm">
+                <apex:messages />
+                <apex:outputPanel id="thePanel" />
+                <div data-role="page" data-rel="dialog">
+                    <apex:Messages />
+                    <div data-role="content" id="theDiv">
+                        <div id="searchDiv">
+                            <table>
+                                <tr>
+                                    <td align="left">
+                                        <input id="filterTB" type="text" placeholder="Search for Attachments..." />
+                                    </td>
+                                    <td align="right">
+                                        <a href="#popupNewAtt" data-rel="popup" class="ui-btn ui-btn-inline" data-theme="b">New Attachment</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <script type="text/javascript">
+                                $(function() {
+                                    $('#filterTB').keydown(function (e) {
+                                        var code = (e.keyCode ? e.keyCode : e.which);
+                                        if (code == 13) {
+                                            e.preventDefault();
+                                            return;
+                                        }
+                                    }); 
+                                    $('#filterTB').keyup(function (e) {
+                                        var needle = $('#filterTB').val().toLowerCase();
+                                        $('#attachmentsPlus').find('.attachmentsSection').each(function() {
+                                            $(this).hide();
+                                            var haystack = $(this).find('.attName').text().toLowerCase();
+                                            if (haystack.indexOf(needle) > -1) {
+                                                $(this).show();
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div style="height: 350px; overflow-y: scroll;">
+                            <fieldset data-role="controlgroup" data-mini="true" data-corners="false" id="attPlusSelectList" style="margin: 0px; width:95%;">
+                                    <apex:outputPanel >
+                                        <div data-role="collapsible-set" id="attachmentsPlus">
+                                            <apex:repeat value="{!typeMap}" var="type">
+                                                <div data-role="collapsible" data-collapsed="false" class="attachmentsSection">
+                                                    <h3>{!type}</h3>
+                                                    <table cellSpacing="20%" data-role="table" class="ui-responsive ui-shadow" id="myTable">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Action</th>
+                                                                <th>Name</th>
+                                                                <th>Description</th>
+                                                                <th>Attorney/Client Privilege</th>
+                                                                <th>Confidential</th>
+                                                                <th>Not Subject to PRA</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <apex:repeat value="{!typeMap[type]}" var="att">
+                                                                <tr class="attName">
+                                                                    <td>
+                                                                        <apex:commandLink value="View" onClick="window.open('{!baseURL}'+'/servlet/servlet.FileDownload?file='+'{!att.Attachment_ID__c}');"/>
+                                                                        &nbsp; | &nbsp;
+                                                                        <a href="#popup{!att.Id}" data-rel="popup">Edit</a>
+                                                                        &nbsp; | &nbsp;
+                                                                        <a href="#popupDelete{!att.Id}" data-rel="popup">Delete</a>
+                                                                    </td>
+                                                                    <td >
+                                                                        <apex:outputText value="{!att.Attachment_Name__c}" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <apex:outputText value="{!att.Description__c}" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <apex:outputField value="{!att.Attorney_Client_Privilege__c}" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <apex:outputField value="{!att.Confidential__c}" />
+                                                                    </td>
+                                                                    <td>
+                                                                        <apex:outputField value="{!att.Not_Subject_to_PRA__c}" />
+                                                                    </td>
+                                                                </tr>
+                                                            </apex:repeat>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <apex:repeat value="{!typeMap[type]}" var="att2">
+                                                    <div data-role="popup" id="popupDelete{!att2.Id}" data-position-to="window" data-transition="flow" data-overlay-theme="a">
+                                                        <div data-role="header">
+                                                            <h1>Are You Sure?</h1>
+                                                        </div>
+                                                        <div data-role="main" class="ui-content">
+                                                            <p>You will permanently delete this attachment. Do you wish to proceed?</p>
+                                                            <table>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Cancel</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="ui-btn ui-corner-all ui-shadow ui-btn-inline" onclick="doDeleteAction('{!att2.Id}');">Continue</button>
+                                                                        
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div data-role="popup" id="popup{!att2.Id}" data-position-to="window" data-transition="flow" data-overlay-theme="a" data-dismissible="false">
+                                                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                        <h3>Edit Attachment</h3>
+                                                        <table cellSpacing="20%" data-role="table" class="ui-responsive ui-shadow">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Description</th>
+                                                                    <th>Type</th>
+                                                                    <th>Attorney/Client Privilege</th>
+                                                                    <th>Not Subject to PRA</th>
+                                                                    <th>Confidential</th>
+                                                                    
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td id="editAttName{!att2.Id}">
+                                                                        <apex:inputField value="{!att2.Attachment_Name__c}" />
+                                                                    </td>
+                                                                    <td id="editAttDesc{!att2.Id}">
+                                                                        <apex:inputField value="{!att2.Description__c}" />
+                                                                    </td>
+                                                                    <td id="editAttType{!att2.Id}">
+                                                                        <apex:inputField value="{!att2.Type__c}" />
+                                                                    </td>
+                                                                    <td id="editAttClientPriv{!att2.Id}">
+                                                                        <apex:inputField value="{!newAttPlus.Attorney_Client_Privilege__c}" />
+                                                                    </td>
+                                                                    <td id="editAttPRA{!att2.Id}">
+                                                                        <apex:inputField value="{!newAttPlus.Not_Subject_to_PRA__c}" />
+                                                                    </td>
+                                                                    <td id="editAttConf{!att2.Id}">
+                                                                        <apex:inputField value="{!newAttPlus.Confidential__c}" />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div align="center">
+                                                            <apex:commandButton value="Save" onclick="doEditAction('{!att2.Id}');" />
+                                                        </div>
+                                                    </div>
+                                                </apex:repeat>
+                                            </apex:repeat>
+                                        </div>
+                                    </apex:outputPanel>
+                                </fieldset>
+                            </div>
+                            <div data-role="popup" id="popupNewAtt" data-position-to="window" data-transition="flow" data-overlay-theme="a" data-dismissible="false">
+                                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                <h3>New Attachment</h3>
+                                <apex:inputFile value="{!body}" filename="{!fname}" id="file"/><br/><br/>
+                                <table cellSpacing="20%" data-role="table" class="ui-responsive ui-shadow">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Type</th>
+                                            <th>Attorney Client Privilege</th>
+                                            <th>Not Subject to PRA</th>
+                                            <th>Confidential</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <apex:inputField value="{!newAttPlus.Attachment_Name__c}" />
+                                            </td>
+                                            <td>
+                                                <apex:inputField value="{!newAttPlus.Description__c}" />
+                                            </td>
+                                            <td>
+                                                <apex:inputField value="{!newAttPlus.Type__c}" />
+                                            </td>
+                                            <td >
+                                                <apex:inputField value="{!newAttPlus.Attorney_Client_Privilege__c}" />
+                                            </td>
+                                            <td >
+                                                <apex:inputField value="{!newAttPlus.Not_Subject_to_PRA__c}" />
+                                            </td>
+                                            <td >
+                                                <apex:inputField value="{!newAttPlus.Confidential__c}" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br/><br/>
+                                <apex:commandLink value="Upload" action="{!saveAttachment}" html-data-role="button" html-data-ajax="false" />
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        Visualforce.remoting.timeout = 120000; // Set timeout at page level
+
+                        function doEditAction(attId){
+                            
+                            var attName = $("#editAttName"+attId).find("input").val();
+                            var attDesc = $("#editAttDesc"+attId).find("textarea").val();
+                            var attType = $("#editAttType"+attId).find("select").val();
+                            var attClientPriv = $("#editAttClientPriv"+attId).find("input").is(":checked");
+                            var attPRA = $("#editAttPRA"+attId).find("input").is(":checked");
+                            var attConf = $("#editAttConf"+attId).find("input").is(":checked");
+
+                            console.log(attClientPriv, attPRA, attConf);
+                            
+                            var jsonStr = ''
+                                +'{'
+                                    +'"Id":"'+attId+'",'
+                                    +'"Attachment_Name__c":"'+attName+'",'
+                                    +'"Description__c":"'+attDesc+'",'
+                                    +'"Type__c":"'+attType+'",'
+                                    +'"Attorney_Client_Privilege__c":"'+attClientPriv+'",'
+                                    +'"Not_Subject_to_PRA__c":"'+attPRA+'",'
+                                    +'"Confidential__c":"'+attConf+'"'
+                                +'}';
+
+                            AttachmentsPlusController.updateAttAction(jsonStr, function(results, event) {
+                                console.log(results);
+                                window.location.assign("{!reloadURL}");
+                            });
+                        }
+
+                        function doDeleteAction(attId){
+
+                            AttachmentsPlusController.deleteAttAction(attId, function(results, event) {
+                                console.log(results);
+                                window.location.assign("{!reloadURL}");
+                            });
+                        }
+                    </script>
+            </apex:form>
+        </body>
+    </html>
+</apex:page>

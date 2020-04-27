@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Not_Valid_DBA</name>
+        <label>Not Valid DBA</label>
+        <locationX>397</locationX>
+        <locationY>224</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>DBAid</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Not Valid</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>DBAid</assignToReference>
+            <name>feedItemId</name>
+        </outputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Allows testing of flow and a repository for all input variables expected for the flow</description>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>189</locationX>
+        <locationY>88</locationY>
+        <assignmentItems>
+            <assignToReference>DBAid</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1lZ0000002L6o1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>001Z000000wSF65</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Inputs_Valid</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Validates that all variables required for the flow are present and populated to prevent errors in the flow</description>
+        <name>Inputs_Valid</name>
+        <label>Inputs Valid</label>
+        <locationX>187</locationX>
+        <locationY>219</locationY>
+        <defaultConnector>
+            <targetReference>Not_Valid_DBA</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DBAid</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>VarRegrecordtype</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Public_Works</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Concatenate_DBA_Names</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Handles all processes related to DBAs
+PW Debugging Added variable for PW Reg Record Type</description>
+    <interviewLabel>DBA Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DBA Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Inputs_Valid</startElementReference>
+    <status>Active</status>
+    <subflows>
+        <description>Triggers the iterating through and concatenating all DBAs into the DBA Concatenation field on the account for use in output forms.</description>
+        <name>Concatenate_DBA_Names</name>
+        <label>Concatenate DBA Names</label>
+        <locationX>190</locationX>
+        <locationY>372</locationY>
+        <flowName>DBA_Concatenate_All_DBA_Names</flowName>
+        <inputAssignments>
+            <name>AccountID</name>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>DBAid</name>
+            <value>
+                <elementReference>DBAid</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <description>ID of the account that the DBA that triggers the flow belongs to.</description>
+        <name>AccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the DBA that started the flow</description>
+        <name>DBAid</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>VarRegrecordtype</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

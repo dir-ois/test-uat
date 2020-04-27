@@ -1,0 +1,84 @@
+<!--
+
+Author  : Robert Lucas
+
+Date    : 8/15/2016
+
+Usage   : This page allows for uploading form40 documents and creates/updates person accounts, case roles, and payees.
+
+Modified Date : 
+Comment : 
+
+-->
+
+<apex:page controller="form40ImportController" sidebar="false" showHeader="Boolean">
+    <style>
+      .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+
+      .show{
+        display:inline-block;
+
+      }
+
+      .hidden{
+        display:none;
+      }
+
+    
+
+
+    </style>
+
+    <script>
+      function startLoading(){
+          document.getElementById("ldr").className = "loader show";
+          //document.getElementById('{!$Component.theForm.pblock.upload}').setAttribute("disabled", "disabled");
+          document.getElementById('{!$Component.theForm.pblock.upload}').className = "btnDisabled";
+          document.getElementById('{!$Component.theForm.pblock.process}').className = "btnDisabled";
+      }
+
+      function closeWin() {
+          window.close();   
+      }
+
+    </script>
+    <apex:form id="theForm">
+    <apex:actionRegion id="theRegion">
+    
+      <apex:sectionHeader title="Upload data from CSV file"/>
+      
+      <apex:pageBlock id="pblock">
+          <apex:pagemessages />
+             <!--  Component to allow user to upload file from local machine -->
+             <center>
+                 <apex:inputFile value="{!contentFile}" filename="{!nameFile}" accept=".csv" /> <br />
+                 
+                 <apex:actionFunction action="{!ImportFile}" name="importCSV"  status="importing"/>
+                 
+                 <div id="ldr" class="loader hidden"></div>
+                 <br /> 
+                 <apex:outputPanel layout="block" id="theOutputPanel">
+                    <apex:commandButton rendered="{!showImportButton == true && showProcessButton == true}" action="{!ImportFile}" onclick="startLoading();" value="Upload File" id="upload" status="importing" />
+                    <apex:commandButton rendered="{!showImportButton == false && showProcessButton == true}" action="{!processFile}" onclick="startLoading();" value="Process File" id="process" status="Processing" />
+                    <apex:commandButton onclick="closeWin();" value="Close" id="close"/>
+                </apex:outputPanel>
+                
+             </center>  
+      
+      </apex:pageBlock> 
+   
+      </apex:actionRegion>  
+   </apex:form>   
+</apex:page>

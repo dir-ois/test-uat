@@ -1,0 +1,250 @@
+<apex:page controller="RegistrationDetailsController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false">
+    <style>
+        .btn-group-lg>.btn, .btn-md {
+            padding: 8px 12px;
+            font-size: 15px;
+            line-height: 1.42857143;
+            border-radius: 6px;
+        }
+        .panel {border:none;}
+        .panel-heading {
+            background:linear-gradient(to bottom, #4887c2 0%,#295b8f 100%);
+            border-color: #4887c2;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+    </style>
+    <script>
+        $j = jQuery.noConflict();
+        $j( document ).ready(function() {
+            $j('#table').DataTable({
+                select: true,
+                "bPaginate": true,
+                "bLengthChange": false,
+                "bFilter": false,
+                "bSort": false,
+                "order": [[ 1, "asc" ]],
+                "bInfo": true,
+                "bAutoWidth": true,
+                "pageLength": 10,
+                "lengthMenu": [5, 50, 100],
+                "language": {
+                  "emptyTable": "No matching records found"
+                }
+            });
+            
+            $j('#tableloc').DataTable({
+                select: true,
+                "bPaginate": true,
+                "bLengthChange": false,
+                "bFilter": false,
+                "bSort": false,
+                "order": [[ 1, "asc" ]],
+                "bInfo": true,
+                "bAutoWidth": true,
+                "pageLength": 10,
+                "lengthMenu": [5, 50, 100],
+                "language": {
+                  "emptyTable": "No matching records found"
+                }
+            });
+          $j('#tabledba').DataTable({
+                select: true,
+                "bPaginate": true,
+                "bLengthChange": false,
+                "bFilter": false,
+                "bSort": false,
+                "order": [[ 1, "asc" ]],
+                "bInfo": true,
+                "bAutoWidth": true,
+                "pageLength": 10,
+                "lengthMenu": [5, 50, 100],
+                "language": {
+                  "emptyTable": "No matching records found"
+                }
+            });   
+        });
+    </script>
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form >
+            
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li>Registration Search</li>
+                    <li class="active">Registration Detail</li>
+                </ol>
+                
+                <h1>License Registration Detail</h1>
+                 <!--<div class="row">
+                    <div class="col-xs-9"></div>
+                    <div class="col-xs-3 text-right">
+                        <a href="/RegistrationSearch/RegistrationDetailsPDF?id={!currentRegistration.Id}" target="_blank" style="text-decoration:none;" class="btn-custom btn-md">Print to PDF</a>
+                        <br />
+                    </div>
+                </div>-->
+                <br />
+<!--
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">License Registration Information</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row mb">
+                            <apex:repeat value="{!$ObjectType.License_Registration__c.FieldSets.Registration_Search_Details}" var="f"> 
+                                <div class="form-group col-md-6">
+                                    <apex:outputPanel rendered="{!IF(f.Label == 'Violation Type', true, false)}">
+                                        <div class="row">
+                                        <div class="col-xs-3 text-left">
+                                            &nbsp;&nbsp;&nbsp;<label><b>{!f.Label}:</b></label>
+                                        </div>
+                                        <div class="col-xs-9 text-left">
+                                            <apex:outputField value="{!License_Registration__c[f]}" styleclass="form-control"  />
+                                        </div>
+                                        </div>
+                                    </apex:outputPanel>
+                                    <apex:outputPanel rendered="{!IF(f.Label != 'Violation Type', true, false)}">
+                                        &nbsp;&nbsp;&nbsp;<label><b>{!f.Label}:</b></label>&nbsp;&nbsp;&nbsp;
+                                        <apex:outputField value="{!License_Registration__c[f]}" styleclass="form-control"  />
+                                    </apex:outputPanel>
+                                </div>
+                            </apex:repeat>
+                        </div>       
+                    </div>
+                </div>
+-->
+                <!--<div class="panel panel-primary">
+                    
+                    <h3 class="panel-title">Submission Details</h3>
+                    <div class="panel-body">
+                        <div class="row mb">
+                            
+                            <div class="form-group col-md-12">
+                                <table id="table" class="cell-border stripe" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th width="10%">Actions</th>
+                                            <th width="20%">Attachment Name</th>
+                                            <th width="30%">Description</th>
+                                            <th width="20%">Date Submitted</th>
+                                            
+                                            <th width="20%">Type</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <apex:repeat value="{!Attachments}" var="att"> 
+                                            <tr>
+                                               <td>
+                                                   <apex:outputPanel rendered="{!IF(att.Attachment_ID__c != null, true, false)}">
+                                                       <a href="{!URLFOR($Action.Attachment.Download, att.Attachment_ID__c)}" target="_blank">View/Download</a>
+                                                   </apex:outputPanel>
+                                                   <apex:outputPanel rendered="{!IF(att.Attachment_ID__c == null, true, false)}">
+                                                       Not available
+                                                   </apex:outputPanel>
+                                               </td>
+                                               <td>{!att.Attachment_Name__c}</td>
+                                               <td>{!att.Description__c}</td>
+                                               <td><apex:outputField value="{!att.CreatedDate}" /></td>
+                                                
+                                                <td>{!att.Type__c}</td>
+                                            </tr>
+                                        </apex:repeat>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>   
+                    </div>-->
+                    
+                    
+                 <apex:outputPanel rendered="{!IF(Bonds.size > 0, true, false)}">
+                <h3 class="panel-title">Bonds</h3>
+                <div class="panel-body">
+                    <div class="row mb">
+                        
+                        <div class="form-group col-md-12">
+                            <table id="table" class="cell-border stripe" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th width="10%">Surety Company</th>
+                                        <th width="20%">Bond Effective Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!Bonds}" var="att"> 
+                                        <tr>
+                                           <td>{!att.Name_of_Surety_Company__c }</td>
+                                           <td><apex:outputField value="{!att.Effective_Date__c}" /></td> 
+                                        </tr>
+                                    </apex:repeat>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>   
+                </div>
+                </apex:outputPanel>
+                
+                <h3 class="panel-title">Registration Locations</h3>
+                <div class="panel-body">
+                    <div class="row mb">
+                        
+                        <div class="form-group col-md-12">
+                            <table id="tableloc" class="cell-border stripe" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th width="30%">DBA Name</th>
+                                        <th width="30%">Address 1</th>
+                                        <th width="30%">Address 2</th>
+                                        <th width="13%">City</th>
+                                        <th width="13%">State</th>
+                                        <th width="13%">Zip</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!RegistrationLocation}" var="att"> 
+                                        <tr>
+                                           <td><apex:outputField value="{!att.DBA_Name__c}" /></td> 
+                                           <td><apex:outputField value="{!att.Address__c}" /></td> 
+                                           <td><apex:outputField value="{!att.Address_Line_2__c}" /></td>
+                                           <td><apex:outputField value="{!att.City__c}" /></td> 
+                                           <td><apex:outputField value="{!att.State__c}" /></td>
+                                           <td><apex:outputField value="{!att.Zip_Code__c}" /></td>
+                                           
+                                           
+                                        </tr>
+                                    </apex:repeat>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>   
+                </div>
+                <h3 class="panel-title">DBAs</h3>
+                <div class="panel-body">
+                    <div class="row mb">
+                        
+                        <div class="form-group col-md-12">
+                            <table id="tabledba" class="cell-border stripe" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th width="30%">DBA Name</th>
+                                        <th width="30%">Active</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <apex:repeat value="{!RegistrationDBAs}" var="att"> 
+                                        <tr>
+                                           <td><apex:outputField value="{!att.Name}" /></td> 
+                                           <td><apex:outputField value="{!att.Active__c}" /></td> 
+                                        </tr>
+                                    </apex:repeat>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>   
+                </div>
+
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

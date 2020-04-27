@@ -1,0 +1,73 @@
+<apex:page controller="CommunityCheckOrACH" title="Select Payment Type" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form style="margin-bottom: 75px;">
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li class="active">My Registrations</li>
+                    <li class="active">Select Payment</li>
+                </ol>
+                <h1>Select Payment</h1>
+                <apex:outputPanel id="errorPanel">
+                    {!errormessage}
+                    <div class="row mb">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <div style="display:{!errorDisplay}" class="{!errortype}">
+                                <center>{!errormessage}</center> 
+                            </div><br />
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                </apex:outputPanel>
+                <div class="row mb">
+                    <div class="col-lg-4">
+                       
+                        <b>Total amount due:&nbsp;
+                            <font color="green">
+                                <apex:outputText value="${0,number,###,###,##0.00}">
+                                    <apex:param value="{!TotalFees}" />
+                                </apex:outputText>
+                            </font>
+                        </b>
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-3">
+                        Payment Type
+                    </div>
+                    <div class="col-lg-4">
+                        
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-4">
+                        <b>Itemized fees:</b><br />
+                        <apex:repeat value="{!AllFees}" var="fee">
+                            
+                            <apex:outputText value="{!fee.Description__c}" rendered="{!IF(fee.Description__c != null, true, false)}" /> 
+                            <apex:outputText value="No Description Provided " rendered="{!IF(fee.Description__c == '', true, false)}" />&nbsp;&nbsp;
+                            
+                            <font color="green">
+                                <apex:outputText value="${0,number,###,###,##0.00}">
+                                    <apex:param value="{!fee.Fee__c}" />
+                                </apex:outputText>
+                            </font><br />
+                        </apex:repeat>
+                    </div>
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-3">
+                        <apex:selectList required="true" value="{!paymentType}" multiselect="false" size="1" styleClass="form-control">
+                            <apex:selectOptions value="{!PaymentTypes}"/>
+                        </apex:selectList>
+                    </div>
+                    <div class="col-lg-4">
+                        <apex:commandLink action="{!EnterPaymentInfo}" value="Enter Payment Info" style="text-decoration:none;" rerender="errorPanel" rendered="{!IF(TotalFees != 0, true, false)}" styleclass="btn btn-custom" />&nbsp;&nbsp;
+                        <apex:commandLink action="{!CancelExit}" value="Cancel / Exit" style="text-decoration:none;" styleclass="btn btn-custom" immediate="true" />
+                    </div>
+                </div>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

@@ -1,0 +1,67 @@
+<apex:page controller="DisplayCheckRecordsController" showheader="false" applyhtmltag="false" applybodytag="false" action="{!runMethod}" renderAs="PDF">
+    <head>
+        <style>
+            @page{
+                size: 7in 3.5in;
+                margin-top:0in;
+                margin-right:0in;
+                margin-left:0in;
+                margin-bottom:0in;
+            }
+            .content {
+                height: 3.1in;
+                width: 6.75in;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+                page-break-before: avoid;
+                line-height: 80%;
+                font-family: Courier;
+                font-size: 8pt;
+            }
+        </style>
+    </head>
+            <body>
+            <apex:repeat value="{!chkList}" var="elem" id="chkelements">
+                <table class="content">
+                <tbody>
+                    <tr>
+                        <td valign="top" style="width: 3.2in; height: .75in; padding: 17pt 10pt 0pt 2pt;">
+                            <div>
+                                {!elem.Case__r.Case_Number__c} <br />
+                                {!elem.Case__r.Employer__r.Name} <br />
+                                {!elem.Payment_Full_or_Partial__c};  {!elem.Office_Account__r.Name} <br />
+                                {!elem.Amount__c};  {!elem.Check_Number__c} <br />
+<!--                                {!elem.Care_Of__c} <br />-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" style="width: 3.3in; padding: 17pt 0pt 0pt 45pt;">
+                            <div>
+<!--                            {!elem.Payee__r.Case_Role__r.Account_Name__c} <br />-->
+                                {!elem.Payee__r.Payee_Name__c} <br />
+                                {!elem.Payee__r.Case_Role__r.Entity__r.ShippingStreet} <br />
+                                {!elem.Payee__r.Case_Role__r.Entity__r.ShippingCity}, {!elem.Payee__r.Case_Role__r.Entity__r.ShippingState} {!elem.Payee__r.Case_Role__r.Entity__r.ShippingPostalCode}
+                            </div>
+                        </td>
+                        <td valign="top" style="width: 1.1in; padding: 18pt 0pt 0pt 3pt;">
+                            <div>
+                                <apex:outputtext value="{0,date,MM-dd-yyyy}">
+                                    <apex:param value="{! TODAY() }" />
+                                </apex:outputtext>
+                            </div>
+                        </td>
+                        <td valign="top" style="width: 1.25in; padding: 18pt 0pt 0pt 0pt;">
+                            <div>
+                                <apex:outputText value="**{0, number, Currency}**">
+                                   <apex:param value="{!elem.Amount__c}" />
+                                </apex:outputText>
+                               <!-- **${!elem.Amount__c}** -->
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </apex:repeat>
+    </body>
+</apex:page>

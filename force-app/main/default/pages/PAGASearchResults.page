@@ -1,0 +1,582 @@
+<apex:page controller="PAGAResultsController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="true">
+    
+    <style>
+        .btn-group-lg>.btn, .btn-md {
+            padding: 8px 12px;
+            font-size: 15px;
+            line-height: 1.42857143;
+            border-radius: 6px;
+        }
+        .dateFormat  {
+            display:none;visibility:hidden;
+        }
+        th { font-size: 12px; }
+        td { font-size: 12px; }
+        a.disabled {
+            background: linear-gradient(to bottom, #A9A9A9 100%,#D3D3D3 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A9A9A9', endColorstr='#D3D3D3',GradientType=0 );
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 0;
+            padding: 8px 12px;
+            font-size: 15px;
+            line-height: 1.42857143;
+            pointer-events: none;
+            cursor: default;
+        }
+        
+        .mask{
+            display: none; /*This hides the mask*/
+        }
+        
+        .mask.ajax{
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative; /*required for z-index*/
+            z-index: 1000; /*puts on top of everything*/
+            background-image: url (loading-icon.png);
+        }
+    
+    </style>
+    <script type="text/javascript">
+        
+        $j = jQuery.noConflict();
+        
+        $j( document ).ready(function() {
+            
+            
+            // hides warning message div
+            document.getElementById('messageWarning').style.display = "none";
+            // calls js function as soon as the page loads
+            getRemoteCases();
+        });
+    </script> 
+    <apex:composition template="PAGATemplate">
+        
+        <apex:define name="body">
+            
+            <apex:form >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li><a href="/PagaSearch/">PAGA Case Search</a></li>
+                    <li class="active">Search Results</li>
+                </ol>
+                
+                <h1>Search Results</h1>
+                
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 col-lg-1">
+                        <label for="{!$Component.filter}">Filters</label>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-4 col-lg-3">
+                        <apex:selectList id="filter" multiselect="false" size="1" value="{!filterField}" styleclass="form-control" >
+                            <apex:actionSupport rerender="mainFilter" />
+                            <apex:selectOptions value="{!PAGASearchFields}"/>
+                        </apex:selectList> 
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-2 col-lg-2">
+                        <apex:commandLink action="{!AddFilter}" value="+ Add Filter Fields" rerender="mainFilter" />
+                        
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-2 col-lg-2">
+                        <apex:commandLink action="{!RemoveFilter}" value="- Remove Filter Fields" rerender="mainFilter" />
+                    </div>
+                </div>
+              
+                <apex:outputPanel id="mainFilter">
+                    <script type="text/javascript">
+     
+                    $j( document ).ready(function() {
+                    
+                        $j("#calYearPicker").html('')
+                        for(var i = 2010; i <= (new Date()).getFullYear(); i++){
+                            $j("#calYearPicker").append("<option value='" + i + "'>" + i + "</option>")
+                        }
+                    });
+                    </script>
+                    <div class="row mb">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                                <label for="{!$Component.searchName}"><b>Business, Lawfirm, or Individual Name</b></label>
+                                <apex:inputText id="searchName" value="{!searchString}"  styleclass="form-control" />
+                        </div>
+                        
+                        <apex:outputPanel rendered="{!filtersMap['LWDA_Number__c']}">
+                            <div class="form-group col-md-3">  
+                                <label for="{!$Component.lwdaNum}">LWDA Number</label>
+                                <apex:inputField id="lwdaNum" value="{!dummyCase.LWDA_Number__c}" styleclass="form-control" />
+                            </div>
+                        </apex:outputPanel>
+                        
+                        
+                   </div>
+                   <apex:outputPanel rendered="{!filtersMap['Date_Case_Received__c']}">
+                         
+                         <div class="row mb">   
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <div class="panel row">
+                                    <div class="panel-body">
+                                        <div class="col-xs-12">
+                                            <label><b>Date Range of PAGA Notice Submission</b></label>
+                                            <!--<span class="help-block"><i>The online system only has notices filed online on or after 9/6/2016.</i></span>-->
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label for="{!$Component.startDate}">From</label>
+                                            <apex:inputField id="startDate" value="{!dummyCase.PAGA_Investigation_Decision_Date__c}" style="width:210px;" styleclass="form-control" />
+                                            <!--<span class="input-group-addon">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </span>-->
+                                        </div>
+                                        <div class="form-group col-xs-6">
+                                            <label for="{!$Component.endDate}">Until</label>
+                                            <apex:inputField id="endDate" value="{!dummyCase.Court_Filing_Date_for_PAGA_Cases__c}" style="width:210px;" styleclass="form-control" />
+                                            <!--<span class="input-group-addon">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!OR(filtersMap['Employer__r.Name'], filtersMap['Employer_Filer__r.Name'], filtersMap['Law_Firm_for_PAGA_Case__c'])}"> 
+                        <div class="row mb">
+                            <div class="col-sm-1"></div>
+                            
+                            <apex:outputPanel rendered="{!filtersMap['Employer__r.Name']}">
+                                <div class="form-group col-md-3">
+                                    <label for="{!$Component.empname}">Employer Name</label>
+                                    <apex:inputText id="empname" value="{!employerName}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!filtersMap['Employer_Filer__r.Name']}">
+                                <div class="form-group col-md-3">
+                                    <label for="{!$Component.empfiler}">Employer Filer Name</label>
+                                    <apex:inputText id="empfiler" value="{!employerFilerName}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!filtersMap['Law_Firm_for_PAGA_Case__c']}">
+                                <div class="form-group col-md-3">
+                                    <label for="{!$Component.lawfirm}">Law Firm for PAGA Case</label>
+                                    <apex:inputText id="lawfirm" value="{!lawFirmPAGACase}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                            
+                        </div>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!OR(filtersMap['Employer__r.ShippingCity'], filtersMap['Employer__r.ShippingPostalCode'], filtersMap['Court_Case_Number_for_PAGA_Case__c'])}"> 
+                        <div class="row mb">
+                            <div class="col-sm-1"></div>
+                            
+                            <apex:outputPanel rendered="{!filtersMap['Employer__r.ShippingCity']}">
+                                <div class="form-group col-md-3">
+                                    <label for="{!$Component.empcity}">Employer City</label>
+                                    <apex:inputText id="empcity" value="{!employeeCity}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!filtersMap['Employer__r.ShippingPostalCode']}">
+                                <div class="form-group col-md-2">
+                                    <label for="{!$Component.empzip}">Employer Zip Code</label>
+                                    <apex:inputText id="empzip" value="{!employeeZipCode}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!filtersMap['Court_Case_Number_for_PAGA_Case__c']}">
+                                <div class="form-group col-md-2">
+                                    <label for="{!$Component.empcasenum}">Court Case Number</label>
+                                    <apex:inputText id="empcasenum" value="{!dummyCase.Court_Case_Number_for_PAGA_Case__c}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                            
+                        </div>
+                    </apex:outputPanel> 
+                    <apex:outputPanel rendered="{!filtersMap['Court_Type__c']}">
+                         <div class="row mb">
+                            <div class="col-sm-1"></div>
+                            <div class="form-group col-md-4">
+                                <label for="{!$Component.courttype}">Court Type</label>
+                                <apex:inputField id="courttype" value="{!dummyCase.Court_Type__c}" styleclass="form-control" />     
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="{!$Component.courtname}">Court Name</label>
+                                <apex:inputField id="courtname" value="{!dummyCase.Court_Name__c}" styleclass="form-control" />            
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+
+                    <apex:outputPanel rendered="{!filtersMap['Violation_Type__c']}"> 
+                        <div class="row mb">
+                            <div class="col-sm-1"></div>
+                            <apex:outputPanel rendered="{!filtersMap['Violation_Type__c']}">
+                                <div class="form-group col-md-10">
+                                    <label for="{!$Component.vitype}">Violation Type</label>
+                                    <apex:inputField id="vitype" value="{!dummyCase.Violation_Type__c}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                        </div>
+                    </apex:outputPanel> 
+
+
+                    <apex:outputPanel rendered="{!filtersMap['Submission_Detail_Type__c']}"> 
+                        <div class="row mb">
+                            <div class="col-sm-1"></div>
+                            <apex:outputPanel rendered="{!filtersMap['Submission_Detail_Type__c']}">
+                                <div class="form-group col-md-10">
+                                    <label for="{!$Component.subType}">Submission Type</label>
+                                    <apex:inputField id="subType" value="{!dummyCase.Submission_Detail_Type__c}" styleclass="form-control" />
+                                </div>
+                            </apex:outputPanel>
+                        </div>
+                    </apex:outputPanel> 
+                    <div class="row mb">
+                        <div class="col-xs-12  col-lg-12">
+                             <!-- calls getRemoteCases() javascript function to search, filter & load the results -->
+                             <apex:commandLink id="filterButton" onclick="getRemoteCases();" value="Edit Search" rerender="tablePanel" style="text-decoration:none;" styleclass="btn-custom btn-md" />&nbsp;&nbsp;
+                             <!-- calls BackToSearch() method in PAGAResultsController.cls to redirect back to Search page -->
+                             <apex:commandLink action="{!BackToSearch}" value="Return to Search" style="text-decoration:none;" styleclass="btn-custom btn-md" immediate="true" />&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </apex:outputPanel>
+                <div class="row" id="messageWarning">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                        <div class="alert alert-warning" id="responseErrors">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="messageLoading">
+                    <div class="col-xs-1"></div>
+                    <div classs="col-xs-8">
+                        <div class="alert alert-success" id="responseLoading" style="text-align:center;">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-xs-12 text-right">
+                        <!-- calls PrintResultsToPDF() method in PAGAResultsController.cls to open PDF file -->
+                        <apex:commandLink action="{!PrintResultsToPDF}" target="_blank" style="text-decoration:none;" styleclass="btn-custom btn-md"><span class="glyphicon glyphicon-print"></span> Print to PDF</apex:commandLink>&nbsp;&nbsp;
+                        <!-- calls PrintResultsToExcel() method in PAGAResultsController.cls to download Excel file -->
+                        <apex:commandLink action="{!PrintResultsToExcel}" target="_blank" style="text-decoration:none;" styleclass="btn-custom btn-md"><span class="glyphicon glyphicon-print"></span> Print to Excel</apex:commandLink>
+                        
+                        <br /><br />
+                    </div>
+                   
+                </div>
+                <div class="mask"></div>
+                <apex:outputPanel id="tablePanel">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="table-responsive">
+                                <table id="table" class="cell-border stripe" cellspacing="0">
+                                    <!-- table header -->
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%;">LWDA  #</th>
+                                            <th style="width:8%;">Plaintiff <br />for PAGA Case</th>
+                                            <th style="width:8%;">Employer <br />Name</th>
+                                            <th style="width:8%;">Employer <br />City</th>
+                                            <th style="width:8%;">Employer <br />ZIP Code</th>
+                                            <th style="width:8%;">Filer/Attorney <br />for PAGA Case</th>
+                                            <th style="width:8%;">Law Firm for<br /> PAGA Plaintiff</th>
+                                            <th style="width:8%;">Employer <br />Filer</th>
+                                            <th style="width:8%;">Employer <br />Filer Firm</th>
+                                            <th style="width:8%;">Court <br />Case #</th>
+                                            <th style="width:8%;">Submission <br />Date</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- table body completed wit the results returned from the apex class in getRemoteCases() javascript function -->
+                                    <tbody id="theTableBodyC"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </apex:outputPanel>
+                <script type="text/javascript">
+                    function validDate(d) {
+                        var date = new Date(d);
+                        var day = ''+date.getDate();
+                        //if( day.length == 1)day = '0'+day;
+                        var month = '' +( date.getMonth() + 1);
+                        //if( month.length == 1)month = '0'+month;
+                        var year = '' + date.getFullYear();
+                        
+                        return ((month + '/' + day + '/' + year) == d);
+                    }
+                    function getRemoteCases() {
+                        var sName = '';
+                        var lwdaNum = '';
+                        var startDate = '';
+                        var endDate = '';
+                        var employerName = '';
+                        var employerFilerName = '';
+                        var lawFirmName = '';
+                        var employerCity = '';
+                        var employerZipCode = '';
+                        var countCaseNumber = '';
+                        var cType = '';
+                        var cName = '';
+                        var vType = '';
+                        
+                        <!-- get values from the input fields by element id -->
+                        if(document.getElementById('{!$Component.searchName}') != null)
+                            sName = document.getElementById('{!$Component.searchName}').value;  
+                        if(document.getElementById('{!$Component.lwdaNum}') != null)
+                            lwdaNum = document.getElementById('{!$Component.lwdaNum}').value;    
+                            
+                        if(document.getElementById('{!$Component.startDate}') != null)
+                            startDate = document.getElementById('{!$Component.startDate}').value;
+                        if(document.getElementById('{!$Component.endDate}') != null)
+                            endDate = document.getElementById('{!$Component.endDate}').value;
+                        
+                        if(document.getElementById('{!$Component.empname}') != null)
+                            employerName = document.getElementById('{!$Component.empname}').value;
+                        if(document.getElementById('{!$Component.empfiler}') != null)
+                            employerFilerName = document.getElementById('{!$Component.empfiler}').value;
+                        if(document.getElementById('{!$Component.lawfirm}') != null)
+                            lawFirmName = document.getElementById('{!$Component.lawfirm}').value;
+                        
+                        if(document.getElementById('{!$Component.empcity}') != null)
+                            employerCity = document.getElementById('{!$Component.empcity}').value;
+                        if(document.getElementById('{!$Component.empzip}') != null)
+                            employerZipCode = document.getElementById('{!$Component.empzip}').value;
+                        if(document.getElementById('{!$Component.empcasenum}') != null)
+                            countCaseNumber = document.getElementById('{!$Component.empcasenum}').value;
+                        if(document.getElementById('{!$Component.courtType}') != null)
+                            cType = document.getElementById('{!$Component.courtType}').value;
+                        if(document.getElementById('{!$Component.courtName}') != null)
+                            cName = document.getElementById('{!$Component.courtName}').value;
+                        var vOptionsStr = '';
+                        if(document.getElementById('{!$Component.vitype}') != null) {
+                            vType = document.getElementById('{!$Component.vitype}');
+                            
+                            for(var i=0; i < vType.length; i++)
+                            {
+                                var opt = vType.options[i];
+                                if(opt.selected) {
+                                    vOptionsStr += vType.options[i].text+';';
+                                }
+                            }
+                        }
+                        var sOptionsStr = '';
+                        if(document.getElementById('{!$Component.subType}') != null) {
+                            sType = document.getElementById('{!$Component.subType}');
+                            
+                            for(var i=0; i < sType.length; i++)
+                            {
+                                var opt = sType.options[i];
+                                if(opt.selected) {
+                                    sOptionsStr += sType.options[i].text+';';
+                                }
+                            }
+                        }
+                        
+                        <!-- if there are no criteria to filter by display warning message -->
+                        var noCriteria = 'false';
+                        var incorrectRange = 'false';
+                        var incorrectDate = 'false';
+                        document.getElementById('messageWarning').style.display = "none";
+                        document.getElementById("responseErrors").innerHTML = "";
+                        document.getElementById('messageLoading').style.display = "block";
+                        document.getElementById("responseLoading").innerHTML = "<strong>Searching for records.</strong> If the search will return more than 2000 records this may take some time.<br /> Please wait or go back and change your criteria to narrow your search results.";
+                        
+                       
+                        if(sName == '' && lwdaNum == '' && startDate == '' && endDate == '' && employerCity == '' && employerZipCode == '' && countCaseNumber == '' && cType  == '' && cName == '' && vOptionsStr  == '' && sOptionsStr == '') {
+                            document.getElementById("responseErrors").innerHTML = "<center><strong>Warning!</strong> Please enter at least one search criteria to perform a search.</center>";
+                            document.getElementById('messageWarning').style.display = "block";
+                            noCriteria = 'true';
+                        }
+                        
+                        
+                        var stDate = new Date(startDate);
+                        var enDate = new Date(endDate);
+                        
+                        if(stDate > enDate) {
+                            document.getElementById("responseErrors").innerHTML = "<center><strong>Error!</strong> Date range incorrect. Start date should be before end date.</center>";
+                            document.getElementById('messageWarning').style.display = "block";
+                            incorrectRange = 'true';
+                        }
+                        var x = validDate(startDate);
+                        var y = validDate(endDate);
+
+                        if((startDate != '' && x == false) || (endDate != '' && y == false) || (startDate != '' && isNaN(stDate.getTime())) || (endDate != '' && isNaN(enDate.getTime()))) {
+                            document.getElementById("responseErrors").innerHTML = "<center><strong>Error!</strong> Incorrect date (date should be in format mm/dd/yyyy).</center>";
+                            document.getElementById('messageWarning').style.display = "block";
+                            incorrectDate = 'true';
+                            
+                        }
+                        <!-- disable "Filter" button as soon as it is clicked -->       
+                        var filterButton = document.getElementById('{!$Component.filterButton}');
+                        filterButton.setAttribute('class','disabled');
+                        
+                        if(incorrectRange == 'true' || incorrectDate == 'true') {
+                            startDate = '';
+                            endDate = '';
+                            sName = '';
+                            lwdaNum = '';
+                            employerName = '';
+                            employerFilerName = '';
+                            lawFirmName = '';
+                            employerCity = '';
+                            employerZipCode = '';
+                            countCaseNumber = '';
+                            cType = '';
+                            cName = '';
+                            vType = '';
+                        }
+                        
+                        <!-- call PAGAResultsController.getAllCases() method -->
+                        Visualforce.remoting.Manager.invokeAction(
+                            '{!$RemoteAction.PAGAResultsController.getAllCases}',
+                            <!-- getAllCases() parameters -->
+                            sName, lwdaNum, startDate, endDate, employerName, employerFilerName, lawFirmName, employerCity, employerZipCode, countCaseNumber, cType, cName, vOptionsStr, sOptionsStr,
+                            function(results, event) {
+                                if (!event.status) return;
+                               
+                                var html = '';
+                                <!-- if there are more than 2000 records display warning message -->
+                                if(results.length > 2000) {
+                                    document.getElementById("responseErrors").innerHTML = "<strong>Warning!</strong> More than 2000 records to display - please narrow the search criteria by adding another search component to obtain a shorter list.";
+                                    document.getElementById('messageWarning').style.display = "block";
+                                    
+                                }
+                                <!-- if there are no results  but there is at least one criteria to filter by display warning message -->
+                                if(results.length < 1 && noCriteria == 'false' && incorrectRange == 'false' && incorrectDate == 'false') {
+                                    document.getElementById("responseErrors").innerHTML = "<center><strong>Warning!</strong> No matching records found.</center>";
+                                    document.getElementById('messageWarning').style.display = "block";
+                                }
+                                <!-- populate table with results -->
+                                for (var n=0; n < results.length; n++) {
+                                    var result = results[n];
+                                    
+                                    html += 
+                                        '<tr>'+
+                                            '<td><u><a href="/PagaSearch/PAGACaseDetails?id=' + result.Id + '" target="_blank">' + result.Case_Number__c + '</a></u></td>';
+                                            
+                                            
+                                            if(result.Plaintiff_for_PAGA_Case_Text__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Plaintiff_for_PAGA_Case_Text__c  + '</td>';
+                                            }
+                                            if(result.Employer__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Employer__r.Name  + '</td>';
+                                            }
+                                            if(result.Employer__c === undefined || result.Employer__r.ShippingCity === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Employer__r.ShippingCity + '</td>';
+                                            }
+                                            
+                                            if(result.Employer__c === undefined || result.Employer__r.ShippingPostalCode === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Employer__r.ShippingPostalCode + '</td>';
+                                            }
+                                            
+                                            if(result.Filer_Attorney_for_PAGA_Case__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Filer_Attorney_for_PAGA_Case__r.Name + '</td>';
+                                            }
+                                            if(result.Law_Firm_for_PAGA_Case__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Law_Firm_for_PAGA_Case__c + '</td>';
+                                            }
+                                            if(result.Employer_Filer__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Employer_Filer__r.Name  + '</td>';
+                                            }
+                                            if(result.Employer_Filer_Firm__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.Employer_Filer_Firm__c  + '</td>';
+                                            }
+                                            if(result.PAGA_Court_Case_Number__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.PAGA_Court_Case_Number__c + '</td>';
+                                            }
+                                            
+                                            if(result.Notice_Filing_Date__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                var initialDate = result.Notice_Filing_Date__c;
+                                                var d = new Date(result.Notice_Filing_Date__c);
+                                                var utcDate = new Date(d.toUTCString());
+                                                utcDate.setHours(utcDate.getHours()+14);
+                                                
+                                                result.Notice_Filing_Date__c = '' + (utcDate.getMonth() + 1) + '/' + utcDate.getDate() + '/' + utcDate.getFullYear();
+                                                html += '<td data-order="' + initialDate + '">' + result.Notice_Filing_Date__c + '</td>';
+                                            }
+                                        html += '</tr>';
+                                       if(n == results.length-1 ) {
+                                           var filterButton = document.getElementById('{!$Component.filterButton}');
+                                           filterButton.setAttribute('class','btn-custom btn-md');
+                                       }
+                                }
+                                
+                                <!-- enable "Filter" button as soon as the results are displayed -->
+                                if(results.length == 0){
+                                   
+                                   var filterButton = document.getElementById('{!$Component.filterButton}');
+                                   filterButton.setAttribute('class','btn-custom btn-md');
+                                } 
+                                
+                                document.getElementById('messageLoading').style.display = "none";
+                                document.getElementById("responseLoading").innerHTML = "";
+                                
+                                
+                                <!-- initialize datatable -->
+                                document.getElementById("theTableBodyC").innerHTML = html;
+                                $j('#table').DataTable({
+                                    responsive: true,
+                                    destroy: true,
+                                    select: true,
+                                    "bPaginate": true,
+                                    "bLengthChange": false,
+                                    "bFilter": false,
+                                    "bSort": true,
+                                    "order": [[ 1, "asc" ]],
+                                    "bInfo": true,
+                                    "bAutoWidth": true,
+                                    "pageLength": 10,
+                                    "lengthMenu": [5, 50, 100],
+                                    
+                                    "language": {
+                                      "emptyTable": "No matching records found"
+                                    },
+                                    "processing": true,
+                                    
+                                });
+                            },
+                            {escape: true}
+                        );
+                    }
+                    
+                </script>
+                <!-- press enter to apply filter -->
+                <script type="text/javascript">
+                    $j(document).keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                             document.getElementById('{!$Component.filterButton}').click();
+                             
+                        }
+                    });
+                    
+                </script>
+                <!-- press enter to apply filter --> 
+            </apex:form>
+            
+        </apex:define>
+    </apex:composition>
+</apex:page>

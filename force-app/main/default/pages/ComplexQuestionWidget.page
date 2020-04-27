@@ -1,0 +1,207 @@
+<apex:page controller="ComplexQuestionWidgetController" sidebar="false" showHeader="false" standardStylesheets="true" cache="false" id="ComplexQuesPage">
+    <apex:composition template="{! $Page.VIPForm__VIP_FormWizardTemplate }">
+      <apex:define name="styles">
+
+        <style>
+            body {background: #fff;padding-top:0;}
+            .panel-custom {
+                min-height: 120mvh;
+                background-color: #eee;
+            }
+            .btn-primary{
+                background-color:#2e73bf;
+            }
+            
+.datePicker {
+                position:absolute;
+                background-color:white;
+                border: 1px solid grey;
+            }
+        </style>
+      </apex:define>
+    
+    
+    
+    <apex:define name="scripts">
+        <!-- including this script will automatically resize the parent iframe to the size of the contents of this page -->
+        <script src="{!$Label.iFrameResizer}"/>
+        <script>
+            function showMessage(msgId){
+                document.getElementById(msgId).style.visibility = "visible";
+            }
+            
+            function disableButton(buttonId){
+                //alert(buttonId);
+                document.getElementById(buttonId).disabled = true;
+            }
+            
+            function enableButton(buttonId){
+                //alert(buttonId);
+                document.getElementById(buttonId).disabled = false;;
+            }
+            
+            function dummy(){}
+        </script>
+    </apex:define>
+    
+    <apex:define name="body">
+    <div class="panel-body">
+    <apex:form id="form">
+        <apex:actionFunction name="checkFollowUpQuestionsAndRefresh" action="{!checkFollowUpQuestionsAndRefresh}"/>
+        
+        <!--Primary Questions-->
+        <apex:pageBlock id="PrimaryQuesBlock" title="Primary Questions" rendered="{!showPrimaryQuestions}">
+            <apex:pageBlockTable id="PrimaryQuesTable" value="{!primaryQuesWrapper}" var="rq" styleClass="table">
+                <apex:column headerValue="Question">
+                     <apex:outputField value="{!rq.regQuestion.Question_Text__c}"/>
+                </apex:column>
+                <apex:column headerValue="Answer">
+                    <apex:inputText value="{!rq.regQuestion.Reg_Answer__c}" rendered="{!IF(rq.regQuestion.Question_ID__r.Answer_Type__c == 'Text',true,false)}" onchange="showMessage('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:PrimaryQuestionMessage')"/>
+                    <apex:selectList value="{!rq.regQuestion.Reg_Answer__c}" rendered="{!IF(rq.regQuestion.Question_ID__r.Answer_Type__c == 'YesNo',true,false)}" size="1" onchange="showMessage('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:PrimaryQuestionMessage')">
+                        <apex:selectOption itemLabel="-None-" itemValue=""/>
+                        <apex:selectOption itemLabel="Yes" itemValue="Yes"/>
+                        <apex:selectOption itemLabel="No" itemValue="No"/>
+                    </apex:selectList>
+                    <apex:inputTextArea value="{!rq.regQuestion.Reg_Answer__c}" rendered="{!IF(rq.regQuestion.Question_ID__r.Answer_Type__c == 'Long Text',true,false)}" onchange="showMessage('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:PrimaryQuestionMessage')"/>
+                    <apex:inputcheckbox value="{!rq.regQuestion.Reg_Answer__c}" rendered="{!IF(rq.regQuestion.Question_ID__r.Answer_Type__c == 'Checkbox',true,false)}" onchange="showMessage('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:PrimaryQuestionMessage')"/>
+                    <apex:selectList value="{!rq.regQuestion.Reg_Answer__c}" rendered="{!IF(rq.regQuestion.Question_ID__r.Answer_Type__c == 'Picklist',true,false)}" size="1" onchange="showMessage('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:PrimaryQuestionMessage')">
+                        <apex:selectOption itemLabel="-None-" itemValue=""/>
+                        <apex:selectOptions value="{!rq.options}"/>
+                    </apex:selectList>
+                    <apex:facet name="footer">
+                        <apex:outputPanel >
+                            <apex:commandButton status="disablePrimaryButton" id="primaryQuestionButton" value="Save" action="{!savePrimaryQuestions}" oncomplete="checkFollowUpQuestionsAndRefresh()" styleclass="btn-primary"/>
+                            <apex:actionStatus id="disablePrimaryButton" onstart="disableButton('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:primaryQuestionButton')" onstop="enableButton('ComplexQuesPage:T:form:PrimaryQuesBlock:PrimaryQuesTable:primaryQuestionButton')"></apex:actionStatus>
+                            &nbsp;
+                            <apex:outputLabel id="PrimaryQuestionMessage" value="{!$Label.Complex_Question_Message}" style="color:red;visibility:hidden;"/>
+                        </apex:outputPanel>
+                    </apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+            <!--<apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!savePrimaryQuestions}" oncomplete="checkFollowUpQuestionsAndRefresh()"/>
+            </apex:pageBlockButtons>-->
+        </apex:pageBlock>
+        
+        
+        <!--Simple Follow-Up Questions-->
+        <apex:pageBlock id="FollowUpQuesBlock" title="Follow-Up Questions" rendered="{!showFollowUpQuestions}">
+            <apex:pageBlockTable id="FollowUpQuesTable" value="{!followQuesWrapper}" var="fq" styleClass="table">
+                <apex:column headerValue="Question">
+                    <apex:outputField value="{!fq.followQuestion.Follow_Up_Question_Text__c}"/>
+                </apex:column>
+                <apex:column headerValue="Answer">
+                    <apex:inputText value="{!fq.followQuestion.Answer__c}" rendered="{!IF(fq.followQuestion.Question_ID__r.Answer_Type__c == 'Text',true,false)}" onchange="showMessage('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:FollowUpQuestionMessage')"/>
+                    <apex:selectList value="{!fq.followQuestion.Answer__c}" rendered="{!IF(fq.followQuestion.Question_ID__r.Answer_Type__c == 'YesNo',true,false)}" size="1" onchange="showMessage('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:FollowUpQuestionMessage')">
+                        <apex:selectOption itemLabel="-None-" itemValue=""/>
+                        <apex:selectOption itemLabel="Yes" itemValue="Yes"/>
+                        <apex:selectOption itemLabel="No" itemValue="No"/>
+                    </apex:selectList>
+                    <apex:inputTextArea value="{!fq.followQuestion.Answer__c}" rendered="{!IF(fq.followQuestion.Question_ID__r.Answer_Type__c == 'Long Text',true,false)}" onchange="showMessage('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:FollowUpQuestionMessage')"/>
+                    <apex:inputcheckbox value="{!fq.followQuestion.Answer__c}" rendered="{!IF(fq.followQuestion.Question_ID__r.Answer_Type__c == 'Checkbox',true,false)}" onchange="showMessage('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:FollowUpQuestionMessage')"/>
+                    <apex:selectList value="{!fq.followQuestion.Answer__c}" rendered="{!IF(fq.followQuestion.Question_ID__r.Answer_Type__c == 'Picklist',true,false)}" size="1" onchange="showMessage('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:FollowUpQuestionMessage')">
+                        <apex:selectOption itemLabel="-None-" itemValue=""/>
+                        <apex:selectOptions value="{!fq.options}"/>
+                    </apex:selectList>
+                    <apex:facet name="footer">
+                        <apex:outputPanel >
+                            <apex:commandButton status="disableFollowUpButton" id="followUpQuestionButton" value="Save" action="{!saveFollowUpQuestions}" styleClass="btn-primary" oncomplete="dummy()"/>
+                            <apex:actionStatus id="disableFollowUpButton" onstart="disableButton('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:followUpQuestionButton')" onstop="enableButton('ComplexQuesPage:T:form:FollowUpQuesBlock:FollowUpQuesTable:followUpQuestionButton')"></apex:actionStatus>
+                            &nbsp;
+                            <apex:outputLabel id="FollowUpQuestionMessage" value="{!$Label.Complex_Question_Message}" style="color:red;visibility:hidden;"/>
+                        </apex:outputPanel>
+                    </apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+            <!--<apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!saveFollowUpQuestions}"/>
+            </apex:pageBlockButtons>-->
+        </apex:pageBlock>
+        
+        
+        <!--Complex Follow-Up Questions-->
+        <apex:variable value="0" var="fq_num"/>
+        <apex:repeat value="{!finalList}" var="fq" rendered="{!showComplexQuestions}" id="ComplexQuesRepeat">
+        <apex:pageBlock title="{!fq.followQuestion.Follow_Up_Question_Text__c}" id="ComplexQuesHeaderBlock">    
+            <apex:outputPanel rendered="{!fq.hasDetails}">
+                <table class="table" border="1" cellpadding="5" >
+                    <thead class="rich-table-thead">
+                        <tr class="headerRow">
+                            <th class="headerRow" scope="col" colspan="1"><apex:outputLabel value="Action"/></th>
+                            <apex:repeat value="{!fq.qTable[0].wrap}" var="c">
+                                <apex:outputPanel rendered="{!c.followConfig.Show_on_summary_table__c}">
+                                    <th class="headerRow" scope="col" colspan="1"><apex:outputField value="{!c.followConfig.Field_Name__c}"/></th>
+                                </apex:outputPanel>
+                            </apex:repeat>
+                        </tr>
+                    </thead>
+                    <apex:repeat value="{!fq.qTable}" var="q">
+                        <tr class="dataRow odd">
+                            <td class="dataCell" colspan="1">
+                                <apex:commandLink value="Delete" action="{!deleteQuestionData}">
+                                    <apex:param name="fDetailID" value="{!q.followDetail.id}"/>
+                                </apex:commandLink>
+                            </td>
+                            <apex:repeat value="{!q.wrap}" var="w" rendered="{!q.hasDetails}">
+                                <apex:outputPanel rendered="{!w.followAnswer.Show_on_summary_table__c}">
+                                    <td class="dataCell" colspan="1"><apex:outputText value="$" rendered="{!IF(AND(NOT(ISNULL(w.followAnswer.Value__c)),w.followAnswer.Follow_Up_Detail_Config__r.Answer_Type__c == 'Currency'),true,false)}"/><apex:outputField value="{!w.followAnswer.Value__c}"/></td>
+                                </apex:outputPanel>
+                            </apex:repeat>
+                        </tr>
+                    </apex:repeat>
+                </table>
+            </apex:outputPanel>
+            <apex:commandLink value="{!IF(fq.hasButtonText, fq.buttonText, 'Add')}" action="{!addComplexQuestionData}" immediate="true">
+                <apex:param name="QuesBankID" value="{!fq.followQuestion.Question_ID__c}"/>
+                <apex:param name="FollowQuesID" value="{!fq.followQuestion.Id}"/>
+            </apex:commandLink>
+        </apex:pageBlock>
+        <apex:pageBlock rendered="{!fq.showQuestionForm}" id="ComplexQuesFormBlock">
+            <apex:pageBlockTable value="{!newDetails}" var="new" id="ComplexQuesFormTable" styleClass="table">
+                <apex:column >
+                    <apex:outputField value="{!new.followConfig.Field_Name__c}"><apex:outputPanel rendered="{!new.followConfig.Required__c}"><text style="color:red;">*</text></apex:outputPanel></apex:outputField>
+                </apex:column>
+                <apex:column >
+                    <div class = "requiredInput">
+                        <apex:outputPanel rendered="{!new.followConfig.Required__c}"><div class = "requiredBlock"/></apex:outputPanel>
+                        <apex:inputText id="text" value="{!new.followAnswer.Value__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Text',true,false)}" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')"/>
+                    </div>
+                    <div class = "requiredInput">
+                        <apex:outputPanel rendered="{!new.followConfig.Required__c}"><div class = "requiredBlock"/></apex:outputPanel>
+                        <apex:selectList id="yes_no" value="{!new.followAnswer.Value__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'YesNo',true,false)}" size="1" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')">
+                            <apex:selectOption itemLabel="-None-" itemValue=""/>
+                            <apex:selectOption itemLabel="Yes" itemValue="Yes"/>
+                            <apex:selectOption itemLabel="No" itemValue="No"/>
+                        </apex:selectList>
+                    </div>
+                    <div class = "requiredInput">
+                        <apex:outputPanel rendered="{!new.followConfig.Required__c}"><div class = "requiredBlock"/></apex:outputPanel>
+                        <apex:inputTextArea id="textarea" value="{!new.followAnswer.Value__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Long Text',true,false)}" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')"/>
+                    </div>
+                        <apex:inputcheckbox value="{!new.followAnswer.Value__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Checkbox',true,false)}"/>
+                    <div class = "requiredInput">
+                        <apex:outputPanel rendered="{!new.followConfig.Required__c}"><div class = "requiredBlock"/></apex:outputPanel>
+                        <apex:selectList id="picklist" value="{!new.followAnswer.Value__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Picklist',true,false)}" size="1" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')">
+                            <apex:selectOption itemLabel="-None-" itemValue=""/>
+                            <apex:selectOptions value="{!new.options}"/>
+                        </apex:selectList>
+                    </div>
+                    <apex:inputField id="date" value="{!new.followConfig.Date_Placeholder__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Date',true,false)}" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')"/>
+                    <apex:inputField id="currency" value="{!new.followConfig.Currency_Placeholder__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Currency',true,false)}" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')"/>
+                    <apex:inputField id="number" value="{!new.followConfig.Number_Placeholder__c}" rendered="{!IF(new.followConfig.Answer_Type__c == 'Number',true,false)}" required="{!new.followConfig.Required__c}" onchange="showMessage('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:ComplexQuestionMessage')"/>
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons location="bottom" id="ComplexQuesButton">
+                <apex:commandButton status="disableComplexButton" id="complexQuestionButton" value="Save" action="{!saveComplexQuestions}" styleClass="btn-primary" oncomplete="dummy()"/>
+                <apex:actionStatus id="disableComplexButton" onstart="disableButton('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:complexQuestionButton')" onstop="enableButton('ComplexQuesPage:T:form:ComplexQuesRepeat:{!fq_num}:ComplexQuesFormBlock:ComplexQuesButton:complexQuestionButton')"></apex:actionStatus>
+                &nbsp;
+                <apex:outputLabel id="ComplexQuestionMessage" value="{!$Label.Complex_Question_Message}" style="color:red;font-weight:bold;visibility:hidden;"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:variable var="fq_num" value="{!VALUE(fq_num) + 1}"/>
+        </apex:repeat>
+    </apex:form>
+        </div>
+        </apex:define>
+    </apex:composition>
+</apex:page>

@@ -1,0 +1,8 @@
+<apex:component controller="ListCaseRoleDefendantsController" access="global">
+    <apex:attribute name="value" type="String" description="the account ID" assignTo="{!caseId}" />
+    <apex:variable value="{!0}" var="listSize" />
+    <apex:repeat value="{!crList}" var="cr">
+        <apex:variable var="listSize" value="{!listSize + 1}" />
+        <apex:outputText escape="false" value="{!IF(crList.size == listSize, cr.Account_Name__c, cr.Account_Name__c+', ')}" />
+    </apex:repeat>  
+</apex:component>

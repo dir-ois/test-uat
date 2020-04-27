@@ -1,0 +1,587 @@
+<apex:page standardController="Case_Payment__c" extensions="PostCasePaymentController" showHeader="{!NOT(printView)}" sidebar="{!NOT(printView)}" id="thePage" title="Recommend/Post {!casePayment.Name}" >
+    <apex:includeScript value="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"/>
+
+<style>
+    .headerRow{
+        text-align:center;
+    }
+</style>
+
+<apex:variable value="{!0.00}" var="allocToPenalties" />
+<apex:variable value="{!0.00}" var="allocToWages" />
+<apex:variable value="{!0.00}" var="allocToInterest" />
+<apex:variable value="{!0.00}" var="allocToPostHearingInt" />
+<apex:variable value="{!0.00}" var="allocToPostJudgmentInt" />
+<apex:variable value="{!0.00}" var="allocToAttorneyFees" />
+<apex:variable value="{!0.00}" var="allocToFilingFees" />
+<apex:variable value="{!0.00}" var="holdAmount" />
+<apex:variable value="{!0.00}" var="otherRefund" />
+<apex:variable value="{!0.00}" var="DIRAttorneyFees" />
+
+<apex:variable value="{!casePayment.Payment_Amount__c - allocToPenalties - allocToWages - allocToInterest -
+                                allocToPostHearingInt - allocToPostJudgmentInt - allocToAttorneyFees - allocToFilingFees -
+                                holdAmount - otherRefund - DIRAttorneyFees}" var="amtRemain" />
+
+
+    <apex:form id="theForm">
+        <apex:pageBlock title="Recommend or Post Case Payment">
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel id="topPanel">
+                        <apex:actionRegion >
+                        <apex:pageMessages escape="false" id="pgMsgs"/>
+                        
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">
+                                    <b>Case Name</b><br/>
+                                    <apex:outputField value="{!casePayment.Case__c}" />
+                                </td>
+
+                                <td width="25%">
+                                    <b>Case Number</b><br/>
+                                    <apex:outputField value="{!DIRcase.Case_Number__c}" />
+                                </td>
+
+                                <td width="25%">
+                                    <b>Case Payment Name</b><br/>
+                                    <apex:outputField value="{!casePayment.Name}" />
+                                </td>
+                                
+                                <td width="25%">
+                                    <b>Case Payment Status</b><br/>
+                                    <apex:outputText value="{!casePayment.Status__c}" style="color:{!IF(hasBeenPosted, '#E4001E', '#1E8607')};" />
+                                </td>
+                            
+                            </tr>
+                        </table>
+                        
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionitem>
+
+                <apex:pageBlockSectionitem >
+                    <apex:outputPanel id="middlePanel">
+                        <apex:actionRegion >
+                        <table width="100%">
+                            <tr>
+
+                                <td width="25%">
+                                    <b>Receipt Instrument Number</b><br/>
+                                    <apex:outputField value="{!casePayment.Receipt__r.Instrument_Number__c}" />
+                                </td>
+
+                                <td width="25%">
+                                    <b>Date Received</b><br/>
+                                    <apex:outputField value="{!casePayment.Receipt__r.Date_Received__c}" />
+                                </td>
+
+                                <td width="25%">
+                                    <b>Receipt Hold Date</b><br/>
+                                    <apex:outputField value="{!casePayment.Receipt_Hold_Date__c}" />
+                                </td>
+
+                                <td width="25%">
+                                    <b>Receipt Status</b><br/>
+                                    <apex:outputText value="{!casePayment.Receipt__r.Status__c}" />
+                                </td>
+
+                            </tr>
+                        </table>
+                        
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionitem>
+
+                <apex:pageBlockSectionitem >
+                    <apex:outputPanel id="bottomPanel">
+                        <apex:actionRegion >
+                        <table width="100%">
+                            <tr>
+                                <td width="14%">
+                                    <b>Payor</b><br/>
+                                    <apex:outputField value="{!casePayment.Receipt__r.Payor__c}" />
+                                </td>
+                                
+                                <td width="16%">
+                                    <b>Payment on Behalf Of</b><br/>
+                                    <apex:selectList value="{!selectedOBO}" multiSelect="false" size="1" required="{!NOT(isBOFECase)}"> <!-- is required necessary since ALL is a valid value? -->
+                                        <apex:selectOptions value="{!oboList}" />
+                                        <apex:actionSupport event="onchange" rerender="paymentPlanSelectList,paymentPlanOP,paymentPlanBal,amountRemaining,holdTable,tablePanel,CU1Hold,CU1OtherRefund,CU1Attorney" status="poboCounterStatus" action="{!FindPaymentPlansAndDisplayCIsAndJs}"/>
+                                    </apex:selectList>
+                                    <apex:actionStatus id="poboCounterStatus">
+                                        <apex:facet name="start">
+                                            <img src="/img/loading32.gif" width="12" height="12"/>
+                                        </apex:facet>
+                                    </apex:actionStatus>
+                                </td>
+                                
+                                <td width="13%">
+                                    <b>Payment Plan</b><br/>
+                                        <apex:selectList id="paymentPlanSelectList" value="{!ppSelection}" multiSelect="false" size="1">
+                                            <apex:selectOptions value="{!ppOptionsList}" />
+                                            <apex:actionSupport event="onchange" rerender="paymentPlanOP" status="ppCounterStatus" action="{!SetPaymentPlan}"/>
+                                        </apex:selectList>
+                                    <apex:outputPanel id="paymentPlanOP" rendered="{!IsCashier}">
+                                        <apex:actionStatus id="ppCounterStatus">
+                                            <apex:facet name="start">
+                                                <img src="/img/loading32.gif" width="12" height="12"/>
+                                            </apex:facet>
+                                        </apex:actionStatus>
+                                        <br/>
+                                        <apex:outputText id="paymentPlanBal" escape="false" value="{!IF(AND(NOT(ISBLANK(ppSelection)), ppSelection != 'NONE'), '<b>Balance Due</b>&nbsp;{0, number, $###,###,##0.00}', '<br/>')}" >
+                                            <apex:param value="{!paymentPlan.Payment_Plan_Balance__c}" />
+                                        </apex:outputText>
+                                    </apex:outputPanel>
+                                    <!-- TODO: what does this do? log in as non-cashier -->
+                                    <apex:outputPanel rendered="{!NOT(IsCashier)}">
+                                        <apex:outputText value="{!casePayment.Payment_Plan__c}" />
+                                    </apex:outputPanel>
+                                </td>
+                                
+                                <td width="14%">
+                                    <b>Assigned&nbsp;Deputy</b><br/>
+                                    <apex:outputField value="{!DIRcase.Assigned_Deputy__c}" />
+                                </td>
+
+                                <td width="14%">
+                                    <b>Payment Amount</b><br/>
+                                    <apex:outputText value="{0, number, $###,###,##0.00}" >
+                                        <apex:param value="{!casePayment.Payment_Amount__c}" />
+                                    </apex:outputText>
+                                </td>
+                                
+                                <td width="16%">
+                                    <!-- <apex:outputPanel id="amountRemaining" rendered="{!NOT(printView)}" > -->
+                                    <apex:outputPanel id="amountRemaining" >
+                                    <b>Amount Remaining to Allocate</b><br/>
+                                        <apex:variable var="amtRemain" value="{!casePayment.Payment_Amount__c - allocToPenalties - allocToWages - allocToInterest - allocToPostHearingInt -
+                                                        allocToPostJudgmentInt - allocToAttorneyFees - allocToFilingFees -
+                                                        holdAmount - otherRefund - DIRAttorneyFees}" />
+                                        <apex:outputText value="{0, number, $###,###,##0.00}" style="color:{!IF(amtRemain != 0, '#E4001E', '#1E8607')};" >
+                                            <apex:param value="{!amtRemain}" />
+                                        </apex:outputText>
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionitem>
+            </apex:pageBlockSection>
+
+            <br />
+
+            <apex:outputPanel id="tablePanel">
+                <apex:actionRegion >
+                    <apex:pageBlockTable value="{!caseIssueWrapperList}" var="ciw" id="assessmentsTable" rendered="{!NOT(caseIssueWrapperList.empty)}">
+                        
+    <!--                    <apex:column><apex:facet name="header">CI Id</apex:facet>
+                            {!ciw.thisCaseIssue.Id}
+                        </apex:column> -->
+                        
+                        <apex:column ><apex:facet name="header">LC Violation<br/>&nbsp;</apex:facet>
+                            <a href="/{!ciw.thisCaseIssue.Id}"
+                                id="lookup{!ciw.thisCaseIssue.Id}LCV"
+                                onblur="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV').hide();"
+                                onfocus="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV', '/{!ciw.thisCaseIssue.Id}/m?retURL=/{!ciw.thisCaseIssue.Id}&isAjaxRequest=1').show();"
+                                onmouseout="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV').hide();"
+                                onmouseover="LookupHoverDetail.getHover('lookup{!ciw.thisCaseIssue.Id}LCV','/{!ciw.thisCaseIssue.Id}/m?retURL=/{!ciw.thisCaseIssue.Id}&isAjaxRequest=1').show();">
+                                {!ciw.thisCaseIssue.Violation_Type__r.Name} </a>
+                        </apex:column>
+                        
+                        <apex:column ><apex:facet name="header">JEU Case<br/>Number</apex:facet>
+                            {!ciw.jeuCaseNum}
+                        </apex:column>
+
+                        <apex:column rendered="{!isBOFECase}"><apex:facet name="header">Citation<br/>Number</apex:facet>
+                            {!ciw.citationNums}
+                        </apex:column>
+
+                        <apex:column rendered="{!isBOFECase}"><apex:facet name="header">Penalties<br/>Assessed</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!ciw.thisCaseIssue.Citation_Amount__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column rendered="{!isBOFECase}"><apex:facet name="header">Penalty<br/>Bal Due</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!ciw.thisCaseIssue.Penalty_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column rendered="{!isBOFECase}" ><apex:facet name="header">Allocation to<br/>Penalties</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!ciw.allocationToPenalties}" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" /> <!-- this actionsupport may only be needed on Allocation to Penalties and Allocation to Amts Due EE(s). this 'onFocus' is to update the Amount Remaining to Allocate when there are LPs and/or JPs, and these two inputfields gain focus right after page load. -->
+                                    <!-- <apex:actionSupport event="onfocus" rerender="buttonPanel1,buttonPanel2" /> -->
+                                    <apex:variable value="{!allocToPenalties + ciw.allocationToPenalties}" var="allocToPenalties" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">EE(s) Amt<br/>Assessed</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!ciw.thisCaseIssue.Wages_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Bal Due<br/>EE(s)</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!ciw.thisCaseIssue.Wage_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Allocation to<br/>Amts Due EE(s)</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!ciw.allocationToWages}" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" /> <!-- this actionsupport may only be needed on Allocation to Penalties and Allocation to Amts Due EE(s). this 'onFocus' is to update the Amount Remaining to Allocate when there are LPs and/or JPs, and these two inputfields gain focus right after page load. -->
+                                    <apex:variable value="{!allocToWages + ciw.allocationToWages}" var="allocToWages" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+                        
+                        <apex:column ><apex:facet name="header">Interest<br/>Assessed</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!ciw.thisCaseIssue.Total_Interest_Amount__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Bal Int<br/>Due</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!ciw.thisCaseIssue.Interest_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Allocation to<br/>Interest</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!ciw.allocationToInterest }" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:variable value="{!allocToInterest + ciw.allocationToInterest}" var="allocToInterest" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+
+                    </apex:pageBlockTable>
+                </apex:actionRegion>
+                <br/>
+                
+                <apex:actionRegion >
+                    <apex:pageBlockTable value="{!judgmentWrapperList}" var="jw" id="judgementsTable" rendered="{!NOT(judgmentWrapperList.empty)}">
+                    
+                        <apex:column ><apex:facet name="header">Judgment<br/>&nbsp;</apex:facet>
+                            <a href="/{!jw.thisJudgment.Id}"
+                                id="lookup{!jw.thisJudgment.Id}Judg"
+                                onblur="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}Judg').hide();"
+                                onfocus="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}Judg', '/{!jw.thisJudgment.Id}/m?retURL=/{!jw.thisJudgment.Id}&isAjaxRequest=1').show();"
+                                onmouseout="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}Judg').hide();"
+                                onmouseover="LookupHoverDetail.getHover('lookup{!jw.thisJudgment.Id}Judg','/{!jw.thisJudgment.Id}/m?retURL=/{!jw.thisJudgment.Id}&isAjaxRequest=1').show();">
+                                {!jw.thisJudgment.Name} </a>
+                        </apex:column>
+                        
+                        <apex:column ><apex:facet name="header">Court<br/>&nbsp;</apex:facet>
+                            {!jw.thisJudgment.Court__r.Name}
+                        </apex:column>
+                        
+                        <apex:column ><apex:facet name="header">Status<br/>&nbsp;</apex:facet>
+                            {!jw.thisJudgment.Status__c}
+                        </apex:column>
+                        
+                        <apex:column ><apex:facet name="header">Post-Hearing<br/>Int Bal Due</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!jw.thisJudgment.Post_hearing_Interest_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Allocation to<br/>Post-Hearing Int</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!jw.phiAlloc}" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:variable value="{!allocToPostHearingInt + jw.phiAlloc}" var="allocToPostHearingInt" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Post-Judgment<br/>Int Bal Due</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!jw.thisJudgment.Post_judgment_Interest_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Allocation to<br/>Post-Judgment Int</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!jw.pjiAlloc}" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:variable value="{!allocToPostJudgmentInt + jw.pjiAlloc}" var="allocToPostJudgmentInt" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Atty Fees<br/>Bal Due</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!jw.thisJudgment.Attorney_Fees_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Allocation to<br/>Atty Fees</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!jw.afAlloc}" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:variable value="{!allocToAttorneyFees + jw.afAlloc}" var="allocToAttorneyFees" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Filing Fees<br/>Bal Due</apex:facet>
+                            <apex:outputText value="{0, number, $###,###,##0.00}" style="float:right">
+                                <apex:param value="{!jw.thisJudgment.Filing_Fees_Balance_Due__c}" />
+                            </apex:outputText>
+                        </apex:column>
+
+                        <apex:column ><apex:facet name="header">Allocation to<br/>Filing Fees</apex:facet>
+                            <div align="right">
+                                $<apex:inputText value="{!jw.ffAlloc}" style="width:80px" >
+                                    <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                    <apex:variable value="{!allocToFilingFees + jw.ffAlloc}" var="allocToFilingFees" />
+                                </apex:inputText>
+                            </div>
+                        </apex:column>
+
+                    </apex:pageBlockTable>
+                </apex:actionRegion>
+            </apex:outputPanel>
+
+            <br/>
+
+            <apex:pageBlockSection columns="1" id="CU1Stuff" >
+                <apex:pageBlockSectionItem rendered="{!NOT(isBOFECase) || isRCICase}" >
+                    <apex:outputPanel id="CU1ClassificationInstructions">
+                        <apex:actionRegion >
+                            <table width="100%">
+                                <tr>
+                                    <apex:outputPanel rendered="{!NOT(isRCICase)}" >
+                                    <td width="25%" >
+                                        <b>Payment Classification</b><br/>
+                                        <apex:inputField value="{!casePayment.Payment_Classification__c}" />
+                                    </td>
+                                    </apex:outputPanel>
+                                    <td width="25%">
+                                        <b>Special Instructions</b><br/>
+                                        <apex:inputField value="{!casePayment.Special_Instructions__c}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!NOT(isBOFECase) || isRCICase}" >
+                    <apex:outputPanel id="CU1Terms" >
+                        <apex:actionRegion >
+                            <table width="100%">
+                                <tr>
+                                    <td width="25%">
+                                        <b>Payment Terms</b><br/>
+                                        <apex:inputField value="{!casePayment.Payment_Terms__c}" />
+                                    </td>
+                                    <td width="25%">
+                                        <b>Payment Terms - Other</b><br/>
+                                        <apex:inputField value="{!casePayment.Payment_Terms_Other__c}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!NOT(isBOFECase) || isRCICase}" >
+                    <apex:outputPanel id="CU1Mailing">
+                        <apex:actionRegion >
+                            <table width="100%">
+                                <tr>
+                                    <td width="25%">
+                                        <b>Date Funds Mailed to Employee</b><br/>
+                                        <apex:inputField value="{!casePayment.Date_Funds_Mailed_to_Employee__c}" />
+                                    </td>
+                                    <td width="25%">
+                                        <b>Mailing Instructions</b><br/>
+                                        <apex:inputField value="{!casePayment.Mailing_Instructions__c}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:actionRegion >
+                        <apex:outputPanel id="CU1Hold" >
+                            <table width="100%">
+                                <tr>
+                                    <!-- Hold Review Date is displayed in tab order before Hold Amount because if the
+                                            Allocation to Interest tabs next to another Decimal field, as it would for
+                                            BOFE cases if the Hold Amount field came first, the Amount Remaining to Allocate
+                                            field doesn't update correctly. -->
+                                    <td>
+                                        <b>Hold Review Date</b><br/>
+                                        <apex:inputField value="{!casePayment.Hold_Review_Date__c}" />
+                                    </td>
+                                    <td>
+                                        <b>Hold Explanation</b><br/>
+                                        <apex:inputField value="{!casePayment.Hold_Explanation__c}" />
+                                    </td>
+                                    <td>
+                                        <b>Hold Amount</b><br/>
+                                        $<apex:inputText value="{!casePayment.Hold_Amount__c}" style="width:80px" >
+                                            <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                            <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                            <apex:variable value="{!casePayment.Hold_Amount__c}" var="holdAmount" />
+                                        </apex:inputText>
+                                    </td>
+                                    <td>
+                                        <b>Hold For</b><br/>
+                                        <apex:inputField value="{!casePayment.Hold_For__c}" />
+                                    </td>
+                                    <td>
+                                        <b>Hold For - Other</b><br/>
+                                        <apex:inputField value="{!casePayment.Hold_For_Other__c}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel id="CU1OtherRefund">
+                        <apex:actionRegion >
+                                <table width="100%">
+                                <tr>
+                                    <td width="25%">
+                                        <b>Other/Refund</b><br/>
+                                        $<apex:inputText value="{!casePayment.Other_Refund__c}" style="width:80px" >
+                                            <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                            <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                            <apex:variable value="{!casePayment.Other_Refund__c}" var="otherRefund" />
+                                        </apex:inputText>
+                                    </td>
+                                    <td width="25%">
+                                        <b>Other/Refund Specify</b><br/>
+                                        <apex:inputField value="{!casePayment.Other_Refund_Specify__c}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem rendered="{!isBOFECase || isRCICase}" >
+                    <apex:outputPanel id="CU1Attorney">
+                        <apex:actionRegion >
+                            <table width="100%">
+                                <tr>
+                                    <td width="25%">
+                                        <b>DIR Attorney Fees</b><br/>
+                                        $<apex:inputText value="{!casePayment.DIR_Attorney_Fees__c}" style="width:80px" >
+                                            <apex:actionSupport event="onchange" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                            <apex:actionSupport event="onfocus" rerender="amountRemaining,buttonPanel1,buttonPanel2" />
+                                            <apex:variable value="{!casePayment.DIR_Attorney_Fees__c}" var="DIRAttorneyFees" />
+                                        </apex:inputText>
+                                    </td>
+                                    <td width="25%">
+                                        <b>DIR Attorney Fees Explanation</b><br/>
+                                        <apex:inputField value="{!casePayment.DIR_Attorney_Fees_Explanation__c}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <br />
+
+            <apex:pageBlockButtons location="top">
+                <apex:actionStatus id="btnStatus">
+                    <!-- <apex:facet name="start"> <!-- not sure what this facet name is supposed to do. this outputPanel section may not even be needed -->
+                        <!-- <apex:outputPanel id="buttonPanel2" >
+                            <apex:actionRegion >
+                            <apex:commandButton value="Save Recommended Allocation" disabled="true"/>
+                            <apex:commandButton value="Post Payment" disabled="true" rendered="{!renderPostBtn}"/>
+                            <apex:commandButton value="{!IF(printView, 'Printable View', 'Standard View')}" disabled="true"/>
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </apex:facet> -->
+                    <apex:facet name="stop">
+                        <apex:outputPanel id="buttonPanel1" >
+
+                            <!-- AAAA) WORKAROUND from http://bobbuzzard.blogspot.com/2014/05/transient-list-command-button-woes.html -->
+                            <apex:actionRegion >
+                            <apex:actionFunction action="{!Recommend}" name="Recommend" />
+                            <apex:commandButton value="Save Recommended Allocation" action="{!Recommend}" disabled="{!selectedOBO == 'ALL' || NOT(isValid) || hasBeenPosted || amtRemain != 0.00}" 
+                                rendered="{!renderRecommendBtn}" status="btnStatus" rerender="pgMsgs" onclick="Recommend(); return false;" />
+                            </apex:actionRegion>
+                            
+                            <apex:actionRegion >
+                            <apex:actionFunction action="{!Post}" name="Post" />
+                            <apex:commandButton value="Post Payment" action="{!Post}" disabled="{!selectedOBO == 'ALL' || NOT(isValid) || hasBeenPosted || amtRemain != 0.00}" 
+                                rendered="{!renderPostBtn}" status="btnStatus" rerender="pgMsgs" onclick="Post(); return false;" >
+                                    <apex:param assignTo="{!thirdButtonClicked}" value="false" />
+                            </apex:commandButton>
+                            </apex:actionRegion>
+                            
+                            <apex:actionRegion >
+                            <apex:actionFunction action="{!Post}" name="Post" />
+                            <apex:commandButton value="Post with PRs" action="{!Post}" disabled="false" 
+                                rendered="{!renderThirdBtn}" status="btnStatus" rerender="pgMsgs" onclick="Post(); return false;" >
+                                    <apex:param assignTo="{!thirdButtonClicked}" value="true" />
+                            </apex:commandButton>
+                            </apex:actionRegion>
+
+
+                            <!-- BBBB) WITHOUT WORKAROUND - full desired functionality, but doesn't call controller methods -->
+<!--                            <apex:commandButton value="Save Recommended Allocation" action="{!Recommend}" disabled="{!selectedOBO == 'ALL' || NOT(isValid) || hasBeenPosted || amtRemain != 0.00}" 
+                                rendered="{!renderRecommendBtn}" status="btnStatus" rerender="pgMsgs" />
+                            
+                            <apex:commandButton value="Post Payment" action="{!Post}" disabled="{!selectedOBO == 'ALL' || NOT(isValid) || hasBeenPosted || amtRemain != 0.00}" 
+                                rendered="{!renderPostBtn}" status="btnStatus" rerender="pgMsgs" >
+                                <apex:param assignTo="{!thirdButtonClicked}" value="false" />
+                            </apex:commandButton>
+                            
+                            <apex:commandButton value="Post with PRs" action="{!Post}" disabled="false" rendered="{!renderThirdBtn}" status="btnStatus" rerender="pgMsgs">
+                                <apex:param assignTo="{!thirdButtonClicked}" value="true" />
+                            </apex:commandButton>
+
+
+                            <!-- CCCC) WITHOUT WORKAROUND, WITHOUT amtRemain - calls controller methods, but not all desired functionality -->
+<!--                            <apex:commandButton value="Save Recommended Allocation" action="{!Recommend}" disabled="{!selectedOBO == 'ALL' || NOT(isValid) || hasBeenPosted}" 
+                                rendered="{!renderRecommendBtn}" status="btnStatus" rerender="pgMsgs" />
+                            
+                            <apex:commandButton value="Post Payment" action="{!Post}" disabled="{!selectedOBO == 'ALL' || NOT(isValid) || hasBeenPosted}" 
+                                rendered="{!renderPostBtn}" status="btnStatus" rerender="pgMsgs" >
+                                <apex:param assignTo="{!thirdButtonClicked}" value="false" />
+                            </apex:commandButton>
+                            
+                            <apex:commandButton value="Post with PRs" action="{!Post}" disabled="false" rendered="{!renderThirdBtn}" status="btnStatus" rerender="pgMsgs">
+                                <apex:param assignTo="{!thirdButtonClicked}" value="true" />
+                            </apex:commandButton>
+-->
+
+                            
+                            <apex:actionRegion >
+                            <apex:commandButton value="{!IF(printView, 'Standard View', 'Printable View')}" action="{!showPrintView}" rendered="true" status="btnStatus" rerender="thePage" />
+                            </apex:actionRegion>
+                        </apex:outputPanel>
+                    </apex:facet>
+                </apex:actionStatus>
+             </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
