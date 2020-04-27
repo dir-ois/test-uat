@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submitter_division__c</fullName>
+    <externalId>false</externalId>
+    <label>Submitter division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DAS</fullName>
+                <default>false</default>
+                <label>DAS</label>
+            </value>
+            <value>
+                <fullName>DLSE</fullName>
+                <default>false</default>
+                <label>DLSE</label>
+            </value>
+            <value>
+                <fullName>DWC</fullName>
+                <default>false</default>
+                <label>DWC</label>
+            </value>
+            <value>
+                <fullName>DOSH</fullName>
+                <default>false</default>
+                <label>DOSH</label>
+            </value>
+            <value>
+                <fullName>Director&#39;s Office</fullName>
+                <default>false</default>
+                <label>Director&#39;s Office</label>
+            </value>
+            <value>
+                <fullName>DIR HR</fullName>
+                <default>false</default>
+                <label>DIR HR</label>
+            </value>
+            <value>
+                <fullName>DIR IT</fullName>
+                <default>false</default>
+                <label>DIR IT</label>
+            </value>
+            <value>
+                <fullName>OSIP</fullName>
+                <default>false</default>
+                <label>OSIP</label>
+            </value>
+            <value>
+                <fullName>OSHAB</fullName>
+                <default>false</default>
+                <label>OSHAB</label>
+            </value>
+            <value>
+                <fullName>OSHSB</fullName>
+                <default>false</default>
+                <label>OSHSB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

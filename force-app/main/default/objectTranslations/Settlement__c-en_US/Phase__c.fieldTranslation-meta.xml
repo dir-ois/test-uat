@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Phase --></label>
+    <name>Phase__c</name>
+    <picklistValues>
+        <masterLabel>At Conference</masterLabel>
+        <translation><!-- At Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At hearing</masterLabel>
+        <translation><!-- At hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Appeal</masterLabel>
+        <translation><!-- Post Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Hearing (Post Judgment, Prior to JEU referral)</masterLabel>
+        <translation><!-- Post Hearing (Post Judgment, Prior to JEU referral) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Hearing (Post ODA, Prior to Judgment)</masterLabel>
+        <translation><!-- Post Hearing (Post ODA, Prior to Judgment) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Hearing (Prior to ODA)</masterLabel>
+        <translation><!-- Post Hearing (Prior to ODA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Conference</masterLabel>
+        <translation><!-- Pre-Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-hearing</masterLabel>
+        <translation><!-- Pre-hearing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

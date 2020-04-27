@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Once the JEU Referral is accepted, this field must be populated with the JEU Case #. If multiple JEU Numbers exist on this Case, enter them on the Case Violation Screen. --></help>
+    <label><!-- JEU Case # --></label>
+    <name>JEU_Number__c</name>
+</CustomFieldTranslation>

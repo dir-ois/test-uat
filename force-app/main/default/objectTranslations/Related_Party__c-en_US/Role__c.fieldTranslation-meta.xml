@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role --></label>
+    <name>Role__c</name>
+    <picklistValues>
+        <masterLabel>Accountant</masterLabel>
+        <translation><!-- Accountant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advocate</masterLabel>
+        <translation><!-- Advocate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agent for Service of Process</masterLabel>
+        <translation><!-- Agent for Service of Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aggrieved</masterLabel>
+        <translation><!-- Aggrieved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignee</masterLabel>
+        <translation><!-- Assignee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attorney Representative</masterLabel>
+        <translation><!-- Attorney Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attorney for Defendant</masterLabel>
+        <translation><!-- Attorney for Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attorney for Plaintiff</masterLabel>
+        <translation><!-- Attorney for Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank</masterLabel>
+        <translation><!-- Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broker</masterLabel>
+        <translation><!-- Broker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business</masterLabel>
+        <translation><!-- Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO</masterLabel>
+        <translation><!-- CEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CFO</masterLabel>
+        <translation><!-- CFO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Employer</masterLabel>
+        <translation><!-- Case Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief</masterLabel>
+        <translation><!-- Chief --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant</masterLabel>
+        <translation><!-- Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Advocate</masterLabel>
+        <translation><!-- Claimant Advocate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Attorney</masterLabel>
+        <translation><!-- Claimant Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Guardian</masterLabel>
+        <translation><!-- Claimant Guardian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Minor</masterLabel>
+        <translation><!-- Claimant Minor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Representative</masterLabel>
+        <translation><!-- Claimant Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client Employer</masterLabel>
+        <translation><!-- Client Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complainant</masterLabel>
+        <translation><!-- Complainant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor Successor</masterLabel>
+        <translation><!-- Contractor Successor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Officer</masterLabel>
+        <translation><!-- Corporate Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court</masterLabel>
+        <translation><!-- Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant</masterLabel>
+        <translation><!-- Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant - (Restitution)</masterLabel>
+        <translation><!-- Defendant - (Restitution) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant - Agent for Service</masterLabel>
+        <translation><!-- Defendant - Agent for Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant - Guarantor</masterLabel>
+        <translation><!-- Defendant - Guarantor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant - Joint Employer</masterLabel>
+        <translation><!-- Defendant - Joint Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant - Manager</masterLabel>
+        <translation><!-- Defendant - Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant - Successor</masterLabel>
+        <translation><!-- Defendant - Successor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant Attorney</masterLabel>
+        <translation><!-- Defendant Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant Representative</masterLabel>
+        <translation><!-- Defendant Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant – CEO</masterLabel>
+        <translation><!-- Defendant – CEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant – Corporate Officer</masterLabel>
+        <translation><!-- Defendant – Corporate Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant – Managing Member</masterLabel>
+        <translation><!-- Defendant – Managing Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee</masterLabel>
+        <translation><!-- Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer Address</masterLabel>
+        <translation><!-- Employer Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escrow Company</masterLabel>
+        <translation><!-- Escrow Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Relative</masterLabel>
+        <translation><!-- Family Relative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garnishee</masterLabel>
+        <translation><!-- Garnishee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guarantor</masterLabel>
+        <translation><!-- Guarantor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurer</masterLabel>
+        <translation><!-- Insurer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint Employer</masterLabel>
+        <translation><!-- Joint Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managing Member</masterLabel>
+        <translation><!-- Managing Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Member</masterLabel>
+        <translation><!-- Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merchant</masterLabel>
+        <translation><!-- Merchant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-attorney Representative</masterLabel>
+        <translation><!-- Non-attorney Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice Filer PAGA</masterLabel>
+        <translation><!-- Notice Filer PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Attorney</masterLabel>
+        <translation><!-- PAGA Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Employer</masterLabel>
+        <translation><!-- PAGA Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Employer Filer</masterLabel>
+        <translation><!-- PAGA Employer Filer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Notice Filer</masterLabel>
+        <translation><!-- PAGA Notice Filer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partnership</masterLabel>
+        <translation><!-- Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>President</masterLabel>
+        <translation><!-- President --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Representing Attorney</masterLabel>
+        <translation><!-- Representing Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation><!-- Secretary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Underwriter</masterLabel>
+        <translation><!-- Senior Underwriter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spouse</masterLabel>
+        <translation><!-- Spouse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State</masterLabel>
+        <translation><!-- State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoenaed Party</masterLabel>
+        <translation><!-- Subpoenaed Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subsidiary</masterLabel>
+        <translation><!-- Subsidiary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successor</masterLabel>
+        <translation><!-- Successor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successor To</masterLabel>
+        <translation><!-- Successor To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treasurer</masterLabel>
+        <translation><!-- Treasurer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underwriter</masterLabel>
+        <translation><!-- Underwriter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice President</masterLabel>
+        <translation><!-- Vice President --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness</masterLabel>
+        <translation><!-- Witness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness for Appellant</masterLabel>
+        <translation><!-- Witness for Appellant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness for Claimant</masterLabel>
+        <translation><!-- Witness for Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness for Defendant</masterLabel>
+        <translation><!-- Witness for Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness for Division</masterLabel>
+        <translation><!-- Witness for Division --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

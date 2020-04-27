@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Sr_Deputy_Data_Error</name>
+        <label>Sr Deputy Data Error</label>
+        <locationX>565</locationX>
+        <locationY>180</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The required details for communicating with the Sr. Deputy indicated on the receipt log are insufficient. Please create a task manually for the senior deputy.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>VarReceiptID</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>233</locationX>
+        <locationY>101</locationY>
+        <assignmentItems>
+            <assignToReference>VarReceiptID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a2P630000008TR0</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VarSeniorDeputyID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1C630000001OXN</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VarSeniorDeputyUserID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>005d0000004Zg3x</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VarPassPayment</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Input</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Input</name>
+        <label>Check Input</label>
+        <locationX>214</locationX>
+        <locationY>369</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VarReceiptID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_WagePass</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Sr_Deputy</name>
+        <label>Check Sr Deputy</label>
+        <locationX>558</locationX>
+        <locationY>370</locationY>
+        <defaultConnector>
+            <targetReference>Sr_Deputy_Data_Error</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Assigned</defaultConnectorLabel>
+        <rules>
+            <name>Assigned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VarSeniorDeputyID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>VarSeniorDeputyUserID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>VarSeniorDeputyUserID</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Task_to_Assign_Deputy</targetReference>
+            </connector>
+            <label>Assigned</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_WagePass</name>
+        <label>Check WagePass</label>
+        <locationX>384</locationX>
+        <locationY>369</locationY>
+        <defaultConnectorLabel>No PASS PMT</defaultConnectorLabel>
+        <rules>
+            <name>PASS_PMT</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>VarPassPayment</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Sr_Deputy</targetReference>
+            </connector>
+            <label>PASS PMT</label>
+        </rules>
+    </decisions>
+    <description>Create Task to the Senior Deputy when the receipt is a wage passthrough.</description>
+    <formulas>
+        <description>This sets the due date of the task to 1 day out.</description>
+        <name>FLADueDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()+1</expression>
+    </formulas>
+    <interviewLabel>Receipt Wage_Passthrough Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Receipt Wage_Passthrough Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create a Task to Senior Deputy, requesting to assign a Deputy to process the pass case for this Receipt Log.</description>
+        <name>Create_Task_to_Assign_Deputy</name>
+        <label>Create Task to Assign Deputy</label>
+        <locationX>776</locationX>
+        <locationY>366</locationY>
+        <object>Task</object>
+    </recordCreates>
+    <startElementReference>Check_Input</startElementReference>
+    <status>Draft</status>
+    <textTemplates>
+        <description>Request the senior deputy to assign a deputy to create pass case.</description>
+        <name>TaskComments</name>
+        <text>Please assign a Deputy to create a pass case for this Receipt Log.</text>
+    </textTemplates>
+    <variables>
+        <description>Pass the Pass payment value to variable</description>
+        <name>VarPassPayment</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Receipt ID</description>
+        <name>VarReceiptID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Senior Deputy ID pass from Parent Process</description>
+        <name>VarSeniorDeputyID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>UserID passed from the parent process.</description>
+        <name>VarSeniorDeputyUserID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

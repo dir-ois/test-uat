@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_Attendee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Case_Role__r.Entity__r.IsPersonAccount, 
+    IF(!ISBLANK(Case_Role__r.Entity__r.MiddleName), Case_Role__r.Entity__r.FirstName &amp; &quot; &quot; &amp; 
+       Case_Role__r.Entity__r.MiddleName &amp; &quot; &quot; &amp; Case_Role__r.Entity__r.LastName, 
+          Case_Role__r.Entity__r.FirstName &amp; &quot; &quot; &amp; Case_Role__r.Entity__r.LastName),
+               Case_Role__r.Entity__r.Name)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Name of Attendee</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

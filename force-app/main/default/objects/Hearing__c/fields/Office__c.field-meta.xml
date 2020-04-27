@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office__c</fullName>
+    <externalId>false</externalId>
+    <label>Office</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bakersfield</fullName>
+                <default>false</default>
+                <label>Bakersfield</label>
+            </value>
+            <value>
+                <fullName>El Centro</fullName>
+                <default>false</default>
+                <label>El Centro</label>
+            </value>
+            <value>
+                <fullName>Fresno</fullName>
+                <default>false</default>
+                <label>Fresno</label>
+            </value>
+            <value>
+                <fullName>Long Beach</fullName>
+                <default>false</default>
+                <label>Long Beach</label>
+            </value>
+            <value>
+                <fullName>Los Angeles</fullName>
+                <default>false</default>
+                <label>Los Angeles</label>
+            </value>
+            <value>
+                <fullName>Oakland</fullName>
+                <default>false</default>
+                <label>Oakland</label>
+            </value>
+            <value>
+                <fullName>Redding</fullName>
+                <default>false</default>
+                <label>Redding</label>
+            </value>
+            <value>
+                <fullName>Sacramento</fullName>
+                <default>false</default>
+                <label>Sacramento</label>
+            </value>
+            <value>
+                <fullName>Salinas</fullName>
+                <default>false</default>
+                <label>Salinas</label>
+            </value>
+            <value>
+                <fullName>San Bernardino</fullName>
+                <default>false</default>
+                <label>San Bernardino</label>
+            </value>
+            <value>
+                <fullName>San Diego</fullName>
+                <default>false</default>
+                <label>San Diego</label>
+            </value>
+            <value>
+                <fullName>San Francisco</fullName>
+                <default>false</default>
+                <label>San Francisco</label>
+            </value>
+            <value>
+                <fullName>San Jose</fullName>
+                <default>false</default>
+                <label>San Jose</label>
+            </value>
+            <value>
+                <fullName>Santa Ana</fullName>
+                <default>false</default>
+                <label>Santa Ana</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara</fullName>
+                <default>false</default>
+                <label>Santa Barbara</label>
+            </value>
+            <value>
+                <fullName>Santa Rosa</fullName>
+                <default>false</default>
+                <label>Santa Rosa</label>
+            </value>
+            <value>
+                <fullName>Stockton</fullName>
+                <default>false</default>
+                <label>Stockton</label>
+            </value>
+            <value>
+                <fullName>Van Nuys</fullName>
+                <default>false</default>
+                <label>Van Nuys</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

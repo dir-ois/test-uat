@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Request --></label>
+    <name>Type_of_Request__c</name>
+    <picklistValues>
+        <masterLabel>240 Bond</masterLabel>
+        <translation><!-- 240 Bond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adverse Action</masterLabel>
+        <translation><!-- Adverse Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Affirmative Litigation</masterLabel>
+        <translation><!-- Affirmative Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alter Ego</masterLabel>
+        <translation><!-- Alter Ego --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal Hearing Representation</masterLabel>
+        <translation><!-- Appeal Hearing Representation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arbitration</masterLabel>
+        <translation><!-- Arbitration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignment of Judgment</masterLabel>
+        <translation><!-- Assignment of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Action</masterLabel>
+        <translation><!-- Civil Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Litigation Referral Affirmative Lawsuit</masterLabel>
+        <translation><!-- Civil Litigation Referral Affirmative Lawsuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Appeal Hearing</masterLabel>
+        <translation><!-- Consultation - Appeal Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - BOFE Attorney</masterLabel>
+        <translation><!-- Consultation - BOFE Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Citation</masterLabel>
+        <translation><!-- Consultation - Citation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Interrogatory</masterLabel>
+        <translation><!-- Consultation - Interrogatory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - JEU Attorney</masterLabel>
+        <translation><!-- Consultation - JEU Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Joint Liability</masterLabel>
+        <translation><!-- Consultation - Joint Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Judgment Enforcement</masterLabel>
+        <translation><!-- Consultation - Judgment Enforcement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - LC226.8</masterLabel>
+        <translation><!-- Consultation - LC226.8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - LC2810</masterLabel>
+        <translation><!-- Consultation - LC2810 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Litigation</masterLabel>
+        <translation><!-- Consultation - Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultation - Livadas</masterLabel>
+        <translation><!-- Consultation - Livadas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Criminal Investigation</masterLabel>
+        <translation><!-- Criminal Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De Novo Referral</masterLabel>
+        <translation><!-- De Novo Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand</masterLabel>
+        <translation><!-- Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enforcement</masterLabel>
+        <translation><!-- Enforcement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enforcement Subpoena (MTC)</masterLabel>
+        <translation><!-- Enforcement Subpoena (MTC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External</masterLabel>
+        <translation><!-- External --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Enclave</masterLabel>
+        <translation><!-- Federal Enclave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Injunction - 238</masterLabel>
+        <translation><!-- Injunction - 238 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Injunction - 240</masterLabel>
+        <translation><!-- Injunction - 240 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Injunction - 3700</masterLabel>
+        <translation><!-- Injunction - 3700 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Injunction - Car Wash</masterLabel>
+        <translation><!-- Injunction - Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection Warrant</masterLabel>
+        <translation><!-- Inspection Warrant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral</masterLabel>
+        <translation><!-- JEU Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral Without Judgment (Unserved ODA Award by settlement)</masterLabel>
+        <translation><!-- JEU Referral Without Judgment (Unserved ODA Award by settlement) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral Without Judgment (Unserved ODA)</masterLabel>
+        <translation><!-- JEU Referral Without Judgment (Unserved ODA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral to Car Wash Fund</masterLabel>
+        <translation><!-- JEU Referral to Car Wash Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral to Farm Worker Fund</masterLabel>
+        <translation><!-- JEU Referral to Farm Worker Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral to Garment Fund</masterLabel>
+        <translation><!-- JEU Referral to Garment Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint Employer (633)</masterLabel>
+        <translation><!-- Joint Employer (633) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Correction</masterLabel>
+        <translation><!-- Judgment Correction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Defense</masterLabel>
+        <translation><!-- Judgment Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Enforcement</masterLabel>
+        <translation><!-- Judgment Enforcement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jurisdiction</masterLabel>
+        <translation><!-- Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levy</masterLabel>
+        <translation><!-- Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lien</masterLabel>
+        <translation><!-- Lien --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Livadas</masterLabel>
+        <translation><!-- Livadas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Protected Activity</masterLabel>
+        <translation><!-- Protected Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Employment</masterLabel>
+        <translation><!-- Public Employment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Record Only</masterLabel>
+        <translation><!-- Record Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refer to BOFE</masterLabel>
+        <translation><!-- Refer to BOFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retaliation</masterLabel>
+        <translation><!-- Retaliation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Letter to Employer</masterLabel>
+        <translation><!-- Send Letter to Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement (Release) Review</masterLabel>
+        <translation><!-- Settlement (Release) Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement Negotiations</masterLabel>
+        <translation><!-- Settlement Negotiations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Severance</masterLabel>
+        <translation><!-- Severance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena</masterLabel>
+        <translation><!-- Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena - Contempt Order</masterLabel>
+        <translation><!-- Subpoena - Contempt Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tribal Immunity</masterLabel>
+        <translation><!-- Tribal Immunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VEBA</masterLabel>
+        <translation><!-- VEBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wages</masterLabel>
+        <translation><!-- Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers Compensation</masterLabel>
+        <translation><!-- Workers Compensation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

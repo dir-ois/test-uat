@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_to_Other_is_required</fullName>
+    <active>true</active>
+    <description>Referred to Other text field is required if the referred to has &quot;Other&quot; as a value selected</description>
+    <errorConditionFormula>TEXT(Referred_To__c) = &quot;Other&quot; &amp;&amp; ISBLANK(Referred_To_Other__c)</errorConditionFormula>
+    <errorMessage>Referred to - Other is required when Referred to has the value &quot;Other&quot;</errorMessage>
+</ValidationRule>

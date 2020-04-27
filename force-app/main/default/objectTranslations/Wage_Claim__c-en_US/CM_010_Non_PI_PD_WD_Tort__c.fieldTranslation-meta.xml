@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CM-010 Non-PI/PD/WD Tort --></label>
+    <name>CM_010_Non_PI_PD_WD_Tort__c</name>
+    <picklistValues>
+        <masterLabel>Business tort/unfair business practice</masterLabel>
+        <translation><!-- Business tort/unfair business practice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil rights</masterLabel>
+        <translation><!-- Civil rights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defamation</masterLabel>
+        <translation><!-- Defamation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fraud</masterLabel>
+        <translation><!-- Fraud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intellectual property</masterLabel>
+        <translation><!-- Intellectual property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other non-PI/PD/WD tort</masterLabel>
+        <translation><!-- Other non-PI/PD/WD tort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional negligence</masterLabel>
+        <translation><!-- Professional negligence --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

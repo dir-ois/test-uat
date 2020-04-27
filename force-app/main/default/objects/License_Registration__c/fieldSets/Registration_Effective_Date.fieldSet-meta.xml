@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Effective_Date</fullName>
+    <description>Registration Duration of VIP form tool.</description>
+    <displayedFields>
+        <field>Effective_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Registration Effective Date</label>
+</FieldSet>

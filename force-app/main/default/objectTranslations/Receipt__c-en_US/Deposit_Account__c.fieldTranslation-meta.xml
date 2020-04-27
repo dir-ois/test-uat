@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deposit Account --></label>
+    <name>Deposit_Account__c</name>
+    <picklistValues>
+        <masterLabel>01-112</masterLabel>
+        <translation><!-- 01-112 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04-112</masterLabel>
+        <translation><!-- 04-112 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05-113</masterLabel>
+        <translation><!-- 05-113 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>06-114</masterLabel>
+        <translation><!-- 06-114 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07-119</masterLabel>
+        <translation><!-- 07-119 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>08-116</masterLabel>
+        <translation><!-- 08-116 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>09-117</masterLabel>
+        <translation><!-- 09-117 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10-117</masterLabel>
+        <translation><!-- 10-117 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>108</masterLabel>
+        <translation><!-- 108 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11-119</masterLabel>
+        <translation><!-- 11-119 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12-119</masterLabel>
+        <translation><!-- 12-119 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13-113</masterLabel>
+        <translation><!-- 13-113 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14-112</masterLabel>
+        <translation><!-- 14-112 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15-116</masterLabel>
+        <translation><!-- 15-116 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>17-113</masterLabel>
+        <translation><!-- 17-113 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18-113</masterLabel>
+        <translation><!-- 18-113 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>23-124</masterLabel>
+        <translation><!-- 23-124 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32-117</masterLabel>
+        <translation><!-- 32-117 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>633-114</masterLabel>
+        <translation><!-- 633-114 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

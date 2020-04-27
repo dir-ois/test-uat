@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Details for each selections:
+1) Paid by check or cash without an itemized wage deduction statement
+2) Itemized wage deduction statement provided but not accurate and/or incomplete
+3) Itemized wage deduction statement not provided at least semi-monthly --></help>
+    <label><!-- Pay Stub Violations --></label>
+    <name>Pay_Stub_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Inaccurate wage statement</masterLabel>
+        <translation><!-- Inaccurate wage statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No statement  at least semi-monthly</masterLabel>
+        <translation><!-- No statement  at least semi-monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid by Cash or No wage statement</masterLabel>
+        <translation><!-- Paid by Cash or No wage statement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

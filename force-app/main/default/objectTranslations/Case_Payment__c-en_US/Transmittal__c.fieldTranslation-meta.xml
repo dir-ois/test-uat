@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The transmittal this payment is a part of. --></help>
+    <label><!-- Transmittal --></label>
+    <name>Transmittal__c</name>
+    <relationshipLabel><!-- Case Payments --></relationshipLabel>
+</CustomFieldTranslation>

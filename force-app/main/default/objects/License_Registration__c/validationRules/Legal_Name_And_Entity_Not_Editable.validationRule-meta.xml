@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Name_And_Entity_Not_Editable</fullName>
+    <active>true</active>
+    <description>Legal Entity Name and Company Type are not editable after the registration has been approved.</description>
+    <errorConditionFormula>OR( ISCHANGED( Legal_Entity_Name__c) 
+    || ISCHANGED(Company_Type__c))
+&amp;&amp; 
+ISPICKVAL(Status__c, &#39;Approved&#39;)   
+&amp;&amp; 
+OR (RecordType.DeveloperName = &#39;Car_Wash&#39;
+    , RecordType.DeveloperName = &#39;Janitorial&#39;
+    , RecordType.DeveloperName = &#39;Child_Performer_Services&#39;)</errorConditionFormula>
+    <errorMessage>Warning: Legal Entity type or name cannot be changed after registration is approved.  A new application with fees must be submitted for a new Legal Entity.</errorMessage>
+</ValidationRule>

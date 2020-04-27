@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA Extension Required --></help>
+    <label><!-- Extension Required? --></label>
+    <name>Extension_Required__c</name>
+</CustomFieldTranslation>

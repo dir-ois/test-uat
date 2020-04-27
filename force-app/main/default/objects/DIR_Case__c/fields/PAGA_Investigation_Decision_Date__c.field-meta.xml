@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Investigation_Decision_Date__c</fullName>
+    <description>Investigation Decision Date - 52203. This is manually set.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date the certified letter notifying parties of the intent to investigate. This is manually set.</inlineHelpText>
+    <label>Date of Notice of Intent to Investigate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

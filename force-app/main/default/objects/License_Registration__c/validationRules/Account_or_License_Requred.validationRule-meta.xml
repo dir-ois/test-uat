@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_or_License_Requred</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &#39;License&#39;, 
+ISBLANK(Account__c),
+ISBLANK(License__c))</errorConditionFormula>
+    <errorMessage>You must have an Account or another Registration selected.</errorMessage>
+</ValidationRule>

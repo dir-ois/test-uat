@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the section of the form on which the attachment should appear. --></help>
+    <label><!-- VIP Form Section --></label>
+    <name>VIP_Form_Section__c</name>
+    <relationshipLabel><!-- Registration Attachment Bank --></relationshipLabel>
+</CustomFieldTranslation>

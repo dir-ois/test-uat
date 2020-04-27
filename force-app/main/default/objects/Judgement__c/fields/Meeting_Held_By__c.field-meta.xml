@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Held_By__c</fullName>
+    <description>Formula to migrate the internal employee in the &quot;Meeting Held By&quot; field on the Meeting record to the Judgment for output.</description>
+    <externalId>false</externalId>
+    <formula>Meeting__r.Hearing_Officer_Employee__r.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meeting Held By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

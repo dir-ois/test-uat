@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Text entered here will be displayed on forms preceding the Related Account selected below. Ex: Attorney for ABC, Inc. --></help>
+    <label><!-- Relationship Description --></label>
+    <name>Relationship_to_Claimant__c</name>
+</CustomFieldTranslation>

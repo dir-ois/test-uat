@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For Cure Disputes, this is the status. --></help>
+    <label><!-- Cure Dispute Status --></label>
+    <name>Cure_Dispute_Status__c</name>
+    <picklistValues>
+        <masterLabel>Evaluated/Cure Decision</masterLabel>
+        <translation><!-- Evaluated/Cure Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluated/Employer Extension</masterLabel>
+        <translation><!-- Evaluated/Employer Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluated/No Cure Decision</masterLabel>
+        <translation><!-- Evaluated/No Cure Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screened/No Action</masterLabel>
+        <translation><!-- Screened/No Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screened/To be evaluated</masterLabel>
+        <translation><!-- Screened/To be evaluated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

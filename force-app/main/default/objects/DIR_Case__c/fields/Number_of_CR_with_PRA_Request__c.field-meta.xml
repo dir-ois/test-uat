@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_CR_with_PRA_Request__c</fullName>
+    <description>This field will hold the number of Case Roles with the Required name for PRA Request. It aggregates the number of records based on the PRA Request Name on the Case Role Object</description>
+    <externalId>false</externalId>
+    <label>Number of CR For PRA Request</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

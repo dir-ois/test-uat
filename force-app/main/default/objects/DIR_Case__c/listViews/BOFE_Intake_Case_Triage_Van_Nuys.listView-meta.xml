@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Intake_Case_Triage_Van_Nuys</fullName>
+    <columns>Case_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Employer__c</columns>
+    <columns>Priority_Level__c</columns>
+    <columns>Case_Source__c</columns>
+    <columns>EmployeesfromAccount__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Language__c</columns>
+    <columns>Deadline__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.BOFE_Intake,DIR_Case__c.BOFE_Inspection_Request</value>
+    </filters>
+    <filters>
+        <field>Office__c</field>
+        <operation>equals</operation>
+        <value>Van Nuys BOFE</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>Assigned_Deputy__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>BOFE Intake Case Triage - Van Nuys</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DIR_Office_Address__c</fullName>
+    <description>Used by Conga to pull Office Address the Office record related to the Internal Employee record related to the Case.</description>
+    <externalId>false</externalId>
+    <formula>Assigned_Deputy__r.Office__r.Address_1__c + &quot;, &quot; + Assigned_Deputy__r.Office__r.Address_2__c + &quot; &quot; + Assigned_Deputy__r.Office__r.City__c + &quot;, &quot; + Assigned_Deputy__r.Office__r.State__c + &quot; &quot; + Assigned_Deputy__r.Office__r.Zip_Code__c</formula>
+    <label>DIR Office Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

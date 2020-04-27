@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Returned__c</fullName>
+    <description>Date payment was mailed back to submitter. Different from Returned_Date__c which is the date a payment was returned from the bank.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date payment was mailed back to submitter. Different from Returned Date which is the date a payment was returned from the bank.</inlineHelpText>
+    <label>Date Returned</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

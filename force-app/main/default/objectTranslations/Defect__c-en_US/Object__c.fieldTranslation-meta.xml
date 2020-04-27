@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Object --></label>
+    <name>Object__c</name>
+    <picklistValues>
+        <masterLabel>Attachments Plus</masterLabel>
+        <translation><!-- Attachments Plus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bond</masterLabel>
+        <translation><!-- Bond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Account</masterLabel>
+        <translation><!-- Business Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DBA</masterLabel>
+        <translation><!-- DBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fee</masterLabel>
+        <translation><!-- Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fee Summary</masterLabel>
+        <translation><!-- Fee Summary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location</masterLabel>
+        <translation><!-- Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership</masterLabel>
+        <translation><!-- Ownership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Person Account</masterLabel>
+        <translation><!-- Person Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registration</masterLabel>
+        <translation><!-- Registration --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

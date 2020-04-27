@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2810_4_List_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>2810.4 List Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Confirmed-On List</fullName>
+                <default>false</default>
+                <label>Confirmed-On List</label>
+            </value>
+            <value>
+                <fullName>Confirmed-Off List</fullName>
+                <default>false</default>
+                <label>Confirmed-Off List</label>
+            </value>
+            <value>
+                <fullName>Under Investigation/Appeal</fullName>
+                <default>false</default>
+                <label>Under Investigation/Appeal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

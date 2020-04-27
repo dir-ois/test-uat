@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returned_Item__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This marks the Item returned so that the transactions related to this item may be reversed within the system.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box when the bank notifies Cashiering that this deposited Receipt has been returned, e.g., Non-Sufficient Funds (NSF) or Stopped Payment.</inlineHelpText>
+    <label>Returned Item</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

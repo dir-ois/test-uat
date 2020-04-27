@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not paid double time for over 12 hours per day --></help>
+    <label><!-- Not paid double time over 12 hours --></label>
+    <name>Violation_Not_paid_double_time_over_12__c</name>
+</CustomFieldTranslation>

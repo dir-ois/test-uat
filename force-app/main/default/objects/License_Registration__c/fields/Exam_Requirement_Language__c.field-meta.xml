@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exam_Requirement_Language__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Number_of_Exams_Required__c &gt; 0, 
+CASE(  License_Registration_Type__c , 
+&quot;Car Wash&quot;, &quot;A Car Wash exam is required. The exam fee is $100 for first-time business registrations and $50 for registration renewals. A representative from your company will need to complete the exam and pay the exam fee in order to obtain a license.&quot;, 
+&quot;Farm Labor&quot;, &quot;A Farm Labor exam is required. The exam fee is $50. A representative from your company will need to complete the exam and pay the exam fee in order to obtain a license.&quot;,
+&quot;No exams necessary at this time.&quot;),
+&quot;No exams necessary at this time.&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Exam Requirements</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

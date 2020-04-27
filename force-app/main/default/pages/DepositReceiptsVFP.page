@@ -1,0 +1,28 @@
+<apex:page controller="DepositReceiptsController" standardStylesheets="true" action="{!recordDeposits}">
+    <apex:form >
+        <apex:pageBlock title="Issues creating transaction:">
+            <apex:outputPanel rendered="{!showErrors}">
+                
+                <apex:pageBlockSection >
+                    <apex:messages styleClass="errorMsg" layout="block" title="Errors" />
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection >
+                    <apex:commandButton value="Return to Receipt List View" action="{!returnToList}" />
+                </apex:pageBlockSection>
+                
+            </apex:outputPanel>
+            
+            <apex:pageBlockTable value="{!receiptList}" var="rct">
+                
+                <apex:column value="{!rct.Name}" />
+                <apex:column value="{!rct.Deposit_Account__c}" />
+                <apex:column value="{!rct.Office_Unit__c}" />
+                <apex:column value="{!rct.Payment_Amount__c}" />
+                <apex:column value="{!rct.Deduction_Amount__c}" />
+                
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

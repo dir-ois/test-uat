@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Payment_Plans_on_Closed_Case</fullName>
+    <active>false</active>
+    <description>RCI - Payment Plans cannot be created/edited for a closed case.</description>
+    <errorConditionFormula>(Case__r.RecordType.DeveloperName=&quot;RCI&quot;) &amp;&amp;
+(Case__r.Closed__c=TRUE)</errorConditionFormula>
+    <errorMessage>Payment Plans cannot be created/edited for a closed case. Please submit the case for approval to be re-opened.</errorMessage>
+</ValidationRule>

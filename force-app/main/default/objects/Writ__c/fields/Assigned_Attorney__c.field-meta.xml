@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Attorney__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Attorney Assigned to this Writ.  Is usually the same as the Writ Owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Attorney Assigned to this Writ.  Is usually the same as the Writ Owner.</inlineHelpText>
+    <label>Assigned Attorney</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Writs</relationshipLabel>
+    <relationshipName>Writs</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

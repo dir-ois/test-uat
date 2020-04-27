@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Contractor_Registration__c</fullName>
+    <externalId>false</externalId>
+    <label>Prior Contractor Registration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No, this is my first registration</fullName>
+                <default>false</default>
+                <label>No, this is my first registration</label>
+            </value>
+            <value>
+                <fullName>Yes, I have an existing registration</fullName>
+                <default>false</default>
+                <label>Yes, I have an existing registration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

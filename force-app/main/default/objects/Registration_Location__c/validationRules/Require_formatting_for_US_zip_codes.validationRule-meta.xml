@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_formatting_for_US_zip_codes</fullName>
+    <active>true</active>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  !ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( Zip_Code__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+OR( 
+
+AND( 
+NOT(ISBLANK(  Zip_Code__c )), 
+ISPICKVAL(  Country__c , &quot;United States of America&quot;), 
+OR( 
+AND(LEN(Zip_Code__c ) &lt;&gt;5, 
+LEN(Zip_Code__c ) &lt;&gt; 10), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+LEFT( Zip_Code__c , 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 2, 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 3, 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 4, 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 5, 1))), 
+AND( 
+LEN(Zip_Code__c ) = 10, 
+OR( 
+MID( Zip_Code__c , 6, 1) &lt;&gt; &quot;-&quot;, 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 7, 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 8, 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 9, 1))), 
+NOT(CONTAINS(&quot;0123456789&quot;, 
+MID( Zip_Code__c , 10, 1))) 
+) 
+) 
+) 
+)
+)</errorConditionFormula>
+    <errorMessage>U.S. Zip codes must have 5 digits or 9 digits with a dash between the 5th and 6th digit.</errorMessage>
+</ValidationRule>

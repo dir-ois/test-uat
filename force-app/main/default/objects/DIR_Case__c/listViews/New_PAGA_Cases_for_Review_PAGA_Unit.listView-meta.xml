@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_PAGA_Cases_for_Review_PAGA_Unit</fullName>
+    <columns>NAME</columns>
+    <columns>Filer_Attorney_for_PAGA_Case__c</columns>
+    <columns>Employer__c</columns>
+    <columns>PAGA_Priority__c</columns>
+    <columns>Investigation_Decision_Deadline_Date__c</columns>
+    <columns>PAGA_Postmark_Date__c</columns>
+    <columns>Notice_Filing_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Plaintiff_for_PAGA_Case_Text__c</columns>
+    <columns>PAGA_Manual_Screened__c</columns>
+    <columns>IFP_Claimed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PAGA_Priority__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>PAGA_Priority__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.PAGA_Case</value>
+    </filters>
+    <label>New PAGA Cases for Review - PAGA Unit</label>
+</ListView>

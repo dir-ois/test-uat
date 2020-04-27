@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_ODA_Document</fullName>
+    <availability>online</availability>
+    <description>Conga Composer button on the ODA object to generate ODA documents.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate ODA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!ODAS__c.Id}
+&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[Defendant]a0md00000064cjRAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[DefandJoint]a0md00000064cj8AAA?pv0={!ODAS__c.Case_ManagementId__c},
+[Occupation]a0md00000064cjPAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[VioTable]a0md00000064cjSAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[Guarantor]a0md00000064cjNAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[Successor]a0md00000064cjLAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[WCAOffice]a0md00000064cjOAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[HearingInfo]a0md00000064cjuAAA?pv0={!ODAS__c.Case_ManagementId__c},
+[CaseInfo]a0md00000064cjCAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[EMP]a0md00000064cj2AAA?pv0={!ODAS__c.Case_ManagementId__c}~pv1=&quot;Case employer&quot;,
+[GUAR]a0md00000064cj2AAA?pv0={!ODAS__c.Case_ManagementId__c}~pv1=&quot;Guarantor&quot;,
+[ODATable]a0md00000064cjmAAA?pv0={QVar0},
+[ODAClaimant]a0md00000064cj1AAA?pv0={!ODAS__c.Case_ManagementId__c}~pv1=&quot;Claimant&quot;,
+[ODADefendant]a0md00000064cj1AAA?pv0={!ODAS__c.Case_ManagementId__c}~pv1=&quot;Defendant&quot;,
+[ODATableNonJoint]a0md00000064iDW, 
+[ODATableJoint]a0md00000064iDR, 
+[CourtHO]a0md00000064cjMAAQ?pv0={!ODAS__c.Case_ManagementId__c},
+[ODAJoint]a0md00000064cjVAAQ,
+[ODADef]a0md00000064cjXAAQ,
+[ODAHearing]a0md00000064cjeAAA,
+&amp;QVar0id=a0md00000064cjWAAQ&amp;QVar0format=21010
+&amp;TemplateGroup=WCAODA
+&amp;OFN={Template.Label} + {!ODAS__c.File_Output_Field_Case_and_Employer__c}
+&amp;sc0=1 
+&amp;sc1=Attachments</url>
+</WebLink>

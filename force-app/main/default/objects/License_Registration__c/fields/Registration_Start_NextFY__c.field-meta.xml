@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Start_NextFY__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATE((Year(TODAY())+2),6,30)</formula>
+    <label>Registration Start NextFY</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

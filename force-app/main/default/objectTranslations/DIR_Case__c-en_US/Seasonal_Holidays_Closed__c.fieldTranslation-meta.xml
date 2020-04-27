@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Seasonal: Holidays Closed --></label>
+    <name>Seasonal_Holidays_Closed__c</name>
+    <picklistValues>
+        <masterLabel>4th of July</masterLabel>
+        <translation><!-- 4th of July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christmas</masterLabel>
+        <translation><!-- Christmas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Labor Day</masterLabel>
+        <translation><!-- Labor Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Memorial Day</masterLabel>
+        <translation><!-- Memorial Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Year&#39;s Day</masterLabel>
+        <translation><!-- New Year&apos;s Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thanksgiving Day</masterLabel>
+        <translation><!-- Thanksgiving Day --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

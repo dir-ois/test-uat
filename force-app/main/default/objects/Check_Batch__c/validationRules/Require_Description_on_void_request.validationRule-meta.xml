@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Description_on_void_request</fullName>
+    <active>true</active>
+    <description>On a void request the reason is required to submit the request.</description>
+    <errorConditionFormula>AND( Void_Request__c = True,  ISBLANK( Void_Reason__c ) )</errorConditionFormula>
+    <errorDisplayField>Void_Reason__c</errorDisplayField>
+    <errorMessage>You must provide a reason to request a check batch be voided.</errorMessage>
+</ValidationRule>

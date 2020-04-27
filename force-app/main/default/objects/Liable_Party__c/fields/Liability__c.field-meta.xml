@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liability__c</fullName>
+    <description>This ties the Liability to One or Many Liable Parties for a specific Assessment. Not-Reparentable</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This ties the Liability to One or Many Liable Parties for a specific Assessment. Not-Reparentable</inlineHelpText>
+    <label>Liability</label>
+    <referenceTo>Liability__c</referenceTo>
+    <relationshipLabel>Liable Parties</relationshipLabel>
+    <relationshipName>Liable_Parties</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

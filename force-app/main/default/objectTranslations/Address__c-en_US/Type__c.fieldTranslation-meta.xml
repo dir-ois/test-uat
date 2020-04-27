@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of location at this address --></help>
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Location</masterLabel>
+        <translation><!-- Business Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home</masterLabel>
+        <translation><!-- Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Site</masterLabel>
+        <translation><!-- Job Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location of Records</masterLabel>
+        <translation><!-- Location of Records --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mailing Address</masterLabel>
+        <translation><!-- Mailing Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Box</masterLabel>
+        <translation><!-- PO Box --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary</masterLabel>
+        <translation><!-- Primary --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

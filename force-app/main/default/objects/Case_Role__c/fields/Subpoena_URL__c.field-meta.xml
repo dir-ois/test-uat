@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subpoena_URL__c</fullName>
+    <description>No Longer Used. Kept for legacy</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; +  Id  +
+&quot;&amp;reportid=[Employee]00OZ0000000LB0d?pv2=&quot; + Case__c  
++ &quot;,[Employors]00OZ0000000LB0Y?pv2=&quot; + Case__c  
++ &quot;,[All]00OZ0000000LBVg?pv2=&quot; + Case__c  
++ &quot;&amp;qmode=Download&quot;
++ &quot;&amp;DefaultPDF=0&quot;
++ &quot;&amp;templateId=a0nZ0000001eFU1&quot;
++ &quot;&amp;OFN=WCA 42 Subpoena Personal-&quot; +  Case__r.Name  + &quot;-&quot; +   Entity__r.Name
++ &quot;&amp;SC0=1&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subpoena URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

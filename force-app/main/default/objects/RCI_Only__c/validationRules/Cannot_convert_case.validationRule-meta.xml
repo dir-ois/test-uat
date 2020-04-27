@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_convert_case</fullName>
+    <active>false</active>
+    <description>Before the status can be confirmed the associated parties need to be handled.</description>
+    <errorConditionFormula>OR(
+AND(ISPICKVAL(Status__c, &#39;Convert to Case&#39;), Number_of_Claimants__c &gt; 0),
+AND(ISPICKVAL(Status__c, &#39;Convert to Case&#39;),  Number_of_Advocates__c  &gt; 0),
+AND(ISPICKVAL(Status__c, &#39;Convert to Case&#39;),  Number_of_Employers__c  &gt; 0)
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You must confirm the Advocate, Employer and Claimant before setting status to Convert to Case.</errorMessage>
+</ValidationRule>

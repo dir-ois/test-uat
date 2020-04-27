@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Type_Text__c</fullName>
+    <externalId>false</externalId>
+    <label>Record Type Text</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOFE</fullName>
+                <default>false</default>
+                <label>BOFE</label>
+            </value>
+            <value>
+                <fullName>WCA</fullName>
+                <default>false</default>
+                <label>WCA</label>
+            </value>
+            <value>
+                <fullName>Garment</fullName>
+                <default>false</default>
+                <label>Garment</label>
+            </value>
+            <value>
+                <fullName>Legacy WCA Case</fullName>
+                <default>false</default>
+                <label>Legacy WCA Case</label>
+            </value>
+            <value>
+                <fullName>Legacy Garment Case</fullName>
+                <default>false</default>
+                <label>Legacy Garment Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

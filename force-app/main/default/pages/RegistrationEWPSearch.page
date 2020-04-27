@@ -1,0 +1,89 @@
+<apex:page controller="RegistrationEWPSearchController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="true" title="Registration Search">
+    <script>
+        $j = jQuery.noConflict();
+    </script> 
+    <style>
+        .multiSelectPicklistRow select option:before,
+        .multiSelectPicklistRow select option:after {display:none;}
+    </style>
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body"> 
+            <apex:form >     
+                <apex:outputPanel id="mainPanel">
+                    <ol class="breadcrumb">
+                        <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                        <li class="active">Registration Search</li>
+                    </ol>
+                    <h1>Registration Search</h1>
+                    <br />
+                    
+                    <div class="row mb">
+                        <div class="form-group col-md-5" style="background:lightgrey">
+                            <label style="text-decoration:underline;"> Notice</label>
+                            <div>
+                                <apex:outputText >This portal is provided for use only by studio teachers, prospective employers, or authorized representatives of prospective employers who are seeking to verify the entertainment work permit of a minor employment applicant. The use of this automated service by any other individual, or for any other purpose, is an unauthorized use under the Penal Code. Individuals who misuse this portal, or the information obtained via this portal may be held civilly or criminally liable for their conduct, and punished by fine, imprisonment or both.</apex:outputText>
+                                <br/>
+                                <br/>
+                                <apex:outputText >This Notice is effective January 2012, and subject to revision.</apex:outputText>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <!--tken 06/27/2018 add list of record types -->
+                    <div class="row mb">
+                        <div class="col-md-5">
+                            <i>Enter at least one other search criteria.</i>
+                            <br/> 
+                        <label>Registration Type:  <font color="red">*</font></label>
+                        <apex:selectList id="selectedRecordType" value="{!searchClassObj.selectedRecordType}" multiselect="false" size="1" styleClass="form-control">
+                            <apex:selectOptions value="{!registrationRecordTypes}"/>
+                        </apex:selectList>
+                        </div>                  
+                    </div> 
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Permit Number:  <font color="red">*</font></label>
+                            <apex:inputText id="registrationNumberStr" value="{!searchClassObj.registrationNumberStr}" styleclass="form-control" />
+                            
+                        </div>
+                    </div>  
+                    
+                    <div class="row mb">
+                        <div class="form-group col-md-5">
+                            <label>Minor's Residential Zip:  <font color="red">*</font></label>
+                            <apex:inputText id="locationZipStr" value="{!searchClassObj.locationZipStr}" styleclass="form-control" />
+                        </div>
+                    </div> 
+                    
+                    <!-- redirects to RegistrationSearchResults.page (view action SearchRegistration() on RegistrationSearchController.cls) -->
+                    <apex:commandLink id="searchbt" action="{!SearchRegistration}" value="Search" style="text-decoration:none;" styleclass="btn-custom btn-lg" />&nbsp;&nbsp;
+                    
+                    <!-- empty fields (view action ClearFields() on PAGASearchController.cls) -->
+                    <apex:commandLink id="clearbt" onclick="clearDataFields();" action="{!ClearFields}" value="Clear Fields" rerender="mainPanel" />
+                    
+                    
+                </apex:outputPanel>
+                <!-- start press enter to initiate a search -->
+                <script type="text/javascript">
+                    $j(document).keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                             document.getElementById('{!$Component.searchbt}').click();
+                             
+                        }
+                    });
+                    function clearDataFields() {
+                        document.getElementById('{!$Component.bondEffectiveDate}').value = '';
+                        document.getElementById('{!$Component.effectiveDate}').value = '';
+                        document.getElementById('{!$Component.expirationDate}').value = '';
+                    }
+                </script> 
+                <!-- end press enter to initiate a search -->
+                <!-- end press enter to initiate a search -->
+            </apex:form>
+              
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Wage_Claim__c</field>
+        <field>WCA_Senior_Deputy__c</field>
+        <field>Reporting_Party_Name__c</field>
+        <field>Account__c</field>
+        <field>Source__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>WCA_Senior_Deputy__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>This step sends the Referred RLLV to the WCA Sr. Deputy on the RLLV prior to it being received by BOFE.</description>
+        <label>WCA Sr. Deputy Approval</label>
+        <name>WCA_Sr_Deputy_Approval</name>
+        <rejectionActions>
+            <action>
+                <name>Wage_Claim_Referral_Rejected_By_Senior_Wage_Deputy</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Bakersfield</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Bakersfield Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Bakersfield</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Bakersfield Sr. Deputy Approval</label>
+        <name>BOFE_Bakersfield_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>El_Centro</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE El Centro Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>El Centro</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE El Centro Sr. Deputy Approval</label>
+        <name>BOFE_El_Centro_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Fresno</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Fresno Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Fresno</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Fresno Sr. Deputy Approval</label>
+        <name>BOFE_Fresno_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Long_Beach</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Long Beach Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Long Beach</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Long Beach Sr. Deputy Approval</label>
+        <name>BOFE_Long_Beach_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Los_Angeles</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Los Angeles Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Los Angeles</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Los Angeles Sr. Deputy Approval</label>
+        <name>BOFE_Los_Angeles_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Oakland</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Oakland Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Oakland</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Oakland Sr. Deputy Approval</label>
+        <name>BOFE_Oakland_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Redding</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Redding Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Redding</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Redding Sr. Deputy Approval</label>
+        <name>BOFE_Redding_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Sacramento</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Sacramento Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Sacramento</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Sacramento Sr. Deputy Approval</label>
+        <name>BOFE_Sacramento_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Salinas</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Salinas Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Salinas</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Salinas Sr. Deputy Approval</label>
+        <name>BOFE_Salinas_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Riverside</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE San Bernardino Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>San Bernardino</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE San Bernardino Sr. Deputy Approval</label>
+        <name>BOFE_San_Bernardino_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>San_Diego</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE San Diego Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>San Diego</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE San Diego Sr. Deputy Approval</label>
+        <name>BOFE_San_Diego_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>San_Francisco</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE San Francisco Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>San Francisco</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE San Francisco Sr. Deputy Approval</label>
+        <name>BOFE_San_Francisco_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>San_Jose</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE San Jose Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>San Jose</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE San Jose Sr. Deputy Approval</label>
+        <name>BOFE_San_Jose_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Santa_Ana</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Santa Ana Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Santa Ana</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Santa Ana Sr. Deputy Approval</label>
+        <name>BOFE_Santa_Ana_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Santa_Barbara</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Santa Barbara Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Santa Barbara</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Santa Barbara Sr. Deputy Approval</label>
+        <name>BOFE_Santa_Barbara_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Santa_Rosa</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Santa Rosa Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Santa Rosa</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Santa Rosa Sr. Deputy Approval</label>
+        <name>BOFE_Santa_Rosa_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Stockton</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Stockton Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Stockton</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BOFE Stockton Sr. Deputy Approval</label>
+        <name>BOFE_Stockton_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Van_Nuys</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>BOFE Van Nuys Sr. Deputy Approval</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>DIR_Case__c.BoFE_Office_Location_City__c</field>
+                <operation>equals</operation>
+                <value>Van Nuys</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>BOFE Van Nuys Sr. Deputy Approval</label>
+        <name>BOFE_Van_Nuys_Sr_Deputy_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Wage Claim Referral to BOFE.  Sends the Referral to the Senior WCA Deputy assigned to the Wage Claim and requests approval of the RLLV.</description>
+    <emailTemplate>Case_Management_Email_Templates/Wage_Claim_Referral_Approval_Needed</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>ISPICKVAL(Source__c, &quot;WCA&quot;) &amp;&amp; !ISBLANK(Wage_Claim__c) &amp;&amp; ISPICKVAL(Approval_Needed__c, &quot;Wage Sr. Deputy&quot;)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Approval_Needed_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Approval_Needed_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>true</finalRejectionRecordLock>
+    <label>Wage Claim Referral to BOFE v5</label>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

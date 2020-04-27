@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of days a position has been open.  Positions open longer than 180 days may be in danger of being eliminated. --></help>
+    <label><!-- Days Open --></label>
+    <name>Days_Open__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Final Legal Outcome of the Writ --></help>
+    <label><!-- Final Legal Outcome --></label>
+    <name>Final_Legal_Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Denied - in part</masterLabel>
+        <translation><!-- Denied - in part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denied - in whole</masterLabel>
+        <translation><!-- Denied - in whole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed  </masterLabel>
+        <translation><!-- Dismissed   --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Granted - No Remand</masterLabel>
+        <translation><!-- Granted - No Remand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Granted - Remand for New Findings</masterLabel>
+        <translation><!-- Granted - Remand for New Findings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Granted - Remand for New Hearing</masterLabel>
+        <translation><!-- Granted - Remand for New Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn by Employer</masterLabel>
+        <translation><!-- Withdrawn by Employer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

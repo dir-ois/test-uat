@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Judgement_Case_Violations__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Use to report on Judgment Case Violations</description>
+    <label>Judgment Case Violations</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Liability_Judgement__c</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Case_Violation__c</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Judgement_Category__c</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Violation_Penalty__c</field>
+            <table>Judgement_Case_Violations__c</table>
+        </columns>
+        <masterLabel>Judgment Case Violations</masterLabel>
+    </sections>
+</ReportType>

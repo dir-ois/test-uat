@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEC2 Typist --></label>
+    <name>SEC2_Typist__c</name>
+    <picklistValues>
+        <masterLabel>Range A</masterLabel>
+        <translation><!-- Range A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Range B (over 50% dictaphone)</masterLabel>
+        <translation><!-- Range B (over 50% dictaphone) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

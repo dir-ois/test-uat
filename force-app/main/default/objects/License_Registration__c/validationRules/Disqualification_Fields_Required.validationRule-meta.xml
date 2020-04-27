@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disqualification_Fields_Required</fullName>
+    <active>true</active>
+    <description>When the status of a PW reg is disqualified additional fields are required</description>
+    <errorConditionFormula>AND(
+ Record_Type_Name__c = &quot;Public_Works&quot;,
+ISPICKVAL(Status__c, &quot;Disqualified&quot;),
+OR(ISNULL(Disqualification_Start_Date__c),
+ISBLANK(Disqualified_Reason__c))
+)</errorConditionFormula>
+    <errorMessage>If the registration status is changed to Disqualified. The Disqualified Reason and Disqualification Start Date are required.  Please fill out those fields and reattempt to save the record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Liability_Increment_Appeals_on_Liabilit</fullName>
+        <description>Liability__r.Appeals_on_Liability__c + 1</description>
+        <field>Appeals_on_Liability__c</field>
+        <formula>Liability__r.Appeals_on_Liability__c + 1</formula>
+        <name>Liability: Increment Appeals on Liabilit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Liability__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Received_Untimely_Appeal</fullName>
+        <description>Received Untimely Appeal</description>
+        <field>Status__c</field>
+        <literalValue>Received - Untimely</literalValue>
+        <name>Received Untimely Appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Appeal__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Liability_Under_appeal</fullName>
+        <description>Sets the liability status to under appeal</description>
+        <field>Status__c</field>
+        <literalValue>Under Appeal</literalValue>
+        <name>Set Liability Under appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Liability__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Increment Liability Appeals Amount</fullName>
+        <actions>
+            <name>Liability_Increment_Appeals_on_Liabilit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Increment the Liability Appeals amount on the Parent Liability when a new Liability Appeal is created.</description>
+        <formula>TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Liability%3A Must Appeal Within Deadline</fullName>
+        <actions>
+            <name>Received_Untimely_Appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Will automatically set an Appeal to Untimely due to the Deadline passing on an Appeal.</description>
+        <formula>Liability__r.Appeal_Deadline__c &lt;  Appeal__r.Request_Receipt_Date__c</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Liability Under Appeal</fullName>
+        <actions>
+            <name>Set_Liability_Under_appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>when a liability goes under appeal, set the status of the appeal to under appeal</description>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

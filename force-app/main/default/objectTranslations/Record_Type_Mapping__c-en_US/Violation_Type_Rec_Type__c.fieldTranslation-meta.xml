@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the record type of the violation types that should display in the violation engine for the related case rec type. --></help>
+    <label><!-- Violation Type Rec Type --></label>
+    <name>Violation_Type_Rec_Type__c</name>
+</CustomFieldTranslation>

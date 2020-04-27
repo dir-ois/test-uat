@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purge_Date_Time_Frame</fullName>
+    <active>true</active>
+    <description>The system will not allow a purge date less than two years or more than 10 years from date of closing.</description>
+    <errorConditionFormula>AND(
+(Record_Type_Name__c = &quot;RCI&quot;),
+(Purge_Date__c &gt;= (Case_Closed_Date__c + 730) &lt;&gt; Purge_Date__c &lt;= (Case_Closed_Date__c + 3650))
+)</errorConditionFormula>
+    <errorMessage>You may not enter a Purge Date less than 2 years or more than 10 years from Case Closed Date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Behavior__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Entity__r.Behavior_Level__c, &quot;High&quot;),  IMAGE(&quot;/servlet/servlet.FileDownload?file=015t00000006VM6&quot;, &quot;Emo-High&quot; , 15,15 ),
+
+IF( ISPICKVAL(Entity__r.Behavior_Level__c, &quot;Medium&quot;),  IMAGE(&quot;/servlet/servlet.FileDownload?file=015t00000006VMB&quot;, &quot;Emo-Medium&quot; , 15,15 ),
+
+IF( ISPICKVAL(Entity__r.Behavior_Level__c, &quot;Low&quot;),  IMAGE(&quot;/servlet/servlet.FileDownload?file=015t00000006VML&quot;, &quot;Emo-Low&quot; , 15,15 ),
+&quot;&quot;
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Behavior</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

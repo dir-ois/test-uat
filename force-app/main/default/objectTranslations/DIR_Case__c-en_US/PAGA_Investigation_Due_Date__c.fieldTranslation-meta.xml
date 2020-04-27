@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This date is the deadline by which BOFE must decide whether BOFE will investigate, or allow the Private Attorney to pursue a civil case. --></help>
+    <label><!-- PAGA Decision Due Date --></label>
+    <name>PAGA_Investigation_Due_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ODA_Id_Migration__c</fullName>
+    <description>For simplicity of design in SOQL, this formula field migrates the ODA Id from a Liable Party record to the Liable Party Case Issue record.  That id may then be used as a filter in the SOQL query.</description>
+    <externalId>false</externalId>
+    <formula>Liable_Party__r.ODA__r.Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ODA Id Migration</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

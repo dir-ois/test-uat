@@ -1,0 +1,3178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Created_as_Immediate_Investigation_Case_Notification_to_Senior_Deputies</fullName>
+        <description>Case Created as Immediate Investigation Case - Notification to Senior Deputies</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Case_Set_as_Immediate_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Creation_Form_Assembly_Email_Alert</fullName>
+        <description>Case Creation - Form Assembly Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Case_Creation_Case_Role_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Notify_Deputy_Refer_to_JEU</fullName>
+        <description>Case: Notify Deputy Refer to JEU</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Owner_s_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Notify_Deputy_Refer_to_JEU</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Rejected_by_JEU</fullName>
+        <description>Case Rejected by JEU</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Case_Rejected_by_JEU</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Reopen_Request_Approved</fullName>
+        <description>Case Reopen Request Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Case_Reopen_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Reopen_Request_Rejected</fullName>
+        <description>Case Reopen Request Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Case_Reopen_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Cure_Dispute_Notification</fullName>
+        <description>Cure Dispute Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PAGA_Attorney</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>mjanatpour@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PAGA_Email_Templates/Cure_Dispute_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Deputy_Assigned_to_Case</fullName>
+        <description>Deputy Assigned to Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Deputy_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Deputy_Assigned_to_CaseDirect</fullName>
+        <description>Deputy Assigned to CaseDirect</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Deputy_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Filer</fullName>
+        <description>Email to Filer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Filer_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PAGA_Email_Templates/New_PAGA_Case_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Inspection_Request_Created</fullName>
+        <description>New Inspection Request Created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/New_Inspection_Request_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Office_Assignment_General</fullName>
+        <description>New Office Assignment (General)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DIR_Office_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Office_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>New_unassigned_office_and_deputy_notification</fullName>
+        <description>New unassigned office and deputy notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>phuber@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Office_Unassigned</template>
+    </alerts>
+    <alerts>
+        <fullName>No_Activity_for_30_Days_Notification</fullName>
+        <description>No Activity for 30 Days Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/No_Activty_for_30_Days</template>
+    </alerts>
+    <alerts>
+        <fullName>No_Activity_for_45_Days_Notification</fullName>
+        <description>No Activity for 45 Days Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/No_Activity_for_45_Days</template>
+    </alerts>
+    <alerts>
+        <fullName>No_Activity_for_45_Days_Sr_Deputy_Notification</fullName>
+        <description>No Activity for 45 Days Sr. Deputy Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Owner_s_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/No_Activity_for_45_Days</template>
+    </alerts>
+    <alerts>
+        <fullName>Notidy_Deputy_Post_Closure</fullName>
+        <description>Notidy Deputy Post Closure</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/CM_Notify_Deputy_Post_Closure</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_of_new_PAGA_Case_related_to_existing_BOFE_Case</fullName>
+        <description>Notification of new PAGA Case related to existing BOFE Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>PAGA_Screeners</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Notification_of_New_PAGA_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_CIU</fullName>
+        <description>Notify CIU</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bcheng@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ptuminia@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>spchen@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/CM_BOFE_CIU_Referral</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Deputy_No_Action</fullName>
+        <description>Notify Deputy No Action</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/No_Activty_for_45_Days_Deputy</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_PAGA_Attorney_Cure_Dispute_Review_DeadlineRevised</fullName>
+        <description>Notify PAGA Attorney of Cure Dispute Review DeadlineRevised</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_PAGA_Attorney_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Cure_Dispute_Review_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_PAGA_Attorney_of_Cure_Dispute_Review_Deadline</fullName>
+        <description>Notify PAGA Attorney of Cure Dispute Review Deadline</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Filer_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Cure_Dispute_Review_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_RCI_Manager</fullName>
+        <description>Notify RCI Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Owner_s_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Determination_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Senior_deputy_of_inactivity_for_60_days</fullName>
+        <description>Notify Senior deputy of inactivity for 60 days</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Owner_s_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/No_Activity_for_60_Days_Sr</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Sr_60_Days</fullName>
+        <description>Notify Sr 60 Days</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Owner_s_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/No_Activity_for_60_Days_Sr</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_deputy_of_inactivity_for_30_days</fullName>
+        <description>Notify deputy of inactivity for 30 days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/No_Activty_for_45_Days_Deputy</template>
+    </alerts>
+    <alerts>
+        <fullName>Office_Assigned_to_Case</fullName>
+        <description>Office Assigned to Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Office_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Case_Email_to_Advocate</fullName>
+        <description>RCI Case - Email to Advocate</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Related_Party_Advocate_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/RCI_Email_to_Advocate</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Case_Email_to_Claimant</fullName>
+        <description>RCI Case - Email to Claimant</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Related_Party_Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/RCI_Email_to_Claimant</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Case_Withdrawn_Closed_Case</fullName>
+        <description>RCI Case Withdrawn - Closed Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Case_Withdrawn_Notification_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Settlement_Pending_Review_Email_Alert_to_PAGA_Attorney</fullName>
+        <description>Settlement Pending Review Email Alert to PAGA Attorney</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PAGA_Attorney</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>PAGA_Screeners</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PAGA_Email_Templates/Settlement_Pending_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Referral_5_Day_Deadline_Reminder</fullName>
+        <description>Wage Referral 5 Day Deadline Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/Wage_Referral_Deadline_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>X24_Hour_Email_Alert</fullName>
+        <description>24 Hour Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/Case_Acceptance_24_Hour_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_Day_Notification_to_BOFE_Contacts_to_Update_Case_Investigation_Progress</fullName>
+        <description>30-Day Notification to BOFE Contacts to Update Case Investigation Progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X30_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_Day_Notification_to_BOFE_Users_to_Add_Case_Notes</fullName>
+        <description>30-Day Notification to BOFE Users to Add Case Notes</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X30_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_Day_Notification_to_PAGA_Unit_Screener_to_Update_Case_Investigation_Progress</fullName>
+        <description>30-Day Notification to PAGA Unit Screener to Update Case Investigation Progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Unit_Screener_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X30_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_Day_Notification_to_PAGA_Unit_Screener_to_add_Case_Note</fullName>
+        <description>30-Day Notification to PAGA Unit Screener to add Case Note</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Unit_Screener_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X30_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X60_Day_Notification_to_BOFE_Contacts_to_Update_Case_Investigation_Progress</fullName>
+        <description>60-Day Notification to BOFE Contacts to Update Case Investigation Progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X60_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X60_Day_Notification_to_BOFE_Users_to_Add_Case_Notes</fullName>
+        <description>60-Day Notification to BOFE Users to Add Case Notes</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X60_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X60_Day_Notification_to_PAGA_Unit_Screener_to_Add_Case_Note</fullName>
+        <description>60-Day Notification to PAGA Unit Screener to Add Case Note</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Unit_Screener_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X60_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X60_Day_Notification_to_PAGA_Unit_Screener_to_Update_Case_Investigation_Progress</fullName>
+        <description>60-Day Notification to PAGA Unit Screener to Update Case Investigation Progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Unit_Screener_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X60_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X90_Day_Notification_to_BOFE_Contacts_to_Update_Case_Investigation_Progress</fullName>
+        <description>90-Day Notification to BOFE Contacts to Update Case Investigation Progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X90_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X90_Day_Notification_to_BOFE_Users_to_Update_Case_Notes</fullName>
+        <description>90-Day Notification to BOFE Users to Update Case Notes</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X90_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X90_Day_Notification_to_PAGA_Unit_Screener_to_Add_Case_Notes</fullName>
+        <description>90-Day Notification to PAGA Unit Screener to Add Case Notes</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Unit_Screener_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X90_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>X90_Day_Notification_to_PAGA_Unit_Screener_to_Update_Case_Investigation_Progress</fullName>
+        <description>90-Day Notification to PAGA Unit Screener to Update Case Investigation Progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Unit_Screener_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X90_Day_Reminder_for_Investigation</template>
+    </alerts>
+    <alerts>
+        <fullName>email_to_deputy_of_new_inspection_request_assignment</fullName>
+        <description>email to deputy of new inspection request assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Deputy_assigned_inspection_request</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AddNotesfromLoganote</fullName>
+        <description>Field Update to concatenate existing notes with new notes</description>
+        <field>Deputy_Notes__c</field>
+        <formula>($User.FirstName) &amp; &quot; &quot; &amp;  ($User.LastName) &amp; &quot; &quot; &amp; &quot;- &quot; &amp; Text (MONTH(TODAY()))&amp; &quot;/&quot; &amp;  Text (DAY(TODAY())) &amp; &quot;/&quot; &amp;  Text (YEAR(TODAY())) &amp; BR() &amp; &quot; &quot; &amp; ($User.FirstName)&amp; &quot;&#39;s &quot;&amp; &quot;Note: &quot; &amp; Log_a_note__c  &amp; BR() &amp; BR() &amp; BR() &amp; PRIORVALUE(Deputy_Notes__c)</formula>
+        <name>AddNotesfromLoganote</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Date_TODAY</fullName>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Approval Date = TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Pending</fullName>
+        <field>Case_Re_Open_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Approval Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_Case_Source_Update</fullName>
+        <field>Case_Source__c</field>
+        <literalValue>Anonymous</literalValue>
+        <name>CM - Case Source Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_Employee_Last_Name_Update</fullName>
+        <field>Employee_Last_Name__c</field>
+        <formula>&quot;Anonymous&quot;</formula>
+        <name>CM - Employee Last Name Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_File_Date_Update</fullName>
+        <field>File_Date__c</field>
+        <formula>CreatedDate</formula>
+        <name>CM - File Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_Set_Record_Type_To_BOFE_Closed</fullName>
+        <description>This field update is attached to a workflow rule that identifies cases set to the status &quot;Unable to Pursue&quot;. When cases are set to &quot;Unable to Pursue&quot;, this field update will update the record type to &quot;BOFE Closed&quot;.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>BOFE_Closed</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>CM: Set Record Type To BOFE Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_Set_Record_Type_to_Investigation</fullName>
+        <description>This field update attached to a workflow rule that identifies cases moved to the status of &quot;Reopened for improper service&quot; and updates the record type to BOFE Investigation</description>
+        <field>RecordTypeId</field>
+        <lookupValue>BOFE_Investigation</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>CM: Set Record Type to Investigation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_Update_JEU_Case_Number</fullName>
+        <description>Update the Case Number field for JEU Record Type</description>
+        <field>Case_Number__c</field>
+        <formula>&quot;JEU-&quot;&amp; Name</formula>
+        <name>CM: Update JEU Case Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_Update_PAGA_Case_Number</fullName>
+        <field>Case_Number__c</field>
+        <formula>&quot;LWDA-&quot;&amp; Name &amp;&quot;-&quot;&amp; RIGHT(TEXT(YEAR(TODAY())),2)</formula>
+        <name>CM: Update PAGA Case Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Accepted_Uncheck</fullName>
+        <field>Case_Accepted__c</field>
+        <literalValue>0</literalValue>
+        <name>Case Accepted - Uncheck</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Number_Update</fullName>
+        <field>Case_Number__c</field>
+        <formula>&quot;RCI-&quot;&amp; Name</formula>
+        <name>Case Number Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_ReOpen_Status_Approved</fullName>
+        <field>Case_Re_Open_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Case ReOpen Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_ReOpen_Status_Pending</fullName>
+        <field>Case_Re_Open_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Case ReOpen Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Re_Open_Rejected</fullName>
+        <field>Case_Re_Open_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Case Re-Open = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Re_Open_Status_Rejected</fullName>
+        <field>Case_Re_Open_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Case Re-Open Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Stage_Closed</fullName>
+        <description>Sets the case stage to &quot;Closed&quot;</description>
+        <field>Case_Stage__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Case Stage - Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_Eligible_for_Closure</fullName>
+        <description>Eligible for Closure</description>
+        <field>Status__c</field>
+        <literalValue>Eligible for Closure</literalValue>
+        <name>Case: Status Eligible for Closure</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Status_New</fullName>
+        <description>Sets the Status field to New.  No Re-evaluation</description>
+        <field>Status__c</field>
+        <literalValue>New</literalValue>
+        <name>Case Status: New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Status_to_Under_Investigation</fullName>
+        <description>Change Status to Under Investigation</description>
+        <field>Status__c</field>
+        <literalValue>Under Investigation</literalValue>
+        <name>Change Status to Under Investigation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Did_Conga_Fire_box</fullName>
+        <field>Did_Conga_Fire__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Did Conga Fire box</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <name>Clear Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Case_Number</fullName>
+        <description>Req 17621 - This will clear the case number field if deputy sets it to blank</description>
+        <field>Case_Number__c</field>
+        <name>Clear Case Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Purge_Date</fullName>
+        <description>Clear Purge Date</description>
+        <field>Purge_Date__c</field>
+        <name>Clear Purge Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <name>Clear Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Close_Date</fullName>
+        <field>Case_Closed_Date__c</field>
+        <formula>Today()</formula>
+        <name>Close Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Close_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>Closed - No further action</literalValue>
+        <name>Close Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Company_Workweek</fullName>
+        <field>Company_s_Workweek__c</field>
+        <formula>IF(ISBLANK (Company_s_Workweek__c), 
+Employer__r.Company_s_Workweek__c, Company_s_Workweek__c)</formula>
+        <name>Company Workweek</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Company_s_Workday</fullName>
+        <field>Company_s_Workday__c</field>
+        <formula>IF(ISBLANK(Company_s_Workday__c),
+Employer__r.Company_s_Workday__c, Company_s_Workday__c )</formula>
+        <name>Company&#39;s Workday</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Determination_Approval_Status_Pending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Determination Approval Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fill_in_Case_Closed_Date</fullName>
+        <field>Case_Closed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Fill in Case Closed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Hidden_Search_Field_Update</fullName>
+        <field>Hidden_Search_Field__c</field>
+        <formula>Employer__r.Name &amp; &quot; &quot; &amp;  Assigned_Deputy__r.Name &amp; &quot; &quot; &amp;   TEXT (Event_Type__c)  &amp; &quot; &quot; &amp; TEXT( Event_Date__c)  &amp; &quot; &quot; &amp;  Stop_Order_Number__c  &amp; &quot; &quot; &amp;  Citation_Number__c  &amp; &quot; &quot; &amp; Owner:User.LastName &amp; &quot; &quot; &amp;  Owner:User.FirstName /* &amp; &quot; &quot; &amp;  TEXT(Payment_Amount__c) &amp; &quot; &quot; &amp; Deputy_Number__c */</formula>
+        <name>Hidden Search Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Intake_Date_Update</fullName>
+        <field>Intake_Date__c</field>
+        <formula>CreatedDate</formula>
+        <name>Intake Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Main_Worker_s_Classification</fullName>
+        <field>Main_Workers_Classification__c</field>
+        <formula>IF(ISBLANK(Main_Workers_Classification__c ),
+Employer__r.Main_Workers_Classification__c, Main_Workers_Classification__c )</formula>
+        <name>Main Worker&#39;s Classification</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Number_of_Employees</fullName>
+        <field>Number_of_Employees_Comment__c</field>
+        <formula>IF(ISBLANK(Number_of_Employees_Comment__c),
+TEXT(Employer__r.Number_of_employees__c), Number_of_Employees_Comment__c)</formula>
+        <name>Number of Employees</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pay_Day</fullName>
+        <field>Pay_Day__c</field>
+        <formula>IF(ISBLANK(Pay_Day__c), Employer__r.Pay_Day__c, Pay_Day__c)</formula>
+        <name>Pay Day</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Address_City</fullName>
+        <field>Primary_Address_City__c</field>
+        <formula>IF(ISBLANK(Primary_Address_City__c),
+Employer__r.ShippingCity, Primary_Address_City__c)</formula>
+        <name>Primary Address City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Address_State</fullName>
+        <field>Primary_Address_State__c</field>
+        <formula>IF(ISBLANK(Primary_Address_State__c),
+Employer__r.ShippingState, Primary_Address_State__c)</formula>
+        <name>Primary Address State</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Address_Street</fullName>
+        <field>Primary_Address_Street__c</field>
+        <formula>IF(ISBLANK(Primary_Address_Street__c),
+Employer__r.ShippingStreet, Primary_Address_Street__c)</formula>
+        <name>Primary Address Street</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Address_Zipcode</fullName>
+        <field>Primary_Address_ZipCode__c</field>
+        <formula>IF(ISBLANK(Primary_Address_ZipCode__c),
+Employer__r.ShippingPostalCode, Primary_Address_ZipCode__c)</formula>
+        <name>Primary Address Zipcode</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Adress_City</fullName>
+        <field>Primary_Address_City__c</field>
+        <formula>IF(ISBLANK(Address_Primary_City__c),
+Employer__r.ShippingCity, Address_Primary_City__c)</formula>
+        <name>Primary Adress City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Street_Address</fullName>
+        <field>Primary_Address_Street__c</field>
+        <formula>IF(ISBLANK(Primary_Address_Street__c),
+Employer__r.ShippingStreet, Primary_Address_Street__c)</formula>
+        <name>Primary Street Address</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Update_Docketed_Date</fullName>
+        <field>Docketed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>RCI Update Docketed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_Date_TODAY</fullName>
+        <field>Rejected_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Rejected Date = TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Number</fullName>
+        <description>35+ - + Serial Number + - + YY</description>
+        <field>Case_Number__c</field>
+        <formula>&quot;35-&quot;&amp;  Name  &amp; &quot;-&quot; &amp; Right ( TEXT (YEAR( TODAY() )),2)</formula>
+        <name>Set Case Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Number_WCA</fullName>
+        <description>Sets the case number field according to the WCA naming convention</description>
+        <field>Case_Number__c</field>
+        <formula>&#39;WC-&#39; +  Name</formula>
+        <name>Set Case Number WCA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_to_Close_Case_Review</fullName>
+        <field>Status__c</field>
+        <literalValue>Close Case Review</literalValue>
+        <name>Set Case to Close Case REview</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Cure_Response_Deadline_Date</fullName>
+        <description>Sets the Cure Response Deadline Date to 33 days after the postmark date.</description>
+        <field>PAGA_Cure_Response_Deadline_Date__c</field>
+        <formula>PAGA_Postmark_Date__c + 33</formula>
+        <name>Set Cure Response Deadline Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Deadline_to_Plus_120_Days_on_LC_2699</fullName>
+        <field>Deadline__c</field>
+        <formula>Date_Case_Received__c  + 120</formula>
+        <name>Set Deadline to Plus 120 Days on LC 2699</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Deputy_Email</fullName>
+        <field>Assigned_Deputy_Email__c</field>
+        <formula>Assigned_Deputy__r.Email__c</formula>
+        <name>Set Deputy Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Employer_Address</fullName>
+        <field>Primary_Address_Street__c</field>
+        <formula>Employer__r.ShippingStreet</formula>
+        <name>Set Employer Address</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Employer_Name_in_text</fullName>
+        <field>Employer_Name_in_Text__c</field>
+        <formula>IF ( Employer__r.IsPersonAccount = True,  Employer__r.FirstName &amp; &#39; &#39; &amp;  Employer__r.LastName, Employer__r.Name)</formula>
+        <name>Set Employer Name in text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Hidden_Number_Priority_Field</fullName>
+        <description>9-25: Sets the Hidden Priority Field</description>
+        <field>Hidden_Priority_Field__c</field>
+        <formula>IF ( Max_Employees_Affected__c &gt;= 10 &amp;&amp; ( Trusted_Org_Referral__c || WCA_Referral__c || Industry_Association_Referral__c || Workers_to_Come_Forward__c || NOT( ISBLANK ( TEXT ( Community_Advocate_Group__c ) ) ) ), 1, /* Priority 1 criteria */
+	IF (   Max_Employees_Affected__c &gt;= 10 
+		&amp;&amp; ( ( Worker_s_Comp_Violation__c &amp;&amp; ( Minimum_Wage_Violations__c || Overtime_Violations__c || NSF_Low_Wage__c || Child_Labor__c ) ) 
+		|| ( Employer_Industry__c &lt;&gt; &quot;Other&quot; &amp;&amp; ( Minimum_Wage_Violations__c || Overtime_Violations__c || NSF_Low_Wage__c || Child_Labor__c ) )
+		|| X2699_Case__c || IWC_Excemption_Request__c  
+		), 2, /* Priority 2 criteria */
+		IF ( Employer_Industry__c &lt;&gt; &quot;Other&quot; &amp;&amp; ( Minimum_Wage_Violations__c || Overtime_Violations__c || NSF_Low_Wage__c || Child_Labor__c ) , 3, /* Priority 3 criteria */
+			IF ( ( ( EmployeesfromAccount__c &gt;= 10 || Max_Employees_Affected__c &gt;= 10 ) &amp;&amp; Worker_s_Comp_Violation__c )
+				|| ( Max_Employees_Affected__c &gt;= 10 &amp;&amp; Pay_stub_violation__c &amp;&amp; Employer_Industry__c &lt;&gt; &quot;Other&quot; ) , 4 , /* Priority 4 criteria */ 
+				IF ( Max_Employees_Affected__c &gt;= 10 &amp;&amp;  ( Split_Shift__c || ( Employer_Industry__c &lt;&gt; &quot;Other&quot; &amp;&amp; Meal_Rest_Break_Violation__c ) ) , 5 , /* Priority 5 Criteria */ 
+					IF ( ( ( Employer_Industry__c &lt;&gt; &quot;Other&quot; &amp;&amp;  ( Meal_Rest_Break_Violation__c || Worker_s_Comp_Violation__c || ( Cash_Pay_226__c &amp;&amp; Pay_stub_violation__c ) ) ) || SB_869_RLLV_Source__c ) , 6 , /* Priority 6 criteria */
+						IF ( Overtime_Violations__c = TRUE &amp;&amp; Max_Employees_Affected__c &gt;= 10 , 7 , /* Priority 7 Criteria */
+							IF ( Max_Employees_Affected__c &gt;= 10 &amp;&amp; NSF_Low_Wage__c , 8 , /* Priority 8 criteria */
+								IF ( Max_Employees_Affected__c &gt;= 10 &amp;&amp; Meal_Rest_Break_Violation__c, 9 , /* Priority 9 criteria */
+								10 /* all other cases are priority 10 */
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+)</formula>
+        <name>Set Hidden Number Priority Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Investigation_Deadline</fullName>
+        <field>PAGA_Investigation_Deadline_Date__c</field>
+        <formula>PAGA_Investigation_Decision_Date__c + 120</formula>
+        <name>Set Investigation Deadline</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Lock_on_Auto_Updates_to_Priority_Lev</fullName>
+        <description>9-25: If a user manually changes the priority, this will lock the Case from being changed by new logic.</description>
+        <field>Lock_Priority_from_Automatic_Updates__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Lock on Auto Updates to Priority Lev</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Log_a_Note_to_Blank</fullName>
+        <field>Log_a_note__c</field>
+        <name>Set Log a Note to Blank</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Low_Wage_Industry_to_No</fullName>
+        <field>Low_wage_Industry__c</field>
+        <literalValue>No</literalValue>
+        <name>Set Low Wage Industry to No</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Low_Wage_Industry_to_Yes</fullName>
+        <field>Low_wage_Industry__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Set Low Wage Industry to Yes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Manually_Screened_Field_to_TRUE</fullName>
+        <description>Set Manually Screened checkbox to TRUE</description>
+        <field>Manually_Screened__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Manually Screened to TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Manually_Screened_to_True</fullName>
+        <description>Sets Manually Screened to True</description>
+        <field>PAGA_Manual_Screened__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Manually Screened to True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Name</fullName>
+        <field>Employee_Filer_Name__c</field>
+        <formula>Filer_Attorney_for_PAGA_Case__r.LastName</formula>
+        <name>Set Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_for_Priority_to_1</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 1</literalValue>
+        <name>Set Picklist for Priority to 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_2</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 2</literalValue>
+        <name>Set Picklist to 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_3</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 3</literalValue>
+        <name>Set Picklist to 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_4</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 4</literalValue>
+        <name>Set Picklist to 4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_5</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 5</literalValue>
+        <name>Set Picklist to 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_6</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 6</literalValue>
+        <name>Set Picklist to 6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_7</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 7</literalValue>
+        <name>Set Picklist to 7</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_8</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 8</literalValue>
+        <name>Set Picklist to 8</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Picklist_to_9</fullName>
+        <field>Priority_Level__c</field>
+        <literalValue>Level 9</literalValue>
+        <name>Set Picklist to 9</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Senior_Deputy_Email</fullName>
+        <field>Senior_Deputy_Email__c</field>
+        <formula>Assigned_Deputy__r.Manager__r.Email__c</formula>
+        <name>Set Senior Deputy Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Sr_Deputy_Review_Date_to_Today</fullName>
+        <field>Senior_Deputy_Review_Date__c</field>
+        <formula>Today()</formula>
+        <name>Set Sr Deputy Review Date to Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Status_to_Waiting_for_Penalty</fullName>
+        <field>Status__c</field>
+        <literalValue>Waiting for Penalty</literalValue>
+        <name>Set Status to Waiting for Penalty</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Zip_Code</fullName>
+        <field>Primary_Address_ZipCode__c</field>
+        <formula>Employer__r.ShippingPostalCode</formula>
+        <name>Set Zip Code</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_owner_to_paga_queue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>PAGA_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Set owner to paga queue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_to_BOFE_Investigation</fullName>
+        <description>Sets RT to BOFE Investigation</description>
+        <field>RecordTypeId</field>
+        <lookupValue>BOFE_Investigation</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set to BOFE Investigation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_CM_RT_BOFE_Closed</fullName>
+        <description>Update RT of a case with Closed status to &quot;BOFE Closed&quot;</description>
+        <field>RecordTypeId</field>
+        <lookupValue>BOFE_Closed</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update CM RT BOFE Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_CM_Status</fullName>
+        <description>Update CM Status to Closed when Case Closed Date and valid Purge Date are entered.</description>
+        <field>Status__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Update CM Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>Reopened with Senior Approval</literalValue>
+        <name>Update Case Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Status_to_Pending_Litigation</fullName>
+        <description>After 365 days in &quot;Waiting for Litigation&quot;, case is set to Pending Litigation Review.</description>
+        <field>Status__c</field>
+        <literalValue>Pending Litigation Review</literalValue>
+        <name>Update Case Status to Pending Litigation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Closed_On_Date</fullName>
+        <field>Closed_On__c</field>
+        <formula>NOW()</formula>
+        <name>Update Closed On Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Investigation_Deadline_by_60_Days</fullName>
+        <field>PAGA_Investigation_Deadline_Date__c</field>
+        <formula>PAGA_Investigation_Deadline_Date__c + 60</formula>
+        <name>Update Investigation Deadline by 60 Days</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Investigation_Dec_Deadline_Date</fullName>
+        <description>Update Investigation Decision Deadline Date with Notice Filing Date + 60 days</description>
+        <field>Investigation_Decision_Deadline_Date__c</field>
+        <formula>Notice_Filing_Date__c  + 60</formula>
+        <name>Update Investigation Dec Deadline Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_PAGA_Amendment_Information</fullName>
+        <field>PAGA_Amendment_Information__c</field>
+        <formula>PRIORVALUE ( PAGA_Amendment_Information__c) &amp; &#39; &#39; &amp;( Amendent_Placeholder_for_PAGA__c )</formula>
+        <name>Update PAGA Amendment Information</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Re_Open_Date</fullName>
+        <field>Case_Re_Open_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Re-Open Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_date_assigned_field</fullName>
+        <description>Populates the date assigned field with today</description>
+        <field>Date_Assigned__c</field>
+        <formula>NOW()</formula>
+        <name>Update date assigned field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WCI_Carrier</fullName>
+        <field>WCI_Carrier__c</field>
+        <formula>IF(ISBLANK(WCI_Carrier__c),Employer__r.WCI_Carrier__c, WCI_Carrier__c)</formula>
+        <name>WCI Carrier</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WCI_Inception_Date</fullName>
+        <field>WCI_Policy_Inception_Date__c</field>
+        <formula>IF(ISBLANK (WCI_Policy_Inception_Date__c),
+Employer__r.WCI_Inception_Date__c, WCI_Policy_Inception_Date__c)</formula>
+        <name>WCI Inception Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>WCI_Policy_Number</fullName>
+        <field>WCI_Policy_Number__c</field>
+        <formula>IF(ISBLANK(WCI_Policy_Number__c),Employer__r.WCI_Policy_Number__c, WCI_Policy_Number__c )</formula>
+        <name>WCI Policy Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Attach_PAGA_Case_PDF</fullName>
+        <apiVersion>40.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Original_PAGA_Case_PDF__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>erin@vertiba.dir</integrationUser>
+        <name>Attach PAGA Case PDF</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Alerts Deputies when they are Assigned Inspection Request</fullName>
+        <actions>
+            <name>email_to_deputy_of_new_inspection_request_assignment</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Assigned_Deputy_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Inspection Request</value>
+        </criteriaItems>
+        <description>Companion to WFs for Requirement 22997</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assigned Senior Deputy Changed</fullName>
+        <actions>
+            <name>Set_Senior_Deputy_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sets Senior Deputy email when senior deputy is changed.</description>
+        <formula>ISCHANGED( Assigned_Deputies_Senior__c )  || ISCHANGED( Assigned_Deputy__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - Anonymous Case Source</fullName>
+        <actions>
+            <name>CM_Case_Source_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CM_Employee_Last_Name_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>DIR_Case__c.Anonymous__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>RCI</value>
+        </criteriaItems>
+        <description>If no Employee name given</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - Attach PDF to PAGA Case</fullName>
+        <actions>
+            <name>Check_Did_Conga_Fire_box</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Attach_PAGA_Case_PDF</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Did_Conga_Fire__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Initiates Conga composer PDF generation of PAGA Case Document and attaches to Chatter once a PAGA Case is created.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - BOFE Case Number</fullName>
+        <actions>
+            <name>Set_Case_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Set the Case number for BOFE Case numbers when the case is created.</description>
+        <formula>ISBLANK ( Case_Number__c ) &amp;&amp; ( RecordType.DeveloperName = &#39;BOFE_Inspection_Request&#39;  || RecordType.DeveloperName = &#39;BOFE_Intake&#39; || RecordType.DeveloperName = &#39;BOFE_Investigation&#39; )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - New RCI Case</fullName>
+        <actions>
+            <name>Case_Number_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>RCI Case Number</description>
+        <formula>ISBLANK (Case_Number__c) &amp;&amp; (RecordType.DeveloperName = &#39;RCI&#39;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - Post Closure Notification</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>RCI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Closed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Determination_Type__c</field>
+            <operation>notEqual</operation>
+            <value>No Cause</value>
+        </criteriaItems>
+        <description>RCI</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notidy_Deputy_Post_Closure</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.Closed_On__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM - RCI Appeal Case No Activity</fullName>
+        <actions>
+            <name>No_Activity_in_120_Days_on_Appealed_Case</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>RCI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Assigned_Deputy_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Appealed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Last_Modified_Days__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </criteriaItems>
+        <description>120 days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - RCI Docketed Date</fullName>
+        <actions>
+            <name>RCI_Update_Docketed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>RecordType.Name=&quot;RCI&quot; &amp;&amp; Closed__c=FALSE &amp;&amp; ISCHANGED(Assignment_Status__c) &amp;&amp; ISPICKVAL(Assignment_Status__c, &quot;Accept &amp; Assign INV&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - Update Closed On Date</fullName>
+        <actions>
+            <name>Update_Closed_On_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCHANGED(Closed__c) &amp;&amp;  Closed__c = TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM - Update Closed On Date%2FTime</fullName>
+        <actions>
+            <name>Update_Closed_On_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(Closed__c) &amp;&amp; Closed__c = TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM New WCA Case</fullName>
+        <actions>
+            <name>Set_Case_Number_WCA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Executes tasks for new WCA cases</description>
+        <formula>(   RecordType.Name = &#39;WCA&#39;   ||  RecordType.Name = &#39;Garment&#39; )  &amp;&amp; ISPICKVAL ( Imported_From__c, &#39;&#39; )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM Notify Investigation Case Assignment</fullName>
+        <actions>
+            <name>Deputy_Assigned_to_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Notify the Deputy of a new Case being assigned to them.  Runs every time the Owner changes once the case is in Investigation Status</description>
+        <formula>ISCHANGED( OwnerId ) &amp;&amp;  Contains ( RecordType.DeveloperName , &#39;BOFE&#39;) &amp;&amp; ((ISPICKVAL (Status__c , &quot;Under Investigation&quot; )) || (ISPICKVAL (Status__c , &quot;New&quot; )) || (ISPICKVAL (Status__c , &quot;Pending&quot; )) || (ISPICKVAL (Status__c , &quot;Reopened for improper service&quot;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM NotifyDeputiesonNewCasesDirectlyCreated</fullName>
+        <actions>
+            <name>A_New_Case_Has_Been_Assigned_To_You</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <description>Notify the Deputy of a new Case being assigned to them when directly created</description>
+        <formula>NOT(ISBLANK(   Assigned_Deputy_Email__c   ))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM Set Eligible for Closure</fullName>
+        <actions>
+            <name>Case_Status_Eligible_for_Closure</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This workflow will set the status on a Case to Eligible for Closure if there are &gt; 0  Violations on a Case, and the number of Open violations is zero</description>
+        <formula>Total_Violation_Count__c  &gt; 0  &amp;&amp;  Open_Violations__c = 0</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM Update Case Status to Closed</fullName>
+        <actions>
+            <name>Case_Stage_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_CM_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>DIR_Case__c.Case_Closed_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Purge_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA,Garment,BOFE Closed,BOFE Inspection Request,BOFE Intake,BOFE Investigation</value>
+        </criteriaItems>
+        <description>When Sr.Deputy enter or update Case Closed Date, Status is updated to Closed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM Update RT to BOFE Closed</fullName>
+        <actions>
+            <name>Update_CM_RT_BOFE_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This wf rule changes CM Record Type to &quot;BOFE Closed&quot; when Case is closed</description>
+        <formula>ISCHANGED( Status__c ) &amp;&amp; ISPICKVAL ( Status__c, &#39;Closed&#39; ) &amp;&amp; CONTAINS ( RecordType.DeveloperName , &#39;BOFE&#39; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM WCA Notify Deputy 30 days</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Assigned_Deputy_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA,Garment</value>
+        </criteriaItems>
+        <description>WCA Cases Notify the Deputy if no activity is made within 30 days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_Deputy_No_Action</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_Sr_60_Days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM WCA Notify Deputy 45 days</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Assigned_Deputy_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA,Garment</value>
+        </criteriaItems>
+        <description>WCA Cases Notify the Deputy if no activity is made within 30</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_Deputy_No_Action</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_Sr_60_Days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM WCA Set Status when deputy assigned</fullName>
+        <actions>
+            <name>Change_Status_to_Under_Investigation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>For WCA/Garment cases, shen a Deputy is assigned, the system should change the case status to &#39;Under Investigation</description>
+        <formula>( RecordType.Name = &quot;WCA&quot;  ||  RecordType.Name = &quot;Garment&quot; ) &amp;&amp;   NOT(ISBLANK(Assigned_Deputy__c)) &amp;&amp; ISBLANK( PRIORVALUE( Assigned_Deputy__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM WCA%2FGarment Cases %3A Notify deputy if case is inactive for 30 days</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Assigned_Deputy_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA,Garment,Legacy Garment Case,Legacy WCA Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>WCA/Garment Cases Notify the Deputy if no activity is made within 30 days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_deputy_of_inactivity_for_30_days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.LastModifiedDate</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_Senior_deputy_of_inactivity_for_60_days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.LastModifiedDate</offsetFromField>
+            <timeLength>60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A Assigned Deputy Email</fullName>
+        <actions>
+            <name>Set_Deputy_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sets deputy&#39;s email when deputy is changed in CM.</description>
+        <formula>ISNEW()||ISCHANGED( Assigned_Deputy__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A BOFE CIU Referral</fullName>
+        <actions>
+            <name>Notify_CIU</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Notifies CIU public group members when a case has been referred to CIU using the &quot;Refer to CIU&quot; field.</description>
+        <formula>ISPICKVAL (  Referred_to_CIU__c , &#39;Yes&#39; )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A BOFE Case Number</fullName>
+        <actions>
+            <name>Set_Case_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Set the Case number for BOFE Case numbers when the case is created.</description>
+        <formula>ISBLANK ( Case_Number__c ) &amp;&amp; ( RecordType.DeveloperName = &#39;BOFE_Inspection_Request&#39;  || RecordType.DeveloperName = &#39;BOFE_Intake&#39; || RecordType.DeveloperName = &#39;BOFE_Investigation&#39; )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Case Created</fullName>
+        <actions>
+            <name>Case_Status_New</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Brand new case being created, set status to &quot;New&quot;</description>
+        <formula>TRUE  &amp;&amp;  ( OR(RecordType.DeveloperName = &#39;WCA&#39;, RecordType.DeveloperName = &#39;Garment&#39;))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Case Number set to blank</fullName>
+        <actions>
+            <name>Clear_Case_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When Assigned Deputy is cleared, clear the case number</description>
+        <formula>ISBLANK( Assigned_Deputy__c )&amp;&amp; NOT( RecordType.DeveloperName = &#39;PAGA Case&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Case Priority when key fields have changed</fullName>
+        <actions>
+            <name>Set_Hidden_Number_Priority_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flags when Key fields have changed to trigger possible updates to priority level.</description>
+        <formula>OR(Max_Employees_Affected__c  &gt;= 5, AND( EmployeesfromAccount__c  &gt;= 10,  Worker_s_Comp_Violation__c = TRUE)) &amp;&amp; Lock_Priority_from_Automatic_Updates__c = FALSE &amp;&amp; OR(ISCHANGED( Max_Employees_Affected__c ),ISCHANGED(  Meal_Rest_Break_Violation__c  ) , ISCHANGED(  Minimum_Wage_Violations__c  ), ISCHANGED(   IWC_Excemption_Request__c   ), ISCHANGED(   Overtime_Violations__c   ), ISCHANGED(   NSF_Low_Wage__c   ), ISCHANGED(   Child_Labor__c   ), ISCHANGED(   X2699_Case__c   ), ISCHANGED(   Cash_Pay_226__c   ), ISCHANGED(   Worker_s_Comp_Violation__c   ), ISCHANGED(    SB_869_RLLV_Source__c   ), ISCHANGED(   Pay_stub_violation__c   ), ISCHANGED(    WCA_Referral__c    ), ISCHANGED(    Community_Advocate_Group__c   ), ISCHANGED(    Trusted_Org_Referral__c   ), ISCHANGED(    Workers_to_Come_Forward__c    ), ISCHANGED(    Industry_Association_Referral__c ), ISCHANGED(    Case_Source__c), ISCHANGED(Employer_Industry__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Cases that are unable to pursue</fullName>
+        <actions>
+            <name>CM_Set_Record_Type_To_BOFE_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>CM: When cases are set to the status of &quot;unable to pursue&quot;, this workflow will identify those cases. There will be an attached field update that will update the record type to case closed.</description>
+        <formula>ISPICKVAL( Status__c ,&quot;Unable to Pursue&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Cure Dispute Review Deadline</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Cure_Dispute_Submission_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+        <description>Notify PAGA attorney of Cure Dispute Review Deadline ten days after a Cure Dispute is received.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_PAGA_Attorney_Cure_Dispute_Review_DeadlineRevised</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.Cure_Dispute_Submission_Date__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A Cure Dispute Review DeadlineAug29</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Cure_Dispute_Submission_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+        <description>Notify PAGA attorney of Cure Dispute Review Deadline 17 days after a Cure Dispute is received.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Notify_PAGA_Attorney_Cure_Dispute_Review_DeadlineRevised</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.Cure_Dispute_Submission_Date__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A JEU Case Number</fullName>
+        <actions>
+            <name>CM_Update_JEU_Case_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set the Case number for JEU Case numbers when the case is created.</description>
+        <formula>ISBLANK (Case_Number__c ) &amp;&amp;  RecordType.Name = &#39;JEU&#39;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Manually Screening Indicator on PAGA Cases</fullName>
+        <actions>
+            <name>Set_Manually_Screened_Field_to_TRUE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Waiting for Litigation</value>
+        </criteriaItems>
+        <description>Update Manually Screened checkbox when the Case Status is set to &quot;Waiting for Litigation&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Notify BOFE team when PAGA Case created and related to BOFE Case</fullName>
+        <actions>
+            <name>Notification_of_new_PAGA_Case_related_to_existing_BOFE_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify the Assigned BOFE Deputy and Senior Deputy when a PAGA notice is created for an employee with an existing BOFE case.</description>
+        <formula>AND(  RecordType.DeveloperName= &quot;PAGA_Case&quot;,  NOT(ISBLANK(Related_BOFE_Case__c)),  NOT(ISBLANK(Assigned_Deputy_Email__c )),  NOT(ISBLANK(Senior_Deputy_Email__c)  ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Notify Senior of Aging Investigation Case</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Under Investigation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Investigation</value>
+        </criteriaItems>
+        <description>Notify the Deputy and Sr. Deputy if no activity is made within 30 and 45 days once a case is under investigation.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>No_Activity_for_45_Days_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>No_Activity_for_45_Days_Sr_Deputy_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.LastModifiedDate</offsetFromField>
+            <timeLength>45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>No_Activity_for_30_Days_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.LastModifiedDate</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A PAGA Case Number</fullName>
+        <actions>
+            <name>CM_Update_PAGA_Case_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set the Case number for PAGA Case numbers when the case is created.</description>
+        <formula>ISBLANK ( Case_Number__c ) &amp;&amp;  RecordType.Name = &#39;PAGA Case&#39;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Populate Investigation Decision Deadline Date</fullName>
+        <actions>
+            <name>Update_Investigation_Dec_Deadline_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+        <description>Populate the Investigation Decision Deadline Date on PAGA Cases as the Notice Filing Date plus 60 days.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A RCI Withdrawn Case Auto closure</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed - JEU Referral,Closed - Enforcement Legal,Closed - No further action</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Closure_Disposition__c</field>
+            <operation>equals</operation>
+            <value>Withdrawn</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Close_Date</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Close_Status</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A Re-opening Cases</fullName>
+        <actions>
+            <name>CM_Set_Record_Type_to_Investigation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>CM: When cases are re-opened due to improper service, this workflow will identify those cases. There will be an attached field update that will update the record type from case closed to Investigation.</description>
+        <formula>ISPICKVAL( Status__c ,&quot;Reopened for improper service&quot;)&amp;&amp;  RecordType.Name  &lt;&gt; &quot;BOFE Intake&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Set RT to Investigation</fullName>
+        <active>false</active>
+        <description>Sets the RT to investigation when the status changes to Under Investigation</description>
+        <formula>RecordType.DeveloperName = &#39;Under Investigation&#39;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Set RT to Investigation %28BOFE%29</fullName>
+        <actions>
+            <name>Set_to_BOFE_Investigation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sets the RT to investigation when the status changes to Under Investigation</description>
+        <formula>ISPICKVAL(Status__c, &#39;Under Investigation&#39;)  &amp;&amp; /* Record type is one of BOFE RTs */ (   RecordType.DeveloperName = &#39;BOFE_Intake&#39; || RecordType.DeveloperName = &#39;BOFE_Inspection_Request&#39; || RecordType.DeveloperName = &#39;BOFE_Closed&#39; )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3A Time-Based Notifications to BOFE Users to add Case Note re%3A Investigation Status</fullName>
+        <active>true</active>
+        <description>30-, 60-, and 90-day notifications to BOFE Assigned Deputy and Senior Deputy to add Case Note regarding the Investigation Status</description>
+        <formula>AND( NOT(ISBLANK( PAGA_Investigation_Decision_Date__c )), NOT(ISBLANK( Related_BOFE_Case__c )))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X60_Day_Notification_to_BOFE_Users_to_Add_Case_Notes</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.PAGA_Investigation_Decision_Date__c</offsetFromField>
+            <timeLength>60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X90_Day_Notification_to_BOFE_Users_to_Update_Case_Notes</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.PAGA_Investigation_Decision_Date__c</offsetFromField>
+            <timeLength>90</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X30_Day_Notification_to_BOFE_Users_to_Add_Case_Notes</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.PAGA_Investigation_Decision_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A Time-Based Notifications to PAGA Unit Screener to add Case Note re%3A Investigation Status</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.PAGA_Investigation_Decision_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed by PAGA</value>
+        </criteriaItems>
+        <description>30-, 60-, and 90-day notifications to PAGA Unit Screener to add Case Note regarding the Investigation Status</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X90_Day_Notification_to_PAGA_Unit_Screener_to_Add_Case_Notes</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.PAGA_Investigation_Decision_Date__c</offsetFromField>
+            <timeLength>90</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X30_Day_Notification_to_PAGA_Unit_Screener_to_add_Case_Note</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.PAGA_Investigation_Decision_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X60_Day_Notification_to_PAGA_Unit_Screener_to_Add_Case_Note</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.PAGA_Investigation_Decision_Date__c</offsetFromField>
+            <timeLength>60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CM%3A Update Assigned PAGA Attorney Email Field</fullName>
+        <active>false</active>
+        <description>Populate the &quot;Assigned PAGA Attorney Email&quot; field when the Assigned PAGA Attorney is set on a Case Management record.</description>
+        <formula>NOT( ISBLANK( Assigned_PAGA_Attorney__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3APre-Populate from Account%282%29</fullName>
+        <actions>
+            <name>Number_of_Employees</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Address_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Address_State</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Address_Zipcode</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Street_Address</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Intake,BOFE Investigation,BOFE Closed</value>
+        </criteriaItems>
+        <description>Pre-populate from the Account object</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CM%3APre-populate from Account</fullName>
+        <actions>
+            <name>Company_Workweek</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Company_s_Workday</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Main_Worker_s_Classification</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Pay_Day</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>WCI_Carrier</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>WCI_Inception_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>WCI_Policy_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Intake,BOFE Investigation,BOFE Closed</value>
+        </criteriaItems>
+        <description>Pre-populate fields from the Account object when case is created</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Acceptance Workflow - 24 Hour Reminder</fullName>
+        <active>false</active>
+        <description>If the owner of a case changes, the Case Accepted checkbox becomes unchecked and the new owner has 24 hours to check it again before being notified that they have yet to do so.  This workflow sends a reminder email to the owner if not accepted.</description>
+        <formula>NOT( ISBLANK ( Assigned_Deputy__c ) )  &amp;&amp; NOT ( Case_Accepted__c ) &amp;&amp;  CONTAINS(RecordType.DeveloperName, &quot;BOFE&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X24_Hour_Email_Alert</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Case Acceptance Workflow - Owner ID Change</fullName>
+        <actions>
+            <name>Case_Accepted_Uncheck</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This workflow monitors the owner of a particular case who has accepted said case; if the owner changes, the Case Accepted checkbox becomes unchecked and the new owner has 24 hours to check it again before being notified that they have yet to do so.</description>
+        <formula>ISCHANGED( OwnerId )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case%3A Hearing Date Set</fullName>
+        <actions>
+            <name>Case_Hearing_Date_Set</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hearing_Date_and_Time__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Creates a task for the Deputy upon the Hearing Date being entered on a case.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case%3A JEU Rejected Case</fullName>
+        <actions>
+            <name>Case_Rejected_by_JEU</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Refer_to_JEU__c</field>
+            <operation>equals</operation>
+            <value>Rejected</value>
+        </criteriaItems>
+        <description>F0640: Notify the assigned deputy and senior deputy upon the case referral being rejected by JEU.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case%3A Refer to JEU</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Letter_to_Collect_Sent__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Letter_to_Collect_Response_Received__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Refer_to_JEU__c</field>
+            <operation>notEqual</operation>
+            <value>Referred,Accepted,Rejected</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed,Eligible for Closure,Unable to Pursue</value>
+        </criteriaItems>
+        <description>If a letter to collect response is not received in 10 days, notify the Deputy on the case to refer to JEU, if the case is not already Closed or Eligible for Closure (Usually caused by a payment to the Liabilities)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Notify_Deputy_Refer_to_JEU</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Case__c.Letter_to_Collect_Sent__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Case%3A Set Eligible for Closure</fullName>
+        <actions>
+            <name>Case_Status_Eligible_for_Closure</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This workflow will set the status on a Case to Eligible for Closure if there are &gt; 0  Violations on a Case, and the number of Open violations is zero</description>
+        <formula>Total_Violation_Count__c  &gt; 0  &amp;&amp;  Open_Violations__c = 0</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cases in Waiting for Litigation for one review</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Waiting for Litigation</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_Case_Status_to_Pending_Litigation</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>365</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Change Status when closed date cleared</fullName>
+        <actions>
+            <name>Change_Status_to_Under_Investigation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_Purge_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When closed date is cleared change status to &quot;Under Investigation&quot; and clear Purge Date</description>
+        <formula>( RecordType.Name = &quot;WCA&quot;  ||  RecordType.Name = &quot;Garment&quot;) &amp;&amp;  ISCHANGED( Case_Closed_Date__c ) &amp;&amp;    ISNULL( Case_Closed_Date__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Clear Purge Date when Case Closed Date is changed to Null</fullName>
+        <actions>
+            <name>Change_Status_to_Under_Investigation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_Purge_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Clear Purge Date when Case Closed Date is changed to Null</description>
+        <formula>ISBLANK( Case_Closed_Date__c ) &amp;&amp; ISCHANGED ( Case_Closed_Date__c ) &amp;&amp;    (    RecordType.DeveloperName = &#39;WCA&#39;   || RecordType.DeveloperName = &#39;Garment&#39;   )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cure Dispute Notification</fullName>
+        <actions>
+            <name>Cure_Dispute_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Cure Dispute</value>
+        </criteriaItems>
+        <description>Notifies PAGA Case Owner and PAGA Attorney group on cure dispute</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cure Response Deadline</fullName>
+        <actions>
+            <name>Set_Cure_Response_Deadline_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flags Cases for when the Postmark is edited to set the cure response deadline.</description>
+        <formula>ISCHANGED( PAGA_Postmark_Date__c )  || ISNEW()</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deputy Notes</fullName>
+        <actions>
+            <name>AddNotesfromLoganote</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Log_a_note__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deputy Notes is Changed</fullName>
+        <actions>
+            <name>Set_Log_a_Note_to_Blank</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Flags when Deputy Notes are Changed to Clear &quot;Log a note&quot;</description>
+        <formula>ISCHANGED( Deputy_Notes__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Alert to plaintiff</fullName>
+        <actions>
+            <name>Case_Creation_Form_Assembly_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>An Email Alert to plaintiff is sent when a new case is created</description>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Response to Employee%2FFiler</fullName>
+        <actions>
+            <name>Email_to_Filer</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Filer_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Employer Name  and Address in text</fullName>
+        <actions>
+            <name>Set_Employer_Address</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Employer_Name_in_text</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>May be refactored. Employer Names are sent to text field</description>
+        <formula>ISCHANGED( Employer__c )  || ISNEW()</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Employer Name in text</fullName>
+        <actions>
+            <name>Set_Employer_Name_in_text</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Zip_Code</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>May be refactored. Employer Names are sent to text field</description>
+        <formula>ISNEW()  || ISCHANGED( Employer__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Filer or Attorney is Changed</fullName>
+        <actions>
+            <name>Set_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Filer_Attorney_for_PAGA_Case__c) || ISNEW()</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Hidden Search Field Update</fullName>
+        <actions>
+            <name>Hidden_Search_Field_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Case_Number__c</field>
+            <operation>notEqual</operation>
+            <value>Case8888123445</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Investigation Deadline Date</fullName>
+        <actions>
+            <name>Set_Investigation_Deadline</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>When the Investigation Decision is made, the Deadline to complete the investigation is set.</description>
+        <formula>ISCHANGED( PAGA_Investigation_Decision_Date__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Investigation Extension</fullName>
+        <actions>
+            <name>Update_Investigation_Deadline_by_60_Days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Extension_Required__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Locks Priority from Changes by new RLCVs</fullName>
+        <actions>
+            <name>Set_Lock_on_Auto_Updates_to_Priority_Lev</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>9-25: Updates a Hidden Field to prevent future changes from new RLCVs. Temporarily, it will use Damien&#39;s name but will be moved to integration user in production.</description>
+        <formula>ISCHANGED( Priority_Level__c ) &amp;&amp;   $User.ProfileId &lt;&gt; &#39;00em0000000Ls8y&#39;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Low Wage Industry Set</fullName>
+        <actions>
+            <name>Set_Low_Wage_Industry_to_Yes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(TEXT(PAGA_entered_Industry__c)))  &amp;&amp; NOT(ISPICKVAL(PAGA_entered_Industry__c, &quot;Other-Not-Low-Wage&quot;))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Low Wage is No</fullName>
+        <actions>
+            <name>Set_Low_Wage_Industry_to_No</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL(PAGA_entered_Industry__c, &quot;Other-Not-Low-Wage&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Manually Screened</fullName>
+        <actions>
+            <name>Set_Manually_Screened_to_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL( Status__c, &quot;Screened / Pending Unit Review&quot;)   || (ISPICKVAL( Status__c, &quot;Waiting for Litigation&quot;) &amp;&amp; NOT(ISNEW())&amp;&amp; ISCHANGED(Status__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>PAGA Amendment Information</fullName>
+        <actions>
+            <name>Update_PAGA_Amendment_Information</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Amendent_Placeholder_for_PAGA__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Penalty is set</fullName>
+        <actions>
+            <name>Set_Status_to_Waiting_for_Penalty</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Penalties_for_PAGA__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending Closure for 180 days</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Closure</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Set_Case_to_Close_Case_Review</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>180</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Plaintiff Name on PAGA Case</fullName>
+        <active>false</active>
+        <formula>ISCHANGED( Plaintiff_for_PAGA__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Deadline to Plus 120 Days on LC 2699</fullName>
+        <actions>
+            <name>Set_Deadline_to_Plus_120_Days_on_LC_2699</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL ( Case_Source__c, &#39;LC 2699&#39; )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Paga queue to Case Owner</fullName>
+        <actions>
+            <name>Set_owner_to_paga_queue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 1</fullName>
+        <actions>
+            <name>Set_Picklist_for_Priority_to_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 2,Level 3,Level 4,Level 5,Level 6,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 2</fullName>
+        <actions>
+            <name>Set_Picklist_to_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 3,Level 4,Level 5,Level 6,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 3</fullName>
+        <actions>
+            <name>Set_Picklist_to_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 3,Level 4,Level 5,Level 6,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 4</fullName>
+        <actions>
+            <name>Set_Picklist_to_4</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 4,Level 5,Level 6,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 5</fullName>
+        <actions>
+            <name>Set_Picklist_to_5</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 5,Level 6,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 6</fullName>
+        <actions>
+            <name>Set_Picklist_to_6</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 6,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 7</fullName>
+        <actions>
+            <name>Set_Picklist_to_7</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 7,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 8</fullName>
+        <actions>
+            <name>Set_Picklist_to_8</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>8</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+            <value>,Level 8,Level 9</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Picklist to 9</fullName>
+        <actions>
+            <name>Set_Picklist_to_9</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Hidden_Priority_Field__c</field>
+            <operation>equals</operation>
+            <value>9</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Priority_Level__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Sr Deputy Review Date</fullName>
+        <actions>
+            <name>Set_Sr_Deputy_Review_Date_to_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Senior_Deputy_Review_Comments__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Req 17386: Rule looks for Senior Deputy Review Comments. Accompanying Field update sets the date to Today when populated.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Sr%2E Deputy</fullName>
+        <active>false</active>
+        <formula>ISCHANGED (OwnerId)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Settlement Pending</fullName>
+        <actions>
+            <name>Settlement_Pending_Review_Email_Alert_to_PAGA_Attorney</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Settlement Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+        <description>Workflow Rule for cases set to settlement pending so the PAGA attorney is aware.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update date assigned field</fullName>
+        <actions>
+            <name>Update_date_assigned_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updates the date assigned field when case is accepted or assigned.</description>
+        <formula>ISCHANGED( Assigned_Deputy__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>WCA%3A Case Not Assigned</fullName>
+        <active>false</active>
+        <description>This will check to see if the case is assigned</description>
+        <formula>AND(RecordType.DeveloperName =&quot;WCA&quot;,  ISBLANK(Assigned_Deputy__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>New_Office_Assignment_General</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Wage Referral Deadline Reminder</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>DIR_Case__c.WCA_Referral__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Under Investigation,Closed,Eligible for Closure</value>
+        </criteriaItems>
+        <description>If &quot;WCA Referral&quot; is TRUE, and the Status is not &quot;Under Investigation&quot;, &quot;Eligible for Closure&quot;, or &quot;Closed&quot;, then the case owner will be notified they must take action on the case maximally after 5 days.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Wage_Referral_5_Day_Deadline_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>A_New_Case_Has_Been_Assigned_To_You</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>A New Case Has Been Assigned To You</subject>
+    </tasks>
+    <tasks>
+        <fullName>Case_Follow_Up_Required_60_Days</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This case has not been updated in 60 days.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Case Follow Up Required 60 Days</subject>
+    </tasks>
+    <tasks>
+        <fullName>Case_Follow_Up_Required_90_Days</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This case has not been updated in 90 Days.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Case Follow Up Required 90 Days</subject>
+    </tasks>
+    <tasks>
+        <fullName>Case_Hearing_Date_Set</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This is the date of the hearing.  Please refer to the Case directly for full schedule details.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>DIR_Case__c.Hearing_Date_and_Time__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Case Hearing Date Set</subject>
+    </tasks>
+    <tasks>
+        <fullName>Determination_Rejected_1_Week</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Your Determination Request has been Rejected and needs to be re-submitted.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>DIR_Case__c.Rejected_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Determination Rejected 1 Week</subject>
+    </tasks>
+    <tasks>
+        <fullName>Determination_Rejected_DIR_Case_c_Case_Number_c</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>The following Determination Request has been Rejected. 
+
+Case Status: {!DIR_Case__c.Status__c} 
+Case Type: {!DIR_Case__c.Case_Type__c} 
+Case Priority: {!DIR_Case__c.Case_Priority__c} 
+DIR Office: {!DIR_Case__c.Office__c}</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Determination Rejected - {!DIR_Case__c.Case_Number__c}</subject>
+    </tasks>
+    <tasks>
+        <fullName>Determination_Request_Approved</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Your Determination Request has been Approved and is ready to be served.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Determination Request Approved</subject>
+    </tasks>
+    <tasks>
+        <fullName>Determination_Request_Rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Your Determination Request has been Rejected.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Determination Request Rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>Determination_Request_Rejected_1_Week</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>It has been 1 week since your request was Rejected. Please re-submit this case.
+
+Case:  {!DIR_Case__c.Case_Number__c}</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>DIR_Case__c.Rejected_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Determination Request Rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>No_Activity_in_120_Days_on_Appealed_Case</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>There has been no activity on your case in 120 days. Please follow up and update the case.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>No Activity in 120 Days on Appealed Case</subject>
+    </tasks>
+    <tasks>
+        <fullName>Possible_Case_Ready_for_Closure</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This Determination was Approved 37 days ago and may be ready for closure.</description>
+        <dueDateOffset>37</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>DIR_Case__c.Approval_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Possible Case Ready for Closure</subject>
+    </tasks>
+    <tasks>
+        <fullName>RCI_Case_Re_Open_Approved</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>DIR_Case__c.Case_Re_Open_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>RCI Case Re-Open Approved</subject>
+    </tasks>
+    <tasks>
+        <fullName>RCI_Case_Re_Open_Rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>RCI Case Re-Open Rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>Sr_Deputy_has_Approved_this_Determination</fullName>
+        <assignedTo>RCI</assignedTo>
+        <assignedToType>role</assignedToType>
+        <description>The Sr Deputy has approved the first step in the Determination Approval. 
+Please review this Determination request.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>Sr Deputy has Approved this Determination</subject>
+    </tasks>
+</Workflow>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Config Change Deploy</masterLabel>
+        <translation><!-- Config Change Deploy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gearset Deploy</masterLabel>
+        <translation><!-- Gearset Deploy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROD Data Change</masterLabel>
+        <translation><!-- PROD Data Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Password Reset</masterLabel>
+        <translation><!-- Password Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Issue</masterLabel>
+        <translation><!-- Salesforce Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce for Outlook</masterLabel>
+        <translation><!-- Salesforce for Outlook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ServiceNow Request</masterLabel>
+        <translation><!-- ServiceNow Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub-Project</masterLabel>
+        <translation><!-- Sub-Project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support Request Enhancement</masterLabel>
+        <translation><!-- Support Request Enhancement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training - Global Impact</masterLabel>
+        <translation><!-- Training - Global Impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training - New</masterLabel>
+        <translation><!-- Training - New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training - Refresher</masterLabel>
+        <translation><!-- Training - Refresher --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

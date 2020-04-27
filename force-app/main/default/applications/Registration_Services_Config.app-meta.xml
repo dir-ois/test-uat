@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Configuration objects for Registration Services</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Registration Services Config</label>
+    <tabs>standard-Account</tabs>
+    <tabs>License_Registration__c</tabs>
+    <tabs>Attachments_Plus__c</tabs>
+    <tabs>VIPForm__VIP_Template__c</tabs>
+    <tabs>Question_Bank__c</tabs>
+    <tabs>Question_Rule__c</tabs>
+    <tabs>Follow_Up_Detail_Config__c</tabs>
+    <tabs>Registration_Attachment_Bank__c</tabs>
+    <tabs>Registration_Education_Bank__c</tabs>
+    <tabs>Fee_Schedule__c</tabs>
+    <tabs>Defect__c</tabs>
+    <tabs>Registration_Location__c</tabs>
+    <tabs>Registration_Account__c</tabs>
+</CustomApplication>

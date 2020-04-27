@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Complex_Question_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Complex_Question_Message</shortDescription>
+        <value>(Please click save to ensure your answers are retained)</value>
+    </labels>
+    <labels>
+        <fullName>Disqualification_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Disqualification Text</shortDescription>
+        <value>A duplicate registration has been found and the status is ‘disqualified’. Therefore, this 
+registration is ineligible. Please return to register after the disqualified end date to process a new registration.</value>
+    </labels>
+    <labels>
+        <fullName>EMPTY_FILE</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CSV file is empty.</shortDescription>
+        <value>CSV file is empty.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_JSON_BAD_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The provided Json String was badly formatted.</shortDescription>
+        <value>The provided Json String was badly formatted.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_JSON_EMPTY</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No field values were found in the Json String.</shortDescription>
+        <value>No field values were found in the Json String.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_OP_FAILED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Operation failed, please check messages!</shortDescription>
+        <value>Operation failed, please check messages!</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_REQUEST_FAILED_NO_ERROR</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request failed with no specified error.</shortDescription>
+        <value>Request failed with no specified error.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_UNAUTHORIZED_ENDPOINT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unauthorized endpoint, please check Setup</shortDescription>
+        <value>Unauthorized endpoint, please check Setup</value>
+    </labels>
+    <labels>
+        <fullName>Expired_Registrations_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expired Registrations Notification</shortDescription>
+        <value>Your Registration has expired.</value>
+    </labels>
+    <labels>
+        <fullName>Expiring_Registration_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Expiring Registration Notification</shortDescription>
+        <value>Your Contractor Registration will expire June 30 of this year. If you wish to continue working on Public Works Project you must renew your registration.</value>
+    </labels>
+    <labels>
+        <fullName>FILE_MISSING</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please provide a comma separated file.</shortDescription>
+        <value>Please provide a comma separated file.</value>
+    </labels>
+    <labels>
+        <fullName>INVALID_FILE_ROW_SIZE_DOESNT_MATCH</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The number of field values does not match the number of header fields on line</shortDescription>
+        <value>The number of field values does not match the number of header fields on line</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CHECK_API_NAMES</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Api names!</shortDescription>
+        <value>Please check the Api names!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_EXISTS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make sure Custom Setting and Custom Metadata Types exists in the org!</shortDescription>
+        <value>Make sure Custom Setting and Custom Metadata Types exists in the org!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_FIELD_NAME_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the format, Custom Setting.field and Custom Metadata Types.field</shortDescription>
+        <value>Please check the format, Custom Setting.field and Custom Metadata Types.field</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_FIELD_NAME_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Name/Field Name and CMT/Field Name names are required!</shortDescription>
+        <value>Custom Setting Name/Field Name and CMT/Field Name names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_MAPPING_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Name, Custom Metadata Types and Json Mapping names are required!</shortDescription>
+        <value>Custom Setting Name, Custom Metadata Types and Json Mapping names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Api Name and Custom Metadata Types Api names are required!</shortDescription>
+        <value>Custom Setting Api Name and Custom Metadata Types Api names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CUSTOM_SETTINGS_EXISTS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make sure Custom Setting exists in the org!</shortDescription>
+        <value>Make sure Custom Setting exists in the org!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_JSON_API_NAMES</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Api names in Json!</shortDescription>
+        <value>Please check the Api names in Json!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_JSON_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Json format!</shortDescription>
+        <value>Please check the Json format!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MDT_END</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Metadata Types name should end with</shortDescription>
+        <value>Custom Metadata Types name should end with</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MIGRATION_COMPLETED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration Completed!</shortDescription>
+        <value>Migration Completed!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MIGRATION_IN_PROGRESS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration In Progress, check status under Deploy -&gt; Deployment Status, Job Id:</shortDescription>
+        <value>Migration In Progress, check status under Deploy -&gt; Deployment Status, Job Id:</value>
+    </labels>
+    <labels>
+        <fullName>MSG_NOT_SUPPORTED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Not Supported!!!</shortDescription>
+        <value>Not Supported!!!</value>
+    </labels>
+    <labels>
+        <fullName>PW_12_Month_Rule_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PW 12 Month Rule Error</shortDescription>
+        <value>You have been assessed a $2,000 penalty within the last 12 months. You are currently not able to register. Please email publicworks@dir.ca.gov if you feel you have received this message in error.</value>
+    </labels>
+    <labels>
+        <fullName>RCI_Anonymous_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RCI Anonymous ID</shortDescription>
+        <value>001t000000BtxpO</value>
+    </labels>
+    <labels>
+        <fullName>Reg_Com_Payment_Confirm</fullName>
+        <categories>Registration Services</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>wait message for reg svcs users after clicking confirm payment</shortDescription>
+        <value>This transaction may take up to 1 minute to process. Please be patient.</value>
+    </labels>
+    <labels>
+        <fullName>Reg_Maintenance_Msg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reg Maintenance Msg</shortDescription>
+        <value>off</value>
+    </labels>
+    <labels>
+        <fullName>Reg_Svs_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reg Svs Email</shortDescription>
+        <value>Should you have trouble retrieving your password, please email DLSE.Licensing@dir.ca.gov for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>Registration_Community_Username</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Community Username</shortDescription>
+        <value>Username / Email Address</value>
+    </labels>
+    <labels>
+        <fullName>Registration_Disqualified_Entity_License_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message for Entity and License Number disqualified duplication</shortDescription>
+        <value>The Entity Number or CSLB Number provided has been disqualified from registration. If you believe this is an error please contact Public Works.</value>
+    </labels>
+    <labels>
+        <fullName>Registration_Services_Site</fullName>
+        <categories>Registration Services</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Services Site</shortDescription>
+        <value>https://mycadir.force.com/registrations</value>
+    </labels>
+    <labels>
+        <fullName>Registration_Upload_Save_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Upload Save Message</shortDescription>
+        <value>(Click &quot;Upload &amp;Save&quot; button before proceeding to the next page.)</value>
+    </labels>
+    <labels>
+        <fullName>Sorry_for_any_Inconvenience</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sorry for any Inconvenience</shortDescription>
+        <value>We are sorry for an Inconvenience this may cause.</value>
+    </labels>
+    <labels>
+        <fullName>TYPE_OPTION_NOT_SELECTED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please choose a valid custom metadata type.</shortDescription>
+        <value>Please choose a valid custom metadata type.</value>
+    </labels>
+    <labels>
+        <fullName>VIP_Confirmation_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VIP Confirmation Text</shortDescription>
+        <value>Thank you for submitting your registration. You must now pay all required fees for the registration to become active. From the home screen (My Dashboard), under the Registration # click on “Pay Now” for the registration you need to pay.</value>
+    </labels>
+    <labels>
+        <fullName>duplicateRegRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>duplicateRegRecord</shortDescription>
+        <value>An active registration linked to your account has been found.</value>
+    </labels>
+    <labels>
+        <fullName>iFrameResizer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iFrameResizer</shortDescription>
+        <value>https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.16/iframeResizer.contentWindow.min.js</value>
+    </labels>
+    <labels>
+        <fullName>refundUnavailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>refundUnavailable</shortDescription>
+        <value>You may be creating a duplicate registration. If you continue, fees will be required and refunds are not permitted. Do you want to proceed?</value>
+    </labels>
+    <labels>
+        <fullName>reg_incorrect_password</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>incorrect password</shortDescription>
+        <value>Username is an email address.Passwords must be 8 characters or longer and include at least one uppercase, one lowercase and one symbol. Note: PASSWORD, password, and PaSsWoRd are not the same.</value>
+    </labels>
+    <labels>
+        <fullName>reg_password_requirement</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>password requirement</shortDescription>
+        <value>Passwords must be at least 8 characters long and include at least one uppercase, one lowercase, one number and one character: - ! # $ % = + _ &lt; &gt;</value>
+    </labels>
+    <labels>
+        <fullName>runRegistrationTrigger</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>runRegistrationTrigger</shortDescription>
+        <value>true</value>
+    </labels>
+</CustomLabels>

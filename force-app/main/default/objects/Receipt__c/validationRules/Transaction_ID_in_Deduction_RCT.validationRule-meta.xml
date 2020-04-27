@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_ID_in_Deduction_RCT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Payment_Type__c,&quot;Deduction&quot;),
+NOT(ISBLANK( Transaction__c)))</errorConditionFormula>
+    <errorMessage>Transaction ID cannot be assigned to a deduction Receipt</errorMessage>
+</ValidationRule>

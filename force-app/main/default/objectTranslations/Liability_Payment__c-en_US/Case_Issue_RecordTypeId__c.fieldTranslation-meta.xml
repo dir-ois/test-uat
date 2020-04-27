@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Populated and used by the PostCasePaymentController and PartyPaymentController apex classes. --></help>
+    <label><!-- Case Issue RecordTypeId --></label>
+    <name>Case_Issue_RecordTypeId__c</name>
+</CustomFieldTranslation>

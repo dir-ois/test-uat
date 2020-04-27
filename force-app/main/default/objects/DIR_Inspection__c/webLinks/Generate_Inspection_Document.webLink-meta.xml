@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Inspection_Document</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>500</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Inspection Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!DIR_Inspection__c.Id}
+&amp;templategroup=Inspection
+&amp;reportid=[HeadInfo]00Od0000004WoyJ,
+[InspectQ]00Od0000004WoyN,
+[EmplClass]00Od0000004WoyI?pv0={!DIR_Inspection__c.Name},
+[MinEmpl]00Od0000004WoyS,
+[PayRoll]00Od0000004WoyU?pv0={!DIR_Inspection__c.Name},
+&amp;SC1=Attachments
+&amp;AttachmentParentID={!DIR_Case__c.Id}
+&amp;AC0=1
+&amp;SC0=1
+&amp;DefaultPDF=1</url>
+    <width>700</width>
+</WebLink>

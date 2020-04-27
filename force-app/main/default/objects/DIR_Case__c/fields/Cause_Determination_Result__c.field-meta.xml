@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause_Determination_Result__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause Determination Result</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employer compliance</fullName>
+                <default>false</default>
+                <label>Employer compliance</label>
+            </value>
+            <value>
+                <fullName>Employer non-compliance</fullName>
+                <default>false</default>
+                <label>Employer non-compliance</label>
+            </value>
+            <value>
+                <fullName>Appealed, Employer</fullName>
+                <default>false</default>
+                <label>Appealed, Employer</label>
+            </value>
+            <value>
+                <fullName>Appealed, Employee</fullName>
+                <default>false</default>
+                <label>Appealed, Employee</label>
+            </value>
+            <value>
+                <fullName>Dismissed on appeal</fullName>
+                <default>false</default>
+                <label>Dismissed on appeal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

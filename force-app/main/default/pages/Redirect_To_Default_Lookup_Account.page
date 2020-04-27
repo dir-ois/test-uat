@@ -1,0 +1,2 @@
+<apex:page standardController="Contact" extensions="RedirectAcctPrepop" action="{!NewContact}">
+</apex:page>

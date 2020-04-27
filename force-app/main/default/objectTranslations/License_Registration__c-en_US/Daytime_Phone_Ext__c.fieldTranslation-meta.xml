@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If there is an extension #, please enter that here. --></help>
+    <label><!-- Daytime Phone Ext. --></label>
+    <name>Daytime_Phone_Ext__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buyback_Letter_Issue_Date__c</fullName>
+    <description>Issue date for the buyback letter that is sent along with the buyback check. This is filled out by the cashier for the conga document to be generated.</description>
+    <externalId>false</externalId>
+    <label>Buyback Letter Issue Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

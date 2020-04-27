@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_814</fullName>
+    <availability>online</availability>
+    <description>!$Api.Partner_Server_URL_80</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Generate BOFE 814</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}; 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}; 
+
+var ids= {!GETRECORDIDS( $ObjectType.Liable_Party__c )}; 
+
+/*
+var fullId = &#39;&#39;; 
+var crId = &#39;&#39;; 
+var query = &quot;SELECT Id from Liable_Party__c WHERE Liability__c = &#39;{!Liability__c.Id}&#39;&quot;; 
+
+var records = sforce.connection.query(query); 
+var crIdArray = records.getArray(&#39;records&#39;); 
+
+if(crIdArray.length &gt; 0 &amp;&amp; ids.length == 0) 
+{ 
+fullId = crIdArray[0].Id; 
+crId = fullId.substring(0, fullId.length - 3); 
+ids[0] = crId; 
+}
+else if(crIdArray.length == &#39;0&#39; &amp;&amp; ids.length == &#39;0&#39;) 
+{ 
+alert(&quot;No Liable Party found. Please select a Liable Party or create a Liable Party&quot;); 
+} 
+*/
+
+if(ids.length == &#39;0&#39;) 
+{ 
+alert(&quot;Please select a Liable Party&quot;); 
+} 
+else if(ids.length &gt; &#39;1&#39;) 
+{ 
+alert(&quot;Only one Liable Party may be selected&quot;); 
+} 
+else 
+{ 
+
+var idsReport=ids.join(&quot;|&quot;); 
+var idsQuery=ids.join(&quot;&#39;|&#39;&quot;); 
+var CongaURL = &quot;https://composer.congamerge.com&quot; + 
+&quot;?sessionId={!$Api.Session_ID}&quot; + 
+&quot;&amp;ServerUrl={!$Api.Partner_Server_URL_290}&quot; + 
+&quot;&amp;Id={!Liability__c.Id}&quot; + 
+&quot;&amp;reportid=[HeadInfo]00Od0000004WoyK?pv0={!Liability__c.Assessment_ID_Conga__c}&quot; +
+&quot;&amp;reportid=[Violations]00Od0000004WoyZ?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1=&quot; +
+&quot;{!Liability__c.Citation_Form_Assessment_Conga__c}&quot; + 
+&quot;&amp;reportid=[VioHead]00Od0000004WoyY?pv0={!Liability__c.Assessment_ID_Conga__c}&quot; + 
+&quot;&amp;reportid=[Office]00Od0000004WoyT?pv0={!Liability__c.OfficeID__c}&quot; + 
+&quot;&amp;reportid=[ConfItems]00Od0000004WoyH?pv0={!Liability__c.Assessment_ID_Conga__c}&quot; +
+&quot;&amp;reportid=[Liable]00Od0000004WoyR?pv0=&quot; + idsReport +
+&quot;&amp;reportid=[Liable2]00Od0000004WoyQ?pv0={!Liability__c.Assessment_ID_Conga__c}&quot; +
+&quot;&amp;reportid=[LiableHead]00Od0000004Woz3?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1=&quot; +
+&quot;{!Liability__c.Citation_Form_Assessment_Conga__c}&quot; +
+&quot;&amp;reportid=[Sub]00Od0000004WoyX?pv0={!Liability__c.Assessment_ID_Conga__c}&quot; +
+&quot;&amp;queryid=[ViolationTable]a0md0000003l2RW?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1=&quot; +
+&quot;{!Liability__c.Citation_Form_Assessment_Conga__c}&quot; +
+&quot;&amp;queryid=[HeaderInfo]a0md0000003l2Rb?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1=&quot; +
+&quot;{!Liability__c.Citation_Form_Assessment_Conga__c}&quot; +
+&quot;&amp;DV0=Edmund+G.+Brown,+Jr.&quot; +
+&quot;&amp;FP0=1&quot; + &quot;&amp;sc0=1&quot; + &quot;&amp;sc1=Attachments&quot; + &quot;&amp;AC0=1&quot; + &quot;&amp;OFN={Template.Label}&quot; + 
+&quot;&amp;AttachmentParentID={!DIR_Case__c.Id}&quot; + 
+&quot;&amp;DS0=1&quot; + &quot;&amp;DS6=1&quot; +
+&quot;&amp;TemplateGroup=Violation%20-%20BOFE%20814&quot; ; 
+
+window.open( CongaURL, &quot;Conga&quot;, &quot;width=700,height=550,menubar=0&quot; ); 
+}</url>
+</WebLink>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Flat Fee Record Type: simple decimal number (xxxx.xx)
+Per x Record Type: {Custom_Field__c}*[xxxx.xx]
+Percent Record Type: {Custom_Field__c}*[20/100] --></help>
+    <label><!-- Calculation Formula --></label>
+    <name>Calculation_Formula__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Wage_Penalties__c</fullName>
+    <description>Sum of wage penalties assessessed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of all wage penalties on violations on this case</inlineHelpText>
+    <label>Total Amount Payable to Employee(s)</label>
+    <summarizedField>DIR_Violation__c.Wages_Due__c</summarizedField>
+    <summaryFilterItems>
+        <field>DIR_Violation__c.Status__c</field>
+        <operation>notEqual</operation>
+        <value>Dismissed, Administrative Dismissal, Dismissed - Writ, Canceled - Invalid</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>DIR_Violation__c.Citation_Form__c</field>
+        <operation>notEqual</operation>
+        <value>BOFE 814</value>
+    </summaryFilterItems>
+    <summaryForeignKey>DIR_Violation__c.Case__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

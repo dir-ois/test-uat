@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email88</name>
+        <label>Send Email8</label>
+        <locationX>1026</locationX>
+        <locationY>80</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Does_the_Referral_have_BOFE_Division_Investigator</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>UpdatePagaUnitPointPerson</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TemplateSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>InternalEmployeeonReferral_SObject.Email__c</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email88_0</name>
+        <label>Send Email8</label>
+        <locationX>1183</locationX>
+        <locationY>300</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Does_the_Referral_have_Division_Screener</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>UpdateBofeInvestigator</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TemplateSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>InternalEmployeeonReferral_SObject.Email__c</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Email88_0_0</name>
+        <label>Send Email8</label>
+        <locationX>1112</locationX>
+        <locationY>442</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Loop_through_Referrals</targetReference>
+        </connector>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>updatesScreenersDeputies</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>TemplateSubject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>InternalEmployeeonReferral_SObject.Email__c</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Are_there_any_referrals</name>
+        <label>Are there any referrals</label>
+        <locationX>184</locationX>
+        <locationY>46</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>There_are_referrals</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReferralSObject</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_through_Referrals</targetReference>
+            </connector>
+            <label>There are referrals</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Case_Management</name>
+        <label>Check Case Management</label>
+        <locationX>30</locationX>
+        <locationY>123</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Case_Management_ID_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttachmentPlusSObject.Case_Management__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_Case</targetReference>
+            </connector>
+            <label>Case Management ID is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Case_SObject</name>
+        <label>Check Case SObject</label>
+        <locationX>36</locationX>
+        <locationY>355</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Case_SObject_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CaseManagementSObject.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Type_of_Attachment_Plus</targetReference>
+            </connector>
+            <label>Case SObject is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_email</name>
+        <label>Check_email</label>
+        <locationX>870</locationX>
+        <locationY>67</locationY>
+        <defaultConnector>
+            <targetReference>Does_the_Referral_have_BOFE_Division_Investigator</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Email_is_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>InternalEmployeeonReferral_SObject.Email__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email88</targetReference>
+            </connector>
+            <label>Email is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_email_0</name>
+        <label>Check_email</label>
+        <locationX>979</locationX>
+        <locationY>235</locationY>
+        <defaultConnector>
+            <targetReference>Does_the_Referral_have_Division_Screener</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Email_is_not_null_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>InternalEmployeeonReferral_SObject.Email__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email88_0</targetReference>
+            </connector>
+            <label>Email is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_email_0_0</name>
+        <label>Check_email</label>
+        <locationX>295</locationX>
+        <locationY>698</locationY>
+        <defaultConnector>
+            <targetReference>Loop_through_Referrals</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Email_is_not_null_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>InternalEmployeeonReferral_SObject.Email__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email88_0_0</targetReference>
+            </connector>
+            <label>Email is not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Type_of_Attachment_Plus</name>
+        <label>Check Type of Attachment Plus</label>
+        <locationX>195</locationX>
+        <locationY>284</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Attachment_Plus_Type</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttachmentPlusSObject.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Cure Dispute</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LookupAllRelatedReferrals</targetReference>
+            </connector>
+            <label>Attachment Plus Type</label>
+        </rules>
+        <rules>
+            <name>Type_is_Complaint</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttachmentPlusSObject.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Court Complaint</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LookupAllRelatedReferrals</targetReference>
+            </connector>
+            <label>Type is Complaint</label>
+        </rules>
+        <rules>
+            <name>Type_is_Employer_Response_Cure</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AttachmentPlusSObject.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Employer Response/Cure</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>LookupAllRelatedReferrals</targetReference>
+            </connector>
+            <label>Type is Employer Response/Cure</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_the_Referral_have_BOFE_Division_Investigator</name>
+        <label>Does the Referral have BOFE Division Investigator</label>
+        <locationX>387</locationX>
+        <locationY>261</locationY>
+        <defaultConnector>
+            <targetReference>Does_the_Referral_have_Division_Screener</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Referral_Does_have_BOFE_Division_Investigator</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Referral.Division_Investigator_BOFE__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_BOFE_Investigator</targetReference>
+            </connector>
+            <label>Referral Does have BOFE Division Investigator</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_the_Referral_have_Division_Screener</name>
+        <label>Does the Referral have Division Screener</label>
+        <locationX>114</locationX>
+        <locationY>488</locationY>
+        <defaultConnector>
+            <targetReference>Loop_through_Referrals</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Referral_Does_have_Division_Screener</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Referral.Division_Screener__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_Division_Screener</targetReference>
+            </connector>
+            <label>Referral Does have Division Screener</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_the_Referral_have_Paga_Point_Person</name>
+        <label>Does the Referral have Paga Point Person</label>
+        <locationX>387</locationX>
+        <locationY>155</locationY>
+        <defaultConnector>
+            <targetReference>Does_the_Referral_have_BOFE_Division_Investigator</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Referral_Does_have_PAGA_Point_Person</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Referral.PAGA_Point_Person__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_PAGA_point_person</targetReference>
+            </connector>
+            <label>Referral Does have PAGA Point Person</label>
+        </rules>
+    </decisions>
+    <description>updated the mail content fixed hard coded link to case</description>
+    <interviewLabel>PAGA CM Notifications when Existing Investigation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PAGA CM Notifications when Existing Investigation</label>
+    <loops>
+        <name>Loop_through_Referrals</name>
+        <label>Loop through Referrals</label>
+        <locationX>392</locationX>
+        <locationY>42</locationY>
+        <assignNextValueToReference>Referral</assignNextValueToReference>
+        <collectionReference>ReferralSObject</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Does_the_Referral_have_Paga_Point_Person</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Lookup_Attachment_Plus_Object</name>
+        <label>Lookup Attachment Plus Object</label>
+        <locationX>24</locationX>
+        <locationY>23</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Case_Management</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OriginalAttachmentPlusID</elementReference>
+            </value>
+        </filters>
+        <object>Attachments_Plus__c</object>
+        <outputAssignments>
+            <assignToReference>AttachmentPlusSObject.Case_Management__c</assignToReference>
+            <field>Case_Management__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>AttachmentPlusSObject.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>AttachmentPlusSObject.Type__c</assignToReference>
+            <field>Type__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_BOFE_Investigator</name>
+        <label>Lookup BOFE Investigator</label>
+        <locationX>788</locationX>
+        <locationY>223</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_email_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Referral.Division_Investigator_BOFE__c</elementReference>
+            </value>
+        </filters>
+        <object>DIR_Employee__c</object>
+        <outputAssignments>
+            <assignToReference>InternalEmployeeonReferral_SObject.Email__c</assignToReference>
+            <field>Email__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>InternalEmployeeonReferral_SObject.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>BofeInvestigatorName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_Case</name>
+        <label>Lookup Case</label>
+        <locationX>30</locationX>
+        <locationY>231</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Case_SObject</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AttachmentPlusSObject.Case_Management__c</elementReference>
+            </value>
+        </filters>
+        <object>DIR_Case__c</object>
+        <outputAssignments>
+            <assignToReference>CaseManagementSObject.CM_Case_Safe_ID__c</assignToReference>
+            <field>CM_Case_Safe_ID__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>CaseManagementSObject.Case_Number__c</assignToReference>
+            <field>Case_Number__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>CaseManagementSObject.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>CaseManagementSObject.Status__c</assignToReference>
+            <field>Status__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_Division_Screener</name>
+        <label>Lookup Division Screener</label>
+        <locationX>690</locationX>
+        <locationY>420</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_email_0_0</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Referral.Division_Screener__c</elementReference>
+            </value>
+        </filters>
+        <object>DIR_Employee__c</object>
+        <outputAssignments>
+            <assignToReference>InternalEmployeeonReferral_SObject.Email__c</assignToReference>
+            <field>Email__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>InternalEmployeeonReferral_SObject.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>DivScreenerName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_PAGA_point_person</name>
+        <label>Lookup PAGA point person</label>
+        <locationX>701</locationX>
+        <locationY>63</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_email</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Referral.PAGA_Point_Person__c</elementReference>
+            </value>
+        </filters>
+        <object>DIR_Employee__c</object>
+        <outputAssignments>
+            <assignToReference>InternalEmployeeonReferral_SObject.Email__c</assignToReference>
+            <field>Email__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>InternalEmployeeonReferral_SObject.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>PagaPointPersonName</assignToReference>
+            <field>Name</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>LookupAllRelatedReferrals</name>
+        <label>LookupAllRelatedReferrals</label>
+        <locationX>189</locationX>
+        <locationY>154</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Are_there_any_referrals</targetReference>
+        </connector>
+        <filters>
+            <field>Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseManagementSObject.CM_Case_Safe_ID__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Request_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Rejected</stringValue>
+            </value>
+        </filters>
+        <object>Referral__c</object>
+        <outputReference>ReferralSObject</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>RecordTypeId</queriedFields>
+        <queriedFields>Case__c</queriedFields>
+        <queriedFields>Unit__c</queriedFields>
+        <queriedFields>Request_Status__c</queriedFields>
+        <queriedFields>PAGA_Point_Person__c</queriedFields>
+        <queriedFields>PAGA_Point_Person_Email__c</queriedFields>
+        <queriedFields>Division_Investigator_BOFE__c</queriedFields>
+        <queriedFields>Division_Investigator_non_BOFE__c</queriedFields>
+        <queriedFields>Division_Screener__c</queriedFields>
+    </recordLookups>
+    <startElementReference>Lookup_Attachment_Plus_Object</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>ReferralUpdate</name>
+        <text>On your investigation, there has been a {!AttachmentPlusSObject.Type__c}. Please go to review your investigation.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TemplateSubject</name>
+        <text>On your investigation you have received a critical update. Please review.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>UpdateBofeInvestigator</name>
+        <text>TO:      ASSIGNED INVESTIGATOR : {!BofeInvestigatorName}
+
+A/An {!AttachmentPlusSObject.Type__c} has been received for a PAGA Case where you are Assigned. Please review the Cure/Response document and contact the PAGA Unit with any questions at PAGA@dir.ca.gov. 
+
+PAGA CASE NUMBER:    {!CaseManagementSObject.Case_Number__c}
+LINK TO PAGA CASE:      https://cadir.my.salesforce.com/{!CaseManagementSObject.Id}
+
+Thank You</text>
+    </textTemplates>
+    <textTemplates>
+        <name>UpdatePagaUnitPointPerson</name>
+        <text>TO:       PAGA UNIT CASE OWNER :  {!PagaPointPersonName} 
+
+A/An {!AttachmentPlusSObject.Type__c} has been received for a PAGA Case where you are Assigned. Please review the Cure/Response document and contact the PAGA Unit with any questions at PAGA@dir.ca.gov. 
+
+PAGA CASE NUMBER:    {!CaseManagementSObject.Case_Number__c}
+LINK TO PAGA CASE:      https://cadir.my.salesforce.com/{!CaseManagementSObject.Id}
+
+Thank You</text>
+    </textTemplates>
+    <textTemplates>
+        <name>updatesScreenersDeputies</name>
+        <text>TO:      PAGA DIVISION REVIEWER : {!DivScreenerName}
+
+A/An {!AttachmentPlusSObject.Type__c} has been received for a PAGA Case where you are Assigned. Please review the Cure/Response document and contact the PAGA Unit with any questions at PAGA@dir.ca.gov. 
+
+PAGA CASE NUMBER:    {!CaseManagementSObject.Case_Number__c}
+LINK TO PAGA CASE:      https://cadir.my.salesforce.com/{!CaseManagementSObject.Id}
+
+Thank You</text>
+    </textTemplates>
+    <variables>
+        <name>AttachmentPlusSObject</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Attachments_Plus__c</objectType>
+    </variables>
+    <variables>
+        <name>BofeInvestigatorName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+    <variables>
+        <name>CaseManagementSObject</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>DIR_Case__c</objectType>
+    </variables>
+    <variables>
+        <name>DivScreenerName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+    <variables>
+        <name>InternalEmployeeonReferral_SObject</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <name>InternalEmployees</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <name>OriginalAttachmentPlusID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+    <variables>
+        <name>PagaPointPersonName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+    <variables>
+        <name>Referral</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Referral__c</objectType>
+    </variables>
+    <variables>
+        <name>ReferralSObject</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Referral__c</objectType>
+    </variables>
+</Flow>

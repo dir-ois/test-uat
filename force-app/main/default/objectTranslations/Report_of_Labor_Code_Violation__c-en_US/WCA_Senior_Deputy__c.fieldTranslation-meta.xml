@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- F0009: WCA Senior Deputy on referral --></help>
+    <label><!-- WCA Senior Deputy --></label>
+    <name>WCA_Senior_Deputy__c</name>
+    <relationshipLabel><!-- Reports of Labor Law Violations (WCA Senior Deputy) --></relationshipLabel>
+</CustomFieldTranslation>

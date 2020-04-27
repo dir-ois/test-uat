@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Launch_in_VIP_Form_Tool</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Launch in VIP Form Tool</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.open(&#39;/apex/VIPForm__VIP_FormWizard?id={!License_Registration__c.Id}&#39;, &#39;_blank&#39;);</url>
+</WebLink>

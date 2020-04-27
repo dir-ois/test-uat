@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdjustReasonRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+TEXT( Transaction_Type__c ) = &#39;Adjustment&#39;,
+ISBLANK( Adjustment_Reason__c )
+)</errorConditionFormula>
+    <errorMessage>Adjustment Reason is required</errorMessage>
+</ValidationRule>

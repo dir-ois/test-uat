@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mark_as_Duplicate</fullName>
+    <active>true</active>
+    <errorConditionFormula>Mark_as_Duplicate__c = TRUE &amp;&amp; ISBLANK(Support_Request__c)</errorConditionFormula>
+    <errorDisplayField>Support_Request__c</errorDisplayField>
+    <errorMessage>You must link it to the parent Support Request</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Additional_Authorization_Details</fullName>
+    <active>false</active>
+    <description>For Registration Agents, requires &#39;Additional Authorizations&#39; field if Agree_to_additional_authorization__c = Yes.</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Agree_to_additional_authorization__c, &quot;Yes&quot;), 
+ISBLANK( Additional_Authorizations__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Additional_Authorizations__c</errorDisplayField>
+    <errorMessage>Please provide details as to what additional authorizations should be granted to this agent.</errorMessage>
+</ValidationRule>

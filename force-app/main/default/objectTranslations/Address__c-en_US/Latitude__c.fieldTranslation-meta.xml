@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Latitudinal coordinate of this Location. You can find your coordinates at http://www.latlong.net/ --></help>
+    <label><!-- Latitude --></label>
+    <name>Latitude__c</name>
+</CustomFieldTranslation>

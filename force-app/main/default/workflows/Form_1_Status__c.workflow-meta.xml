@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Form_1_Status_Email</fullName>
+        <description>Form 1 Status Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>hkurtovich@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/Form1_Status_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Form_1_Status_Notification</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR Form 1 Status Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>humanresources@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/HR_Form_1_Status_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_send_Invalid_F1_status_to_Bao</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR send Invalid F1 status to Bao</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ble@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>humanresources@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/HR_send_Invalid_F1_status_to_Bao</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Copy_F1_Hire_Type</fullName>
+        <description>To copy the value of the new yire from F1 Status for reporting purpose.</description>
+        <field>F1_Status_Hire_Type__c</field>
+        <formula>TEXT(Hire_Type__c )</formula>
+        <name>Copy F1 Hire Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Form_1__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_F1_Status_Notes</fullName>
+        <field>F1_Status_Notes__c</field>
+        <formula>Status_Notes__c</formula>
+        <name>Copy F1 Status Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Form_1__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_Status_Type</fullName>
+        <description>To copy the status type from F1 Status to F1 for reporting purpose</description>
+        <field>F1_Status_Type__c</field>
+        <formula>TEXT(Form1_Status_Type__c )</formula>
+        <name>Copy Status Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Form_1__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>F1_Status_Created</fullName>
+        <field>F1_Status_Date_Created__c</field>
+        <formula>CreatedDate</formula>
+        <name>F1 Status Created</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Form_1__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>F1 Status Tracker Field Update</fullName>
+        <actions>
+            <name>Copy_F1_Hire_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copy_F1_Status_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copy_Status_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>F1_Status_Created</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Form_1_Status__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This rule will copy the content in to the parent object (Form1) for reporting pupose. The fields that are created in Form 1 are, &quot;Status Created&quot;, &quot;Status Notes&quot;, &quot;Hire Type&quot;, &quot;F1 Status Type&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Form 1 Status Update Alert</fullName>
+        <actions>
+            <name>Form_1_Status_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Form_1_Status__c.Form1_Status_Type__c</field>
+            <operation>equals</operation>
+            <value>Copy to Certs</value>
+        </criteriaItems>
+        <description>To update Supervisor&#39;s and Cert Unit the Status Update of Form1&#39;s</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

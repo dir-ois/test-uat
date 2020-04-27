@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Documents</fullName>
+    <availability>online</availability>
+    <description>Conga document button</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Documents</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Payee__c.Id}
+&amp;queryid=[PayeeInfo]a0md0000008uSKgAAM?pv0={!Payee__c.Id},[Office]a0md00000064cjJ?pv0={!$User.Id},[BOFEOffice]a0md00000064cjO?pv0={!DIR_Case__c.Id},[Employer]a0md00000064cj8?pv0={!DIR_Case__c.Id},[Governor]a0md0000003l2S0
+&amp;TemplateGroup=Payee
+&amp;OFN={Template.Label} + {!Payee__c.Case_Role__c}
+&amp;SC0=1
+&amp;SC1=Attachments</url>
+</WebLink>

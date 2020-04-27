@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Liability</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Liability</value>
+    </caseValues>
+    <layouts>
+        <layout>Garment</layout>
+        <sections>
+            <label><!-- Assessed Amounts --></label>
+            <section>Assessed Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Information --></label>
+            <section>Service Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>JEU</layout>
+        <sections>
+            <label><!-- Assessed Amounts --></label>
+            <section>Assessed Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Information --></label>
+            <section>Service Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Liability - Admin</layout>
+        <sections>
+            <label><!-- Assessed Amounts --></label>
+            <section>Assessed Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Information --></label>
+            <section>Service Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Liability Layout</layout>
+        <sections>
+            <label><!-- Assessed Amounts --></label>
+            <section>Assessed Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Information --></label>
+            <section>Service Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA</layout>
+        <sections>
+            <label><!-- Assessed Amounts --></label>
+            <section>Assessed Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Liabilities from BOFE Cases --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Liabilities from BOFE Cases --></description>
+        <label><!-- BOFE Liability --></label>
+        <name>BOFE_Liability</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Garment --></label>
+        <name>Garment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- JEU --></label>
+        <name>JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please Enter the Garment Fund Referral Date when referring. --></errorMessage>
+        <name>Garment_Fund_Referral_Date_Req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only a hearing officer may set a liability to &quot;Affirmed&quot; or &quot;Dismissed&quot; --></errorMessage>
+        <name>Hearing_Officer_Affirm_Dismiss</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not refer this case to JEU until 55 days after the Hearing Date. --></errorMessage>
+        <name>JEU_55_Days_from_Hearing_Finding</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- JEU Case Number is required --></errorMessage>
+        <name>JEU_Case_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must populate the JEU# now that this has been accepted. --></errorMessage>
+        <name>JEU_Number_Required_on_Accepted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- JEU Rejection Reason is required --></errorMessage>
+        <name>JEU_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify the reason this case is being rejected by the JEU --></errorMessage>
+        <name>JEU_Rejection_Reason_Required_on_Reject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only BOFE Senior Deputies can update the status of liabilities to Administrative Dismissal. --></errorMessage>
+        <name>Only_Sr_Deputies_Can_dismiss_liability</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Backup_Generate_Violation_Document --></label>
+        <name>Backup_Generate_Violation_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Judgment --></label>
+        <name>Create_Judgment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Demand_Letters --></label>
+        <name>Generate_Demand_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Violation_Document --></label>
+        <name>Generate_Violation_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_WCA_Document --></label>
+        <name>Generate_WCA_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refer_to_JEU --></label>
+        <name>Refer_to_JEU</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissed_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Dismissed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plaintiff failed to appear</fullName>
+                <default>false</default>
+                <label>Plaintiff failed to appear</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Withdrawal</fullName>
+                <default>false</default>
+                <label>Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Stipulated Settlement</fullName>
+                <default>false</default>
+                <label>Stipulated Settlement</label>
+            </value>
+            <value>
+                <fullName>Full payment by Defendant</fullName>
+                <default>false</default>
+                <label>Full payment by Defendant</label>
+            </value>
+            <value>
+                <fullName>Claimant Did not appear</fullName>
+                <default>false</default>
+                <label>Claimant Did not appear</label>
+            </value>
+            <value>
+                <fullName>No Jurisdiction</fullName>
+                <default>false</default>
+                <label>No Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Dismissed</controllingFieldValue>
+            <valueName>Plaintiff failed to appear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dismissed</controllingFieldValue>
+            <valueName>Lack of Jurisdiction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dismissed</controllingFieldValue>
+            <valueName>Withdrawal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dismissed</controllingFieldValue>
+            <valueName>Stipulated Settlement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dismissed</controllingFieldValue>
+            <valueName>Full payment by Defendant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dismissed</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

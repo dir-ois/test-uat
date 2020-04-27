@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bilingual_With_Date_but_no_Language</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+   Rec_Bilingual_Pay__c ,
+   !ISNULL( Bilingual_Effective_Date__c),
+   ISBLANK ( Other_Language__c ),
+   ISPICKVAL( Language__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Language__c</errorDisplayField>
+    <errorMessage>Please select or Enter a Bilingual Language</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 18 Payment Type --></label>
+    <name>WCA_18_Payment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Amount employer concedes ... restrictive</masterLabel>
+        <translation><!-- Amount employer concedes ... restrictive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amount employer concedes to be due</masterLabel>
+        <translation><!-- Amount employer concedes to be due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full payment of your claim</masterLabel>
+        <translation><!-- Full payment of your claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full payment pursuant to the SA ...</masterLabel>
+        <translation><!-- Full payment pursuant to the SA ... --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial payment pursuant to the SA ...</masterLabel>
+        <translation><!-- Partial payment pursuant to the SA ... --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See attached correspondence ...</masterLabel>
+        <translation><!-- See attached correspondence ... --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

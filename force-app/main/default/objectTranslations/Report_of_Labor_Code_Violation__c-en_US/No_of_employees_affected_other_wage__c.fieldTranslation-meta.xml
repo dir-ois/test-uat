@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Suspected Violation of Employer - Estimated number of employees affected by other unpaid wages --></help>
+    <label><!-- Estimated number of employees other wage --></label>
+    <name>No_of_employees_affected_other_wage__c</name>
+</CustomFieldTranslation>

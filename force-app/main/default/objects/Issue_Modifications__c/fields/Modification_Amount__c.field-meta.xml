@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modification_Amount__c</fullName>
+    <description>Amount to set the assessed issue amount to following creation of this modification. This value is passed to the flow to set the modified to amount for either wage or penalty</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount to which you want set this issue&#39;s assessed amount to</inlineHelpText>
+    <label>Modified Assessed Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

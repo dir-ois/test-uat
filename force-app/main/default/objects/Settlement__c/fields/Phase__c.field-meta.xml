@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase__c</fullName>
+    <externalId>false</externalId>
+    <label>Phase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Conference</fullName>
+                <default>false</default>
+                <label>Pre-Conference</label>
+            </value>
+            <value>
+                <fullName>At Conference</fullName>
+                <default>false</default>
+                <label>At Conference</label>
+            </value>
+            <value>
+                <fullName>Pre-hearing</fullName>
+                <default>false</default>
+                <label>Pre-hearing</label>
+            </value>
+            <value>
+                <fullName>At hearing</fullName>
+                <default>false</default>
+                <label>At hearing</label>
+            </value>
+            <value>
+                <fullName>Post Hearing (Prior to ODA)</fullName>
+                <default>false</default>
+                <label>Post Hearing (Prior to ODA)</label>
+            </value>
+            <value>
+                <fullName>Post Hearing (Post ODA, Prior to Judgment)</fullName>
+                <default>false</default>
+                <label>Post Hearing (Post ODA, Prior to Judgment)</label>
+            </value>
+            <value>
+                <fullName>Post Hearing (Post Judgment, Prior to JEU referral)</fullName>
+                <default>false</default>
+                <label>Post Hearing (Post Judgment, Prior to JEU referral)</label>
+            </value>
+            <value>
+                <fullName>Post Appeal</fullName>
+                <default>false</default>
+                <label>Post Appeal</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Pre-Conference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>At Conference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Pre-hearing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>At hearing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Post Hearing (Prior to ODA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Post Hearing (Post ODA, Prior to Judgment)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Post Hearing (Post Judgment, Prior to JEU referral)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Settled</controllingFieldValue>
+            <valueName>Post Appeal</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

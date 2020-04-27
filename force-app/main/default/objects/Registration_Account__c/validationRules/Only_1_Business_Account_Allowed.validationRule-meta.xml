@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_1_Business_Account_Allowed</fullName>
+    <active>false</active>
+    <description>Enforces user to only have one business registration account added to registrations when the company type is not joint venture.</description>
+    <errorConditionFormula>AND(
+ Number_of_Registration_Accounts__c &gt; 1,
+OR(
+RecordType.Name &lt;&gt; &quot;Management Individual&quot;,
+RecordType.Name &lt;&gt; &quot;Joint Venture&quot;
+))</errorConditionFormula>
+    <errorMessage>Only one Company is allowed per application. Please delete any extra business information records.</errorMessage>
+</ValidationRule>

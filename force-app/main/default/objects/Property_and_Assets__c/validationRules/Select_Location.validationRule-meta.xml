@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_Location</fullName>
+    <active>false</active>
+    <description>Ganishee&#39;s locations should be selected, When a Garnishee is selected</description>
+    <errorConditionFormula>AND(NOT(RecordType.DeveloperName=&quot;Accounts_Receivable_Third_Party_Payors&quot;),NOT(RecordType.DeveloperName=&quot;Bank_Account_or_Brokerage_Account&quot;),NOT(RecordType.DeveloperName=&quot;Intellectual_Property&quot;),NOT(RecordType.DeveloperName=&quot;Lawsuit_Legal_Claim&quot;),NOT(RecordType.DeveloperName=&quot;Rent_Royalty_Payments&quot;),NOT(RecordType.DeveloperName=&quot;Stocks_Partnership_Interests&quot;),NOT(RecordType.DeveloperName=&quot;Wages_Salary&quot;),!ISBLANK(Garnishee__c),ISBLANK(Located_At__c ))</errorConditionFormula>
+    <errorDisplayField>Located_At__c</errorDisplayField>
+    <errorMessage>The Garnishee address must be selected when adding Garnishee.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the field relative to the Case Payment object that holds the special condition that determines button settings. 
+Ex: custom field &quot;Foo&quot; on the DIR_Case__c object - enter &quot;Case__r.Foo__c&quot;. --></help>
+    <label><!-- Condition Field --></label>
+    <name>Condition_Field__c</name>
+</CustomFieldTranslation>

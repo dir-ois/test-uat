@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Penalty Amount Due to LWDA on PAGA cases. Comes from Court Order/Judgment --></help>
+    <label><!-- Penalty Amount Due to LWDA --></label>
+    <name>PAGA_Penalty_Amount__c</name>
+</CustomFieldTranslation>

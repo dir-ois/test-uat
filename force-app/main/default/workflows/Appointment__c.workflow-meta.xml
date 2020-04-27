@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>HR_Leaving_Form_700_Filer</fullName>
+        <ccEmails>Form700@dir.ca.gov</ccEmails>
+        <description>HR Leaving – Form 700 Filer</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/HR_Leaving_Form_700_Filer</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_New_Appointment_Notification</fullName>
+        <ccEmails>Form700@dir.ca.gov</ccEmails>
+        <description>HR New Appointment Notification</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/HR_New_Appointment_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Position_Status_to_Temporarily_Vacant</fullName>
+        <field>Status__c</field>
+        <literalValue>Temporarily Vacant</literalValue>
+        <name>Position Status to Temporarily Vacant</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Position__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Appt_Email_Field</fullName>
+        <description>Update Appt Email field with Contact&#39;s email field</description>
+        <field>Email__c</field>
+        <formula>Employee_Contact__r.Email</formula>
+        <name>Update Appt Email Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Pos_Object_w_Latest_Filled_Name</fullName>
+        <field>Current_Filled_Empl_Name__c</field>
+        <formula>Employee_Contact__r.FirstName + &quot; &quot; +  Employee_Contact__r.LastName</formula>
+        <name>Update Pos Object w Latest Filled Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Position__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Position_Status_to_Vacant</fullName>
+        <field>Status__c</field>
+        <literalValue>Vacant</literalValue>
+        <name>Update Position Status to Vacant</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Position__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Copy Latest Field Name to Pos</fullName>
+        <actions>
+            <name>Update_Pos_Object_w_Latest_Filled_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This rule takes the latest filled appt and copy it to Position (for HR 607 tracking report)</description>
+        <formula>TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR%3A Update Appointment w Contact Email</fullName>
+        <actions>
+            <name>Update_Appt_Email_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>HR: Update Appointment w Contact Email</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Position Status for Blanket Positions</fullName>
+        <actions>
+            <name>Update_Position_Status_to_Vacant</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Appointment__c.End_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Position__c.Serial_Number__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>900</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Temporarily_Vacant__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>To update the status of blanket positions when the appointment is updated with end date</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Position Status for Blanket Positions and Temp Vacant</fullName>
+        <actions>
+            <name>Position_Status_to_Temporarily_Vacant</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Appointment__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.End_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appointment__c.Temporarily_Vacant__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>This rule updates the status of the position to temporarily vacant if end date is entered and temporarily vacant is checked</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_of_Violation_Address__c</fullName>
+    <description>Pulls the address info from the location of violations. Used for adding to output docs</description>
+    <externalId>false</externalId>
+    <formula>IF (  NOT ( ISBLANK ( Location_of_Violations__c ) ),
+Location_of_Violations__r.Address__c + &#39;, &#39; + Location_of_Violations__r.City__c + &#39;, &#39; +  TEXT (Location_of_Violations__r.State__c ) + &#39; &#39; +  Location_of_Violations__r.Zip_Code__c
+, &#39;&#39;)</formula>
+    <label>Location of Violation - Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Agreed Payment Method --></label>
+    <name>Agreed_Payment_Method__c</name>
+    <picklistValues>
+        <masterLabel>Adjustment</masterLabel>
+        <translation><!-- Adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cash</masterLabel>
+        <translation><!-- Cash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashier’s check</masterLabel>
+        <translation><!-- Cashier’s check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check</masterLabel>
+        <translation><!-- Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Card</masterLabel>
+        <translation><!-- Credit Card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deductions</masterLabel>
+        <translation><!-- Deductions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Deposit</masterLabel>
+        <translation><!-- Direct Deposit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Payment</masterLabel>
+        <translation><!-- Direct Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Funds Transfer</masterLabel>
+        <translation><!-- Electronic Funds Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Money Order</masterLabel>
+        <translation><!-- Money Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Party to Party</masterLabel>
+        <translation><!-- Party to Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal</masterLabel>
+        <translation><!-- Reversal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

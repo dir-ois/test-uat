@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Other Unpaid Wages --></label>
+    <name>Other_Unpaid_Wages__c</name>
+    <picklistValues>
+        <masterLabel>No pay for missing meal or rest periods</masterLabel>
+        <translation><!-- No pay for missing meal or rest periods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No reporting time premium pay</masterLabel>
+        <translation><!-- No reporting time premium pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid wages at the contracted rate</masterLabel>
+        <translation><!-- Unpaid wages at the contracted rate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

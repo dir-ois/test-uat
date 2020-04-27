@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Late payment of wages --></help>
+    <label><!-- Late payment of wages --></label>
+    <name>Violation_Late_payment_of_wages__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sum of all payments received against violations on this case --></help>
+    <label><!-- Total Civil Penalties Paid to State --></label>
+    <name>Total_Penalty_Payments_Received1__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Settlement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Settlements</value>
+    </caseValues>
+    <layouts>
+        <layout>Settlement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Create_Judgment_vf --></label>
+        <name>Create_Judgment_vf</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_New_Payment_Plan --></label>
+        <name>Create_New_Payment_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_WCA_Document --></label>
+        <name>Generate_WCA_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Liabilties --></label>
+        <name>Update_Liabilties</name>
+    </webLinks>
+</CustomObjectTranslation>

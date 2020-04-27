@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLSE_Program__c</fullName>
+    <description>Selection list of DLSE Programs</description>
+    <externalId>false</externalId>
+    <label>DLSE Program</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOFE</fullName>
+                <default>false</default>
+                <label>BOFE</label>
+            </value>
+            <value>
+                <fullName>EEEC</fullName>
+                <default>false</default>
+                <label>EEEC</label>
+            </value>
+            <value>
+                <fullName>EETF</fullName>
+                <default>false</default>
+                <label>EETF</label>
+            </value>
+            <value>
+                <fullName>FLC</fullName>
+                <default>false</default>
+                <label>FLC</label>
+            </value>
+            <value>
+                <fullName>JEU</fullName>
+                <default>false</default>
+                <label>JEU</label>
+            </value>
+            <value>
+                <fullName>LETF</fullName>
+                <default>false</default>
+                <label>LETF</label>
+            </value>
+            <value>
+                <fullName>PAGA</fullName>
+                <default>false</default>
+                <label>PAGA</label>
+            </value>
+            <value>
+                <fullName>PASS THRU</fullName>
+                <default>false</default>
+                <label>PASS THRU</label>
+            </value>
+            <value>
+                <fullName>PW</fullName>
+                <default>false</default>
+                <label>PW</label>
+            </value>
+            <value>
+                <fullName>WARN</fullName>
+                <default>false</default>
+                <label>WARN</label>
+            </value>
+            <value>
+                <fullName>JANITORIAL</fullName>
+                <default>false</default>
+                <label>JANITORIAL</label>
+            </value>
+            <value>
+                <fullName>TALENT</fullName>
+                <default>false</default>
+                <label>TALENT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

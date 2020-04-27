@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Paid by check or cash without an itemized wage deduction statement --></help>
+    <label><!-- Paid by check or cash without an itemize --></label>
+    <name>Violation_Paid_check_cash_WO_itemize__c</name>
+</CustomFieldTranslation>

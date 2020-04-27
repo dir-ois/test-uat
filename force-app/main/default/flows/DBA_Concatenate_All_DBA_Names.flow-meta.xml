@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Adds a comma after the previous DBA being concatenated</description>
+        <name>Add_Comma</name>
+        <label>Add Comma</label>
+        <locationX>458</locationX>
+        <locationY>572</locationY>
+        <assignmentItems>
+            <assignToReference>DBAConcatenation</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CommaSpace</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Concatenate_DBA</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Concatenate_DBA</name>
+        <label>Concantenate DBA</label>
+        <locationX>657</locationX>
+        <locationY>442</locationY>
+        <assignmentItems>
+            <assignToReference>DBAConcatenation</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>frmDBAConcatenation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LoopCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_over_DBAs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>226</locationX>
+        <locationY>91</locationY>
+        <assignmentItems>
+            <assignToReference>DBAid</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1lZ0000002L6o1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccountID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>001Z000000wSF65</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Inputs_Valid</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>adds a space</description>
+        <name>space</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue/>
+        </value>
+    </constants>
+    <decisions>
+        <description>Checks the loop counter to see if this is a subsequent DBA so a comma can be added between DBAs.</description>
+        <name>Check_Loop_Counter</name>
+        <label>Check Loop Counter</label>
+        <locationX>457</locationX>
+        <locationY>439</locationY>
+        <defaultConnector>
+            <targetReference>Add_Comma</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Subsequent</defaultConnectorLabel>
+        <rules>
+            <name>First</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopCounter</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Concatenate_DBA</targetReference>
+            </connector>
+            <label>First</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Inputs_Valid</name>
+        <label>Inputs Valid</label>
+        <locationX>225</locationX>
+        <locationY>213</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DBAid</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>AccountID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_DBAs_for_account</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Concatenates all DBA Names and writes to DBA Concatenation field on Account for use in output documents</description>
+    <formulas>
+        <description>Adds a comma and space so that this can be added to the concatenation string</description>
+        <name>CommaSpace</name>
+        <dataType>String</dataType>
+        <expression>&quot;, &quot;</expression>
+    </formulas>
+    <formulas>
+        <description>Concatenates the strings using a formula to allow a space</description>
+        <name>frmDBAConcatenation</name>
+        <dataType>String</dataType>
+        <expression>&quot;DBA &quot; + {!AccountDBA.Name}</expression>
+    </formulas>
+    <interviewLabel>DBA Concatenate All DBA Names {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DBA Concatenate All DBA Names</label>
+    <loops>
+        <name>Iterate_over_DBAs</name>
+        <label>Iterate over DBAs</label>
+        <locationX>456</locationX>
+        <locationY>322</locationY>
+        <assignNextValueToReference>AccountDBA</assignNextValueToReference>
+        <collectionReference>AccountDBAs</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_Loop_Counter</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_DBA_Concatenation_Field_on_Account</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Looks up all the DBAs for the account that the new/changed DBA belongs to</description>
+        <name>Get_all_DBAs_for_account</name>
+        <label>Get all DBAs for account</label>
+        <locationX>454</locationX>
+        <locationY>212</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_over_DBAs</targetReference>
+        </connector>
+        <filters>
+            <field>Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </filters>
+        <object>DBA__c</object>
+        <outputReference>AccountDBAs</outputReference>
+        <queriedFields>Name</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the DBA concatenation field on the account with the constructed string</description>
+        <name>Update_DBA_Concatenation_Field_on_Account</name>
+        <label>Update DBA Concatenation Field on Account</label>
+        <locationX>676</locationX>
+        <locationY>318</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>DBA_Concatenation__c</field>
+            <value>
+                <elementReference>DBAConcatenation</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Inputs_Valid</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Current DBA record within the loop</description>
+        <name>AccountDBA</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DBA__c</objectType>
+    </variables>
+    <variables>
+        <description>All the DBAs that belong to the account</description>
+        <name>AccountDBAs</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DBA__c</objectType>
+    </variables>
+    <variables>
+        <description>ID of the account that the DBA that started the flow belongs to</description>
+        <name>AccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Where the DBA names are concatenated</description>
+        <name>DBAConcatenation</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the DBA that triggers the flow</description>
+        <name>DBAid</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Counts the number of times the loop has been entered so that a comma can be placed between additional DBAs from the list</description>
+        <name>LoopCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>1</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <description>space character for concatenating strings</description>
+        <name>varSpace</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+</Flow>

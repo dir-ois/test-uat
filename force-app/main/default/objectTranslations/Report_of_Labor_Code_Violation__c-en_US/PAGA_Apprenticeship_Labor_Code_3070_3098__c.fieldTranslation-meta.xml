@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA Apprenticeship Labor Code Apprenticeship (Labor Code §§ 3070 – 3098) --></help>
+    <label><!-- Apprenticeship Labor Code 3070 – 3098 --></label>
+    <name>PAGA_Apprenticeship_Labor_Code_3070_3098__c</name>
+</CustomFieldTranslation>

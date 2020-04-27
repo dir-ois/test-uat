@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Unlicensed_farm_labor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Unlicensed farm labor contractor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Unlicensed farm labor contractor</inlineHelpText>
+    <label>Unlicensed farm labor contractor</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

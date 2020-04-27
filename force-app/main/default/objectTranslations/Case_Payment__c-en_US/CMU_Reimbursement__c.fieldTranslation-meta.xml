@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Transmit to DIR --></help>
+    <label><!-- CMU (Reimbursement) --></label>
+    <name>CMU_Reimbursement__c</name>
+</CustomFieldTranslation>

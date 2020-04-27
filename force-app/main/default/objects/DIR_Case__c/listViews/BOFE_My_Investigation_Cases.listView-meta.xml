@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_My_Investigation_Cases</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Status__c</columns>
+    <columns>Date_Assigned__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.BOFE_Investigation</value>
+    </filters>
+    <filters>
+        <field>I_am_assigned_deputy__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>BOFE My Investigation Cases</label>
+    <sharedTo>
+        <roleAndSubordinates>BOFE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

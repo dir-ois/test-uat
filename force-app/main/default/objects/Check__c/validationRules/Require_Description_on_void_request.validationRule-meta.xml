@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Description_on_void_request</fullName>
+    <active>true</active>
+    <description>This requires that a cashier give a reason for the request of a printed check to be voided.</description>
+    <errorConditionFormula>AND( Void_Request__c = True,  ISBLANK( Void_Reason__c ))</errorConditionFormula>
+    <errorDisplayField>Void_Reason__c</errorDisplayField>
+    <errorMessage>You must provide a Reason for the Void Request.</errorMessage>
+</ValidationRule>

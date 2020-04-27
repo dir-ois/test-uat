@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Class_for_Training</fullName>
+        <description>Update Class for Training field based on BU value.</description>
+        <field>Class_for_Madatory_Training_Type__c</field>
+        <name>Update Class for Training</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>PreviousValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Positions_Class_for_Training</fullName>
+        <description>Update Position&#39;s Class for Training with BU value.</description>
+        <field>Class_for_Trainng_hidden__c</field>
+        <formula>if( CONTAINS(BU__c , &quot;R&quot;), &quot;Rank and File&quot;,
+if( CONTAINS(BU__c , &quot;S&quot;), &quot;Supervisor&quot;,
+if( CONTAINS(BU__c , &quot;M&quot;), &quot;Manager&quot;,
+if( CONTAINS(BU__c , &quot;E&quot;), &quot;Exempt&quot;, Null))))</formula>
+        <name>Update Positions Class for Training</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Present_Status_w_Status</fullName>
+        <field>Present_Status_Filled__c</field>
+        <formula>TEXT(Status__c)</formula>
+        <name>Update Present Status w Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>HR Update Position Present Status</fullName>
+        <actions>
+            <name>Update_Present_Status_w_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Position__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>To update Present Status for 607 PDF printing</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR Update Positions Class for Training</fullName>
+        <actions>
+            <name>Update_Positions_Class_for_Training</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Position__c.BU__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>HR Update Positions Class for Training based on Bargaining Unit</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,68 @@
+<apex:page controller="DisplayCheckRecordsController" showheader="false" applyhtmltag="false" applybodytag="false" action="{!runMethod}">
+    <head>
+        <style>
+            @page{
+                size: 8.5in  <apex:outputText value=" {!csscount}" />in;
+                margin: 0%;}
+        </style>
+        <style>         
+            .content {
+                height: 3.4in;
+                width: 8in;
+                padding: 0;
+                margin: 0;
+                border: none;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+                page-break-before: avoid;
+
+            }
+
+            .firstLine {
+                width: 1.9in;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <apex:repeat value="{!chkList}" var="elem" id="chkelements">
+            <table class="content">
+                <tbody>
+                    <tr>
+                        <td class="firstLine" valign="top">
+                            <div style="padding-left: .2in; padding-top: .3in; height: 1.3in;">
+                                {!elem.Payee__r.Case_Role__r.Account_Name__c} <br />
+                                {!elem.Case__r.Employer__r.Name} <br />
+                                {!elem.Office_Account__r.Name} <br />
+                                {!elem.Check_Number__c} <br />
+                                {!elem.Payment_Full_or_Partial__c}
+                            </div>
+                            <div style="padding-left: .75in;">
+                                {!elem.Payee__r.Case_Role__r.Account_Name__c} <br />
+                                {!elem.Payee__r.Case_Role__r.Entity__r.ShippingStreet} <br />
+                                {!elem.Payee__r.Case_Role__r.Entity__r.ShippingCity}, {!elem.Payee__r.Case_Role__r.Entity__r.ShippingState} {!elem.Payee__r.Case_Role__r.Entity__r.ShippingPostalCode}
+                            </div>
+                        </td>
+                        <td valign="top" style="width: .2in; padding: 0; margin: 0;">
+                            <div style="padding-top: 1.75in;">
+                                <apex:outputtext value="{0,date,MM/dd/yyyy}">
+                                    <apex:param value="{! TODAY() }" />
+                                </apex:outputtext>
+
+                            </div>
+                        </td>
+                        <td valign="top" style="width: 1.3in; padding: 0; margin: 0;">
+                            <div style="padding-top: 1.75in;">
+                                <apex:outputText value="**{0, number, Currency}**"> 
+                                   <apex:param value="{!elem.Amount__c}" />
+                                </apex:outputText>
+                               <!-- **${!elem.Amount__c}** -->
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </apex:repeat>
+    </body>
+</apex:page>

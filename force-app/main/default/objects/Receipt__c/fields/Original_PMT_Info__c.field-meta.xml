@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Original_PMT_Info__c</fullName>
+    <description>To hold Payment Amount, Check/Instrument Number, and Date Received for records from Payment Log</description>
+    <externalId>false</externalId>
+    <label>Original PMT Info</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

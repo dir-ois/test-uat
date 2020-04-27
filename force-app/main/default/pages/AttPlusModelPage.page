@@ -1,0 +1,57 @@
+<apex:page controller="AttPlusModelController" showHeader="false" sidebar="false">
+<apex:form >
+    <apex:pageBlock id="fileTable" title="Attachment Plus">
+        <table class="list" border="1" cellpadding="5">
+            <thead class="rich-table-thead">
+                <tr class="headerRow">
+                    <th class="headerRow" scope="col" colspan="1"><apex:outputLabel value="Action"/></th>
+                    <apex:repeat value="{!attPlusWrap.configHeaders}" var="c">
+                        <apex:outputPanel >
+                            <th class="headerRow" scope="col" colspan="1"><apex:outputField value="{!c.Field_Name__c}"/></th>
+                        </apex:outputPanel>
+                    </apex:repeat>
+                </tr>
+            </thead>
+            <apex:repeat value="{!attPlusWrap.attDataWrapList}" var="q">
+                <tr class="dataRow odd">
+                    <td class="dataCell" colspan="1">
+                        <apex:outputLink value="/{!q.ContentVersionId}" target="_blank">View</apex:outputLink>
+                    </td>
+                    <apex:repeat value="{!q.attDataList}" var="w">
+                        <apex:outputPanel >
+                            <td class="dataCell" colspan="1">
+                                <apex:outputField value="{!w.Value__c}"/>
+                            </td>
+                        </apex:outputPanel>
+                    </apex:repeat>
+                </tr>
+            </apex:repeat>
+        </table>
+        <apex:commandButton value="Add File" action="{!addFile}"/>
+    </apex:pageBlock>
+    <apex:pageBlock id="fileForm" title="Add File" rendered="{!showForm}">
+        <apex:pageMessages />
+        <apex:pageBlockSection columns="1">
+            <apex:pageBlockSectionitem >
+                <apex:outputLabel value="Select File"/>
+                <apex:inputFile value="{!tempFile.Body}" fileName="{!tempFile.Name}" contentType="{!tempFile.ContentType}"></apex:inputFile>
+            </apex:pageBlockSectionitem>
+            <apex:repeat value="{!formWrapList}" var="f">
+                <apex:pageBlockSectionitem >
+                    <apex:outputLabel value="{!f.mdt.Field_Name__c}"/>
+                    <apex:outputPanel >
+                        <apex:inputtext value="{!f.fieldValue}" rendered="{!IF(f.mdt.Data_Type__c == 'Text', TRUE, FALSE)}"/>
+                        <apex:inputCheckbox value="{!f.fieldValue}" rendered="{!IF(f.mdt.Data_Type__c == 'Checkbox', TRUE, FALSE)}"/>
+                        <apex:selectList value="{!f.fieldValue}" size="1" rendered="{!IF(f.mdt.Data_Type__c == 'Picklist', TRUE, FALSE)}">
+                            <apex:selectOptions value="{!f.options}"></apex:selectOptions>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionitem>
+            </apex:repeat>
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="Save" action="{!saveFile}"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

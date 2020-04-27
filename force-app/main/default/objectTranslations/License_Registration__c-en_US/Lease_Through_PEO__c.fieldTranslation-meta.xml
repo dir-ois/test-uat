@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A PEO is a firm that contracts with employers to provide services that include human resources, payroll and employee benefits. --></help>
+    <label><!-- Lease Through PEO --></label>
+    <name>Lease_Through_PEO__c</name>
+</CustomFieldTranslation>

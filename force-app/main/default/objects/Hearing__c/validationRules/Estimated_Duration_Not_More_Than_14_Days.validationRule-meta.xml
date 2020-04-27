@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Duration_Not_More_Than_14_Days</fullName>
+    <active>true</active>
+    <description>Estimated Duration cannot be more than 20160 hours (14 days) because a flow subsequently creates an Event, and Events cannot be more than 14 days long.</description>
+    <errorConditionFormula>Estimated_Duration__c &gt; 20160</errorConditionFormula>
+    <errorMessage>Estimated Duration cannot be greater than 20,160 minutes (14 days)</errorMessage>
+</ValidationRule>

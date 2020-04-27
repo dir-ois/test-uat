@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DBA_TA</fullName>
+    <description>Talent Agency - DBA is independent to Locations.</description>
+    <displayedFields>
+        <field>DBA_Name__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>DBA TA</label>
+</FieldSet>

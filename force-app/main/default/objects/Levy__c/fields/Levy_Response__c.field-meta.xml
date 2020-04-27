@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Levy_Response__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Reference to Levy Objects of record type = &quot;Levy Response&quot;</description>
+    <externalId>false</externalId>
+    <label>Levy Response</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Levy Response</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Levy__c</referenceTo>
+    <relationshipLabel>Levies (Levy Response)</relationshipLabel>
+    <relationshipName>Levies2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

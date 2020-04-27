@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adding_incorrect_confiscated_items</fullName>
+    <active>true</active>
+    <description>Alert when an item of type Garment is added to Equipment Bag or vice versa.</description>
+    <errorConditionFormula>RecordType.DeveloperName &lt;&gt;  Confiscation_Bag__r.RecordType.DeveloperName</errorConditionFormula>
+    <errorMessage>INCORRECT CONFISCATED ITEM TYPE FOR BAG</errorMessage>
+</ValidationRule>

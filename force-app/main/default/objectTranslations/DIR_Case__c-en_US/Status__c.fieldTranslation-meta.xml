@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Administrative Closure</masterLabel>
+        <translation><!-- Administrative Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appealed</masterLabel>
+        <translation><!-- Appealed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Approval</masterLabel>
+        <translation><!-- Awaiting Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Compliance</masterLabel>
+        <translation><!-- Awaiting Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Stay</masterLabel>
+        <translation><!-- BOFE Stay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Close Case Review</masterLabel>
+        <translation><!-- Close Case Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Enforcement Legal</masterLabel>
+        <translation><!-- Closed - Enforcement Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - JEU Referral</masterLabel>
+        <translation><!-- Closed - JEU Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - No further action</masterLabel>
+        <translation><!-- Closed - No further action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed by PAGA</masterLabel>
+        <translation><!-- Closed by PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conf. Scheduled</masterLabel>
+        <translation><!-- Conf. Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference</masterLabel>
+        <translation><!-- Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference Scheduled</masterLabel>
+        <translation><!-- Conference Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cure Dispute</masterLabel>
+        <translation><!-- Cure Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed</masterLabel>
+        <translation><!-- Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Case</masterLabel>
+        <translation><!-- Duplicate Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eligible for Closure</masterLabel>
+        <translation><!-- Eligible for Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Approved</masterLabel>
+        <translation><!-- Hearing Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Scheduled</masterLabel>
+        <translation><!-- Hearing Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Litigation</masterLabel>
+        <translation><!-- In Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Issued</masterLabel>
+        <translation><!-- Judgment Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment on Appeal</masterLabel>
+        <translation><!-- Judgment on Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Law School Referral</masterLabel>
+        <translation><!-- Law School Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawsuit filed in Lieu of Citation</masterLabel>
+        <translation><!-- Lawsuit filed in Lieu of Citation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New AutoRefer</masterLabel>
+        <translation><!-- New AutoRefer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New TBR</masterLabel>
+        <translation><!-- New TBR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New TBR - BOFE INV</masterLabel>
+        <translation><!-- New TBR - BOFE INV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Citation or Other Issues</masterLabel>
+        <translation><!-- No Citation or Other Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Claim Filed</masterLabel>
+        <translation><!-- Notice of Claim Filed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA Issued</masterLabel>
+        <translation><!-- ODA Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHA Open Appeal Period</masterLabel>
+        <translation><!-- OSHA Open Appeal Period --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order / Judgment Received</masterLabel>
+        <translation><!-- Order / Judgment Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Payment Received</masterLabel>
+        <translation><!-- Partial Payment Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending - Incomplete</masterLabel>
+        <translation><!-- Pending - Incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Closure</masterLabel>
+        <translation><!-- Pending Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Litigation Review</masterLabel>
+        <translation><!-- Pending Litigation Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Settlement</masterLabel>
+        <translation><!-- Pending Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Investigation</masterLabel>
+        <translation><!-- Pre-Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Investigation Follow-up</masterLabel>
+        <translation><!-- Pre-Investigation Follow-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Investigation Follow-up 2</masterLabel>
+        <translation><!-- Pre-Investigation Follow-up 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-opened w Sr Approval</masterLabel>
+        <translation><!-- Re-opened w Sr Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready to Assign</masterLabel>
+        <translation><!-- Ready to Assign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reopened with Senior Approval</masterLabel>
+        <translation><!-- Reopened with Senior Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report Submitted</masterLabel>
+        <translation><!-- Report Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requires Manual Screening</masterLabel>
+        <translation><!-- Requires Manual Screening --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved</masterLabel>
+        <translation><!-- Resolved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned to Claimant</masterLabel>
+        <translation><!-- Returned to Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screened / Pending Unit Review</masterLabel>
+        <translation><!-- Screened / Pending Unit Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - Payment Plan</masterLabel>
+        <translation><!-- Settled - Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement Pending</masterLabel>
+        <translation><!-- Settlement Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Pursue</masterLabel>
+        <translation><!-- Unable to Pursue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Appeal</masterLabel>
+        <translation><!-- Under Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Investigation</masterLabel>
+        <translation><!-- Under Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under PAGA Investigation</masterLabel>
+        <translation><!-- Under PAGA Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Pass Through</masterLabel>
+        <translation><!-- Wage Pass Through --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Litigation</masterLabel>
+        <translation><!-- Waiting for Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Penalty</masterLabel>
+        <translation><!-- Waiting for Penalty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ of Mandate</masterLabel>
+        <translation><!-- Writ of Mandate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

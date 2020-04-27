@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apply_Payment_To__c</fullName>
+    <description>Defines to which interest category the funds should be applied.</description>
+    <externalId>false</externalId>
+    <label>Apply Payment To</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Post-Hearing Interest</fullName>
+                <default>false</default>
+                <label>Post-Hearing Interest</label>
+            </value>
+            <value>
+                <fullName>Post-Judgment Interest</fullName>
+                <default>false</default>
+                <label>Post-Judgment Interest</label>
+            </value>
+            <value>
+                <fullName>Filing Fees</fullName>
+                <default>false</default>
+                <label>Filing Fees</label>
+            </value>
+            <value>
+                <fullName>Attorney Fees</fullName>
+                <default>false</default>
+                <label>Attorney Fees</label>
+            </value>
+            <value>
+                <fullName>Judgment Amount</fullName>
+                <default>false</default>
+                <label>Judgment Amount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

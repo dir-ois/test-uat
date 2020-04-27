@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unlawful_Harassment_Prevention</fullName>
+    <active>true</active>
+    <description>Preventing Workplace Harassment Training</description>
+    <label>Unlawful Harassment Prevention</label>
+</RecordType>

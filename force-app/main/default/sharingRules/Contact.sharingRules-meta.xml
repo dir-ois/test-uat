@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>HR_Contacts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HR Contacts</label>
+        <sharedTo>
+            <roleAndSubordinates>HR</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Employee</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>HRC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HRC</label>
+        <sharedTo>
+            <roleAndSubordinates>HR</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>HR</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

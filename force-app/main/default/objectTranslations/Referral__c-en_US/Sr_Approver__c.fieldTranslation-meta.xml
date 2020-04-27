@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sr Deputies: Fill in RCI, BOFE or WCA Sr and submit for approval --></help>
+    <label><!-- Sr Approver --></label>
+    <name>Sr_Approver__c</name>
+    <relationshipLabel><!-- Referrals (Sr Approver) --></relationshipLabel>
+</CustomFieldTranslation>

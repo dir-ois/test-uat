@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_Check_Batch</fullName>
+    <active>true</active>
+    <description>Do not allow checks to be added to a check batch that has status = Void</description>
+    <errorConditionFormula>AND(
+  TEXT(Check_Batch__r.Status__c ) = &#39;Void&#39;,
+   ISNEW() 
+)</errorConditionFormula>
+    <errorMessage>The check cannot be added to the check batch because the check batch is VOID</errorMessage>
+</ValidationRule>

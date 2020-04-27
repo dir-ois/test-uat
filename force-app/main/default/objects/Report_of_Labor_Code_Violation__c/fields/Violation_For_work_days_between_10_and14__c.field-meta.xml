@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_For_work_days_between_10_and14__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For work days of more than 10 hours and up to 14 hours per day, not allowed to take three 10-minute rest breaks</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For work days of more than 10 hours and up to 14 hours per day, not allowed to take three 10-minute rest breaks</inlineHelpText>
+    <label>For work days between 10 and 14 hours</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

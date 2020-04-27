@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Populate_LR_File_Number</fullName>
+    <active>true</active>
+    <description>In order to submit this Inspection Request, you must include the L&amp;R File Number</description>
+    <errorConditionFormula>ISBLANK(L_R_File_Number__c)</errorConditionFormula>
+    <errorDisplayField>L_R_File_Number__c</errorDisplayField>
+    <errorMessage>In order to submit this Inspection Request, you must include the L&amp;R File Number</errorMessage>
+</ValidationRule>

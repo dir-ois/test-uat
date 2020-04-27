@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Creates chatter inticating that the effective date was not passed, so interest would not be calculated</description>
+        <name>Effective_Date_not_Passed_chatter</name>
+        <label>Effective Date not Passed chatter</label>
+        <locationX>605</locationX>
+        <locationY>540</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The effective date from the hearing was not passed into the flow to calculate the post hearing interest, therefore manual calculation of interest is required.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Creates chatter inticating that the ODA By Settlement date was not passed, so interest would not be calculated</description>
+        <name>Effective_Date_not_Passed_chatter_0</name>
+        <label>Effective Date not Passed chatter</label>
+        <locationX>608</locationX>
+        <locationY>1111</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The ODA By Settlement date from the settlement was not passed into the flow to calculate the post hearing interest, therefore manual calculation of interest is required.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Interest_Calc_Started_debug</name>
+        <label>Interest Calc Started debug</label>
+        <locationX>19</locationX>
+        <locationY>676</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Lookup_Interest_Rate</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Interest Calc flow started, valid inputs for judgment</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Chatters admins that the interest rate lookup failed</description>
+        <name>Interest_Lookup_Failure</name>
+        <label>Interest Lookup Failure</label>
+        <locationX>752</locationX>
+        <locationY>68</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[SF_Admins] The interest lookup for this record failed</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Chatters admins that the interest rate lookup failed</description>
+        <name>Interest_Lookup_Failure_0</name>
+        <label>Interest Lookup Failure</label>
+        <locationX>178</locationX>
+        <locationY>954</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[SF_Admins] The interest lookup for this record failed</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Chatters admins that the interest rate lookup failed</description>
+        <name>Interest_Lookup_Failure_1</name>
+        <label>Interest Lookup Failure</label>
+        <locationX>433</locationX>
+        <locationY>315</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varRecordID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[SF_Admins] The interest lookup for this record failed</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>debug message for jugement interest applying</description>
+        <name>Judgment_Interest_Applies_Debug</name>
+        <label>Judgment Interest Applies Debug</label>
+        <locationX>18</locationX>
+        <locationY>825</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Get_Interest_Rate_0</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Judgment interest applies</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>No_Judgment_Type</name>
+        <label>No Judgment Type</label>
+        <locationX>803</locationX>
+        <locationY>823</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Judgment Type is not set. Unable to calculate Interest</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Unable_to_calculate_Interest</name>
+        <label>Notify Unable to calculate Interest</label>
+        <locationX>558</locationX>
+        <locationY>58</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Interest should have been calculated on this issue, but the meeting end date/time was not set. Please set the meeting end date and time then modify this issue so that interest calculates.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>chatters the admins that the update to the interest failed</description>
+        <name>Update_Interest_Failed</name>
+        <label>chtUpdate Interest Failed</label>
+        <locationX>1373</locationX>
+        <locationY>43</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[SF_Admins] The update to the interest failed on this violation.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>chatters the admins that the update to the interest failed</description>
+        <name>Update_Interest_Failed_0</name>
+        <label>chtUpdate Interest Failed</label>
+        <locationX>1427</locationX>
+        <locationY>665</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[SF_Admins] The update to the interest failed on this judgment.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Chatters admins that the lookup of the violation details for this violation failed</description>
+        <name>ViolationDetailsLookupFailed</name>
+        <label>Violation Details Lookup Failed</label>
+        <locationX>378</locationX>
+        <locationY>66</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[SF_Admins] The lookup of the violation details for the purposes of calculating interest failed</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Adds interest to the total interest amount</description>
+        <name>Add_interest</name>
+        <label>Add interest</label>
+        <locationX>1170</locationX>
+        <locationY>182</locationY>
+        <assignmentItems>
+            <assignToReference>soVarViolation.Total_Interest_Amount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaInterstCalc</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Interest</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Input_Check</name>
+        <label>Input Check</label>
+        <locationX>182</locationX>
+        <locationY>261</locationY>
+        <assignmentItems>
+            <assignToReference>varViolationID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varRecType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>WCA</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varJudgmentID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a2GZ0000000imN1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varJudgmentMailingDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <dateValue>2016-03-28</dateValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varJudgmentAmt</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>3628.88</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varHearingEffectiveDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <dateValue>2016-03-10</dateValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varInterestRate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>10.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varJudgmentType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>ODA</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the start date for the interest calculation to the effective date of the hearing</description>
+        <name>Set_Start_Date</name>
+        <label>Set Start Date</label>
+        <locationX>960</locationX>
+        <locationY>679</locationY>
+        <assignmentItems>
+            <assignToReference>varInterestStartDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varHearingEffectiveDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Calculate_Judgment_Interest</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the start date for the interest calculation to the effective date of the hearing</description>
+        <name>Set_Start_Date_0</name>
+        <label>Set Start Date</label>
+        <locationX>963</locationX>
+        <locationY>980</locationY>
+        <assignmentItems>
+            <assignToReference>varInterestStartDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varODABySettlementDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Calculate_Judgment_Interest</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Calculates the post-hearing interest for the judgment and stores as a variable</description>
+        <name>Store_Judgment_Interest</name>
+        <label>Calculate Judgment Interest</label>
+        <locationX>1218</locationX>
+        <locationY>822</locationY>
+        <assignmentItems>
+            <assignToReference>varInterestDue</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaJudgmentInterest</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Judgement</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Ensures all data is ready to calculate judgment interest.</description>
+        <name>Calculate_Judgment_Interest</name>
+        <label>Ready to calculate Judgment Interest?</label>
+        <locationX>963</locationX>
+        <locationY>824</locationY>
+        <defaultConnectorLabel>Data not valid</defaultConnectorLabel>
+        <rules>
+            <name>Interest_calc_Data_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varInterestStartDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varJudgmentMailingDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varInterestRate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Store_Judgment_Interest</targetReference>
+            </connector>
+            <label>Data Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check that interest applies before continuing.</description>
+        <name>dcnInterest_Applies</name>
+        <label>Interest Applies</label>
+        <locationX>926</locationX>
+        <locationY>182</locationY>
+        <defaultConnectorLabel>Interest Does Not Apply</defaultConnectorLabel>
+        <rules>
+            <name>Interest_Applies</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varInterestRate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_interest</targetReference>
+            </connector>
+            <label>Interest Applies</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check that interest applies before continuing.</description>
+        <name>dcnInterest_Applies_0</name>
+        <label>Interest Applies</label>
+        <locationX>358</locationX>
+        <locationY>825</locationY>
+        <defaultConnectorLabel>Interest Does Not Apply</defaultConnectorLabel>
+        <rules>
+            <name>Interest_Applies_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varInterestRate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Judgment_Type</targetReference>
+            </connector>
+            <label>Interest Applies</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks that the effective date from the hearing was passed in to the flow before attempting to use in calculation</description>
+        <name>Effective_Date_Passed</name>
+        <label>Effective Date Passed</label>
+        <locationX>606</locationX>
+        <locationY>678</locationY>
+        <defaultConnector>
+            <targetReference>Effective_Date_not_Passed_chatter</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Passed</defaultConnectorLabel>
+        <rules>
+            <name>Effective_Date_Passed_Criteria</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varHearingEffectiveDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Start_Date</targetReference>
+            </connector>
+            <label>Passed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check that interest applies before continuing.</description>
+        <name>Judgment_Interest_Applies</name>
+        <label>Judgment Interest Applies</label>
+        <locationX>180</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Interest Does Not Apply</defaultConnectorLabel>
+        <rules>
+            <name>Interest_Applies_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varRecType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>WCA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Interest_Calc_Started_debug</targetReference>
+            </connector>
+            <label>WCA Jugement Interest Applies</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Gets the judgment type passed in from parent flow to determine from where to get the key date for calculating the interest</description>
+        <name>Judgment_Type</name>
+        <label>Judgment Type</label>
+        <locationX>606</locationX>
+        <locationY>823</locationY>
+        <defaultConnector>
+            <targetReference>No_Judgment_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>n/a</defaultConnectorLabel>
+        <rules>
+            <name>ODA_by_settlement</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varJudgmentType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ODA By Settlement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ODA_By_Settlement_Date_Passed</targetReference>
+            </connector>
+            <label>ODA by settlement</label>
+        </rules>
+        <rules>
+            <name>ODA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varJudgmentType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ODA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Effective_Date_Passed</targetReference>
+            </connector>
+            <label>ODA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines if it is necessary to query for the interest rate because it wasn&#39;t passed from the parent flow</description>
+        <name>Lookup_Interest_Rate</name>
+        <label>Lookup Interest Rate</label>
+        <locationX>177</locationX>
+        <locationY>676</locationY>
+        <defaultConnector>
+            <targetReference>Judgment_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Lookup</defaultConnectorLabel>
+        <rules>
+            <name>Lookup</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varInterestRate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Interest_Rate_0</targetReference>
+            </connector>
+            <label>Lookup</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Meeting_End_Date_set</name>
+        <label>Meeting End Date set</label>
+        <locationX>558</locationX>
+        <locationY>184</locationY>
+        <defaultConnector>
+            <targetReference>Notify_Unable_to_calculate_Interest</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Set</defaultConnectorLabel>
+        <rules>
+            <name>Set</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>soVarViolation.Meeting_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Interest_Rate</targetReference>
+            </connector>
+            <label>Set</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ODA_By_Settlement_Date_Passed</name>
+        <label>ODA By Settlement Date Passed</label>
+        <locationX>607</locationX>
+        <locationY>979</locationY>
+        <defaultConnector>
+            <targetReference>Effective_Date_not_Passed_chatter_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Passed</defaultConnectorLabel>
+        <rules>
+            <name>ODA_By_Settlement_Date_Passed_Criteria</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varODABySettlementDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Start_Date_0</targetReference>
+            </connector>
+            <label>Passed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>182</locationX>
+        <locationY>380</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Violation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varViolationID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varRecType</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Violation_Record</targetReference>
+            </connector>
+            <label>Violation</label>
+        </rules>
+        <rules>
+            <name>Judgment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varJudgmentID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varJudgmentMailingDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varRecType</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varStatus</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Judgment_Interest_Applies</targetReference>
+            </connector>
+            <label>Judgment</label>
+        </rules>
+        <rules>
+            <name>Settlement</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRecordID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varRecordObject</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Settlement</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Interest_Rate_1</targetReference>
+            </connector>
+            <label>Settlement</label>
+        </rules>
+    </decisions>
+    <description>flow started debug</description>
+    <formulas>
+        <description>Calculates the interest due on the violation using the interest rate from the custom setting and the due date and meeting date from the violation.</description>
+        <name>flaInterstCalc</name>
+        <dataType>Currency</dataType>
+        <expression>{!soVarViolation.Wages_Due__c} * 
+( {!varInterestRate} * 0.01 * ( {!soVarViolation.Meeting_Date__c} - {!soVarViolation.Wages_Due_Date__c} ) / 365 )</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>Calculates the judgment interest using the mailing date, decision date and the looked up interest rate</description>
+        <name>flaJudgmentInterest</name>
+        <dataType>Currency</dataType>
+        <expression>{!varJudgmentAmt} * 
+( {!varInterestRate} * 0.01 * ( {!varJudgmentMailingDate} - {!varInterestStartDate} ) / 365 )</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Calculate Violation Interest {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Calculate Violation Interest</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Queries the Interest custom setting to get the interest rate for the type of violation</description>
+        <name>Get_Interest_Rate</name>
+        <label>Get Interest Rate</label>
+        <locationX>752</locationX>
+        <locationY>184</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>dcnInterest_Applies</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Interest_Lookup_Failure</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Object__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>DIR_Violation__c</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Record_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varRecType</elementReference>
+            </value>
+        </filters>
+        <object>Interest__c</object>
+        <outputAssignments>
+            <assignToReference>varInterestRate</assignToReference>
+            <field>Interest_Rate__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Queries the Interest custom setting to get the interest rate for the type of judgment</description>
+        <name>Get_Interest_Rate_0</name>
+        <label>Get Interest Rate - Judgment</label>
+        <locationX>180</locationX>
+        <locationY>827</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>dcnInterest_Applies_0</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Interest_Lookup_Failure_0</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Object__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Judgment__c</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Record_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varRecType</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varStatus</elementReference>
+            </value>
+        </filters>
+        <object>Interest__c</object>
+        <outputAssignments>
+            <assignToReference>varInterestRate</assignToReference>
+            <field>Interest_Rate__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Queries the Interest custom setting to get the interest rate for the type of violation</description>
+        <name>Get_Interest_Rate_1</name>
+        <label>Get Interest Rate</label>
+        <locationX>432</locationX>
+        <locationY>447</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <faultConnector>
+            <targetReference>Interest_Lookup_Failure_1</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Object__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Settlement__c</stringValue>
+            </value>
+        </filters>
+        <object>Interest__c</object>
+        <outputAssignments>
+            <assignToReference>varInterestRate</assignToReference>
+            <field>Interest_Rate__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the violatoin as an sobject variable so it can be manipulated in it&#39;s entirety.</description>
+        <name>Get_Violation_Record</name>
+        <label>Get Violation Record</label>
+        <locationX>377</locationX>
+        <locationY>186</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Meeting_End_Date_set</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>ViolationDetailsLookupFailed</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varViolationID</elementReference>
+            </value>
+        </filters>
+        <object>DIR_Violation__c</object>
+        <outputReference>soVarViolation</outputReference>
+        <queriedFields>Wages_Due__c</queriedFields>
+        <queriedFields>Wages_Due_Date__c</queriedFields>
+        <queriedFields>Total_Interest_Amount__c</queriedFields>
+        <queriedFields>Meeting_Date__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the interest on the violation</description>
+        <name>Update_Interest</name>
+        <label>Update Interest</label>
+        <locationX>1371</locationX>
+        <locationY>182</locationY>
+        <faultConnector>
+            <targetReference>Update_Interest_Failed</targetReference>
+        </faultConnector>
+        <inputReference>soVarViolation</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the interest on the judgment</description>
+        <name>Update_Judgement</name>
+        <label>Update Judgement</label>
+        <locationX>1430</locationX>
+        <locationY>821</locationY>
+        <faultConnector>
+            <targetReference>Update_Interest_Failed_0</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varJudgmentID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Interest_Due__c</field>
+            <value>
+                <elementReference>varInterestDue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Interest_Rate__c</field>
+            <value>
+                <elementReference>varInterestRate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Judgement__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <description>Displays the formula that will calculate the interest.</description>
+        <name>ttInterestVariables</name>
+        <text>{!soVarViolation.Wages_Due__c} * 
+( {!varInterestRate} * 0.01 * ( {!soVarViolation.Meeting_Date__c} - {!soVarViolation.Wages_Due_Date__c} ) / 365 )</text>
+    </textTemplates>
+    <variables>
+        <description>collection of liable parties that are children of the judgement</description>
+        <name>colLiableParties</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Liability_Judgement__c</objectType>
+    </variables>
+    <variables>
+        <description>tracks the earliest decision date from all the liability judgments for calculating the interest.</description>
+        <name>dtEarliestDecision</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The liable party being evaluated in the collection</description>
+        <name>objLiabilityJudgement</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Liability_Judgement__c</objectType>
+    </variables>
+    <variables>
+        <description>entire object record for the violation that triggered the flow</description>
+        <name>soVarViolation</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Violation__c</objectType>
+    </variables>
+    <variables>
+        <description>Effective date from the hearing meeting for the ODA</description>
+        <name>varHearingEffectiveDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Holds the interest amount that was calculated by formulas</description>
+        <name>varInterestDue</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Interest rate returned from the custom setting</description>
+        <name>varInterestRate</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>The start date for calculating interest. Populated by assignment elements from which ever path applies for getting the interest details</description>
+        <name>varInterestStartDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Amount of the judgment</description>
+        <name>varJudgmentAmt</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>ID of the judgment that triggers the flow</description>
+        <name>varJudgmentID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Date the judgment was mailed to the court.</description>
+        <name>varJudgmentMailingDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Type of judgment passed from parent flow</description>
+        <name>varJudgmentType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ODA By Settlement date passed by parent flow when the judgment comes from a settlement</description>
+        <name>varODABySettlementDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Penalties found due on the triggering violation</description>
+        <name>varPenaltiesDue</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>ID of the record which triggered the flow. Violations and Judgments are passed into their specific variables, but this will allow it to scale to other object types.</description>
+        <name>varRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Name of the object that triggered the flow</description>
+        <name>varRecordObject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Record Type of the record that started the flow</description>
+        <name>varRecType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Status of the record that started the flow</description>
+        <name>varStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Violation ID passed from parent flow</description>
+        <name>varViolationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Wages due from the violation that triggered flow</description>
+        <name>varWagesDue</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>Date wages indicated as due on the violation</description>
+        <name>varWagesDueDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

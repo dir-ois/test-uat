@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Entity (Person or Business) who requested this Appeal. --></help>
+    <label><!-- Appeal Request Entity --></label>
+    <name>Appeal_Request_Entity__c</name>
+    <relationshipLabel><!-- Appeals --></relationshipLabel>
+</CustomFieldTranslation>

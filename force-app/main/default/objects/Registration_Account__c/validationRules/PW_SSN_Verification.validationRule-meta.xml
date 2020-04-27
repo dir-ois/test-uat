@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_SSN_Verification</fullName>
+    <active>false</active>
+    <description>Ensures that Re-type SSN is the same as the SSN entered.</description>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName = &quot;Sole_Proprietorship&quot;, 
+Registration__r.Record_Type_Name__c = &quot;Public_Works&quot;, 
+NOT(ISBLANK(SSN__c)), 
+NOT(ISBLANK( Re_type_SSN__c )), 
+SSN__c &lt;&gt; Re_type_SSN__c 
+)</errorConditionFormula>
+    <errorMessage>Please ensure that SSN and Re-typed SSN match.</errorMessage>
+</ValidationRule>

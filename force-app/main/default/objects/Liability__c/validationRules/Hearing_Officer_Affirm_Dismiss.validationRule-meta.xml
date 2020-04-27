@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearing_Officer_Affirm_Dismiss</fullName>
+    <active>true</active>
+    <description>Allows only a user with the &quot;BOFE Hearing Officer perms&quot; custom permission to set a liability to dismissed or affirmed.</description>
+    <errorConditionFormula>($Profile.Name  = &quot;BOFE User&quot; )
+&amp;&amp; 
+(
+  ISPICKVAL( Status__c , &#39;Affirmed&#39; )
+  ||
+  ISPICKVAL( Status__c , &#39;Dismissed&#39; )
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Only a hearing officer may set a liability to &quot;Affirmed&quot; or &quot;Dismissed&quot;</errorMessage>
+</ValidationRule>

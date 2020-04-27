@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Type__c, 
+&quot;Claimant&quot;, 1,
+&quot;Claimant Attorney &quot;, 2,
+&quot;Claimant Other&quot;, 3,
+&quot;Claimant Representative&quot;, 4,
+&quot;Defendant&quot;, 5,
+&quot;Defendant Attorney&quot;, 6,
+&quot;Defendant Representative&quot;,7,
+&quot;Merchant&quot; , 8, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Order</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

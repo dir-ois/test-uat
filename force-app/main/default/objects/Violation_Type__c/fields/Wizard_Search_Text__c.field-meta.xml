@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wizard_Search_Text__c</fullName>
+    <description>Field displayed in the case issue wizard for searching</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the text that can be searched in the case issue wizard when looking for issues to add.</inlineHelpText>
+    <label>Wizard Search Text</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

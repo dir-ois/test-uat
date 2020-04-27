@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amounts_due_that_do_NOT_accrue_interest__c</fullName>
+    <description>Used by the system to calculate the default amount of the settlement</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amounts due that DO NOT accrue interest by evaluating the case issues on the liabilities that the settling parties are settling.</inlineHelpText>
+    <label>Amounts due that do NOT accrue interest</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Provide_Required_Attachments</fullName>
+    <active>true</active>
+    <description>requires form tool submissions to have attachments uploaded to all A+ records where Attachment Required = TRUE.</description>
+    <errorConditionFormula>AND( 
+OR(
+ISPICKVAL(Ready_to_Submit__c , &quot;Yes&quot;),
+ISPICKVAL( Ready_to_Resubmit__c , &quot;Yes&quot;)),
+Number_of_Attachments_Required__c &gt;  Number_of_Attachments__c )
+&amp;&amp; ISPICKVAL ( $Profile.UserType , &#39;CspLitePortal&#39; )
+&amp;&amp; !$Permission.BypassVR</errorConditionFormula>
+    <errorMessage>Please ensure that all required document attachments are uploaded. Change your answer below to &quot;No&quot; and add all necessary documentation to continue.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Case__c</fullName>
+    <description>This field is to indicate if the Case is considered open. Used for Flows</description>
+    <externalId>false</externalId>
+    <formula>CASE (TEXT(Status__c ), 
+&quot;New&quot;, &quot;True&quot;,
+&quot;Under Investigation&quot;, &quot;True&quot;, 
+&quot;Conf. Scheduled&quot;, &quot;True&quot;, 
+&quot;Pending Settlement&quot;, &quot;True&quot;,
+&quot;Awaiting Approval&quot;, &quot;True&quot;,
+&quot;Hearing Approved&quot;, &quot;True&quot;,
+&quot;Hearing Scheduled&quot;, &quot;True&quot;,
+&quot;ODA Issued&quot;, &quot;True&quot;,
+&quot;Reopened with Senior Approval&quot;, &quot;True&quot;,
+&quot;Pending - Incomplete&quot;, &quot;True&quot;,
+&quot;BOFE Stay&quot;, &quot;True&quot;,
+&quot;Open&quot;, &quot;True&quot;,
+&quot;Pending&quot;, &quot;True&quot;,
+&quot;Settled - Payment Plan&quot;, &quot;True&quot;,
+&quot;Screened / Pending Unit Review&quot;, &quot;True&quot;,
+&quot;Pre-Investigation&quot;, &quot;True&quot;,
+&quot;Conference&quot;, &quot;True&quot;,
+&quot;Report Submitted&quot;, &quot;True&quot;,
+&quot;Appealed&quot;, &quot;True&quot;,
+&quot;Awaiting Compliance&quot;, &quot;True&quot;,
+&quot;Law School Referral&quot;, &quot;True&quot;,
+&quot;Hearing&quot;, &quot;True&quot;,
+&quot;False&quot;
+)</formula>
+    <label>Open Case</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

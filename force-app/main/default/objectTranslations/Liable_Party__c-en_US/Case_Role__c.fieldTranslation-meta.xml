@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Case role of the liable party --></help>
+    <label><!-- Case Role --></label>
+    <name>Case_Role__c</name>
+    <relationshipLabel><!-- Liable Parties --></relationshipLabel>
+</CustomFieldTranslation>

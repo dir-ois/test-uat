@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegistrationStartDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Registration_Effective_Date__c,&quot;July 1&quot;) &amp;&amp;
+ISPICKVAL(Registration_Period__c,&quot;1&quot;), &quot;1&quot;,
+IF(
+ISPICKVAL(Registration_Effective_Date__c,&quot;July 1&quot;) &amp;&amp;
+ISPICKVAL(Registration_Period__c,&quot;2&quot;), &quot;2&quot;,
+IF(
+ISPICKVAL(Registration_Effective_Date__c,&quot;July 1&quot;) &amp;&amp;
+ISPICKVAL(Registration_Period__c,&quot;3&quot;), &quot;3&quot;,
+IF(
+ISPICKVAL(Registration_Effective_Date__c,&quot;Today&quot;) &amp;&amp;
+ISPICKVAL(Registration_Period__c,&quot;1&quot;), &quot;4&quot;,
+IF(
+ISPICKVAL(Registration_Effective_Date__c,&quot;Today&quot;) &amp;&amp;
+ISPICKVAL(Registration_Period__c,&quot;2&quot;), &quot;5&quot;,
+IF(
+ISPICKVAL(Registration_Effective_Date__c,&quot;Today&quot;) &amp;&amp;
+ISPICKVAL(Registration_Period__c,&quot;3&quot;), &quot;6&quot;,
+null))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PWRegistrationStartDate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

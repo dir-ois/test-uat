@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Status__c</fullName>
+    <description>Collection Checkbox
+
+Indicates if an item is in collection.</description>
+    <externalId>false</externalId>
+    <formula>IF( Collection_ChkBox__c = &#39;Y&#39;,&#39;Referred to JEU&#39;, &#39;&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Y
+N (default)
+Status changes to Referred to JEU</inlineHelpText>
+    <label>Collection_Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

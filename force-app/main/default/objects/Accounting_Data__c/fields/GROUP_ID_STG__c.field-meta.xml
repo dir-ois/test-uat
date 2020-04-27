@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GROUP_ID_STG__c</fullName>
+    <description>Group ID Staging
+
+GROUP_ID_STG value is provided by the department to distinguish different pending groups in a file.   Departments may determine the logic for grouping receivables (e.g. by receivable type or by customer).</description>
+    <externalId>false</externalId>
+    <formula>&#39;DLSEINF&#39;+ Right(Case_Issue__r.Name,4)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GROUP_ID_STG</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

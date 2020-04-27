@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used to specify the License and Registration HQ Internal File Number --></help>
+    <label><!-- L&amp;R File Number --></label>
+    <name>L_R_File_Number__c</name>
+</CustomFieldTranslation>

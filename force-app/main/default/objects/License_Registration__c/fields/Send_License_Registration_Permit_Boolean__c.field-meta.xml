@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_License_Registration_Permit_Boolean__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Triggers the registration, license, or permit pdf to be sent to the applicant.
+Triggered from CommunityRegistration.vfp when the users clicks email PDF.
+Uses Workflow Rule Name: Send License Registration Permit PDF
+Uses Send_License_Registration_Permit_PDF__c formula field</description>
+    <externalId>false</externalId>
+    <label>Send License Registration Permit Boolean</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

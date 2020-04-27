@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The order in which the addresses were entered on the report of labor code violation. --></help>
+    <label><!-- Order Entered --></label>
+    <name>Order_Entered__c</name>
+</CustomFieldTranslation>

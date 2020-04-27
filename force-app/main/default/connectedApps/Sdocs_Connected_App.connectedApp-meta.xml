@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>support@sdocs.com</contactEmail>
+    <label>Sdocs Connected Apps2</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <certificate>MIIEZDCCA0ygAwIBAgIOAWnL9QmBAAAAAGUyFyAwDQYJKoZIhvcNAQELBQAwejESMBAGA1UEAwwJU0RvY3NDZXJ0MRgwFgYDVQQLDA8wMERkMDAwMDAwMGZlMkgxFzAVBgNVBAoMDlNhbGVzZm9yY2UuY29tMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQswCQYDVQQIDAJDQTEMMAoGA1UEBhMDVVNBMB4XDTE5MDMzMDAwMTcwN1oXDTIwMDMzMDAwMDAwMFowejESMBAGA1UEAwwJU0RvY3NDZXJ0MRgwFgYDVQQLDA8wMERkMDAwMDAwMGZlMkgxFzAVBgNVBAoMDlNhbGVzZm9yY2UuY29tMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQswCQYDVQQIDAJDQTEMMAoGA1UEBhMDVVNBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6i9+JvoF6uFcbOP6xwuEDfF8PDA/7U5jmw5HIeAcB67I0HYtq4YFEluiMS5m3Sm2eCKyCYE2dMfqrAszkuM/0DAziHhc2ZFHRo2RJfk3XR9Yry4Nt/tgutyNUPC698GJUCZCOsmC6WsIG3dI4RC1vh5alKyXL6nHQNkJ5pUSmWELlmR/NhTADcwIIvVFFStX3t9ClOH/WWg7y7B+NPNBamm51rEXcJ95VqL933XQm4eoIZKxi9nNN/IrETWhmYL4mXnt5W9AsAJN/n9QApGis7ohTLajyC4247aIHaONesTIOMn8V7hlRscsSWSuZI3WRlyc4HwGu6rfLXfiCXfViQIDAQABo4HnMIHkMB0GA1UdDgQWBBQTsc8KvUHAxGWSCOAlTp10MRJcODAPBgNVHRMBAf8EBTADAQH/MIGxBgNVHSMEgakwgaaAFBOxzwq9QcDEZZII4CVOnXQxElw4oX6kfDB6MRIwEAYDVQQDDAlTRG9jc0NlcnQxGDAWBgNVBAsMDzAwRGQwMDAwMDAwZmUySDEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFpy/UJgQAAAABlMhcgMA0GCSqGSIb3DQEBCwUAA4IBAQC3n8GiUuCl9t18/qJcwBtuUApUbyMEHMHd43KVqQKWLDrQwir/PltFRHc63mkxwcyUmLetRX3T4qp+hRVU2GkBu8FHdjtHwgnO0PMaiC4ZKtgo7uGQxeCo6y0cZUR8svakcBrapOPjGQNcD0UY7JKvAVCY1ZzDIXah/DHdtvE4Xfr7yaXjUxw65JkVCUVNH1fYKJCRZygLjo5pVDEypoavhqz6QBJiA5NHzkU4agT0ilp/7IT9ddLP1/woOURP/iShRjgFnWSPB1pqP8ojNDMHOXue0KhGq84a8lJYss8ehy0zICp325X/IsbkpZWom1N7PKjU5jE/dzROOuASCRIL</certificate>
+        <consumerKey>3MVG9ic.6IFhNpPpl4rB4t2aE70zBOaxjvflkDalMgB8_D3ie3aDoNqXG7YSfNc3bG5ikI4otqoIte6Xr.I8H</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <scopes>Api</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <profileName>Public Works User</profileName>
+    <profileName>Community Registrations User</profileName>
+    <profileName>Registration Services User</profileName>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

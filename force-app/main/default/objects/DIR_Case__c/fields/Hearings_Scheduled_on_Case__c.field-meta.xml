@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearings_Scheduled_on_Case__c</fullName>
+    <description>Count of hearings scheduled on a case that have been at least scheduled. Used by WCA for validating eligibility for closure</description>
+    <externalId>false</externalId>
+    <label>Hearings Scheduled on Case</label>
+    <summaryFilterItems>
+        <field>Hearing__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>WCA Hearing, Garment Hearing</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Hearing__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Scheduled, Rescheduled, Completed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Hearing__c.Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>citation_needs_to_be_selected_for_appeal</fullName>
+    <active>true</active>
+    <description>BOFE deputy must select at least one citation for appeal</description>
+    <errorConditionFormula>IF(ISNEW()&amp;&amp;(RecordType.DeveloperName == &#39;BOFE&#39; || RecordType.DeveloperName == &#39;RCI&#39;) &amp;&amp; (Citation_Selected__c=false), true,false)</errorConditionFormula>
+    <errorMessage>Please select at least one citation to be appealed!</errorMessage>
+</ValidationRule>

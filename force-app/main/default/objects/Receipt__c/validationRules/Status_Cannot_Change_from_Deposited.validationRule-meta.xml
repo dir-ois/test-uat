@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Cannot_Change_from_Deposited</fullName>
+    <active>true</active>
+    <description>Once the status is set to Deposited it will no longer be able to change unless done by a System Administrator Profile, or a user with the Cashiering Receipting Permission Set.</description>
+    <errorConditionFormula>AND(
+   ISPICKVAL(PRIORVALUE( Status__c),&quot;Deposited&quot;), 
+   Text(Status__c) &lt;&gt; &quot;Deposited&quot;,
+   ISCHANGED(Status__c),
+   NOT(CONTAINS($Profile.Name, &quot;System Administrator&quot;)),
+   NOT($Permission.Cashiering_Receipting)
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You cannot change the status away from Deposited.</errorMessage>
+</ValidationRule>

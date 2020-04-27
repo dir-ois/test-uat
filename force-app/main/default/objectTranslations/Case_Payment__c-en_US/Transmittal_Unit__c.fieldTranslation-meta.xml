@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- aka &quot;Office Unit&quot; --></help>
+    <label><!-- Transmittal Unit --></label>
+    <name>Transmittal_Unit__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source --></label>
+    <name>Source__c</name>
+    <picklistValues>
+        <masterLabel>Anonymous</masterLabel>
+        <translation><!-- Anonymous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDI Referral</masterLabel>
+        <translation><!-- CDI Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Group Referral</masterLabel>
+        <translation><!-- Community Group Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DA Referral</masterLabel>
+        <translation><!-- DA Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR/DLSE Info Complaint</masterLabel>
+        <translation><!-- DIR/DLSE Info Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE L&amp;R - Garment Home Inspection</masterLabel>
+        <translation><!-- DLSE L&amp;R - Garment Home Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE L&amp;R - Industrial Homework</masterLabel>
+        <translation><!-- DLSE L&amp;R - Industrial Homework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE L&amp;R - Sheltered Workshop</masterLabel>
+        <translation><!-- DLSE L&amp;R - Sheltered Workshop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE L&amp;R - Sub-Minimum Wage</masterLabel>
+        <translation><!-- DLSE L&amp;R - Sub-Minimum Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE L&amp;R Car Wash</masterLabel>
+        <translation><!-- DLSE L&amp;R Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOL/Empleo</masterLabel>
+        <translation><!-- DOL/Empleo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Created</masterLabel>
+        <translation><!-- Deputy Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDD/EETF Referral</masterLabel>
+        <translation><!-- EDD/EETF Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee (BOFE 1)</masterLabel>
+        <translation><!-- Employee (BOFE 1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer/Employer Association</masterLabel>
+        <translation><!-- Employer/Employer Association --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IWC Exemption Request</masterLabel>
+        <translation><!-- IWC Exemption Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interagency Referral</masterLabel>
+        <translation><!-- Interagency Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kaiser Referral (injured worker)</masterLabel>
+        <translation><!-- Kaiser Referral (injured worker) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 2699</masterLabel>
+        <translation><!-- LC 2699 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LETF Call/Email</masterLabel>
+        <translation><!-- LETF Call/Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LETF Lead</masterLabel>
+        <translation><!-- LETF Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor Hours-Ag Ind</masterLabel>
+        <translation><!-- Minor Hours-Ag Ind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OD Legal</masterLabel>
+        <translation><!-- OD Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHA Referral</masterLabel>
+        <translation><!-- OSHA Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PW Referral</masterLabel>
+        <translation><!-- PW Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Referral</masterLabel>
+        <translation><!-- RCI Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SB 869</masterLabel>
+        <translation><!-- SB 869 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA</masterLabel>
+        <translation><!-- WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warn</masterLabel>
+        <translation><!-- Warn --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

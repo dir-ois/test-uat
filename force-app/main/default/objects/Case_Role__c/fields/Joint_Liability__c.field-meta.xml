@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joint_Liability__c</fullName>
+    <externalId>false</externalId>
+    <label>Joint Liability</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Role__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Contractor Successor</controllingFieldValue>
+            <controllingFieldValue>Defendant – CEO</controllingFieldValue>
+            <controllingFieldValue>Defendant – Corporate Officer</controllingFieldValue>
+            <controllingFieldValue>Defendant - Guarantor</controllingFieldValue>
+            <controllingFieldValue>Defendant - Joint Employer</controllingFieldValue>
+            <controllingFieldValue>Defendant - Manager</controllingFieldValue>
+            <controllingFieldValue>Defendant – Managing Member</controllingFieldValue>
+            <controllingFieldValue>Managing Member</controllingFieldValue>
+            <valueName>Yes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defendant – Corporate Officer</controllingFieldValue>
+            <controllingFieldValue>Defendant - Guarantor</controllingFieldValue>
+            <controllingFieldValue>Defendant - Joint Employer</controllingFieldValue>
+            <controllingFieldValue>Defendant - Manager</controllingFieldValue>
+            <controllingFieldValue>Defendant – Managing Member</controllingFieldValue>
+            <controllingFieldValue>Managing Member</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

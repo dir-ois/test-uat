@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <description>Location the inspection is related to</description>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <referenceTo>Address__c</referenceTo>
+    <relationshipLabel>Related Inspections</relationshipLabel>
+    <relationshipName>Inspection_Locations_del</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

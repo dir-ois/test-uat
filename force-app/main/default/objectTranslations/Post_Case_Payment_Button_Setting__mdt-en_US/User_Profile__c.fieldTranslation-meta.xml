@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the Name (not the API Name) of the User Profile for this setting. --></help>
+    <label><!-- User Profile --></label>
+    <name>User_Profile__c</name>
+</CustomFieldTranslation>

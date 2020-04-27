@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Support Request</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/Support_Request?retURL=%2Fa34%2Fo&amp;RecordType=012d0000001tZk2&amp;ent=01Id0000001xov6&amp;save_new=1&amp;sfdc.override=1</url>
+</CustomPageWebLink>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_JEU_Referral</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New JEU Referral</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/a1b/e?CF00Nd0000008S8Fu={!Judgement__c.Name}&amp;CF00Nd0000008S8Fu_lkid={!Judgement__c.Id}&amp;retURL=%2F{!Judgement__c.Id}&amp;RecordType=012d00000019PP7&amp;ent={!Judgement__c.Id}&amp;CF00Nd0000007jjd7_lkid={!Judgement__c.Case_ManagementId__c}&amp;CF00Nd0000007jjd7={!Judgement__c.Case_Management__c}</url>
+</WebLink>

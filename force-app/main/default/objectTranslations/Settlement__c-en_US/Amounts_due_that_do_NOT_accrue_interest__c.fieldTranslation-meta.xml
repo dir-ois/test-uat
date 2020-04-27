@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the amounts due that DO NOT accrue interest by evaluating the case issues on the liabilities that the settling parties are settling. --></help>
+    <label><!-- Amounts due that do NOT accrue interest --></label>
+    <name>Amounts_due_that_do_NOT_accrue_interest__c</name>
+</CustomFieldTranslation>

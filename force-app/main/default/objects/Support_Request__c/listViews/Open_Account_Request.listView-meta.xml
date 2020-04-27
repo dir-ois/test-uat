@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Account_Request</fullName>
+    <columns>NAME</columns>
+    <columns>Create_Date_Time__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Description__c</columns>
+    <columns>Account_Request_Type__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Effective_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Support_Request__c.User_Account_Request</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Release Note Pending,Duplicate,Handled by the Vendor</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled,Closed,Added to a Release</value>
+    </filters>
+    <label>Open Account Request</label>
+    <sharedTo>
+        <role>System_Administrators</role>
+    </sharedTo>
+</ListView>

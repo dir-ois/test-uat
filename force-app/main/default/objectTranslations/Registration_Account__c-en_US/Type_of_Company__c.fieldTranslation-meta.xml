@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please indicate which type of company this is that is involved in the joint venture. --></help>
+    <label><!-- Type of Company --></label>
+    <name>Type_of_Company__c</name>
+    <picklistValues>
+        <masterLabel>Corporation</masterLabel>
+        <translation><!-- Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLC</masterLabel>
+        <translation><!-- LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLP LP</masterLabel>
+        <translation><!-- LLP LP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partnership</masterLabel>
+        <translation><!-- Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sole Proprietorship</masterLabel>
+        <translation><!-- Sole Proprietorship --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

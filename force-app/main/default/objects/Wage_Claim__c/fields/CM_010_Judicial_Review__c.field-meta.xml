@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_010_Judicial_Review__c</fullName>
+    <externalId>false</externalId>
+    <label>CM-010 Judicial Review</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset forfeiture</fullName>
+                <default>false</default>
+                <label>Asset forfeiture</label>
+            </value>
+            <value>
+                <fullName>Petition re: arbitration award</fullName>
+                <default>false</default>
+                <label>Petition re: arbitration award</label>
+            </value>
+            <value>
+                <fullName>Writ of mandate</fullName>
+                <default>false</default>
+                <label>Writ of mandate</label>
+            </value>
+            <value>
+                <fullName>Other judicial review</fullName>
+                <default>false</default>
+                <label>Other judicial review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

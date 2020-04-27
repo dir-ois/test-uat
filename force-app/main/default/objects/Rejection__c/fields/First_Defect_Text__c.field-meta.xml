@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Defect_Text__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Please return or resubmit your online application with the above requested item(s) within &quot;+ TEXT(Days_to_Respond__c) +&quot; days from the date of this letter. &quot; 
++
+IF(Registration_Type__c = &quot;Car Wash&quot;, &quot;If you do not respond, your application will be rejected and you will forfeit your application fee.&quot;,
+IF(Registration_Type__c = &quot;Child Performer Services&quot;, &quot;Please return this notice along with the above requested items(s) within 30 days of the date of this letter.&quot;,
+IF(Registration_Type__c = &quot;Garment&quot;, &quot;If we do not receive the requested items and/or documents listed above within 60 days from the date of this letter, your application for registration will be rejected and the fee will be forfeited.&quot;, 
+IF(Registration_Type__c = &quot;Talent&quot;, &quot;If you do not respond, your application will be rejected and you will forfeit your application fee.&quot;,
+IF(Registration_Type__c = &quot;Janitorial&quot;, &quot;If you do not respond, your application will be rejected and you will forfeit your application fee.&quot;, &quot;&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>First Defect Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

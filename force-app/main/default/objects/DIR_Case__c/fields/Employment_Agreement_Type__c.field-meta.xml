@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Agreement_Type__c</fullName>
+    <description>Field for WCA 55 output document via Conga Composer; requested by Jan Joy to capture the WCA 55 Agreement Type in the output.</description>
+    <externalId>false</externalId>
+    <label>Employment Agreement Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>an oral</fullName>
+                <default>false</default>
+                <label>an oral</label>
+            </value>
+            <value>
+                <fullName>a written</fullName>
+                <default>false</default>
+                <label>a written</label>
+            </value>
+            <value>
+                <fullName>a collective bargaining</fullName>
+                <default>false</default>
+                <label>a collective bargaining</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

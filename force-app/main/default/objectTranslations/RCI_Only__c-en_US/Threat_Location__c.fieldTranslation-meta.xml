@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Threat Location --></label>
+    <name>Threat_Location__c</name>
+    <picklistValues>
+        <masterLabel>At Labor Commissioner&#39;s Office</masterLabel>
+        <translation><!-- At Labor Commissioner&apos;s Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At the workplace</masterLabel>
+        <translation><!-- At the workplace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other: new workplace, home, etc.</masterLabel>
+        <translation><!-- Other: new workplace, home, etc. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

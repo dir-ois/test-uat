@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If &quot;Other&quot; is selected as the type of request, please define the request here. --></help>
+    <label><!-- Other Inspection Type --></label>
+    <name>Other_Inspection_Type__c</name>
+</CustomFieldTranslation>

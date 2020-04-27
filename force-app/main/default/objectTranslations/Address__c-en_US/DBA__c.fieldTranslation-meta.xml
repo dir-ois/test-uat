@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If different than legal entity and primary DBA --></help>
+    <label><!-- DBA --></label>
+    <name>DBA__c</name>
+</CustomFieldTranslation>

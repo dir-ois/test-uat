@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determines if the record is a renewal and which date period it falls in. This determines which Registration Period section the contractor will see in the form. --></help>
+    <label><!-- SetRegistrationPeriod --></label>
+    <name>SetRegistrationPeriod__c</name>
+</CustomFieldTranslation>

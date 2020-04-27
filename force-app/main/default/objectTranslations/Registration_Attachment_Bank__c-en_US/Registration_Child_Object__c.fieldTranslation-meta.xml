@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- enter the API name of the child object of the registration that results in the creation of this attachment request --></help>
+    <label><!-- Registration Child Object --></label>
+    <name>Registration_Child_Object__c</name>
+</CustomFieldTranslation>

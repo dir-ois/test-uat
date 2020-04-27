@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Unlicensed_const_contractor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Unlicensed construction contractor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Unlicensed construction contractor</inlineHelpText>
+    <label>Unlicensed construction contractor</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

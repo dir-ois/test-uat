@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scope_of_Lien__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Geographic region in which lien has validity or application</inlineHelpText>
+    <label>Scope of Lien</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alameda County, California</fullName>
+                <default>false</default>
+                <label>Alameda County, California</label>
+            </value>
+            <value>
+                <fullName>Alpine County, California</fullName>
+                <default>false</default>
+                <label>Alpine County, California</label>
+            </value>
+            <value>
+                <fullName>Amador County, California</fullName>
+                <default>false</default>
+                <label>Amador County, California</label>
+            </value>
+            <value>
+                <fullName>Butte County, California</fullName>
+                <default>false</default>
+                <label>Butte County, California</label>
+            </value>
+            <value>
+                <fullName>Calaveras County, California</fullName>
+                <default>false</default>
+                <label>Calaveras County, California</label>
+            </value>
+            <value>
+                <fullName>Colusa County, California</fullName>
+                <default>false</default>
+                <label>Colusa County, California</label>
+            </value>
+            <value>
+                <fullName>Contra Costa County, California</fullName>
+                <default>false</default>
+                <label>Contra Costa County, California</label>
+            </value>
+            <value>
+                <fullName>Del Norte County, California</fullName>
+                <default>false</default>
+                <label>Del Norte County, California</label>
+            </value>
+            <value>
+                <fullName>El Dorado County, California</fullName>
+                <default>false</default>
+                <label>El Dorado County, California</label>
+            </value>
+            <value>
+                <fullName>Fresno County, California</fullName>
+                <default>false</default>
+                <label>Fresno County, California</label>
+            </value>
+            <value>
+                <fullName>Glenn County, California</fullName>
+                <default>false</default>
+                <label>Glenn County, California</label>
+            </value>
+            <value>
+                <fullName>Humboldt County, California</fullName>
+                <default>false</default>
+                <label>Humboldt County, California</label>
+            </value>
+            <value>
+                <fullName>Imperial County, California</fullName>
+                <default>false</default>
+                <label>Imperial County, California</label>
+            </value>
+            <value>
+                <fullName>Inyo County, California</fullName>
+                <default>false</default>
+                <label>Inyo County, California</label>
+            </value>
+            <value>
+                <fullName>Kern County, California</fullName>
+                <default>false</default>
+                <label>Kern County, California</label>
+            </value>
+            <value>
+                <fullName>Kings County, California</fullName>
+                <default>false</default>
+                <label>Kings County, California</label>
+            </value>
+            <value>
+                <fullName>Lake County, California</fullName>
+                <default>false</default>
+                <label>Lake County, California</label>
+            </value>
+            <value>
+                <fullName>Lassen County, California</fullName>
+                <default>false</default>
+                <label>Lassen County, California</label>
+            </value>
+            <value>
+                <fullName>Los Angeles County, California</fullName>
+                <default>false</default>
+                <label>Los Angeles County, California</label>
+            </value>
+            <value>
+                <fullName>Madera County, California</fullName>
+                <default>false</default>
+                <label>Madera County, California</label>
+            </value>
+            <value>
+                <fullName>Marin County, California</fullName>
+                <default>false</default>
+                <label>Marin County, California</label>
+            </value>
+            <value>
+                <fullName>Mariposa County, California</fullName>
+                <default>false</default>
+                <label>Mariposa County, California</label>
+            </value>
+            <value>
+                <fullName>Mendocino County, California</fullName>
+                <default>false</default>
+                <label>Mendocino County, California</label>
+            </value>
+            <value>
+                <fullName>Merced County, California</fullName>
+                <default>false</default>
+                <label>Merced County, California</label>
+            </value>
+            <value>
+                <fullName>Modoc County, California</fullName>
+                <default>false</default>
+                <label>Modoc County, California</label>
+            </value>
+            <value>
+                <fullName>Mono County, California</fullName>
+                <default>false</default>
+                <label>Mono County, California</label>
+            </value>
+            <value>
+                <fullName>Monterey County, California</fullName>
+                <default>false</default>
+                <label>Monterey County, California</label>
+            </value>
+            <value>
+                <fullName>Napa County, California</fullName>
+                <default>false</default>
+                <label>Napa County, California</label>
+            </value>
+            <value>
+                <fullName>Nevada County, California</fullName>
+                <default>false</default>
+                <label>Nevada County, California</label>
+            </value>
+            <value>
+                <fullName>Orange County, California</fullName>
+                <default>false</default>
+                <label>Orange County, California</label>
+            </value>
+            <value>
+                <fullName>Placer County, California</fullName>
+                <default>false</default>
+                <label>Placer County, California</label>
+            </value>
+            <value>
+                <fullName>Plumas County, California</fullName>
+                <default>false</default>
+                <label>Plumas County, California</label>
+            </value>
+            <value>
+                <fullName>Riverside County, California</fullName>
+                <default>false</default>
+                <label>Riverside County, California</label>
+            </value>
+            <value>
+                <fullName>Sacramento County, California</fullName>
+                <default>false</default>
+                <label>Sacramento County, California</label>
+            </value>
+            <value>
+                <fullName>San Benito County, California</fullName>
+                <default>false</default>
+                <label>San Benito County, California</label>
+            </value>
+            <value>
+                <fullName>San Bernardino County, California</fullName>
+                <default>false</default>
+                <label>San Bernardino County, California</label>
+            </value>
+            <value>
+                <fullName>San Diego County, California</fullName>
+                <default>false</default>
+                <label>San Diego County, California</label>
+            </value>
+            <value>
+                <fullName>City and County of San Francisco, California</fullName>
+                <default>false</default>
+                <label>City and County of San Francisco, California</label>
+            </value>
+            <value>
+                <fullName>San Joaquin County, California</fullName>
+                <default>false</default>
+                <label>San Joaquin County, California</label>
+            </value>
+            <value>
+                <fullName>San Luis Obispo County, California</fullName>
+                <default>false</default>
+                <label>San Luis Obispo County, California</label>
+            </value>
+            <value>
+                <fullName>San Mateo County, California</fullName>
+                <default>false</default>
+                <label>San Mateo County, California</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara County, California</fullName>
+                <default>false</default>
+                <label>Santa Barbara County, California</label>
+            </value>
+            <value>
+                <fullName>Santa Clara County, California</fullName>
+                <default>false</default>
+                <label>Santa Clara County, California</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz County, California</fullName>
+                <default>false</default>
+                <label>Santa Cruz County, California</label>
+            </value>
+            <value>
+                <fullName>Shasta County, California</fullName>
+                <default>false</default>
+                <label>Shasta County, California</label>
+            </value>
+            <value>
+                <fullName>Sierra County, California</fullName>
+                <default>false</default>
+                <label>Sierra County, California</label>
+            </value>
+            <value>
+                <fullName>Siskiyou County, California</fullName>
+                <default>false</default>
+                <label>Siskiyou County, California</label>
+            </value>
+            <value>
+                <fullName>Solano County, California</fullName>
+                <default>false</default>
+                <label>Solano County, California</label>
+            </value>
+            <value>
+                <fullName>Sonoma County, California</fullName>
+                <default>false</default>
+                <label>Sonoma County, California</label>
+            </value>
+            <value>
+                <fullName>Stanislaus County, California</fullName>
+                <default>false</default>
+                <label>Stanislaus County, California</label>
+            </value>
+            <value>
+                <fullName>Sutter County, California</fullName>
+                <default>false</default>
+                <label>Sutter County, California</label>
+            </value>
+            <value>
+                <fullName>Tehama County, California</fullName>
+                <default>false</default>
+                <label>Tehama County, California</label>
+            </value>
+            <value>
+                <fullName>Trinity County, California</fullName>
+                <default>false</default>
+                <label>Trinity County, California</label>
+            </value>
+            <value>
+                <fullName>Tulare County, California</fullName>
+                <default>false</default>
+                <label>Tulare County, California</label>
+            </value>
+            <value>
+                <fullName>Tuolumne County, California</fullName>
+                <default>false</default>
+                <label>Tuolumne County, California</label>
+            </value>
+            <value>
+                <fullName>Ventura County, California</fullName>
+                <default>false</default>
+                <label>Ventura County, California</label>
+            </value>
+            <value>
+                <fullName>Yolo County, California</fullName>
+                <default>false</default>
+                <label>Yolo County, California</label>
+            </value>
+            <value>
+                <fullName>Yuba County, California</fullName>
+                <default>false</default>
+                <label>Yuba County, California</label>
+            </value>
+            <value>
+                <fullName>State of California</fullName>
+                <default>false</default>
+                <label>State of California</label>
+            </value>
+            <value>
+                <fullName>United States</fullName>
+                <default>false</default>
+                <label>United States</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

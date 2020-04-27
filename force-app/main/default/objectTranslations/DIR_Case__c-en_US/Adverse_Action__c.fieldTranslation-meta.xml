@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Adverse Action --></label>
+    <name>Adverse_Action__c</name>
+    <picklistValues>
+        <masterLabel>Benefits Denied</masterLabel>
+        <translation><!-- Benefits Denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change in Hours</masterLabel>
+        <translation><!-- Change in Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change in Pay</masterLabel>
+        <translation><!-- Change in Pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Changed Work Schedule</masterLabel>
+        <translation><!-- Changed Work Schedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demoted</masterLabel>
+        <translation><!-- Demoted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demotion/Reduced Hours</masterLabel>
+        <translation><!-- Demotion/Reduced Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denial of Benefits</masterLabel>
+        <translation><!-- Denial of Benefits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disc Action</masterLabel>
+        <translation><!-- Disc Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disciplinary Action/Written Warning</masterLabel>
+        <translation><!-- Disciplinary Action/Written Warning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to Hire/Rehire</masterLabel>
+        <translation><!-- Failure to Hire/Rehire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forced to Resign/Quit</masterLabel>
+        <translation><!-- Forced to Resign/Quit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harassed</masterLabel>
+        <translation><!-- Harassed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harassment/Intimidation</masterLabel>
+        <translation><!-- Harassment/Intimidation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hours Reduced</masterLabel>
+        <translation><!-- Hours Reduced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intimidated</masterLabel>
+        <translation><!-- Intimidated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Hired</masterLabel>
+        <translation><!-- Not Hired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Rehired</masterLabel>
+        <translation><!-- Not Rehired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay Reduced</masterLabel>
+        <translation><!-- Pay Reduced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Eval</masterLabel>
+        <translation><!-- Poor Eval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Evaluation</masterLabel>
+        <translation><!-- Poor Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspended</masterLabel>
+        <translation><!-- Suspended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspension</masterLabel>
+        <translation><!-- Suspension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terminated/Discharged/Fired</masterLabel>
+        <translation><!-- Terminated/Discharged/Fired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Threat</masterLabel>
+        <translation><!-- Threat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Threatened</masterLabel>
+        <translation><!-- Threatened --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer</masterLabel>
+        <translation><!-- Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred</masterLabel>
+        <translation><!-- Transferred --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

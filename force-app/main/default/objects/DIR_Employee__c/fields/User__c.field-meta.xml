@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The related user record for the employee. Some employees may not be salesforce users, but when they are, certain automations and activities will use the related user record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the employee is a salesforce user, select the user. If the employee is not a salesforce user, you may leave this field blank.</inlineHelpText>
+    <label>Salesforce User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>DIR_Employees</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

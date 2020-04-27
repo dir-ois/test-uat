@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_paid_to_process_server</fullName>
+    <active>true</active>
+    <description>Cost of Service field is required when the Professional Process Server = True</description>
+    <errorConditionFormula>ISBLANK( Cost_of_Service__c ) &amp;&amp;  Professional_Process_Server__c</errorConditionFormula>
+    <errorDisplayField>Cost_of_Service__c</errorDisplayField>
+    <errorMessage>Cost of Service is required if Professional Process Server is TRUE</errorMessage>
+</ValidationRule>

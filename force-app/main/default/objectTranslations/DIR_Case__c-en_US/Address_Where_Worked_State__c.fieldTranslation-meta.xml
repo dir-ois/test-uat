@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Address where worked if different from Employer address --></help>
+    <label><!-- Address Where Worked State --></label>
+    <name>Address_Where_Worked_State__c</name>
+</CustomFieldTranslation>

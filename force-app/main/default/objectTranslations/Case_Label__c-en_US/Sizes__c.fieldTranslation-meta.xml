@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sizes --></label>
+    <name>Sizes__c</name>
+    <picklistValues>
+        <masterLabel>Children</masterLabel>
+        <translation><!-- Children --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juniors</masterLabel>
+        <translation><!-- Juniors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Men</masterLabel>
+        <translation><!-- Men --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Women</masterLabel>
+        <translation><!-- Women --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

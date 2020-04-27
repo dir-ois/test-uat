@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total of all payments received against Post-Judgment Interest that are a part of this judgment. --></help>
+    <label><!-- Post-Judgment Interest Payments Received --></label>
+    <name>Post_Judgment_Interest_Payments_Received__c</name>
+</CustomFieldTranslation>

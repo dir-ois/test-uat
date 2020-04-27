@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_from_Other_is_required</fullName>
+    <active>true</active>
+    <description>Referred from Other is required when Referred From = &quot;Other&quot;</description>
+    <errorConditionFormula>TEXT( Referred_From__c ) = &quot;Other&quot;   &amp;&amp;  ISBLANK( Referred_From_Other__c )</errorConditionFormula>
+    <errorMessage>Referred From - Other is required when Referred From = &quot;Other&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Low_Wage_Occupation__c</fullName>
+    <externalId>false</externalId>
+    <label>Low Wage Occupation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>true</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Domestic Worker</fullName>
+                <default>false</default>
+                <label>Domestic Worker</label>
+            </value>
+            <value>
+                <fullName>Agricultural Employee</fullName>
+                <default>false</default>
+                <label>Agricultural Employee</label>
+            </value>
+            <value>
+                <fullName>Food processing</fullName>
+                <default>false</default>
+                <label>Food processing</label>
+            </value>
+            <value>
+                <fullName>Garment Employee</fullName>
+                <default>false</default>
+                <label>Garment Employee</label>
+            </value>
+            <value>
+                <fullName>Car Wash Employee</fullName>
+                <default>false</default>
+                <label>Car Wash Employee</label>
+            </value>
+            <value>
+                <fullName>Cannabis</fullName>
+                <default>false</default>
+                <label>Cannabis</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Janitorial</fullName>
+                <default>false</default>
+                <label>Janitorial</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>Port</fullName>
+                <default>false</default>
+                <label>Port</label>
+            </value>
+            <value>
+                <fullName>Hotel worker</fullName>
+                <default>false</default>
+                <label>Hotel worker</label>
+            </value>
+            <value>
+                <fullName>Residential Care worker</fullName>
+                <default>false</default>
+                <label>Residential Care worker</label>
+            </value>
+            <value>
+                <fullName>Nail salon worker</fullName>
+                <default>false</default>
+                <label>Nail salon worker</label>
+            </value>
+            <value>
+                <fullName>Security guard</fullName>
+                <default>false</default>
+                <label>Security guard</label>
+            </value>
+            <value>
+                <fullName>Day laborer</fullName>
+                <default>false</default>
+                <label>Day laborer</label>
+            </value>
+            <value>
+                <fullName>Other - Paid at minimum wage rate or less</fullName>
+                <default>false</default>
+                <label>Other - Paid at minimum wage rate or less</label>
+            </value>
+            <value>
+                <fullName>Other - Paid via piece rate</fullName>
+                <default>false</default>
+                <label>Other - Paid via piece rate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

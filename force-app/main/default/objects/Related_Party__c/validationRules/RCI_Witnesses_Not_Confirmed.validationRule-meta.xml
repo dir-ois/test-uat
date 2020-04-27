@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Witnesses_Not_Confirmed</fullName>
+    <active>true</active>
+    <description>To prevent RCI business users from confirming Witnesses and creating case roles/accounts.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Role__c,&#39;Witness&#39;), ISPICKVAL(Status__c, &#39;Confirm&#39;)  ) || AND(ISPICKVAL(Role__c,&#39;Witness for Appellant&#39;), ISPICKVAL(Status__c, &#39;Confirm&#39;)  ) || AND(ISPICKVAL(Role__c,&#39;Witness for Claimant&#39;), ISPICKVAL(Status__c, &#39;Confirm&#39;)  ) || AND(ISPICKVAL(Role__c,&#39;Witness for Defendant&#39;), ISPICKVAL(Status__c, &#39;Confirm&#39;)  ) || AND(ISPICKVAL(Role__c,&#39;Witness for Division&#39;), ISPICKVAL(Status__c, &#39;Confirm&#39;)  )</errorConditionFormula>
+    <errorMessage>RCI Related parties with the following roles: Witness, Witness for Appellant, Witness for Appellant, Witness for Claimant, Witness for Defendant, Witness for Division  cannot be confirmed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Cashiering application provides quick access to Cashiering related objects and tabs</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Cashiering</label>
+    <tabs>standard-Account</tabs>
+    <tabs>DIR_Case__c</tabs>
+    <tabs>Incoming_Check_Log</tabs>
+    <tabs>Receipt__c</tabs>
+    <tabs>Transaction__c</tabs>
+    <tabs>Case_Payment__c</tabs>
+    <tabs>Payment_Record__c</tabs>
+    <tabs>Office_Account__c</tabs>
+    <tabs>Check_Batch__c</tabs>
+    <tabs>Check__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>Payee__c</tabs>
+    <tabs>Liability__c</tabs>
+    <tabs>Liable_Party__c</tabs>
+    <tabs>Office_Account_Monthly_Totals__c</tabs>
+    <tabs>Support_Request__c</tabs>
+</CustomApplication>

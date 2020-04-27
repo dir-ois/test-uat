@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Meetings_Hearings</fullName>
+    <columns>NAME</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Case__c</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Record_Type_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Hearing__c.RCI_Meeting,Hearing__c.RCI_Hearing</value>
+    </filters>
+    <label>RCI Meetings &amp; Hearings</label>
+</ListView>

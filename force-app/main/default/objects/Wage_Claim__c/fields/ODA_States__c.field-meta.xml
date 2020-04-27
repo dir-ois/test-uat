@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ODA_States__c</fullName>
+    <externalId>false</externalId>
+    <label>ODA States</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affirmed</fullName>
+                <default>false</default>
+                <label>Affirmed</label>
+            </value>
+            <value>
+                <fullName>Set aside and vacated, and hearing shall be reset, noticed and heard on the original complaint herein.</fullName>
+                <default>false</default>
+                <label>Set aside and vacated, and hearing shall be reset, noticed and heard on the original complaint herein.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

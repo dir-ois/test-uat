@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bilingual_With_No_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+   Rec_Bilingual_Pay__c,
+   ISNULL( Bilingual_Effective_Date__c )
+)</errorConditionFormula>
+    <errorDisplayField>Bilingual_Effective_Date__c</errorDisplayField>
+    <errorMessage>Please enter an Effective Date for Bilingual Pay</errorMessage>
+</ValidationRule>

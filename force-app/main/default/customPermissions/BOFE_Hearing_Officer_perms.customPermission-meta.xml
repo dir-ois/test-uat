@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A user with this custom permission inherits the permissions of a hearing officer in addition to their standard profile and permissions sets.</description>
+    <label>BOFE Hearing Officer perms</label>
+</CustomPermission>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Fields_Party_Selection__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines the type of selector displayed on the Form Fields page.</inlineHelpText>
+    <label>Form Fields Party Selection</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>One Defendant</fullName>
+                <default>false</default>
+                <label>One Defendant</label>
+            </value>
+            <value>
+                <fullName>Multiple Defendants</fullName>
+                <default>false</default>
+                <label>Multiple Defendants</label>
+            </value>
+            <value>
+                <fullName>All Defendants</fullName>
+                <default>false</default>
+                <label>All Defendants</label>
+            </value>
+            <value>
+                <fullName>One Party</fullName>
+                <default>false</default>
+                <label>One Party</label>
+            </value>
+            <value>
+                <fullName>Multiple Parties</fullName>
+                <default>false</default>
+                <label>Multiple Parties</label>
+            </value>
+            <value>
+                <fullName>All</fullName>
+                <default>false</default>
+                <label>All</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

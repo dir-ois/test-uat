@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Legal_Max_Assignments</fullName>
+    <active>true</active>
+    <description>Ensures no more than the maximum allowed assignments are allowed on BOFE Legal referrals</description>
+    <errorConditionFormula>(
+  (
+    RecordType.Name = &#39;BOFE Request for Legal Court Action&#39; 
+    || 
+    RecordType.Name = &#39;BOFE Request for Legal Services&#39; 
+  ) 
+  &amp;&amp;  Referral_Assignments__c &gt; 1 
+)
+|| 
+RecordType.Name = &#39;BOFE Civil Litigation Referral&#39; 
+  &amp;&amp;  Referral_Assignments__c &gt; 5</errorConditionFormula>
+    <errorMessage>You have assigned too many individuals to this referral type.</errorMessage>
+</ValidationRule>

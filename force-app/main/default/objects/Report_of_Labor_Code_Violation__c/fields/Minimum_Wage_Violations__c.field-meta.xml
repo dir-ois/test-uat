@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Wage_Violations__c</fullName>
+    <description>Suspected Violations of Employer - Minimum Wage Violations</description>
+    <externalId>false</externalId>
+    <label>Minimum Wage Violations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Paid below minimum wage</fullName>
+                <default>false</default>
+                <label>Paid below minimum wage</label>
+            </value>
+            <value>
+                <fullName>Not paid at all for overtime hours</fullName>
+                <default>false</default>
+                <label>Not paid at all for overtime hours</label>
+            </value>
+            <value>
+                <fullName>Not paid for all hours, travel &amp; try-out</fullName>
+                <default>false</default>
+                <label>Not paid for all hours, travel &amp; try-out</label>
+            </value>
+            <value>
+                <fullName>Paycheck issued with insufficient funds</fullName>
+                <default>false</default>
+                <label>Paycheck issued with insufficient funds</label>
+            </value>
+            <value>
+                <fullName>Asked employee to pay back wages paid</fullName>
+                <default>false</default>
+                <label>Asked employee to pay back wages paid</label>
+            </value>
+            <value>
+                <fullName>No split shift premium pay</fullName>
+                <default>false</default>
+                <label>No split shift premium pay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

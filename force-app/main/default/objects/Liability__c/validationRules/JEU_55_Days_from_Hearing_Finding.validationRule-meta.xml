@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_55_Days_from_Hearing_Finding</fullName>
+    <active>true</active>
+    <description>Does not allow a JEU Referral of todays date is not 55 days from the hearing date on the Case</description>
+    <errorConditionFormula>NOT ( ISBLANK (  Case_Management__r.Hearing_Date_and_Time__c  ) ) 
+&amp;&amp; 
+Today() &lt; DATEVALUE( Case_Management__r.Hearing_Date_and_Time__c ) + 55
+&amp;&amp;
+ISPICKVAL(Refer_to_JEU__c, &quot;Referred&quot;)</errorConditionFormula>
+    <errorMessage>You may not refer this case to JEU until 55 days after the Hearing Date.</errorMessage>
+</ValidationRule>

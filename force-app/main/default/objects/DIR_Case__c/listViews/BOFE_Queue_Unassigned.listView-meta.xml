@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Queue_Unassigned</fullName>
+    <filterScope>Queue</filterScope>
+    <label>BOFE Queue - Unassigned</label>
+    <queue>Unassigned</queue>
+    <sharedTo>
+        <roleAndSubordinates>BOFE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

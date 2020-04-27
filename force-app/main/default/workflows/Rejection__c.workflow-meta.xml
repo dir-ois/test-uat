@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Check_1st_Defect_Letter_Sent</fullName>
+        <field>X1st_Defect_Letter_Sent__c</field>
+        <literalValue>1</literalValue>
+        <name>Check 1st Defect Letter Sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Send_Defect_Letter</fullName>
+        <apiVersion>41.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Rejection_Letter_PDF__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>Send Defect Letter</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+</Workflow>

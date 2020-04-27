@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Hearing_Interest_Per_LC_2802__c</fullName>
+    <externalId>false</externalId>
+    <formula>ABS( ODA_Date__c - Judgment_Date__c ) * 0.000273973 * Expenses_Due__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Post-Hearing Interest Per LC 2802</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

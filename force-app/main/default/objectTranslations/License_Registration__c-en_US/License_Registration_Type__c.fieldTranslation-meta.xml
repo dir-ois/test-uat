@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- License/Registration Type --></label>
+    <name>License_Registration_Type__c</name>
+    <picklistValues>
+        <masterLabel>ABC</masterLabel>
+        <translation><!-- ABC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agricultural Employers of Minors</masterLabel>
+        <translation><!-- Agricultural Employers of Minors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agricultural Produce Unloaders</masterLabel>
+        <translation><!-- Agricultural Produce Unloaders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOE/Seller’s Permit</masterLabel>
+        <translation><!-- BOE/Seller’s Permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BSIS</masterLabel>
+        <translation><!-- BSIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bureau of Automotive Repair</masterLabel>
+        <translation><!-- Bureau of Automotive Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business License</masterLabel>
+        <translation><!-- Business License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSLB</masterLabel>
+        <translation><!-- CSLB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Wash</masterLabel>
+        <translation><!-- Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Performer Services</masterLabel>
+        <translation><!-- Child Performer Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOL</masterLabel>
+        <translation><!-- DOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSS Facility</masterLabel>
+        <translation><!-- DSS Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricians and electrician trainees</masterLabel>
+        <translation><!-- Electricians and electrician trainees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment Work</masterLabel>
+        <translation><!-- Entertainment Work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FBNS</masterLabel>
+        <translation><!-- FBNS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLC</masterLabel>
+        <translation><!-- FLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment Registration</masterLabel>
+        <translation><!-- Garment Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Permit</masterLabel>
+        <translation><!-- Health Permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Homework License</masterLabel>
+        <translation><!-- Industrial Homework License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Homeworker Permit</masterLabel>
+        <translation><!-- Industrial Homeworker Permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Homeworkers</masterLabel>
+        <translation><!-- Industrial Homeworkers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janitorial</masterLabel>
+        <translation><!-- Janitorial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Works</masterLabel>
+        <translation><!-- Public Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEIN</masterLabel>
+        <translation><!-- SEIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary of State Number</masterLabel>
+        <translation><!-- Secretary of State Number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sheltered Workshops (non‐profit)</masterLabel>
+        <translation><!-- Sheltered Workshops (non‐profit) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Minimum Wage</masterLabel>
+        <translation><!-- Special Minimum Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Studio Teacher Certification</masterLabel>
+        <translation><!-- Studio Teacher Certification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Talent Agency</masterLabel>
+        <translation><!-- Talent Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work Permits for Child Performers</masterLabel>
+        <translation><!-- Work Permits for Child Performers --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

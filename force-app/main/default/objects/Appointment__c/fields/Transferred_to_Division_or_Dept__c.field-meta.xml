@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transferred_to_Division_or_Dept__c</fullName>
+    <externalId>false</externalId>
+    <label>Transferred to Division or Dept</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DIR - Accounting</fullName>
+                <default>false</default>
+                <label>DIR - Accounting</label>
+            </value>
+            <value>
+                <fullName>DIR - Budgets</fullName>
+                <default>false</default>
+                <label>DIR - Budgets</label>
+            </value>
+            <value>
+                <fullName>DIR - Business Services</fullName>
+                <default>false</default>
+                <label>DIR - Business Services</label>
+            </value>
+            <value>
+                <fullName>DIR - CHSWC</fullName>
+                <default>false</default>
+                <label>DIR - CHSWC</label>
+            </value>
+            <value>
+                <fullName>DIR - CRM: RTW/SELSP/UEBTF/SEBTF</fullName>
+                <default>false</default>
+                <label>DIR - CRM: RTW/SELSP/UEBTF/SEBTF</label>
+            </value>
+            <value>
+                <fullName>DIR - DAS</fullName>
+                <default>false</default>
+                <label>DIR - DAS</label>
+            </value>
+            <value>
+                <fullName>DIR - DLSE</fullName>
+                <default>false</default>
+                <label>DIR - DLSE</label>
+            </value>
+            <value>
+                <fullName>DIR - DOSH</fullName>
+                <default>false</default>
+                <label>DIR - DOSH</label>
+            </value>
+            <value>
+                <fullName>DIR - DWC</fullName>
+                <default>false</default>
+                <label>DIR - DWC</label>
+            </value>
+            <value>
+                <fullName>DIR - Human Resources</fullName>
+                <default>false</default>
+                <label>DIR - Human Resources</label>
+            </value>
+            <value>
+                <fullName>DIR - OD/Anti-Fraud Unit</fullName>
+                <default>false</default>
+                <label>DIR - OD/Anti-Fraud Unit</label>
+            </value>
+            <value>
+                <fullName>DIR - OD - Drug Formulary</fullName>
+                <default>false</default>
+                <label>DIR - OD - Drug Formulary</label>
+            </value>
+            <value>
+                <fullName>DIR - OD - Legal</fullName>
+                <default>false</default>
+                <label>DIR - OD - Legal</label>
+            </value>
+            <value>
+                <fullName>DIR - OD - PAGA</fullName>
+                <default>false</default>
+                <label>DIR - OD - PAGA</label>
+            </value>
+            <value>
+                <fullName>DIR - OD - Research</fullName>
+                <default>false</default>
+                <label>DIR - OD - Research</label>
+            </value>
+            <value>
+                <fullName>DIR - Office of Info Services</fullName>
+                <default>false</default>
+                <label>DIR - Office of Info Services</label>
+            </value>
+            <value>
+                <fullName>DIR - Office of The Director</fullName>
+                <default>false</default>
+                <label>DIR - Office of The Director</label>
+            </value>
+            <value>
+                <fullName>DIR - OSHAB</fullName>
+                <default>false</default>
+                <label>DIR - OSHAB</label>
+            </value>
+            <value>
+                <fullName>DIR - OSHSB</fullName>
+                <default>false</default>
+                <label>DIR - OSHSB</label>
+            </value>
+            <value>
+                <fullName>DIR - PIO/Communications</fullName>
+                <default>false</default>
+                <label>DIR - PIO/Communications</label>
+            </value>
+            <value>
+                <fullName>DIR - SIP</fullName>
+                <default>false</default>
+                <label>DIR - SIP</label>
+            </value>
+            <value>
+                <fullName>DIR - WCAB</fullName>
+                <default>false</default>
+                <label>DIR - WCAB</label>
+            </value>
+            <value>
+                <fullName>Administrative Law, Office of</fullName>
+                <default>false</default>
+                <label>Administrative Law, Office of</label>
+            </value>
+            <value>
+                <fullName>Afro-American Museum</fullName>
+                <default>false</default>
+                <label>Afro-American Museum</label>
+            </value>
+            <value>
+                <fullName>Aging, California Commission</fullName>
+                <default>false</default>
+                <label>Aging, California Commission</label>
+            </value>
+            <value>
+                <fullName>Aging, Department of</fullName>
+                <default>false</default>
+                <label>Aging, Department of</label>
+            </value>
+            <value>
+                <fullName>Agricultural Labor Relations Board (ALRB)</fullName>
+                <default>false</default>
+                <label>Agricultural Labor Relations Board (ALRB)</label>
+            </value>
+            <value>
+                <fullName>Air Resources Board (ARB)</fullName>
+                <default>false</default>
+                <label>Air Resources Board (ARB)</label>
+            </value>
+            <value>
+                <fullName>Alcoholic Beverage Control Appeals Board</fullName>
+                <default>false</default>
+                <label>Alcoholic Beverage Control Appeals Board</label>
+            </value>
+            <value>
+                <fullName>Alcoholic Beverage Control, Department of (ABC)</fullName>
+                <default>false</default>
+                <label>Alcoholic Beverage Control, Department of (ABC)</label>
+            </value>
+            <value>
+                <fullName>Alternative Energy Source Financing Authority, California</fullName>
+                <default>false</default>
+                <label>Alternative Energy Source Financing Authority, California</label>
+            </value>
+            <value>
+                <fullName>Arts Council, California</fullName>
+                <default>false</default>
+                <label>Arts Council, California</label>
+            </value>
+            <value>
+                <fullName>Baldwin Hills Conservancy</fullName>
+                <default>false</default>
+                <label>Baldwin Hills Conservancy</label>
+            </value>
+            <value>
+                <fullName>Banking Department, State</fullName>
+                <default>false</default>
+                <label>Banking Department, State</label>
+            </value>
+            <value>
+                <fullName>Board of State and Community Corrections</fullName>
+                <default>false</default>
+                <label>Board of State and Community Corrections</label>
+            </value>
+            <value>
+                <fullName>Boating and Waterways, Department of</fullName>
+                <default>false</default>
+                <label>Boating and Waterways, Department of</label>
+            </value>
+            <value>
+                <fullName>Business, Consumer Services and Housing Agency</fullName>
+                <default>false</default>
+                <label>Business, Consumer Services and Housing Agency</label>
+            </value>
+            <value>
+                <fullName>Business Oversight, Department of</fullName>
+                <default>false</default>
+                <label>Business Oversight, Department of</label>
+            </value>
+            <value>
+                <fullName>California Career Resource Network</fullName>
+                <default>false</default>
+                <label>California Career Resource Network</label>
+            </value>
+            <value>
+                <fullName>California Children and Families First Commission</fullName>
+                <default>false</default>
+                <label>California Children and Families First Commission</label>
+            </value>
+            <value>
+                <fullName>California Citizens Compensation Commission</fullName>
+                <default>false</default>
+                <label>California Citizens Compensation Commission</label>
+            </value>
+            <value>
+                <fullName>California Coastal Commission</fullName>
+                <default>false</default>
+                <label>California Coastal Commission</label>
+            </value>
+            <value>
+                <fullName>California Commission on Disability Access</fullName>
+                <default>false</default>
+                <label>California Commission on Disability Access</label>
+            </value>
+            <value>
+                <fullName>California Consumer Power and Conservation Financing Authority</fullName>
+                <default>false</default>
+                <label>California Consumer Power and Conservation Financing Authority</label>
+            </value>
+            <value>
+                <fullName>California Department of Human Resources</fullName>
+                <default>false</default>
+                <label>California Department of Human Resources</label>
+            </value>
+            <value>
+                <fullName>California Earthquake Authority</fullName>
+                <default>false</default>
+                <label>California Earthquake Authority</label>
+            </value>
+            <value>
+                <fullName>California Environmental Protection Agency</fullName>
+                <default>false</default>
+                <label>California Environmental Protection Agency</label>
+            </value>
+            <value>
+                <fullName>California Health Benefit Exchange</fullName>
+                <default>false</default>
+                <label>California Health Benefit Exchange</label>
+            </value>
+            <value>
+                <fullName>California Exposition and State Fair</fullName>
+                <default>false</default>
+                <label>California Exposition and State Fair</label>
+            </value>
+            <value>
+                <fullName>California Gambling Control Commission</fullName>
+                <default>false</default>
+                <label>California Gambling Control Commission</label>
+            </value>
+            <value>
+                <fullName>California Housing Insurance Fund</fullName>
+                <default>false</default>
+                <label>California Housing Insurance Fund</label>
+            </value>
+            <value>
+                <fullName>California Mortgage Bond and Tax Credit Allocation Committee</fullName>
+                <default>false</default>
+                <label>California Mortgage Bond and Tax Credit Allocation Committee</label>
+            </value>
+            <value>
+                <fullName>California Public Employee&#39;s Retirement System</fullName>
+                <default>false</default>
+                <label>California Public Employee&#39;s Retirement System</label>
+            </value>
+            <value>
+                <fullName>California School Finance Authority</fullName>
+                <default>false</default>
+                <label>California School Finance Authority</label>
+            </value>
+            <value>
+                <fullName>California Senior Legislature</fullName>
+                <default>false</default>
+                <label>California Senior Legislature</label>
+            </value>
+            <value>
+                <fullName>California State Auditor&#39;s Office</fullName>
+                <default>false</default>
+                <label>California State Auditor&#39;s Office</label>
+            </value>
+            <value>
+                <fullName>California State Library</fullName>
+                <default>false</default>
+                <label>California State Library</label>
+            </value>
+            <value>
+                <fullName>California State Lottery</fullName>
+                <default>false</default>
+                <label>California State Lottery</label>
+            </value>
+            <value>
+                <fullName>California State Summer School for the Arts</fullName>
+                <default>false</default>
+                <label>California State Summer School for the Arts</label>
+            </value>
+            <value>
+                <fullName>California Tahoe Conservancy</fullName>
+                <default>false</default>
+                <label>California Tahoe Conservancy</label>
+            </value>
+            <value>
+                <fullName>Child Support Services, Department of</fullName>
+                <default>false</default>
+                <label>Child Support Services, Department of</label>
+            </value>
+            <value>
+                <fullName>Chiropractic Examiners, Board of</fullName>
+                <default>false</default>
+                <label>Chiropractic Examiners, Board of</label>
+            </value>
+            <value>
+                <fullName>Citizens Redistricting Commission</fullName>
+                <default>false</default>
+                <label>Citizens Redistricting Commission</label>
+            </value>
+            <value>
+                <fullName>Coachella Valley Mountains Conservancy</fullName>
+                <default>false</default>
+                <label>Coachella Valley Mountains Conservancy</label>
+            </value>
+            <value>
+                <fullName>Coastal Conservancy, State</fullName>
+                <default>false</default>
+                <label>Coastal Conservancy, State</label>
+            </value>
+            <value>
+                <fullName>Colorado River Board of California</fullName>
+                <default>false</default>
+                <label>Colorado River Board of California</label>
+            </value>
+            <value>
+                <fullName>Commerce, Department of</fullName>
+                <default>false</default>
+                <label>Commerce, Department of</label>
+            </value>
+            <value>
+                <fullName>Commission for the Review of the Master Plan for Higher Education</fullName>
+                <default>false</default>
+                <label>Commission for the Review of the Master Plan for Higher Education</label>
+            </value>
+            <value>
+                <fullName>Commission on California State Government</fullName>
+                <default>false</default>
+                <label>Commission on California State Government</label>
+            </value>
+            <value>
+                <fullName>Commission on State Mandates</fullName>
+                <default>false</default>
+                <label>Commission on State Mandates</label>
+            </value>
+            <value>
+                <fullName>Commission on Uniform State Laws</fullName>
+                <default>false</default>
+                <label>Commission on Uniform State Laws</label>
+            </value>
+            <value>
+                <fullName>Community Colleges, Board of Governors of the California</fullName>
+                <default>false</default>
+                <label>Community Colleges, Board of Governors of the California</label>
+            </value>
+            <value>
+                <fullName>Community Services and Development, Department of</fullName>
+                <default>false</default>
+                <label>Community Services and Development, Department of</label>
+            </value>
+            <value>
+                <fullName>Compensation Insurance Fund, State (SCIF)</fullName>
+                <default>false</default>
+                <label>Compensation Insurance Fund, State (SCIF)</label>
+            </value>
+            <value>
+                <fullName>Conservation, Department of</fullName>
+                <default>false</default>
+                <label>Conservation, Department of</label>
+            </value>
+            <value>
+                <fullName>Conservation Corps, California (CCC)</fullName>
+                <default>false</default>
+                <label>Conservation Corps, California (CCC)</label>
+            </value>
+            <value>
+                <fullName>Consumer Affairs, Department of</fullName>
+                <default>false</default>
+                <label>Consumer Affairs, Department of</label>
+            </value>
+            <value>
+                <fullName>Controller, Office of the State (SCO)</fullName>
+                <default>false</default>
+                <label>Controller, Office of the State (SCO)</label>
+            </value>
+            <value>
+                <fullName>Corrections and Rehabilitation, CA. Department of</fullName>
+                <default>false</default>
+                <label>Corrections and Rehabilitation, CA. Department of</label>
+            </value>
+            <value>
+                <fullName>Avenal State Prison</fullName>
+                <default>false</default>
+                <label>Avenal State Prison</label>
+            </value>
+            <value>
+                <fullName>California City Correctional Facility</fullName>
+                <default>false</default>
+                <label>California City Correctional Facility</label>
+            </value>
+            <value>
+                <fullName>California Health Care Facility</fullName>
+                <default>false</default>
+                <label>California Health Care Facility</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Calipatria</fullName>
+                <default>false</default>
+                <label>California State Prison, Calipatria</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Centinela State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, Centinela State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Corcoran</fullName>
+                <default>false</default>
+                <label>California State Prison, Corcoran</label>
+            </value>
+            <value>
+                <fullName>California State Prison, High Desert State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, High Desert State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Ironwood State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, Ironwood State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Kern Valley State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, Kern Valley State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Los Angeles County</fullName>
+                <default>false</default>
+                <label>California State Prison, Los Angeles County</label>
+            </value>
+            <value>
+                <fullName>California State Prison, North Kern State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, North Kern State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Pleasant Valley State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, Pleasant Valley State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Sacramento County</fullName>
+                <default>false</default>
+                <label>California State Prison, Sacramento County</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Salinas Valley State Prison</fullName>
+                <default>false</default>
+                <label>California State Prison, Salinas Valley State Prison</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Solano County</fullName>
+                <default>false</default>
+                <label>California State Prison, Solano County</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Valley State Prison for Women</fullName>
+                <default>false</default>
+                <label>California State Prison, Valley State Prison for Women</label>
+            </value>
+            <value>
+                <fullName>California State Prison, Wasco</fullName>
+                <default>false</default>
+                <label>California State Prison, Wasco</label>
+            </value>
+            <value>
+                <fullName>California Substance Abuse Treatment Facility and State Prison at Corcoran</fullName>
+                <default>false</default>
+                <label>California Substance Abuse Treatment Facility and State Prison at Corcoran</label>
+            </value>
+            <value>
+                <fullName>California Prison Health Care Services, Headquarters</fullName>
+                <default>false</default>
+                <label>California Prison Health Care Services, Headquarters</label>
+            </value>
+            <value>
+                <fullName>California Prison Health Care Services, Northern Region</fullName>
+                <default>false</default>
+                <label>California Prison Health Care Services, Northern Region</label>
+            </value>
+            <value>
+                <fullName>California Prison Health Care Services, Central Region</fullName>
+                <default>false</default>
+                <label>California Prison Health Care Services, Central Region</label>
+            </value>
+            <value>
+                <fullName>California Prison Health Care Services, Southern Region</fullName>
+                <default>false</default>
+                <label>California Prison Health Care Services, Southern Region</label>
+            </value>
+            <value>
+                <fullName>California Northern Reentry Facility</fullName>
+                <default>false</default>
+                <label>California Northern Reentry Facility</label>
+            </value>
+            <value>
+                <fullName>Central California Women&#39;s Facility</fullName>
+                <default>false</default>
+                <label>Central California Women&#39;s Facility</label>
+            </value>
+            <value>
+                <fullName>Chaderjian School</fullName>
+                <default>false</default>
+                <label>Chaderjian School</label>
+            </value>
+            <value>
+                <fullName>Chuckawalla Valley State Prison</fullName>
+                <default>false</default>
+                <label>Chuckawalla Valley State Prison</label>
+            </value>
+            <value>
+                <fullName>Correctional Center, California (CCC)</fullName>
+                <default>false</default>
+                <label>Correctional Center, California (CCC)</label>
+            </value>
+            <value>
+                <fullName>Correctional Institution at Tehachapi, California</fullName>
+                <default>false</default>
+                <label>Correctional Institution at Tehachapi, California</label>
+            </value>
+            <value>
+                <fullName>Correctional Training Facility (CTF)</fullName>
+                <default>false</default>
+                <label>Correctional Training Facility (CTF)</label>
+            </value>
+            <value>
+                <fullName>Deuel Vocational Institution</fullName>
+                <default>false</default>
+                <label>Deuel Vocational Institution</label>
+            </value>
+            <value>
+                <fullName>Dewitt Correctional Training</fullName>
+                <default>false</default>
+                <label>Dewitt Correctional Training</label>
+            </value>
+            <value>
+                <fullName>El Paso de Robles School</fullName>
+                <default>false</default>
+                <label>El Paso de Robles School</label>
+            </value>
+            <value>
+                <fullName>Estrella Correctional Facility</fullName>
+                <default>false</default>
+                <label>Estrella Correctional Facility</label>
+            </value>
+            <value>
+                <fullName>Field -- Division of Adult of Parole Operations</fullName>
+                <default>false</default>
+                <label>Field -- Division of Adult of Parole Operations</label>
+            </value>
+            <value>
+                <fullName>Field - Inmate Welfare Fund</fullName>
+                <default>false</default>
+                <label>Field - Inmate Welfare Fund</label>
+            </value>
+            <value>
+                <fullName>Field - Headquarters Programs</fullName>
+                <default>false</default>
+                <label>Field - Headquarters Programs</label>
+            </value>
+            <value>
+                <fullName>Field - Division of Juvenile Justice</fullName>
+                <default>false</default>
+                <label>Field - Division of Juvenile Justice</label>
+            </value>
+            <value>
+                <fullName>Folsom State Prison</fullName>
+                <default>false</default>
+                <label>Folsom State Prison</label>
+            </value>
+            <value>
+                <fullName>Institution for Men, California (CIM)</fullName>
+                <default>false</default>
+                <label>Institution for Men, California (CIM)</label>
+            </value>
+            <value>
+                <fullName>Institution for Women, California (CIW)</fullName>
+                <default>false</default>
+                <label>Institution for Women, California (CIW)</label>
+            </value>
+            <value>
+                <fullName>Medical Facility, California (CIW)</fullName>
+                <default>false</default>
+                <label>Medical Facility, California (CIW)</label>
+            </value>
+            <value>
+                <fullName>Men&#39;s Colony, California (CMC)</fullName>
+                <default>false</default>
+                <label>Men&#39;s Colony, California (CMC)</label>
+            </value>
+            <value>
+                <fullName>Mule Creek State Prison</fullName>
+                <default>false</default>
+                <label>Mule Creek State Prison</label>
+            </value>
+            <value>
+                <fullName>Northern California Reentry Facility</fullName>
+                <default>false</default>
+                <label>Northern California Reentry Facility</label>
+            </value>
+            <value>
+                <fullName>Northern California Youth Center</fullName>
+                <default>false</default>
+                <label>Northern California Youth Center</label>
+            </value>
+            <value>
+                <fullName>Parole and Community Services</fullName>
+                <default>false</default>
+                <label>Parole and Community Services</label>
+            </value>
+            <value>
+                <fullName>Pelican Bay State Prison</fullName>
+                <default>false</default>
+                <label>Pelican Bay State Prison</label>
+            </value>
+            <value>
+                <fullName>Preston School of Industry</fullName>
+                <default>false</default>
+                <label>Preston School of Industry</label>
+            </value>
+            <value>
+                <fullName>R. J. Donovan Correction Facility</fullName>
+                <default>false</default>
+                <label>R. J. Donovan Correction Facility</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation Center, California (CRC)</fullName>
+                <default>false</default>
+                <label>Rehabilitation Center, California (CRC)</label>
+            </value>
+            <value>
+                <fullName>Richard A. McGee Correctional Training Center</fullName>
+                <default>false</default>
+                <label>Richard A. McGee Correctional Training Center</label>
+            </value>
+            <value>
+                <fullName>San Quentin State Prison</fullName>
+                <default>false</default>
+                <label>San Quentin State Prison</label>
+            </value>
+            <value>
+                <fullName>San Quentin State Prison, Plata</fullName>
+                <default>false</default>
+                <label>San Quentin State Prison, Plata</label>
+            </value>
+            <value>
+                <fullName>Sierra Conservation Center (SCC)</fullName>
+                <default>false</default>
+                <label>Sierra Conservation Center (SCC)</label>
+            </value>
+            <value>
+                <fullName>Southern Reception Center and Clinic</fullName>
+                <default>false</default>
+                <label>Southern Reception Center and Clinic</label>
+            </value>
+            <value>
+                <fullName>Ventura School</fullName>
+                <default>false</default>
+                <label>Ventura School</label>
+            </value>
+            <value>
+                <fullName>Youth Conservation Camps</fullName>
+                <default>false</default>
+                <label>Youth Conservation Camps</label>
+            </value>
+            <value>
+                <fullName>Youth Training School</fullName>
+                <default>false</default>
+                <label>Youth Training School</label>
+            </value>
+            <value>
+                <fullName>Courts of Appeal, Districts 1-6</fullName>
+                <default>false</default>
+                <label>Courts of Appeal, Districts 1-6</label>
+            </value>
+            <value>
+                <fullName>Criminal Justice Planning, Office of</fullName>
+                <default>false</default>
+                <label>Criminal Justice Planning, Office of</label>
+            </value>
+            <value>
+                <fullName>Debt Advisory Commission, California</fullName>
+                <default>false</default>
+                <label>Debt Advisory Commission, California</label>
+            </value>
+            <value>
+                <fullName>Debt Limit Allocation Committee, California</fullName>
+                <default>false</default>
+                <label>Debt Limit Allocation Committee, California</label>
+            </value>
+            <value>
+                <fullName>Delta Protection Commission</fullName>
+                <default>false</default>
+                <label>Delta Protection Commission</label>
+            </value>
+            <value>
+                <fullName>Delta Stewardship Council</fullName>
+                <default>false</default>
+                <label>Delta Stewardship Council</label>
+            </value>
+            <value>
+                <fullName>Developmental Disabilities, Area Boards on</fullName>
+                <default>false</default>
+                <label>Developmental Disabilities, Area Boards on</label>
+            </value>
+            <value>
+                <fullName>Developmental Disabilities, Council on</fullName>
+                <default>false</default>
+                <label>Developmental Disabilities, Council on</label>
+            </value>
+            <value>
+                <fullName>Developmental Services, Department of (DDS)</fullName>
+                <default>false</default>
+                <label>Developmental Services, Department of (DDS)</label>
+            </value>
+            <value>
+                <fullName>Agnews State Hospital</fullName>
+                <default>false</default>
+                <label>Agnews State Hospital</label>
+            </value>
+            <value>
+                <fullName>Canyon Springs</fullName>
+                <default>false</default>
+                <label>Canyon Springs</label>
+            </value>
+            <value>
+                <fullName>Fairview State Hospital</fullName>
+                <default>false</default>
+                <label>Fairview State Hospital</label>
+            </value>
+            <value>
+                <fullName>Lanterman State Hospital</fullName>
+                <default>false</default>
+                <label>Lanterman State Hospital</label>
+            </value>
+            <value>
+                <fullName>Sierra Vista Facility</fullName>
+                <default>false</default>
+                <label>Sierra Vista Facility</label>
+            </value>
+            <value>
+                <fullName>Porterville State Hospital</fullName>
+                <default>false</default>
+                <label>Porterville State Hospital</label>
+            </value>
+            <value>
+                <fullName>Sonoma State Hospital</fullName>
+                <default>false</default>
+                <label>Sonoma State Hospital</label>
+            </value>
+            <value>
+                <fullName>Economic Development Commission</fullName>
+                <default>false</default>
+                <label>Economic Development Commission</label>
+            </value>
+            <value>
+                <fullName>Education, California State Department of (DOE)</fullName>
+                <default>false</default>
+                <label>Education, California State Department of (DOE)</label>
+            </value>
+            <value>
+                <fullName>School for the Blind</fullName>
+                <default>false</default>
+                <label>School for the Blind</label>
+            </value>
+            <value>
+                <fullName>Diagnostic Center, Central California</fullName>
+                <default>false</default>
+                <label>Diagnostic Center, Central California</label>
+            </value>
+            <value>
+                <fullName>Diagnostic Center, Northern California</fullName>
+                <default>false</default>
+                <label>Diagnostic Center, Northern California</label>
+            </value>
+            <value>
+                <fullName>Diagnostic Center, Southern California</fullName>
+                <default>false</default>
+                <label>Diagnostic Center, Southern California</label>
+            </value>
+            <value>
+                <fullName>School for the Deaf, Fremont</fullName>
+                <default>false</default>
+                <label>School for the Deaf, Fremont</label>
+            </value>
+            <value>
+                <fullName>School for the Deaf, Riverside</fullName>
+                <default>false</default>
+                <label>School for the Deaf, Riverside</label>
+            </value>
+            <value>
+                <fullName>Education Audit Appeals Panel</fullName>
+                <default>false</default>
+                <label>Education Audit Appeals Panel</label>
+            </value>
+            <value>
+                <fullName>Educational Facilities Authority, California</fullName>
+                <default>false</default>
+                <label>Educational Facilities Authority, California</label>
+            </value>
+            <value>
+                <fullName>Emergency Medical Services Authority</fullName>
+                <default>false</default>
+                <label>Emergency Medical Services Authority</label>
+            </value>
+            <value>
+                <fullName>Emergency Services, Office of</fullName>
+                <default>false</default>
+                <label>Emergency Services, Office of</label>
+            </value>
+            <value>
+                <fullName>Employment Development Department (UTAB)</fullName>
+                <default>false</default>
+                <label>Employment Development Department (UTAB)</label>
+            </value>
+            <value>
+                <fullName>Employment Development Department</fullName>
+                <default>false</default>
+                <label>Employment Development Department</label>
+            </value>
+            <value>
+                <fullName>Energy Resources Conservation and Development Commission</fullName>
+                <default>false</default>
+                <label>Energy Resources Conservation and Development Commission</label>
+            </value>
+            <value>
+                <fullName>Environmental Health Hazard Assessment, Office of</fullName>
+                <default>false</default>
+                <label>Environmental Health Hazard Assessment, Office of</label>
+            </value>
+            <value>
+                <fullName>Equalization, Board of</fullName>
+                <default>false</default>
+                <label>Equalization, Board of</label>
+            </value>
+            <value>
+                <fullName>Fair Employment and Housing Commission</fullName>
+                <default>false</default>
+                <label>Fair Employment and Housing Commission</label>
+            </value>
+            <value>
+                <fullName>Fair Employment and Housing, Department of</fullName>
+                <default>false</default>
+                <label>Fair Employment and Housing, Department of</label>
+            </value>
+            <value>
+                <fullName>Fair Political Practices Commission (FPPS)</fullName>
+                <default>false</default>
+                <label>Fair Political Practices Commission (FPPS)</label>
+            </value>
+            <value>
+                <fullName>Finance, Department of</fullName>
+                <default>false</default>
+                <label>Finance, Department of</label>
+            </value>
+            <value>
+                <fullName>Financial Institutions, Department of</fullName>
+                <default>false</default>
+                <label>Financial Institutions, Department of</label>
+            </value>
+            <value>
+                <fullName>Financial Information System for California Office</fullName>
+                <default>false</default>
+                <label>Financial Information System for California Office</label>
+            </value>
+            <value>
+                <fullName>Fire Marshal, Office of the State</fullName>
+                <default>false</default>
+                <label>Fire Marshal, Office of the State</label>
+            </value>
+            <value>
+                <fullName>Fish and Wildlife, Department of</fullName>
+                <default>false</default>
+                <label>Fish and Wildlife, Department of</label>
+            </value>
+            <value>
+                <fullName>Food and Agriculture, Department of (DFA)</fullName>
+                <default>false</default>
+                <label>Food and Agriculture, Department of (DFA)</label>
+            </value>
+            <value>
+                <fullName>Forestry and Fire Protection, Department of</fullName>
+                <default>false</default>
+                <label>Forestry and Fire Protection, Department of</label>
+            </value>
+            <value>
+                <fullName>Franchise Tax Board (FTB)</fullName>
+                <default>false</default>
+                <label>Franchise Tax Board (FTB)</label>
+            </value>
+            <value>
+                <fullName>General Services, Department of (DGS)</fullName>
+                <default>false</default>
+                <label>General Services, Department of (DGS)</label>
+            </value>
+            <value>
+                <fullName>Office of the State Architect</fullName>
+                <default>false</default>
+                <label>Office of the State Architect</label>
+            </value>
+            <value>
+                <fullName>Office of State Publishing</fullName>
+                <default>false</default>
+                <label>Office of State Publishing</label>
+            </value>
+            <value>
+                <fullName>Government Operations Agency</fullName>
+                <default>false</default>
+                <label>Government Operations Agency</label>
+            </value>
+            <value>
+                <fullName>Governor&#39;s Office</fullName>
+                <default>false</default>
+                <label>Governor&#39;s Office</label>
+            </value>
+            <value>
+                <fullName>Governor&#39;s Office of Business and Economic Development (Go Biz)</fullName>
+                <default>false</default>
+                <label>Governor&#39;s Office of Business and Economic Development (Go Biz)</label>
+            </value>
+            <value>
+                <fullName>Habeas Corpus Resource Center</fullName>
+                <default>false</default>
+                <label>Habeas Corpus Resource Center</label>
+            </value>
+            <value>
+                <fullName>Health Care Services, Department of (DHCS)</fullName>
+                <default>false</default>
+                <label>Health Care Services, Department of (DHCS)</label>
+            </value>
+            <value>
+                <fullName>Health and Human Services Agency</fullName>
+                <default>false</default>
+                <label>Health and Human Services Agency</label>
+            </value>
+            <value>
+                <fullName>Health Facilities Financing Authority, California</fullName>
+                <default>false</default>
+                <label>Health Facilities Financing Authority, California</label>
+            </value>
+            <value>
+                <fullName>Health Planning and Development, Office of Statewide (OSHPD)</fullName>
+                <default>false</default>
+                <label>Health Planning and Development, Office of Statewide (OSHPD)</label>
+            </value>
+            <value>
+                <fullName>Highway Patrol, California Department of (CHP)</fullName>
+                <default>false</default>
+                <label>Highway Patrol, California Department of (CHP)</label>
+            </value>
+            <value>
+                <fullName>Horse Racing Board, California</fullName>
+                <default>false</default>
+                <label>Horse Racing Board, California</label>
+            </value>
+            <value>
+                <fullName>Housing and Community Development, Department of (DHCD)</fullName>
+                <default>false</default>
+                <label>Housing and Community Development, Department of (DHCD)</label>
+            </value>
+            <value>
+                <fullName>Housing Finance Agency, California</fullName>
+                <default>false</default>
+                <label>Housing Finance Agency, California</label>
+            </value>
+            <value>
+                <fullName>Industrial Development, California</fullName>
+                <default>false</default>
+                <label>Industrial Development, California</label>
+            </value>
+            <value>
+                <fullName>Institute for Regenerative Medicine, California</fullName>
+                <default>false</default>
+                <label>Institute for Regenerative Medicine, California</label>
+            </value>
+            <value>
+                <fullName>Insurance, Department of</fullName>
+                <default>false</default>
+                <label>Insurance, Department of</label>
+            </value>
+            <value>
+                <fullName>Judicial Center Library, California</fullName>
+                <default>false</default>
+                <label>Judicial Center Library, California</label>
+            </value>
+            <value>
+                <fullName>Judicial Council of California</fullName>
+                <default>false</default>
+                <label>Judicial Council of California</label>
+            </value>
+            <value>
+                <fullName>Judicial Performance, Commission on</fullName>
+                <default>false</default>
+                <label>Judicial Performance, Commission on</label>
+            </value>
+            <value>
+                <fullName>Justice, Department of</fullName>
+                <default>false</default>
+                <label>Justice, Department of</label>
+            </value>
+            <value>
+                <fullName>Labor and Workforce Development Agency</fullName>
+                <default>false</default>
+                <label>Labor and Workforce Development Agency</label>
+            </value>
+            <value>
+                <fullName>Law Revision Commission, California</fullName>
+                <default>false</default>
+                <label>Law Revision Commission, California</label>
+            </value>
+            <value>
+                <fullName>Legislative Counsel Bureau</fullName>
+                <default>false</default>
+                <label>Legislative Counsel Bureau</label>
+            </value>
+            <value>
+                <fullName>Legislature (Assembly)</fullName>
+                <default>false</default>
+                <label>Legislature (Assembly)</label>
+            </value>
+            <value>
+                <fullName>Legislature (Senate)</fullName>
+                <default>false</default>
+                <label>Legislature (Senate)</label>
+            </value>
+            <value>
+                <fullName>Lieutenant Governor, Office of the</fullName>
+                <default>false</default>
+                <label>Lieutenant Governor, Office of the</label>
+            </value>
+            <value>
+                <fullName>Managed Care, Department of</fullName>
+                <default>false</default>
+                <label>Managed Care, Department of</label>
+            </value>
+            <value>
+                <fullName>Managed Risk Medical Insurance Board</fullName>
+                <default>false</default>
+                <label>Managed Risk Medical Insurance Board</label>
+            </value>
+            <value>
+                <fullName>Medical Assistance Commission, California</fullName>
+                <default>false</default>
+                <label>Medical Assistance Commission, California</label>
+            </value>
+            <value>
+                <fullName>Mental Health Services Oversight &amp; Accountability Commission</fullName>
+                <default>false</default>
+                <label>Mental Health Services Oversight &amp; Accountability Commission</label>
+            </value>
+            <value>
+                <fullName>Military Department</fullName>
+                <default>false</default>
+                <label>Military Department</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicles, Department of (DMV)</fullName>
+                <default>false</default>
+                <label>Motor Vehicles, Department of (DMV)</label>
+            </value>
+            <value>
+                <fullName>Museum of Science and Industry, California</fullName>
+                <default>false</default>
+                <label>Museum of Science and Industry, California</label>
+            </value>
+            <value>
+                <fullName>Native American Heritage Commission</fullName>
+                <default>false</default>
+                <label>Native American Heritage Commission</label>
+            </value>
+            <value>
+                <fullName>Office of Systems Integration</fullName>
+                <default>false</default>
+                <label>Office of Systems Integration</label>
+            </value>
+            <value>
+                <fullName>Office of Tax Appeals</fullName>
+                <default>false</default>
+                <label>Office of Tax Appeals</label>
+            </value>
+            <value>
+                <fullName>Office of the Inspector General</fullName>
+                <default>false</default>
+                <label>Office of the Inspector General</label>
+            </value>
+            <value>
+                <fullName>O.J. Hawkins Data Center</fullName>
+                <default>false</default>
+                <label>O.J. Hawkins Data Center</label>
+            </value>
+            <value>
+                <fullName>Osteopathic Examiners, Board of</fullName>
+                <default>false</default>
+                <label>Osteopathic Examiners, Board of</label>
+            </value>
+            <value>
+                <fullName>Parks and Recreation, Department of</fullName>
+                <default>false</default>
+                <label>Parks and Recreation, Department of</label>
+            </value>
+            <value>
+                <fullName>Peace Officer Standards and Training, Commission on (POST)</fullName>
+                <default>false</default>
+                <label>Peace Officer Standards and Training, Commission on (POST)</label>
+            </value>
+            <value>
+                <fullName>Personnel Board, State (SPB)</fullName>
+                <default>false</default>
+                <label>Personnel Board, State (SPB)</label>
+            </value>
+            <value>
+                <fullName>Pesticide Regulation, Department of</fullName>
+                <default>false</default>
+                <label>Pesticide Regulation, Department of</label>
+            </value>
+            <value>
+                <fullName>Pilot Commissioners for the Bays of San Francisco, San Pablo and Suisun, Board of</fullName>
+                <default>false</default>
+                <label>Pilot Commissioners for the Bays of San Francisco, San Pablo and Suisun, Board of</label>
+            </value>
+            <value>
+                <fullName>Planning and Research, Office of (OPR)</fullName>
+                <default>false</default>
+                <label>Planning and Research, Office of (OPR)</label>
+            </value>
+            <value>
+                <fullName>Pollution Control Financing Authority, California</fullName>
+                <default>false</default>
+                <label>Pollution Control Financing Authority, California</label>
+            </value>
+            <value>
+                <fullName>Postsecondary Education Commission, California</fullName>
+                <default>false</default>
+                <label>Postsecondary Education Commission, California</label>
+            </value>
+            <value>
+                <fullName>Public Defender, State</fullName>
+                <default>false</default>
+                <label>Public Defender, State</label>
+            </value>
+            <value>
+                <fullName>Public Employment Relations Board (PERB)</fullName>
+                <default>false</default>
+                <label>Public Employment Relations Board (PERB)</label>
+            </value>
+            <value>
+                <fullName>Public Health, California Department</fullName>
+                <default>false</default>
+                <label>Public Health, California Department</label>
+            </value>
+            <value>
+                <fullName>Public Utilities Commission, State of California (PUC)</fullName>
+                <default>false</default>
+                <label>Public Utilities Commission, State of California (PUC)</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation, Department of (DR)</fullName>
+                <default>false</default>
+                <label>Rehabilitation, Department of (DR)</label>
+            </value>
+            <value>
+                <fullName>Requirements of Governor-Elect and the Outgoing Governor</fullName>
+                <default>false</default>
+                <label>Requirements of Governor-Elect and the Outgoing Governor</label>
+            </value>
+            <value>
+                <fullName>Resources Agency</fullName>
+                <default>false</default>
+                <label>Resources Agency</label>
+            </value>
+            <value>
+                <fullName>Resources, Recycling and Recovery, Department of</fullName>
+                <default>false</default>
+                <label>Resources, Recycling and Recovery, Department of</label>
+            </value>
+            <value>
+                <fullName>Sac - San Joaquin Delta Conservancy</fullName>
+                <default>false</default>
+                <label>Sac - San Joaquin Delta Conservancy</label>
+            </value>
+            <value>
+                <fullName>San Diego River Conservancy</fullName>
+                <default>false</default>
+                <label>San Diego River Conservancy</label>
+            </value>
+            <value>
+                <fullName>San Francisco Bay Conservation and Development Commission (BCDC)</fullName>
+                <default>false</default>
+                <label>San Francisco Bay Conservation and Development Commission (BCDC)</label>
+            </value>
+            <value>
+                <fullName>San Gabriel Lower Los Angeles Rivers and Mountain Conservancy</fullName>
+                <default>false</default>
+                <label>San Gabriel Lower Los Angeles Rivers and Mountain Conservancy</label>
+            </value>
+            <value>
+                <fullName>San Joaquin River Conservancy</fullName>
+                <default>false</default>
+                <label>San Joaquin River Conservancy</label>
+            </value>
+            <value>
+                <fullName>Santa Monica Mountains Conservancy</fullName>
+                <default>false</default>
+                <label>Santa Monica Mountains Conservancy</label>
+            </value>
+            <value>
+                <fullName>Scholarshare Investment Board</fullName>
+                <default>false</default>
+                <label>Scholarshare Investment Board</label>
+            </value>
+            <value>
+                <fullName>Secretary of State</fullName>
+                <default>false</default>
+                <label>Secretary of State</label>
+            </value>
+            <value>
+                <fullName>Secretary for State and Consumer Services Agency</fullName>
+                <default>false</default>
+                <label>Secretary for State and Consumer Services Agency</label>
+            </value>
+            <value>
+                <fullName>Seismic Safety Commission</fullName>
+                <default>false</default>
+                <label>Seismic Safety Commission</label>
+            </value>
+            <value>
+                <fullName>Sierra Nevada Conservancy</fullName>
+                <default>false</default>
+                <label>Sierra Nevada Conservancy</label>
+            </value>
+            <value>
+                <fullName>Social Services, Department of (DSS)</fullName>
+                <default>false</default>
+                <label>Social Services, Department of (DSS)</label>
+            </value>
+            <value>
+                <fullName>State Hospitals, Department of (DSH)</fullName>
+                <default>false</default>
+                <label>State Hospitals, Department of (DSH)</label>
+            </value>
+            <value>
+                <fullName>Atascadero State Hospital</fullName>
+                <default>false</default>
+                <label>Atascadero State Hospital</label>
+            </value>
+            <value>
+                <fullName>Coalinga Secure Treatment Facility</fullName>
+                <default>false</default>
+                <label>Coalinga Secure Treatment Facility</label>
+            </value>
+            <value>
+                <fullName>Metropolitan State Hospital</fullName>
+                <default>false</default>
+                <label>Metropolitan State Hospital</label>
+            </value>
+            <value>
+                <fullName>Napa State Hospital</fullName>
+                <default>false</default>
+                <label>Napa State Hospital</label>
+            </value>
+            <value>
+                <fullName>Patton State Hospital</fullName>
+                <default>false</default>
+                <label>Patton State Hospital</label>
+            </value>
+            <value>
+                <fullName>Psychiatric Program, Vacaville</fullName>
+                <default>false</default>
+                <label>Psychiatric Program, Vacaville</label>
+            </value>
+            <value>
+                <fullName>Salinas Valley Psychiatric Program</fullName>
+                <default>false</default>
+                <label>Salinas Valley Psychiatric Program</label>
+            </value>
+            <value>
+                <fullName>Stockton State Hospital</fullName>
+                <default>false</default>
+                <label>Stockton State Hospital</label>
+            </value>
+            <value>
+                <fullName>State Independent Living Council</fullName>
+                <default>false</default>
+                <label>State Independent Living Council</label>
+            </value>
+            <value>
+                <fullName>State Lands Commission</fullName>
+                <default>false</default>
+                <label>State Lands Commission</label>
+            </value>
+            <value>
+                <fullName>State University, California CSU</fullName>
+                <default>false</default>
+                <label>State University, California CSU</label>
+            </value>
+            <value>
+                <fullName>State Teachers Retirement System (STRS)</fullName>
+                <default>false</default>
+                <label>State Teachers Retirement System (STRS)</label>
+            </value>
+            <value>
+                <fullName>Statutory Employees</fullName>
+                <default>false</default>
+                <label>Statutory Employees</label>
+            </value>
+            <value>
+                <fullName>Status of Women, Commission on the</fullName>
+                <default>false</default>
+                <label>Status of Women, Commission on the</label>
+            </value>
+            <value>
+                <fullName>Student Aid Commission, California</fullName>
+                <default>false</default>
+                <label>Student Aid Commission, California</label>
+            </value>
+            <value>
+                <fullName>Student Loan Authority, California</fullName>
+                <default>false</default>
+                <label>Student Loan Authority, California</label>
+            </value>
+            <value>
+                <fullName>Supreme Court of California</fullName>
+                <default>false</default>
+                <label>Supreme Court of California</label>
+            </value>
+            <value>
+                <fullName>Technology, California Department of</fullName>
+                <default>false</default>
+                <label>Technology, California Department of</label>
+            </value>
+            <value>
+                <fullName>Technology, Department of</fullName>
+                <default>false</default>
+                <label>Technology, Department of</label>
+            </value>
+            <value>
+                <fullName>Teacher Credentialing, Commission on</fullName>
+                <default>false</default>
+                <label>Teacher Credentialing, Commission on</label>
+            </value>
+            <value>
+                <fullName>Toxic Substances Control, Department of</fullName>
+                <default>false</default>
+                <label>Toxic Substances Control, Department of</label>
+            </value>
+            <value>
+                <fullName>Traffic Safety, Office of</fullName>
+                <default>false</default>
+                <label>Traffic Safety, Office of</label>
+            </value>
+            <value>
+                <fullName>Transportation Commission, California</fullName>
+                <default>false</default>
+                <label>Transportation Commission, California</label>
+            </value>
+            <value>
+                <fullName>Transportation, Department of (Cal Trans) (DOT)</fullName>
+                <default>false</default>
+                <label>Transportation, Department of (Cal Trans) (DOT)</label>
+            </value>
+            <value>
+                <fullName>Treasurer&#39;s Office, State</fullName>
+                <default>false</default>
+                <label>Treasurer&#39;s Office, State</label>
+            </value>
+            <value>
+                <fullName>Urban Waterfront Area Restoration, California</fullName>
+                <default>false</default>
+                <label>Urban Waterfront Area Restoration, California</label>
+            </value>
+            <value>
+                <fullName>Veteran&#39;s Affairs, Department of</fullName>
+                <default>false</default>
+                <label>Veteran&#39;s Affairs, Department of</label>
+            </value>
+            <value>
+                <fullName>Victim Compensation and Government Claims Board</fullName>
+                <default>false</default>
+                <label>Victim Compensation and Government Claims Board</label>
+            </value>
+            <value>
+                <fullName>Water Resources, Department of</fullName>
+                <default>false</default>
+                <label>Water Resources, Department of</label>
+            </value>
+            <value>
+                <fullName>Water Resources Control State</fullName>
+                <default>false</default>
+                <label>Water Resources Control State</label>
+            </value>
+            <value>
+                <fullName>Wildlife Conservation Board</fullName>
+                <default>false</default>
+                <label>Wildlife Conservation Board</label>
+            </value>
+            <value>
+                <fullName>Chancellor&#39;s Office, CSU</fullName>
+                <default>false</default>
+                <label>Chancellor&#39;s Office, CSU</label>
+            </value>
+            <value>
+                <fullName>CA State Polytechnic University, Pomona</fullName>
+                <default>false</default>
+                <label>CA State Polytechnic University, Pomona</label>
+            </value>
+            <value>
+                <fullName>CA Polytechnic State University, San Luis Obispo</fullName>
+                <default>false</default>
+                <label>CA Polytechnic State University, San Luis Obispo</label>
+            </value>
+            <value>
+                <fullName>CA State College, Bakersfield</fullName>
+                <default>false</default>
+                <label>CA State College, Bakersfield</label>
+            </value>
+            <value>
+                <fullName>CA State University, Channel Islands</fullName>
+                <default>false</default>
+                <label>CA State University, Channel Islands</label>
+            </value>
+            <value>
+                <fullName>CA State University, Chico</fullName>
+                <default>false</default>
+                <label>CA State University, Chico</label>
+            </value>
+            <value>
+                <fullName>CA State University, East Bay</fullName>
+                <default>false</default>
+                <label>CA State University, East Bay</label>
+            </value>
+            <value>
+                <fullName>CA State University, Dominguez Hills</fullName>
+                <default>false</default>
+                <label>CA State University, Dominguez Hills</label>
+            </value>
+            <value>
+                <fullName>CA State University, Fresno</fullName>
+                <default>false</default>
+                <label>CA State University, Fresno</label>
+            </value>
+            <value>
+                <fullName>CA State University, Fullerton</fullName>
+                <default>false</default>
+                <label>CA State University, Fullerton</label>
+            </value>
+            <value>
+                <fullName>Humboldt State University</fullName>
+                <default>false</default>
+                <label>Humboldt State University</label>
+            </value>
+            <value>
+                <fullName>CA State University, Long Beach</fullName>
+                <default>false</default>
+                <label>CA State University, Long Beach</label>
+            </value>
+            <value>
+                <fullName>CA State University, Los Angeles</fullName>
+                <default>false</default>
+                <label>CA State University, Los Angeles</label>
+            </value>
+            <value>
+                <fullName>CA State University, Maritime Academy</fullName>
+                <default>false</default>
+                <label>CA State University, Maritime Academy</label>
+            </value>
+            <value>
+                <fullName>CA State University, Monterey Bay</fullName>
+                <default>false</default>
+                <label>CA State University, Monterey Bay</label>
+            </value>
+            <value>
+                <fullName>CA State University, Northridge</fullName>
+                <default>false</default>
+                <label>CA State University, Northridge</label>
+            </value>
+            <value>
+                <fullName>CA State University, Sacramento</fullName>
+                <default>false</default>
+                <label>CA State University, Sacramento</label>
+            </value>
+            <value>
+                <fullName>CA State College, San Bernardino</fullName>
+                <default>false</default>
+                <label>CA State College, San Bernardino</label>
+            </value>
+            <value>
+                <fullName>San Diego State University</fullName>
+                <default>false</default>
+                <label>San Diego State University</label>
+            </value>
+            <value>
+                <fullName>San Francisco State University</fullName>
+                <default>false</default>
+                <label>San Francisco State University</label>
+            </value>
+            <value>
+                <fullName>San Jose State University</fullName>
+                <default>false</default>
+                <label>San Jose State University</label>
+            </value>
+            <value>
+                <fullName>CA State University, San Marcos</fullName>
+                <default>false</default>
+                <label>CA State University, San Marcos</label>
+            </value>
+            <value>
+                <fullName>Sonoma State University</fullName>
+                <default>false</default>
+                <label>Sonoma State University</label>
+            </value>
+            <value>
+                <fullName>CA State University, Stanislaus</fullName>
+                <default>false</default>
+                <label>CA State University, Stanislaus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

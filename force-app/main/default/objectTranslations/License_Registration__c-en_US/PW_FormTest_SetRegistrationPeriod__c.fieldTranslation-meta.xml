@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this for testing only --></help>
+    <label><!-- PW FormTest - SetRegistrationPeriod --></label>
+    <name>PW_FormTest_SetRegistrationPeriod__c</name>
+</CustomFieldTranslation>

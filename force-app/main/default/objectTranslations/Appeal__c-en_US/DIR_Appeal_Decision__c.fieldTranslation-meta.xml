@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DIR Appeal Decision --></label>
+    <name>DIR_Appeal_Decision__c</name>
+    <picklistValues>
+        <masterLabel>Affirmed</masterLabel>
+        <translation><!-- Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modified</masterLabel>
+        <translation><!-- Modified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversed &amp; Dismissed</masterLabel>
+        <translation><!-- Reversed &amp; Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversed to Cause</masterLabel>
+        <translation><!-- Reversed to Cause --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Untimely</masterLabel>
+        <translation><!-- Untimely --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn</masterLabel>
+        <translation><!-- Withdrawn --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

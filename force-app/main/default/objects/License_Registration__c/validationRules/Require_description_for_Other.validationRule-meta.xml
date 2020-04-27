@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_description_for_Other</fullName>
+    <active>true</active>
+    <description>When &quot;Other&quot; type is selected, require that the description be populated</description>
+    <errorConditionFormula>ISPICKVAL(  License_Registration_Type__c , &#39;Other&#39; ) 
+&amp;&amp; ISBLANK(  Name_of_License_Registration__c  )</errorConditionFormula>
+    <errorDisplayField>Name_of_License_Registration__c</errorDisplayField>
+    <errorMessage>Please enter a Name for the &quot;Other&quot; license or registration type.</errorMessage>
+</ValidationRule>

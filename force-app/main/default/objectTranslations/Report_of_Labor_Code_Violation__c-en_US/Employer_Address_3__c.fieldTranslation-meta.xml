@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Address of the Employer --></help>
+    <label><!-- Employer Address 3 --></label>
+    <name>Employer_Address_3__c</name>
+</CustomFieldTranslation>

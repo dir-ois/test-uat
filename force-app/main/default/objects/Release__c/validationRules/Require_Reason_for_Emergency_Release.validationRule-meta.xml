@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Reason_for_Emergency_Release</fullName>
+    <active>true</active>
+    <description>This will prevent from releasing an Em</description>
+    <errorConditionFormula>ISChanged(Status__c)
+&amp;&amp;
+ISPICKVAL(Status__c, &quot;Released&quot;)
+&amp;&amp; 
+ISBLANK(Reason_for_Emergency_Release__c)
+&amp;&amp; 
+RecordType.Name = &#39;Emergency Release&#39;</errorConditionFormula>
+    <errorDisplayField>Reason_for_Emergency_Release__c</errorDisplayField>
+    <errorMessage>You must provide reason for creating an Emergency Release</errorMessage>
+</ValidationRule>

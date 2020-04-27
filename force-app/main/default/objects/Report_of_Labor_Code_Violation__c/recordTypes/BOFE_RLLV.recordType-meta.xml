@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_RLLV</fullName>
+    <active>true</active>
+    <label>BOFE RLLV</label>
+    <picklistValues>
+        <picklist>Advocate_State__c</picklist>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Needed__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Deputy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Sr%2E Deputy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Deputy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Sr%2E Deputy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_Employees_Paid_by_Piece_Rate__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Are_Employees_Paid_by_the_hour__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Expense_Violations__c</picklist>
+        <values>
+            <fullName>Illegal charges for cash shortage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No payback or illegal charge of uniform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tools%2C equipment%2C supply not reimbursed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Child_Labor_Violations__c</picklist>
+        <values>
+            <fullName>Minor work excessive or prohibited hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor work in hazardous conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No valid entertainment work permit%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No valid work permit%28s%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Claimant_Represented_by_Advocated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Claimant_Requesting_Stay_of_Wage_Claims__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Covered_By_Workers_Comp__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Designate_Standard_Workday_Begin_Time__c</picklist>
+        <values>
+            <fullName>Don%27t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Designate_Start_of_Workweek__c</picklist>
+        <values>
+            <fullName>Don%27t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_Did_Work_For_the_Employer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Do_you_want_DLSE_to_Keep_your_info_confi__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employees_Misclassification__c</picklist>
+        <values>
+            <fullName>Misclassified as independent contractors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salaried misclassified as exempt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EmployerDesignated_Standard_Meal_Period__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employer_State__c</picklist>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employer_Still_Operating_There__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employer_Still_in_Business__c</picklist>
+        <values>
+            <fullName>Filed for Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Entity_Type__c</picklist>
+        <values>
+            <fullName>Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LLP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28explain%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Failure_To_Post__c</picklist>
+        <values>
+            <fullName>Applicable Industrial Welfare Com%2EOrder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minimum Wage Order 2001 not posted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay day notice not posted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate of compensation not posted %28farms%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers comp insurance notice not posted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_are_Employees_Paid__c</picklist>
+        <values>
+            <fullName>Both Check %26 Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Method</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Method Varies per employee or position</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>If_paid_in_cash_records_or_logs__c</picklist>
+        <values>
+            <fullName>Don%27t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interval_for_Fixed_Amount_Payments__c</picklist>
+        <values>
+            <fullName>Every 2 Weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Keep_Time_Records_of_Hrs_Worked_by_emp__c</picklist>
+        <values>
+            <fullName>Don%27t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Leave_Reason__c</picklist>
+        <values>
+            <fullName>Fired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Still Employed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Licensing_Registration_Violations__c</picklist>
+        <values>
+            <fullName>Contract w%2Funlicensed construction Contr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed construction contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed farm labor contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unregistered car wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unregistered garment or manufacturer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>May_Your_Name_Be_Used_In_Investigation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meal_Period_Violations__c</picklist>
+        <values>
+            <fullName>Less than 30 minutes meal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No 30-minute off-duty meal period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No second 30-minute off-duty meal period</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Minimum_Wage_Violations__c</picklist>
+        <values>
+            <fullName>Asked employee to pay back wages paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No split shift premium pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not paid at all for overtime hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not paid for all hours%2C travel %26 try-out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid below minimum wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paycheck issued with insufficient funds</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_Unpaid_Wages__c</picklist>
+        <values>
+            <fullName>No pay for missing meal or rest periods</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No reporting time premium pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpaid wages at the contracted rate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAGA_Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitorial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Low-Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Not-Low-Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Paid_Fixed_Amount_Regardless_of_Hours__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pay_Date_Violations__c</picklist>
+        <values>
+            <fullName>Late payment of wages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No fixed pay date</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pay_Stub_Violations__c</picklist>
+        <values>
+            <fullName>Inaccurate wage statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No statement  at least semi-monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid by Cash or No wage statement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Public_Works__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Record_Keeping_Violations__c</picklist>
+        <values>
+            <fullName>No daily time records or inaccurate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No notice to new hires %28L%2EC%2ES 2810%2E5%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No payroll records or inaccurate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reporting_Party_State__c</picklist>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rest_Break_Violations__c</picklist>
+        <values>
+            <fullName>No 10-minute rest break</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No three 10-minute rest breaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No two 10-minute rest breaks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source__c</picklist>
+        <values>
+            <fullName>Anonymous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDI Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Group Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DA Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIR%2FDLSE Info Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Garment Home Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Industrial Homework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Sheltered Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Sub-Minimum Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOL%2FEmpleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deputy Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDD%2FEETF Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee %28BOFE 1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer%2FEmployer Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWC Exemption Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interagency Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaiser Referral %28injured worker%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 2699</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LETF Call%2FEmail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Hours-Ag Ind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OD Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SB 869</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Standard_Start_Time_AM_or_PM__c</picklist>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Reporting_Party__c</picklist>
+        <values>
+            <fullName>Advocate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Union_Contract__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unpaid_Overtime_Violations__c</picklist>
+        <values>
+            <fullName>Double time for over 12 hours%2Fday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over 8 hours%2Fday or %2810 hours%2Fday-farm%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly worked over 40 hours%2Fweek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on the 7th consecutive days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Update_Parent_Case__c</picklist>
+        <values>
+            <fullName>Close Case Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed by PAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cure Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Litigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgement on Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New AutoRefer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New TBR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order %2F Judgement Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Payment Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires Manual Screening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened %2F Pending Unit Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under PAGA Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Litigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Penalty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_Day_Did_the_Employer_Designate__c</picklist>
+        <values>
+            <fullName>Friday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saturday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_Languages_are_Spoken_by_Employees__c</picklist>
+        <values>
+            <fullName>Cambodian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cantonese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hmong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandarin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixtec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tagalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnamese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_day_is_pay_day_interval__c</picklist>
+        <values>
+            <fullName>Bi-Weekly On %28Once every two weeks%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly On %28Twice a month%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly On</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Work_Different_Schedules_Irregular_Hr__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Your_Employment_Status__c</picklist>
+        <values>
+            <fullName>Fired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Still Employed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

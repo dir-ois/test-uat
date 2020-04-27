@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_usage_of_Legacy_Closed_status</fullName>
+    <active>true</active>
+    <description>Legacy Closed status is reserved for migrated cases. Users are not permitted to set the status of any case issue to Legacy Closed.</description>
+    <errorConditionFormula>ISPICKVAL(Status__c, &quot;Legacy Closed&quot;)</errorConditionFormula>
+    <errorMessage>Legacy Closed is reserved for migrated cases.</errorMessage>
+</ValidationRule>

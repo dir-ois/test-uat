@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Liable Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Liable Parties</value>
+    </caseValues>
+    <layouts>
+        <layout>Liable Party Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Liable Amounts --></label>
+            <section>Liable Amounts</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA_Garment</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Liable Amounts --></label>
+            <section>Liable Amounts</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used for BOFE Liable Parties --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Garment Liable Parties --></description>
+        <label><!-- Garment --></label>
+        <name>Garment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- JEU --></label>
+        <name>JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for WCA Liable Parties --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can only assign a case role on this case as a liable party on this case. --></errorMessage>
+        <name>Case_Role_on_liability_case</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- BOFE_814 --></label>
+        <name>BOFE_814</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_633_75_Document --></label>
+        <name>Generate_633_75_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- XGenerate_633_75_Document --></label>
+        <name>XGenerate_633_75_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

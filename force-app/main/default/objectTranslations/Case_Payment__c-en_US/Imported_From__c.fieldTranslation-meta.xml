@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Imported From --></label>
+    <name>Imported_From__c</name>
+    <picklistValues>
+        <masterLabel>08-116</masterLabel>
+        <translation><!-- 08-116 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>32-117</masterLabel>
+        <translation><!-- 32-117 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAK-WCA</masterLabel>
+        <translation><!-- BAK-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE - AR</masterLabel>
+        <translation><!-- BOFE - AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE AR</masterLabel>
+        <translation><!-- BOFE AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE AR Import 2</masterLabel>
+        <translation><!-- BOFE AR Import 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE FM Import 2</masterLabel>
+        <translation><!-- BOFE FM Import 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE-AR</masterLabel>
+        <translation><!-- BOFE-AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE-TIFF</masterLabel>
+        <translation><!-- BOFE-TIFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE-TIPP</masterLabel>
+        <translation><!-- BOFE-TIPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FM-TIPP</masterLabel>
+        <translation><!-- FM-TIPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE-WCA</masterLabel>
+        <translation><!-- FRE-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment</masterLabel>
+        <translation><!-- Garment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LBO_AR</masterLabel>
+        <translation><!-- LBO_AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RDG-WCA</masterLabel>
+        <translation><!-- RDG-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAC-WCA</masterLabel>
+        <translation><!-- SAC-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBA-WCA</masterLabel>
+        <translation><!-- SBA-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBR-WCA</masterLabel>
+        <translation><!-- SBR-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRO-WCA</masterLabel>
+        <translation><!-- SRO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STK-WCA</masterLabel>
+        <translation><!-- STK-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIPP-FM</masterLabel>
+        <translation><!-- TIPP-FM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VNO-WCA</masterLabel>
+        <translation><!-- VNO-WCA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

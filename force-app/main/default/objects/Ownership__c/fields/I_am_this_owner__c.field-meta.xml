@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_am_this_owner__c</fullName>
+    <defaultValue>&quot;No&quot;</defaultValue>
+    <description>Allows the applicant to note that they are the owner who&#39;s information is being entered</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select &quot;Yes&quot; or &quot;No&quot; to indicate if the name and address for the login account matches this owner</inlineHelpText>
+    <label>I am this person</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Yes_No</valueSetName>
+    </valueSet>
+</CustomField>

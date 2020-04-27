@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <narrowComponents>WCA Links</narrowComponents>
+    <narrowComponents>BOFE Links</narrowComponents>
+    <narrowComponents>Cashiering</narrowComponents>
+    <narrowComponents>Service Requests</narrowComponents>
+    <wideComponents>standard-ProcessWorkitems</wideComponents>
+    <wideComponents>standard-Tasks</wideComponents>
+    <wideComponents>standard-Dashboard</wideComponents>
+    <wideComponents>standard-Calendar</wideComponents>
+</HomePageLayout>

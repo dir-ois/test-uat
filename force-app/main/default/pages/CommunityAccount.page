@@ -1,0 +1,164 @@
+<apex:page controller="CommunityAccountController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" title="PAGA Search">
+    <script>
+    $j = jQuery.noConflict();
+    </script>
+    <style>
+        .form-group.required label:after { 
+        color: #d00;
+        content: "*";
+        position: absolute!important;
+        }
+    </style>
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body">
+            <apex:form style="margin-bottom: 75px;">
+                <br/>
+                <apex:outputPanel id="profile" rendered="{!profilePage}">
+                    <h1>Profile</h1>
+                    
+                    <div class="row">&nbsp;&nbsp; The email attached to your account cannot be updated. If your email has changed, you will need to create a new account.</div>
+                    <br/>
+                    
+                    <br/>
+                    <apex:outputPanel id="errorPanel">
+                        <div style="display:{!errorDisplay}" class="{!errortype}">
+                            <center>{!errormessage}</center> 
+                        </div>
+                    </apex:outputPanel>
+                    <apex:pageMessages id="error"/>
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                            
+                            <div class="row mb">
+                                <div class="form-group required col-xs-12 col-sm-6">
+                                    <label for="{!$Component.firstName}">First Name</label>
+                                    <apex:inputText required="true" id="firstName" value="{!existingUser.firstName}" label="First Name" styleclass="form-control" />
+                                </div>
+                                
+                                <div class="form-group  col-xs-12 col-sm-6">
+                                    <label for="{!$Component.middleName}">Middle Name</label>
+                                    <apex:inputText id="middleName" value="{!existingUser.middleName}" label="Middle Name" styleclass="form-control" />
+                                </div>
+                                
+                                <div class="form-group required col-xs-12 col-sm-6">
+                                    <label for="{!$Component.lastName}">Last Name</label>
+                                    <apex:inputText required="true" id="lastName" value="{!existingUser.lastName}" label="Last Name" styleclass="form-control" />
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="{!$Component.titlefield}">Title</label>
+                                    <apex:inputText id="titlefield" value="{!existingUser.title}" label="Title" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group required col-xs-12 col-sm-6">
+                                    <label for="{!$Component.email}">Email</label>
+                                    <apex:inputText disabled="true" id="email" value="{!existingUser.email}" label="{!$Label.site.email}" styleclass="form-control"/>
+                                </div>  
+                                
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="{!$Component.phonefield}">Phone</label>
+                                    <apex:inputText id="phonefield" maxlength="10" value="{!existingUser.phone}" label="Phone" styleclass="form-control"/> 
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row mb">
+                                <div class="form-group col-xs-12">
+                                    <!--<label for="{!$Component.address}">Primary Street Address</label>-->
+                                    <!--<apex:inputText id="address" value="{!existingUser.Street}" label="Primary Street Address" styleclass="form-control"/>-->
+                                    <label for="{!$Component.address}">Address Line 1</label>
+                                    <apex:inputText id="address1" value="{!address1}" label="Address Line 1" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group col-xs-12">
+                                    <label for="{!$Component.address}">Address Line 2</label>
+                                    <apex:inputText id="address2" value="{!address2}" label="Address Line 2" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-sm-5">
+                                    <label for="{!$Component.cityfield}">City</label>
+                                    <apex:inputText id="cityfield" value="{!existingUser.City}" label="City" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-sm-5">
+                                    <label for="{!$Component.statefield}">State</label>
+                                    <apex:inputText id="statefield" maxlength="2" value="{!existingUser.State}" label="State" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-sm-2 ">
+                                    <label for="{!$Component.zipcode}">Zip</label>
+                                    <apex:inputText id="zipcode" maxlength="6" value="{!existingUser.PostalCode}" label="Zip" styleclass="form-control"/>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <apex:commandButton id="backreg" action="{!backToRegistration}" value="Back" styleclass="btn btn-custom" rerender="errorPanel" />
+                                    &nbsp;&nbsp;<apex:commandButton id="regbt" action="{!updateAccount}" value="Update Profile" styleclass="btn btn-custom" rerender="errorPanel" />
+                                    &nbsp;&nbsp;<apex:commandButton id="chpwd" action="{!redirectToPassword}" value="Change Password" styleclass="btn btn-custom"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </apex:outputPanel>
+                <apex:outputPanel id="password" rendered="{!pwdPage}">
+                    <h1>Change Password</h1>
+                    <br/>
+                    <apex:outputPanel >
+                        <div style="display:{!errorDisplay}" class="{!errortype}">
+                            <center>{!errormessage}</center> 
+                        </div>
+                    </apex:outputPanel>
+                    <apex:pageMessages />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-12">  
+                                    <i>Please enter a new password. For security reasons, passwords are only valid for 90 days.</i>
+                                    <br/>
+                                    <i><apex:outputtext value="{!$Label.reg_password_requirement}" /></i>
+                                </div>
+                            </div>
+                            <div class="row mb">
+                                <div class="form-group required col-xs-12">
+                                    <label for="{!$Component.oldpwd}">Old Password</label>
+                                    <apex:inputSecret id="oldpwd" value="{!oldPwd}" maxlength="25" label="Old Password" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group required col-xs-12">
+                                    <label for="{!$Component.newpwd}">New Password</label>
+                                    <apex:inputSecret id="newpwd" value="{!newPwd}" maxlength="25" label="New Password" styleclass="form-control"/>
+                                </div>
+                                
+                                <div class="form-group required col-xs-12">
+                                    <label for="{!$Component.confirmpwd}">Confirm Password</label>
+                                    <apex:inputSecret id="confirmpwd" value="{!confirmPwd}" maxlength="25" label="Confirm Password" styleclass="form-control"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <apex:commandButton id="updatePwd" action="{!changePassword}" value="Update" styleclass="btn btn-custom"/>
+                                    &nbsp;&nbsp;<apex:commandButton id="cancelPwd" action="{!cancelPassword}" value="Cancel" styleclass="btn btn-custom"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </apex:outputPanel>
+                <script type="text/javascript">
+                $j(document).keypress(function(event) {
+                    var keycode = (event.keyCode ? event.keyCode : event.which);
+                    if (keycode == '13') {
+                        document.getElementById('{!$Component.regbt}').click();
+                        
+                    }
+                });
+                
+                </script> 
+            </apex:form>
+            
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

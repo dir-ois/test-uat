@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA</fullName>
+    <active>true</active>
+    <description>PAGA Case Payments</description>
+    <label>PAGA</label>
+    <picklistValues>
+        <picklist>Hold_For__c</picklist>
+        <values>
+            <fullName>%28allow for date that would result in task to disbursing clerk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>for Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>for appeal period which ends</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Imported_From__c</picklist>
+        <values>
+            <fullName>FM-TIPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mailing_Instructions__c</picklist>
+        <values>
+            <fullName>include Defendant letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>include itemized wage statement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Classification__c</picklist>
+        <values>
+            <fullName>Bond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conceded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stipulated Settlement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms__c</picklist>
+        <values>
+            <fullName>Employer Concedes Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Concedes-Restrictive Endorsement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Correspondence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Payment Pursuant to the ODA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Payment per Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Payment per Settlement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Restitution_Fund__c</picklist>
+        <values>
+            <fullName>Car Wash Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farmworker Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment Fund</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Allocations Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Posted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

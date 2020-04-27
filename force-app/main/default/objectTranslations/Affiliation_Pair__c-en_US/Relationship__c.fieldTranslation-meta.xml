@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The relationship the &quot;source&quot; account/contact has to the account/contact selected as an affiliation. Be sure to create the inverse of the relationship also. For example if you were to create Employer to Employee, be sure to create Employee to Employer. --></help>
+    <label><!-- Relationship --></label>
+    <name>Relationship__c</name>
+</CustomFieldTranslation>

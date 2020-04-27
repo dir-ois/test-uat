@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not paid weekly overtime for hours worked over 40 hours per week --></help>
+    <label><!-- Not Paid OT Over 40 Hours --></label>
+    <name>Violation_Not_Paid_OT_Over_40_Hours__c</name>
+</CustomFieldTranslation>

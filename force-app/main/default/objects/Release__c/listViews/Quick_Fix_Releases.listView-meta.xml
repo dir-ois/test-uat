@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quick_Fix_Releases</fullName>
+    <columns>NAME</columns>
+    <columns>Release_Date_Time__c</columns>
+    <columns>Release_Description__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Release__c.Weekly_Release</value>
+    </filters>
+    <label>Auto Deploy Releases</label>
+</ListView>

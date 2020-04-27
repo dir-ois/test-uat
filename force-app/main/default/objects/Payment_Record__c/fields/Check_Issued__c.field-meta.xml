@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Issued__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for rollup summary on payees then to case. Populated by flow that when a check is associated with the payment and when the status of the check changes.</description>
+    <externalId>false</externalId>
+    <label>Check Issued</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

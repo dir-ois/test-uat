@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Accounting_Code__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Violation Accounting Code</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Violation_Accounting_Code__c.Case_Violation__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Case_Issue__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Violation_Accounting_Code__c.Payment_Type__c</field>
+            <operation>equals</operation>
+            <value>Penalty</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Violation_Accounting_Code__c</referenceTo>
+    <relationshipLabel>Accounting Data</relationshipLabel>
+    <relationshipName>Accounting_Data</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

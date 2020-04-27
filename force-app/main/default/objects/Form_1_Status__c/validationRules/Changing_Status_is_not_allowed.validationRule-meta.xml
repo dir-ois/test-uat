@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Changing_Status_is_not_allowed</fullName>
+    <active>true</active>
+    <description>Changing Status is not allowed, must create a new record.</description>
+    <errorConditionFormula>NOT(ISNEW()) &amp;&amp; ISCHANGED(Form1_Status_Type__c)</errorConditionFormula>
+    <errorMessage>Status field cannot be modified after save. Please create a new status record</errorMessage>
+</ValidationRule>

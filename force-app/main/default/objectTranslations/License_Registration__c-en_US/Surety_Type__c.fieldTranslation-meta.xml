@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the method by which you provide surety --></help>
+    <label><!-- Surety Type --></label>
+    <name>Surety_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bond</masterLabel>
+        <translation><!-- Bond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collective Bargaining Agreement</masterLabel>
+        <translation><!-- Collective Bargaining Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Required</masterLabel>
+        <translation><!-- Not Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

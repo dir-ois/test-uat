@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Phase --></label>
+    <name>Phase__c</name>
+    <picklistValues>
+        <masterLabel>Citation Appeal</masterLabel>
+        <translation><!-- Citation Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference</masterLabel>
+        <translation><!-- Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docket</masterLabel>
+        <translation><!-- Docket --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HQ</masterLabel>
+        <translation><!-- HQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Hearing</masterLabel>
+        <translation><!-- Post Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Conference</masterLabel>
+        <translation><!-- Pre-Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-hearing</masterLabel>
+        <translation><!-- Pre-hearing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

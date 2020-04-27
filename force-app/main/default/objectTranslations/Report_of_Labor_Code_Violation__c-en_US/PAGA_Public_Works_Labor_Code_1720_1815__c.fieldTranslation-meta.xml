@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA Violation  Public Works (Labor Code §§ 1720 – 1815) --></help>
+    <label><!-- Public Works (Labor Code §§ 1720 – 1815) --></label>
+    <name>PAGA_Public_Works_Labor_Code_1720_1815__c</name>
+</CustomFieldTranslation>

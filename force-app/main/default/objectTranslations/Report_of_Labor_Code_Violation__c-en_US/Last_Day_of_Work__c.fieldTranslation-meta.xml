@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Last Day of Work (if applicable) --></help>
+    <label><!-- Last Day of Work --></label>
+    <name>Last_Day_of_Work__c</name>
+</CustomFieldTranslation>

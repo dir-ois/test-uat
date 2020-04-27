@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Area_s_Impacted__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Area (s) Impacted:</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOFE</fullName>
+                <default>false</default>
+                <label>BOFE</label>
+            </value>
+            <value>
+                <fullName>Cashiering</fullName>
+                <default>false</default>
+                <label>Cashiering</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>PAGA</fullName>
+                <default>false</default>
+                <label>PAGA</label>
+            </value>
+            <value>
+                <fullName>WCA/Garment</fullName>
+                <default>false</default>
+                <label>WCA/Garment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

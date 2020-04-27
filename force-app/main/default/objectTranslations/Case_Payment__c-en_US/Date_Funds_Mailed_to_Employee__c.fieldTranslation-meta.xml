@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used for WCA payments to define when the employee was mailed the wages they were due --></help>
+    <label><!-- Date Funds Mailed to Employee --></label>
+    <name>Date_Funds_Mailed_to_Employee__c</name>
+</CustomFieldTranslation>

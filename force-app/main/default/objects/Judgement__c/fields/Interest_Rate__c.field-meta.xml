@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Rate__c</fullName>
+    <description>Interest rate of the post judgment interest. Populated when the decision date is entered.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Interest rate being charged on this judgment</inlineHelpText>
+    <label>Interest Rate</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

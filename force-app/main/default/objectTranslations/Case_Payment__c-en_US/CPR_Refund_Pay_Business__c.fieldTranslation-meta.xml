@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CPR Refund Pay Business --></label>
+    <name>CPR_Refund_Pay_Business__c</name>
+    <relationshipLabel><!-- Case Payments (CPR Refund Pay Business) --></relationshipLabel>
+</CustomFieldTranslation>

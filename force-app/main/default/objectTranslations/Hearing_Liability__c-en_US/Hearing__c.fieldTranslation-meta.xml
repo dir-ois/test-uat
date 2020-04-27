@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is a link to the hearing for this liability. --></help>
+    <label><!-- Hearing --></label>
+    <name>Hearing__c</name>
+    <relationshipLabel><!-- Hearing Liabilities --></relationshipLabel>
+</CustomFieldTranslation>

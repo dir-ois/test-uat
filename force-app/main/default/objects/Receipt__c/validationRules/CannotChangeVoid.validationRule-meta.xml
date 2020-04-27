@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CannotChangeVoid</fullName>
+    <active>true</active>
+    <description>Only a Sr. Cashier or System Admin can change the Status away from Void.</description>
+    <errorConditionFormula>ISCHANGED(Status__c) &amp;&amp;
+ISPICKVAL(PRIORVALUE(Status__c), &#39;Void&#39;) &amp;&amp;
+(!$Permission.DLSE_Sr_Cashier &amp;&amp;
+!(CONTAINS($Profile.Name, &quot;System Administrator&quot;)))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You are not authorized to change the Status away from Void.</errorMessage>
+</ValidationRule>

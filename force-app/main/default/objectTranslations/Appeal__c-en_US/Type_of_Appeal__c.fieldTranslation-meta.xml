@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Appeal --></label>
+    <name>Type_of_Appeal__c</name>
+    <picklistValues>
+        <masterLabel>Citation</masterLabel>
+        <translation><!-- Citation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Determination</masterLabel>
+        <translation><!-- Determination --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

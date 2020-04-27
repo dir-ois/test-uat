@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Postmark_Date__c</fullName>
+    <description>PAGA Postmark Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date that is postmarked on the letter from the Private Attorney requesting to pursue civil litigation against an employer under L.C. 2698.</inlineHelpText>
+    <label>PAGA Claim Postmark Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Liability</fullName>
+    <active>true</active>
+    <description>Liabilities from BOFE Cases</description>
+    <label>BOFE Liability</label>
+    <picklistValues>
+        <picklist>Citation_Type__c</picklist>
+        <values>
+            <fullName>Car Wash Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Labor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deduction Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment Records Keeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lactation Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meal Period Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minimum Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misclassification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting Time or Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest Period Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Shift Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed FLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers%E2%80%99 Comp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Imported_From__c</picklist>
+        <values>
+            <fullName>FM-TIPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modification_Type__c</picklist>
+        <values>
+            <fullName>Hearing Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer in Compromise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tolling Agreement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Refer_to_JEU__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pending Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending-JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected-JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected-Sr</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Administrative Dismissal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeal Withdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled-Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Statute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Writ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Dismissal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ Affirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ Modified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ Remanded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ Settled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Service__c</picklist>
+        <values>
+            <fullName>Certified%2FRegistered Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substitute Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

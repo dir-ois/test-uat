@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- No reporting time premium pay --></help>
+    <label><!-- No reporting time premium pay --></label>
+    <name>Violation_No_reporting_time_premium_pay__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pre-Investigation Disposition --></label>
+    <name>Assignment_Status__c</name>
+    <picklistValues>
+        <masterLabel>Accept &amp; Assign INV</masterLabel>
+        <translation><!-- Accept &amp; Assign INV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional information</masterLabel>
+        <translation><!-- Additional information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure</masterLabel>
+        <translation><!-- Admin Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Insufficient Information</masterLabel>
+        <translation><!-- Admin Closure – Insufficient Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Lack of Jurisdiction</masterLabel>
+        <translation><!-- Admin Closure – Lack of Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Lack of Jurisdiction – Atty Referral</masterLabel>
+        <translation><!-- Admin Closure – Lack of Jurisdiction – Atty Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Lack of Jurisdiction – DFEH</masterLabel>
+        <translation><!-- Admin Closure – Lack of Jurisdiction – DFEH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Lack of Jurisdiction – Other</masterLabel>
+        <translation><!-- Admin Closure – Lack of Jurisdiction – Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – No Adverse Action</masterLabel>
+        <translation><!-- Admin Closure – No Adverse Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – No Causal Link</masterLabel>
+        <translation><!-- Admin Closure – No Causal Link --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – No Protected Activity</masterLabel>
+        <translation><!-- Admin Closure – No Protected Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – No employer knowledge</masterLabel>
+        <translation><!-- Admin Closure – No employer knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Other</masterLabel>
+        <translation><!-- Admin Closure – Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Untimely</masterLabel>
+        <translation><!-- Admin Closure – Untimely --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The status of the JEU referral. The actual referral to JEU should be submitted using the &quot;Refer to JEU&quot; button at the top of the page. --></help>
+    <label><!-- Refer to JEU --></label>
+    <name>Refer_to_JEU__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation><!-- Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Approval</masterLabel>
+        <translation><!-- Pending Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending-JEU</masterLabel>
+        <translation><!-- Pending-JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred</masterLabel>
+        <translation><!-- Referred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected-JEU</masterLabel>
+        <translation><!-- Rejected-JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected-Sr</masterLabel>
+        <translation><!-- Rejected-Sr --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

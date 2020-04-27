@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Legal_Name_Not_editiable</fullName>
+    <active>true</active>
+    <description>Legal entity name are not editable after being filled in by the community users</description>
+    <errorConditionFormula>OR(ISCHANGED(Legal_Entity_Name__c) &amp;&amp; NOT(ISBLANK(PRIORVALUE(Legal_Entity_Name__c))) &amp;&amp;
+RecordType.DeveloperName = &#39;Public_Works&#39; &amp;&amp;
+$Profile.Name = &#39;Community Registrations User&#39; &amp;&amp;
+NOT(ISBLANK(VIP_Date_Time_Submitted__c)) &amp;&amp;
+Renewal__c=False,
+ISCHANGED(Legal_Entity_Name__c) &amp;&amp; NOT(ISBLANK(PRIORVALUE(Legal_Entity_Name__c))) &amp;&amp;
+RecordType.DeveloperName = &#39;Public_Works&#39; &amp;&amp;
+$Profile.Name = &#39;Community Registrations User&#39; &amp;&amp;
+Renewal__c=True)</errorConditionFormula>
+    <errorMessage>You are not permitted to change the Legal Entity Name. Please let Public works staff know if there is a need for a change.</errorMessage>
+</ValidationRule>

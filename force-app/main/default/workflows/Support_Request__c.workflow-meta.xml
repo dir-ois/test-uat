@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Alert_to_the_Submitter</fullName>
+        <description>Email Alert to the Submitter</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Support_Request_to_Submitter</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_the_CalAtlas_Business_Team</fullName>
+        <description>Email to CalAtlas Business Team</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CalAtlas_Business_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Email_to_the_CalAtlas_Business_Team_Queue</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_the_Support_Team_Group</fullName>
+        <description>Email the Support Team Group</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DIR_Salesforce_Support_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>ynguyen@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Email_to_the_Group</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_the_Support_Team_when_the_release_Item_is_Released</fullName>
+        <description>Email the Support Team when the release Item is Released</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Release_Item_Has_Been_Released</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Cashiering_SR_has_been_submitted</fullName>
+        <description>New Cashiering SR has been submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ajohnson@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>cmacias2@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mteixeira@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>schandrasekar@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Support_Request/Cashiering_Services_SR</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_user_when_Mark_as_Duplicate_is_Checked</fullName>
+        <description>Notify user when Mark as Duplicate is Checked</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Duplicate_Support_Request_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Registration_Services_Support_Request_Notification</fullName>
+        <description>SR: Registration Services Support Request Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ble@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>drosales@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mrdavis@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tken@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Support_Request/Registration_Services_SR</template>
+    </alerts>
+    <alerts>
+        <fullName>Support_Request_Assigned</fullName>
+        <description>Support Request Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Support_Request_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Support_Request_Has_Been_Accepted</fullName>
+        <description>Support Request Has Been Accepted</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Support_Request_Has_Been_Accepted</template>
+    </alerts>
+    <alerts>
+        <fullName>Support_Request_Has_Been_Closed</fullName>
+        <description>Support Request Has Been Closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/SR_Has_been_Closed</template>
+    </alerts>
+    <alerts>
+        <fullName>The_Support_Request_Has_been_Assigned_to_You</fullName>
+        <description>The Support Request Has been Assigned to You</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Support_Request_Has_Been_Assigned_To_You</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_SR_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>Confirmed</literalValue>
+        <name>Update SR Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <field>Status__c</field>
+        <literalValue>Duplicate</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Support_Request_Subject</fullName>
+        <description>This will update the Support Request subject for only Account Request record types</description>
+        <field>Subject__c</field>
+        <formula>IF(ISPICKVAL(User_Account_Request_For__c , &#39;PRODUCTION&#39;), &#39;Production Account Request&#39;, &#39;Sandbox Account Request&#39;)</formula>
+        <name>Update Support Request Subject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Remove Duplicate Support Request Status</fullName>
+        <actions>
+            <name>Update_SR_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Support_Request__c.Mark_as_Duplicate__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>SR%3A Cashiering SR Notification</fullName>
+        <actions>
+            <name>New_Cashiering_SR_has_been_submitted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Support_Request__c.Support_Request_For__c</field>
+            <operation>equals</operation>
+            <value>CASHIERING</value>
+        </criteriaItems>
+        <description>When a new SR is submitted for Registration Services, a group of users get notified</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>SR%3A Registration Services SR Notification</fullName>
+        <actions>
+            <name>Registration_Services_Support_Request_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Support_Request__c.Support_Request_For__c</field>
+            <operation>equals</operation>
+            <value>REGISTRATION</value>
+        </criteriaItems>
+        <description>When a new SR is submitted for Registration Services, a group of users get notified</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Account Request Subject</fullName>
+        <actions>
+            <name>Update_Support_Request_Subject</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Support_Request__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>User Account Request</value>
+        </criteriaItems>
+        <description>This Workflow Rule Update the Subject of the Account Request</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Duplicate Support Request</fullName>
+        <actions>
+            <name>Update_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Support_Request__c.Mark_as_Duplicate__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

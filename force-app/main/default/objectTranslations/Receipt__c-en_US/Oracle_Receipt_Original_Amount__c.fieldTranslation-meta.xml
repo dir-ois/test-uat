@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Original Receipt Amount in the legacy Oracle database. --></help>
+    <label><!-- Oracle Receipt Original Amount --></label>
+    <name>Oracle_Receipt_Original_Amount__c</name>
+</CustomFieldTranslation>

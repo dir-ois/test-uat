@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assessments_on_Case__c</fullName>
+    <description>This is a roll up summary counting all of the assessments that have been issued on this case.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a roll up summary counting all of the assessments that have been issued on this case.</inlineHelpText>
+    <label>Assessments on Case</label>
+    <summaryForeignKey>Assessments__c.Case_Management__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

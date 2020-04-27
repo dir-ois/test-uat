@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field will be hidden from end users. It will be used to store a text value of the Case Priority for easy movement to the picklist. --></help>
+    <label><!-- Hidden Priority Field --></label>
+    <name>Hidden_Priority_Field__c</name>
+</CustomFieldTranslation>

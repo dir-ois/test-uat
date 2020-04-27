@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Have you paid for it? --></label>
+    <name>Have_you_paid_for_it__c</name>
+</CustomFieldTranslation>

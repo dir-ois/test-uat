@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Allows an administrator to activate or deactivate a NAICS Code/Industry type relationship. On by default, deactivating will prevent the lookup of a NAICS code to result in the selection of an industry type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Activates this lookup</inlineHelpText>
+    <label>Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

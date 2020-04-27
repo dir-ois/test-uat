@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amounts_Due_that_Accrue_Interest__c</fullName>
+    <description>Used by the system to calculate the default amount</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amounts due that accrue interest by evaluating the case issues on the liabilities that the settling parties are settling.</inlineHelpText>
+    <label>Amounts Due that Accrue Interest</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

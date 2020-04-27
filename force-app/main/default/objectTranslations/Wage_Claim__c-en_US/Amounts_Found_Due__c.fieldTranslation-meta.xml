@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amounts Found Due --></label>
+    <name>Amounts_Found_Due__c</name>
+    <picklistValues>
+        <masterLabel>By Assigned Deputy</masterLabel>
+        <translation><!-- By Assigned Deputy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per ODA</masterLabel>
+        <translation><!-- Per ODA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

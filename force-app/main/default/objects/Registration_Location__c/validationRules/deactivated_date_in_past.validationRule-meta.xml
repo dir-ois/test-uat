@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>deactivated_date_in_past</fullName>
+    <active>true</active>
+    <description>when setting the deactivated date, it must be in the past</description>
+    <errorConditionFormula>!ISBLANK( Date_Deactivated__c )
+&amp;&amp; Date_Deactivated__c &gt; TODAY()</errorConditionFormula>
+    <errorMessage>The date a location is deactivated must be in the past</errorMessage>
+</ValidationRule>

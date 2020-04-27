@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select &quot;Yes&quot; or &quot;No&quot; to indicate if the name and address for the login account matches this owner --></help>
+    <label><!-- I am this person --></label>
+    <name>I_am_this_owner__c</name>
+</CustomFieldTranslation>

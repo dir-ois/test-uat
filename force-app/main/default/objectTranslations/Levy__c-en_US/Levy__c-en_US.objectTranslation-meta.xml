@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Levy</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Levies</value>
+    </caseValues>
+    <layouts>
+        <layout>Claim of Exemption Layout</layout>
+        <sections>
+            <label><!-- Claim of Exemption/3rd Party Claim --></label>
+            <section>Claim of Exemption/3rd Party Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Levy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Levy Release Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Levy Response Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Response Details --></label>
+            <section>Response Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other Levy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Other Levies --></label>
+            <section>Other Levies</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SB588 Levy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SB588 Levies --></label>
+            <section>SB588 Levies</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sheriffs Levy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Sheriff&apos;s Levies --></label>
+            <section>Sheriff&#39;s Levies</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Claim of Exemption/Third-Party Claim --></label>
+        <name>Claim_of_Exemption_Third_Party_Claim</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Levy Release --></label>
+        <name>Levy_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Levy Response --></label>
+        <name>Levy_Response</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other Levy --></label>
+        <name>Other_Levy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SB588 Levy --></label>
+        <name>SB588_Levy</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sheriff&apos;s Levy --></label>
+        <name>Sheriff_s_Levy</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Claim of Exemption/Third Party Claim is required when Claim of Exemption Filed field OR Third Party Claim Filed field is TRUE --></errorMessage>
+        <name>Claim_of_Exemption_Third_Party_Claim</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Levy_Event --></label>
+        <name>New_Levy_Event</name>
+    </webLinks>
+</CustomObjectTranslation>

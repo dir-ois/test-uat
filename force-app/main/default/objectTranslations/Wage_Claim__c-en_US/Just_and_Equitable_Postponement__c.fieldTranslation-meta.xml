@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Just and Equitable Postponement --></label>
+    <name>Just_and_Equitable_Postponement__c</name>
+    <picklistValues>
+        <masterLabel>Commissions not due at the time the claim was filed</masterLabel>
+        <translation><!-- Commissions not due at the time the claim was filed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communication Difficulty &amp; Record Review</masterLabel>
+        <translation><!-- Communication Difficulty &amp; Record Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuance request</masterLabel>
+        <translation><!-- Continuance request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correction(s) to Complaint needed</masterLabel>
+        <translation><!-- Correction(s) to Complaint needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Criminal charges pending</masterLabel>
+        <translation><!-- Criminal charges pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Def. delay response; Plaintiff perfecting Complnt.</masterLabel>
+        <translation><!-- Def. delay response; Plaintiff perfecting Complnt. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant Failure to Respond</masterLabel>
+        <translation><!-- Defendant Failure to Respond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant delayed provision of records</masterLabel>
+        <translation><!-- Defendant delayed provision of records --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant resides outside of the country</masterLabel>
+        <translation><!-- Defendant resides outside of the country --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant&#39;s counsel indicates a potential filing of bankruptcy</masterLabel>
+        <translation><!-- Defendant&apos;s counsel indicates a potential filing of bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delay due to Plaintiff perfecting Complaint</masterLabel>
+        <translation><!-- Delay due to Plaintiff perfecting Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delay for resolution of secondary civil case</masterLabel>
+        <translation><!-- Delay for resolution of secondary civil case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delay in return of other correspondence</masterLabel>
+        <translation><!-- Delay in return of other correspondence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delay in the return of the complaint</masterLabel>
+        <translation><!-- Delay in the return of the complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due to Lengthy Audit</masterLabel>
+        <translation><!-- Due to Lengthy Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illness of one of the parties</masterLabel>
+        <translation><!-- Illness of one of the parties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inability to determine legal entity</masterLabel>
+        <translation><!-- Inability to determine legal entity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incomplete evidence/exhibits</masterLabel>
+        <translation><!-- Incomplete evidence/exhibits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect party named</masterLabel>
+        <translation><!-- Incorrect party named --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal referral response time</masterLabel>
+        <translation><!-- Legal referral response time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lengthy Detailed Audit &amp; Parties Attempting Settlement</masterLabel>
+        <translation><!-- Lengthy Detailed Audit &amp; Parties Attempting Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of state employer</masterLabel>
+        <translation><!-- Out of state employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parties attempting settlement</masterLabel>
+        <translation><!-- Parties attempting settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff amended complaint</masterLabel>
+        <translation><!-- Plaintiff amended complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff out of the country</masterLabel>
+        <translation><!-- Plaintiff out of the country --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff resides out of the state</masterLabel>
+        <translation><!-- Plaintiff resides out of the state --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Related litigation</masterLabel>
+        <translation><!-- Related litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Translation of documents needed</masterLabel>
+        <translation><!-- Translation of documents needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to obtain service</masterLabel>
+        <translation><!-- Unable to obtain service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unreported address change</masterLabel>
+        <translation><!-- Unreported address change --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

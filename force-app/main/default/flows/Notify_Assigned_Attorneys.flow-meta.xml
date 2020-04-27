@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Emails the collection of attorneys that a referral has been received.</description>
+        <name>SendEmailtoAttorneys</name>
+        <label>SendEmailtoAttorneys</label>
+        <locationX>613</locationX>
+        <locationY>389</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>AttorneyReminderEmailTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Referral Awaiting Response</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>AttorneyEmailcoll</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Created record link to the referral record to send in the email</description>
+        <name>Create_record_link</name>
+        <label>Create record link</label>
+        <locationX>430</locationX>
+        <locationY>192</locationY>
+        <assignmentItems>
+            <assignToReference>RecordLink</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>BaseURL</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecordLink</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ReferralID</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_Through_assigned_attorneys</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SetAttorneyEmailcoll</name>
+        <label>SetAttorneyEmailcoll</label>
+        <locationX>839</locationX>
+        <locationY>182</locationY>
+        <assignmentItems>
+            <assignToReference>AttorneyEmailcoll</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Employees.Assigned_Employee_Email_Address__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_Through_assigned_attorneys</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Test_Inputs</name>
+        <label>Test Inputs</label>
+        <locationX>129</locationX>
+        <locationY>68</locationY>
+        <assignmentItems>
+            <assignToReference>ReferralID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1tm0000003JnF3</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Referred_to_Attorneys</targetReference>
+        </connector>
+    </assignments>
+    <description>Sends notification emails to all attorneys assigned on to a referral.</description>
+    <interviewLabel>Reminder for Assigned Attorneys {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reminder for Assigned Attorneys</label>
+    <loops>
+        <name>Iterate_Through_assigned_attorneys</name>
+        <label>Iterate Through assigned attorneys</label>
+        <locationX>613</locationX>
+        <locationY>183</locationY>
+        <assignNextValueToReference>Employees</assignNextValueToReference>
+        <collectionReference>ReferredAttorneys</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>SetAttorneyEmailcoll</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>SendEmailtoAttorneys</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the base URL of the org from the custom setting</description>
+        <name>Get_Base_URL</name>
+        <label>Get Base URL</label>
+        <locationX>276</locationX>
+        <locationY>192</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_record_link</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>BaseURL</stringValue>
+            </value>
+        </filters>
+        <object>Key_Value_Store__c</object>
+        <outputAssignments>
+            <assignToReference>BaseURL</assignToReference>
+            <field>Value__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the attorneys to whom the referral has been assigned</description>
+        <name>Get_Referred_to_Attorneys</name>
+        <label>Get Referred to Attorneys</label>
+        <locationX>129</locationX>
+        <locationY>187</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Base_URL</targetReference>
+        </connector>
+        <filters>
+            <field>Referral__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ReferralID</elementReference>
+            </value>
+        </filters>
+        <object>Referral_Assignment__c</object>
+        <outputReference>ReferredAttorneys</outputReference>
+        <queriedFields>Assigned_Employee__c</queriedFields>
+    </recordLookups>
+    <startElementReference>Get_Referred_to_Attorneys</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <description>Email template to remind attorney that the time has passed for them to take action on a referral</description>
+        <name>AttorneyReminderEmailTemplate</name>
+        <text>A BOFE Case has been referred to you for a legal consultation, but action has not been taken on the referral in the required number of days.
+
+Please view the referral below:
+{!RecordLink}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Template sent to the referred to attorney to notify that the case has been referred</description>
+        <name>CaseReferralEmailTemplate</name>
+        <text>A BOFE Case has been referred to you for a legal consultation. Please view the referral below:
+{!RecordLink}</text>
+    </textTemplates>
+    <variables>
+        <description>Email address looked up from the attorney&#39;s user record.</description>
+        <name>AttorneyEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Collection of attorney email addresses</description>
+        <name>AttorneyEmailcoll</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the Base URL of the org so that a link can be generated</description>
+        <name>BaseURL</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Holds the employee records that need to have the email address looked up</description>
+        <name>employeeCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <name>employeeList</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DIR_Employee__c</objectType>
+    </variables>
+    <variables>
+        <name>Employees</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Referral_Assignment__c</objectType>
+    </variables>
+    <variables>
+        <description>The record link to the referral record.</description>
+        <name>RecordLink</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Input value for referral ID</description>
+        <name>ReferralID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Collection of referred attorneys</description>
+        <name>ReferredAttorneys</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Referral_Assignment__c</objectType>
+    </variables>
+</Flow>

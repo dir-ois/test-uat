@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Modified penalty amount for the liability.
+Previous label: Modified To Penalties Assessment Amount --></help>
+    <label><!-- Modified To Penalties Assessment Amount --></label>
+    <name>Penalties_Assessment_Amount__c</name>
+</CustomFieldTranslation>

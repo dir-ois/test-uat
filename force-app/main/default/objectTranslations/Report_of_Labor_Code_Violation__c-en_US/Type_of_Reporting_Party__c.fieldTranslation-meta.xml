@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select what role this Reporting Party plays in this RLCV. --></help>
+    <label><!-- Type of Reporting Party --></label>
+    <name>Type_of_Reporting_Party__c</name>
+    <picklistValues>
+        <masterLabel>Advocate</masterLabel>
+        <translation><!-- Advocate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness</masterLabel>
+        <translation><!-- Witness --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

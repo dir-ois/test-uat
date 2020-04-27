@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_In_Full_Reason_Selected</fullName>
+    <active>true</active>
+    <description>Paid in full box is selected and requires Citation paid, paid date, check number.</description>
+    <errorConditionFormula>AND( Not_Processed_Paid_In_Full__c = true,(OR(ISBLANK( Not_Processed_Paid_In_Full_Date__c ), ISBLANK(  Instrument_Number__c ))))</errorConditionFormula>
+    <errorDisplayField>Not_Processed_Paid_In_Full__c</errorDisplayField>
+    <errorMessage>You must fill out the Paid Date, and Check Number to mark this field.</errorMessage>
+</ValidationRule>

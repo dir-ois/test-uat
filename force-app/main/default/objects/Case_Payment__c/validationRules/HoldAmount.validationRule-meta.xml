@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HoldAmount</fullName>
+    <active>true</active>
+    <description>Hold Review Date and Hold Explanation are required when a Hold amount is entered.</description>
+    <errorConditionFormula>AND( 
+Hold_Amount__c &gt; 0, 
+OR( 
+ISBLANK( Hold_Explanation__c ), 
+ISBLANK(Hold_Review_Date__c ) 
+) 
+)</errorConditionFormula>
+    <errorMessage>Hold Review Date and Hold Explanation are required when a Hold amount is entered</errorMessage>
+</ValidationRule>

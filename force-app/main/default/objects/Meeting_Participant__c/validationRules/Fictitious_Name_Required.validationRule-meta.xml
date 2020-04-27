@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fictitious_Name_Required</fullName>
+    <active>true</active>
+    <description>If a person is being served under a fictitious name, users must enter a value for the fictitious name before saving the record.</description>
+    <errorConditionFormula>AND( ISPICKVAL( Hearing_Output_Type__c , &quot;Operating Under Fictitious Name&quot; ) , Operating_Under_Fictitious_Name__c = &quot;&quot; )</errorConditionFormula>
+    <errorMessage>If the entity being served is operating under a fictitious name, you must enter a value for the fictitious name prior to saving the record.</errorMessage>
+</ValidationRule>

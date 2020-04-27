@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Escrow_Pay_Off_Demand__c</fullName>
+    <description>Counts the number Escrow/Pay Off Demand for Release of Lien Record Types</description>
+    <externalId>false</externalId>
+    <label>Number of Escrow / Pay-Off Demand</label>
+    <summaryFilterItems>
+        <field>Escrow_Pay_Off_Demand__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Release of Lien</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Escrow_Pay_Off_Demand__c.Lien__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

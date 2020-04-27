@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Bank account number, VIN or license plate number, assessor&apos;s parcel number, etc. --></help>
+    <label><!-- Asset Reference Number --></label>
+    <name>Asset_Reference_Number__c</name>
+</CustomFieldTranslation>

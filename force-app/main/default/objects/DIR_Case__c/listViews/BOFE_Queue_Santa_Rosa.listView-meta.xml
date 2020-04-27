@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Queue_Santa_Rosa</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Intake_Date__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>BOFE Queue - Santa Rosa</label>
+    <queue>Santa_Rosa</queue>
+    <sharedTo>
+        <roleAndSubordinates>BOFE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

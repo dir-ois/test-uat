@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rejection Defect</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rejection Defects</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Registration Form Defects - DIR View --></label>
+        <name>Registration_Form_Defects_DIR_View</name>
+    </fieldSets>
+    <layouts>
+        <layout>Rejection Defect Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- defects related to agents --></description>
+        <label><!-- Agent Authorization --></label>
+        <name>Agent_Authorization</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Agreements --></label>
+        <name>Agreements</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Address Information --></label>
+        <name>Company_Address_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Contact --></label>
+        <name>Company_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Finances --></label>
+        <name>Company_Finances</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Information --></label>
+        <name>Company_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Locations --></label>
+        <name>Company_Locations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- defects related to managers --></description>
+        <label><!-- Company Managers --></label>
+        <name>Company_Managers</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- defects created related to owners --></description>
+        <label><!-- Company Owners --></label>
+        <name>Company_Owners</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company People --></label>
+        <name>Company_People</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Tax Information --></label>
+        <name>Company_Tax_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Company Type --></label>
+        <name>Company_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Disclaimer --></label>
+        <name>Disclaimer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Education --></label>
+        <name>Education</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fees --></label>
+        <name>Fees</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Follow up Questions --></label>
+        <name>Follow_up_Questions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Live Scan --></label>
+        <name>Live_Scan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Location Documentation --></label>
+        <name>Location_Documentation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Medical Information --></label>
+        <name>Medical_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Minor Information --></label>
+        <name>Minor_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parent/Guardian Information --></label>
+        <name>Parent_Guardian_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Permit Applicant --></label>
+        <name>Permit_Applicant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Qualifying Question --></label>
+        <name>Qualifying_Question</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Questionnaire --></label>
+        <name>Questionnaire</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration Duration --></label>
+        <name>Registration_Duration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- School Information --></label>
+        <name>School_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Test --></label>
+        <name>Test</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Upload Documentation --></label>
+        <name>Upload_Documentation</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For WCI Documentation section defects --></description>
+        <label><!-- WCI Documentation --></label>
+        <name>WCI_Documentation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Workers Comp --></label>
+        <name>Workers_Comp</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Workers Compensation Insurance --></label>
+        <name>Workers_Compensation_Insurance</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Correction_Instructions__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If Applicant answers in a way that will disqualify them, enter instructions here on how they should proceed or correct their response.</inlineHelpText>
+    <label>Correction Instructions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

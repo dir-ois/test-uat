@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-Section --></label>
+    <name>Sub_Section__c</name>
+    <picklistValues>
+        <masterLabel>Bonds</masterLabel>
+        <translation><!-- Bonds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBA</masterLabel>
+        <translation><!-- CBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Company Owners</masterLabel>
+        <translation><!-- Company Owners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporation and LLC Questions</masterLabel>
+        <translation><!-- Corporation and LLC Questions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DBAs</masterLabel>
+        <translation><!-- DBAs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documents</masterLabel>
+        <translation><!-- Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exam/Course</masterLabel>
+        <translation><!-- Exam/Course --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fee Summary</masterLabel>
+        <translation><!-- Fee Summary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locations</masterLabel>
+        <translation><!-- Locations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management</masterLabel>
+        <translation><!-- Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Questions</masterLabel>
+        <translation><!-- Questions --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

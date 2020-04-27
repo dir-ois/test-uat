@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Court_Case_Number__c</fullName>
+    <description>PAGA Court Case Number</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the court case number of the Private Attorney&#39;s civil case under the PAGA L.C. 2698.</inlineHelpText>
+    <label>PAGA Court Case Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

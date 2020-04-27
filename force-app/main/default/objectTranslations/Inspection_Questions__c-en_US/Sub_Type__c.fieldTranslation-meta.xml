@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-Type --></label>
+    <name>Sub_Type__c</name>
+    <picklistValues>
+        <masterLabel>BOFE General</masterLabel>
+        <translation><!-- BOFE General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Wash</masterLabel>
+        <translation><!-- Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Farm Labor</masterLabel>
+        <translation><!-- Farm Labor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment</masterLabel>
+        <translation><!-- Garment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

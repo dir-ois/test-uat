@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Hidden Field to hold Amendment information --></help>
+    <label><!-- Amendent Placeholder for PAGA --></label>
+    <name>Amendent_Placeholder_for_PAGA__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Role Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>BOFE Auditor</fullName>
+                <default>false</default>
+                <label>BOFE Auditor</label>
+            </value>
+            <value>
+                <fullName>BOFE Auditor/Clerk</fullName>
+                <default>false</default>
+                <label>BOFE Auditor/Clerk</label>
+            </value>
+            <value>
+                <fullName>BOFE Clerk</fullName>
+                <default>false</default>
+                <label>BOFE Clerk</label>
+            </value>
+            <value>
+                <fullName>BOFE Dep</fullName>
+                <default>false</default>
+                <label>BOFE Dep</label>
+            </value>
+            <value>
+                <fullName>BOFE DLC II</fullName>
+                <default>false</default>
+                <label>BOFE DLC II</label>
+            </value>
+            <value>
+                <fullName>BOFE IRR</fullName>
+                <default>false</default>
+                <label>BOFE IRR</label>
+            </value>
+            <value>
+                <fullName>BOFE MST</fullName>
+                <default>false</default>
+                <label>BOFE MST</label>
+            </value>
+            <value>
+                <fullName>BOFE RM</fullName>
+                <default>false</default>
+                <label>BOFE RM</label>
+            </value>
+            <value>
+                <fullName>BOFE Sr Dep</fullName>
+                <default>false</default>
+                <label>BOFE Sr Dep</label>
+            </value>
+            <value>
+                <fullName>Cashiering</fullName>
+                <default>false</default>
+                <label>Cashiering</label>
+            </value>
+            <value>
+                <fullName>Cashiering Disbursing</fullName>
+                <default>false</default>
+                <label>Cashiering Disbursing</label>
+            </value>
+            <value>
+                <fullName>Cashiering Receipting</fullName>
+                <default>false</default>
+                <label>Cashiering Receipting</label>
+            </value>
+            <value>
+                <fullName>Cashiering Sr</fullName>
+                <default>false</default>
+                <label>Cashiering Sr</label>
+            </value>
+            <value>
+                <fullName>CIU</fullName>
+                <default>false</default>
+                <label>CIU</label>
+            </value>
+            <value>
+                <fullName>Counter</fullName>
+                <default>false</default>
+                <label>Counter</label>
+            </value>
+            <value>
+                <fullName>HQ</fullName>
+                <default>false</default>
+                <label>HQ</label>
+            </value>
+            <value>
+                <fullName>HR BOFE Restricted User</fullName>
+                <default>false</default>
+                <label>HR BOFE Restricted User</label>
+            </value>
+            <value>
+                <fullName>HR Certification Unit</fullName>
+                <default>false</default>
+                <label>HR Certification Unit</label>
+            </value>
+            <value>
+                <fullName>HR Division User</fullName>
+                <default>false</default>
+                <label>HR Division User</label>
+            </value>
+            <value>
+                <fullName>HR Personnel Analyst</fullName>
+                <default>false</default>
+                <label>HR Personnel Analyst</label>
+            </value>
+            <value>
+                <fullName>HR Personnel Specialist</fullName>
+                <default>false</default>
+                <label>HR Personnel Specialist</label>
+            </value>
+            <value>
+                <fullName>HR Position Control Administrator</fullName>
+                <default>false</default>
+                <label>HR Position Control Administrator</label>
+            </value>
+            <value>
+                <fullName>HR View Only</fullName>
+                <default>false</default>
+                <label>HR View Only</label>
+            </value>
+            <value>
+                <fullName>JEU</fullName>
+                <default>false</default>
+                <label>JEU</label>
+            </value>
+            <value>
+                <fullName>JEU Disbursing</fullName>
+                <default>false</default>
+                <label>JEU Disbursing</label>
+            </value>
+            <value>
+                <fullName>JEU DLC II</fullName>
+                <default>false</default>
+                <label>JEU DLC II</label>
+            </value>
+            <value>
+                <fullName>JEU Legal</fullName>
+                <default>false</default>
+                <label>JEU Legal</label>
+            </value>
+            <value>
+                <fullName>JEU Legal Support</fullName>
+                <default>false</default>
+                <label>JEU Legal Support</label>
+            </value>
+            <value>
+                <fullName>JEU Receipting</fullName>
+                <default>false</default>
+                <label>JEU Receipting</label>
+            </value>
+            <value>
+                <fullName>L&amp;R</fullName>
+                <default>false</default>
+                <label>L&amp;R</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Legal Support</fullName>
+                <default>false</default>
+                <label>Legal Support</label>
+            </value>
+            <value>
+                <fullName>PAGA Atty</fullName>
+                <default>false</default>
+                <label>PAGA Atty</label>
+            </value>
+            <value>
+                <fullName>PAGA Unit</fullName>
+                <default>false</default>
+                <label>PAGA Unit</label>
+            </value>
+            <value>
+                <fullName>PAGA User (Div Screeners)</fullName>
+                <default>false</default>
+                <label>PAGA User (Div Screeners)</label>
+            </value>
+            <value>
+                <fullName>Public Works</fullName>
+                <default>false</default>
+                <label>Public Works</label>
+            </value>
+            <value>
+                <fullName>RCI Clerk</fullName>
+                <default>false</default>
+                <label>RCI Clerk</label>
+            </value>
+            <value>
+                <fullName>RCI Dep</fullName>
+                <default>false</default>
+                <label>RCI Dep</label>
+            </value>
+            <value>
+                <fullName>RCI IRR</fullName>
+                <default>false</default>
+                <label>RCI IRR</label>
+            </value>
+            <value>
+                <fullName>RCI Manager</fullName>
+                <default>false</default>
+                <label>RCI Manager</label>
+            </value>
+            <value>
+                <fullName>RCI MST</fullName>
+                <default>false</default>
+                <label>RCI MST</label>
+            </value>
+            <value>
+                <fullName>RCI Sr Dep</fullName>
+                <default>false</default>
+                <label>RCI Sr Dep</label>
+            </value>
+            <value>
+                <fullName>Systems Administrator</fullName>
+                <default>false</default>
+                <label>Systems Administrator</label>
+            </value>
+            <value>
+                <fullName>WCA Cashiering Disbursing</fullName>
+                <default>false</default>
+                <label>WCA Cashiering Disbursing</label>
+            </value>
+            <value>
+                <fullName>WCA Cashiering Receipting</fullName>
+                <default>false</default>
+                <label>WCA Cashiering Receipting</label>
+            </value>
+            <value>
+                <fullName>WCA Clerk</fullName>
+                <default>false</default>
+                <label>WCA Clerk</label>
+            </value>
+            <value>
+                <fullName>WCA Dep</fullName>
+                <default>false</default>
+                <label>WCA Dep</label>
+            </value>
+            <value>
+                <fullName>WCA DLC II (non-HO)</fullName>
+                <default>false</default>
+                <label>WCA DLC II (non-HO)</label>
+            </value>
+            <value>
+                <fullName>WCA HO</fullName>
+                <default>false</default>
+                <label>WCA HO</label>
+            </value>
+            <value>
+                <fullName>WCA IRR</fullName>
+                <default>false</default>
+                <label>WCA IRR</label>
+            </value>
+            <value>
+                <fullName>WCA MST</fullName>
+                <default>false</default>
+                <label>WCA MST</label>
+            </value>
+            <value>
+                <fullName>WCA RM</fullName>
+                <default>false</default>
+                <label>WCA RM</label>
+            </value>
+            <value>
+                <fullName>WCA Sr Dep</fullName>
+                <default>false</default>
+                <label>WCA Sr Dep</label>
+            </value>
+            <value>
+                <fullName>Registration Services</fullName>
+                <default>false</default>
+                <label>Registration Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

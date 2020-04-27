@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date Where the PAGA Investigation must be completed. --></help>
+    <label><!-- Deadline to Cite or Sue --></label>
+    <name>PAGA_Investigation_Deadline_Date__c</name>
+</CustomFieldTranslation>

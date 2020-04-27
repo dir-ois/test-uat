@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roll_Up_EEO_Laws_and_Discr_Prevt_Suplmt__c</fullName>
+    <description>Rollup EEO Laws and Discrimination Prevention Supervisor Supplement. This field is used to calculate training due date.</description>
+    <externalId>false</externalId>
+    <label>Roll Up EEO Laws and Discr Prevt Suplmt</label>
+    <summarizedField>HR_Mandatory_Training_Tracking__c.Due_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>HR_Mandatory_Training_Tracking__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>EEO Laws and Discrimination Prevention Supervisor Supplement</value>
+    </summaryFilterItems>
+    <summaryForeignKey>HR_Mandatory_Training_Tracking__c.Appointment__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

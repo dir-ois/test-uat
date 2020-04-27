@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If left blank, CR_ANALYST will default from customer&apos;s Bill To Options.
+
+Default=Blank --></help>
+    <label><!-- Cr_Analyst --></label>
+    <name>Cr_Analyst__c</name>
+</CustomFieldTranslation>

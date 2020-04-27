@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Minimum Wage Order 2001 not posted --></help>
+    <label><!-- Current Minimum Wage Order not posted --></label>
+    <name>Violation_Minimum_Wage_Order_2001__c</name>
+</CustomFieldTranslation>

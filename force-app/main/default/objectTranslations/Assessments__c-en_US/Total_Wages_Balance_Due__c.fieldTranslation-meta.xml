@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total_Wages_Assessed__c - Total_Wages_Paid__c --></help>
+    <label><!-- Total Wages Balance Due --></label>
+    <name>Total_Wages_Balance_Due__c</name>
+</CustomFieldTranslation>

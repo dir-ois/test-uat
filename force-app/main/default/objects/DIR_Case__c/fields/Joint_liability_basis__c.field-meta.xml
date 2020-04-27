@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joint_liability_basis__c</fullName>
+    <description>Field set by the deputy for reporting purposes. Does not drive any functionality. Informational purposes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>LC 238.5: individual or Bus. entity in janitorial, security guard, valet parking, landscaping, gardening, or long-term care industries
+LC 558.1:  employer or owner, director, officer, or managing agt of the employer
+LC 2810.3: labor cntr or client ER</inlineHelpText>
+    <label>Joint Liability Basis</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Joint liability LC 238.5</fullName>
+                <default>false</default>
+                <label>Joint liability LC 238.5</label>
+            </value>
+            <value>
+                <fullName>Joint Employer LC 558.1</fullName>
+                <default>false</default>
+                <label>Joint Employer LC 558.1</label>
+            </value>
+            <value>
+                <fullName>Joint Employer LC 2810.3</fullName>
+                <default>false</default>
+                <label>Joint Employer LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>LC 238.5 plus 558.1</fullName>
+                <default>false</default>
+                <label>LC 238.5 plus 558.1</label>
+            </value>
+            <value>
+                <fullName>LC 238.5 plus LC 2810.3</fullName>
+                <default>false</default>
+                <label>LC 238.5 plus LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>LC 558.1 plus LC 2810.3</fullName>
+                <default>false</default>
+                <label>LC 558.1 plus LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>LC 2677 (Garment)</fullName>
+                <default>false</default>
+                <label>LC 2677 (Garment)</label>
+            </value>
+            <value>
+                <fullName>LC 558.1 plus LC 2677</fullName>
+                <default>false</default>
+                <label>LC 558.1 plus LC 2677</label>
+            </value>
+            <value>
+                <fullName>LC 2677</fullName>
+                <default>false</default>
+                <label>LC 2677</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- County is used to prepare official documents --></help>
+    <label><!-- County --></label>
+    <name>County__c</name>
+    <picklistValues>
+        <masterLabel>Alameda</masterLabel>
+        <translation><!-- Alameda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alpine</masterLabel>
+        <translation><!-- Alpine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amador</masterLabel>
+        <translation><!-- Amador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Butte</masterLabel>
+        <translation><!-- Butte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calaveras</masterLabel>
+        <translation><!-- Calaveras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colusa</masterLabel>
+        <translation><!-- Colusa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contra</masterLabel>
+        <translation><!-- Contra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Del Norte</masterLabel>
+        <translation><!-- Del Norte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Dorado</masterLabel>
+        <translation><!-- El Dorado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno</masterLabel>
+        <translation><!-- Fresno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glenn</masterLabel>
+        <translation><!-- Glenn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Humboldt</masterLabel>
+        <translation><!-- Humboldt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imperial</masterLabel>
+        <translation><!-- Imperial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inyo</masterLabel>
+        <translation><!-- Inyo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kern</masterLabel>
+        <translation><!-- Kern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kings</masterLabel>
+        <translation><!-- Kings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake</masterLabel>
+        <translation><!-- Lake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lassen</masterLabel>
+        <translation><!-- Lassen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles</masterLabel>
+        <translation><!-- Los Angeles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madera</masterLabel>
+        <translation><!-- Madera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marin</masterLabel>
+        <translation><!-- Marin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mariposa</masterLabel>
+        <translation><!-- Mariposa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mendocino</masterLabel>
+        <translation><!-- Mendocino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merced</masterLabel>
+        <translation><!-- Merced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modoc</masterLabel>
+        <translation><!-- Modoc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mono</masterLabel>
+        <translation><!-- Mono --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monterey</masterLabel>
+        <translation><!-- Monterey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Napa</masterLabel>
+        <translation><!-- Napa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nevada</masterLabel>
+        <translation><!-- Nevada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange</masterLabel>
+        <translation><!-- Orange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Placer</masterLabel>
+        <translation><!-- Placer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plumas</masterLabel>
+        <translation><!-- Plumas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside</masterLabel>
+        <translation><!-- Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento</masterLabel>
+        <translation><!-- Sacramento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Benito</masterLabel>
+        <translation><!-- San Benito --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino</masterLabel>
+        <translation><!-- San Bernardino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego</masterLabel>
+        <translation><!-- San Diego --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco</masterLabel>
+        <translation><!-- San Francisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Joaquin</masterLabel>
+        <translation><!-- San Joaquin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Luis Obispo</masterLabel>
+        <translation><!-- San Luis Obispo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Mateo</masterLabel>
+        <translation><!-- San Mateo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara</masterLabel>
+        <translation><!-- Santa Barbara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Clara</masterLabel>
+        <translation><!-- Santa Clara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Cruz</masterLabel>
+        <translation><!-- Santa Cruz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shasta</masterLabel>
+        <translation><!-- Shasta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra</masterLabel>
+        <translation><!-- Sierra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siskiyou</masterLabel>
+        <translation><!-- Siskiyou --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solano</masterLabel>
+        <translation><!-- Solano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonoma</masterLabel>
+        <translation><!-- Sonoma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stanislaus</masterLabel>
+        <translation><!-- Stanislaus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sutter</masterLabel>
+        <translation><!-- Sutter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tehama</masterLabel>
+        <translation><!-- Tehama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trinity</masterLabel>
+        <translation><!-- Trinity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tulare</masterLabel>
+        <translation><!-- Tulare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tuolumne</masterLabel>
+        <translation><!-- Tuolumne --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventura</masterLabel>
+        <translation><!-- Ventura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yolo</masterLabel>
+        <translation><!-- Yolo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yuba</masterLabel>
+        <translation><!-- Yuba --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

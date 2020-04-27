@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VIPGPorJVJointVenture__c</fullName>
+    <description>Used in the PW Registration Form Tool.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Joint_Venture_Company_Type__c, &quot;Joint Venture&quot;),true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>VIP GP or JV Joint Venture</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

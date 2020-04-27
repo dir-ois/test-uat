@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Plan Type --></label>
+    <name>Payment_Plan_Type__c</name>
+    <picklistValues>
+        <masterLabel>Combined</masterLabel>
+        <translation><!-- Combined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalty</masterLabel>
+        <translation><!-- Penalty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wages</masterLabel>
+        <translation><!-- Wages --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

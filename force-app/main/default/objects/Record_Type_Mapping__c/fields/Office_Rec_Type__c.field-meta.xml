@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office_Rec_Type__c</fullName>
+    <description>Record type of the office to which the case should be assigned. Used in the Office zip code mapping.</description>
+    <externalId>false</externalId>
+    <label>Office Rec Type</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

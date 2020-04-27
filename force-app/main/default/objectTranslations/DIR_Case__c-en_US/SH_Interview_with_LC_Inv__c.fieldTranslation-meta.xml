@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SH Interview with LC Inv --></label>
+    <name>SH_Interview_with_LC_Inv__c</name>
+</CustomFieldTranslation>

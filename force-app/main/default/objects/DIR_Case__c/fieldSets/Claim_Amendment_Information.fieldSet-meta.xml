@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Amendment_Information</fullName>
+    <description>Section 7 on PAGACaseDetails (public page)</description>
+    <displayedFields>
+        <field>PAGA_Amendment_Information__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>7. Claim Amendment Information</label>
+</FieldSet>

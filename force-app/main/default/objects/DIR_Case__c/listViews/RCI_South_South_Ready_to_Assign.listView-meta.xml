@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_South_South_Ready_to_Assign</fullName>
+    <columns>File_Date_Time__c</columns>
+    <columns>NAME</columns>
+    <columns>Language2__c</columns>
+    <columns>Work_Location__c</columns>
+    <columns>Claimant__c</columns>
+    <columns>Employer__c</columns>
+    <columns>SH_OSHA__c</columns>
+    <columns>SH_Workplace_Injury__c</columns>
+    <columns>SH_Immigration_Protection__c</columns>
+    <columns>SH_BOFE_Claim__c</columns>
+    <columns>SH_Wage_Claim__c</columns>
+    <columns>SH_Equal_Pay__c</columns>
+    <columns>SH_Paid_Sick_Leave__c</columns>
+    <columns>SH_Domestic_Violence__c</columns>
+    <columns>SH_Healthy_and_Safety__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Ready to Assign</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.RCI</value>
+    </filters>
+    <filters>
+        <field>County__c</field>
+        <operation>equals</operation>
+        <value>Imperial,Orange,Riverside,San Diego</value>
+    </filters>
+    <filters>
+        <field>Case_Type__c</field>
+        <operation>notEqual</operation>
+        <value>OSHA</value>
+    </filters>
+    <label>RCI South South - Ready to Assign</label>
+</ListView>

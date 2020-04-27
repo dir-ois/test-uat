@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not paid for all hours worked, including unpaid travel time and try-out time --></help>
+    <label><!-- Not paid for all hours worked --></label>
+    <name>Violation_Not_paid_for_all_hours_worked__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Payment Plan First Payment Due --></help>
+    <label><!-- Date First Payment Due --></label>
+    <name>Date_First_Payment_Due__c</name>
+</CustomFieldTranslation>

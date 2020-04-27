@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Penalty_I_Applied</fullName>
+    <description>PW Registration Form</description>
+    <displayedFields>
+        <field>PenaltyIFee__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>PW Penalty I Applied</label>
+</FieldSet>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Action__c</fullName>
+    <defaultValue>&#39;L&#39;</defaultValue>
+    <description>Posting Action for the pending group.
+
+Indicates if the loaded pending group will be ready to post by AR Update</description>
+    <externalId>false</externalId>
+    <inlineHelpText>L =  Batch Standard
+A =  Do Not Post</inlineHelpText>
+    <label>Post_Action</label>
+    <length>2</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCI_Expiration_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Date format: mm/dd/yyyy or select the downward arrow to choose a date from the calendar view.</inlineHelpText>
+    <label>Workers&#39; Compensation Expiration Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

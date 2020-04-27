@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Incumbent_Name__c</fullName>
+    <description>This field is hidden from any page layout. See Help Text</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Position__r.Status__c) == &quot;Vacant&quot; &amp;&amp; (TEXT(Position__r.Separation_Date__c))== TEXT(End_Date__c) , Employee_Contact__r.FirstName + &quot; &quot; + Employee_Contact__r.LastName, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is hidden from page layout and is for HR vacancy report. This field checks whether a position status is &#39;vacant&#39; AND the EndDate is of the latest appointment. If so, it retrieves the name of the last incumbent.</inlineHelpText>
+    <label>Last Incumbent Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

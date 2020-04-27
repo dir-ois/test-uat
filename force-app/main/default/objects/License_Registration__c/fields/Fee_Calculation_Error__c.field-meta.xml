@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee_Calculation_Error__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag set by fee calculation method when a creating a fee causes an error and can&#39;t be created.</description>
+    <externalId>false</externalId>
+    <label>Fee Calculation Error</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

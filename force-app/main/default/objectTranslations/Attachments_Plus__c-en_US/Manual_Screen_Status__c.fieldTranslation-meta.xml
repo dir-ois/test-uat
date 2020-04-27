@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Screen status for &apos;subsequentDocuments&apos; on PAGA Case --></help>
+    <label><!-- Manual Screen Status --></label>
+    <name>Manual_Screen_Status__c</name>
+    <picklistValues>
+        <masterLabel>Not Screened</masterLabel>
+        <translation><!-- Not Screened --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screened</masterLabel>
+        <translation><!-- Screened --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

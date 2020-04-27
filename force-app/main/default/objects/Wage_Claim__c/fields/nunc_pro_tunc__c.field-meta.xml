@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nunc_pro_tunc__c</fullName>
+    <description>Listed in FMP as: nunc pro tunc</description>
+    <externalId>false</externalId>
+    <label>nunc pro tunc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nunc Pro Tunc</fullName>
+                <default>false</default>
+                <label>Nunc Pro Tunc</label>
+            </value>
+            <value>
+                <fullName>Amended</fullName>
+                <default>false</default>
+                <label>Amended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

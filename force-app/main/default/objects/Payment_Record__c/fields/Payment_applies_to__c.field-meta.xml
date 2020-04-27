@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_applies_to__c</fullName>
+    <description>Displays where the payment has been applied on the violations</description>
+    <externalId>false</externalId>
+    <formula>IF(!ISBLANK(Liability_Payment__c) , TEXT(Liability_Payment__r.Payment_Applied_To__c),
+   IF(!ISBLANK(Judgment_Payment__c), TEXT( Judgment_Payment__r.Apply_Payment_To__c), &#39;Other&#39;))</formula>
+    <label>Payment applies to</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

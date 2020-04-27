@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When adding interest to a liability, the deputy can select this violation type to capture interest due the employee --></help>
+    <label><!-- Accounting Payment Type --></label>
+    <name>Accounting_Payment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Interest</masterLabel>
+        <translation><!-- Interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalty</masterLabel>
+        <translation><!-- Penalty --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

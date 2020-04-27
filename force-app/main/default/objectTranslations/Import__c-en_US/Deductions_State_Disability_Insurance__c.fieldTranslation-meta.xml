@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deductions: State Disability Insurance --></label>
+    <name>Deductions_State_Disability_Insurance__c</name>
+</CustomFieldTranslation>

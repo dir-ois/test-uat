@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Follow_Up_Defect_Notice</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Send Follow Up Defect Notice</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Rejection__c.Id}
+&amp;TemplateID=a0nt000000028Pe
+&amp;DefaultPDF=1
+&amp;QueryID=[Rejections]a0mt00000000sL0,[RejectionDefect]a0mt00000000sL1,[Manager]a0mt00000000sKt?pv0={!License_Registration__c.Id}
+&amp;EmailTemplateId={!IF(License_Registration__c.Record_Type_Name__c=&quot;Entertainment_Work&quot;,&quot;00Xt0000000QNvj&quot;,&quot;00Xt0000000Dfnb&quot;)}
+&amp;EmailToId={!Rejection__c.ApplicantId__c}
+&amp;EmailFromID=0D2t0000000Gmid
+&amp;SC0=1
+&amp;SC1=Attachments
+&amp;AttachmentParentID={!Rejection__c.RegistrationId__c}
+&amp;ds7=2</url>
+</WebLink>

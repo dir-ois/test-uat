@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 68 Paragraph --></label>
+    <name>WCA_68_Paragraph__c</name>
+    <picklistValues>
+        <masterLabel>1. No Service-Contact Deputy</masterLabel>
+        <translation><!-- 1. No Service-Contact Deputy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10. ODA Progress of Personal Service</masterLabel>
+        <translation><!-- 10. ODA Progress of Personal Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2. No Service-Hearing Cancelled</masterLabel>
+        <translation><!-- 2. No Service-Hearing Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3. No Service-Advise Personal Service Option</masterLabel>
+        <translation><!-- 3. No Service-Advise Personal Service Option --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4. No Service w/ Proof of Personal Service</masterLabel>
+        <translation><!-- 4. No Service w/ Proof of Personal Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5. Plaintiff Advise Progress of Personal Service</masterLabel>
+        <translation><!-- 5. Plaintiff Advise Progress of Personal Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6. Proof of Service-Plaintiff</masterLabel>
+        <translation><!-- 6. Proof of Service-Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7. Copy of Answer</masterLabel>
+        <translation><!-- 7. Copy of Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8. Review Documents Submitted at Hearing</masterLabel>
+        <translation><!-- 8. Review Documents Submitted at Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9. ODA Personal Service Needed</masterLabel>
+        <translation><!-- 9. ODA Personal Service Needed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

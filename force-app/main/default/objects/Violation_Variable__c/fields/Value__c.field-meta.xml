@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Value__c</fullName>
+    <description>Value captured on the violation wizard. The violation type variable will define the data type and this field will capture the raw value. Only variables with number or currency types can be a part of calculations, but text variables can be used in the description.</description>
+    <externalId>false</externalId>
+    <label>Value</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

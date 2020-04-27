@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Received For --></label>
+    <name>Payment_Received_For__c</name>
+    <picklistValues>
+        <masterLabel>Civil Penalties Due to Claimant</masterLabel>
+        <translation><!-- Civil Penalties Due to Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil Penalties Due to State</masterLabel>
+        <translation><!-- Civil Penalties Due to State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cost of Suit Incurred for Recording and Tracking</masterLabel>
+        <translation><!-- Cost of Suit Incurred for Recording and Tracking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Damages</masterLabel>
+        <translation><!-- Other Damages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wages</masterLabel>
+        <translation><!-- Wages --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

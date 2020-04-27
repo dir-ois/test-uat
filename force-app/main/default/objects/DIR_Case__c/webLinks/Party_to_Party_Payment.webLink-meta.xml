@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Party_to_Party_Payment</fullName>
+    <availability>online</availability>
+    <description>Click this button to add a Party to Party payment.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Party to Party/Deduction Payments</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/PartyPaymentVFP?caseId={!DIR_Case__c.Id}</url>
+</WebLink>

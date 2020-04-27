@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Type__c</fullName>
+    <description>Data type will drive the input type on the violation wizard, have validation to ensure that the correct values are entered, and display properly based on the data type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the data type that the user is expected to enter in this field</inlineHelpText>
+    <label>Data Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Integer</fullName>
+                <default>false</default>
+                <label>Integer</label>
+            </value>
+            <value>
+                <fullName>Decimal</fullName>
+                <default>false</default>
+                <label>Decimal</label>
+            </value>
+            <value>
+                <fullName>Currency</fullName>
+                <default>false</default>
+                <label>Currency</label>
+            </value>
+            <value>
+                <fullName>Text</fullName>
+                <default>false</default>
+                <label>Text</label>
+            </value>
+            <value>
+                <fullName>Date</fullName>
+                <default>false</default>
+                <label>Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

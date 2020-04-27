@@ -1,0 +1,35 @@
+<apex:page controller="RegistrationErrorMsgsController" applyHtmlTag="true" showHeader="false" title="Registration Error Messages">
+    
+        <apex:define name="scripts">
+        <!-- including this script will automatically resize the parent iframe to the size of the contents of this page -->
+        <script src="{!$Label.iFrameResizer}"/>
+        <script>
+            function showMessage(msgId){
+                document.getElementById(msgId).style.visibility = "visible";
+            }
+        </script>    
+    </apex:define>
+    
+    <apex:pageMessages />
+    <apex:pageBlock title="Required documents must be uploaded" rendered="{!attachments.size>0}">
+         <font color="red">Please upload these documents in the corresponding sections, then return to this screen to complete submission and payment.</font>
+         <br/>
+         <br/>
+    <apex:pageBlockSection >
+  
+        <apex:pageBlockTable value="{!attachments}" var="att" border="2" cellpadding="20" align="center" width="90%" styleClass="table">
+            <apex:column headerValue="Section" value="{!att.VIP_Form_Section__r.VIPForm__Name_Displayed__c}"/>
+            <apex:column value="{!att.Attachment_Name__c}"/>
+        </apex:pageBlockTable>
+        
+        
+      </apex:pageBlockSection> 
+    </apex:pageBlock> 
+<!--    
+        <apex:dataTable value="{!attachments}" var="att"  cellpadding="5" border="1">
+            <apex:column headerValue="Section" value="{!att.VIP_Form_Section__r.VIPForm__Name_Displayed__c}"/>
+            <apex:column headerValue="Attachment Name" value="{!att.Attachment_Name__c}"/>
+            <apex:column headerValue="Number of Attachments Uploaded" value="{!att.Number_of_Attachments__c}"/>
+        </apex:dataTable>
+-->    
+</apex:page>

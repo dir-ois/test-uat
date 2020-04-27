@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Employees are paid in cash, does the employer keep cash payment records or logs? --></help>
+    <label><!-- If paid in cash, records or logs? --></label>
+    <name>If_paid_in_cash_records_or_logs__c</name>
+    <picklistValues>
+        <masterLabel>Don&#39;t Know</masterLabel>
+        <translation><!-- Don&apos;t Know --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

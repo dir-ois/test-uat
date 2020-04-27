@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Chatter_Post</name>
+        <label>Chatter Post</label>
+        <locationX>320</locationX>
+        <locationY>260</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>MeetingId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>ChatterPost</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <name>Verify_the_Deputy_Exists</name>
+        <label>Verify the Deputy Exists</label>
+        <locationX>319</locationX>
+        <locationY>80</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Deputy_Exists_on_Case</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DeputyId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>DeputyId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Chatter_Post</targetReference>
+            </connector>
+            <label>Deputy Exists on Case</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>MentionDeputy</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!DeputyId}), NULL, &quot;@[&quot;+{!DeputyId}+&quot;]&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>MentionDeputyManager</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!DeputyManagerId}), NULL, &quot;@[&quot;+{!DeputyManagerId}+&quot;]&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>MentionHearingOfficer</name>
+        <dataType>String</dataType>
+        <expression>IF({!HearingOfficer} = &quot;&quot;, NULL, &quot;@[&quot;+{!HearingOfficer}+&quot;] &quot;)</expression>
+    </formulas>
+    <interviewLabel>Meeting: Continuance {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Meeting: Continuance</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Verify_the_Deputy_Exists</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>ChatterPost</name>
+        <text>{!MentionHearingOfficer} {!MentionDeputy} {!MentionDeputyManager} - A continuance has been requested. Please reschedule and set status to &quot;Continued&quot; or set the status to &quot;Continuance Rejected.&quot;</text>
+    </textTemplates>
+    <variables>
+        <name>AssignedDeputyInternalId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>AssignedDeputyManagerInternalId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>DeputyId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>DeputyManagerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>HearingOfficer</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>MeetingId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

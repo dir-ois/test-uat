@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returned_Reason</fullName>
+    <active>true</active>
+    <description>Require returned reason when returned is selected</description>
+    <errorConditionFormula>(
+  Returned_Item__c
+  &amp;&amp; ISPICKVAL ( Returned_Reason__c, &#39;&#39; )
+)
+||
+(
+  !Returned_Item__c
+  &amp;&amp; !ISPICKVAL ( Returned_Reason__c, &#39;&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Returned_Item__c</errorDisplayField>
+    <errorMessage>To mark an item returned, you must select a Returned Reason</errorMessage>
+</ValidationRule>

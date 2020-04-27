@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_All_Attachments</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Type__c</columns>
+    <columns>Attachment_Name__c</columns>
+    <columns>Notice_Filer_Name__c</columns>
+    <columns>Law_Firm__c</columns>
+    <columns>Employer_Name__c</columns>
+    <columns>Case_Management__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Cure Dispute,Court Complaint,Proposed Settlement,Other PAGA Document</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Employer Response/Cure,Amended Notice,In Forma Pauperis,Court Order/Judgment</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Attachments_Plus__c.General_Document</value>
+    </filters>
+    <label>PAGA All Attachments</label>
+</ListView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Includes one or more listed in Labor Code 2699.5- not curable subject to 2699.3(a) --></help>
+    <label><!-- One or more 2699.5 not curable --></label>
+    <name>PAGA_One_or_more__c</name>
+</CustomFieldTranslation>

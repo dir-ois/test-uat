@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- License and registration types that must have their values encrypted --></help>
+    <label><!-- Secured License/Registration Type --></label>
+    <name>Secured_License_Registration_Type__c</name>
+    <picklistValues>
+        <masterLabel>CDL</masterLabel>
+        <translation><!-- CDL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDD</masterLabel>
+        <translation><!-- EDD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FEIN</masterLabel>
+        <translation><!-- FEIN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_Name_First_Last_and_nick_names__c</fullName>
+    <description>Full Name of the Minor Employee including first and last name and any &quot;nick&quot; names</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Full Name of the Minor Employee including first and last name and any &quot;nick&quot; names</inlineHelpText>
+    <label>Full Name (First, Last, and nick names)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

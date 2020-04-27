@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Service_Requests_Assigned_to_me</fullName>
+    <columns>NAME</columns>
+    <columns>Subject__c</columns>
+    <columns>Title__c</columns>
+    <columns>Description__c</columns>
+    <columns>Category__c</columns>
+    <columns>Create_Date_Time__c</columns>
+    <columns>Deployment_Date__c</columns>
+    <columns>Duplicate_Flag__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Resolution__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Canceled,Closed,Added to a Release,Duplicate</value>
+    </filters>
+    <label>Closed Service Requests Assigned to me</label>
+    <sharedTo>
+        <group>DIR_Salesforce_Support_Team</group>
+    </sharedTo>
+</ListView>

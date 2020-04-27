@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BOFE_Hearing_Referral_Approved_Email_Alert</fullName>
+        <description>BOFE Hearing Referral - Approved Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sr_Case_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BOFE_Email_Templates/BOFE_Hearing_Referral_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>BOFE_Hearing_Referral_Rejected_Email_Alert</fullName>
+        <description>BOFE Hearing Referral - Rejected Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sr_Case_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BOFE_Email_Templates/BOFE_Hearing_Referral_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Dismissal_Notification</fullName>
+        <description>Case Dismissal Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Meeting_Scheduled_For_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Case_Dismissal_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Hearing_Result_Notification_to_Investigator</fullName>
+        <description>Hearing Result Notification to Investigator</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/Hearing_Results</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Hearing_Referral_Approval</fullName>
+        <description>Wage Hearing Referral - Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sr_Case_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Wage_Hearing_Referral_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Hearing_Referral_Approved</fullName>
+        <description>Wage Hearing Referral - Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Wage_Hearing_Referral_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Hearing_Referral_Rejected</fullName>
+        <description>Wage Hearing Referral - Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Wage_Hearing_Referral_Rejected</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Date_TODAY</fullName>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Approval Date = TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Pending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Approval Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <name>Clear Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <name>Clear Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mtg_Scheduled_for_email_address_update</fullName>
+        <description>Update Email field for Meeting Scheduled For agency user</description>
+        <field>Meeting_Scheduled_For_Email__c</field>
+        <formula>Meeting_Scheduled_For__r.Email__c</formula>
+        <name>Mtg Scheduled for email address update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_Date_TODAY</fullName>
+        <field>Rejected_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Rejected Date = TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_BOFE_Meeting_Date_Time</fullName>
+        <description>BOFE Users the Legacy Meeting Date and they would like to Generate Calendar and this field updates the actual &quot;Meeting Date/Time&quot; field.</description>
+        <field>Meeting_Start_Date_Time__c</field>
+        <formula>Hearing_Date__c</formula>
+        <name>Update BOFE Meeting Date/Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Legacy_Meeting_Date</fullName>
+        <description>Updates &quot;Legacy meeting date&quot; with the value from &quot;Meeting Start Date/Time&quot; in order to ensure proper functionality of objects downstream.</description>
+        <field>Hearing_Date__c</field>
+        <formula>Meeting_Start_Date_Time__c</formula>
+        <name>Update Legacy Meeting Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Meeting_Status_Meeting_Approved</fullName>
+        <description>Update the Status to Meeting Approved when the Approval has been accepted.</description>
+        <field>Status__c</field>
+        <literalValue>Meeting Approved</literalValue>
+        <name>Update Meeting Status - Meeting Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Meeting_Status_Meeting_Rejected</fullName>
+        <description>Update the Status to Meeting Rejected when the Approval was rejected.</description>
+        <field>Status__c</field>
+        <literalValue>Meeting Rejected</literalValue>
+        <name>Update Meeting Status - Meeting Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Meeting_Status_Pending_Approval</fullName>
+        <description>Update the meeting status to Pending Approval</description>
+        <field>Status__c</field>
+        <literalValue>Pending Approval</literalValue>
+        <name>Update Meeting Status - Pending Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>BOFE Meeting Date%2FTime Update</fullName>
+        <actions>
+            <name>Update_Legacy_Meeting_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Hearing__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Hearing</value>
+        </criteriaItems>
+        <description>BOFE Hearings uses the Legacy Meeting Date, and in order to generate a calendar the Meeting Date/Time field need to be updated (Reversed since BOFE now uses &quot;Meeting start date/time&quot;)</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order to Show Cause Created</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Hearing__c.Meeting_Type__c</field>
+            <operation>equals</operation>
+            <value>Order to Show Cause</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Hearing__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA Conference</value>
+        </criteriaItems>
+        <description>For Case History purpose, create a task every time an Order to Show Cause meeting type is created.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Meeting Scheduled for email address</fullName>
+        <actions>
+            <name>Mtg_Scheduled_for_email_address_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Meeting Scheduled for email address when the field is not blank</description>
+        <formula>NOT( ISBLANK(Meeting_Scheduled_For__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Hearing_Approval_Workfloinitiated</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Hearing__c.Meeting_End_Date_Time__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Hearing Approval Initiated</subject>
+    </tasks>
+    <tasks>
+        <fullName>Hearing_Approved_by_Sr</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Hearing__c.Meeting_End_Date_Time__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Hearing Approved by Sr.</subject>
+    </tasks>
+    <tasks>
+        <fullName>RCI_Hearing_Approval_Rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Your RCI Hearing Request has been rejected</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>RCI Hearing Approval Rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>RCI_Hearing_Approved</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Your RCI Hearing Request has been Approved</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>RCI Hearing Approved</subject>
+    </tasks>
+</Workflow>

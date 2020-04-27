@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notice_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Notice Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acknowledgment of Assignment of Judgment</fullName>
+                <default>false</default>
+                <label>Acknowledgment of Assignment of Judgment</label>
+            </value>
+            <value>
+                <fullName>Acknowledgment of Satisfaction of Judgment</fullName>
+                <default>false</default>
+                <label>Acknowledgment of Satisfaction of Judgment</label>
+            </value>
+            <value>
+                <fullName>Case Management Conference Statement</fullName>
+                <default>false</default>
+                <label>Case Management Conference Statement</label>
+            </value>
+            <value>
+                <fullName>Exhibit List</fullName>
+                <default>false</default>
+                <label>Exhibit List</label>
+            </value>
+            <value>
+                <fullName>Jury Instructions</fullName>
+                <default>false</default>
+                <label>Jury Instructions</label>
+            </value>
+            <value>
+                <fullName>Notice (Misc.)</fullName>
+                <default>false</default>
+                <label>Notice (Misc.)</label>
+            </value>
+            <value>
+                <fullName>Notice of Appeal</fullName>
+                <default>false</default>
+                <label>Notice of Appeal</label>
+            </value>
+            <value>
+                <fullName>Notice of Appearance</fullName>
+                <default>false</default>
+                <label>Notice of Appearance</label>
+            </value>
+            <value>
+                <fullName>Notice of Association of Attorney</fullName>
+                <default>false</default>
+                <label>Notice of Association of Attorney</label>
+            </value>
+            <value>
+                <fullName>Notice of Bankruptcy Case</fullName>
+                <default>false</default>
+                <label>Notice of Bankruptcy Case</label>
+            </value>
+            <value>
+                <fullName>Notice of Mediator Assignment</fullName>
+                <default>false</default>
+                <label>Notice of Mediator Assignment</label>
+            </value>
+            <value>
+                <fullName>Notice of Related Case</fullName>
+                <default>false</default>
+                <label>Notice of Related Case</label>
+            </value>
+            <value>
+                <fullName>Notice of Ruling</fullName>
+                <default>false</default>
+                <label>Notice of Ruling</label>
+            </value>
+            <value>
+                <fullName>Notice of Settlement</fullName>
+                <default>false</default>
+                <label>Notice of Settlement</label>
+            </value>
+            <value>
+                <fullName>Notice of Stay</fullName>
+                <default>false</default>
+                <label>Notice of Stay</label>
+            </value>
+            <value>
+                <fullName>Reporters Transcript Filed (Appeal)</fullName>
+                <default>false</default>
+                <label>Reporters Transcript Filed (Appeal)</label>
+            </value>
+            <value>
+                <fullName>Statement of Case</fullName>
+                <default>false</default>
+                <label>Statement of Case</label>
+            </value>
+            <value>
+                <fullName>Status Conference Statement</fullName>
+                <default>false</default>
+                <label>Status Conference Statement</label>
+            </value>
+            <value>
+                <fullName>Substitution of Attorney Change of Address</fullName>
+                <default>false</default>
+                <label>Substitution of Attorney Change of Address</label>
+            </value>
+            <value>
+                <fullName>Trial Brief</fullName>
+                <default>false</default>
+                <label>Trial Brief</label>
+            </value>
+            <value>
+                <fullName>Witness List</fullName>
+                <default>false</default>
+                <label>Witness List</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Department number for DIR is always 400 --></help>
+    <label><!-- Department --></label>
+    <name>Department__c</name>
+    <picklistValues>
+        <masterLabel>400</masterLabel>
+        <translation><!-- 400 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

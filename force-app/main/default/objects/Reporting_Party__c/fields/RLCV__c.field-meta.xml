@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RLCV__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used for DIR to identify the party that reports a labor code violation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Report of Labor Code Violation reported by this entity</inlineHelpText>
+    <label>Report of Labor Law Violation</label>
+    <referenceTo>Report_of_Labor_Code_Violation__c</referenceTo>
+    <relationshipLabel>Reporting Parties</relationshipLabel>
+    <relationshipName>Reporting_Parties</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

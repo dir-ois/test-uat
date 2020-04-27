@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Severity --></label>
+    <name>Severity__c</name>
+    <picklistValues>
+        <masterLabel>1 - Critical</masterLabel>
+        <translation><!-- 1 - Critical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 - Very Important</masterLabel>
+        <translation><!-- 2 - Very Important --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 - Important</masterLabel>
+        <translation><!-- 3 - Important --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 - Nice to Have</masterLabel>
+        <translation><!-- 4 - Nice to Have --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

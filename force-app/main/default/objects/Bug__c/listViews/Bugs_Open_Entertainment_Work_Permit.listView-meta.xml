@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bugs_Open_Entertainment_Work_Permit</fullName>
+    <columns>NAME</columns>
+    <columns>Bug_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>Severity__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Assigned_To_Business_User__c</columns>
+    <columns>Assigned_To_Support_Team__c</columns>
+    <columns>Project__c</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project__c</field>
+        <operation>contains</operation>
+        <value>Entertainment Work Permit</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New,In Development,In System Test,Pending,Confirmed,Post PROD</value>
+    </filters>
+    <label>Bugs - Open Entertainment Work Permit</label>
+</ListView>

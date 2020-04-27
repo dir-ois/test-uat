@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Split shift has been indicated on at least one child RLLV --></help>
+    <label><!-- Split Shift --></label>
+    <name>Split_Shift__c</name>
+</CustomFieldTranslation>

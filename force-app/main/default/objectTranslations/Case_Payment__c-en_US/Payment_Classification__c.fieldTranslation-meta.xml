@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Classification --></label>
+    <name>Payment_Classification__c</name>
+    <picklistValues>
+        <masterLabel>Bond</masterLabel>
+        <translation><!-- Bond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conceded</masterLabel>
+        <translation><!-- Conceded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA</masterLabel>
+        <translation><!-- ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Release</masterLabel>
+        <translation><!-- Release --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stipulated Settlement</masterLabel>
+        <translation><!-- Stipulated Settlement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

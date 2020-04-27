@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the interest type that applies to this case issue type. Contact your administrator if additional values need to be defined. --></help>
+    <label><!-- Interest Type --></label>
+    <name>Interest_Type__c</name>
+    <picklistValues>
+        <masterLabel>1194.2</masterLabel>
+        <translation><!-- 1194.2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>248.5(f)</masterLabel>
+        <translation><!-- 248.5(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2802(b)</masterLabel>
+        <translation><!-- 2802(b) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>98.1(c)</masterLabel>
+        <translation><!-- 98.1(c) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Interest</masterLabel>
+        <translation><!-- No Interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Judgment</masterLabel>
+        <translation><!-- Post Judgment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

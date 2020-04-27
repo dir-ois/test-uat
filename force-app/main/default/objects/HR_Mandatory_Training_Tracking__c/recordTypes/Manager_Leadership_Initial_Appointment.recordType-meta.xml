@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_Leadership_Initial_Appointment</fullName>
+    <active>true</active>
+    <description>Per GC 19995.4 (d), 40 hours of leadership training must be completed within 12 months of appointment</description>
+    <label>Manager Leadership</label>
+</RecordType>

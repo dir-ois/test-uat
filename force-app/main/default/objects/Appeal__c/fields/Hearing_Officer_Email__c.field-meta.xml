@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearing_Officer_Email__c</fullName>
+    <description>Hearing Officer&#39;s email from CM updates this field. The email is for withdrawn appeal notification</description>
+    <externalId>false</externalId>
+    <label>Hearing Officer Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

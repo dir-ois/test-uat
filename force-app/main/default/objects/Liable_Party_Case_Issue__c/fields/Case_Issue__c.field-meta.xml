@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Issue__c</fullName>
+    <description>Parent case issue to which the proportionate share of the liable party needs to be applied</description>
+    <externalId>false</externalId>
+    <label>Case Issue</label>
+    <referenceTo>DIR_Violation__c</referenceTo>
+    <relationshipLabel>Liable Party Case Issues</relationshipLabel>
+    <relationshipName>Liable_Party_Case_Issues</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

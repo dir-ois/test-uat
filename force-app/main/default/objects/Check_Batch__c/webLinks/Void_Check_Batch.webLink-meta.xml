@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_Check_Batch</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Void Check Batch</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!$Permission.DLSE_Sr_Cashier}{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+ 
+// identify the record
+var cb = new sforce.SObject(&quot;Check_Batch__c&quot;);
+cb.id = &quot;{!Check_Batch__c.Id}&quot;;
+//cb.status = &quot;{!Check_Batch__c.Status__c}&quot;;
+ 
+// make the field change
+if (&quot;{!Check_Batch__c.Status__c}&quot; == &#39;Printed&#39; &amp;&amp; &quot;{!$Permission.DLSE_Sr_Cashier}&quot; == &quot;false&quot;) {
+    window.alert(&quot;The Check Batch has already been printed. You must use the Void Request Check Box,&quot;);
+    window.location.reload();
+} else if (&quot;{!Check_Batch__c.Status__c}&quot; == &#39;Void Requested&#39;) {
+    window.alert(&quot;The Check Batch has already been submitted to Void Requested&quot;);
+    window.location.reload();
+} else {
+    cb.Status__c = &quot;Void&quot;;
+// save the change
+sforce.connection.update([cb]);
+ 
+//refresh the page
+window.location.reload();
+}</url>
+</WebLink>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_assigned_Deputy_on_registration</fullName>
+    <active>true</active>
+    <description>Requires a related registration to have a deputy assigned</description>
+    <errorConditionFormula>RecordType.DeveloperName = &#39;RS_Refer_To_BOFE&#39; &amp;&amp;
+ISBLANK ( Registration__r.Assigned_Deputy__c )</errorConditionFormula>
+    <errorMessage>Please assign a deputy to the registration before creating the registration.</errorMessage>
+</ValidationRule>

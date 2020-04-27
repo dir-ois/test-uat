@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- County Lien Recorded in --></label>
+    <name>County_Lien_Recorded_in__c</name>
+</CustomFieldTranslation>

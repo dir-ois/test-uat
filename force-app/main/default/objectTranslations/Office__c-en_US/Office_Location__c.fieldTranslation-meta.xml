@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used for a Flow in order to Map the BOFE Office for WCA Wage Referrals --></help>
+    <label><!-- Office Location --></label>
+    <name>Office_Location__c</name>
+    <picklistValues>
+        <masterLabel>Bakersfield</masterLabel>
+        <translation><!-- Bakersfield --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Centro</masterLabel>
+        <translation><!-- El Centro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno</masterLabel>
+        <translation><!-- Fresno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Beach</masterLabel>
+        <translation><!-- Long Beach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles</masterLabel>
+        <translation><!-- Los Angeles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oakland</masterLabel>
+        <translation><!-- Oakland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redding</masterLabel>
+        <translation><!-- Redding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside</masterLabel>
+        <translation><!-- Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento</masterLabel>
+        <translation><!-- Sacramento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salinas</masterLabel>
+        <translation><!-- Salinas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino</masterLabel>
+        <translation><!-- San Bernardino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego</masterLabel>
+        <translation><!-- San Diego --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco</masterLabel>
+        <translation><!-- San Francisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose</masterLabel>
+        <translation><!-- San Jose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Ana</masterLabel>
+        <translation><!-- Santa Ana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara</masterLabel>
+        <translation><!-- Santa Barbara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Rosa</masterLabel>
+        <translation><!-- Santa Rosa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockton</masterLabel>
+        <translation><!-- Stockton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van Nuys</masterLabel>
+        <translation><!-- Van Nuys --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

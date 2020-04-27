@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>JEU Case</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>This field only accepts Case Management records with a JEU record type.</errorMessage>
+        <filterItems>
+            <field>DIR_Case__c.RecordType.DeveloperName</field>
+            <operation>contains</operation>
+            <value>JEU</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>DIR_Case__c</referenceTo>
+    <relationshipLabel>Related Case Judgments</relationshipLabel>
+    <relationshipName>JEU_Judgments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

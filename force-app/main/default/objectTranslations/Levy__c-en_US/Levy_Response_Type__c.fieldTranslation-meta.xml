@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Levy Response Type --></label>
+    <name>Levy_Response_Type__c</name>
+    <picklistValues>
+        <masterLabel>Claim of Exemption</masterLabel>
+        <translation><!-- Claim of Exemption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Memorandum of Garnishee</masterLabel>
+        <translation><!-- Memorandum of Garnishee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Memorandum of Garnishee with Notice of Joint Accountholder</masterLabel>
+        <translation><!-- Memorandum of Garnishee with Notice of Joint Accountholder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Debtor Response</masterLabel>
+        <translation><!-- Other Debtor Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Garnishee Response</masterLabel>
+        <translation><!-- Other Garnishee Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Response</masterLabel>
+        <translation><!-- Other Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Claim</masterLabel>
+        <translation><!-- Third Party Claim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

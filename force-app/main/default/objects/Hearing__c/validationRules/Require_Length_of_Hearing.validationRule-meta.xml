@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Length_of_Hearing</fullName>
+    <active>true</active>
+    <description>Requires the Length of the hearing when hearing is marked complete.</description>
+    <errorConditionFormula>ISPICKVAL (Status__c, &quot;Complete&quot;) &amp;&amp; OR(ISBLANK( Length_of_Hearing__c), (Length_of_Hearing__c  =  0))&amp;&amp; (Record_Type_Name__c &lt;&gt; &quot;BOFE Hearing&quot;)</errorConditionFormula>
+    <errorDisplayField>Length_of_Hearing__c</errorDisplayField>
+    <errorMessage>You must enter the length of the hearing before completing the hearing results.</errorMessage>
+</ValidationRule>

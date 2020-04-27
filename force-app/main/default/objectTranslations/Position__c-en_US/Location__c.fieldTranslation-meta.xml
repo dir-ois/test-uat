@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the DIR office location for this position. --></help>
+    <label><!-- Location --></label>
+    <name>Location__c</name>
+    <picklistValues>
+        <masterLabel>AMERICAN CANYON</masterLabel>
+        <translation><!-- AMERICAN CANYON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANAHEIM</masterLabel>
+        <translation><!-- ANAHEIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAKERSFIELD</masterLabel>
+        <translation><!-- BAKERSFIELD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHICO</masterLabel>
+        <translation><!-- CHICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONCORD</masterLabel>
+        <translation><!-- CONCORD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EL CENTRO</masterLabel>
+        <translation><!-- EL CENTRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUREKA</masterLabel>
+        <translation><!-- EUREKA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOSTER CITY</masterLabel>
+        <translation><!-- FOSTER CITY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FREMONT</masterLabel>
+        <translation><!-- FREMONT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRESNO</masterLabel>
+        <translation><!-- FRESNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GLENDALE</masterLabel>
+        <translation><!-- GLENDALE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOLETA</masterLabel>
+        <translation><!-- GOLETA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LA PALMA</masterLabel>
+        <translation><!-- LA PALMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONG BEACH</masterLabel>
+        <translation><!-- LONG BEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOS ANGELES</masterLabel>
+        <translation><!-- LOS ANGELES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARINA DEL REY</masterLabel>
+        <translation><!-- MARINA DEL REY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MODESTO</masterLabel>
+        <translation><!-- MODESTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MONROVIA</masterLabel>
+        <translation><!-- MONROVIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OAKLAND</masterLabel>
+        <translation><!-- OAKLAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OXNARD</masterLabel>
+        <translation><!-- OXNARD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POMONA</masterLabel>
+        <translation><!-- POMONA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REDDING</masterLabel>
+        <translation><!-- REDDING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIVERSIDE</masterLabel>
+        <translation><!-- RIVERSIDE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SACRAMENTO</masterLabel>
+        <translation><!-- SACRAMENTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SALINAS</masterLabel>
+        <translation><!-- SALINAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN BERNARDINO</masterLabel>
+        <translation><!-- SAN BERNARDINO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN DIEGO</masterLabel>
+        <translation><!-- SAN DIEGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN FRANCISCO</masterLabel>
+        <translation><!-- SAN FRANCISCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN JOSE</masterLabel>
+        <translation><!-- SAN JOSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN LEANDRO</masterLabel>
+        <translation><!-- SAN LEANDRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAN LUIS OBISPO</masterLabel>
+        <translation><!-- SAN LUIS OBISPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SANTA ANA</masterLabel>
+        <translation><!-- SANTA ANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SANTA BARBARA</masterLabel>
+        <translation><!-- SANTA BARBARA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SANTA FE SPRINGS</masterLabel>
+        <translation><!-- SANTA FE SPRINGS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SANTA ROSA</masterLabel>
+        <translation><!-- SANTA ROSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOCKTON</masterLabel>
+        <translation><!-- STOCKTON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TORRANCE</masterLabel>
+        <translation><!-- TORRANCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRUCKEE</masterLabel>
+        <translation><!-- TRUCKEE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAN NUYS</masterLabel>
+        <translation><!-- VAN NUYS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VENTURA</masterLabel>
+        <translation><!-- VENTURA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WEST COVINA</masterLabel>
+        <translation><!-- WEST COVINA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

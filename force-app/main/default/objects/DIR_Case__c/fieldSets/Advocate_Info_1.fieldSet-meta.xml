@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advocate_Info_1</fullName>
+    <description>Retaliation Complaint Form</description>
+    <displayedFields>
+        <field>Contact_Person__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Advocate Info 1</label>
+</FieldSet>

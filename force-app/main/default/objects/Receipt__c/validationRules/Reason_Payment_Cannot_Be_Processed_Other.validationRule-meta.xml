@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Payment_Cannot_Be_Processed_Other</fullName>
+    <active>true</active>
+    <description>Validation rule requiring the completion of  &quot;other reason payment cannot be processed&quot; field when &quot;Other&quot; checkbox is true in the Returned Payment Reasons Section.</description>
+    <errorConditionFormula>AND(( Not_Processed_Other__c = TRUE),ISBLANK( Not_Processed_Other_Reason__c))</errorConditionFormula>
+    <errorDisplayField>Not_Processed_Other_Reason__c</errorDisplayField>
+    <errorMessage>If  &quot;Other&quot; is checked in the Returned Payment Reasons then you must provide additional information in the &quot;Other Reason Payment Cannot Be Processed&quot; field in order to save the record.</errorMessage>
+</ValidationRule>

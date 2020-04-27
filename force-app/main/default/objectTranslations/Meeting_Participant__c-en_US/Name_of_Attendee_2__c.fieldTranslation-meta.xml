@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Name of Attendee --></label>
+    <name>Name_of_Attendee_2__c</name>
+    <relationshipLabel><!-- Meeting Participants (Name of Attendee) --></relationshipLabel>
+</CustomFieldTranslation>

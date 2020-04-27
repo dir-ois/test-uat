@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Proof of WCI Returned --></label>
+    <name>Proof_of_WCI_Returned__c</name>
+    <picklistValues>
+        <masterLabel>Acceptable</masterLabel>
+        <translation><!-- Acceptable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Returned</masterLabel>
+        <translation><!-- Not Returned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned, Refer Anyway</masterLabel>
+        <translation><!-- Returned, Refer Anyway --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

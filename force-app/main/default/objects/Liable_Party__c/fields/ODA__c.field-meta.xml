@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ODA__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to new custom object: ODA.  For ODA document output purposes.</description>
+    <externalId>false</externalId>
+    <label>ODA</label>
+    <referenceTo>ODAS__c</referenceTo>
+    <relationshipLabel>Liable Parties</relationshipLabel>
+    <relationshipName>Liable_Parties</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

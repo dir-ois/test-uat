@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Line__c</fullName>
+    <description>ITEM and ITEM_LINE combination must be unique for a particular business unit and customer combination in the file.
+
+ITEM_LINE will default to 0 if value is not provided.</description>
+    <externalId>false</externalId>
+    <formula>IF(OR((MONTH(TODAY())&lt;7) &amp;&amp; (VALUE( Case_Issue__r.Fiscal_Year__c ))&lt;(YEAR(TODAY())-2),(MONTH(TODAY())&gt;6) &amp;&amp; (VALUE( Case_Issue__r.Fiscal_Year__c ))&lt;=(YEAR(TODAY())-2)),
+(CASE ( Case_Issue__r.Accounting_Modification__c, &quot;4172220&quot;, CASE( Entry_Reason__c , &quot;ERROR&quot;, 8, &quot;MISC&quot;, 8, &quot;APEAL&quot;, 8, &quot;RCLAS&quot;, 8, &quot;INCRS&quot;, 8, &quot;DECRS&quot;, 8, &quot;CONTG&quot;, 7, 8), CASE( Entry_Reason__c , &quot;ERROR&quot;, 3, &quot;MISC&quot;, 3, &quot;APEAL&quot;, 3, &quot;RCLAS&quot;, 3, &quot;INCRS&quot;, 3, &quot;DECRS&quot;, 3, &quot;CONTG&quot;, 2, 3))),
+(CASE ( Case_Issue__r.Accounting_Modification__c, &quot;4172220&quot;, CASE( Entry_Reason__c , &quot;ERROR&quot;, 6, &quot;MISC&quot;, 6, &quot;APEAL&quot;, 6, &quot;RCLAS&quot;, 6, &quot;INCRS&quot;, 6, &quot;DECRS&quot;, 6, &quot;CONTG&quot;, 7, &quot;PMT-UA&quot;, 7, &quot;PMT&quot;, 6, 8), CASE( Entry_Reason__c ,&quot;ERROR&quot;, 1, &quot;MISC&quot;, 1, &quot;APEAL&quot;, 1, &quot;RCLAS&quot;, 1, &quot;INCRS&quot;, 1, &quot;DECRS&quot;, 1, &quot;CONTG&quot;, 2, &quot;PMT-UA&quot;, 2, &quot;PMT&quot;,1, 3))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If(Entry Type = Misc or Appeal, Item Line =1)
+If(Entry Type = Contg, Item line = 2)
+if(Entry Type = Arot, Item line = 3)</inlineHelpText>
+    <label>Item_Line</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

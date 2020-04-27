@@ -1,0 +1,1173 @@
+<apex:page controller="RegistrationSearchNewController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="true" title="Registration Search">
+    
+    
+    <apex:slds />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <apex:includeScript value="{!$Resource.Cookie}"/>
+    <style>
+    .slds-scope body {
+        font-size:inherit;
+        background: 0 0;
+    }
+    
+    .slds-scope .slds-card {
+        background:0 0;
+    }
+    .btn.btn-primary {
+        background: #046B99;
+    }
+    .btn.btn-success {
+        background: #27a844;
+    }
+    .btn.btn-danger {
+        background: #dc3546;
+    }
+    #myBtn {
+      //display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;      
+      color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      display:none;
+    }
+    .search-results-label {
+        float: left;
+        margin-top: 10px;
+    }
+    
+    .slds-scope .search-results-buttons-wrapper {
+        float: right;
+        margin-bottom: 10px;
+    }
+    /*
+    .button-print-export-wrapper {
+        float: left;
+    }*/
+    
+    .button-list-wrapper {
+        float: right;
+    }
+    
+    @media only screen and (max-width: 528px) {
+        .button-list-wrapper {
+            float: left;
+            margin: 10px 0px;
+        }
+    }
+    </style>
+    
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body"> 
+           
+            
+            <button onclick="scrollToTop()" id="myBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+             
+            <!-- New page goes here -->
+            
+            <!--<div id="responseErrors" class="top-general-alert alert alert-danger" role="alert" aria-hidden="true"></div>-->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="page-title">Public Works Contractor Registration Search</h1>
+                    <p>Enter at least one criteria to display registered public works contractor(s) matching your selections.</p>
+                    <p>Note: Search results will display all of the public works contractor registrations, both current and expired. Make sure a proper registration fiscal year is selected when performing a search.</p>
+                </div>
+            </div>
+            
+            <!-- Search Section -->
+            
+                
+            
+            
+            <div class="slds-scope" style="font-size: 1.3rem;">
+                
+                <style>
+                
+                .slds-scope .slds-form-element__label{
+                    font-size: 1.3rem;
+                }
+                
+                .slds-scope h1, .slds-scope h2, .slds-scope h3, .slds-scope h4, .slds-scope h5, .slds-scope h6 {
+                    font-size: 1.6rem;
+                }
+                .dropdown-toggle,
+                .dropdown-toggle:hover, 
+                .dropdown-toggle:active,
+                .dropdown-toggle:focus {
+                   color: none;
+                   text-transform: none;
+                }
+                .btn:focus {
+                    outline: none;
+                }
+                
+                
+                </style>
+                <!--grid system-->
+                
+                <div class="slds-grid slds-wrap">
+                    
+                    <div class="slds-col slds-size--6-of-12">
+                        
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="text-input-id-1">Input Label</label>
+                            <div class="slds-form-element__control">
+                                <input placeholder="Legal name, CSLB number, DBA, Registration number" id="SearchByInput" class="slds-input" type="text" />
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+                    <div class="slds-col slds-size--3-of-12">
+                        <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="text-input-id-1">From Date:(mm/dd/yyyy)</label>
+                            <div class="slds-form-element__control">
+                                <!--<input id="text-input-id-2" class="slds-input" type="text" value="" />-->
+                                <input class="slds-input" type="date" name="StartDate" id="StartDate"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size--3-of-12">
+                        <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="text-input-id-1">To Date:(mm/dd/yyyy)</label>
+                            <div class="slds-form-element__control">
+                                <input class="slds-input" type="date" name="expirationDate" id="ExpirationDate"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-col slds-size--7-of-12">
+                       <div class="slds-form-element">
+                           <label class="slds-form-element__label" for="text-input-id-1">County</label>
+                           <div class="slds-form-element__control">
+                               <input class="slds-input" type="text" name="County" id="County"/>
+                           </div>
+                       </div>
+                   </div>
+                    
+                    
+                   <div class="slds-col slds-size--5-of-12">
+                       <div class="slds-form-element">
+                           <label class="slds-form-element__label" for="text-input-id-1">City</label>
+                           <div class="slds-form-element__control">
+                               <input class="slds-input" type="text" name="city" id="City" />
+                           </div>
+                       </div>
+                   </div>
+                    
+                    
+                </div>
+                                    
+                <br/>
+                
+                <div>
+                    <button class="btn btn-primary" onclick="SearchRegs()">Search </button>
+                    <button class="btn btn-primary" onclick="reset()">Reset </button>
+                
+                </div>
+                
+                <br/>
+                <div class="row slds-m-top_small">
+                
+                    
+                    <div class="col-md-2" style="padding-bottom: 15px;">
+                        <h3 > Crafts (Select all that apply) </h3>   
+                       
+                        
+                        <div class="filter-group">
+                            
+                            
+                            <apex:repeat value="{!filtersList}" var="filterVal">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="{!filterVal.MasterLabel}" id="{!filterVal.MasterLabel}" class="regfilter" type="checkbox" value=""  />{!filterVal.MasterLabel}
+                                    </label>
+                                </div>
+                            
+                            </apex:repeat>
+                            
+                            
+                            <!--
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Electrician" id="electrician" class="regfilter" type="checkbox" value="Electrician"  />Electrician
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Electrical Utility" class="regfilter" type="checkbox" value="Electrical Utility"  />Electrical Utility
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Plumber" class="regfilter" type="checkbox" value="Plumber"  />Plumber
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Roofing" class="regfilter" type="checkbox" value="Roofing" />Roofing
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Plasterer/Tender" class="regfilter" type="checkbox" value="Plasterer/Tender"  />Plasterer/Tender
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Carpenter" class="regfilter" type="checkbox" value="Carpenter"  />Carpenter
+                                </label>
+                            </div>
+                        
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Bricklayer/Brick Tender" class="regfilter" type="checkbox" value="Bricklayer/Brick Tender"  />Bricklayer/Brick Tender
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Ironworker" class="regfilter" type="checkbox" value="Ironworker"  />Ironworker
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input name="Metal Worker" class="regfilter" type="checkbox" value="Metal Worker"  />Metal Worker
+                                </label>
+                            </div>
+                           -->
+                        </div>
+                        <div>
+                    <button id="applyFilters" class="btn btn-primary" onclick="SearchRegs()">Apply</button>
+                </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-10 " style="padding-bottom: 15px;">
+                        <h2 >
+                            Registrations
+                            
+                        
+                        </h2>
+                        <div>
+                            <div  class="search-results-label"><b>Search Results:</b><span id="totalResultCount"></span></div>
+                            <div class="search-results-buttons-wrapper">
+                                <span id="showingPages"></span>
+                                <button id="previous" style="margin-left:10px;" class="btn btn-primary" onclick="prev()">Previous</button>
+                                <button id="next" class="btn btn-primary" onclick="next()">Next</button>
+                            </div>
+                        </div>
+                        <hr/>
+                        
+                        <!--<div class="button-print-export-wrapper">-->
+                            <button class="btn btn-primary" onclick="printMyList()">Print PDF <i class="fa fa-print"></i></button>
+                            <button class="btn btn-primary" onclick="exportMyList()">Export <i class="fa fa-download"></i></button>
+                        <!--</div>-->
+                        
+                        <div class="button-list-wrapper">
+                            <div class="dropdown"> 
+                                <button class="btn btn-primary" onclick="addAllTotMyList()">Add all to my list</button>
+                                <button id="dropdownMenu1" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+                                    My List (<span id="myListCount">0</span>)<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    
+                                    <li><a href="javascript:void(0);" onclick="clearMyList()"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Clear My List</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!--card end-->
+                        
+                        
+                        <div id="regulations" style="margin-top:10px;">
+                            
+                        </div> 
+                        
+                        <div id="spinner" class="slds-spinner_container slds-is-relative" style="display:none;margin-top:50px;">
+                            <div role="status" class="slds-spinner slds-spinner--large slds-spinner--brand">
+                                <div class="slds-spinner__dot-a"></div>
+                                <div class="slds-spinner__dot-b"></div>
+                            </div>
+                        </div>
+                        
+                        <div id="footer">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div><!--section row-->
+                
+                    
+                
+                
+            </div>
+            
+    <script>
+        Visualforce.remoting.timeout = 120000; // Set timeout at page level
+        var $ = jQuery.noConflict();
+        var allIds = [];
+        var regIds = [];
+        var regStart=0;
+        var regLimit=10;
+        var filters=[];
+        var searchBy;
+        var startDate;
+        var expirationDate;
+        var county;
+        var city;
+        var fromDOM=false;
+        var displayCount=0;
+        var myList = [];
+        var TotalPages=0;
+        var CurrentPage=0;
+        var maxRegistrations = 1400;
+    	cookieString = 'Search_MyList';
+        
+        $(document).ready(function() {
+            fromDOM=true;
+            
+            //filter change method
+            //registerOnFilterChange();
+            
+            //get all Ids
+            getRegKeys();
+            
+            //register scroll magic
+            //registerScrollMagic();
+            
+            
+            //cookies
+            myList = Cookies.get(cookieString);
+            if (myList) {
+                myList = JSON.parse(myList);
+            } else {
+                myList = [];
+            }  
+            updateMyListCount(); 
+            fromDOM=false;
+            
+            
+            
+            $(".slds-input").keypress(function(e) {
+                
+                if (e.keyCode === 13) { // If Enter key pressed
+                    SearchRegs();
+                }
+            });
+            
+        });
+        function viewDetails(regId){
+            
+            url="/ContractorSearch/registrationSearchDetails"
+            var winName = "'registrationDetail";
+            var form = document.createElement("form");
+            form.setAttribute("id", "registrationDetails");
+            form.setAttribute("method", "post");
+            form.setAttribute("action", url);
+            form.setAttribute("target",winName);
+            
+            var input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'id';
+            input.value = regId;
+            form.appendChild(input);
+            
+            document.body.appendChild(form);
+            window.open('',winName);
+            form.target = winName;
+            form.submit();
+            document.body.removeChild(form);    
+            
+        
+        }
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+
+        function scrollToTop(){
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+            //document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+        
+        
+        function registerOnFilterChange(){
+            $("#totalResultCount").empty();
+            $("#showingPages").empty();
+            //$(".filter-group :input").on('change', function(){
+                UpdateURL();
+                getRegKeys();
+    
+            //});
+        
+        }
+        
+        
+        
+        function registerScrollMagic(){
+            var smController = new ScrollMagic.Controller();
+            var smScene = new ScrollMagic.Scene({triggerElement: "#footer", triggerHook: "onEnter"})
+            .addTo(smController)
+            .on("enter", function (e) {
+                
+                
+                if (regStart >= allIds.length) return;
+                $("#spinner").show();
+                getRegListNames();
+            });
+            
+        
+        }
+        
+        function reset(){
+            
+            $("#SearchByInput").val("");
+            $("#StartDate").val("");
+            $("#ExpirationDate").val("");
+            $("#County").val("");
+            $("#City").val("");
+            
+            $(".filter-group :input").each(function(){
+                this.checked=false;                    
+                
+            });
+            
+            $("#regulations").empty();
+            $("#totalResultCount").empty();
+            $("#showingPages").empty();
+            SearchRegs();
+        
+        }
+        
+        function constructURLFilterParam(){
+            var filtersString='';
+            populateFilters();
+            if(filters.length>0){
+                
+                for(k=0; k < filters.length; k++){
+                    filtersString+=filters[k]+';';
+                }
+                filtersString = filtersString.slice(0, -1);
+            }
+            return filtersString;
+        
+        }
+        
+        function populateFilters(){
+            filters=[];
+            $(".filter-group :input").each(function(){
+                
+                
+                
+                if(this.checked){
+                    filters.push(this.name);
+                }
+            });
+            
+            
+        }
+        
+        function UpdateURL(){
+            var searchObject={
+            
+                inputSearch:$("#SearchByInput").val(),
+                startDate:$("#StartDate").val(),
+                expirationDate:$("#ExpirationDate").val(),
+                county:$("#County").val(),
+                city:$("#City").val(),
+                filters:constructURLFilterParam()
+                
+            
+            
+            
+            };
+        
+            var newURL = 'ContractorSearch?'+ Object.keys(searchObject).filter(function(k) { return searchObject[k]; }).map(function(k) { return k + '=' + searchObject[k]; }).join('&');
+
+            history.replaceState('test', '', newURL);
+        
+        }
+        $.getQueryParameters = function(str) {
+            return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
+        }
+        function readURLParams(){
+                        
+            var params = $.getQueryParameters();
+            $.extend(params,{
+                foo:4
+            });
+                               
+            if (typeof params.inputSearch != 'undefined') {
+                searchBy =  params.inputSearch
+            }else{
+                searchBy = null;
+            }
+            
+            //search for startDate
+            if (typeof params.startDate != 'undefined') {
+                startDate =  params.startDate
+            }else{
+                startDate = null;
+            }
+            //search for expiration
+            if (typeof params.expirationDate != 'undefined') {
+                 expirationDate =  params.expirationDate
+            }else{
+                expirationDate = null;
+            }
+                                 
+            //search for location
+            if (typeof params.county != 'undefined') {
+                county =  params.county
+            }else{
+                county = null; 
+            }
+            
+            //search for city
+            if (typeof params.city != 'undefined') {
+                city =  params.city;
+            }else{
+                city = null;
+            }
+            
+            var filterParam=params.filter;
+            if(filterParam){
+                filters=filterParam.split(";");
+                
+            }
+           
+            
+            
+            if(fromDOM){
+            
+                
+                
+                if(searchBy){
+                    $("#SearchByInput").val(searchBy);
+                }
+                if(startDate){
+                    $("#StartDate").val(startDate);
+                }
+                
+                if(expirationDate){
+                    $("#ExpirationDate").val(expirationDate);
+                }
+                
+                if(county){
+                    $("#County").val(county);
+                }
+                
+                if(city){
+                    $("#City").val(city);
+                }
+                
+                
+                //check the filter checkboxes
+                
+                if(filterParam){
+                    filtersArray=filterParam.split(";");
+                    
+                    
+                    for(f=0; f < filtersArray.length; f++){
+                        
+                        $(".filter-group :input").each(function(){
+                            if(this.name==filtersArray[f]){
+                                this.checked=true;
+                                
+                            }
+                
+                        });
+                        
+                    
+                    }
+                    
+                    
+                }
+                
+                
+                
+            }
+            
+            
+        }
+        
+        function SearchRegs(){
+            
+            /* $(".filter-group :input").each(function(){
+                this.checked=false;                    
+                
+            });*/
+            $("#totalResultCount").empty();
+            $("#showingPages").empty();
+            UpdateURL();
+            getRegKeys();
+        
+        }
+        
+        
+        function getRegKeys(){
+            allIds = [];
+            regIds = [];
+            
+            regStart=0;
+            //var searchBy=$("#SearchByInput").val();
+            readURLParams();
+            
+            
+            //populateFilters();
+            if(searchBy || startDate || expirationDate || county || city){
+                $("#spinner").show();
+                $("#regulations").empty();
+            
+                Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.RegistrationSearchNewController.getKeys}',
+                    searchBy,startDate,expirationDate,county,city,filters,
+                    regCallback,
+                    {escape: false}
+                );
+            }
+        
+        }
+        
+        function handlePaginationButtons(){
+            
+            if(currentPage==TotalPages){
+                $("#next").attr("disabled",true);
+            }else{
+                $("#next").attr("disabled",false);
+            }
+            if(currentPage==1){
+                $("#previous").attr("disabled",true);
+            }else{
+                $("#previous").attr("disabled",false);
+            }
+            
+            $("#showingPages").html("Showing Page "+currentPage+" of "+TotalPages);
+            
+        }
+        
+        
+        
+        var regCallback=function(regs, event){
+            if (regs != null){
+                console.log('response is '+regs);
+                regIds = regs[0];
+                allIds=regs[1]; 
+                console.log('All ids is '+allIds);
+    			if(allIds && allIds.length>0){
+                    $("#totalResultCount").html(' '+allIds.length+' found');
+                    TotalPages=Math.ceil(allIds.length/regLimit);
+                    console.log("total pages is "+TotalPages);
+                    currentPage=1;
+                    handlePaginationButtons();
+                }
+                else{
+                    console.log('test');
+                    $("#totalResultCount").html(' 0 found');
+                    TotalPages = 1;
+                	currentPage = 1;
+                    handlePaginationButtons();
+                    $("#spinner").hide();
+                    
+                }
+                
+                if(allIds){
+                    if (regStart >= allIds.length) return;
+                    getRegListNames(allIds.slice(regStart, regStart + regLimit));
+                } 
+            }else{
+                    console.log('Search Call failed - '+event.message);
+                    $("#totalResultCount").html(' 0 found (error: '+event.message+')');
+                    $("#spinner").hide();
+            }
+            
+        };
+        
+        
+        function setPage(pageNumber){
+            handlePaginationButtons();
+            regStart=(pageNumber-1)*regLimit;
+            getRegListNames(allIds.slice(regStart, regStart + regLimit));
+            
+        }
+        
+        function next(){
+            $("#spinner").show();
+            $("#regulations").empty();
+            currentPage=currentPage+1;
+            setPage(currentPage);
+            
+            
+            
+        }
+        
+        function prev(){
+            $("#spinner").show();
+            $("#regulations").empty();
+            currentPage=currentPage-1;
+            setPage(currentPage);
+            
+        }
+        
+        
+        function getRegListNames(idList){
+            //$("#spinner").hide();
+            
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.RegistrationSearchNewController.queryRegulations}',
+                idList,filters,
+                regCallbackNames,
+                {escape: false}
+            );
+        
+        }
+        
+        
+        var regCallbackNames=function(regsNames, event){
+            if(regsNames)
+            {
+                
+                displayCount=regsNames.length;
+                //regStart += regsNames.length;
+                $('#regulations').append(regsNames.map(function(a) {
+                    return constructRegistrationCard(a)+'<br/>';
+                }).join(''));
+            }
+            $("#spinner").hide();
+        };
+        
+        
+        function constructRegistrationCard(reg){
+        
+            var regHtmlContent='<article class="slds-card slds-m-top_small">';
+            regHtmlContent+='<div class="slds-card__header slds-grid">';
+                regHtmlContent+='<header class="slds-media slds-media_center slds-has-flexi-truncate">';
+                  regHtmlContent+='<div class="slds-media__figure">';
+                    regHtmlContent+='<span class="slds-icon_container slds-icon-standard-account" title="account">';
+                      regHtmlContent+='<svg class="slds-icon slds-icon" aria-hidden="true">';
+                        regHtmlContent+='<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/apexpages/slds/latest/assets/icons/standard-sprite/svg/symbols.svg#contact">';
+                        regHtmlContent+='</use>';
+                      regHtmlContent+='</svg>';
+                      
+                      regHtmlContent+='<span class="slds-assistive-text">'+reg.lr.Legal_Entity_Name__c+'</span>';
+                    regHtmlContent+='</span>';
+                  regHtmlContent+='</div>';
+                  regHtmlContent+='<div class="slds-media__body">';
+                    regHtmlContent+='<h2 class="slds-card__header-title">';
+                      regHtmlContent+='<a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Accounts">';
+                        regHtmlContent+='<span>'+reg.lr.Legal_Entity_Name__c+'</span>';
+                      regHtmlContent+='</a>';
+                    regHtmlContent+='</h2>';
+                  regHtmlContent+='</div>';
+                  
+                  regHtmlContent+='<div class="slds-no-flex">';
+                    
+                    regHtmlContent+='<button class="btn btn-primary mr-2 viewDetails" style="margin-right:7px;" onclick="viewDetails(\''+reg.lr.Id+'\')">View Details</button>';
+                    //regHtmlContent+='<button class="btn btn-success">Add to my list</button>';
+                    regHtmlContent+='<div style="float:right;" id="mlbc_' + reg.lr.Id + '">'+(myList.indexOf(reg.lr.Id) == -1 ? addToMyListButton(reg.lr.Id, true) : removeFromMyListButton(reg.lr.Id, true))+'</div>';
+                  regHtmlContent+='</div>';
+               regHtmlContent+='</header>';
+             regHtmlContent+='</div>';
+              regHtmlContent+='<div class="slds-card__body slds-card__body_inner" style="margin-top:15px;">';
+                  
+                  
+                  
+                  
+                  regHtmlContent+='<div class="slds-grid slds-gutters">';
+                      regHtmlContent+='<div class="slds-col slds-size_2-of-3" style="width:70rem;">';
+                      
+                      regHtmlContent+='<article class="slds-tile">';
+                        regHtmlContent+='<h3 class="slds-tile__title slds-truncate" title="Salesforce UX"><a href="javascript:void(0);">Detail:</a></h3>';
+                        regHtmlContent+='<div class="slds-tile__detail">';
+                          regHtmlContent+='<dl class="slds-list_horizontal slds-wrap">';
+            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak " title="First Label">Registration Number:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for first label">'+reg.lr.License_Registration_Number__c+'</dd>';
+            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Status:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for second label">'+reg.lr.Status__c+'</dd>';
+            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">CSLB Number:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for second label">'+reg.CSLB+'</dd>';
+            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak " title="First Label">Legal Entity Type:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for first label">'+reg.lr.Company_Type__c+'</dd>';
+            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Mailing Address:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for second label">'+MailingAddress(reg.lr)+'</dd>';
+            
+                            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak " title="First Label">County:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for first label">'+reg.lr.Physical_Business_County__c+'</dd>';                            
+                            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Craft:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for second label">'+reg.crafts+'</dd>';
+                            
+                            regHtmlContent+='<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Email:</dt>';
+                            regHtmlContent+='<dd class="slds-item_detail slds-truncate" title="Description for second label">'+reg.lr.Account_Email__c+'</dd>';
+                          regHtmlContent+='</dl>';
+                        regHtmlContent+='</div>';
+                      regHtmlContent+='</article>';
+                      
+                      regHtmlContent+='</div>';
+                      
+                      
+                      regHtmlContent+='<div class="slds-col slds-size_1-of-3">';
+                          regHtmlContent+='<h3 class="slds-tile__title slds-truncate" title="Salesforce UX"><a href="javascript:void(0);">Registration History</a></h3>';
+                          
+                          
+                          regHtmlContent+='<table class="slds-table slds-table_cell-buffer slds-table_bordered">';
+                            regHtmlContent+='<thead>';
+                                regHtmlContent+='<tr class="slds-line-height_reset">';
+                                regHtmlContent+='<th class="" scope="col">';
+                                regHtmlContent+='<div class="slds-truncate" title="EffectiveDate">Effective Date</div>';
+                                regHtmlContent+='</th>';
+                                regHtmlContent+='<th class="" scope="col">';
+                                regHtmlContent+='<div class="slds-truncate" title="ExpirationDate">Expiration Date</div>';
+                                regHtmlContent+='</th>';
+                                
+                                
+                            regHtmlContent+='</tr>';
+                            regHtmlContent+='</thead>';
+                            regHtmlContent+='<tbody>';
+                                if(reg.regHistory)
+                                      regHtmlContent+=constructRegistrationHistory(reg.regHistory);
+                                
+                            regHtmlContent+='</tbody>';
+                        regHtmlContent+='</table>';
+                          
+                          
+                          
+                          
+                          
+                      regHtmlContent+='</div>';
+                      
+
+                  regHtmlContent+='</div>';
+                  
+                  
+                  regHtmlContent+='<br/>';
+                  
+                  regHtmlContent+='<div style="font-size:20px;">DBA</div>';
+                  regHtmlContent+='<table class="slds-table slds-table_cell-buffer slds-table_bordered">';
+                    regHtmlContent+='<thead>';
+                        regHtmlContent+='<tr class="slds-line-height_reset">';
+                        regHtmlContent+='<th class="" scope="col">';
+                        regHtmlContent+='<div class="slds-truncate" title="Name">Name</div>';
+                        regHtmlContent+='</th>';
+                        
+                    regHtmlContent+='</tr>';
+                    regHtmlContent+='</thead>';
+                    regHtmlContent+='<tbody>';
+                        if(reg.regLocList)
+                            regHtmlContent+=constructDBAData(reg.regLocList);
+                    regHtmlContent+='</tbody>';
+                regHtmlContent+='</table>';
+                
+                  
+                  
+              regHtmlContent+='</div>';
+            regHtmlContent+='</article>';
+            
+            return regHtmlContent;
+            
+            
+        }
+        function MailingAddress(regRecord){
+            var mailingAddress='';
+            var mailingArray=[];
+            
+            
+            if(regRecord.Mailing_Address_Line_1__c){
+                mailingArray.push(regRecord.Mailing_Address_Line_1__c);
+            }
+            
+            if(regRecord.Mailing_City__c){
+                mailingArray.push(regRecord.Mailing_City__c);
+            }
+            
+            if(regRecord.Mailing_State__c){
+                mailingArray.push(regRecord.Mailing_State__c);
+            }
+            
+            
+            
+            for(i=0; i< mailingArray.length;i++){
+                
+                mailingAddress+=mailingArray[i]+'<br/>';
+            
+            
+            }
+            mailingAddress = mailingAddress.slice(0, -5);
+            
+            if(regRecord.Mailing_Postal_Code__c){
+              
+                mailingAddress+=' '+regRecord.Mailing_Postal_Code__c;
+                
+            }
+            
+            return mailingAddress;
+        
+        }
+        function constructRegistrationHistory(regHistory){
+            var historyData='';
+            
+            for(k=0;k<regHistory.length;k++){
+                historyData+='<tr class="slds-hint-parent">';
+                            
+                    historyData+='<td data-label="EffectiveDate">';
+                    historyData+='<div class="slds-truncate" title="EffectiveDate">'+regHistory[k].EffectiveDate+'</div>';
+                    historyData+='</td>';
+                    historyData+='<td data-label="ExpirationDate">';
+                    historyData+='<div class="slds-truncate" title="ExpirationDate">'+regHistory[k].ExpirationDate+'</div>';
+                    historyData+='</td>';
+                    
+                    
+                historyData+='</tr>';
+            
+            }
+            
+            return historyData;
+        
+        }
+        
+        function constructDBAData(dbaList){
+            var dbaData='';
+            
+            for(k=0;k<dbaList.length;k++){
+                dbaData+='<tr class="slds-hint-parent">';
+                            
+                    dbaData+='<td data-label="Name">';
+                    dbaData+='<div class="slds-truncate" title="Cloudhub">'+dbaList[k].Name+'</div>';
+                    dbaData+='</td>';
+
+                dbaData+='</tr>';
+            
+            }
+            
+            return dbaData;
+        }
+        
+        function DBALocation(dba){
+            var DBAAddress='';
+            var addressArray=[];
+            
+            
+            if(dba.Address__c){
+                addressArray.push(dba.Address__c);
+            }
+            
+            if(dba.Address_Line_2__c){
+                addressArray.push(dba.Address_Line_2__c);
+            }
+            
+            if(dba.Address_Line_3__c){
+                addressArray.push(dba.Address_Line_3__c);
+            }
+            
+            if(dba.City__c){
+                addressArray.push(dba.City__c);
+            }
+            
+            if(dba.State__c){
+                addressArray.push(dba.State__c);
+            }
+            
+            
+            
+            if(dba.Zip_Code__c){
+                addressArray.push(dba.Zip_Code__c);
+            }
+            
+            DBAAddress=addressArray.toString();
+            
+            return DBAAddress;
+            
+        }
+        
+        function addAllTotMyList(){
+            if (!regIds.length) {
+                alert('Your list is empty');
+                return;
+            }   
+            for(var i=0;i<regIds.length;i++){
+                addToMyList(regIds[i]);
+            }
+            
+            return;
+        }
+        
+        function clearMyList() {
+            while (myList.length) {
+                removeFromMyList(myList[0]);
+            }
+        }
+        
+        function updateMyListCount() {
+            $('#myListCount').html(myList.length);
+        }        
+
+        function addToMyList(aId, mapView) {
+            if (myList==null || myList.indexOf(aId) == -1) {
+                myList.push(aId);
+            }
+            updateMyListCookie();
+            updateMyListCount();
+            $('#mlbc' + '_' + aId).html(removeFromMyListButton(aId, mapView));
+        }    
+        
+        function removeFromMyList(aId, mapView) {
+            var i = myList.indexOf(aId);
+            if (i != -1) {
+                myList.splice(i, 1);
+            }
+            updateMyListCookie();
+            updateMyListCount();
+            $('#mlbc' + '_' + aId).html(addToMyListButton(aId, mapView));
+        }                
+        
+        function updateMyListCookie() {
+            Cookies.set(cookieString, myList);
+        }   
+        function openWindowWithPostRequest(windowName,action) {
+          var winName=windowName;
+          var winURL=action;
+          var paramsPassed = '';
+          var myListString = '';
+          var myListArray = myList;
+          var maxNum = myListArray.length;
+          var paramArray = [];
+          var alpha = 0;
+          var maxNum = 700;
+          if (myListArray.length < 700){
+              maxNum = myListArray.length;
+          }
+          var reachedMax = false;
+          for (alpha = 0; alpha <= myListArray.length; alpha++){
+              if (alpha == 0){
+                 myListString = myListArray[alpha]; 
+              }else{
+                  myListString += ','+myListArray[alpha]; 
+              }
+              if (alpha % maxNum != 0 || alpha == 0){
+                  reachedMax = false;
+                  if (alpha % maxNum == 0){
+                       paramsPassed = myListArray[alpha];
+                  }else{
+                       paramsPassed += ','+myListArray[alpha];   
+                  }
+              } else{
+                  paramArray.push(paramsPassed);
+                  paramsPassed = "";
+                  paramsPassed = myListArray[alpha];
+                  reachedMax = true;
+              }  
+          }
+          if (reachedMax == false){
+              paramArray.push(paramsPassed);
+              paramsPassed = "";
+          }
+          var windowoption='resizable=yes,top=0,left=0,height=600,width=600,location=no,menubar=no,scrollbars=yes';
+          var params = {};   
+          for (var beta = 0; beta < paramArray.length; beta++){
+              var objectParamName = 'myList';
+              if (beta == 0){
+                  params[objectParamName]  = paramArray[0];
+              }else{
+                  objectParamName = 'myList'+beta;
+                  params[objectParamName]  = paramArray[beta];
+              }
+          }  
+          params['listCount'] = paramArray.length;  
+          params['myListString'] = myListString;
+          var form = document.createElement("form");
+          form.setAttribute("id", "myListParams");
+          form.setAttribute("method", "post");
+          form.setAttribute("action", winURL);
+          form.setAttribute("target",winName);  
+          for (var i in params) {
+            if (params.hasOwnProperty(i)) {
+              var input = document.createElement('input');
+              input.type = 'hidden';
+              input.name = i;
+              input.value = params[i];
+              form.appendChild(input);
+            }
+          }              
+          document.body.appendChild(form);                       
+          window.open('', winName,windowoption);
+          form.target = winName;
+          form.submit();                 
+          document.body.removeChild(form);           
+        }
+        function printMyList() {
+            if (!myList.length) {
+                alert('Your list is empty');
+                return;
+            }
+            if (myList.length > maxRegistrations) {
+                alert('Your list exceeds the max allowable of '+maxRegistrations+' registrations. Try refinining your search parameters to reduce the number of registrations.');
+                return;
+            }
+            openWindowWithPostRequest('printPreview','/ContractorSearch/PrintRegDetails')
+           //var w = window.open("/ContractorSearch/PrintRegDetails?myList="+myList,'_blank','toolbar=no, scrollbars=yes, resizable=yes, top=600, left=600, width=600, height=600');         
+          return;
+        }  
+        
+           
+        
+        function exportMyList() {
+            if (!myList.length) {
+                alert('Your list is empty');
+                return;
+            }  
+            if (myList.length > maxRegistrations) {
+                alert('Your list exceeds the max allowable of '+maxRegistrations+' registrations. Try refinining your search parameters to reduce the number of registrations.');
+                return;
+            }
+          openWindowWithPostRequest('recordsExport','/ExportRegDetails')
+          //window.open("/ExportRegDetails?myList="+myList, '_blank');   
+        }  
+        
+        
+        function addToMyListButton(aId, mapView) {
+            return '<button style="color:white;" class="btn btn-success" onclick="addToMyList(\'' + aId + '\', ' + mapView + ')">' +
+                       '<i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add to My List' +
+                   '</button>';
+        }  
+        
+        function removeFromMyListButton(aId, mapView) {
+            return '<button style="color:white;" class="btn btn-danger" onclick="removeFromMyList(\'' + aId + '\', ' + mapView + ')">' +
+                       '<i class="fa fa-trash" aria-hidden="true"></i>&nbsp; Remove from My List' +
+                   '</button>'
+        }
+        
+        
+        
+        
+    
+    </script>            
+                
+                        
+            
+        </apex:define>
+    </apex:composition>
+    
+    
+    
+</apex:page>

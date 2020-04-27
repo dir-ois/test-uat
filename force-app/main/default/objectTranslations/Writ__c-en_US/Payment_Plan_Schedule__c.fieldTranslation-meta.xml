@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Free Form text field to enter the Payment Plan Schedule Details --></help>
+    <label><!-- Payment Plan Schedule --></label>
+    <name>Payment_Plan_Schedule__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Trial app in force.com. This is a position control system based on the force.com tutorial for a recruiting system.  It may also include a disaster notification system.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Position Management System</label>
+    <tabs>Position__c</tabs>
+    <tabs>X607__c</tabs>
+    <tabs>Appointment__c</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Form_1__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>HR_Probe_Report_Tracking__c</tabs>
+    <tabs>DIR_Inspection__c</tabs>
+    <tabs>HR_Mandatory_Training_Tracking__c</tabs>
+    <tabs>HR_Mandatory_Training_Reminder__c</tabs>
+    <tabs>Support_Request__c</tabs>
+    <tabs>HR_Division_Liaison__c</tabs>
+    <tabs>Question_Bank__c</tabs>
+    <tabs>Registration_Location__c</tabs>
+</CustomApplication>

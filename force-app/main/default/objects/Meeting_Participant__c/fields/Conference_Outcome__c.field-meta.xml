@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conference_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Conference Outcome</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Settled</fullName>
+                <default>false</default>
+                <label>Settled</label>
+            </value>
+            <value>
+                <fullName>Referred to Hearing - No Settlement</fullName>
+                <default>false</default>
+                <label>Referred to Hearing - No Settlement</label>
+            </value>
+            <value>
+                <fullName>Referred to Hearing - Claimant only appeared</fullName>
+                <default>false</default>
+                <label>Referred to Hearing - Claimant only appeared</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Claimant Withdrew</fullName>
+                <default>false</default>
+                <label>Dismissed - Claimant Withdrew</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Claimant Did not appear</fullName>
+                <default>false</default>
+                <label>Dismissed - Claimant Did not appear</label>
+            </value>
+            <value>
+                <fullName>Dismissed - No Jurisdiction</fullName>
+                <default>false</default>
+                <label>Dismissed - No Jurisdiction</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

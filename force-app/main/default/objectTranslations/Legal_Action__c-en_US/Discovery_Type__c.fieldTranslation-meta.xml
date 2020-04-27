@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Discovery Type --></label>
+    <name>Discovery_Type__c</name>
+    <picklistValues>
+        <masterLabel>Debtor Exam</masterLabel>
+        <translation><!-- Debtor Exam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposition - Expert</masterLabel>
+        <translation><!-- Deposition - Expert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposition - Non-Party</masterLabel>
+        <translation><!-- Deposition - Non-Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposition - Party</masterLabel>
+        <translation><!-- Deposition - Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Productions</masterLabel>
+        <translation><!-- Document Productions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interrogatories - Form</masterLabel>
+        <translation><!-- Interrogatories - Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interrogatories - Special</masterLabel>
+        <translation><!-- Interrogatories - Special --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigative Subpoena</masterLabel>
+        <translation><!-- Investigative Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Debtor Exam</masterLabel>
+        <translation><!-- Judgment Debtor Exam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice to Produce (CCP 1987)</masterLabel>
+        <translation><!-- Notice to Produce (CCP 1987) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requests for Admission</masterLabel>
+        <translation><!-- Requests for Admission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requests for Production</masterLabel>
+        <translation><!-- Requests for Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena</masterLabel>
+        <translation><!-- Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena Duces Tecum</masterLabel>
+        <translation><!-- Subpoena Duces Tecum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Subpoena</masterLabel>
+        <translation><!-- Trial Subpoena --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

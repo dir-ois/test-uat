@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Calculate_Date_Expires</fullName>
+        <description>Default Date Expires = Date served on Ganishee + 1 Year</description>
+        <field>Date_Expires__c</field>
+        <formula>Date_Response_Due_from_Garnishee__c + 365</formula>
+        <name>Calculate Date Expires</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Calculate_Date_Response</fullName>
+        <field>Date_Response_Due_from_Garnishee__c</field>
+        <formula>Date_Issued_by_DLSE__c  + 15</formula>
+        <name>Calculate Date Response</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Notice_of_Joint_Accountholder</fullName>
+        <description>Make &quot;Check Notice of Joint-Accountholder&quot;  Checked (True)</description>
+        <field>Notice_of_Joint_Accountholder__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Notice of Joint-Accountholder</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Default Date Expires</fullName>
+        <actions>
+            <name>Calculate_Date_Expires</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Levy__c.Date_Response_Due_from_Garnishee__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Levy__c.Date_Expires__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Default value = Garnishee Date Issued + 15 days</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Default Date Response</fullName>
+        <actions>
+            <name>Calculate_Date_Response</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Levy__c.Date_Issued_by_DLSE__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Levy__c.Date_Response_Due_from_Garnishee__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Default value = Garnishee Date Issued + 15 days</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Response type is Garnishee with Notice of Joint Accountholder</fullName>
+        <actions>
+            <name>Check_Notice_of_Joint_Accountholder</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Levy__c.Levy_Response_Type__c</field>
+            <operation>equals</operation>
+            <value>Memorandum of Garnishee with Notice of Joint Accountholder</value>
+        </criteriaItems>
+        <description>Set &quot;Notice of Joint-Accountholder&quot; = True (Checked) when the Levy Response Type = &quot;Memorandum of Garnishee with Notice of Joint Accountholder&quot;</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

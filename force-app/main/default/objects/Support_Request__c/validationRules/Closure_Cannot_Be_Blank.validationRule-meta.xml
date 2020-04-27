@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closure_Cannot_Be_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Status__c)
+&amp;&amp;
+
+AND(ISBLANK(Components_Updated__c), ISBLANK( Deployment_Date__c), ISPICKVAL(Source_Sandbox__c,&quot;&quot;), ISPICKVAL(Source_Sandbox__c,&quot;&quot;), ISPICKVAL( Method_of_Deployment__c, &quot;&quot;), ISBLANK(Link_to_Change_Set__c), ISPICKVAL(Status__c, &quot;Closed&quot;))
+
+&amp;&amp;
+
+(RecordType.DeveloperName = &#39;Support_Request&#39;|| RecordType.DeveloperName = &#39;Change_Request&#39;)
+
+&amp;&amp;
+
+ISPICKVAL(Type__c, &quot;Gearset Deploy&quot;)
+
+&amp;&amp;
+
+ISPICKVAL(Type__c, &quot;Config Change Deploy&quot;)
+
+&amp;&amp;
+
+ISPICKVAL(Type__c, &quot;Sub-project&quot;)
+
+&amp;&amp;  
+CreatedBy.CalAtlas_Business_Team_Member__c &lt;&gt; true</errorConditionFormula>
+    <errorMessage>You must complete the resolution information before you close the Support Request</errorMessage>
+</ValidationRule>

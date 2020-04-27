@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Denied</masterLabel>
+        <translation><!-- Closed - Denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Inactive</masterLabel>
+        <translation><!-- Closed - Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Rejected</masterLabel>
+        <translation><!-- Closed - Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Revoked</masterLabel>
+        <translation><!-- Closed - Revoked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Suspended</masterLabel>
+        <translation><!-- Closed - Suspended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Withdrawn</masterLabel>
+        <translation><!-- Closed - Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disqualified</masterLabel>
+        <translation><!-- Disqualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expired</masterLabel>
+        <translation><!-- Expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fee Calculation Ready</masterLabel>
+        <translation><!-- Fee Calculation Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Review</masterLabel>
+        <translation><!-- In Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Violation</masterLabel>
+        <translation><!-- In Violation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive</masterLabel>
+        <translation><!-- Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incomplete</masterLabel>
+        <translation><!-- Incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ineligible</masterLabel>
+        <translation><!-- Ineligible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Payment</masterLabel>
+        <translation><!-- No Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Hold</masterLabel>
+        <translation><!-- On Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending / Defect</masterLabel>
+        <translation><!-- Pending / Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Payment</masterLabel>
+        <translation><!-- Pending Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Recertification</masterLabel>
+        <translation><!-- Pending Recertification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred for Investigation</masterLabel>
+        <translation><!-- Referred for Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Legal</masterLabel>
+        <translation><!-- Referred to Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund</masterLabel>
+        <translation><!-- Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewed</masterLabel>
+        <translation><!-- Renewed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resubmitted</masterLabel>
+        <translation><!-- Resubmitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

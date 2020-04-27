@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Court_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If selecting Other / Specify, please enter the court name in the Court Name for PAGA Case field.</inlineHelpText>
+    <label>Court Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Court_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alameda County Superior Court</fullName>
+                <default>false</default>
+                <label>Alameda County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Alpine County Superior Court</fullName>
+                <default>false</default>
+                <label>Alpine County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Amador County Superior Court</fullName>
+                <default>false</default>
+                <label>Amador County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Butte County Superior Court</fullName>
+                <default>false</default>
+                <label>Butte County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Calaveras County Superior Court</fullName>
+                <default>false</default>
+                <label>Calaveras County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Colusa County Superior Court</fullName>
+                <default>false</default>
+                <label>Colusa County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Contra Costa County Superior Court</fullName>
+                <default>false</default>
+                <label>Contra Costa County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Del Norte County Superior Court</fullName>
+                <default>false</default>
+                <label>Del Norte County Superior Court</label>
+            </value>
+            <value>
+                <fullName>El Dorado County Superior Court</fullName>
+                <default>false</default>
+                <label>El Dorado County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Fresno County Superior Court</fullName>
+                <default>false</default>
+                <label>Fresno County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Glenn County Superior Court</fullName>
+                <default>false</default>
+                <label>Glenn County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Humboldt County Superior Court</fullName>
+                <default>false</default>
+                <label>Humboldt County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Imperial County Superior Court</fullName>
+                <default>false</default>
+                <label>Imperial County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Inyo County Superior Court</fullName>
+                <default>false</default>
+                <label>Inyo County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Kern County Superior Court</fullName>
+                <default>false</default>
+                <label>Kern County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Kings County Superior Court</fullName>
+                <default>false</default>
+                <label>Kings County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Lake County Superior Court</fullName>
+                <default>false</default>
+                <label>Lake County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Lassen County Superior Court</fullName>
+                <default>false</default>
+                <label>Lassen County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Los Angeles County Superior Court</fullName>
+                <default>false</default>
+                <label>Los Angeles County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Madera County Superior Court</fullName>
+                <default>false</default>
+                <label>Madera County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Marin County Superior Court</fullName>
+                <default>false</default>
+                <label>Marin County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Mariposa County Superior Court</fullName>
+                <default>false</default>
+                <label>Mariposa County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Mendocino County Superior Court</fullName>
+                <default>false</default>
+                <label>Mendocino County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Merced County Superior Court</fullName>
+                <default>false</default>
+                <label>Merced County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Modoc County Superior Court</fullName>
+                <default>false</default>
+                <label>Modoc County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Mono County Superior Court</fullName>
+                <default>false</default>
+                <label>Mono County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Monterey County Superior Court</fullName>
+                <default>false</default>
+                <label>Monterey County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Napa County Superior Court</fullName>
+                <default>false</default>
+                <label>Napa County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Nevada County Superior Court</fullName>
+                <default>false</default>
+                <label>Nevada County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Orange County Superior Court</fullName>
+                <default>false</default>
+                <label>Orange County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Placer County Superior Court</fullName>
+                <default>false</default>
+                <label>Placer County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Plumas County Superior Court</fullName>
+                <default>false</default>
+                <label>Plumas County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Riverside County Superior Court</fullName>
+                <default>false</default>
+                <label>Riverside County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Sacramento County Superior Court</fullName>
+                <default>false</default>
+                <label>Sacramento County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Benito County Superior Court</fullName>
+                <default>false</default>
+                <label>San Benito County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Bernardino County Superior Court</fullName>
+                <default>false</default>
+                <label>San Bernardino County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Diego County Superior Court</fullName>
+                <default>false</default>
+                <label>San Diego County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Francisco County Superior Court</fullName>
+                <default>false</default>
+                <label>San Francisco County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Joaquin County Superior Court</fullName>
+                <default>false</default>
+                <label>San Joaquin County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Luis Obispo County Superior Court</fullName>
+                <default>false</default>
+                <label>San Luis Obispo County Superior Court</label>
+            </value>
+            <value>
+                <fullName>San Mateo County Superior Court</fullName>
+                <default>false</default>
+                <label>San Mateo County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara County Superior Court</fullName>
+                <default>false</default>
+                <label>Santa Barbara County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Santa Clara County Superior Court</fullName>
+                <default>false</default>
+                <label>Santa Clara County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz County Superior Court</fullName>
+                <default>false</default>
+                <label>Santa Cruz County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Shasta County Superior Court</fullName>
+                <default>false</default>
+                <label>Shasta County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Sierra County Superior Court</fullName>
+                <default>false</default>
+                <label>Sierra County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Siskiyou County Superior Court</fullName>
+                <default>false</default>
+                <label>Siskiyou County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Solano County Superior Court</fullName>
+                <default>false</default>
+                <label>Solano County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Sonoma County Superior Court</fullName>
+                <default>false</default>
+                <label>Sonoma County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Stanislaus County Superior Court</fullName>
+                <default>false</default>
+                <label>Stanislaus County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Sutter County Superior Court</fullName>
+                <default>false</default>
+                <label>Sutter County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Tehama County Superior Court</fullName>
+                <default>false</default>
+                <label>Tehama County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Trinity County Superior Court</fullName>
+                <default>false</default>
+                <label>Trinity County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Tulare County Superior Court</fullName>
+                <default>false</default>
+                <label>Tulare County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Tuolumne County Superior Court</fullName>
+                <default>false</default>
+                <label>Tuolumne County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Ventura County Superior Court</fullName>
+                <default>false</default>
+                <label>Ventura County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Yolo County Superior Court</fullName>
+                <default>false</default>
+                <label>Yolo County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Yuba County Superior Court</fullName>
+                <default>false</default>
+                <label>Yuba County Superior Court</label>
+            </value>
+            <value>
+                <fullName>Cal. Ct. App. 1</fullName>
+                <default>false</default>
+                <label>Cal. Ct. App. 1</label>
+            </value>
+            <value>
+                <fullName>Cal. Ct. App. 2</fullName>
+                <default>false</default>
+                <label>Cal. Ct. App. 2</label>
+            </value>
+            <value>
+                <fullName>Cal. Ct. App. 3</fullName>
+                <default>false</default>
+                <label>Cal. Ct. App. 3</label>
+            </value>
+            <value>
+                <fullName>Cal. Ct. App. 4</fullName>
+                <default>false</default>
+                <label>Cal. Ct. App. 4</label>
+            </value>
+            <value>
+                <fullName>Cal. Ct. App. 5</fullName>
+                <default>false</default>
+                <label>Cal. Ct. App. 5</label>
+            </value>
+            <value>
+                <fullName>Cal. Ct. App. 6</fullName>
+                <default>false</default>
+                <label>Cal. Ct. App. 6</label>
+            </value>
+            <value>
+                <fullName>Cal. Supreme</fullName>
+                <default>false</default>
+                <label>Cal. Supreme</label>
+            </value>
+            <value>
+                <fullName>U.S. Central Dist. CA</fullName>
+                <default>false</default>
+                <label>U.S. Central Dist. CA</label>
+            </value>
+            <value>
+                <fullName>U.S. Eastern Dist. CA</fullName>
+                <default>false</default>
+                <label>U.S. Eastern Dist. CA</label>
+            </value>
+            <value>
+                <fullName>U.S. Northern Dist. CA</fullName>
+                <default>false</default>
+                <label>U.S. Northern Dist. CA</label>
+            </value>
+            <value>
+                <fullName>U.S. Southern Dist. CA</fullName>
+                <default>false</default>
+                <label>U.S. Southern Dist. CA</label>
+            </value>
+            <value>
+                <fullName>U.S. 9th Circuit</fullName>
+                <default>false</default>
+                <label>U.S. 9th Circuit</label>
+            </value>
+            <value>
+                <fullName>U.S. Supreme</fullName>
+                <default>false</default>
+                <label>U.S. Supreme</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Ct. App. 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Ct. App. 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Ct. App. 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Ct. App. 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Ct. App. 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Ct. App. 6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <valueName>Cal. Supreme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Appellate Courts</controllingFieldValue>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Alameda County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Alpine County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Amador County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Butte County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Calaveras County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Colusa County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Contra Costa County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Del Norte County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>El Dorado County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Fresno County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Glenn County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Humboldt County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Imperial County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Inyo County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Kern County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Kings County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Lake County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Lassen County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Los Angeles County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Madera County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Marin County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Mariposa County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Mendocino County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Merced County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Modoc County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Mono County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Monterey County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Napa County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Nevada County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Orange County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Placer County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Plumas County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Riverside County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Sacramento County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Benito County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Bernardino County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Diego County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Francisco County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Joaquin County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Luis Obispo County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>San Mateo County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Santa Barbara County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Santa Clara County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Santa Cruz County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Shasta County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Sierra County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Siskiyou County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Solano County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Sonoma County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Stanislaus County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Sutter County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Tehama County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Trinity County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Tulare County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Tuolumne County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Ventura County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Yolo County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California Superior Courts</controllingFieldValue>
+            <valueName>Yuba County Superior Court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <valueName>U.S. Central Dist. CA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <valueName>U.S. Eastern Dist. CA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <valueName>U.S. Northern Dist. CA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <valueName>U.S. Southern Dist. CA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <valueName>U.S. 9th Circuit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Courts</controllingFieldValue>
+            <valueName>U.S. Supreme</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

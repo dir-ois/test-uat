@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transmittal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transmittals</value>
+    </caseValues>
+    <layouts>
+        <layout>Transmittal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used for BOFE transmittals of checks to BOFE AR --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

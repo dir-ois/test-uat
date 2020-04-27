@@ -1,0 +1,233 @@
+<apex:page standardController="DIR_Violation__c" extensions="UpdateViolationController" showheader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+    <html>
+        <head>    
+            <link rel="stylesheet" href="{!URLFOR($Resource.jquery_mobile, 'jquery.mobile-1.4.5.min.css')}" id="cssId"/>
+            <script src="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"></script>
+            <script src="{!URLFOR($Resource.jquery_mobile,'jquery.mobile-1.4.5.min.js')}"></script>
+            
+        
+            <meta http-equiv="Cache-Control" content="no-store" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        </head>
+        
+        <body>
+            <apex:form id="theForm">
+            <div data-role="page" data-rel="dialog">
+                <div data-role="header" data-add-back-btn="true">
+                    <h1>
+                        Update Case Issue
+                    </h1>
+                </div>
+                
+                <div data-role="content" id="theDiv">
+                        <div>
+                            <br/>
+                            <apex:panelGrid columns="3" style="width:40%;">
+                                <apex:outputPanel >
+                                    <b>Amount Due Date</b>
+                                    <apex:inputField value="{!viol.Wages_Due_Date__c}" id="wagesdd" onchange="CalculateTotal();"/>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <b>Decided at (Meeting)</b>
+                                    <apex:inputField value="{!viol.Decided_at_Meeting__c}" id="dam" styleClass="ui-icon ui-icon-right ui-icon-search" onchange="CalculateTotal();"/>
+                                </apex:outputPanel>
+                                <apex:outputPanel >
+                                    <a onclick="setLastMousePosition(event)" href="javascript:%20openLookup%28%27%2F_ui%2Fcommon%2Fdata%2FLookupPage%3Flkfm%3Dj_id0%253AtheForm%26lknm%3Dj_id0%253AtheForm%253Adam%26lkfield%3D00NZ0000001pFAW%26lkent%3Da1E%26lktp%3D%27%20%2B%20getElementByIdCS%28%27j_id0%3AtheForm%3Adam_lktp%27%29.value%2B%27%26dplp%3D%27%20%2B%20encodeURIComponent%28dpdLkUtil.serialize%28sfdcPage.getReferredDomIds%28%27j_id0%3AtheForm%3Adam%27%29%2C%20%27j_id0%3AtheForm%3Adam%27%29%29%2C670%2C%271%27%2C%27%26lksrch%3D%27%20%2B%20escapeUTF%28getElementByIdCS%28%27j_id0%3AtheForm%3Adam%27%29.value.substring%280%2C%2080%29%29%29">
+                                        <input type="button" data-icon="search" data-iconpos="notext" value="Icon only"/>
+                                    </a>
+                                </apex:outputPanel>
+                            </apex:panelGrid>
+                            <br/>
+                        </div>
+                        <apex:outputPanel id="step1OP">
+                            <apex:outputPanel >
+                                <div id="firststepDiv">
+                                    <apex:actionFunction name="saveVarValues" action="{!saveVarValues}" rerender="urlParamStr">
+                                        <apex:param name="urlParamStr" value="" id="urlParamStr" assignTo="{!valueString}"/>
+                                    </apex:actionFunction>
+                                    <apex:outputPanel id="DetailsText2">                                        
+                                        <ul data-role="listview" id="detailsList">
+                                            <apex:repeat value="{!SelectedTypes}" var="selType">
+                                                <li style="white-space: normal;">  
+                                                    <b>{!selType.vType.Name} - {!selType.vType.Civil_Penalty_Section__c} - {!selType.vType.Violation_Type__c} - {!selType.vType.Help_Text__c} </b>
+                                                    <br />{!selType.vType.Violation_Text__c}
+                                                    <br /><br />
+                                                    <small>
+                                                        <b>
+                                                            <apex:repeat value="{!selType.vtvWrapperList}" var="vtv" id="testID">
+                                                                <apex:variable value="{!selType.indexCounter}{!vtv.indexCounter}" var="vtvIdentifier" />
+                                                                <apex:outputPanel >
+                                                                {!vtv.vTypeVar.Description__c} :
+                                                                <br/>
+                                                                </apex:outputPanel>
+                                                                <apex:outputPanel rendered="{!vtv.isUserInput}">
+                                                                    <!--  <apex:inputText value="{!vtv.varValue}" onchange="alert('{!vtvIdentifier}');" />-->
+                                                                    <input type="text" id="input{!vtvIdentifier}" onchange="valChanged{!vtvIdentifier}();"  value="{!vtv.varValue}"/><br />
+                                                                </apex:outputPanel>
+                                                                <apex:outputPanel rendered="{!NOT(vtv.isUserInput)}">
+                                                                    <output name="output{!vtvIdentifier}" id="output{!vtvIdentifier}">{!vtv.varValue}</output><br/><br/>
+                                                                </apex:outputPanel>                                                         
+                                                                <apex:inputHidden id="selVal" value="{!vtv.varValue}" />
+                                                                <input type="hidden" id="selVal{!vtvIdentifier}" value="{!vtv.varValue}" />
+                                                                <script>
+                                                                    function valChanged{!vtvIdentifier}() {
+                                                                        var varVal = document.getElementById('input{!vtvIdentifier}').value;
+                                                                        document.getElementById('selVal{!vtvIdentifier}').value = varVal;
+                                                                        console.log('IDENTIFIER: {!vtvIdentifier}');
+                                                                        CalculateTotal();
+                                                                    }
+                                                                </script>
+                                                            </apex:repeat>
+                                                        </b>
+                                                    </small>
+                                                </li>
+                                                <hr color="Black" width="100%" size="6"/>
+                                            </apex:repeat>
+                                        </ul>
+                                        <br /><br />
+                                        <small><b>
+                                        Total Amount of Civil Penalties to State: $<span id="totalAmount">0</span><br />
+                                        Total Amount Payable to Employee(s): $<span id="totalWages">0</span>
+                                        </b></small><br /><br />
+                                        <apex:inputHidden id="totalAmountOnPage" value="{!TotalAmount}" />
+                                        <apex:inputHidden id="totalWagesOnPage" value="{!TotalWages}" />
+                                        <script>
+                                            var paramStr;
+                                            function CalculateTotal() {
+                                                allowSave();
+                                                
+                                                var totalA = 0;
+                                                var totalW = 0;
+                                                paramStr = '';
+                                                <apex:repeat value="{!SelectedTypes}" var="selType">
+                                                    var formulaStrA = String('{!selType.formula}');
+                                                    var formulaStrW = String('{!selType.wageformula}');
+                                                    var formulaStrAP = String('{!selType.amountPaidFormula}');
+                                                    var formulaStrAE = String('{!selType.amountEarnedFormula}');
+                                                    var totalAP = 0;
+                                                    var totalAE = 0;
+                                                    <apex:repeat value="{!selType.vtvWrapperList}" var="vtv">
+                                                        var vtvDataType = String('{!vtv.dataType}');
+                                                        var sId = String('{!vtv.vtvName}');
+                                                        var sVal = document.getElementById('selVal{!selType.indexCounter}{!vtv.indexCounter}').value;
+                                                        if(vtvDataType == 'Currency' || vtvDataType == 'Decimal' || vtvDataType == 'Integer'){
+                                                            while(sVal.indexOf(',') > -1){
+                                                                sVal = sVal.replace(',', '');
+                                                            }
+                                                            if(isNaN(parseFloat(sVal))) sVal = 0;
+                                                            while(formulaStrA != '' && formulaStrA.indexOf(sId) > -1){
+                                                                formulaStrA = formulaStrA.replace(sId, sVal);
+                                                            }
+                                                            while(formulaStrW != '' && formulaStrW.indexOf(sId) > -1){
+                                                                formulaStrW = formulaStrW.replace(sId, sVal);
+                                                            }
+                                                            while(formulaStrAP != '' && formulaStrAP.indexOf(sId) > -1){
+                                                                formulaStrAP = formulaStrAP.replace(sId, sVal);
+                                                            }
+                                                            while(formulaStrAE != '' && formulaStrAE.indexOf(sId) > -1){
+                                                                formulaStrAE = formulaStrAE.replace(sId, sVal);
+                                                            }
+                                                        }
+                                                        if(sVal == '') sVal = '[No Value]';
+                                                        paramStr += {!selType.indexCounter}{!vtv.indexCounter}+':'+sVal+'::';
+                                                    </apex:repeat>
+                                                    
+                                                    var a;
+                                                    if(formulaStrA != ''){
+                                                        totalA += eval(formulaStrA);
+                                                        //var varValA = document.getElementById('selVal{!selType.indexCounter}a');
+                                                        a = eval(formulaStrA).toFixed(2);
+                                                        if(isNaN(parseFloat(a))) a = 0;
+                                                        //varValA.value = a;
+                                                    }
+                                                    else{
+                                                        a = 0;
+                                                    }
+                                                    
+                                                    var w;
+                                                    if(formulaStrW != ''){
+                                                    console.log('formulaStrW: '+formulaStrW);
+                                                        totalW += eval(formulaStrW);
+                                                        //var varValW = document.getElementById('selVal{!selType.indexCounter}w');
+                                                        w = eval(formulaStrW).toFixed(2);
+                                                        console.log(w);
+                                                        if(isNaN(parseFloat(w))) w = 0;
+                                                        //varValW.value = w;
+                                                    }
+                                                    else{
+                                                        w = 0;
+                                                    }
+                                                    
+                                                    var AP;
+                                                    if(formulaStrAP != ''){
+                                                        AP = eval(formulaStrAP).toFixed(2);
+                                                        if(isNaN(parseFloat(AP))) AP = 0;
+                                                    }
+                                                    else{
+                                                        AP = 0;
+                                                    }
+                                                    
+                                                    var AE;
+                                                    if(formulaStrAE != ''){
+                                                        AE = eval(formulaStrAE).toFixed(2);
+                                                        if(isNaN(parseFloat(AE))) AE = 0;
+                                                    }
+                                                    else{
+                                                        AE = 0;
+                                                    }
+                                                    console.log('AP: '+AP);
+                                                    console.log('AE: '+AE);
+                                                    paramStr += {!selType.indexCounter}+'TOTALW'+':'+w+'::';
+                                                    paramStr += {!selType.indexCounter}+'TOTALA'+':'+a+'::';
+                                                    paramStr += {!selType.indexCounter}+'AMTP'+':'+AP+'::';
+                                                    paramStr += {!selType.indexCounter}+'AMTE'+':'+AE+'::';
+                                                    console.log('paramStr 187:' + paramStr);
+                                                </apex:repeat>
+                                                var sfCtrl = document.getElementById('{!$Component.totalAmountOnPage}');
+                                                if(isNaN(totalA)) totalA = 0;
+                                                $(sfCtrl).val(totalA);
+                                                $('#totalAmount').text(totalA.toFixed(2));
+                                                
+                                                var sfCtrl2 = document.getElementById('{!$Component.totalWagesOnPage}');
+                                                if(isNaN(totalW)) totalW = 0;
+                                                $(sfCtrl2).val(totalW);
+                                                $('#totalWages').text(totalW.toFixed(2));
+                                                paramStr = paramStr.substr(0, paramStr.length - 2);
+                                                saveVarValues(paramStr);
+                                            }
+                                            
+                                            function allowSave(){
+                                                $(".ui-disabled").each(function(){
+                                                    $(this).removeClass("ui-disabled");
+                                                });
+                                            }
+                                            
+                                            CalculateTotal();
+                                            
+                                        </script> 
+                                    </apex:outputPanel>
+                                    
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="33%">
+
+                                                <a href="/{!viol.Id}" data-role="button" data-ajax="false">Back</a>
+                                            </td>
+                                            <td width="33%">
+                                                <apex:commandLink value="Save" action="{!saveChanges}" html-data-role="button" html-data-ajax="false" styleClass="ui-disabled"/>
+                                            </td>
+                                            <td width="33%">
+                                                <apex:commandLink value="Cancel Case Issue - Invalid" action="{!cancelViolation}" style="background-color:#CD9B9B;" html-data-role="button" html-data-ajax="false"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                </div>
+            </div>
+            </apex:form>
+        </body>
+    </html>
+</apex:page>

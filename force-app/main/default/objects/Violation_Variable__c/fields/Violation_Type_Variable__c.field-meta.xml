@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type_Variable__c</fullName>
+    <description>link to master violation type variable. The value here is the value captured on the violation type wizard and is a part of the calculation and description formulas on the case violation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Master violation type variable for which this value applies</inlineHelpText>
+    <label>Violation Type Variable</label>
+    <referenceTo>Violation_Type_Variable__c</referenceTo>
+    <relationshipLabel>Violation Variables</relationshipLabel>
+    <relationshipName>Violation_Variables</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

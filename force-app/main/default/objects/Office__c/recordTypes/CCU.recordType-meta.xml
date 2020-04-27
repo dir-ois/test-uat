@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCU</fullName>
+    <active>true</active>
+    <description>Central Cashiering Unit</description>
+    <label>CCU</label>
+    <picklistValues>
+        <picklist>Office_Location__c</picklist>
+        <values>
+            <fullName>Bakersfield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Centro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fresno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salinas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Bernardino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Jose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Ana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Rosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stockton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Nuys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

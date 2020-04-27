@@ -1,0 +1,103 @@
+.THIS {
+}
+
+.THIS .container{
+	width: 100%;
+}
+
+.THIS .save-btn {
+    margin: 20px;
+    position: absolute;
+    left: 39%;
+}
+
+.THIS .uibutton .Save{
+    color: blue;
+}
+
+.THIS.flRight {
+    position: absolute;
+    left: 800px;
+}
+
+.THIS.grPaym {
+    margin-left: 55px;
+}
+
+.THIS .spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 45%;
+    left: 50%;
+    display: none;
+}
+
+.THIS .delImg, .THIS .editImg{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    background: #E6717C;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.THIS .editImg {
+    background: #F88962;
+}
+
+.THIS .delImg {
+    margin-left: 20px;
+}
+
+.THIS.groupPaymErr {
+    padding: 10px 10px 5px 40px;
+    background: #EF6E64;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.THIS .paymNameGrid {
+    width:100px;
+    display:inline-block;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    height: 43px;
+}
+
+.THIS .slds-modal__content{
+    text-align: center;
+    height: 100px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.THIS .warnImg , .THIS .slds-modal__content p{
+    display:inline-block;
+}
+
+.THIS .slds-modal__content p {
+    margin-left:2px;
+}
+
+.THIS #lbl_SaveErr{
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+    position: relative;	
+}
+
+.THIS .warnImg span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fbb439;
+    padding: 4px;
+    padding-top: 1px;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-left: 45px;
+}

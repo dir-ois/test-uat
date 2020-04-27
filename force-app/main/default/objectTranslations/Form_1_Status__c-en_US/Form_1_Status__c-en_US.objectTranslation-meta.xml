@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Form 1 Status</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Form 1 Status</value>
+    </caseValues>
+    <layouts>
+        <layout>Form 1 Status Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Date of Status field cannot be modified after save. Please create a new record. --></errorMessage>
+        <name>Changing_Status_Date_is_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status field cannot be modified after save. Please create a new status record --></errorMessage>
+        <name>Changing_Status_is_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Status Type is not available to your profile. --></errorMessage>
+        <name>HR_Liaison_permission_to_F1_Sta_Statue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a date equal to or before today&apos;s date. --></errorMessage>
+        <name>No_Future_Date_for_Date_Of_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter notes --></errorMessage>
+        <name>Note_is_required_for_certain_statuses</name>
+    </validationRules>
+</CustomObjectTranslation>

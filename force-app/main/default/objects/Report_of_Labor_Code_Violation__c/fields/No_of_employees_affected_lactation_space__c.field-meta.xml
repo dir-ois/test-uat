@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_employees_affected_lactation_space__c</fullName>
+    <description>Suspected Violation of Employeer - Estimated number of employees affected by failure to provide lactation accommodation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Suspected Violation of Employeer - Estimated number of employees affected by failure to provide lactation accommodation</inlineHelpText>
+    <label>Estimated number of employees Lactation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

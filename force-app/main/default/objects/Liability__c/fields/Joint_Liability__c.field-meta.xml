@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joint_Liability__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates that joint liability has been determined as bases for liability for parties on this liability. Value is set by flow (Insert flow name) and triggers specific text to be displayed on output docs where appropriate.</description>
+    <externalId>false</externalId>
+    <label>Joint Liability</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter any general instructions on what must be done by each applicant to fulfill this education requirement. --></help>
+    <label><!-- Instructions --></label>
+    <name>Instructions__c</name>
+</CustomFieldTranslation>

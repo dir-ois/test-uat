@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workers_Comp_Insurance_WCI_Information__c</fullName>
+    <description>Selection list if Workers Compensation Insurance information was checked</description>
+    <externalId>false</externalId>
+    <label>Workers Comp Insurance (WCI) Information</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Has WCI</fullName>
+                <default>false</default>
+                <label>Has WCI</label>
+            </value>
+            <value>
+                <fullName>No WCI</fullName>
+                <default>false</default>
+                <label>No WCI</label>
+            </value>
+            <value>
+                <fullName>Has WCI w/ Lapse of Coverage</fullName>
+                <default>false</default>
+                <label>Has WCI w/ Lapse of Coverage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

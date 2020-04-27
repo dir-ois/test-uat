@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subpoena</fullName>
+    <availability>online</availability>
+    <description>No Longer used.</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Subpoena</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>https://massmerge.appextremes.com/apps/Conga/Welcome.aspx
+?sessionId={!API.Session_ID}
+&amp;ServerUrl={!API.Partner_Server_URL_80}
+&amp;ReportID=00OZ0000000LBDN?pv2={!DIR_Case__c.Id}
+&amp;queryid=[Judgment]a0mZ0000003cB0b?pv0={!Case_Role__c.EntityId__c}~pv1={!Case_Role__c.Case__c} 
+&amp;templateid=a0nd0000005OSth
+BPW=1</url>
+</WebLink>

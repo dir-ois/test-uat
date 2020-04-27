@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Stop Sign will display when a Collections Hold is in effect. The hold is for your information only and doesn&apos;t prevent any other activity on the case. --></help>
+    <label><!-- Collections Hold Stop Sign --></label>
+    <name>Collection_Hold_Stop_Sign__c</name>
+</CustomFieldTranslation>

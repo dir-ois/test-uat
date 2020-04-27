@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>This report lists Liability Payments that didn&#39;t get Applied Accounting Codes automatically assigned. These must be researched and corrected, for the payments to appear on the transmittal. Check Industry, Program, and look for Applicable Accounting Codes for the combo on the Case Issue Type. If none then determine what new Accounting Code should be added.</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Transmittal Exceptions</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://cadir--uat.my.salesforce.com/00Ot0000000SXQY</url>
+</CustomPageWebLink>

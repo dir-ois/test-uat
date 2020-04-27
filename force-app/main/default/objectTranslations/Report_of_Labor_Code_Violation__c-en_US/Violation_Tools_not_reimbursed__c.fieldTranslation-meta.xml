@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Tools, supplies or equipment not reimbursed or illegally charged to employees --></help>
+    <label><!-- Tools supplies equipment not reimbursed --></label>
+    <name>Violation_Tools_not_reimbursed__c</name>
+</CustomFieldTranslation>

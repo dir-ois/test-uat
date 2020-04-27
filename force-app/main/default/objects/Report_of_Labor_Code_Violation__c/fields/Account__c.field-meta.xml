@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <description>This creates a Master-Detail relationship between a Report of Labor Code Violation and the Entity this Report of Labor Code Violation is against.  Reparentable.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This creates a Master-Detail relationship between a Report of Labor Code Violation and the Entity this Report of Labor Code Violation is against.  Reparentable.</inlineHelpText>
+    <label>Employer</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipName>Reports_of_Labor_Code_Violations</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Judgment Selection --></label>
+    <name>Judgment_Selection__c</name>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA</masterLabel>
+        <translation><!-- ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA / Settlement</masterLabel>
+        <translation><!-- ODA / Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

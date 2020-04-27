@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Date_Time__c</fullName>
+    <description>Store Payment Date Time for identifying auto-renewal. This field is to be updated by wfr &quot;REG: Capture Payment DateTime&quot;</description>
+    <externalId>false</externalId>
+    <label>Payment Date Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

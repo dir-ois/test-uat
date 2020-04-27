@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Documents</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Documents</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Judgement__c.Id}
+&amp;queryid=[WCA82Defendants]a0md00000064cjnAAA?pv0={!Judgement__c.Id},
+[JudgementInfo]a0md00000064cj6AAA?pv0={!Judgement__c.Id},
+[CaseInfo]a0md00000064cj3AAA?pv0={!Judgement__c.Case_ManagementId__c},
+[CountyInfo]a0md00000064cj5AAA?pv0={!Judgement__c.Id},
+[ClaimantInfo]a0md00000064cj4AAA?pv0={!Judgement__c.Case_ManagementId__c},
+[Defendants]a0md00000064cjRAAQ?pv0={!Judgement__c.Case_ManagementId__c},
+[GovName]a0md0000003l2S0,
+[OfficeInfo]a0md00000064cjOAAQ?pv0={!Judgement__c.Case_ManagementId__c},
+[Category1]a0md00000064cjwAAA?pv0={!Judgement__c.Id},
+[Category2]a0md00000064cjqAAA?pv0={!Judgement__c.Id},
+[Category3]a0md00000064cjrAAA?pv0={!Judgement__c.Id},
+[Category4]a0md00000064cjvAAA?pv0={!Judgement__c.Id},
+[Category5]a0md00000064cjpAAA?pv0={!Judgement__c.Id},
+[Category6]a0md00000064cjiAAA?pv0={!Judgement__c.Id},
+[Category7]a0md00000064cjoAAA?pv0={!Judgement__c.Id},
+[JudgmentAmounts]a0md00000064cj7?pv0={!Judgement__c.Id}
+&amp;TemplateGroup=Judgments
+&amp;OFN={Template.Label}+{!Judgement__c.Case_Number__c}+{!Judgement__c.Case_Employer__c}
+&amp;sc0=1
+&amp;sc1=Attachments</url>
+</WebLink>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_Assigned_Deputy</fullName>
+    <active>true</active>
+    <description>Require the assigned deputy to be set at the proper time</description>
+    <errorConditionFormula>( 
+ISPICKVAL ( Status__c , &#39;In Review&#39;) || 
+ISPICKVAL ( Status__c , &#39;Approved&#39;) 
+) 
+&amp;&amp; NOT ( ISPICKVAL ( Submission_Type__c , &#39;online&#39;) ) 
+&amp;&amp; NOT ( ISPICKVAL ( Service_Type__c , &#39;Renewal&#39; ) ) 
+&amp;&amp; ISBLANK ( Assigned_Deputy__c ) 
+&amp;&amp; NOT(External_User__c = 1) 
+&amp;&amp; NOT ( RecordType.Id = &quot;012t00000008WSn&quot;)</errorConditionFormula>
+    <errorMessage>Please assign a deputy to proceed.</errorMessage>
+</ValidationRule>

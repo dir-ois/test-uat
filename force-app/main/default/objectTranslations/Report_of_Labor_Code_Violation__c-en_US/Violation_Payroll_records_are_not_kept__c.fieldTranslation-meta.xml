@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Payroll records are not kept or inaccurate --></help>
+    <label><!-- Payroll records are not kept --></label>
+    <name>Violation_Payroll_records_are_not_kept__c</name>
+</CustomFieldTranslation>

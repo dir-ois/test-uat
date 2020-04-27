@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tenure --></label>
+    <name>Tenure__c</name>
+    <picklistValues>
+        <masterLabel>CEA</masterLabel>
+        <translation><!-- CEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limited</masterLabel>
+        <translation><!-- Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permanent</masterLabel>
+        <translation><!-- Permanent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retired Annuitant</masterLabel>
+        <translation><!-- Retired Annuitant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary</masterLabel>
+        <translation><!-- Temporary --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In the even that a subpoena has been issued to this party, select whether or not the party complied or not. --></help>
+    <label><!-- Compliance with SDT --></label>
+    <name>Compliance_with_SDT__c</name>
+    <picklistValues>
+        <masterLabel>Full</masterLabel>
+        <translation><!-- Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Compliance</masterLabel>
+        <translation><!-- Non-Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial</masterLabel>
+        <translation><!-- Partial --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

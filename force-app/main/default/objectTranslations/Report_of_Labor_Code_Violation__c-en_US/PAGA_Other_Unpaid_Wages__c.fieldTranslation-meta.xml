@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA other unpaid wages --></help>
+    <label><!-- Other Unpaid Wages --></label>
+    <name>PAGA_Other_Unpaid_Wages__c</name>
+</CustomFieldTranslation>

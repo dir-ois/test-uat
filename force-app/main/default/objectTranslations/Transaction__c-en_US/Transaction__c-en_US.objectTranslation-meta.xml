@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transaction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transactions</value>
+    </caseValues>
+    <layouts>
+        <layout>TRN Locked Layout</layout>
+        <sections>
+            <label><!-- Adjustment Information --></label>
+            <section>Adjustment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deposit Information --></label>
+            <section>Deposit Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transaction Layout</layout>
+        <sections>
+            <label><!-- Adjustment Information --></label>
+            <section>Adjustment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deposit Information --></label>
+            <section>Deposit Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Once the Treasury Deposit Number &amp; Check Amount is entered and Transaction is deposited, it cannot be changed. Should contact the support team to get it changed --></description>
+        <label><!-- TRN Locked --></label>
+        <name>TRN_Locked</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TRN Pending --></label>
+        <name>TRN_Pending</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Adjustment Reason is required --></errorMessage>
+        <name>AdjustReasonRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an amount to adjust the account by --></errorMessage>
+        <name>Amount_required_for_adjustment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Office Account must be selected on all transactions --></errorMessage>
+        <name>Office_Account_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Transaction Super Users can change the Record Types --></errorMessage>
+        <name>RecordType_Changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Sr Cashiers can create adjustment transactions. --></errorMessage>
+        <name>Sr_Cashier_or_SysAd_Adjustment</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Check_Transmittal_Form --></label>
+        <name>Check_Transmittal_Form</name>
+    </webLinks>
+</CustomObjectTranslation>

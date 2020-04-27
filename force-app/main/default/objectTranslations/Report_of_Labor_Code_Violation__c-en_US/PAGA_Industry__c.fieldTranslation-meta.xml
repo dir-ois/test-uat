@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PAGA Industry --></label>
+    <name>PAGA_Industry__c</name>
+    <picklistValues>
+        <masterLabel>Agriculture</masterLabel>
+        <translation><!-- Agriculture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto Repair</masterLabel>
+        <translation><!-- Auto Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Wash</masterLabel>
+        <translation><!-- Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation><!-- Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment</masterLabel>
+        <translation><!-- Garment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janitorial</masterLabel>
+        <translation><!-- Janitorial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Low-Wage</masterLabel>
+        <translation><!-- Other-Low-Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other-Not-Low-Wage</masterLabel>
+        <translation><!-- Other-Not-Low-Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse</masterLabel>
+        <translation><!-- Warehouse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

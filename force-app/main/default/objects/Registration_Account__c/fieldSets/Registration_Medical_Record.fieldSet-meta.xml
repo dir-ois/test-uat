@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Medical_Record</fullName>
+    <description>VIP Form Registration</description>
+    <displayedFields>
+        <field>Medical_Status__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Registration Medical Record</label>
+</FieldSet>

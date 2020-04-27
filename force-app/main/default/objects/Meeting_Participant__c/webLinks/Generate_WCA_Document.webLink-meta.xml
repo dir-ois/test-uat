@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_Document</fullName>
+    <availability>online</availability>
+    <description>*Does not appear to be used to generate any conga forms. 6-22-14 DK Generate WCA document(s) via Conga from the Meeting Participant object related to Meetings and Case.
+
+Note: For Conductor replace Meeting Participant Case with CaseID</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate WCA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Meeting_Participant__c.Id}
+&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[Defendant]a0md00000064cjRAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[Occupation]a0md00000064cjPAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[VioTable]a0md00000064cjSAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[Guarantor]a0md00000064cjNAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[Successor]a0md00000064cjLAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[WCAOffice]a0md00000064cjOAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[HearingInfo]a0md00000064cjuAAA?pv0={!Meeting_Participant__c.CaseId__c},
+[CaseInfo]a0md00000064cjCAAQ?pv0={!Meeting_Participant__c.CaseId__c},
+[EMP]a0md00000064cj2AAA?pv0={!Meeting_Participant__c.CaseId__c}}~pv1=&quot;Case employer&quot;,
+[GUAR]a0md00000064cj2AAA?pv0={!Meeting_Participant__c.CaseId__c}~pv1=&quot;Guarantor&quot;,
+[CaseRole]a0md00000064cjBAAQ?pv0={!Meeting_Participant__c.Case_RoleId__c},
+[Calendar]a0md00000064cjsAAA
+&amp;reportid=[Employee]00Od0000004pzun?pv2={!Meeting_Participant__c.CaseId__c},
+[Employors]00Od0000004pzuo?pv2={!Meeting_Participant__c.CaseId__c},
+[All]00Od0000004pzup?pv2={!Meeting_Participant__c.CaseId__c}
+&amp;TemplateGroup=WCA
+&amp;Templateid=a0nd0000005OStb</url>
+</WebLink>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PIF with Interest/Cost</fullName>
+                <default>false</default>
+                <label>PIF with Interest/Cost</label>
+            </value>
+            <value>
+                <fullName>PIF Interest/Cost Waived</fullName>
+                <default>false</default>
+                <label>PIF Interest/Cost Waived</label>
+            </value>
+            <value>
+                <fullName>Settled/Offer in Compromise</fullName>
+                <default>false</default>
+                <label>Settled/Offer in Compromise</label>
+            </value>
+            <value>
+                <fullName>Discharge in Bankruptcy</fullName>
+                <default>false</default>
+                <label>Discharge in Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Vacated/Withdrawn</fullName>
+                <default>false</default>
+                <label>Vacated/Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Write Off - Collection Infeasible</fullName>
+                <default>false</default>
+                <label>Write Off - Collection Infeasible</label>
+            </value>
+            <value>
+                <fullName>Write Off - Debtor Deceased</fullName>
+                <default>false</default>
+                <label>Write Off - Debtor Deceased</label>
+            </value>
+            <value>
+                <fullName>Write Off - Debtor Closed/Dissolved</fullName>
+                <default>false</default>
+                <label>Write Off - Debtor Closed/Dissolved</label>
+            </value>
+            <value>
+                <fullName>Write Off - Other Reason</fullName>
+                <default>false</default>
+                <label>Write Off - Other Reason</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

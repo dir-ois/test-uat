@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_you_want_DLSE_to_Keep_your_info_confi__c</fullName>
+    <description>Do you want DLSE to keep your name and contact information confidential?
+
+DLSE will maintain confidentiality as appropriate in each case and to the extent provided for under the law? Information may need to be released in some cases.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do you want DLSE to keep your name and contact information confidential?
+
+DLSE will maintain confidentiality as appropriate in each case and to the extent provided for under the law? Information may need to be released in some cases.</inlineHelpText>
+    <label>Keep your Name and Contact Confidential?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_have_internal_and_case_role</fullName>
+    <active>true</active>
+    <description>A validation rule to not allow both a Case Role and an Internal Employee to be chosen when adding a meeting participant.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK( Internal_Employee__c )), NOT(ISBLANK( Case_Role__c ))
+)</errorConditionFormula>
+    <errorMessage>You cannot have both a Case Role and an Internal Employee on the same record.</errorMessage>
+</ValidationRule>

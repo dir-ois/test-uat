@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Paid_to_PAGA__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Paid to LWDA</label>
+    <summarizedField>PAGA_Payments__c.Amount_of_Payment__c</summarizedField>
+    <summaryFilterItems>
+        <field>PAGA_Payments__c.Type_of_Payment__c</field>
+        <operation>equals</operation>
+        <value>Penalty Payment</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PAGA_Payments__c.Case_Management__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

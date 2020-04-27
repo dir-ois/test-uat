@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Violation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agricultural Labor Relations</fullName>
+                <default>false</default>
+                <label>Agricultural Labor Relations</label>
+            </value>
+            <value>
+                <fullName>Apprenticeship Labor Code 3070 – 3098</fullName>
+                <default>false</default>
+                <label>Apprenticeship Labor Code 3070 – 3098</label>
+            </value>
+            <value>
+                <fullName>Child Labor</fullName>
+                <default>false</default>
+                <label>Child Labor</label>
+            </value>
+            <value>
+                <fullName>Classified as Independent Contractor</fullName>
+                <default>false</default>
+                <label>Classified as Independent Contractor</label>
+            </value>
+            <value>
+                <fullName>Improper or Incomplete Wage Statements</fullName>
+                <default>false</default>
+                <label>Improper or Incomplete Wage Statements</label>
+            </value>
+            <value>
+                <fullName>Improper payment form incl. NSF check</fullName>
+                <default>false</default>
+                <label>Improper payment form incl. NSF check</label>
+            </value>
+            <value>
+                <fullName>Industrial Homework</fullName>
+                <default>false</default>
+                <label>Industrial Homework</label>
+            </value>
+            <value>
+                <fullName>Kickbacks</fullName>
+                <default>false</default>
+                <label>Kickbacks</label>
+            </value>
+            <value>
+                <fullName>Lactation Accommodation (LC 1030‐1033)</fullName>
+                <default>false</default>
+                <label>Lactation Accommodation (LC 1030‐1033)</label>
+            </value>
+            <value>
+                <fullName>Licensing, Registration or Permit</fullName>
+                <default>false</default>
+                <label>Licensing, Registration or Permit</label>
+            </value>
+            <value>
+                <fullName>Meal and Rest Breaks</fullName>
+                <default>false</default>
+                <label>Meal and Rest Breaks</label>
+            </value>
+            <value>
+                <fullName>Minimum Wage</fullName>
+                <default>false</default>
+                <label>Minimum Wage</label>
+            </value>
+            <value>
+                <fullName>Nonexempt Classified as Exempt</fullName>
+                <default>false</default>
+                <label>Nonexempt Classified as Exempt</label>
+            </value>
+            <value>
+                <fullName>Not paid for all hours worked</fullName>
+                <default>false</default>
+                <label>Not paid for all hours worked</label>
+            </value>
+            <value>
+                <fullName>Not Paid Wages Due on Termination</fullName>
+                <default>false</default>
+                <label>Not Paid Wages Due on Termination</label>
+            </value>
+            <value>
+                <fullName>Not providing required time off, other</fullName>
+                <default>false</default>
+                <label>Not providing required time off, other</label>
+            </value>
+            <value>
+                <fullName>No Wage Statements</fullName>
+                <default>false</default>
+                <label>No Wage Statements</label>
+            </value>
+            <value>
+                <fullName>No Workers’ Compensation</fullName>
+                <default>false</default>
+                <label>No Workers’ Compensation</label>
+            </value>
+            <value>
+                <fullName>Occupational SAFE HLTH (LC 6300 et seq)</fullName>
+                <default>false</default>
+                <label>Occupational SAFE HLTH (LC 6300 et seq)</label>
+            </value>
+            <value>
+                <fullName>Other Notice or Posting or Recordkeeping</fullName>
+                <default>false</default>
+                <label>Other Notice or Posting or Recordkeeping</label>
+            </value>
+            <value>
+                <fullName>Other Unpaid Wages</fullName>
+                <default>false</default>
+                <label>Other Unpaid Wages</label>
+            </value>
+            <value>
+                <fullName>Overtime</fullName>
+                <default>false</default>
+                <label>Overtime</label>
+            </value>
+            <value>
+                <fullName>Pay Discrim on basis of sex (LC1197.5)</fullName>
+                <default>false</default>
+                <label>Pay Discrim on basis of sex (LC1197.5)</label>
+            </value>
+            <value>
+                <fullName>PMNT Reimbursement of Empl Expenses</fullName>
+                <default>false</default>
+                <label>PMNT Reimbursement of Empl Expenses</label>
+            </value>
+            <value>
+                <fullName>Public Works (Labor Code §§ 1720 – 1815)</fullName>
+                <default>false</default>
+                <label>Public Works (Labor Code §§ 1720 – 1815)</label>
+            </value>
+            <value>
+                <fullName>Retaliation - Protected Status Activity</fullName>
+                <default>false</default>
+                <label>Retaliation - Protected Status Activity</label>
+            </value>
+            <value>
+                <fullName>Sick Leave</fullName>
+                <default>false</default>
+                <label>Sick Leave</label>
+            </value>
+            <value>
+                <fullName>Tips or Gratuities</fullName>
+                <default>false</default>
+                <label>Tips or Gratuities</label>
+            </value>
+            <value>
+                <fullName>Unfair Immigration Activities</fullName>
+                <default>false</default>
+                <label>Unfair Immigration Activities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Old_Total_Penalty_Modifications__c</fullName>
+    <description>Total Penalty Modifications for Penalties and Penalty Modification</description>
+    <externalId>false</externalId>
+    <label>▼Total Penalty Modifications</label>
+    <summarizedField>Issue_Modifications__c.Modification_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Issue_Modifications__c.Modification_Type__c</field>
+        <operation>equals</operation>
+        <value>Penalty Modification, Hearing Modification - Penalty</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Issue_Modifications__c.Case_Violation__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

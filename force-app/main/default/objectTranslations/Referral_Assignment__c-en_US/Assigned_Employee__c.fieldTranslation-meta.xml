@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select the Attorney you would like assigned to this Referral. --></help>
+    <label><!-- Assigned Attorney --></label>
+    <name>Assigned_Employee__c</name>
+    <relationshipLabel><!-- Referral Assignments --></relationshipLabel>
+</CustomFieldTranslation>

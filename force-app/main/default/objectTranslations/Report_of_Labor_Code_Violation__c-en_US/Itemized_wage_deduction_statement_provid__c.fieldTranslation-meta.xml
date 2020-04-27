@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Itemized wage deduction statement provided but not accurate and/or incomplete --></help>
+    <label><!-- Itemized wage deduction statement provid --></label>
+    <name>Itemized_wage_deduction_statement_provid__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_115_In_addition_Paragraph__c</fullName>
+    <defaultValue>&#39;In addition, [DEFENDANT NAME] was issued citation and penalty assessment [CITATION NUMBER] in the amount of $[AMOUNT] for failing to pay minimum wage for all hours worked as required by Labor Code section 1197. Citation [CITATION NUMBER] included an assessment for the unpaid minimum wages in the amount of $[AMOUNT]. This citation was entered as judgment on [JUDGMENT DATE] and remains wholly unsatisfied. Since entry of judgment, interest has accrued at the legal rate and the amount currently owed is $[AMOUNT].&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 115 In addition Paragraph</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

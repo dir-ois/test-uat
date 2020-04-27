@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this Payee is deceased, enter the heir&apos;s or successor&apos;s name here. The Payee Heir or Successor checkbox must be checked. --></help>
+    <label><!-- Name of Heir/Successor/Assignee --></label>
+    <name>Name_of_Heir_or_Successor__c</name>
+</CustomFieldTranslation>

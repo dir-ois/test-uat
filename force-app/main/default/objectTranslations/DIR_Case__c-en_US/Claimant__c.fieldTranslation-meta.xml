@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Automatically Creates Case role record. Also used to set the Case Name --></help>
+    <label><!-- Claimant --></label>
+    <name>Claimant__c</name>
+    <relationshipLabel><!-- Case Management (Clamant) --></relationshipLabel>
+</CustomFieldTranslation>

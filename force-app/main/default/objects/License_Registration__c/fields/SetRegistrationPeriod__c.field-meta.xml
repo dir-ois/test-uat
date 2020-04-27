@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SetRegistrationPeriod__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+Renewal__c=FALSE 
+&amp;&amp; 
+TODAY() &gt;= DATE((Year(TODAY())),7,1) || 
+TODAY() &lt;= DATE((Year(TODAY())),4,30),&quot;1&quot;, 
+/* Today Only*/ 
+IF( 
+Renewal__c=FALSE 
+&amp;&amp; 
+TODAY() &gt;= DATE((Year(TODAY())),5,1) &amp;&amp; 
+TODAY() &lt;= DATE((Year(TODAY())),6,30),&quot;2&quot;, 
+/*Today or July 1st*/ 
+IF( 
+Renewal__c = TRUE 
+&amp;&amp; 
+PreviousRegistrationStatus__c = &quot;Expired&quot; 
+&amp;&amp; 
+TODAY() &gt;= DATE((Year(TODAY())),5,1) &amp;&amp; 
+TODAY() &lt;= DATE((Year(TODAY())),6,30),&quot;2&quot;, 
+/*Today or July 1st*/ 
+IF( 
+Renewal__c = TRUE 
+&amp;&amp; 
+PreviousRegistrationStatus__c = &quot;Active&quot; 
+&amp;&amp; 
+TODAY() &gt;= DATE((Year(TODAY())),5,1) &amp;&amp; 
+TODAY() &lt;= DATE((Year(TODAY())),6,30),&quot;3&quot;, 
+/*July 1st Only*/ 
+IF( 
+Renewal__c = TRUE 
+&amp;&amp; 
+PreviousRegistrationStatus__c = &quot;Expired&quot; 
+&amp;&amp; 
+TODAY() &gt;= DATE((Year(TODAY())),7,1) || 
+TODAY() &lt;= DATE((Year(TODAY())),4,30),&quot;4&quot;, null))))) 
+/*Today Only*/</formula>
+    <inlineHelpText>Determines if the record is a renewal and which date period it falls in. This determines which Registration Period section the contractor will see in the form.</inlineHelpText>
+    <label>SetRegistrationPeriod</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

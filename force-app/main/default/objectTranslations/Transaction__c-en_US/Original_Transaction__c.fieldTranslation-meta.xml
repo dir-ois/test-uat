@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this record is an adjustment to another Transaction, this field is the original Transaction. --></help>
+    <label><!-- Original Transaction --></label>
+    <name>Original_Transaction__c</name>
+    <relationshipLabel><!-- Adjustment Transactions --></relationshipLabel>
+</CustomFieldTranslation>

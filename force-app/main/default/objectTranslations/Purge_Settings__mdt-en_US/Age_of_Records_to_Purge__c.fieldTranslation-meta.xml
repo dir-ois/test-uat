@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter number of days it must age with no activity. Activity is evaluating against Last Modified Date of Record. --></help>
+    <label><!-- Age of Records to Purge --></label>
+    <name>Age_of_Records_to_Purge__c</name>
+</CustomFieldTranslation>

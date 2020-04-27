@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Conference_Start_Date_Time__c</fullName>
+    <description>This field is used for the DLRS rollup summary to get the first conference date for the WCA &quot;Case Timeline Report&quot;</description>
+    <externalId>false</externalId>
+    <label>First Conference Start Date/Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Status of the Case - Open/Closed</description>
+    <externalId>false</externalId>
+    <label>Case Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Pre-Investigation</fullName>
+                <default>false</default>
+                <label>Pre-Investigation</label>
+            </value>
+            <value>
+                <fullName>Administrative Closure</fullName>
+                <default>false</default>
+                <label>Administrative Closure</label>
+            </value>
+            <value>
+                <fullName>Ready to Assign</fullName>
+                <default>false</default>
+                <label>Ready to Assign</label>
+            </value>
+            <value>
+                <fullName>Under Investigation</fullName>
+                <default>false</default>
+                <label>Under Investigation</label>
+            </value>
+            <value>
+                <fullName>Pending Settlement</fullName>
+                <default>false</default>
+                <label>Pending Settlement</label>
+            </value>
+            <value>
+                <fullName>Hearing</fullName>
+                <default>false</default>
+                <label>Hearing</label>
+            </value>
+            <value>
+                <fullName>Conf. Scheduled</fullName>
+                <default>false</default>
+                <label>Conf. Scheduled</label>
+            </value>
+            <value>
+                <fullName>Conference</fullName>
+                <default>false</default>
+                <label>Conference</label>
+            </value>
+            <value>
+                <fullName>Awaiting Approval</fullName>
+                <default>false</default>
+                <label>Awaiting Approval</label>
+            </value>
+            <value>
+                <fullName>Hearing Approved</fullName>
+                <default>false</default>
+                <label>Hearing Approved</label>
+            </value>
+            <value>
+                <fullName>Hearing Scheduled</fullName>
+                <default>false</default>
+                <label>Hearing Scheduled</label>
+            </value>
+            <value>
+                <fullName>ODA Issued</fullName>
+                <default>false</default>
+                <label>ODA Issued</label>
+            </value>
+            <value>
+                <fullName>Judgment Issued</fullName>
+                <default>false</default>
+                <label>Judgment Issued</label>
+            </value>
+            <value>
+                <fullName>Wage Pass Through</fullName>
+                <default>false</default>
+                <label>Wage Pass Through</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Pending - Incomplete</fullName>
+                <default>false</default>
+                <label>Pending - Incomplete</label>
+            </value>
+            <value>
+                <fullName>BOFE Stay</fullName>
+                <default>false</default>
+                <label>BOFE Stay</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+                <label>Resolved</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Dismissed</fullName>
+                <default>false</default>
+                <label>Dismissed</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>No Citation or Other Issues</fullName>
+                <default>false</default>
+                <label>No Citation or Other Issues</label>
+            </value>
+            <value>
+                <fullName>Eligible for Closure</fullName>
+                <default>false</default>
+                <label>Eligible for Closure</label>
+            </value>
+            <value>
+                <fullName>Unable to Pursue</fullName>
+                <default>false</default>
+                <label>Unable to Pursue</label>
+            </value>
+            <value>
+                <fullName>Returned to Claimant</fullName>
+                <default>false</default>
+                <label>Returned to Claimant</label>
+            </value>
+            <value>
+                <fullName>Settled - Payment Plan</fullName>
+                <default>false</default>
+                <label>Settled - Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Waiting for Litigation</fullName>
+                <default>false</default>
+                <label>Waiting for Litigation</label>
+            </value>
+            <value>
+                <fullName>New AutoRefer</fullName>
+                <default>false</default>
+                <label>New AutoRefer</label>
+            </value>
+            <value>
+                <fullName>New TBR</fullName>
+                <default>false</default>
+                <label>New TBR</label>
+            </value>
+            <value>
+                <fullName>Screened / Pending Unit Review</fullName>
+                <default>false</default>
+                <label>Screened / Pending Unit Review</label>
+            </value>
+            <value>
+                <fullName>Cure Dispute</fullName>
+                <default>false</default>
+                <label>Cure Dispute</label>
+            </value>
+            <value>
+                <fullName>Under PAGA Investigation</fullName>
+                <default>false</default>
+                <label>Under PAGA Investigation</label>
+            </value>
+            <value>
+                <fullName>In Litigation</fullName>
+                <default>false</default>
+                <label>In Litigation</label>
+            </value>
+            <value>
+                <fullName>Settlement Pending</fullName>
+                <default>false</default>
+                <label>Settlement Pending</label>
+            </value>
+            <value>
+                <fullName>Order / Judgment Received</fullName>
+                <default>false</default>
+                <label>Order / Judgment Received</label>
+            </value>
+            <value>
+                <fullName>Pending Closure</fullName>
+                <default>false</default>
+                <label>Pending Closure</label>
+            </value>
+            <value>
+                <fullName>Waiting for Penalty</fullName>
+                <default>false</default>
+                <label>Waiting for Penalty</label>
+            </value>
+            <value>
+                <fullName>Partial Payment Received</fullName>
+                <default>false</default>
+                <label>Partial Payment Received</label>
+            </value>
+            <value>
+                <fullName>Judgment on Appeal</fullName>
+                <default>false</default>
+                <label>Judgment on Appeal</label>
+            </value>
+            <value>
+                <fullName>Close Case Review</fullName>
+                <default>false</default>
+                <label>Close Case Review</label>
+            </value>
+            <value>
+                <fullName>Closed by PAGA</fullName>
+                <default>false</default>
+                <label>Closed by PAGA</label>
+            </value>
+            <value>
+                <fullName>Requires Manual Screening</fullName>
+                <default>false</default>
+                <label>Requires Manual Screening</label>
+            </value>
+            <value>
+                <fullName>Pending Litigation Review</fullName>
+                <default>false</default>
+                <label>Pending Litigation Review</label>
+            </value>
+            <value>
+                <fullName>New TBR - BOFE INV</fullName>
+                <default>false</default>
+                <label>New TBR - BOFE INV</label>
+            </value>
+            <value>
+                <fullName>Report Submitted</fullName>
+                <default>false</default>
+                <label>Report Submitted</label>
+            </value>
+            <value>
+                <fullName>Appealed</fullName>
+                <default>false</default>
+                <label>Appealed</label>
+            </value>
+            <value>
+                <fullName>Awaiting Compliance</fullName>
+                <default>false</default>
+                <label>Awaiting Compliance</label>
+            </value>
+            <value>
+                <fullName>Law School Referral</fullName>
+                <default>false</default>
+                <label>Law School Referral</label>
+            </value>
+            <value>
+                <fullName>Closed - JEU Referral</fullName>
+                <default>false</default>
+                <label>Closed - JEU Referral</label>
+            </value>
+            <value>
+                <fullName>Closed - Enforcement Legal</fullName>
+                <default>false</default>
+                <label>Closed - Enforcement Legal</label>
+            </value>
+            <value>
+                <fullName>Closed - No further action</fullName>
+                <default>false</default>
+                <label>Closed - No further action</label>
+            </value>
+            <value>
+                <fullName>Re-opened w Sr Approval</fullName>
+                <default>false</default>
+                <label>Re-opened w Sr Approval</label>
+            </value>
+            <value>
+                <fullName>Reopened with Senior Approval</fullName>
+                <default>false</default>
+                <label>Reopened with Senior Approval</label>
+            </value>
+            <value>
+                <fullName>Duplicate Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>Under Appeal</fullName>
+                <default>false</default>
+                <label>Under Appeal</label>
+            </value>
+            <value>
+                <fullName>Writ of Mandate</fullName>
+                <default>false</default>
+                <label>Writ of Mandate</label>
+            </value>
+            <value>
+                <fullName>Lawsuit filed in Lieu of Citation</fullName>
+                <default>false</default>
+                <label>Lawsuit filed in Lieu of Citation</label>
+            </value>
+            <value>
+                <fullName>Pre-Investigation Follow-up</fullName>
+                <default>false</default>
+                <label>Pre-Investigation Follow-up</label>
+            </value>
+            <value>
+                <fullName>Pre-Investigation Follow-up 2</fullName>
+                <default>false</default>
+                <label>Pre-Investigation Follow-up 2</label>
+            </value>
+            <value>
+                <fullName>Conference Scheduled</fullName>
+                <default>false</default>
+                <label>Conference Scheduled</label>
+            </value>
+            <value>
+                <fullName>OSHA Open Appeal Period</fullName>
+                <default>false</default>
+                <label>OSHA Open Appeal Period</label>
+            </value>
+            <value>
+                <fullName>Notice of Claim Filed</fullName>
+                <default>false</default>
+                <label>Notice of Claim Filed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

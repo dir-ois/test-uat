@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>adhoc</type>
+            </approver>
+        </assignedApprover>
+        <label>HR Manager Final Approval</label>
+        <name>HR_Manager_Final_Approval</name>
+    </approvalStep>
+    <description>Form1 created by HR Analyst</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>((($Profile.Name =&quot;HR Personnel Analyst User&quot;)
+||($Profile.Name =&quot;HR Personnel Specialist User&quot;)
+||($Profile.Name =&quot;HR System Administrator&quot;)) 
+&amp;&amp;
+NOT( ISPICKVAL(Status__c, &quot;Approval&quot;)))</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Form_1_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>HR_Form_1_Final_Approval_Notice_Alert</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>HR_Form_1_Reject_Alert</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>HR_Manager_Reject</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Pending_Manager_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Form1 Approval Analyst</label>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select Business Days or Calendar Days to define the appeal deadline --></help>
+    <label><!-- Appeal Deadline Selector --></label>
+    <name>Appeal_Deadline_Selector__c</name>
+    <picklistValues>
+        <masterLabel>Business Days</masterLabel>
+        <translation><!-- Business Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calendar Days</masterLabel>
+        <translation><!-- Calendar Days --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

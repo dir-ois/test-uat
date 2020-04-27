@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Abolishment</masterLabel>
+        <translation><!-- Abolishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Combine</masterLabel>
+        <translation><!-- Combine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disencumbrance</masterLabel>
+        <translation><!-- Disencumbrance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Encumbrance</masterLabel>
+        <translation><!-- Encumbrance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extension of Present</masterLabel>
+        <translation><!-- Extension of Present --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proposed New</masterLabel>
+        <translation><!-- Proposed New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reclassification</masterLabel>
+        <translation><!-- Reclassification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reestablish</masterLabel>
+        <translation><!-- Reestablish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting Unit Change</masterLabel>
+        <translation><!-- Reporting Unit Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Split</masterLabel>
+        <translation><!-- Split --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

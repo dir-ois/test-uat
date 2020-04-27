@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Type__c</fullName>
+    <description>Serves as a sub-type of the rec type on the meeting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of meeting if it applies</inlineHelpText>
+    <label>Meeting Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Order to Show Cause</fullName>
+                <default>false</default>
+                <label>Order to Show Cause</label>
+            </value>
+            <value>
+                <fullName>Order to Appear</fullName>
+                <default>false</default>
+                <label>Order to Appear</label>
+            </value>
+            <value>
+                <fullName>98(f)</fullName>
+                <default>false</default>
+                <label>98(f)</label>
+            </value>
+            <value>
+                <fullName>Berman Hearing</fullName>
+                <default>false</default>
+                <label>Berman Hearing</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Conference</fullName>
+                <default>false</default>
+                <label>Conference</label>
+            </value>
+            <value>
+                <fullName>BOFE Hearing</fullName>
+                <default>false</default>
+                <label>BOFE Hearing</label>
+            </value>
+            <value>
+                <fullName>Subpoena</fullName>
+                <default>false</default>
+                <label>Subpoena</label>
+            </value>
+            <value>
+                <fullName>Witness Prep</fullName>
+                <default>false</default>
+                <label>Witness Prep</label>
+            </value>
+            <value>
+                <fullName>Hearing</fullName>
+                <default>false</default>
+                <label>Hearing</label>
+            </value>
+            <value>
+                <fullName>Meet and Confer</fullName>
+                <default>false</default>
+                <label>Meet and Confer</label>
+            </value>
+            <value>
+                <fullName>Interview</fullName>
+                <default>false</default>
+                <label>Interview</label>
+            </value>
+            <value>
+                <fullName>Rebuttal</fullName>
+                <default>false</default>
+                <label>Rebuttal</label>
+            </value>
+            <value>
+                <fullName>Closing conference</fullName>
+                <default>false</default>
+                <label>Closing conference</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Admin</fullName>
+                <default>false</default>
+                <label>Admin</label>
+            </value>
+            <value>
+                <fullName>H&amp;S</fullName>
+                <default>false</default>
+                <label>H&amp;S</label>
+            </value>
+            <value>
+                <fullName>LC Ordered</fullName>
+                <default>false</default>
+                <label>LC Ordered</label>
+            </value>
+            <value>
+                <fullName>DIR Ordered</fullName>
+                <default>false</default>
+                <label>DIR Ordered</label>
+            </value>
+            <value>
+                <fullName>Sr. Ordered</fullName>
+                <default>false</default>
+                <label>Sr. Ordered</label>
+            </value>
+            <value>
+                <fullName>Sick Leave</fullName>
+                <default>false</default>
+                <label>Sick Leave</label>
+            </value>
+            <value>
+                <fullName>Phone Claimant</fullName>
+                <default>false</default>
+                <label>Phone Claimant</label>
+            </value>
+            <value>
+                <fullName>Phone Defendant</fullName>
+                <default>false</default>
+                <label>Phone Defendant</label>
+            </value>
+            <value>
+                <fullName>Phone Claimant representative</fullName>
+                <default>false</default>
+                <label>Phone Claimant representative</label>
+            </value>
+            <value>
+                <fullName>Phone Defendant representative</fullName>
+                <default>false</default>
+                <label>Phone Defendant representative</label>
+            </value>
+            <value>
+                <fullName>Phone other</fullName>
+                <default>false</default>
+                <label>Phone other</label>
+            </value>
+            <value>
+                <fullName>Phone interview Claimant</fullName>
+                <default>false</default>
+                <label>Phone interview Claimant</label>
+            </value>
+            <value>
+                <fullName>Phone interview Defendant</fullName>
+                <default>false</default>
+                <label>Phone interview Defendant</label>
+            </value>
+            <value>
+                <fullName>Phone interview witness</fullName>
+                <default>false</default>
+                <label>Phone interview witness</label>
+            </value>
+            <value>
+                <fullName>Phone interview other</fullName>
+                <default>false</default>
+                <label>Phone interview other</label>
+            </value>
+            <value>
+                <fullName>Phone settlement conference Claimant</fullName>
+                <default>false</default>
+                <label>Phone settlement conference Claimant</label>
+            </value>
+            <value>
+                <fullName>Phone settlement conference Defendant</fullName>
+                <default>false</default>
+                <label>Phone settlement conference Defendant</label>
+            </value>
+            <value>
+                <fullName>In-person interview Claimant</fullName>
+                <default>false</default>
+                <label>In-person interview Claimant</label>
+            </value>
+            <value>
+                <fullName>In-person interview Defendant</fullName>
+                <default>false</default>
+                <label>In-person interview Defendant</label>
+            </value>
+            <value>
+                <fullName>In-person interview witness</fullName>
+                <default>false</default>
+                <label>In-person interview witness</label>
+            </value>
+            <value>
+                <fullName>In-person interview other</fullName>
+                <default>false</default>
+                <label>In-person interview other</label>
+            </value>
+            <value>
+                <fullName>Conference, investigative</fullName>
+                <default>false</default>
+                <label>Conference, investigative</label>
+            </value>
+            <value>
+                <fullName>Conference, settlement</fullName>
+                <default>false</default>
+                <label>Conference, settlement</label>
+            </value>
+            <value>
+                <fullName>Conference, wage companion case</fullName>
+                <default>false</default>
+                <label>Conference, wage companion case</label>
+            </value>
+            <value>
+                <fullName>Conference, other</fullName>
+                <default>false</default>
+                <label>Conference, other</label>
+            </value>
+            <value>
+                <fullName>Hearing, wage companion case</fullName>
+                <default>false</default>
+                <label>Hearing, wage companion case</label>
+            </value>
+            <value>
+                <fullName>Hearing, citation</fullName>
+                <default>false</default>
+                <label>Hearing, citation</label>
+            </value>
+            <value>
+                <fullName>Hearing, Health &amp; Safety</fullName>
+                <default>false</default>
+                <label>Hearing, Health &amp; Safety</label>
+            </value>
+            <value>
+                <fullName>Hearing, other</fullName>
+                <default>false</default>
+                <label>Hearing, other</label>
+            </value>
+            <value>
+                <fullName>Closing conference Claimant</fullName>
+                <default>false</default>
+                <label>Closing conference Claimant</label>
+            </value>
+            <value>
+                <fullName>Closing conference Defendant</fullName>
+                <default>false</default>
+                <label>Closing conference Defendant</label>
+            </value>
+            <value>
+                <fullName>Closing conference Claimant representative</fullName>
+                <default>false</default>
+                <label>Closing conference Claimant representative</label>
+            </value>
+            <value>
+                <fullName>Closing conference Defendant representative</fullName>
+                <default>false</default>
+                <label>Closing conference Defendant representative</label>
+            </value>
+            <value>
+                <fullName>Pre-hearing Conference</fullName>
+                <default>false</default>
+                <label>Pre-hearing Conference</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Section__c</fullName>
+    <description>Currently used to track with the WEG &#39;Case Issues&#39; document &#39;bible&#39; on Sharepoint.</description>
+    <externalId>false</externalId>
+    <label>Violation Section</label>
+    <length>35</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_up_Criteria__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Define the criteria for the answer from the controlling question that triggers this follow-up question to be relevant. e.g. Yes, NOT NULL</inlineHelpText>
+    <label>Follow-up Criteria</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

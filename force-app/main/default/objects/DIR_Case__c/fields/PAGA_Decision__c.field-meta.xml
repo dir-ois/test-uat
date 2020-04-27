@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Decision__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the decision by BOFE whether they will investigate or not.</inlineHelpText>
+    <label>PAGA Decision</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>BOFE Will Investigate</fullName>
+                <default>false</default>
+                <label>BOFE Will Investigate</label>
+            </value>
+            <value>
+                <fullName>BOFE Will Not Investigate</fullName>
+                <default>false</default>
+                <label>BOFE Will Not Investigate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

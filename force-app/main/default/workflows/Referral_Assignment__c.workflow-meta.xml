@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BOFE_Legal_Referral_Assignment</fullName>
+        <description>BOFE Legal Referral Assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_New_Assigned_Attorney</fullName>
+        <description>Email New Assigned Attorney</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Assignment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>First_Reminder_Email</fullName>
+        <description>First Reminder Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_of_initial_assignment</fullName>
+        <description>Notify of initial assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Referral_15_Days_Late_Notify_Attorney</fullName>
+        <description>RCI Referral 15 Days Late - Notify Attorney</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_15_Days_Late</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_for_Legal_Opinion_45_days</fullName>
+        <description>Request for Legal Opinion - 45 days</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Request_for_Legal_Opinion_45_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Second_Reminder_Email</fullName>
+        <description>Second Reminder Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Attorney_Notification</fullName>
+        <description>Wage - Attorney Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Wage_Attorney_Notification</template>
+    </alerts>
+    <rules>
+        <fullName>BOFE Referral Assignment Notifications</fullName>
+        <actions>
+            <name>Notify_of_initial_assignment</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Referral__c.Request_Status__c</field>
+            <operation>equals</operation>
+            <value>Request Sent,Request Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Request for Legal Services,BOFE Request for Legal Court Action,BOFE Civil Litigation Referral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral_Assignment__c.Currently_Assigned__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral_Assignment__c.Employee_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notifications to related users of referral assignments. This workflow is valid for only certain record types.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>First_Reminder_Email</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Referral_Assignment__c.First_Reminder_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Second_Reminder_Email</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Referral_Assignment__c.Second_Reminder_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>RCI Legal Referral - Case Not Edited 15 Day</fullName>
+        <actions>
+            <name>RCI_Referral_15_Days_Late_Notify_Attorney</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>(Referral__r.RCILegalReferral__c=TRUE) &amp;&amp;  (DATEVALUE(Referral__r.LastModifiedDate) &lt; (TODAY()-15))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WCA - Referral 45 Days</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Referral__c.Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Court Decision,Settled,Denied,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA Legal Opinion,WCA Request for Legal Action</value>
+        </criteriaItems>
+        <description>Sends email notification when legal opinion has not been updated in 45 day.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Request_for_Legal_Opinion_45_days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>WCA Referral Assignment Notifications</fullName>
+        <actions>
+            <name>BOFE_Legal_Referral_Assignment</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Referral__c.Request_Status__c</field>
+            <operation>equals</operation>
+            <value>Request Sent,Request Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA Legal Opinion,WCA De Novo Referral,WCA Request for Legal Action,Refer to JEU,WCA/Garment Referral to BOFE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral_Assignment__c.Currently_Assigned__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral_Assignment__c.Employee_Email__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notifications to related users of referral assignments. This workflow is valid for only WCA  record types.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

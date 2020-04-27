@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Position Type</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Backfill</fullName>
+                <default>false</default>
+                <label>Backfill</label>
+            </value>
+            <value>
+                <fullName>Promote in place</fullName>
+                <default>false</default>
+                <label>Promote in place</label>
+            </value>
+            <value>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+                <label>Transfer</label>
+            </value>
+            <value>
+                <fullName>Move</fullName>
+                <default>false</default>
+                <label>Move</label>
+            </value>
+            <value>
+                <fullName>Reclassification</fullName>
+                <default>false</default>
+                <label>Reclassification</label>
+            </value>
+            <value>
+                <fullName>New Position</fullName>
+                <default>false</default>
+                <label>New Position</label>
+            </value>
+            <value>
+                <fullName>Training and Development</fullName>
+                <default>false</default>
+                <label>Training and Development</label>
+            </value>
+            <value>
+                <fullName>Temporary Authorized</fullName>
+                <default>false</default>
+                <label>Temporary Authorized</label>
+            </value>
+            <value>
+                <fullName>Temporary Help</fullName>
+                <default>false</default>
+                <label>Temporary Help</label>
+            </value>
+            <value>
+                <fullName>Legacy</fullName>
+                <default>false</default>
+                <label>Legacy</label>
+            </value>
+            <value>
+                <fullName>Reclassify within Division</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reclassify within Division</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

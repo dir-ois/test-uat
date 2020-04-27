@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Closed_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Legal Closed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Case settled and plaintiff has received full settlement amt</fullName>
+                <default>false</default>
+                <label>Case settled and plaintiff has received full settlement amt</label>
+            </value>
+            <value>
+                <fullName>Acknowledgement of Full Satisfaction</fullName>
+                <default>false</default>
+                <label>Acknowledgement of Full Satisfaction</label>
+            </value>
+            <value>
+                <fullName>Judgment entered for the plaintiff who shoes to pursue</fullName>
+                <default>false</default>
+                <label>Judgment entered for the plaintiff who shoes to pursue</label>
+            </value>
+            <value>
+                <fullName>Judgment for the plaintiff but no know bank assets</fullName>
+                <default>false</default>
+                <label>Judgment for the plaintiff but no know bank assets</label>
+            </value>
+            <value>
+                <fullName>Case settled and all settlement terms were complied with</fullName>
+                <default>false</default>
+                <label>Case settled and all settlement terms were complied with</label>
+            </value>
+            <value>
+                <fullName>Case settled and awaiting compliance</fullName>
+                <default>false</default>
+                <label>Case settled and awaiting compliance</label>
+            </value>
+            <value>
+                <fullName>Case settled and legal has to enforce settlement</fullName>
+                <default>false</default>
+                <label>Case settled and legal has to enforce settlement</label>
+            </value>
+            <value>
+                <fullName>Judgment entered for Labor Commissioner</fullName>
+                <default>false</default>
+                <label>Judgment entered for Labor Commissioner</label>
+            </value>
+            <value>
+                <fullName>Judgment entered against Labor Commissioner</fullName>
+                <default>false</default>
+                <label>Judgment entered against Labor Commissioner</label>
+            </value>
+            <value>
+                <fullName>Default Judgment Entered</fullName>
+                <default>false</default>
+                <label>Default Judgment Entered</label>
+            </value>
+            <value>
+                <fullName>Default Judgment Rejected</fullName>
+                <default>false</default>
+                <label>Default Judgment Rejected</label>
+            </value>
+            <value>
+                <fullName>Closed due to Bankruptcy</fullName>
+                <default>false</default>
+                <label>Closed due to Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Referral Declined</fullName>
+                <default>false</default>
+                <label>Referral Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

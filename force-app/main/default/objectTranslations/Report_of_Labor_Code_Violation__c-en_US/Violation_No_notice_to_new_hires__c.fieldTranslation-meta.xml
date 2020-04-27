@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- No notice to new hires (under Labor Code Section 2810.5) --></help>
+    <label><!-- No notice to new hires Labor Code 2810.5 --></label>
+    <name>Violation_No_notice_to_new_hires__c</name>
+</CustomFieldTranslation>

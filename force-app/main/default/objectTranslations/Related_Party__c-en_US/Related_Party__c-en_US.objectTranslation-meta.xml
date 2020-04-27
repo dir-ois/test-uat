@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Parties</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Advocate Info --></label>
+        <name>Advocate_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Advocate Info List View --></label>
+        <name>Advocate_Info_List_View</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Different Work Address --></label>
+        <name>DifferentWorkAddress</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employee Information --></label>
+        <name>Employee_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer Carrying Out --></label>
+        <name>Employer_Carrying_Out</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer Info List View --></label>
+        <name>Employer_Info_List_View</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer Information --></label>
+        <name>Employer_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LC Threat Info --></label>
+        <name>LC_Threat_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Threat Info --></label>
+        <name>Threat_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Threat Info List view --></label>
+        <name>Threat_Info_List_view</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Witness Contact Info --></label>
+        <name>Witness_Contact_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Witness Contact Info List View --></label>
+        <name>Witness_Contact_Info_List_View</name>
+    </fieldSets>
+    <layouts>
+        <layout>Advocate</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employer Carrying Out Change</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employer DWA</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Staff</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Related Party Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Witness</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Advocate --></label>
+        <name>Advocate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Employee --></label>
+        <name>Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Employer --></label>
+        <name>Employer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Employer Carrying Out Change --></label>
+        <name>Employer_Carrying_Out_Change</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Employer DWA --></label>
+        <name>Employer_DWA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal Staff --></label>
+        <name>Internal_Staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Witness --></label>
+        <name>Witness</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- RCI Related parties with the following roles: Witness, Witness for Appellant, Witness for Appellant, Witness for Claimant, Witness for Defendant, Witness for Division  cannot be confirmed. --></errorMessage>
+        <name>RCI_Witnesses_Not_Confirmed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Zip Code must be 5 digits. --></errorMessage>
+        <name>Zip_Code_has_to_be_5_digits</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSN_must_be_9_characters</fullName>
+    <active>true</active>
+    <description>Social Security numbers must have 9 numbers.</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( SSN__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+AND( 
+LEN( SSN__c ) &lt;&gt; 9, 
+NOT(ISBLANK(SSN__c)), 
+RecordType.Name = &quot;Management Individual&quot; 
+)</errorConditionFormula>
+    <errorMessage>Social Security numbers must have 9 numbers.</errorMessage>
+</ValidationRule>

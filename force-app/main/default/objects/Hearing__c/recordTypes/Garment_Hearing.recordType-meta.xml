@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Garment_Hearing</fullName>
+    <active>true</active>
+    <label>Garment Hearing</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dismissed_Reason__c</picklist>
+        <values>
+            <fullName>Claimant Did not appear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full payment by Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Jurisdiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaintiff failed to appear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stipulated Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documents_Sent__c</picklist>
+        <values>
+            <fullName>Amended Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amended Order%2C Decision or Award</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Satisfaction of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Satisfaction of Judgment%2C Release of Lien and Original Lien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment Copy and Notice of Entry of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment Set Aside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment and Collections Instructions Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment and Wage Claimant Post-Hearing Worksheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment%2C Assignment Letter and Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment%2C Lien%28s%29 and Collection Instruction Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment%2C Lien%28s%29 and Notice of Entry of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment%2C Lien%28s%29%2C Assignment Letter and Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter Denying Continuance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Continuance Granted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Continuance%2FReset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Continuance%2FReset%2C Amended Complaint and Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Continuance%2FReset%2C Amended Complaint%2C Attachments and Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Continuance%2FReset%2C Complaint and Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing Time Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing and Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing pursuant to Labor Code Section 98%28f%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing%2C Amended Complaint and Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing%2C Complaint and Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing%2C Complaint%2C Answer and Attachment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Hearing%2C Complaint%2C Answer and Suspended Corporation Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Reset of Hearing pursuant to Labor Code Section 98%28f%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order On Application For Relief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order On Application For Relief Under Labor Code Section 98%28f%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order%2C Decision or Award</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order%2C Decision or Award Nunc Pro Tunc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order%2C Decision or Award by Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order%2C Decision or Award%2C Notice of Payment Due %26 Appeal Bond Requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Satisfaction of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release of Lien%2C Acknowledgment and Original Lien%28s%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fast_Track__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hearing_Form_Returned_Status__c</picklist>
+        <values>
+            <fullName>Acceptable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returned%2C Refer anyway</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hearing_Form_Returned__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IC_Determination__c</picklist>
+        <values>
+            <fullName>Employee Status Established</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IC Established</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled - No IC Determination Made</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>In_Person_Remote_Meeting__c</picklist>
+        <values>
+            <fullName>In Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone%2FRemote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Just_and_Equitable_Postponement_Reasons__c</picklist>
+        <values>
+            <fullName>Commissions not due at the time the claim was filed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuance request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correction%28s%29 to Complaint needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Criminal charges pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant failure to respond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant out of the country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant%E2%80%99s delayed response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay due to Plaintiff perfecting complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay for resolution of secondary civil case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay in the return of the Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Illness of one of the parties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inability to determine legal entity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete evidence%2Fexhibits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect party named</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal referral response time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lengthy Audit needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of state Plaintiff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of state employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parties attempted settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaintiff amended complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaintiff out of the country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential bankruptcy filing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related litigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Translation of documents needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to obtain service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unreported address change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Location__c</picklist>
+        <values>
+            <fullName>Bakersfield - 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer%E2%80%99s workplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fresno %E2%80%93 04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Beach %E2%80%93 05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles %E2%80%93 06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland %E2%80%93 07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redding %E2%80%93 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento %E2%80%93 08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salinas %E2%80%93 22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Bernardino %E2%80%93 09</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego %E2%80%93 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco %E2%80%93 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Jose %E2%80%93 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Ana %E2%80%93 18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara - 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Rosa %E2%80%93 23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stockton %E2%80%93 14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephone%2Fremote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Nuys - 17</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Outcome__c</picklist>
+        <values>
+            <fullName>Dismissed - Claimant Withdrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed - Claimant did not appear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed - No jurisdiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to Hearing - Claimant only appeared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to Hearing - no settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled at Conference</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Type__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order to Appear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order to Show Cause</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness Prep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Service__c</picklist>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>First Class and Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Office__c</picklist>
+        <values>
+            <fullName>Bakersfield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Centro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fresno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salinas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Bernardino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Jose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Ana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Rosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stockton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Nuys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plaintiff_Only_Attended__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Subsequent2__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuance Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continuance Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Postponed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rescheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2810_4_Outcome__c</picklist>
+        <values>
+            <fullName>Affirmed on list</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeal withdrawn%2Fdismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove from list</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

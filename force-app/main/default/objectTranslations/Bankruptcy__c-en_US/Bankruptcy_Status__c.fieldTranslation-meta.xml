@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bankruptcy Status --></label>
+    <name>Bankruptcy_Status__c</name>
+    <picklistValues>
+        <masterLabel>Closed without Discharge</masterLabel>
+        <translation><!-- Closed without Discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discharge Granted</masterLabel>
+        <translation><!-- Discharge Granted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed</masterLabel>
+        <translation><!-- Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

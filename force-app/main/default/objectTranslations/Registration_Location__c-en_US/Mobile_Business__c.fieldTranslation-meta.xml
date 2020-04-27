@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check if this location is mobile and does not have a permanent physical location. --></help>
+    <label><!-- Mobile Business --></label>
+    <name>Mobile_Business__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referral Status --></label>
+    <name>Request_Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation><!-- Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accepted Representation</masterLabel>
+        <translation><!-- Accepted Representation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Decision</masterLabel>
+        <translation><!-- Court Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denied</masterLabel>
+        <translation><!-- Denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fully Collected</masterLabel>
+        <translation><!-- Fully Collected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigation Complete</masterLabel>
+        <translation><!-- Investigation Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Review Pending</masterLabel>
+        <translation><!-- Legal Review Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mediation</masterLabel>
+        <translation><!-- Mediation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Referral</masterLabel>
+        <translation><!-- New Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Collected</masterLabel>
+        <translation><!-- Partial Collected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Approval</masterLabel>
+        <translation><!-- Pending Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Restitution Fund</masterLabel>
+        <translation><!-- Pending Restitution Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral Accepted</masterLabel>
+        <translation><!-- Referral Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred</masterLabel>
+        <translation><!-- Referred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Claimant</masterLabel>
+        <translation><!-- Referred to Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Approved</masterLabel>
+        <translation><!-- Request Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Sent</masterLabel>
+        <translation><!-- Request Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Review in Process</masterLabel>
+        <translation><!-- Review in Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Pending</masterLabel>
+        <translation><!-- Trial Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Scheduled</masterLabel>
+        <translation><!-- Trial Scheduled --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

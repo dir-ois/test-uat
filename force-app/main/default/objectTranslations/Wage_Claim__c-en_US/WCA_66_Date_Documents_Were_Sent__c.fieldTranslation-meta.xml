@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 66 Date Documents Were Sent --></label>
+    <name>WCA_66_Date_Documents_Were_Sent__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- I am assigned deputy --></label>
+    <name>I_am_assigned_deputy__c</name>
+</CustomFieldTranslation>

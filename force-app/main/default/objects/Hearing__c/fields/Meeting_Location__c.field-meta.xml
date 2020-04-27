@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Meeting Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Telephone/remote</fullName>
+                <default>false</default>
+                <label>Telephone/remote</label>
+            </value>
+            <value>
+                <fullName>Employer’s workplace</fullName>
+                <default>false</default>
+                <label>Employer’s workplace</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Bakersfield - 01</fullName>
+                <default>false</default>
+                <label>Bakersfield - 01</label>
+            </value>
+            <value>
+                <fullName>Fresno – 04</fullName>
+                <default>false</default>
+                <label>Fresno – 04</label>
+            </value>
+            <value>
+                <fullName>Long Beach – 05</fullName>
+                <default>false</default>
+                <label>Long Beach – 05</label>
+            </value>
+            <value>
+                <fullName>Los Angeles – 06</fullName>
+                <default>false</default>
+                <label>Los Angeles – 06</label>
+            </value>
+            <value>
+                <fullName>Oakland – 07</fullName>
+                <default>false</default>
+                <label>Oakland – 07</label>
+            </value>
+            <value>
+                <fullName>Redding – 15</fullName>
+                <default>false</default>
+                <label>Redding – 15</label>
+            </value>
+            <value>
+                <fullName>Riverside</fullName>
+                <default>false</default>
+                <label>Riverside</label>
+            </value>
+            <value>
+                <fullName>Sacramento – 08</fullName>
+                <default>false</default>
+                <label>Sacramento – 08</label>
+            </value>
+            <value>
+                <fullName>Salinas – 22</fullName>
+                <default>false</default>
+                <label>Salinas – 22</label>
+            </value>
+            <value>
+                <fullName>San Bernardino – 09</fullName>
+                <default>false</default>
+                <label>San Bernardino – 09</label>
+            </value>
+            <value>
+                <fullName>San Diego – 10</fullName>
+                <default>false</default>
+                <label>San Diego – 10</label>
+            </value>
+            <value>
+                <fullName>San Francisco – 11</fullName>
+                <default>false</default>
+                <label>San Francisco – 11</label>
+            </value>
+            <value>
+                <fullName>San Jose – 12</fullName>
+                <default>false</default>
+                <label>San Jose – 12</label>
+            </value>
+            <value>
+                <fullName>Santa Ana – 18</fullName>
+                <default>false</default>
+                <label>Santa Ana – 18</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara - 13</fullName>
+                <default>false</default>
+                <label>Santa Barbara - 13</label>
+            </value>
+            <value>
+                <fullName>Santa Rosa – 23</fullName>
+                <default>false</default>
+                <label>Santa Rosa – 23</label>
+            </value>
+            <value>
+                <fullName>Stockton – 14</fullName>
+                <default>false</default>
+                <label>Stockton – 14</label>
+            </value>
+            <value>
+                <fullName>Van Nuys - 17</fullName>
+                <default>false</default>
+                <label>Van Nuys - 17</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Minor(s) work in hazardous conditions --></help>
+    <label><!-- Minor(s) work in hazardous conditions --></label>
+    <name>Violation_Minor_s_work_in_hazardous__c</name>
+</CustomFieldTranslation>

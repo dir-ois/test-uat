@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bank_Location</fullName>
+    <active>true</active>
+    <description>Bank Location is req. if type = Check</description>
+    <errorConditionFormula>AND(
+   OR(TEXT( Payment_Type__c ) = &#39;Check&#39;, TEXT( Payment_Type__c ) = &quot;Cashier\&#39;s Check&quot;, TEXT( Payment_Type__c ) = &#39;Money Order&#39;), 
+   ISBLANK( TEXT(  Bank_Location__c  ) )
+)</errorConditionFormula>
+    <errorDisplayField>Bank_Location__c</errorDisplayField>
+    <errorMessage>Bank Location is req. if type = Check</errorMessage>
+</ValidationRule>

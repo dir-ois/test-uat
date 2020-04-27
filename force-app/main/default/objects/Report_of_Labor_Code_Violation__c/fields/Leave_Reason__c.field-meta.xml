@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leave_Reason__c</fullName>
+    <description>Why did the employee leave?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Why did the employee leave?</inlineHelpText>
+    <label>Leave Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quit</fullName>
+                <default>false</default>
+                <label>Quit</label>
+            </value>
+            <value>
+                <fullName>Fired</fullName>
+                <default>false</default>
+                <label>Fired</label>
+            </value>
+            <value>
+                <fullName>Still Employed</fullName>
+                <default>false</default>
+                <label>Still Employed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

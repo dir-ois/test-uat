@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Capacity of Person Served --></label>
+    <name>Capacity_of_Person_Served__c</name>
+    <picklistValues>
+        <masterLabel>Agent for Service of Process</masterLabel>
+        <translation><!-- Agent for Service of Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attorney for Defendant</masterLabel>
+        <translation><!-- Attorney for Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant</masterLabel>
+        <translation><!-- Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive</masterLabel>
+        <translation><!-- Executive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garnishee</masterLabel>
+        <translation><!-- Garnishee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Debtor</masterLabel>
+        <translation><!-- Judgment Debtor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Person Apparently in Charge</masterLabel>
+        <translation><!-- Person Apparently in Charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff</masterLabel>
+        <translation><!-- Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Respondent</masterLabel>
+        <translation><!-- Respondent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

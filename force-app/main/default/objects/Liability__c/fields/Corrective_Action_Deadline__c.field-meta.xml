@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corrective_Action_Deadline__c</fullName>
+    <description>Used for BOFE 84 citation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Deadline for corrected action to be taken and notification to the office.</inlineHelpText>
+    <label>Corrective Action Deadline</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

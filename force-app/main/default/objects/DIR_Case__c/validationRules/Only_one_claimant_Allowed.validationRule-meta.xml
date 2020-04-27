@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_one_claimant_Allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  
+ISCHANGED(Number_of_Claimants__c), 
+Number_of_Claimants__c &gt;1)</errorConditionFormula>
+    <errorMessage>You are only allow one entry of Your Information</errorMessage>
+</ValidationRule>

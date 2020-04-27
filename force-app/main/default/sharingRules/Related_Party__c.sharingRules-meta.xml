@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Guest_User_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Guest User Access</label>
+        <sharedTo>
+            <guestUser>RCIComplaint</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Employer Carrying Out Change,Employee,Employer,Witness,Advocate,Internal Staff,Employer DWA</value>
+        </criteriaItems>
+    </sharingGuestRules>
+    <sharingOwnerRules>
+        <fullName>RCIComplaint_Site_Guest_User_Share_with_RCI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>RCIComplaint Site Guest User related party records sharing with RCI users</description>
+        <label>RCIComplaint Site Guest User Share with RCI</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>RCI</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <group>RCIComplaintGuestUser</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>RCI_Share_with_RCI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share RCI related party with other RCI users</description>
+        <label>RCI Share with RCI</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>RCI</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>RCI</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Document_Type__c</fullName>
+    <description>Mapped to Type__c Attachment Plus field.</description>
+    <externalId>false</externalId>
+    <label>Registration Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Workers Compensation Insurance (WCI)</fullName>
+                <default>false</default>
+                <label>Workers Compensation Insurance (WCI)</label>
+            </value>
+            <value>
+                <fullName>Collective Bargaining Agreement (CBA)</fullName>
+                <default>false</default>
+                <label>Collective Bargaining Agreement (CBA)</label>
+            </value>
+            <value>
+                <fullName>Sample Leasing Contract</fullName>
+                <default>false</default>
+                <label>Sample Leasing Contract</label>
+            </value>
+            <value>
+                <fullName>Signed Employee Leasing Contract</fullName>
+                <default>false</default>
+                <label>Signed Employee Leasing Contract</label>
+            </value>
+            <value>
+                <fullName>Employee Leasing WCI</fullName>
+                <default>false</default>
+                <label>Employee Leasing WCI</label>
+            </value>
+            <value>
+                <fullName>Industrial Waste Discharge Permit Certificate</fullName>
+                <default>false</default>
+                <label>Industrial Waste Discharge Permit Certificate</label>
+            </value>
+            <value>
+                <fullName>IRS Clearance Letter</fullName>
+                <default>false</default>
+                <label>IRS Clearance Letter</label>
+            </value>
+            <value>
+                <fullName>Federal Employer Identification Number (FEIN)</fullName>
+                <default>false</default>
+                <label>Federal Employer Identification Number (FEIN)</label>
+            </value>
+            <value>
+                <fullName>State Employer Identification Number (SEIN)</fullName>
+                <default>false</default>
+                <label>State Employer Identification Number (SEIN)</label>
+            </value>
+            <value>
+                <fullName>Certificate of Limited Partnership</fullName>
+                <default>false</default>
+                <label>Certificate of Limited Partnership</label>
+            </value>
+            <value>
+                <fullName>Articles of Incorporation/Organization</fullName>
+                <default>false</default>
+                <label>Articles of Incorporation/Organization</label>
+            </value>
+            <value>
+                <fullName>Bond Certification</fullName>
+                <default>false</default>
+                <label>Bond Certification</label>
+            </value>
+            <value>
+                <fullName>Business License</fullName>
+                <default>false</default>
+                <label>Business License</label>
+            </value>
+            <value>
+                <fullName>Fictitious Business Name Statement for DBA</fullName>
+                <default>false</default>
+                <label>Fictitious Business Name Statement for DBA</label>
+            </value>
+            <value>
+                <fullName>Other Required Document</fullName>
+                <default>false</default>
+                <label>Other Required Document</label>
+            </value>
+            <value>
+                <fullName>Statement of Information</fullName>
+                <default>false</default>
+                <label>Statement of Information</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Documents</fullName>
+                <default>false</default>
+                <label>Miscellaneous Documents</label>
+            </value>
+            <value>
+                <fullName>Affidavit of Character</fullName>
+                <default>false</default>
+                <label>Affidavit of Character</label>
+            </value>
+            <value>
+                <fullName>Personal Record</fullName>
+                <default>false</default>
+                <label>Personal Record</label>
+            </value>
+            <value>
+                <fullName>Fee Schedule</fullName>
+                <default>false</default>
+                <label>Fee Schedule</label>
+            </value>
+            <value>
+                <fullName>Exclusive Contract</fullName>
+                <default>false</default>
+                <label>Exclusive Contract</label>
+            </value>
+            <value>
+                <fullName>Non-Exclusive Contract</fullName>
+                <default>false</default>
+                <label>Non-Exclusive Contract</label>
+            </value>
+            <value>
+                <fullName>Premise Certification</fullName>
+                <default>false</default>
+                <label>Premise Certification</label>
+            </value>
+            <value>
+                <fullName>Driver License or Photo ID</fullName>
+                <default>false</default>
+                <label>Driver License or Photo ID</label>
+            </value>
+            <value>
+                <fullName>Premise Certification - Main Location</fullName>
+                <default>false</default>
+                <label>Premise Certification - Main Location</label>
+            </value>
+            <value>
+                <fullName>Business Tax Registration Certificate aka Zoning permit</fullName>
+                <default>false</default>
+                <label>Business Tax Registration Certificate aka Zoning permit</label>
+            </value>
+            <value>
+                <fullName>Fictitious Business Name Statement for location</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fictitious Business Name Statement for location</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

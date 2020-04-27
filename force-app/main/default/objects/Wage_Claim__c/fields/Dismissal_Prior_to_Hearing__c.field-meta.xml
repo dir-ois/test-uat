@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissal_Prior_to_Hearing__c</fullName>
+    <externalId>false</externalId>
+    <label>Dismissal Prior to Hearing</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dismissed - Plaintiff Failed to Appear</fullName>
+                <default>false</default>
+                <label>Dismissed - Plaintiff Failed to Appear</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Lack of Jurisdiction</fullName>
+                <default>false</default>
+                <label>Dismissed - Lack of Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Withdrawal</fullName>
+                <default>false</default>
+                <label>Dismissed - Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Stipulated Settlement</fullName>
+                <default>false</default>
+                <label>Dismissed - Stipulated Settlement</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Full Payment by Defendant</fullName>
+                <default>false</default>
+                <label>Dismissed - Full Payment by Defendant</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Other</fullName>
+                <default>false</default>
+                <label>Dismissed - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

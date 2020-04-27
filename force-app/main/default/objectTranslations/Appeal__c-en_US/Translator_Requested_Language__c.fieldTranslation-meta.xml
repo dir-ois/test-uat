@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- I am also requesting a translator in the following language --></help>
+    <label><!-- Translator Requested Language --></label>
+    <name>Translator_Requested_Language__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the Developer Name (API Name) of the parent DIR Case&apos;s record type. --></help>
+    <label><!-- DIR Case Recordtype Name --></label>
+    <name>DIR_Case_Recordtype_Name__c</name>
+</CustomFieldTranslation>

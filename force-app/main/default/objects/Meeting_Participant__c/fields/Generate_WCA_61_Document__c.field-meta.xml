@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_61_Document__c</fullName>
+    <description>##Conga created btn:00bZ0000000Ibnz</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id + 
+&quot;&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0=&quot; + Case__c + &quot;,[Defendant]a0md00000064cjRAAQ?pv0=&quot; + Case__c + &quot;,[Occupation]a0md00000064cjPAAQ?pv0=&quot; + Case__c + &quot;,[VioTable]a0md00000064cjSAAQ?pv0=&quot; + Case__c + &quot;,[Guarantor]a0md00000064cjNAAQ?pv0=&quot; + Case__c + &quot;,[Successor]a0md00000064cjLAAQ?pv0=&quot; + Case__c + &quot;,[WCAOffice]a0md00000064cjOAAQ?pv0=&quot; + Case__c + &quot;,[HearingInfo]a0md00000064cjuAAA?pv0=&quot; + Case__c + &quot;,[CaseInfo]a0md00000064cjCAAQ?pv0=&quot; + Case__c + &quot;,[EMP]a0md00000064cj2AAA?pv0=&quot; + Case__c + &quot;~pv1=\&quot;Case employer\&quot;,[GUAR]a0md00000064cj2AAA?pv0=&quot; + Case__c + &quot;~pv1=\&quot;Guarantor\&quot;&quot; + 
+&quot;&amp;templategroup=WCAHearing&quot; +
+&quot;&amp;templateid=a0nd0000005OStZ&quot; + 
+&quot;&amp;qmode=Download&quot; + 
+&quot;&amp;OFN=WCA 61-&quot; + Case__r.Name + &quot;-&quot; + Case__r.Employer__r.Name</formula>
+    <label>Generate WCA 61 Document</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

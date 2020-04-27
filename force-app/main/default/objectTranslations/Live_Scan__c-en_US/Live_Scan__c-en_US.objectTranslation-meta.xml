@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Live Scan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Live Scans</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Live_Scan_FS --></label>
+        <name>Live_Scan_FS</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

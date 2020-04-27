@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purge_Date_Criteria</fullName>
+    <active>true</active>
+    <description>When Open in Legal indicator is Yes, the RCI user may not enter a purge date.</description>
+    <errorConditionFormula>( RecordType.Name = &quot;RCI&quot;) &amp;&amp; 
+ISPICKVAL( Open_in_Legal__c, &quot;Yes&quot;) &amp;&amp;
+NOT(ISBLANK(Purge_Date__c))</errorConditionFormula>
+    <errorMessage>You may not enter a Purge Date if the Open in Legal field is True.</errorMessage>
+</ValidationRule>

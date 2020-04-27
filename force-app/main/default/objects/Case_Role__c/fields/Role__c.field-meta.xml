@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <description>Roles that related accounts have on a case</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the role played by this related account</inlineHelpText>
+    <label>Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accountant</fullName>
+                <default>false</default>
+                <label>Accountant</label>
+            </value>
+            <value>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+                <label>Advocate</label>
+            </value>
+            <value>
+                <fullName>Agent for Service of Process</fullName>
+                <default>false</default>
+                <label>Agent for Service of Process</label>
+            </value>
+            <value>
+                <fullName>Aggrieved</fullName>
+                <default>false</default>
+                <label>Aggrieved</label>
+            </value>
+            <value>
+                <fullName>Assignee</fullName>
+                <default>false</default>
+                <label>Assignee</label>
+            </value>
+            <value>
+                <fullName>Attorney for Defendant</fullName>
+                <default>false</default>
+                <label>Attorney for Defendant</label>
+            </value>
+            <value>
+                <fullName>Attorney for Plaintiff</fullName>
+                <default>false</default>
+                <label>Attorney for Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Attorney Representative</fullName>
+                <default>false</default>
+                <label>Attorney Representative</label>
+            </value>
+            <value>
+                <fullName>Bank</fullName>
+                <default>false</default>
+                <label>Bank</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Case Employer</fullName>
+                <default>false</default>
+                <label>Case Employer</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>CFO</fullName>
+                <default>false</default>
+                <label>CFO</label>
+            </value>
+            <value>
+                <fullName>Chief</fullName>
+                <default>false</default>
+                <label>Chief</label>
+            </value>
+            <value>
+                <fullName>Claimant</fullName>
+                <default>false</default>
+                <label>Claimant</label>
+            </value>
+            <value>
+                <fullName>Claimant Advocate</fullName>
+                <default>false</default>
+                <label>Claimant Advocate</label>
+            </value>
+            <value>
+                <fullName>Claimant Assignee</fullName>
+                <default>false</default>
+                <label>Claimant Assignee</label>
+            </value>
+            <value>
+                <fullName>Claimant Attorney</fullName>
+                <default>false</default>
+                <label>Claimant Attorney</label>
+            </value>
+            <value>
+                <fullName>Claimant Guardian</fullName>
+                <default>false</default>
+                <label>Claimant Guardian</label>
+            </value>
+            <value>
+                <fullName>Claimant Minor</fullName>
+                <default>false</default>
+                <label>Claimant Minor</label>
+            </value>
+            <value>
+                <fullName>Claimant Other</fullName>
+                <default>false</default>
+                <label>Claimant Other</label>
+            </value>
+            <value>
+                <fullName>Claimant Representative</fullName>
+                <default>false</default>
+                <label>Claimant Representative</label>
+            </value>
+            <value>
+                <fullName>Client Employer</fullName>
+                <default>false</default>
+                <label>Client Employer</label>
+            </value>
+            <value>
+                <fullName>Complainant</fullName>
+                <default>false</default>
+                <label>Complainant</label>
+            </value>
+            <value>
+                <fullName>Contractor Successor</fullName>
+                <default>false</default>
+                <label>Contractor Successor</label>
+            </value>
+            <value>
+                <fullName>Corporate Officer</fullName>
+                <default>false</default>
+                <label>Corporate Officer</label>
+            </value>
+            <value>
+                <fullName>Court</fullName>
+                <default>false</default>
+                <label>Court</label>
+            </value>
+            <value>
+                <fullName>Defendant</fullName>
+                <default>false</default>
+                <label>Defendant</label>
+            </value>
+            <value>
+                <fullName>Defendant - (Restitution)</fullName>
+                <default>false</default>
+                <label>Defendant - (Restitution)</label>
+            </value>
+            <value>
+                <fullName>Defendant - Agent for Service</fullName>
+                <default>false</default>
+                <label>Defendant - Agent for Service</label>
+            </value>
+            <value>
+                <fullName>Defendant Attorney</fullName>
+                <default>false</default>
+                <label>Defendant Attorney</label>
+            </value>
+            <value>
+                <fullName>Defendant – CEO</fullName>
+                <default>false</default>
+                <label>Defendant – CEO</label>
+            </value>
+            <value>
+                <fullName>Defendant – Corporate Officer</fullName>
+                <default>false</default>
+                <label>Defendant – Corporate Officer</label>
+            </value>
+            <value>
+                <fullName>Defendant - Guarantor</fullName>
+                <default>false</default>
+                <label>Defendant - Guarantor</label>
+            </value>
+            <value>
+                <fullName>Defendant - Joint Employer</fullName>
+                <default>false</default>
+                <label>Defendant - Joint Employer</label>
+            </value>
+            <value>
+                <fullName>Defendant - Manager</fullName>
+                <default>false</default>
+                <label>Defendant - Manager</label>
+            </value>
+            <value>
+                <fullName>Defendant – Managing Member</fullName>
+                <default>false</default>
+                <label>Defendant – Managing Member</label>
+            </value>
+            <value>
+                <fullName>Defendant Representative</fullName>
+                <default>false</default>
+                <label>Defendant Representative</label>
+            </value>
+            <value>
+                <fullName>Defendant - Successor</fullName>
+                <default>false</default>
+                <label>Defendant - Successor</label>
+            </value>
+            <value>
+                <fullName>Director</fullName>
+                <default>false</default>
+                <label>Director</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Escrow Company</fullName>
+                <default>false</default>
+                <label>Escrow Company</label>
+            </value>
+            <value>
+                <fullName>Family Relative</fullName>
+                <default>false</default>
+                <label>Family Relative</label>
+            </value>
+            <value>
+                <fullName>Garnishee</fullName>
+                <default>false</default>
+                <label>Garnishee</label>
+            </value>
+            <value>
+                <fullName>Guarantor</fullName>
+                <default>false</default>
+                <label>Guarantor</label>
+            </value>
+            <value>
+                <fullName>Insurer</fullName>
+                <default>false</default>
+                <label>Insurer</label>
+            </value>
+            <value>
+                <fullName>Joint Employer</fullName>
+                <default>false</default>
+                <label>Joint Employer</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Managing Member</fullName>
+                <default>false</default>
+                <label>Managing Member</label>
+            </value>
+            <value>
+                <fullName>Member</fullName>
+                <default>false</default>
+                <label>Member</label>
+            </value>
+            <value>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+                <label>Merchant</label>
+            </value>
+            <value>
+                <fullName>Non-attorney Representative</fullName>
+                <default>false</default>
+                <label>Non-attorney Representative</label>
+            </value>
+            <value>
+                <fullName>Notice Filer PAGA</fullName>
+                <default>false</default>
+                <label>Notice Filer PAGA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Owner</fullName>
+                <default>false</default>
+                <label>Owner</label>
+            </value>
+            <value>
+                <fullName>PAGA Additional Employer</fullName>
+                <default>false</default>
+                <label>PAGA Additional Employer</label>
+            </value>
+            <value>
+                <fullName>PAGA Attorney</fullName>
+                <default>false</default>
+                <label>PAGA Attorney</label>
+            </value>
+            <value>
+                <fullName>PAGA Employer</fullName>
+                <default>false</default>
+                <label>PAGA Employer</label>
+            </value>
+            <value>
+                <fullName>PAGA Employer Filer</fullName>
+                <default>false</default>
+                <label>PAGA Employer Filer</label>
+            </value>
+            <value>
+                <fullName>PAGA Notice Filer</fullName>
+                <default>false</default>
+                <label>PAGA Notice Filer</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+                <label>Partnership</label>
+            </value>
+            <value>
+                <fullName>Payee - Employee</fullName>
+                <default>false</default>
+                <label>Payee - Employee</label>
+            </value>
+            <value>
+                <fullName>Payee - Other</fullName>
+                <default>false</default>
+                <label>Payee - Other</label>
+            </value>
+            <value>
+                <fullName>President</fullName>
+                <default>false</default>
+                <label>President</label>
+            </value>
+            <value>
+                <fullName>Representing Attorney</fullName>
+                <default>false</default>
+                <label>Representing Attorney</label>
+            </value>
+            <value>
+                <fullName>Secretary</fullName>
+                <default>false</default>
+                <label>Secretary</label>
+            </value>
+            <value>
+                <fullName>Senior Underwriter</fullName>
+                <default>false</default>
+                <label>Senior Underwriter</label>
+            </value>
+            <value>
+                <fullName>Spouse</fullName>
+                <default>false</default>
+                <label>Spouse</label>
+            </value>
+            <value>
+                <fullName>State</fullName>
+                <default>false</default>
+                <label>State</label>
+            </value>
+            <value>
+                <fullName>Subpoenaed Party</fullName>
+                <default>false</default>
+                <label>Subpoenaed Party</label>
+            </value>
+            <value>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+                <label>Subsidiary</label>
+            </value>
+            <value>
+                <fullName>Successor</fullName>
+                <default>false</default>
+                <label>Successor</label>
+            </value>
+            <value>
+                <fullName>Successor To</fullName>
+                <default>false</default>
+                <label>Successor To</label>
+            </value>
+            <value>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+                <label>Treasurer</label>
+            </value>
+            <value>
+                <fullName>Underwriter</fullName>
+                <default>false</default>
+                <label>Underwriter</label>
+            </value>
+            <value>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+                <label>Vice President</label>
+            </value>
+            <value>
+                <fullName>Witness</fullName>
+                <default>false</default>
+                <label>Witness</label>
+            </value>
+            <value>
+                <fullName>Witness for Appellant</fullName>
+                <default>false</default>
+                <label>Witness for Appellant</label>
+            </value>
+            <value>
+                <fullName>Witness for Claimant</fullName>
+                <default>false</default>
+                <label>Witness for Claimant</label>
+            </value>
+            <value>
+                <fullName>Witness for Defendant</fullName>
+                <default>false</default>
+                <label>Witness for Defendant</label>
+            </value>
+            <value>
+                <fullName>Witness for Division</fullName>
+                <default>false</default>
+                <label>Witness for Division</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

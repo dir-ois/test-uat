@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_010_Non_PI_PD_WD_Tort__c</fullName>
+    <externalId>false</externalId>
+    <label>CM-010 Non-PI/PD/WD Tort</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business tort/unfair business practice</fullName>
+                <default>false</default>
+                <label>Business tort/unfair business practice</label>
+            </value>
+            <value>
+                <fullName>Civil rights</fullName>
+                <default>false</default>
+                <label>Civil rights</label>
+            </value>
+            <value>
+                <fullName>Defamation</fullName>
+                <default>false</default>
+                <label>Defamation</label>
+            </value>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>Intellectual property</fullName>
+                <default>false</default>
+                <label>Intellectual property</label>
+            </value>
+            <value>
+                <fullName>Professional negligence</fullName>
+                <default>false</default>
+                <label>Professional negligence</label>
+            </value>
+            <value>
+                <fullName>Other non-PI/PD/WD tort</fullName>
+                <default>false</default>
+                <label>Other non-PI/PD/WD tort</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

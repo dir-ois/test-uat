@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>De_Nova_Closed_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>De Novo Closed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Request_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The case has been settled and plaintiff has received the full settlement amount</fullName>
+                <default>false</default>
+                <label>The case has been settled and plaintiff has received the full settlement amount</label>
+            </value>
+            <value>
+                <fullName>An Acknowledgment of Full Satisfaction of Judgment has been filed and entered by the court</fullName>
+                <default>false</default>
+                <label>An Acknowledgment of Full Satisfaction of Judgment has been filed and entered by the court</label>
+            </value>
+            <value>
+                <fullName>Judgment entered for the plaintiff who chose to pursue collection of judgment on his/her own behalf (see Reassignment of Claim)</fullName>
+                <default>false</default>
+                <label>Judgment entered for the plaintiff who chose to pursue collection of judgment on his/her own behalf (see Reassignment of Claim)</label>
+            </value>
+            <value>
+                <fullName>Judgment for the plaintiff but no known bank assets for defendant employer</fullName>
+                <default>false</default>
+                <label>Judgment for the plaintiff but no known bank assets for defendant employer</label>
+            </value>
+            <value>
+                <fullName>Judgment in plaintiff’s favor has been partially satisfied. No other known assets of the defendant</fullName>
+                <default>false</default>
+                <label>Judgment in plaintiff’s favor has been partially satisfied. No other known assets of the defendant</label>
+            </value>
+            <value>
+                <fullName>Defendant’s appeal has been dismissed. Request is hereby made for district office to enter judgment on underlying ODA and record Certificate of lien</fullName>
+                <default>false</default>
+                <label>Defendant’s appeal has been dismissed. Request is hereby made for district office to enter judgment on underlying ODA and record Certificate of lien</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>The case has been settled and plaintiff has received the full settlement amount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>An Acknowledgment of Full Satisfaction of Judgment has been filed and entered by the court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Judgment entered for the plaintiff who chose to pursue collection of judgment on his/her own behalf (see Reassignment of Claim)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Judgment for the plaintiff but no known bank assets for defendant employer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Judgment in plaintiff’s favor has been partially satisfied. No other known assets of the defendant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Defendant’s appeal has been dismissed. Request is hereby made for district office to enter judgment on underlying ODA and record Certificate of lien</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

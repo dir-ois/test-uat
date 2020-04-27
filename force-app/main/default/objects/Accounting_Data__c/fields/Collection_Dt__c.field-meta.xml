@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Dt__c</fullName>
+    <description>Collection Date
+
+Date when the item was sent to the collection agency.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>COLLECTION_DT is required when COLLECTION_CHKBOX is &#39;Y&#39;.
+
+COLLECTION_DT must be blank when COLLECTION_CHKBOX is &#39;N&#39;.</inlineHelpText>
+    <label>Collection_Dt</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

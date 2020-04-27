@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lookup the employee that the meeting was scheduled to be held by. --></help>
+    <label><!-- Meeting Scheduled For --></label>
+    <name>Meeting_Scheduled_For__c</name>
+    <relationshipLabel><!-- Meetings (Meeting Scheduled For) --></relationshipLabel>
+</CustomFieldTranslation>

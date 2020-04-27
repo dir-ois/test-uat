@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unassigned_Change_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Support_Request_For__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Project__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Status__c</columns>
+    <columns>Create_Date_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Support_Request__c.Change_Request</value>
+    </filters>
+    <filters>
+        <field>Assigned_To__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Canceled,Parking Lot</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Added to a Project</value>
+    </filters>
+    <filters>
+        <field>Project__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Unassigned - Change Requests</label>
+</ListView>

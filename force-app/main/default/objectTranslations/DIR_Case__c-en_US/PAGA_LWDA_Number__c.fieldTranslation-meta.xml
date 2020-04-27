@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Labor and Workforce Development Agency case number. --></help>
+    <label><!-- PAGA LWDA Number --></label>
+    <name>PAGA_LWDA_Number__c</name>
+</CustomFieldTranslation>

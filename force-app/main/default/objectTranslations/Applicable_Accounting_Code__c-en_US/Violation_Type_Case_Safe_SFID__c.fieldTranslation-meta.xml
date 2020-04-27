@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 18 character case safe SFID of the parent Violation Type --></help>
+    <label><!-- Violation Type Case Safe SFID --></label>
+    <name>Violation_Type_Case_Safe_SFID__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Components_Updated__c</fullName>
+    <externalId>false</externalId>
+    <label>Components Updated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Link to Change Set</fullName>
+                <default>false</default>
+                <label>Link to Change Set</label>
+            </value>
+            <value>
+                <fullName>Apex Triggers</fullName>
+                <default>false</default>
+                <label>Apex Triggers</label>
+            </value>
+            <value>
+                <fullName>Apex Classes</fullName>
+                <default>false</default>
+                <label>Apex Classes</label>
+            </value>
+            <value>
+                <fullName>Visualforce Pages</fullName>
+                <default>false</default>
+                <label>Visualforce Pages</label>
+            </value>
+            <value>
+                <fullName>Custom Settings</fullName>
+                <default>false</default>
+                <label>Custom Settings</label>
+            </value>
+            <value>
+                <fullName>Custom Objects</fullName>
+                <default>false</default>
+                <label>Custom Objects</label>
+            </value>
+            <value>
+                <fullName>Custom Fields</fullName>
+                <default>false</default>
+                <label>Custom Fields</label>
+            </value>
+            <value>
+                <fullName>Workflows</fullName>
+                <default>false</default>
+                <label>Workflows</label>
+            </value>
+            <value>
+                <fullName>Apps</fullName>
+                <default>false</default>
+                <label>Apps</label>
+            </value>
+            <value>
+                <fullName>Email Templates</fullName>
+                <default>false</default>
+                <label>Email Templates</label>
+            </value>
+            <value>
+                <fullName>Assignment Rules</fullName>
+                <default>false</default>
+                <label>Assignment Rules</label>
+            </value>
+            <value>
+                <fullName>Visualforce Components</fullName>
+                <default>false</default>
+                <label>Visualforce Components</label>
+            </value>
+            <value>
+                <fullName>Lightning Components</fullName>
+                <default>false</default>
+                <label>Lightning Components</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Approval Process</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Approval Process</label>
+            </value>
+            <value>
+                <fullName>Button</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Button</label>
+            </value>
+            <value>
+                <fullName>Custom Metadata Type</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Custom Metadata Type</label>
+            </value>
+            <value>
+                <fullName>Global Action</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Global Action</label>
+            </value>
+            <value>
+                <fullName>Page Layout</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Page Layout</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

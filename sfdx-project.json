@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://cadir--uat.my.salesforce.com/",
+  "sourceApiVersion": "48.0"
+}

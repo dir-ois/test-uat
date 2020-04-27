@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Request__c</fullName>
+    <description>Selection driven by rec type</description>
+    <externalId>false</externalId>
+    <label>Type of Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>240 Bond</fullName>
+                <default>false</default>
+                <label>240 Bond</label>
+            </value>
+            <value>
+                <fullName>Affirmative Litigation</fullName>
+                <default>false</default>
+                <label>Affirmative Litigation</label>
+            </value>
+            <value>
+                <fullName>Alter Ego</fullName>
+                <default>false</default>
+                <label>Alter Ego</label>
+            </value>
+            <value>
+                <fullName>Appeal Hearing Representation</fullName>
+                <default>false</default>
+                <label>Appeal Hearing Representation</label>
+            </value>
+            <value>
+                <fullName>Arbitration</fullName>
+                <default>false</default>
+                <label>Arbitration</label>
+            </value>
+            <value>
+                <fullName>Civil Action</fullName>
+                <default>false</default>
+                <label>Civil Action</label>
+            </value>
+            <value>
+                <fullName>Civil Litigation Referral Affirmative Lawsuit</fullName>
+                <default>false</default>
+                <label>Civil Litigation Referral Affirmative Lawsuit</label>
+            </value>
+            <value>
+                <fullName>Consultation - Appeal Hearing</fullName>
+                <default>false</default>
+                <label>Consultation - Appeal Hearing</label>
+            </value>
+            <value>
+                <fullName>Consultation - BOFE Attorney</fullName>
+                <default>false</default>
+                <label>Consultation - BOFE Attorney</label>
+            </value>
+            <value>
+                <fullName>Consultation - Citation</fullName>
+                <default>false</default>
+                <label>Consultation - Citation</label>
+            </value>
+            <value>
+                <fullName>Consultation - Interrogatory</fullName>
+                <default>false</default>
+                <label>Consultation - Interrogatory</label>
+            </value>
+            <value>
+                <fullName>Consultation - JEU Attorney</fullName>
+                <default>false</default>
+                <label>Consultation - JEU Attorney</label>
+            </value>
+            <value>
+                <fullName>Consultation - Joint Liability</fullName>
+                <default>false</default>
+                <label>Consultation - Joint Liability</label>
+            </value>
+            <value>
+                <fullName>Consultation - Judgment Enforcement</fullName>
+                <default>false</default>
+                <label>Consultation - Judgment Enforcement</label>
+            </value>
+            <value>
+                <fullName>Consultation - LC226.8</fullName>
+                <default>false</default>
+                <label>Consultation - LC226.8</label>
+            </value>
+            <value>
+                <fullName>Consultation - LC2810</fullName>
+                <default>false</default>
+                <label>Consultation - LC2810</label>
+            </value>
+            <value>
+                <fullName>Consultation - Litigation</fullName>
+                <default>false</default>
+                <label>Consultation - Litigation</label>
+            </value>
+            <value>
+                <fullName>Consultation - Livadas</fullName>
+                <default>false</default>
+                <label>Consultation - Livadas</label>
+            </value>
+            <value>
+                <fullName>De Novo Referral</fullName>
+                <default>false</default>
+                <label>De Novo Referral</label>
+            </value>
+            <value>
+                <fullName>Enforcement Subpoena (MTC)</fullName>
+                <default>false</default>
+                <label>Enforcement Subpoena (MTC)</label>
+            </value>
+            <value>
+                <fullName>Injunction - 238</fullName>
+                <default>false</default>
+                <label>Injunction - 238</label>
+            </value>
+            <value>
+                <fullName>Injunction - 240</fullName>
+                <default>false</default>
+                <label>Injunction - 240</label>
+            </value>
+            <value>
+                <fullName>Injunction - 3700</fullName>
+                <default>false</default>
+                <label>Injunction - 3700</label>
+            </value>
+            <value>
+                <fullName>Injunction - Car Wash</fullName>
+                <default>false</default>
+                <label>Injunction - Car Wash</label>
+            </value>
+            <value>
+                <fullName>Inspection Warrant</fullName>
+                <default>false</default>
+                <label>Inspection Warrant</label>
+            </value>
+            <value>
+                <fullName>JEU Referral</fullName>
+                <default>false</default>
+                <label>JEU Referral</label>
+            </value>
+            <value>
+                <fullName>JEU Referral to Car Wash Fund</fullName>
+                <default>false</default>
+                <label>JEU Referral to Car Wash Fund</label>
+            </value>
+            <value>
+                <fullName>JEU Referral to Farm Worker Fund</fullName>
+                <default>false</default>
+                <label>JEU Referral to Farm Worker Fund</label>
+            </value>
+            <value>
+                <fullName>JEU Referral to Garment Fund</fullName>
+                <default>false</default>
+                <label>JEU Referral to Garment Fund</label>
+            </value>
+            <value>
+                <fullName>JEU Referral Without Judgment (Unserved ODA)</fullName>
+                <default>false</default>
+                <label>JEU Referral Without Judgment (Unserved ODA)</label>
+            </value>
+            <value>
+                <fullName>JEU Referral Without Judgment (Unserved ODA Award by settlement)</fullName>
+                <default>false</default>
+                <label>JEU Referral Without Judgment (Unserved ODA Award by settlement)</label>
+            </value>
+            <value>
+                <fullName>Joint Employer (633)</fullName>
+                <default>false</default>
+                <label>Joint Employer (633)</label>
+            </value>
+            <value>
+                <fullName>Judgment Correction</fullName>
+                <default>false</default>
+                <label>Judgment Correction</label>
+            </value>
+            <value>
+                <fullName>Judgment Defense</fullName>
+                <default>false</default>
+                <label>Judgment Defense</label>
+            </value>
+            <value>
+                <fullName>Lien</fullName>
+                <default>false</default>
+                <label>Lien</label>
+            </value>
+            <value>
+                <fullName>Livadas</fullName>
+                <default>false</default>
+                <label>Livadas</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Public Employment</fullName>
+                <default>false</default>
+                <label>Public Employment</label>
+            </value>
+            <value>
+                <fullName>Refer to BOFE</fullName>
+                <default>false</default>
+                <label>Refer to BOFE</label>
+            </value>
+            <value>
+                <fullName>Send Letter to Employer</fullName>
+                <default>false</default>
+                <label>Send Letter to Employer</label>
+            </value>
+            <value>
+                <fullName>Settlement (Release) Review</fullName>
+                <default>false</default>
+                <label>Settlement (Release) Review</label>
+            </value>
+            <value>
+                <fullName>Settlement Negotiations</fullName>
+                <default>false</default>
+                <label>Settlement Negotiations</label>
+            </value>
+            <value>
+                <fullName>Severance</fullName>
+                <default>false</default>
+                <label>Severance</label>
+            </value>
+            <value>
+                <fullName>Subpoena - Contempt Order</fullName>
+                <default>false</default>
+                <label>Subpoena - Contempt Order</label>
+            </value>
+            <value>
+                <fullName>VEBA</fullName>
+                <default>false</default>
+                <label>VEBA</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>Subpoena</fullName>
+                <default>false</default>
+                <label>Subpoena</label>
+            </value>
+            <value>
+                <fullName>Federal Enclave</fullName>
+                <default>false</default>
+                <label>Federal Enclave</label>
+            </value>
+            <value>
+                <fullName>Tribal Immunity</fullName>
+                <default>false</default>
+                <label>Tribal Immunity</label>
+            </value>
+            <value>
+                <fullName>Jurisdiction</fullName>
+                <default>false</default>
+                <label>Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Protected Activity</fullName>
+                <default>false</default>
+                <label>Protected Activity</label>
+            </value>
+            <value>
+                <fullName>Adverse Action</fullName>
+                <default>false</default>
+                <label>Adverse Action</label>
+            </value>
+            <value>
+                <fullName>Retaliation</fullName>
+                <default>false</default>
+                <label>Retaliation</label>
+            </value>
+            <value>
+                <fullName>Demand</fullName>
+                <default>false</default>
+                <label>Demand</label>
+            </value>
+            <value>
+                <fullName>Enforcement</fullName>
+                <default>false</default>
+                <label>Enforcement</label>
+            </value>
+            <value>
+                <fullName>Assignment of Judgment</fullName>
+                <default>false</default>
+                <label>Assignment of Judgment</label>
+            </value>
+            <value>
+                <fullName>Judgment Enforcement</fullName>
+                <default>false</default>
+                <label>Judgment Enforcement</label>
+            </value>
+            <value>
+                <fullName>Criminal Investigation</fullName>
+                <default>false</default>
+                <label>Criminal Investigation</label>
+            </value>
+            <value>
+                <fullName>Record Only</fullName>
+                <default>false</default>
+                <label>Record Only</label>
+            </value>
+            <value>
+                <fullName>Workers Compensation</fullName>
+                <default>false</default>
+                <label>Workers Compensation</label>
+            </value>
+            <value>
+                <fullName>Wages</fullName>
+                <default>false</default>
+                <label>Wages</label>
+            </value>
+            <value>
+                <fullName>Levy</fullName>
+                <default>false</default>
+                <label>Levy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

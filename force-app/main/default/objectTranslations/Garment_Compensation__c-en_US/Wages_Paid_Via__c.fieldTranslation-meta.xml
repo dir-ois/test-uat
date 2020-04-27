@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Wages Paid Via --></label>
+    <name>Wages_Paid_Via__c</name>
+    <picklistValues>
+        <masterLabel>By Both Cash and Check</masterLabel>
+        <translation><!-- By Both Cash and Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>By Cash</masterLabel>
+        <translation><!-- By Cash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>By Check</masterLabel>
+        <translation><!-- By Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

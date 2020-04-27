@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_or_Intersection_Required</fullName>
+    <active>false</active>
+    <description>You must enter an Address or Approximate Location in order to save an address record.</description>
+    <errorConditionFormula>IF ( ISBLANK (Address__c) &amp;&amp; ISBLANK ( Approximate_Location__c ), TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>You must enter an Address or Approximate Location in order to save an address record.</errorMessage>
+</ValidationRule>

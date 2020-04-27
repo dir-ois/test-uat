@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motion/Application Type --></label>
+    <name>Motion_Application_Type__c</name>
+    <picklistValues>
+        <masterLabel>Application (Misc.)</masterLabel>
+        <translation><!-- Application (Misc.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application for Judgment Debtor Examination</masterLabel>
+        <translation><!-- Application for Judgment Debtor Examination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application for OSC</masterLabel>
+        <translation><!-- Application for OSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application for Service by Publication</masterLabel>
+        <translation><!-- Application for Service by Publication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Default Prove-Up</masterLabel>
+        <translation><!-- Default Prove-Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demurrer</masterLabel>
+        <translation><!-- Demurrer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ex Parte App to Shorten Time</masterLabel>
+        <translation><!-- Ex Parte App to Shorten Time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion (Misc.)</masterLabel>
+        <translation><!-- Motion (Misc.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion In Limine</masterLabel>
+        <translation><!-- Motion In Limine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion for Assignment Order</masterLabel>
+        <translation><!-- Motion for Assignment Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion for Charging Order</masterLabel>
+        <translation><!-- Motion for Charging Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion for Consolidation</masterLabel>
+        <translation><!-- Motion for Consolidation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion for Relief from Stay</masterLabel>
+        <translation><!-- Motion for Relief from Stay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion for Terminating Sanctions</masterLabel>
+        <translation><!-- Motion for Terminating Sanctions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Amend Judgment</masterLabel>
+        <translation><!-- Motion to Amend Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Appoint Receiver</masterLabel>
+        <translation><!-- Motion to Appoint Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Compel Arbitration</masterLabel>
+        <translation><!-- Motion to Compel Arbitration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Compel Discovery Responses</masterLabel>
+        <translation><!-- Motion to Compel Discovery Responses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Convert</masterLabel>
+        <translation><!-- Motion to Convert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Deem RFAs Admitted</masterLabel>
+        <translation><!-- Motion to Deem RFAs Admitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Determine Claim of Exemption</masterLabel>
+        <translation><!-- Motion to Determine Claim of Exemption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Dismiss</masterLabel>
+        <translation><!-- Motion to Dismiss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Quash</masterLabel>
+        <translation><!-- Motion to Quash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Remove Mechanic&#39;s Lien</masterLabel>
+        <translation><!-- Motion to Remove Mechanic&apos;s Lien --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Vacate Judgment</masterLabel>
+        <translation><!-- Motion to Vacate Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion to Withdraw</masterLabel>
+        <translation><!-- Motion to Withdraw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion/App for Right to Attach Order</masterLabel>
+        <translation><!-- Motion/App for Right to Attach Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opposition to Claim of Exemption</masterLabel>
+        <translation><!-- Opposition to Claim of Exemption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opposition to Motion/Application</masterLabel>
+        <translation><!-- Opposition to Motion/Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Brief</masterLabel>
+        <translation><!-- Other Brief --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Ex Parte App</masterLabel>
+        <translation><!-- Other Ex Parte App --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reply to Opposition to Motion</masterLabel>
+        <translation><!-- Reply to Opposition to Motion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for Default</masterLabel>
+        <translation><!-- Request for Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for Dismissal</masterLabel>
+        <translation><!-- Request for Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summary Judgment Motion</masterLabel>
+        <translation><!-- Summary Judgment Motion --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

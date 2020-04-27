@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation><!-- Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Added to a Project</masterLabel>
+        <translation><!-- Added to a Project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Added to a Release</masterLabel>
+        <translation><!-- Added to a Release --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirmed</masterLabel>
+        <translation><!-- Confirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deployment Failed</masterLabel>
+        <translation><!-- Deployment Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Handled by the Vendor</masterLabel>
+        <translation><!-- Handled by the Vendor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Development</masterLabel>
+        <translation><!-- In Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In User Validation</masterLabel>
+        <translation><!-- In User Validation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merged to Deployment Package</masterLabel>
+        <translation><!-- Merged to Deployment Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking Lot</masterLabel>
+        <translation><!-- Parking Lot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready for Staging</masterLabel>
+        <translation><!-- Ready for Staging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Release Note Pending</masterLabel>
+        <translation><!-- Release Note Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for User Response</masterLabel>
+        <translation><!-- Waiting for User Response --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

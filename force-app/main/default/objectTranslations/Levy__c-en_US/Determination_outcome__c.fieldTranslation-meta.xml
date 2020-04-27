@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Determination/outcome --></label>
+    <name>Determination_outcome__c</name>
+    <picklistValues>
+        <masterLabel>Denied</masterLabel>
+        <translation><!-- Denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sustained/Upheld</masterLabel>
+        <translation><!-- Sustained/Upheld --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sustained/Upheld in part with explanation in Notes</masterLabel>
+        <translation><!-- Sustained/Upheld in part with explanation in Notes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn</masterLabel>
+        <translation><!-- Withdrawn --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

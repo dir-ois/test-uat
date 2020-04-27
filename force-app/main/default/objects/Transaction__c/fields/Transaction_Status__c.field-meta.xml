@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please use Transaction Status of Adjusted for adjustments made by the Sr. Deputy of Cashiering.</inlineHelpText>
+    <label>Transaction Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Deposited</fullName>
+                <default>false</default>
+                <label>Deposited</label>
+            </value>
+            <value>
+                <fullName>Returned</fullName>
+                <default>false</default>
+                <label>Returned</label>
+            </value>
+            <value>
+                <fullName>Stopped</fullName>
+                <default>false</default>
+                <label>Stopped</label>
+            </value>
+            <value>
+                <fullName>Adjusted</fullName>
+                <default>false</default>
+                <label>Adjusted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

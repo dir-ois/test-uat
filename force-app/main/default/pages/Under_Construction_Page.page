@@ -1,0 +1,3 @@
+<apex:page standardController="Projects__c" >
+  <apex:image url="https://cadir--c.na21.content.force.com/servlet/servlet.FileDownload?file=015t0000000PjCS" width="220" height="220"/>
+</apex:page>

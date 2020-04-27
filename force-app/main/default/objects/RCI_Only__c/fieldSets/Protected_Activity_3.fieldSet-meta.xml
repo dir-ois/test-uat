@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protected_Activity_3</fullName>
+    <description>ITF</description>
+    <displayedFields>
+        <field>Does_Claimant_Know_Threat_Reason__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Protected Activity 3</label>
+</FieldSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Escrow Company/Trustee --></label>
+    <name>Escrow_Company_Trustee__c</name>
+    <relationshipLabel><!-- Escrow/Pay-Off Demands (Escrow Company/Trustee) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Task_Assignment</fullName>
+        <description>Task Assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_To__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Task_Assignment</template>
+    </alerts>
+    <rules>
+        <fullName>Project Task Assignment</fullName>
+        <actions>
+            <name>Task_Assignment</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>This triggers an email alert when a Project Task is assigned.</description>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

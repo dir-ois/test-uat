@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_being_Represented__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Account being Represented</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Wage Claim Parties (Account being Represented)</relationshipLabel>
+    <relationshipName>Wage_Claim_Parties1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

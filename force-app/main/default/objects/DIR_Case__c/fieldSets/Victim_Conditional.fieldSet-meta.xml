@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Victim_Conditional</fullName>
+    <description>Retaliation Complaint Form</description>
+    <displayedFields>
+        <field>SH_Domestic_Violence_Text__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Victim Conditional</label>
+</FieldSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bond Type --></label>
+    <name>Bond_Type__c</name>
+    <picklistValues>
+        <masterLabel>Appeal Bond</masterLabel>
+        <translation><!-- Appeal Bond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashier&#39;s Check</masterLabel>
+        <translation><!-- Cashier&apos;s Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certificate of Deposit</masterLabel>
+        <translation><!-- Certificate of Deposit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Money Order</masterLabel>
+        <translation><!-- Money Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registration/Surety Bond</masterLabel>
+        <translation><!-- Registration/Surety Bond --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

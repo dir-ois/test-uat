@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When a Case Payment is posted to Case Issues and the Case has Judgments, both Liability Payments and Judgment Payments are created for the same funds. This field looks up to the Liability Payment that this Judgment Payment duplicates. --></help>
+    <label><!-- Funds Redundant With --></label>
+    <name>Funds_Redundant_With__c</name>
+    <relationshipLabel><!-- Redundant Judgment Payments --></relationshipLabel>
+</CustomFieldTranslation>

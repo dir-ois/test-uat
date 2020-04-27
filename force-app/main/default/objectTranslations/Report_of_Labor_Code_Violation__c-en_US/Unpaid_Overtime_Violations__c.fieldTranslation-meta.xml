@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unpaid Overtime Violations --></label>
+    <name>Unpaid_Overtime_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Double time for over 12 hours/day</masterLabel>
+        <translation><!-- Double time for over 12 hours/day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 8 hours/day or (10 hours/day-farm)</masterLabel>
+        <translation><!-- Over 8 hours/day or (10 hours/day-farm) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly worked over 40 hours/week</masterLabel>
+        <translation><!-- Weekly worked over 40 hours/week --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working on the 7th consecutive days</masterLabel>
+        <translation><!-- Working on the 7th consecutive days --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

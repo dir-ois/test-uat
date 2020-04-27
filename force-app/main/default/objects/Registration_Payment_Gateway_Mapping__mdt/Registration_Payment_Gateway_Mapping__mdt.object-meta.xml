@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Map registration record type to corresponding payment gateway</description>
+    <label>Registration Payment Gateway Mapping</label>
+    <pluralLabel>Registration Payment Gateway Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

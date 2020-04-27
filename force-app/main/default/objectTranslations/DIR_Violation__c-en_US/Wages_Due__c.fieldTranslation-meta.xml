@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the amount due including the most recent modification (if any). --></help>
+    <label><!-- EE(s) Amt Assessed --></label>
+    <name>Wages_Due__c</name>
+</CustomFieldTranslation>

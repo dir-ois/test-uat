@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Licensing/Registration Violations --></label>
+    <name>Licensing_Registration_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Contract w/unlicensed construction Contr</masterLabel>
+        <translation><!-- Contract w/unlicensed construction Contr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlicensed construction contractor</masterLabel>
+        <translation><!-- Unlicensed construction contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlicensed farm labor contractor</masterLabel>
+        <translation><!-- Unlicensed farm labor contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unregistered car wash</masterLabel>
+        <translation><!-- Unregistered car wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unregistered garment or manufacturer</masterLabel>
+        <translation><!-- Unregistered garment or manufacturer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

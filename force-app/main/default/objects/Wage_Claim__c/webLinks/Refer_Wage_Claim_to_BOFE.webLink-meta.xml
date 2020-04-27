@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refer_Wage_Claim_to_BOFE</fullName>
+    <availability>online</availability>
+    <description>Refers a wage claim to BOFE.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Refer Wage Claim to BOFE</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/wageReferral?WageClaimId={!Wage_Claim__c.Id}&amp;UserID={!$User.Id}</url>
+</WebLink>

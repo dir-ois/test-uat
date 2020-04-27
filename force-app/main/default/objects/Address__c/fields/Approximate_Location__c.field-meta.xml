@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approximate_Location__c</fullName>
+    <description>When actual address is not known or does not exist, this field holds the nearest intersection or other identifying detail about a location</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Nearest intersection or identifying description for the address if the actual address is unknown</inlineHelpText>
+    <label>Approximate Location</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Office_Email__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case( License_Registration_Type__c 
+, &quot;Car Wash&quot;, &quot;DLSELicensing@dir.ca.gov&quot; 
+, &quot;Child Performer Services&quot;, &quot;CPSLicensing@dir.ca.gov&quot; 
+, &quot;FLC&quot;, &quot;DLSELicensing@dir.ca.gov&quot; 
+, &quot;Garment&quot;, &quot;DLSELicensing@dir.ca.gov&quot; 
+, &quot;Janitorial&quot;, &quot;DLSEJanitorialService@dir.ca.gov&quot; 
+, &quot;Talent&quot;, &quot;DLSELicensing@dir.ca.gov&quot; 
+, &quot;Other&quot;, &quot;DLSELicensing@dir.ca.gov&quot; 
+, &quot;DLSELicensing@dir.ca.gov&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Registration Office Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

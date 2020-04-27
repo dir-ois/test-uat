@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Violation Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Violation Types</value>
+    </caseValues>
+    <layouts>
+        <layout>RCI Violation Type</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Violation Type Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Issue  - Active</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Issue  - Inactive</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Issue  - New</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Violation Types specific to BOFE --></description>
+        <label><!-- BOFE Violations --></label>
+        <name>BOFE_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- JEU Violations --></label>
+        <name>JEU_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Violations --></label>
+        <name>RCI_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Deactivated WCA and Garment Issues --></description>
+        <label><!-- WCA Issues - Inactive --></label>
+        <name>WCA_Issues_Inactive</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- When configuring a new issue for WCA or Garment, use this record type. Upon clicking &quot;Activate Issue&quot; the calculations fields will become unavailable for editing. --></description>
+        <label><!-- WCA Issues - New --></label>
+        <name>WCA_Issues_New</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Violation types that apply to WCA and AB633 --></description>
+        <label><!-- WCA Issues - Active --></label>
+        <name>WCA_Violations</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Select the appeal deadline selector as &quot;Business Days&quot; or &quot;Calendar Days&quot; when setting an appeal deadline. --></errorMessage>
+        <name>Req_Day_selector</name>
+    </validationRules>
+</CustomObjectTranslation>

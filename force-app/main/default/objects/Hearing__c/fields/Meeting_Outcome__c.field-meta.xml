@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Outcome__c</fullName>
+    <description>Defines the outcomes available for a meeting.</description>
+    <externalId>false</externalId>
+    <label>Meeting Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Settled Before Conference</fullName>
+                <default>false</default>
+                <label>Settled Before Conference</label>
+            </value>
+            <value>
+                <fullName>Settled at Conference</fullName>
+                <default>false</default>
+                <label>Settled at Conference</label>
+            </value>
+            <value>
+                <fullName>Referred to Hearing - no settlement</fullName>
+                <default>false</default>
+                <label>Referred to Hearing - no settlement</label>
+            </value>
+            <value>
+                <fullName>Referred to Hearing - Claimant only appeared</fullName>
+                <default>false</default>
+                <label>Referred to Hearing - Claimant only appeared</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Claimant Withdrew</fullName>
+                <default>false</default>
+                <label>Dismissed - Claimant Withdrew</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Claimant did not appear</fullName>
+                <default>false</default>
+                <label>Dismissed - Claimant did not appear</label>
+            </value>
+            <value>
+                <fullName>Dismissed - No jurisdiction</fullName>
+                <default>false</default>
+                <label>Dismissed - No jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Legacy - Dismissed</fullName>
+                <default>false</default>
+                <label>Legacy - Dismissed</label>
+            </value>
+            <value>
+                <fullName>Legacy - Referral</fullName>
+                <default>false</default>
+                <label>Legacy - Referral</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Settled at Hearing</fullName>
+                <default>false</default>
+                <label>Settled at Hearing</label>
+            </value>
+            <value>
+                <fullName>Hearing Held-No Settlement</fullName>
+                <default>false</default>
+                <label>Hearing Held-No Settlement</label>
+            </value>
+            <value>
+                <fullName>Settled Post-Conference</fullName>
+                <default>false</default>
+                <label>Settled Post-Conference</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

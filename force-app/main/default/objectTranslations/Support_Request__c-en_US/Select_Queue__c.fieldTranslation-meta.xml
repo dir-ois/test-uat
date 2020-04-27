@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Select Queue --></label>
+    <name>Select_Queue__c</name>
+    <picklistValues>
+        <masterLabel>CalAtlas Business Team</masterLabel>
+        <translation><!-- CalAtlas Business Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Support Team</masterLabel>
+        <translation><!-- Salesforce Support Team --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

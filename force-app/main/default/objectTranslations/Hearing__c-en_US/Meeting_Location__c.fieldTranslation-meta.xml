@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meeting Location --></label>
+    <name>Meeting_Location__c</name>
+    <picklistValues>
+        <masterLabel>Bakersfield - 01</masterLabel>
+        <translation><!-- Bakersfield - 01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer’s workplace</masterLabel>
+        <translation><!-- Employer’s workplace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno – 04</masterLabel>
+        <translation><!-- Fresno – 04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Beach – 05</masterLabel>
+        <translation><!-- Long Beach – 05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles – 06</masterLabel>
+        <translation><!-- Los Angeles – 06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oakland – 07</masterLabel>
+        <translation><!-- Oakland – 07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redding – 15</masterLabel>
+        <translation><!-- Redding – 15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside</masterLabel>
+        <translation><!-- Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento – 08</masterLabel>
+        <translation><!-- Sacramento – 08 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salinas – 22</masterLabel>
+        <translation><!-- Salinas – 22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino – 09</masterLabel>
+        <translation><!-- San Bernardino – 09 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego – 10</masterLabel>
+        <translation><!-- San Diego – 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco – 11</masterLabel>
+        <translation><!-- San Francisco – 11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose – 12</masterLabel>
+        <translation><!-- San Jose – 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Ana – 18</masterLabel>
+        <translation><!-- Santa Ana – 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara - 13</masterLabel>
+        <translation><!-- Santa Barbara - 13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Rosa – 23</masterLabel>
+        <translation><!-- Santa Rosa – 23 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockton – 14</masterLabel>
+        <translation><!-- Stockton – 14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone/remote</masterLabel>
+        <translation><!-- Telephone/remote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van Nuys - 17</masterLabel>
+        <translation><!-- Van Nuys - 17 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>120-Position Number Change</fullName>
+                <default>false</default>
+                <label>120-Position Number Change</label>
+            </value>
+            <value>
+                <fullName>405-Time Base Change</fullName>
+                <default>false</default>
+                <label>405-Time Base Change</label>
+            </value>
+            <value>
+                <fullName>565-Reinstatement from IDL/TD</fullName>
+                <default>false</default>
+                <label>565-Reinstatement from IDL/TD</label>
+            </value>
+            <value>
+                <fullName>A01-CEA appointment from list</fullName>
+                <default>false</default>
+                <label>A01-CEA appointment from list</label>
+            </value>
+            <value>
+                <fullName>A01-Graduate Student Assistant</fullName>
+                <default>false</default>
+                <label>A01-Graduate Student Assistant</label>
+            </value>
+            <value>
+                <fullName>A01-Limited Term from List</fullName>
+                <default>false</default>
+                <label>A01-Limited Term from List</label>
+            </value>
+            <value>
+                <fullName>A01-Permanent Appointment from List</fullName>
+                <default>false</default>
+                <label>A01-Permanent Appointment from List</label>
+            </value>
+            <value>
+                <fullName>A01-Student Assistant</fullName>
+                <default>false</default>
+                <label>A01-Student Assistant</label>
+            </value>
+            <value>
+                <fullName>A01-TAU in Lieu of Limited Term</fullName>
+                <default>false</default>
+                <label>A01-TAU in Lieu of Limited Term</label>
+            </value>
+            <value>
+                <fullName>A01-TAU in Lieu of Permanent Appointment</fullName>
+                <default>false</default>
+                <label>A01-TAU in Lieu of Permanent Appointment</label>
+            </value>
+            <value>
+                <fullName>A01-Youth Aid</fullName>
+                <default>false</default>
+                <label>A01-Youth Aid</label>
+            </value>
+            <value>
+                <fullName>A02-Emergency</fullName>
+                <default>false</default>
+                <label>A02-Emergency</label>
+            </value>
+            <value>
+                <fullName>A02-Reinstatement (permissive)</fullName>
+                <default>false</default>
+                <label>A02-Reinstatement (permissive)</label>
+            </value>
+            <value>
+                <fullName>A02-Retired Annuitant</fullName>
+                <default>false</default>
+                <label>A02-Retired Annuitant</label>
+            </value>
+            <value>
+                <fullName>A02-Transfer</fullName>
+                <default>false</default>
+                <label>A02-Transfer</label>
+            </value>
+            <value>
+                <fullName>A03-Reinstatement (mandatory)</fullName>
+                <default>false</default>
+                <label>A03-Reinstatement (mandatory)</label>
+            </value>
+            <value>
+                <fullName>A03-Reinstatement from LOA</fullName>
+                <default>false</default>
+                <label>A03-Reinstatement from LOA</label>
+            </value>
+            <value>
+                <fullName>A03-Reinstatement from NDI</fullName>
+                <default>false</default>
+                <label>A03-Reinstatement from NDI</label>
+            </value>
+            <value>
+                <fullName>A03-Reinstatement from SDI</fullName>
+                <default>false</default>
+                <label>A03-Reinstatement from SDI</label>
+            </value>
+            <value>
+                <fullName>A04-Training &amp; Development</fullName>
+                <default>false</default>
+                <label>A04-Training &amp; Development</label>
+            </value>
+            <value>
+                <fullName>A11-Involuntary Reassignment</fullName>
+                <default>false</default>
+                <label>A11-Involuntary Reassignment</label>
+            </value>
+            <value>
+                <fullName>A14 - Adverse Demotion</fullName>
+                <default>false</default>
+                <label>A14 - Adverse Demotion</label>
+            </value>
+            <value>
+                <fullName>A20-Reallocation</fullName>
+                <default>false</default>
+                <label>A20-Reallocation</label>
+            </value>
+            <value>
+                <fullName>A22-In Lieu of Appt through Cert Process</fullName>
+                <default>false</default>
+                <label>A22-In Lieu of Appt through Cert Process</label>
+            </value>
+            <value>
+                <fullName>A30/A31-Exempt</fullName>
+                <default>false</default>
+                <label>A30/A31-Exempt</label>
+            </value>
+            <value>
+                <fullName>SPC-Special Change</fullName>
+                <default>false</default>
+                <label>SPC-Special Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

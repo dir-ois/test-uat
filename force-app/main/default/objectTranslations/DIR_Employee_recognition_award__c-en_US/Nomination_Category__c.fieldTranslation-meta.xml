@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nomination Category --></label>
+    <name>Nomination_Category__c</name>
+    <picklistValues>
+        <masterLabel>Fulfilling the Mission Award</masterLabel>
+        <translation><!-- Fulfilling the Mission Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Going the Extra Mile Award</masterLabel>
+        <translation><!-- Going the Extra Mile Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Award</masterLabel>
+        <translation><!-- Team Award --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

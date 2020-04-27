@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_OSHA_Screening2</fullName>
+    <columns>File_Date_Time__c</columns>
+    <columns>NAME</columns>
+    <columns>Language2__c</columns>
+    <columns>Claimant__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Last_Case_Activity__c</columns>
+    <columns>DateofLastCaseActivity__c</columns>
+    <columns>Next_Action__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Type__c</field>
+        <operation>equals</operation>
+        <value>OSHA</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pre-Investigation</value>
+    </filters>
+    <filters>
+        <field>Assignment_Status__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.RCI</value>
+    </filters>
+    <filters>
+        <field>SH_OSHA_IMIS_Entry__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>RCI OSHA Screening 2</label>
+</ListView>

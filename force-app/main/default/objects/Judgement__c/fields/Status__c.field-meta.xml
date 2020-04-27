@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Open - Bankruptcy Stay</fullName>
+                <default>false</default>
+                <label>Open - Bankruptcy Stay</label>
+            </value>
+            <value>
+                <fullName>Open - Payment Plan</fullName>
+                <default>false</default>
+                <label>Open - Payment Plan</label>
+            </value>
+            <value>
+                <fullName>Partial Satisfaction</fullName>
+                <default>false</default>
+                <label>Partial Satisfaction</label>
+            </value>
+            <value>
+                <fullName>Full Satisfaction</fullName>
+                <default>false</default>
+                <label>Full Satisfaction</label>
+            </value>
+            <value>
+                <fullName>Pending/Open</fullName>
+                <default>false</default>
+                <label>Pending/Open</label>
+            </value>
+            <value>
+                <fullName>Vacated</fullName>
+                <default>false</default>
+                <label>Vacated</label>
+            </value>
+            <value>
+                <fullName>Closed - Paid in Full (PIF)/Satisfied</fullName>
+                <default>false</default>
+                <label>Closed - Paid in Full (PIF)/Satisfied</label>
+            </value>
+            <value>
+                <fullName>Closed - Bankruptcy</fullName>
+                <default>false</default>
+                <label>Closed - Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Closed - Infeasible</fullName>
+                <default>false</default>
+                <label>Closed - Infeasible</label>
+            </value>
+            <value>
+                <fullName>Closed - Reassigned</fullName>
+                <default>false</default>
+                <label>Closed - Reassigned</label>
+            </value>
+            <value>
+                <fullName>Closed - Other</fullName>
+                <default>false</default>
+                <label>Closed - Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

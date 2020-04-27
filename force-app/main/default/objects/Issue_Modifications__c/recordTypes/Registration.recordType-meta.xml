@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration</fullName>
+    <active>true</active>
+    <label>Registration</label>
+    <picklistValues>
+        <picklist>Modification_Category__c</picklist>
+        <values>
+            <fullName>Penalty Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Modification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modification_Type__c</picklist>
+        <values>
+            <fullName>Administrative Dismissal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conceded Amount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DeNovo Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Audit Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Mod-Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Mod-Pre-Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violation Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violation Count Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Error</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

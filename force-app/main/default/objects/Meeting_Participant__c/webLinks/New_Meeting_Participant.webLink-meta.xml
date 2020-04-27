@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Meeting_Participant</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Meeting Participant</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/a2D/e?CF00Nd0000008S84M={!Hearing__c.Name} 
+&amp;CF00Nd0000008S84M_lkid={!Hearing__c.Id} 
+&amp;CF00Nd0000008S8Ed={!Hearing__c.Case__c} 
+&amp;CF00Nd0000008S8Ed_lkid={!Hearing__c.CaseId__c} 
+&amp;retURL=%2F{!Hearing__c.Id} 
+&amp;RecordType=012d00000019POw 
+&amp;ent=01Id0000001d150</url>
+</WebLink>

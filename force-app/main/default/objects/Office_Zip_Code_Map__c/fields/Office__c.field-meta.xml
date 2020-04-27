@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office__c</fullName>
+    <description>The office that the zip code is assigned to</description>
+    <externalId>false</externalId>
+    <label>Office</label>
+    <referenceTo>Office__c</referenceTo>
+    <relationshipLabel>Office-Zip Code Maps</relationshipLabel>
+    <relationshipName>Office_Zip_Code_Maps</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

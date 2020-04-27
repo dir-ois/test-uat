@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form Name --></label>
+    <name>Form_Name__c</name>
+    <picklistValues>
+        <masterLabel>EPA</masterLabel>
+        <translation><!-- EPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI-EPA</masterLabel>
+        <translation><!-- RCI-EPA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

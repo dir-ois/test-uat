@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Penalty L.C. 2814 --></label>
+    <name>Penalty_L_C_2814__c</name>
+</CustomFieldTranslation>

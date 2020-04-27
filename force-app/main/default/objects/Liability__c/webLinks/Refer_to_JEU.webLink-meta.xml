@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refer_to_JEU</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Refer to JEU</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Liability_Refer_to_JEU?vAppealDesdline={!TEXT(Liability__c.Appeal_Deadline__c)}&amp;vSubjectToWrits={!Liability__c.Subject_to_Writs__c}&amp;vCaseId={!Liability__c.Case_ManagementId__c}&amp;vInterestBalance={!TEXT(Liability__c.Interest_Balance_Due__c)}&amp;vLiabilityStatus={!Liability__c.Status__c}&amp;vODReferalStatus={!DIR_Case__c.OD_Legal_Referral__c}&amp;vPenaltyBalance={!TEXT(Liability__c.Penalty_Balance_Due__c)}&amp;vWageBalance={!TEXT(Liability__c.Wage_Balance_Due__c)}&amp;vAssessmentId={!Liability__c.AssessmentId__c}&amp;vLiabilityId={!Liability__c.Id}&amp;retURL=/{!Liability__c.Id}</url>
+</WebLink>

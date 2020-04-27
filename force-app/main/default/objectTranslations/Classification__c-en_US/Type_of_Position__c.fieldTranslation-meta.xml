@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Position --></label>
+    <name>Type_of_Position__c</name>
+    <picklistValues>
+        <masterLabel>1 - Civil Service</masterLabel>
+        <translation><!-- 1 - Civil Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 - Exempt</masterLabel>
+        <translation><!-- 4 - Exempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 - Statutory</masterLabel>
+        <translation><!-- 7 - Statutory --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

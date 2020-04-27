@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adjustment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Populated by the ReturnedVoidedReceipt class. A check here most likely means this record is a negating record, but this field could possibly be checked manually for other reasons.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populated by the ReturnedVoidedReceipt class. A check here most likely means this record is a negating record, but this field could possibly be checked manually for other reasons.</inlineHelpText>
+    <label>Adjustment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Guest_User_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Guest User Access</label>
+        <sharedTo>
+            <guestUser>RCIComplaint</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>RCI</value>
+        </criteriaItems>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>PAGA_Search_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>PAGA Search User</label>
+        <sharedTo>
+            <guestUser>Paga_Search</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PAGA Case</value>
+        </criteriaItems>
+    </sharingGuestRules>
+</SharingRules>

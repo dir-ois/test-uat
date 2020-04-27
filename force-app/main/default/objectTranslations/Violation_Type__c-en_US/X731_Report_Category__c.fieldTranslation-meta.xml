@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Violations under this type will be reported on the Monthly Statistical Reporting under this category. --></help>
+    <label><!-- Report Category --></label>
+    <name>X731_Report_Category__c</name>
+    <picklistValues>
+        <masterLabel>ATTORNEY FEES</masterLabel>
+        <translation><!-- ATTORNEY FEES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BONUS</masterLabel>
+        <translation><!-- BONUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUSINESS EXPENSES</masterLabel>
+        <translation><!-- BUSINESS EXPENSES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAR WASH REGISTRATION</masterLabel>
+        <translation><!-- CAR WASH REGISTRATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHILD LABOR</masterLabel>
+        <translation><!-- CHILD LABOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMMISSION WAGES</masterLabel>
+        <translation><!-- COMMISSION WAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTRACT RATE</masterLabel>
+        <translation><!-- CONTRACT RATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAMAGES 226(e)(1)</masterLabel>
+        <translation><!-- DAMAGES 226(e)(1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEDUCTION STATEMENT</masterLabel>
+        <translation><!-- DEDUCTION STATEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expanded Liability Action</masterLabel>
+        <translation><!-- Expanded Liability Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILING FEE</masterLabel>
+        <translation><!-- FILING FEE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLC SEXUAL HARASSMENT TRAINING</masterLabel>
+        <translation><!-- FLC SEXUAL HARASSMENT TRAINING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GARMENT DISPLAY OF REG #</masterLabel>
+        <translation><!-- GARMENT DISPLAY OF REG # --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GARMENT RECSKPNG</masterLabel>
+        <translation><!-- GARMENT RECSKPNG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GARMENT REGISTRATION</masterLabel>
+        <translation><!-- GARMENT REGISTRATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEAT RECOVERY PREMIUM WAGES</masterLabel>
+        <translation><!-- HEAT RECOVERY PREMIUM WAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janitorial Registration</masterLabel>
+        <translation><!-- Janitorial Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LABOR CODE VIOLATION</masterLabel>
+        <translation><!-- LABOR CODE VIOLATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LACTATION ACCOMMODATION</masterLabel>
+        <translation><!-- LACTATION ACCOMMODATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIQUIDATED DAMAGES</masterLabel>
+        <translation><!-- LIQUIDATED DAMAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Labor Code 238/240</masterLabel>
+        <translation><!-- Labor Code 238/240 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEAL PERIOD PREMIUM WAGES</masterLabel>
+        <translation><!-- MEAL PERIOD PREMIUM WAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINIMUM WAGE</masterLabel>
+        <translation><!-- MINIMUM WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MISCLASSIFICATION</masterLabel>
+        <translation><!-- MISCLASSIFICATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NON-REPORTING</masterLabel>
+        <translation><!-- NON-REPORTING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OVERTIME WAGES</masterLabel>
+        <translation><!-- OVERTIME WAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENALTIES PURSUANT TO LC 1198.5(k)</masterLabel>
+        <translation><!-- PENALTIES PURSUANT TO LC 1198.5(k) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENALTIES PURSUANT TO LC 1695(a)(5)</masterLabel>
+        <translation><!-- PENALTIES PURSUANT TO LC 1695(a)(5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENALTIES PURSUANT TO LC 203.1</masterLabel>
+        <translation><!-- PENALTIES PURSUANT TO LC 203.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENALTIES PURSUANT TO LC 210</masterLabel>
+        <translation><!-- PENALTIES PURSUANT TO LC 210 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENALTIES PURSUANT TO LC 226(f)</masterLabel>
+        <translation><!-- PENALTIES PURSUANT TO LC 226(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIECE RATE WAGES</masterLabel>
+        <translation><!-- PIECE RATE WAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PUBLIC WORKS</masterLabel>
+        <translation><!-- PUBLIC WORKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REGULAR WAGES</masterLabel>
+        <translation><!-- REGULAR WAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REMEDY</masterLabel>
+        <translation><!-- REMEDY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REPORTING TIME PAY</masterLabel>
+        <translation><!-- REPORTING TIME PAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REST PERIOD PREMIUM WAGE</masterLabel>
+        <translation><!-- REST PERIOD PREMIUM WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SICK LEAVE</masterLabel>
+        <translation><!-- SICK LEAVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPLIT SHIFT PREMIUM</masterLabel>
+        <translation><!-- SPLIT SHIFT PREMIUM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIPS</masterLabel>
+        <translation><!-- TIPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOOLS/EQUIPMENT</masterLabel>
+        <translation><!-- TOOLS/EQUIPMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Talent Agent</masterLabel>
+        <translation><!-- Talent Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNIFORM</masterLabel>
+        <translation><!-- UNIFORM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNLAWFUL DEDUCTIONS</masterLabel>
+        <translation><!-- UNLAWFUL DEDUCTIONS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNLICENSED CONTRACTOR</masterLabel>
+        <translation><!-- UNLICENSED CONTRACTOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNLICENSED FLC</masterLabel>
+        <translation><!-- UNLICENSED FLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlicensed Janitor</masterLabel>
+        <translation><!-- Unlicensed Janitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VACATION WAGE</masterLabel>
+        <translation><!-- VACATION WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAITING TIME PENALTIES</masterLabel>
+        <translation><!-- WAITING TIME PENALTIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WORKERS&#39; COMP</masterLabel>
+        <translation><!-- WORKERS&apos; COMP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cashiering_Case_Status_and_Payables</fullName>
+    <active>true</active>
+    <description>Cashiering Case Status cannot be set to closed if the balance due on the case is greater than zero.</description>
+    <errorConditionFormula>AND( ISPICKVAL( Cashiering_Status__c , &quot;closed&quot;), (Total_Wages_Balance_Due__c +  Total_Interest_Balance_Due__c +  Penalty_Balance_Due__c)  &lt;&gt; 0)</errorConditionFormula>
+    <errorDisplayField>Cashiering_Status__c</errorDisplayField>
+    <errorMessage>Cashiering Case Status cannot be set to closed if the balance due on the case is greater than zero.</errorMessage>
+</ValidationRule>

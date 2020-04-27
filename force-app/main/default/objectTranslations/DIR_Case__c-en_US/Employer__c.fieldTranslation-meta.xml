@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the Legal Entity. If there is a DBA, this can be added on the Employer/Account page. --></help>
+    <label><!-- Employer --></label>
+    <name>Employer__c</name>
+    <relationshipLabel><!-- Case Management (Employer) --></relationshipLabel>
+</CustomFieldTranslation>

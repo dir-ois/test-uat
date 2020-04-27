@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_address_is_required_for_online_JV</fullName>
+    <active>false</active>
+    <description>Registrations submitted online for joint venture companies must include an email address to which the license will be sent.</description>
+    <errorConditionFormula>AND(
+Submission_Type__c = &quot;Online&quot;,
+ RecordType.DeveloperName &lt;&gt; &quot;Management_Individual&quot;,
+ISBLANK(Email_Address__c)
+)</errorConditionFormula>
+    <errorMessage>Please provide an email address to continue.</errorMessage>
+</ValidationRule>

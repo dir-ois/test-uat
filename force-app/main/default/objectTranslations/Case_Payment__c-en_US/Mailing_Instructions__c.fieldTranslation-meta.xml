@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mailing Instructions --></label>
+    <name>Mailing_Instructions__c</name>
+    <picklistValues>
+        <masterLabel>include Defendant letter</masterLabel>
+        <translation><!-- include Defendant letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>include itemized wage statement</masterLabel>
+        <translation><!-- include itemized wage statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>include letter and ack of rct</masterLabel>
+        <translation><!-- include letter and ack of rct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>include letter, ack of rct, and itemized wage stmt</masterLabel>
+        <translation><!-- include letter, ack of rct, and itemized wage stmt --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

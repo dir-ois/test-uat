@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Release</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Releases</value>
+    </caseValues>
+    <layouts>
+        <layout>Data Fix Release</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Emergency Release</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Release</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Release Management Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Weekly Release</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CR - Gearset Deploy Release --></label>
+        <name>CR_Gearset_Deploy_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PROD Data Change Release --></label>
+        <name>Data_Fix_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Emergency Release --></label>
+        <name>Emergency_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Config Change Release --></label>
+        <name>Manual_Deploy_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Project Release --></label>
+        <name>Project_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SR - Gearset Deploy Release --></label>
+        <name>Weekly_Release</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must complete the Estimated Hours Spent --></errorMessage>
+        <name>Hours_Spent_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide reason for creating an Emergency Release --></errorMessage>
+        <name>Require_Reason_for_Emergency_Release</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amounts_Found_Due__c</fullName>
+    <externalId>false</externalId>
+    <label>Amounts Found Due</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per ODA</fullName>
+                <default>false</default>
+                <label>Per ODA</label>
+            </value>
+            <value>
+                <fullName>By Assigned Deputy</fullName>
+                <default>false</default>
+                <label>By Assigned Deputy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CM-010 Enforcement of Judgment --></label>
+    <name>CM_010_Enforcement_of_Judgment__c</name>
+    <picklistValues>
+        <masterLabel>Enforcement of Judgment</masterLabel>
+        <translation><!-- Enforcement of Judgment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

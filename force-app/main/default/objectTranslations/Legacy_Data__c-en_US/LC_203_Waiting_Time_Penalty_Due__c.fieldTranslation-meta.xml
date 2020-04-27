@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LC 203 Waiting Time Penalty Due --></label>
+    <name>LC_203_Waiting_Time_Penalty_Due__c</name>
+</CustomFieldTranslation>

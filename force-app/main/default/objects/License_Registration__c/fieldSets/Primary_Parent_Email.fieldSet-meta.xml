@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Parent_Email</fullName>
+    <description>Entertainment Work Permit VIP form tool, Registration Duration Section</description>
+    <displayedFields>
+        <field>Account_Email__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Primary Parent Email</label>
+</FieldSet>

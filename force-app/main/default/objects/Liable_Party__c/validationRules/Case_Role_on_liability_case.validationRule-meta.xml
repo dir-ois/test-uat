@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Role_on_liability_case</fullName>
+    <active>false</active>
+    <description>Requires that the case role being selected is on the same case as the liability</description>
+    <errorConditionFormula>Case_Role__r.Case__c &lt;&gt;  Liability__r.Case_Management__c</errorConditionFormula>
+    <errorMessage>You can only assign a case role on this case as a liable party on this case.</errorMessage>
+</ValidationRule>

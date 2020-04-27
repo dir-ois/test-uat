@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Allocate_More_Than_Payment_Amount</fullName>
+    <active>true</active>
+    <description>The sum of the Case Payments under this Receipt cannot be more than this Receipt&#39;s Payment Amount. Exceptions: Adjustments and Reversals may be negative and thus less than the sum of zero Case Payments.</description>
+    <errorConditionFormula>IF(ISPICKVAL(Payment_Type__c, &#39;Deduction&#39;),
+ 			(!Adjustment__c &amp;&amp; Total_Amount_Allocated__c &gt;  Deduction_Amount__c),
+	 		(!Reversal__c &amp;&amp; !Adjustment__c &amp;&amp; Total_Amount_Allocated__c &gt;  Payment_Amount__c))</errorConditionFormula>
+    <errorMessage>The sum of the Case Payments cannot be more than this Receipt&#39;s Payment Amount.</errorMessage>
+</ValidationRule>

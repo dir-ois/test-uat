@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Manager of the referring deputy --></help>
+    <label><!-- Referring Deputy&apos;s Senior --></label>
+    <name>Referring_Deputy_s_Senior__c</name>
+    <relationshipLabel><!-- Referrals (Referring Deputy&apos;s Senior) --></relationshipLabel>
+</CustomFieldTranslation>

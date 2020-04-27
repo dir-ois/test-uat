@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Penalties_Assessment_Amount__c</fullName>
+    <description>Penalty amount after it has been modified by a hearing, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Modified penalty amount for the liability.
+Previous label: Modified To Penalties Assessment Amount</inlineHelpText>
+    <label>Modified To Penalties Assessment Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

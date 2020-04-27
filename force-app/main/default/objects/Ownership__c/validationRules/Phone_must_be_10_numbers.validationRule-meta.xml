@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_must_be_10_numbers</fullName>
+    <active>true</active>
+    <description>US Phone numbers must be 10 digits</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  !ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+
+/* Or the field value has changed */
+
+ISCHANGED ( Residential_Phone__c )
+
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+!ISBLANK ( Residential_Phone__c ) &amp;&amp; 
+!ISNUMBER ( Residential_Phone__c ) &amp;&amp; 
+!ISPICKVAL ( Residential_Country__c , &#39;United States of America&#39;)
+
+|| 
+
+AND( 
+!ISBLANK ( Residential_Phone__c ), 
+!REGEX(Residential_Phone__c, &quot;\\D*?(\\d\\D*?){10}&quot;), 
+ISPICKVAL ( Residential_Country__c , &#39;United States of America&#39;))</errorConditionFormula>
+    <errorMessage>US phone numbers must be 10 numbers. Please correct to continue.</errorMessage>
+</ValidationRule>

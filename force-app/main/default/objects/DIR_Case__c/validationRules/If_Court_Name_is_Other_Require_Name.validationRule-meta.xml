@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Court_Name_is_Other_Require_Name</fullName>
+    <active>true</active>
+    <description>If Other / Specify is selected for Court Name, the Court Name for PAGA Case field is required.</description>
+    <errorConditionFormula>AND(ISPICKVAL( Court_Name__c, &quot;Other / Specify:&quot;),
+ISNULL( Court_Name_for_PAGA_Case__c )
+)</errorConditionFormula>
+    <errorDisplayField>Court_Name_for_PAGA_Case__c</errorDisplayField>
+    <errorMessage>If selecting a Court Name of &quot;Other / Specify,&quot; please enter the court name in the Court Name for PAGA Case field.</errorMessage>
+</ValidationRule>

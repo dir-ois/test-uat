@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Function_Employee_Leasing</fullName>
+    <description>Workers comp section</description>
+    <displayedFields>
+        <field>Function_as_Employee_Leasing_Co__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Function Employee Leasing</label>
+</FieldSet>

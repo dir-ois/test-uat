@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Read only notes that Deputy can make on a case. Field is read only and sums the Input Notes --></help>
+    <label><!-- Deputy Notes --></label>
+    <name>Deputy_Notes__c</name>
+</CustomFieldTranslation>

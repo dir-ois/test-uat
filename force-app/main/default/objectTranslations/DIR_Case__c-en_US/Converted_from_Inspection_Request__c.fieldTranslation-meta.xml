@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates the case was originally an inspection request. --></help>
+    <label><!-- Converted from Inspection Request --></label>
+    <name>Converted_from_Inspection_Request__c</name>
+</CustomFieldTranslation>

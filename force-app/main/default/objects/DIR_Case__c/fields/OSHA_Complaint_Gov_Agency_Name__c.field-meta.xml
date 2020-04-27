@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSHA_Complaint_Gov_Agency_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>OSHA Complaint Gov Agency Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Federal OSHA</fullName>
+                <default>false</default>
+                <label>Federal OSHA</label>
+            </value>
+            <value>
+                <fullName>Cal/OSHA</fullName>
+                <default>false</default>
+                <label>Cal/OSHA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>OSHA - Legacy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OSHA - Legacy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

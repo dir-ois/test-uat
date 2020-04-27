@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Roll Up EEO Laws and Discrimination  MTT --></label>
+    <name>Roll_Up_EEO_Laws_and_Discrimination_MTT__c</name>
+</CustomFieldTranslation>

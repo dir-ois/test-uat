@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Attendance --></label>
+    <name>Attendance__c</name>
+    <picklistValues>
+        <masterLabel>Appeared</masterLabel>
+        <translation><!-- Appeared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Did Not Appear</masterLabel>
+        <translation><!-- Did Not Appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invited</masterLabel>
+        <translation><!-- Invited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Service</masterLabel>
+        <translation><!-- No Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other﻿</masterLabel>
+        <translation><!-- Other﻿ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

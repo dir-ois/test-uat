@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to indicate that this document is considered confidential --></help>
+    <label><!-- Confidential --></label>
+    <name>Confidential__c</name>
+</CustomFieldTranslation>

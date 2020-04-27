@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA Violation for No Workers&apos; Compensation. --></help>
+    <label><!-- No Workers’ Compensation --></label>
+    <name>PAGA_No_Workers_Compensation__c</name>
+</CustomFieldTranslation>

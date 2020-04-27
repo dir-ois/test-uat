@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Set_RT_WCA_Active</fullName>
+        <description>Sets the Rec Type of the violation type to WCA active which switches the page layout</description>
+        <field>RecordTypeId</field>
+        <lookupValue>WCA_Violations</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set RT WCA Active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_RT_WCA_Inactive</fullName>
+        <description>Sets the rec type of the WCA Violation to inactive. Also triggers page layout change.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>WCA_Issues_Inactive</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set RT WCA Inactive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_RT_WCA_New</fullName>
+        <description>Sets the rec type to new</description>
+        <field>RecordTypeId</field>
+        <lookupValue>WCA_Issues_New</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set RT WCA New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sort_Order_Non_Formula_Population</fullName>
+        <field>Sort_Order_Non_Formula__c</field>
+        <formula>TEXT( Sort_Order__c )</formula>
+        <name>Sort Order Non-Formula Population</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set Reporting Category Sort Order as Number</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Violation_Type__c.X731_Report_Category__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Workflow designed to take the input in field &quot;Reporting Category Sort Order&quot; and convert it to a number for output with the ODA Table query (used for sort order).</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Violation Type Rec Type - New</fullName>
+        <actions>
+            <name>Set_RT_WCA_New</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Violation_Type__c.Active__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Violation_Type__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA Issues - Inactive</value>
+        </criteriaItems>
+        <description>Sets the rec type to New on create so that the new violation type created from a cloned inactive type is editable</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sort Order Non-Formula Population</fullName>
+        <actions>
+            <name>Sort_Order_Non_Formula_Population</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Violation_Type__c.Sort_Order__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Workflow to take the value in the Sort Order field and populate it in the Sort_Order_Non_Formula field for sorting in the output via SOQL.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Violation Type - WCA Activate</fullName>
+        <actions>
+            <name>Set_RT_WCA_Active</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Performs actions when WCA violation types are activated</description>
+        <formula>RecordType.DeveloperName = &#39;WCA_Issues_New&#39; &amp;&amp; Active__c = true &amp;&amp; IsChanged(Active__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Violation Type - WCA Deactivate</fullName>
+        <actions>
+            <name>Set_RT_WCA_Inactive</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Performs actions on the deactivation of a WCA violation type</description>
+        <formula>RecordType.DeveloperName = &#39;WCA_Violations&#39; &amp;&amp; !Active__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

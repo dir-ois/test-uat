@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Court_Case_Number__c</fullName>
+    <description>PAGA Court Case Number</description>
+    <externalId>true</externalId>
+    <inlineHelpText>PAGA Court Case Number</inlineHelpText>
+    <label>PAGA Court Case Number</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

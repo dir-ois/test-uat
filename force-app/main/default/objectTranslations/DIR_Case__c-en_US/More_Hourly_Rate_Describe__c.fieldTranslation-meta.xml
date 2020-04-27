@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- More Than One Hourly Rate - Describe --></label>
+    <name>More_Hourly_Rate_Describe__c</name>
+</CustomFieldTranslation>

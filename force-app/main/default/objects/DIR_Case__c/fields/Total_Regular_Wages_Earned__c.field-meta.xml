@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Regular_Wages_Earned__c</fullName>
+    <description>Roll up summary field to sum all the Amount values of Wage and Compensation records where record type = Regular Wages</description>
+    <externalId>false</externalId>
+    <label>Total Regular Wages Earned</label>
+    <summarizedField>Wages_Compensation__c.Amount_Claimed__c</summarizedField>
+    <summaryFilterItems>
+        <field>Wages_Compensation__c.Type__c</field>
+        <operation>equals</operation>
+        <value>Regular Wages</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Wages_Compensation__c.Case__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

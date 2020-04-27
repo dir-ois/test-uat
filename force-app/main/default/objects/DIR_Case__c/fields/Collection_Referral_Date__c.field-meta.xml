@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Referral_Date__c</fullName>
+    <description>Date the case was referred to JEU for collections. If left blank, populated with today&#39;s date when JEU referral is set on case.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date case was referred to collections</inlineHelpText>
+    <label>Collection Referral Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_My_Closed_Cases</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Status__c</columns>
+    <columns>Date_Assigned__c</columns>
+    <columns>Case_Closed_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_am_assigned_deputy__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.BOFE_Closed</value>
+    </filters>
+    <label>BOFE My Closed Cases</label>
+    <sharedTo>
+        <roleAndSubordinates>BOFE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

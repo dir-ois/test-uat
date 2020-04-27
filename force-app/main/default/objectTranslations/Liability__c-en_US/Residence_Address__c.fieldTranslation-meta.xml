@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the residence from locations already in the system. If the address does not exist, you need to create it associated to the employer first. Displayed on certain citation documents. --></help>
+    <label><!-- Residence Address --></label>
+    <name>Residence_Address__c</name>
+    <relationshipLabel><!-- Liability (Residence Address) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RCI Settlement Phase --></label>
+    <name>RCI_Settlement_Phase__c</name>
+    <picklistValues>
+        <masterLabel>At Conference</masterLabel>
+        <translation><!-- At Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Wage Conference</masterLabel>
+        <translation><!-- At Wage Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Judgment</masterLabel>
+        <translation><!-- Post Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-Determination</masterLabel>
+        <translation><!-- Post-Determination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Conference</masterLabel>
+        <translation><!-- Pre-Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Determination</masterLabel>
+        <translation><!-- Pre-Determination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Judgment</masterLabel>
+        <translation><!-- Pre-Judgment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Appellant / Plaintiff failed to appear at meeting. --></help>
+    <label><!-- Failure to Appear --></label>
+    <name>Failure_to_Appear__c</name>
+</CustomFieldTranslation>

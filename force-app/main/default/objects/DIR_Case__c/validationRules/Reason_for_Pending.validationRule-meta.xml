@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Pending</fullName>
+    <active>true</active>
+    <description>17419 - A Reason for Pending is required for all cases set to pending.</description>
+    <errorConditionFormula>AND (
+     ISPICKVAL( Status__c , &quot;Pending&quot;),
+ISBLANK(  Reason_for_Pending__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Pending__c</errorDisplayField>
+    <errorMessage>A Reason for Pending is required for all cases set to pending. Please fill out the &quot;Reason for Pending&quot; and then set to pending again.</errorMessage>
+</ValidationRule>

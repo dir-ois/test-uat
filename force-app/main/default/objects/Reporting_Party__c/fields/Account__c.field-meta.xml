@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <description>This creates a master-detail relationship between the Account as a Reporting Party to a Report of Labor Code Violation. Reparentable</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Individual, Business or Advocate group that reported the labor code violation</inlineHelpText>
+    <label>Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>As a Reporting Party To</relationshipLabel>
+    <relationshipName>As_a_Reporting_Party_To</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

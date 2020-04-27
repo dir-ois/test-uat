@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Description of Variable F. This field is used for the Field Label when the Variable is User Input or a Mapped Field --></help>
+    <label><!-- Variable J Description --></label>
+    <name>Variable_J_Description__c</name>
+</CustomFieldTranslation>

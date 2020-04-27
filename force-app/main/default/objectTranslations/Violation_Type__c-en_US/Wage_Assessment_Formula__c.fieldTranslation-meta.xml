@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Assessment Formula that Determines the Wage Assessment Calculation. 
+i.e: 
+(A * B)+(A * C)
+MAX((A * B),(A * C)) --></help>
+    <label><!-- Wage Assessment Formula --></label>
+    <name>Wage_Assessment_Formula__c</name>
+</CustomFieldTranslation>

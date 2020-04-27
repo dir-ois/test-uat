@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Addresses</value>
+    </caseValues>
+    <layouts>
+        <layout>Service Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Account on both Location and Case Role must be the same --></errorMessage>
+        <name>Location_must_equal_Account</name>
+    </validationRules>
+</CustomObjectTranslation>

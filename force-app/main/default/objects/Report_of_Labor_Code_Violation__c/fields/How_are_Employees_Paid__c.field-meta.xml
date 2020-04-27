@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_are_Employees_Paid__c</fullName>
+    <externalId>false</externalId>
+    <label>How are Employees Paid?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Check</fullName>
+                <default>false</default>
+                <label>Check</label>
+            </value>
+            <value>
+                <fullName>Cash</fullName>
+                <default>false</default>
+                <label>Cash</label>
+            </value>
+            <value>
+                <fullName>Both Check &amp; Cash</fullName>
+                <default>false</default>
+                <label>Both Check &amp; Cash</label>
+            </value>
+            <value>
+                <fullName>Other Method</fullName>
+                <default>false</default>
+                <label>Other Method</label>
+            </value>
+            <value>
+                <fullName>Payment Method Varies per employee or position</fullName>
+                <default>false</default>
+                <label>Payment Method Varies per employee or position</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

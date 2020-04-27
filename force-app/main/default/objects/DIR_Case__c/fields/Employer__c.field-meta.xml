@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is the Legal Entity. If there is a DBA, this can be added on the Employer/Account page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the Legal Entity. If there is a DBA, this can be added on the Employer/Account page.</inlineHelpText>
+    <label>Employer</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipName>DIR_Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

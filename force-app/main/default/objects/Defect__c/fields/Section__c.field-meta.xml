@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Section__c</fullName>
+    <externalId>false</externalId>
+    <label>Section</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agent Authorization</fullName>
+                <default>false</default>
+                <label>Agent Authorization</label>
+            </value>
+            <value>
+                <fullName>Agreements</fullName>
+                <default>false</default>
+                <label>Agreements</label>
+            </value>
+            <value>
+                <fullName>Company Contact</fullName>
+                <default>false</default>
+                <label>Company Contact</label>
+            </value>
+            <value>
+                <fullName>Company Finances</fullName>
+                <default>false</default>
+                <label>Company Finances</label>
+            </value>
+            <value>
+                <fullName>Company Information</fullName>
+                <default>false</default>
+                <label>Company Information</label>
+            </value>
+            <value>
+                <fullName>Company Locations</fullName>
+                <default>false</default>
+                <label>Company Locations</label>
+            </value>
+            <value>
+                <fullName>Company Managers</fullName>
+                <default>false</default>
+                <label>Company Managers</label>
+            </value>
+            <value>
+                <fullName>Company Type</fullName>
+                <default>false</default>
+                <label>Company Name &amp; Type</label>
+            </value>
+            <value>
+                <fullName>Company Owners</fullName>
+                <default>false</default>
+                <label>Company Owners</label>
+            </value>
+            <value>
+                <fullName>Company People</fullName>
+                <default>false</default>
+                <label>Company People</label>
+            </value>
+            <value>
+                <fullName>Disclaimer</fullName>
+                <default>false</default>
+                <label>Disclaimer</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Fees</fullName>
+                <default>false</default>
+                <label>Fees</label>
+            </value>
+            <value>
+                <fullName>Follow up Questions</fullName>
+                <default>false</default>
+                <label>Follow up Questions</label>
+            </value>
+            <value>
+                <fullName>Location Documentation</fullName>
+                <default>false</default>
+                <label>Location Documentation</label>
+            </value>
+            <value>
+                <fullName>Questionnaire</fullName>
+                <default>false</default>
+                <label>Questionnaire</label>
+            </value>
+            <value>
+                <fullName>WCI Documentation</fullName>
+                <default>false</default>
+                <label>WCI Documentation</label>
+            </value>
+            <value>
+                <fullName>Workers Compensation Insurance</fullName>
+                <default>false</default>
+                <label>Workers Compensation Insurance</label>
+            </value>
+            <value>
+                <fullName>Company Address Information - JS</fullName>
+                <default>false</default>
+                <label>Company Address Information - JS</label>
+            </value>
+            <value>
+                <fullName>Permit Applicant</fullName>
+                <default>false</default>
+                <label>Permit Applicant</label>
+            </value>
+            <value>
+                <fullName>Live Scan</fullName>
+                <default>false</default>
+                <label>Live Scan</label>
+            </value>
+            <value>
+                <fullName>Qualifying Question</fullName>
+                <default>false</default>
+                <label>Qualifying Question</label>
+            </value>
+            <value>
+                <fullName>Company Address Information</fullName>
+                <default>false</default>
+                <label>Company Address Information</label>
+            </value>
+            <value>
+                <fullName>Parent/Guardian Information</fullName>
+                <default>false</default>
+                <label>Parent/Guardian Information</label>
+            </value>
+            <value>
+                <fullName>Minor Information</fullName>
+                <default>false</default>
+                <label>Minor Information</label>
+            </value>
+            <value>
+                <fullName>Registration Duration</fullName>
+                <default>false</default>
+                <label>Registration Duration</label>
+            </value>
+            <value>
+                <fullName>School Information</fullName>
+                <default>false</default>
+                <label>School Information</label>
+            </value>
+            <value>
+                <fullName>Medical Information</fullName>
+                <default>false</default>
+                <label>Medical Information</label>
+            </value>
+            <value>
+                <fullName>Upload Documentation</fullName>
+                <default>false</default>
+                <label>Upload Documentation</label>
+            </value>
+            <value>
+                <fullName>Upload Documents</fullName>
+                <default>false</default>
+                <label>Upload Documents</label>
+            </value>
+            <value>
+                <fullName>Download Documents To Be Completed</fullName>
+                <default>false</default>
+                <label>Download Documents To Be Completed</label>
+            </value>
+            <value>
+                <fullName>Company Managers Documentation - TA</fullName>
+                <default>false</default>
+                <label>Company Managers Documentation - TA</label>
+            </value>
+            <value>
+                <fullName>Company Owners Documentation</fullName>
+                <default>false</default>
+                <label>Company Owners Documentation</label>
+            </value>
+            <value>
+                <fullName>Company Information -TA</fullName>
+                <default>false</default>
+                <label>Company Information -TA</label>
+            </value>
+            <value>
+                <fullName>Company Tax Information</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Company Tax Information</label>
+            </value>
+            <value>
+                <fullName>Workers Comp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Workers Comp</label>
+            </value>
+            <value>
+                <fullName>Workers Comp - CW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Workers Comp - CW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If your business has a foreign address, please enter that address here. --></help>
+    <label><!-- Foreign Address --></label>
+    <name>Foreign_Address__c</name>
+</CustomFieldTranslation>

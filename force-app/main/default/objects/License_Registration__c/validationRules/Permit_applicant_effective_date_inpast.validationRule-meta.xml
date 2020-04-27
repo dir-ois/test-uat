@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_applicant_effective_date_inpast</fullName>
+    <active>false</active>
+    <description>Effective date for Permit applicant can not be in past current date(system date)</description>
+    <errorConditionFormula>And(
+$Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+$Profile.Name &lt;&gt; &#39;System Administrator LTD&#39;,
+RecordType.DeveloperName = &#39;Entertainment_Work&#39;,Effective_Date__c &lt; TODAY(),
+OR( 
+ISPICKVAL(Status__c, &#39;Pending Payment&#39;),
+ISPICKVAL(Status__c, &#39;Expired&#39;),
+ISPICKVAL(Status__c, &#39;Approved&#39;),
+ISPICKVAL(Ready_to_Submit__c, &#39;Yes&#39;),
+ISPICKVAL( Ready_to_Resubmit__c , &#39;Yes&#39;)
+)
+)</errorConditionFormula>
+    <errorMessage>Effective Date can not be less than current date. Change your answer to None and return to the Registration Duration section to correct the Effective Date.</errorMessage>
+</ValidationRule>

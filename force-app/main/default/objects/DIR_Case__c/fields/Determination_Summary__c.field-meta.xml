@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Determination_Summary__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Required for Determination Approval process.</inlineHelpText>
+    <label>Determination Summary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Re-instate</fullName>
+                <default>false</default>
+                <label>Re-instate</label>
+            </value>
+            <value>
+                <fullName>Lost wages monitary amts</fullName>
+                <default>false</default>
+                <label>Lost wages monitary amts</label>
+            </value>
+            <value>
+                <fullName>Front pay monitary amts</fullName>
+                <default>false</default>
+                <label>Front pay monitary amts</label>
+            </value>
+            <value>
+                <fullName>Posting a notice</fullName>
+                <default>false</default>
+                <label>Posting a notice</label>
+            </value>
+            <value>
+                <fullName>Neutral job reference</fullName>
+                <default>false</default>
+                <label>Neutral job reference</label>
+            </value>
+            <value>
+                <fullName>LTR of Recommendation.</fullName>
+                <default>false</default>
+                <label>LTR of Recommendation.</label>
+            </value>
+            <value>
+                <fullName>Add’l staff training</fullName>
+                <default>false</default>
+                <label>Add’l staff training</label>
+            </value>
+            <value>
+                <fullName>Distribution of written materials</fullName>
+                <default>false</default>
+                <label>Distribution of written materials</label>
+            </value>
+            <value>
+                <fullName>RCI video</fullName>
+                <default>false</default>
+                <label>RCI video</label>
+            </value>
+            <value>
+                <fullName>Conf. terms ND</fullName>
+                <default>false</default>
+                <label>Conf. terms ND</label>
+            </value>
+            <value>
+                <fullName>Change in nature of termination</fullName>
+                <default>false</default>
+                <label>Change in nature of termination</label>
+            </value>
+            <value>
+                <fullName>Reimbursement of lost benefits</fullName>
+                <default>false</default>
+                <label>Reimbursement of lost benefits</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Dismissal</fullName>
+                <default>false</default>
+                <label>Dismissal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

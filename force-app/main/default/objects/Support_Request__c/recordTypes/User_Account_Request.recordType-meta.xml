@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Account_Request</fullName>
+    <active>true</active>
+    <label>User Account Request</label>
+    <picklistValues>
+        <picklist>Account_Request_Type__c</picklist>
+        <values>
+            <fullName>Change to Existing User Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delete Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New User Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Area_s_Impacted__c</picklist>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashiering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA%2FGarment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Enhancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Components_Updated__c</picklist>
+        <values>
+            <fullName>Apex Classes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apex Triggers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assignment Rules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Fields</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Objects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualforce Pages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workflows</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Division__c</picklist>
+        <values>
+            <fullName>Acctng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHSWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIR%2FSB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODLN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODLS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODPIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTWSP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCAB</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Deployment__c</picklist>
+        <values>
+            <fullName>ANT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gearset</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority__c</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Release_Activity_Status__c</picklist>
+        <values>
+            <fullName>Deployed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready to Deploy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Role_Type__c</picklist>
+        <values>
+            <fullName>Accounting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Auditor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Auditor%2FClerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE DLC II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Dep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE IRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE MST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE RM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Sr Dep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashiering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashiering Disbursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashiering Receipting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashiering Sr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR BOFE Restricted User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Certification Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Division User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Personnel Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Personnel Specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Position Control Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR View Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU DLC II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU Disbursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU Legal Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU Receipting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%26R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA Atty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA User %28Div Screeners%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI Dep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI IRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI MST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI Sr Dep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registration Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systems Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA Cashiering Disbursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA Cashiering Receipting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA Clerk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA DLC II %28non-HO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA Dep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA HO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA IRR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA MST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA RM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA Sr Dep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Select_Queue__c</picklist>
+        <values>
+            <fullName>CalAtlas Business Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Support Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_Sandbox__c</picklist>
+        <values>
+            <fullName>Production Support Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staging</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Added to a Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In User Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Release Note Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for User Response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Request_For__c</picklist>
+        <values>
+            <fullName>ACCOUNTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASHIERING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MULTIPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PWCR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REGISTRATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Title__c</picklist>
+        <values>
+            <fullName>Assistant Chief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attorney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deputy Labor Commissioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Relations Representative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Secretary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Services Technician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Technician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll Auditor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Deputy Labor Commissioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff Service Analyst</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Data Fix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quick Fix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ServiceNow Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>User_Account_Request_For__c</picklist>
+        <values>
+            <fullName>Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandbox</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

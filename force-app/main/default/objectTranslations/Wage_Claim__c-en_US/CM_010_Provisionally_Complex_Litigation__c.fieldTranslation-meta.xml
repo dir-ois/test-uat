@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CM-010 Provisionally Complex Litigation --></label>
+    <name>CM_010_Provisionally_Complex_Litigation__c</name>
+    <picklistValues>
+        <masterLabel>Antitrust/Trade regulation</masterLabel>
+        <translation><!-- Antitrust/Trade regulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction defect</masterLabel>
+        <translation><!-- Construction defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental/Toxic Tort</masterLabel>
+        <translation><!-- Environmental/Toxic Tort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance coverage claims</masterLabel>
+        <translation><!-- Insurance coverage claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mass tort</masterLabel>
+        <translation><!-- Mass tort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Securities litigation</masterLabel>
+        <translation><!-- Securities litigation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

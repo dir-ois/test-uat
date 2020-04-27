@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Payment_5_Past_Due</fullName>
+        <description>Payment 5 days Past Due</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Payment_Plan_Payment_Overdue</template>
+    </alerts>
+    <alerts>
+        <fullName>Payment_Past_Due</fullName>
+        <description>Payment 10 days Past Due</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Payment_Plan_Payment_Overdue</template>
+    </alerts>
+    <alerts>
+        <fullName>Payment_Past_Due_5_Days</fullName>
+        <description>Payment 5 days Past Due</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Payment_Plan_Payment_Overdue</template>
+    </alerts>
+    <alerts>
+        <fullName>Payment_Plan_10_Days_Past_Agreement_Date</fullName>
+        <description>Payment Plan: 10 Days Past Agreement Date</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Payment_Plan_Email_Templates/Payment_Plan_10_Days_Past_Agreement_Date</template>
+    </alerts>
+    <alerts>
+        <fullName>Payment_Plan_Approved</fullName>
+        <description>Payment Plan Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Payment_Plan_Email_Templates/Payment_Plan_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Payment_Plan_Rejected</fullName>
+        <description>Payment Plan Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Payment_Plan_Email_Templates/Payment_Plan_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Payment_Plan_10_Days_Missed</fullName>
+        <description>RCI - Payment Plan 10 Days Missed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Payment_Plan_Payment_Overdue_10_Days</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Payment_Plan_10_Days_Past_Due</fullName>
+        <description>RCI - Payment Plan 10 Days Past Due</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/RCI_Payment_Plan_10_Days_Past_Due</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Status_Pending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Approval Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Deputy_Email</fullName>
+        <description>Set the deputy email address from the case.</description>
+        <field>Deputy_Email__c</field>
+        <formula>Case__r.Assigned_Deputy__r.Email__c</formula>
+        <name>Set Deputy Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_status_to_not_current</fullName>
+        <description>Sets the plan status to not current</description>
+        <field>Payment_Plan_Status__c</field>
+        <literalValue>Not Current</literalValue>
+        <name>Set status to not current</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Date</fullName>
+        <field>Date_Approved__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Number_of_Payments_0</fullName>
+        <field>Number_of_Payments__c</field>
+        <formula>0</formula>
+        <name>Update Number of Payments = 0</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rejected_Date</fullName>
+        <field>Date_Rejected__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rejected_Status</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Rejected Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>check</fullName>
+        <field>check__c</field>
+        <literalValue>1</literalValue>
+        <name>check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Payment Plan%3A 10 Days After Agreement Due</fullName>
+        <actions>
+            <name>check</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sends an email to the Case Management Owner 10 days after the Payment Plan Agreement Date and there is a Balance Due</description>
+        <formula>(   Payment_Plan_Total_Amount_Due__c -  Payment_Plan_Down__c -  Total_Payment_Amount__c &gt; 0   ||   ( Payment_Plan_Total_Amount_Due__c &gt; 0 &amp;&amp; ( ISBLANK ( Payment_Plan_Down__c ) || ISBLANK ( Total_Payment_Amount__c ) )   ) ) &amp;&amp;   Payment_Plan_Agreement_Date__c  &gt; Today()</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Payment_Plan_10_Days_Past_Agreement_Date</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Payment_Plan__c.Payment_Plan_Agreement_Date__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Payment Plan%3A Due Date Passed</fullName>
+        <actions>
+            <name>Set_Deputy_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Notify Assigned Deputy 10 days after payment due date.</description>
+        <formula>NOT( ISBLANK(Due_Date__c) ) &amp;&amp; (  BEGINS( Case__r.RecordType.DeveloperName , &quot;BOFE&quot; ) &amp;&amp; ( Payment_Plan_Total_Amount_Due__c - Total_Payment_Amount__c -  Payment_Plan_Down__c &gt; 0 ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Payment_Past_Due</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Set_status_to_not_current</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Payment_Plan__c.Due_Date__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

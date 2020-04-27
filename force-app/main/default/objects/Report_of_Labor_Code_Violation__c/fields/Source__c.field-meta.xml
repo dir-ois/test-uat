@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anonymous</fullName>
+                <default>false</default>
+                <label>Anonymous</label>
+            </value>
+            <value>
+                <fullName>CDI Referral</fullName>
+                <default>false</default>
+                <label>CDI Referral</label>
+            </value>
+            <value>
+                <fullName>Community Group Referral</fullName>
+                <default>false</default>
+                <label>Community Group Referral</label>
+            </value>
+            <value>
+                <fullName>DA Referral</fullName>
+                <default>false</default>
+                <label>DA Referral</label>
+            </value>
+            <value>
+                <fullName>Deputy Created</fullName>
+                <default>false</default>
+                <label>Deputy Created</label>
+            </value>
+            <value>
+                <fullName>DIR/DLSE Info Complaint</fullName>
+                <default>false</default>
+                <label>DIR/DLSE Info Complaint</label>
+            </value>
+            <value>
+                <fullName>DLSE L&amp;R Car Wash</fullName>
+                <default>false</default>
+                <label>DLSE L&amp;R Car Wash</label>
+            </value>
+            <value>
+                <fullName>DLSE L&amp;R - Garment Home Inspection</fullName>
+                <default>false</default>
+                <label>DLSE L&amp;R - Garment Home Inspection</label>
+            </value>
+            <value>
+                <fullName>DLSE L&amp;R - Industrial Homework</fullName>
+                <default>false</default>
+                <label>DLSE L&amp;R - Industrial Homework</label>
+            </value>
+            <value>
+                <fullName>DLSE L&amp;R - Sheltered Workshop</fullName>
+                <default>false</default>
+                <label>DLSE L&amp;R - Sheltered Workshop</label>
+            </value>
+            <value>
+                <fullName>DLSE L&amp;R - Sub-Minimum Wage</fullName>
+                <default>false</default>
+                <label>DLSE L&amp;R - Sub-Minimum Wage</label>
+            </value>
+            <value>
+                <fullName>DOL/Empleo</fullName>
+                <default>false</default>
+                <label>DOL/Empleo</label>
+            </value>
+            <value>
+                <fullName>EDD/EETF Referral</fullName>
+                <default>false</default>
+                <label>EDD/EETF Referral</label>
+            </value>
+            <value>
+                <fullName>Employee (BOFE 1)</fullName>
+                <default>false</default>
+                <label>Employee (BOFE 1)</label>
+            </value>
+            <value>
+                <fullName>Employer/Employer Association</fullName>
+                <default>false</default>
+                <label>Employer/Employer Association</label>
+            </value>
+            <value>
+                <fullName>Interagency Referral</fullName>
+                <default>false</default>
+                <label>Interagency Referral</label>
+            </value>
+            <value>
+                <fullName>IWC Exemption Request</fullName>
+                <default>false</default>
+                <label>IWC Exemption Request</label>
+            </value>
+            <value>
+                <fullName>Kaiser Referral (injured worker)</fullName>
+                <default>false</default>
+                <label>Kaiser Referral (injured worker)</label>
+            </value>
+            <value>
+                <fullName>LC 2699</fullName>
+                <default>false</default>
+                <label>LC 2699</label>
+            </value>
+            <value>
+                <fullName>LETF Call/Email</fullName>
+                <default>false</default>
+                <label>LETF Call/Email</label>
+            </value>
+            <value>
+                <fullName>LETF Lead</fullName>
+                <default>false</default>
+                <label>LETF Lead</label>
+            </value>
+            <value>
+                <fullName>Minor Hours-Ag Ind</fullName>
+                <default>false</default>
+                <label>Minor Hours-Ag Ind</label>
+            </value>
+            <value>
+                <fullName>OD Legal</fullName>
+                <default>false</default>
+                <label>OD Legal</label>
+            </value>
+            <value>
+                <fullName>OSHA Referral</fullName>
+                <default>false</default>
+                <label>OSHA Referral</label>
+            </value>
+            <value>
+                <fullName>PW Referral</fullName>
+                <default>false</default>
+                <label>PW Referral</label>
+            </value>
+            <value>
+                <fullName>RCI Referral</fullName>
+                <default>false</default>
+                <label>RCI Referral</label>
+            </value>
+            <value>
+                <fullName>SB 869</fullName>
+                <default>false</default>
+                <label>SB 869</label>
+            </value>
+            <value>
+                <fullName>WCA</fullName>
+                <default>false</default>
+                <label>WCA</label>
+            </value>
+            <value>
+                <fullName>Warn</fullName>
+                <default>false</default>
+                <label>Warn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

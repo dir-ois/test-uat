@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date the Writ was Filed --></help>
+    <label><!-- Filing Date --></label>
+    <name>Filing_Date__c</name>
+</CustomFieldTranslation>

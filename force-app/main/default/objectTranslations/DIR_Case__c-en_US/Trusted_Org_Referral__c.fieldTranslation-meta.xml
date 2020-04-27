@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set when an RLCV has been been created by a &quot;trusted orginazation&quot; --></help>
+    <label><!-- Trusted Org Referral --></label>
+    <name>Trusted_Org_Referral__c</name>
+</CustomFieldTranslation>

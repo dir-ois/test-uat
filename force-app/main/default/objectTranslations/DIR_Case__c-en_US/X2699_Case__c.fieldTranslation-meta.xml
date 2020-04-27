@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box if this case is a 2699 case --></help>
+    <label><!-- 2699 Case --></label>
+    <name>X2699_Case__c</name>
+</CustomFieldTranslation>

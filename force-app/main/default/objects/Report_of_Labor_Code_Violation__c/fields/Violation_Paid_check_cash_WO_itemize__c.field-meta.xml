@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Paid_check_cash_WO_itemize__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Paid by check or cash without an itemized wage deduction statement</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Paid by check or cash without an itemized wage deduction statement</inlineHelpText>
+    <label>Paid by check or cash without an itemize</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

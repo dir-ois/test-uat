@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Added_Manually__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is checked when a Cal Atlas user manually adds an Applied Accounting Code to a Liability Payment. These have to be reported to DIR Accounting separately to ensure they are recorded in CalSTARS.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box when you manually add an Applied Accounting Code to a Liability Payment, so that it can be reported to DIR Accounting separately to ensure they are recorded in CalSTARS.</inlineHelpText>
+    <label>Added Manually</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

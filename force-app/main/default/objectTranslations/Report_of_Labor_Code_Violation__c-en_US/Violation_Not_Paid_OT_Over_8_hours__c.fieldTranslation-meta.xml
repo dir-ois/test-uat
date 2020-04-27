@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not paid daily overtime for hours worked over 8 per day (or 10 hours per day for farmworkers) --></help>
+    <label><!-- Not Paid OT Over 8 hours --></label>
+    <name>Violation_Not_Paid_OT_Over_8_hours__c</name>
+</CustomFieldTranslation>

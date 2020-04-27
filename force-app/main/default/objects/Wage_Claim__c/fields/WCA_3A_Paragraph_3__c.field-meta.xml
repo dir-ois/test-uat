@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_3A_Paragraph_3__c</fullName>
+    <defaultValue>&#39;The case arises out of the claim that you filed with this office seeking to recover unpaid wages alleged to be due under the terms of your written employment agreement with the employer named in your claim.  An examination of the agreement reveals that it is lengthy, complicated, and in some respects ambiguous.  As a consequence, resolution of the parties’ dispute regarding your entitlement to wages will require discovery and also application of various complex legal doctrines pertinent to the issues that have been raised.  The administrative process afforded by the Labor Commissioner is not designed for the invocation of discovery procedures and is not well suited to the adjudication of intricate disputes of this type.&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 3A Complex</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

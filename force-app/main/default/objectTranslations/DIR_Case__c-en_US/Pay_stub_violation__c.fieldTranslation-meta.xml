@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- True when child RLCVs have at least 1 pay stub violation alleged --></help>
+    <label><!-- Pay stub violation --></label>
+    <name>Pay_stub_violation__c</name>
+</CustomFieldTranslation>

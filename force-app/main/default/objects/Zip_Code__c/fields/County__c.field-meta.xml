@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>County__c</fullName>
+    <externalId>false</externalId>
+    <label>County</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alameda</fullName>
+                <default>false</default>
+                <label>Alameda</label>
+            </value>
+            <value>
+                <fullName>Alpine</fullName>
+                <default>false</default>
+                <label>Alpine</label>
+            </value>
+            <value>
+                <fullName>Amador</fullName>
+                <default>false</default>
+                <label>Amador</label>
+            </value>
+            <value>
+                <fullName>Butte</fullName>
+                <default>false</default>
+                <label>Butte</label>
+            </value>
+            <value>
+                <fullName>Calaveras</fullName>
+                <default>false</default>
+                <label>Calaveras</label>
+            </value>
+            <value>
+                <fullName>Colusa</fullName>
+                <default>false</default>
+                <label>Colusa</label>
+            </value>
+            <value>
+                <fullName>Contra</fullName>
+                <default>false</default>
+                <label>Contra</label>
+            </value>
+            <value>
+                <fullName>Del Norte</fullName>
+                <default>false</default>
+                <label>Del Norte</label>
+            </value>
+            <value>
+                <fullName>El Dorado</fullName>
+                <default>false</default>
+                <label>El Dorado</label>
+            </value>
+            <value>
+                <fullName>Fresno</fullName>
+                <default>false</default>
+                <label>Fresno</label>
+            </value>
+            <value>
+                <fullName>Glenn</fullName>
+                <default>false</default>
+                <label>Glenn</label>
+            </value>
+            <value>
+                <fullName>Humboldt</fullName>
+                <default>false</default>
+                <label>Humboldt</label>
+            </value>
+            <value>
+                <fullName>Imperial</fullName>
+                <default>false</default>
+                <label>Imperial</label>
+            </value>
+            <value>
+                <fullName>Inyo</fullName>
+                <default>false</default>
+                <label>Inyo</label>
+            </value>
+            <value>
+                <fullName>Kern</fullName>
+                <default>false</default>
+                <label>Kern</label>
+            </value>
+            <value>
+                <fullName>Kings</fullName>
+                <default>false</default>
+                <label>Kings</label>
+            </value>
+            <value>
+                <fullName>Lake</fullName>
+                <default>false</default>
+                <label>Lake</label>
+            </value>
+            <value>
+                <fullName>Lassen</fullName>
+                <default>false</default>
+                <label>Lassen</label>
+            </value>
+            <value>
+                <fullName>Los Angeles</fullName>
+                <default>false</default>
+                <label>Los Angeles</label>
+            </value>
+            <value>
+                <fullName>Madera</fullName>
+                <default>false</default>
+                <label>Madera</label>
+            </value>
+            <value>
+                <fullName>Marin</fullName>
+                <default>false</default>
+                <label>Marin</label>
+            </value>
+            <value>
+                <fullName>Mariposa</fullName>
+                <default>false</default>
+                <label>Mariposa</label>
+            </value>
+            <value>
+                <fullName>Mendocino</fullName>
+                <default>false</default>
+                <label>Mendocino</label>
+            </value>
+            <value>
+                <fullName>Merced</fullName>
+                <default>false</default>
+                <label>Merced</label>
+            </value>
+            <value>
+                <fullName>Modoc</fullName>
+                <default>false</default>
+                <label>Modoc</label>
+            </value>
+            <value>
+                <fullName>Mono</fullName>
+                <default>false</default>
+                <label>Mono</label>
+            </value>
+            <value>
+                <fullName>Monterey</fullName>
+                <default>false</default>
+                <label>Monterey</label>
+            </value>
+            <value>
+                <fullName>Napa</fullName>
+                <default>false</default>
+                <label>Napa</label>
+            </value>
+            <value>
+                <fullName>Nevada</fullName>
+                <default>false</default>
+                <label>Nevada</label>
+            </value>
+            <value>
+                <fullName>Orange</fullName>
+                <default>false</default>
+                <label>Orange</label>
+            </value>
+            <value>
+                <fullName>Placer</fullName>
+                <default>false</default>
+                <label>Placer</label>
+            </value>
+            <value>
+                <fullName>Plumas</fullName>
+                <default>false</default>
+                <label>Plumas</label>
+            </value>
+            <value>
+                <fullName>Riverside</fullName>
+                <default>false</default>
+                <label>Riverside</label>
+            </value>
+            <value>
+                <fullName>Sacramento</fullName>
+                <default>false</default>
+                <label>Sacramento</label>
+            </value>
+            <value>
+                <fullName>San Benito</fullName>
+                <default>false</default>
+                <label>San Benito</label>
+            </value>
+            <value>
+                <fullName>San Bernardino</fullName>
+                <default>false</default>
+                <label>San Bernardino</label>
+            </value>
+            <value>
+                <fullName>San Diego</fullName>
+                <default>false</default>
+                <label>San Diego</label>
+            </value>
+            <value>
+                <fullName>San Francisco</fullName>
+                <default>false</default>
+                <label>San Francisco</label>
+            </value>
+            <value>
+                <fullName>San Joaquin</fullName>
+                <default>false</default>
+                <label>San Joaquin</label>
+            </value>
+            <value>
+                <fullName>San Luis Obispo</fullName>
+                <default>false</default>
+                <label>San Luis Obispo</label>
+            </value>
+            <value>
+                <fullName>San Mateo</fullName>
+                <default>false</default>
+                <label>San Mateo</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara</fullName>
+                <default>false</default>
+                <label>Santa Barbara</label>
+            </value>
+            <value>
+                <fullName>Santa Clara</fullName>
+                <default>false</default>
+                <label>Santa Clara</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz</fullName>
+                <default>false</default>
+                <label>Santa Cruz</label>
+            </value>
+            <value>
+                <fullName>Shasta</fullName>
+                <default>false</default>
+                <label>Shasta</label>
+            </value>
+            <value>
+                <fullName>Sierra</fullName>
+                <default>false</default>
+                <label>Sierra</label>
+            </value>
+            <value>
+                <fullName>Siskiyou</fullName>
+                <default>false</default>
+                <label>Siskiyou</label>
+            </value>
+            <value>
+                <fullName>Solano</fullName>
+                <default>false</default>
+                <label>Solano</label>
+            </value>
+            <value>
+                <fullName>Sonoma</fullName>
+                <default>false</default>
+                <label>Sonoma</label>
+            </value>
+            <value>
+                <fullName>Stanislaus</fullName>
+                <default>false</default>
+                <label>Stanislaus</label>
+            </value>
+            <value>
+                <fullName>Sutter</fullName>
+                <default>false</default>
+                <label>Sutter</label>
+            </value>
+            <value>
+                <fullName>Tehama</fullName>
+                <default>false</default>
+                <label>Tehama</label>
+            </value>
+            <value>
+                <fullName>Trinity</fullName>
+                <default>false</default>
+                <label>Trinity</label>
+            </value>
+            <value>
+                <fullName>Tulare</fullName>
+                <default>false</default>
+                <label>Tulare</label>
+            </value>
+            <value>
+                <fullName>Tuolumne</fullName>
+                <default>false</default>
+                <label>Tuolumne</label>
+            </value>
+            <value>
+                <fullName>Ventura</fullName>
+                <default>false</default>
+                <label>Ventura</label>
+            </value>
+            <value>
+                <fullName>Yolo</fullName>
+                <default>false</default>
+                <label>Yolo</label>
+            </value>
+            <value>
+                <fullName>Yuba</fullName>
+                <default>false</default>
+                <label>Yuba</label>
+            </value>
+            <value>
+                <fullName>Alameda County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alameda County</label>
+            </value>
+            <value>
+                <fullName>Alpine County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alpine County</label>
+            </value>
+            <value>
+                <fullName>Amador County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amador County</label>
+            </value>
+            <value>
+                <fullName>Butte County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Butte County</label>
+            </value>
+            <value>
+                <fullName>Calaveras County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Calaveras County</label>
+            </value>
+            <value>
+                <fullName>Colusa County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Colusa County</label>
+            </value>
+            <value>
+                <fullName>Contra Costa County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contra Costa County</label>
+            </value>
+            <value>
+                <fullName>Del Norte County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Del Norte County</label>
+            </value>
+            <value>
+                <fullName>El Dorado County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>El Dorado County</label>
+            </value>
+            <value>
+                <fullName>Fresno County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fresno County</label>
+            </value>
+            <value>
+                <fullName>Glenn County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Glenn County</label>
+            </value>
+            <value>
+                <fullName>Humboldt County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Humboldt County</label>
+            </value>
+            <value>
+                <fullName>Imperial County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Imperial County</label>
+            </value>
+            <value>
+                <fullName>Inyo County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inyo County</label>
+            </value>
+            <value>
+                <fullName>Kern County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kern County</label>
+            </value>
+            <value>
+                <fullName>Kings County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kings County</label>
+            </value>
+            <value>
+                <fullName>Lake County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lake County</label>
+            </value>
+            <value>
+                <fullName>Lassen County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lassen County</label>
+            </value>
+            <value>
+                <fullName>Los Angeles County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Los Angeles County</label>
+            </value>
+            <value>
+                <fullName>Madera County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Madera County</label>
+            </value>
+            <value>
+                <fullName>Marin County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marin County</label>
+            </value>
+            <value>
+                <fullName>Mariposa County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mariposa County</label>
+            </value>
+            <value>
+                <fullName>Mendocino County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mendocino County</label>
+            </value>
+            <value>
+                <fullName>Merced County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Merced County</label>
+            </value>
+            <value>
+                <fullName>Modoc County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Modoc County</label>
+            </value>
+            <value>
+                <fullName>Mono County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mono County</label>
+            </value>
+            <value>
+                <fullName>Monterey County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Monterey County</label>
+            </value>
+            <value>
+                <fullName>Napa County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Napa County</label>
+            </value>
+            <value>
+                <fullName>Nevada County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nevada County</label>
+            </value>
+            <value>
+                <fullName>Orange County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Orange County</label>
+            </value>
+            <value>
+                <fullName>Placer County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Placer County</label>
+            </value>
+            <value>
+                <fullName>Plumas County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Plumas County</label>
+            </value>
+            <value>
+                <fullName>Riverside County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Riverside County</label>
+            </value>
+            <value>
+                <fullName>Sacramento County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sacramento County</label>
+            </value>
+            <value>
+                <fullName>San Benito County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Benito County</label>
+            </value>
+            <value>
+                <fullName>San Bernardino County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Bernardino County</label>
+            </value>
+            <value>
+                <fullName>San Diego County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Diego County</label>
+            </value>
+            <value>
+                <fullName>San Francisco County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Francisco County</label>
+            </value>
+            <value>
+                <fullName>San Joaquin County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Joaquin County</label>
+            </value>
+            <value>
+                <fullName>San Luis Obispo County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Luis Obispo County</label>
+            </value>
+            <value>
+                <fullName>San Mateo County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>San Mateo County</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Santa Barbara County</label>
+            </value>
+            <value>
+                <fullName>Santa Clara County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Santa Clara County</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Santa Cruz County</label>
+            </value>
+            <value>
+                <fullName>Shasta County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shasta County</label>
+            </value>
+            <value>
+                <fullName>Sierra County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sierra County</label>
+            </value>
+            <value>
+                <fullName>Siskiyou County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Siskiyou County</label>
+            </value>
+            <value>
+                <fullName>Solano County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Solano County</label>
+            </value>
+            <value>
+                <fullName>Sonoma County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sonoma County</label>
+            </value>
+            <value>
+                <fullName>Stanislaus County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stanislaus County</label>
+            </value>
+            <value>
+                <fullName>Sutter County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sutter County</label>
+            </value>
+            <value>
+                <fullName>Tehama County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tehama County</label>
+            </value>
+            <value>
+                <fullName>Trinity County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Trinity County</label>
+            </value>
+            <value>
+                <fullName>Tulare County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tulare County</label>
+            </value>
+            <value>
+                <fullName>Tuolumne County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tuolumne County</label>
+            </value>
+            <value>
+                <fullName>Ventura County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ventura County</label>
+            </value>
+            <value>
+                <fullName>Yolo County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yolo County</label>
+            </value>
+            <value>
+                <fullName>Yuba County</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yuba County</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

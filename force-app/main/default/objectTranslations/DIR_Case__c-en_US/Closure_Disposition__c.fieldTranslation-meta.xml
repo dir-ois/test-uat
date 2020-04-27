@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Choose the status of the case at closure --></help>
+    <label><!-- Closure Disposition --></label>
+    <name>Closure_Disposition__c</name>
+    <picklistValues>
+        <masterLabel>Abandoned</masterLabel>
+        <translation><!-- Abandoned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Lack of Jurisdiction (Legacy)</masterLabel>
+        <translation><!-- Admin Closure – Lack of Jurisdiction (Legacy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Other</masterLabel>
+        <translation><!-- Admin Closure – Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Closure – Other (Legacy)</masterLabel>
+        <translation><!-- Admin Closure – Other (Legacy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administrative Closure</masterLabel>
+        <translation><!-- Administrative Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy</masterLabel>
+        <translation><!-- Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPL Court Filing</masterLabel>
+        <translation><!-- CPL Court Filing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case does not involve PAGA claims</masterLabel>
+        <translation><!-- Case does not involve PAGA claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cause Finding</masterLabel>
+        <translation><!-- Cause Finding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cause Finding – Compliance</masterLabel>
+        <translation><!-- Cause Finding – Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cause Finding – Enforcement Legal</masterLabel>
+        <translation><!-- Cause Finding – Enforcement Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cause Finding – Settled</masterLabel>
+        <translation><!-- Cause Finding – Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim settled pre-litigation</masterLabel>
+        <translation><!-- Claim settled pre-litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim voluntarily dismissed</masterLabel>
+        <translation><!-- Claim voluntarily dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Incarcerated</masterLabel>
+        <translation><!-- Claimant Incarcerated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed – Citation Issued</masterLabel>
+        <translation><!-- Closed – Citation Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed – No Citation Issued</masterLabel>
+        <translation><!-- Closed – No Citation Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed – Settled</masterLabel>
+        <translation><!-- Closed – Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint filed w/o PAGA claim</masterLabel>
+        <translation><!-- Complaint filed w/o PAGA claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complied</masterLabel>
+        <translation><!-- Complied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consolidated Case</masterLabel>
+        <translation><!-- Consolidated Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordinated case</masterLabel>
+        <translation><!-- Coordinated case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De Novo Referral</masterLabel>
+        <translation><!-- De Novo Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed with Prejudice</masterLabel>
+        <translation><!-- Dismissed with Prejudice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed without Prejudice</masterLabel>
+        <translation><!-- Dismissed without Prejudice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Claimant Abandoned</masterLabel>
+        <translation><!-- Dismissed – Claimant Abandoned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Claimant Withdrew</masterLabel>
+        <translation><!-- Dismissed – Claimant Withdrew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Claimant cannot be located</masterLabel>
+        <translation><!-- Dismissed – Claimant cannot be located --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Claimant failed to appear</masterLabel>
+        <translation><!-- Dismissed – Claimant failed to appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Employer cannot be located</masterLabel>
+        <translation><!-- Dismissed – Employer cannot be located --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Employer no longer in business</masterLabel>
+        <translation><!-- Dismissed – Employer no longer in business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Exceeds Statute of Limitations</masterLabel>
+        <translation><!-- Dismissed – Exceeds Statute of Limitations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – No Defendant</masterLabel>
+        <translation><!-- Dismissed – No Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – No Jurisdiction</masterLabel>
+        <translation><!-- Dismissed – No Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed – Other</masterLabel>
+        <translation><!-- Dismissed – Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Case</masterLabel>
+        <translation><!-- Duplicate Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – ER JUST Merit</masterLabel>
+        <translation><!-- EPA – ER JUST Merit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – ER JUST Other BF Factor</masterLabel>
+        <translation><!-- EPA – ER JUST Other BF Factor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – ER JUST Production</masterLabel>
+        <translation><!-- EPA – ER JUST Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – ER JUST Seniority</masterLabel>
+        <translation><!-- EPA – ER JUST Seniority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – No Comparators</masterLabel>
+        <translation><!-- EPA – No Comparators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – No Pay Disparity</masterLabel>
+        <translation><!-- EPA – No Pay Disparity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – No similar work conditions</masterLabel>
+        <translation><!-- EPA – No similar work conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPA – No substantially similar work</masterLabel>
+        <translation><!-- EPA – No substantially similar work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error/Test</masterLabel>
+        <translation><!-- Error/Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fast Track Ref to Remedial fund</masterLabel>
+        <translation><!-- Fast Track Ref to Remedial fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Evidence</masterLabel>
+        <translation><!-- Insufficient Evidence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment</masterLabel>
+        <translation><!-- Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment – Assign to CPL</masterLabel>
+        <translation><!-- Judgment – Assign to CPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment – Claimant Collect</masterLabel>
+        <translation><!-- Judgment – Claimant Collect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment – JEU</masterLabel>
+        <translation><!-- Judgment – JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – Atty Referral</masterLabel>
+        <translation><!-- Lack of Jurisdiction – Atty Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – DFEH</masterLabel>
+        <translation><!-- Lack of Jurisdiction – DFEH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – DOL (WHD)</masterLabel>
+        <translation><!-- Lack of Jurisdiction – DOL (WHD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – FMLA</masterLabel>
+        <translation><!-- Lack of Jurisdiction – FMLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – NLRA</masterLabel>
+        <translation><!-- Lack of Jurisdiction – NLRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – Other</masterLabel>
+        <translation><!-- Lack of Jurisdiction – Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction – WCAB</masterLabel>
+        <translation><!-- Lack of Jurisdiction – WCAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legitimate, Non-Retaliatory Reason</masterLabel>
+        <translation><!-- Legitimate, Non-Retaliatory Reason --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Cause</masterLabel>
+        <translation><!-- No Cause --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Defendant</masterLabel>
+        <translation><!-- No Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Jurisdiction</masterLabel>
+        <translation><!-- No Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Respondent</masterLabel>
+        <translation><!-- No Respondent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Notice Withrdrawn</masterLabel>
+        <translation><!-- PAGA Notice Withrdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA claim abandoned/withdrawn</masterLabel>
+        <translation><!-- PAGA claim abandoned/withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFC – No Adverse Action</masterLabel>
+        <translation><!-- PFC – No Adverse Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFC – No Causal Link</masterLabel>
+        <translation><!-- PFC – No Causal Link --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFC – No Employer Knowledge</masterLabel>
+        <translation><!-- PFC – No Employer Knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFC – No Protected Activity</masterLabel>
+        <translation><!-- PFC – No Protected Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid in Full – Post Judgment Entry</masterLabel>
+        <translation><!-- Paid in Full – Post Judgment Entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid in Full – Post ODA</masterLabel>
+        <translation><!-- Paid in Full – Post ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid in Full – Pre-Hearing</masterLabel>
+        <translation><!-- Paid in Full – Pre-Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff rec’d $0 ODA</masterLabel>
+        <translation><!-- Plaintiff rec’d $0 ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff rec’d ODA</masterLabel>
+        <translation><!-- Plaintiff rec’d ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled by Mediation</masterLabel>
+        <translation><!-- Settled by Mediation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – At Conference</masterLabel>
+        <translation><!-- Settled – At Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – At hearing</masterLabel>
+        <translation><!-- Settled – At hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Paid in Full</masterLabel>
+        <translation><!-- Settled – Paid in Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Post Appeal</masterLabel>
+        <translation><!-- Settled – Post Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Post Hearing (Post Judgment, Prior to JEU referral)</masterLabel>
+        <translation><!-- Settled – Post Hearing (Post Judgment, Prior to JEU referral) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Post Hearing (Post ODA, Prior to Judgment)</masterLabel>
+        <translation><!-- Settled – Post Hearing (Post ODA, Prior to Judgment) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Post Hearing (Prior to ODA)</masterLabel>
+        <translation><!-- Settled – Post Hearing (Prior to ODA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Pre-Conference</masterLabel>
+        <translation><!-- Settled – Pre-Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled – Pre-hearing</masterLabel>
+        <translation><!-- Settled – Pre-hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid Wage Fund</masterLabel>
+        <translation><!-- Unpaid Wage Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Untimely (Outside SOL)</masterLabel>
+        <translation><!-- Untimely (Outside SOL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn</masterLabel>
+        <translation><!-- Withdrawn --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

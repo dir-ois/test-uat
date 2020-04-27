@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Case_to_match_Case_Role</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+   NOT(ISBLANK(Role__c )),
+   Meeting__r.Case__c &lt;&gt; Case_Role__r.Case__c
+)</errorConditionFormula>
+    <errorMessage>The Case on the Case Role must equal the Case on the Meeting</errorMessage>
+</ValidationRule>

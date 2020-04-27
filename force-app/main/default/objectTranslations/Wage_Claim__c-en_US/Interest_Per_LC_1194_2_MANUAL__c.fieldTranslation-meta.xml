@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interest Per LC 1194.2 --></label>
+    <name>Interest_Per_LC_1194_2_MANUAL__c</name>
+</CustomFieldTranslation>

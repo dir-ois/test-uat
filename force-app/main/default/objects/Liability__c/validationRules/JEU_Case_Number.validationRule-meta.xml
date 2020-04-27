@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_Case_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   TEXT(Refer_to_JEU__c ) = &#39;Accepted&#39;,
+   ISBLANK(JEU_Number__c )
+)</errorConditionFormula>
+    <errorMessage>JEU Case Number is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- On a PAGA Case, this field can be selected to link it to a BOFE Case --></help>
+    <label><!-- Related BOFE Case --></label>
+    <lookupFilter>
+        <errorMessage><!-- You must select a BOFE case. --></errorMessage>
+    </lookupFilter>
+    <name>Related_BOFE_Case__c</name>
+    <relationshipLabel><!-- Case Management (PAGA Cases) --></relationshipLabel>
+</CustomFieldTranslation>

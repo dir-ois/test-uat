@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The original penalty amount assessed for this violation. Will remain the same even if the penalty is modified by an appeal. --></help>
+    <label><!-- Original Penalty Assessment Amount --></label>
+    <name>Original_Penalty_Assessment_Amount__c</name>
+</CustomFieldTranslation>

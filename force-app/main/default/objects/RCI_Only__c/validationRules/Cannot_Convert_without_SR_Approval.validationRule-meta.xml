@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Convert_without_SR_Approval</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Approval_Date__c) &amp;&amp;
+ ISPICKVAL(Status__c,&quot;Convert to Case&quot;)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Your Sr must approve this first.</errorMessage>
+</ValidationRule>

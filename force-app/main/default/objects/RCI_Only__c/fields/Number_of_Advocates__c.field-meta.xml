@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Advocates__c</fullName>
+    <externalId>false</externalId>
+    <label>Number of Advocates</label>
+    <summaryFilterItems>
+        <field>Associated_Party__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>AP-Advocate</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Associated_Party__c.Status__c</field>
+        <operation>notEqual</operation>
+        <value>Confirm</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Associated_Party__c.RCI__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

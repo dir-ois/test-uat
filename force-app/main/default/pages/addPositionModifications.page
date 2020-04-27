@@ -1,0 +1,76 @@
+<apex:page standardController="X607__c" extensions="form607_Controller" >
+	<apex:form >
+		<apex:pageBlock title="Add Position Modifications">
+			<apex:pageblockbuttons location="both">
+				<apex:commandbutton value="Save" action="{!savePositionModifications}" />
+				<apex:commandbutton value="Cancel" action="{!cancel}" />
+			</apex:pageblockbuttons>
+			<apex:pageMessages id="messages" />
+			<apex:pageBlockSection columns="2">
+				<apex:pageBlockSectionItem rendered="{!form607.X607_Position_Primary_Addition__c!=null&&form607.X607_Position_Primary_Addition__r.Number_of_Positions__c > 1}">
+					<apex:pageBlockSection title="Addition" columns="2" collapsible="false" >
+						<apex:inputField label="AGY:" value="{!newAddPos.Department__c}" />
+						<apex:inputText label="RU:" value="{!newAddPos.Reporting_Unit_CodeNo__c}" maxlength="3" size="3" />
+						<apex:inputText label="CC:" value="{!newAddPos.Class_Title_CodeNo__c}"  maxlength="4" size="4">
+							<apex:actionSupport event="onkeyup" action="{!searchClassificationAddPosMod}" rerender="addClassTitle, addSalaryRate, addPosType" />
+						</apex:inputText>
+						<apex:inputText label="SER:" value="{!newAddPos.Serial_Number__c}"  maxlength="3" size="3"/>
+						<apex:inputText id="addPosType" label="POS TYPE:" value="{!newAddPos.Type__c}" />
+						<apex:inputField label="TIME BASIS:" value="{!newAddPos.Time_Basis__c}" />
+						<apex:inputText id="addClassTitle" label="CLASS TITLE:" value="{!newAddPos.Class_Title__c}"  maxlength="40" size="40"/>
+						<apex:inputText label="PART-TIME FRACTION" value="{!newAddPos.Part_Time_Fraction__c}"  maxlength="10" size="10"/>
+						<apex:inputField id="addSalaryRate" label="SALARY RATE:" value="{!newAddPos.Salary_Rate__c}" />
+						<apex:commandButton value="Add New Addition" action="{!addAddition}" />
+					</apex:pageBlockSection>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockSectionItem rendered="{!form607.X607_Position_Primary_Deletion__c!=null&&form607.X607_Position_Primary_Deletion__r.Number_of_Positions__c > 1}">
+					<apex:pageBlockSection title="Deletion" columns="2" collapsible="false" >
+						<apex:inputField label="AGY:" value="{!newDelPos.Department__c}" />
+						<apex:inputText label="RU:" value="{!newDelPos.Reporting_Unit_CodeNo__c}"  maxlength="3" size="3"/>
+						<apex:inputText label="CC:" value="{!newDelPos.Class_Title_CodeNo__c}"  maxlength="4" size="4">
+							<apex:actionSupport event="onkeyup" action="{!searchClassificationDelPosMod}" rerender="delClassTitle, delSalaryRate, delPosType" />
+						</apex:inputText>
+						<apex:inputText label="SER:" value="{!newDelPos.Serial_Number__c}"  maxlength="3" size="3" />
+						<!--<apex:inputText id="delPosType" label="POS TYPE:" value="{!newDelPos.Type__c}" />
+						<apex:inputField label="TIME BASIS:" value="{!newDelPos.Time_Basis__c}" />
+						<apex:inputText id="delClassTitle" label="CLASS TITLE:" value="{!newDelPos.Class_Title__c}"  maxlength="40" size="40"/>
+						<apex:inputText label="PART-TIME FRACTION" value="{!newDelPos.Part_Time_Fraction__c}"  maxlength="10" size="10"/>
+						<apex:inputField id="delSalaryRate" label="SALARY RATE:" value="{!newDelPos.Salary_Rate__c}" />-->
+						<apex:pageBlockSectionItem />
+						<apex:commandButton value="Add New Deletion" action="{!addDeletion}" />
+					</apex:pageBlockSection>
+				</apex:pageBlockSectionItem>
+				<apex:pageBlockTable rendered="{!form607.X607_Position_Primary_Addition__c!=null&&form607.X607_Position_Primary_Addition__r.Number_of_Positions__c > 1}" id="additionTable" title="New Additions" value="{!attachedAdditions}" var="a" >
+					<apex:column value="{!a.pos.Department__c}" headerValue="AGY" />
+					<apex:column value="{!a.pos.Reporting_Unit_CodeNo__c}" headerValue="RU" />
+					<apex:column value="{!a.pos.Class_Title_CodeNo__c}" headerValue="CC" />
+					<apex:column value="{!a.pos.Serial_Number__c}" headerValue="SER" />
+					<apex:column value="{!a.pos.Type__c}" headerValue="POS TYPE" />
+					<apex:column value="{!a.pos.Time_Basis__c}" headerValue="TIME BASE" />
+					<apex:column value="{!a.pos.Class_Title__c}" headerValue="CLASS TITLE" />
+					<apex:column value="{!a.pos.Salary_Rate__c}" headerValue="SALARY RATE" />
+					<apex:column >
+						<apex:commandButton action="{!deleteAddition}" value="Delete" rerender="additionTable" >
+							<apex:param name="deletedAdditionIndex" value="{!a.index}" assignTo="{!deletedAdditionIndex}" />
+						</apex:commandButton>
+					</apex:column>
+				</apex:pageBlockTable>
+				<apex:pageBlockTable rendered="{!form607.X607_Position_Primary_Deletion__c!=null&&form607.X607_Position_Primary_Deletion__r.Number_of_Positions__c > 1}" id="deletionTable" title="New Deletions" value="{!attachedDeletions}" var="d" >
+					<apex:column value="{!d.pos.Department__c}" headerValue="AGY" />
+					<apex:column value="{!d.pos.Reporting_Unit_CodeNo__c}" headerValue="RU" />
+					<apex:column value="{!d.pos.Class_Title_CodeNo__c}" headerValue="CC" />
+					<apex:column value="{!d.pos.Serial_Number__c}" headerValue="SER" />
+					<apex:column value="{!d.pos.Type__c}" headerValue="POS TYPE" />
+					<apex:column value="{!d.pos.Time_Basis__c}" headerValue="TIME BASE" />
+					<apex:column value="{!d.pos.Class_Title__c}" headerValue="CLASS TITLE" />
+					<apex:column value="{!d.pos.Salary_Rate__c}" headerValue="SALARY RATE" />
+					<apex:column >
+						<apex:commandButton action="{!deleteDeletion}" value="Delete" rerender="deletionTable" >
+							<apex:param name="deletedDeletionIndex" value="{!d.index}" assignTo="{!deletedDeletionIndex}" />
+						</apex:commandButton>
+					</apex:column>
+				</apex:pageBlockTable>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

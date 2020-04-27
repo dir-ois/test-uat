@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If unaware of direct street address, please put the nearest intersection. --></help>
+    <label><!-- Employer Approximate Location --></label>
+    <name>Employer_Approximate_Location__c</name>
+</CustomFieldTranslation>

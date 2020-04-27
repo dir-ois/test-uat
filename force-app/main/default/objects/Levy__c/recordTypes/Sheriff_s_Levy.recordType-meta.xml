@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sheriff_s_Levy</fullName>
+    <active>true</active>
+    <label>Sheriff&#39;s Levy</label>
+    <picklistValues>
+        <picklist>Determination_outcome__c</picklist>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustained%2FUpheld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustained%2FUpheld in part with explanation in Notes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Exemption_Third_Party_Claim_Status__c</picklist>
+        <values>
+            <fullName>Overruled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Levy_Response_Type__c</picklist>
+        <values>
+            <fullName>Claim of Exemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorandum of Garnishee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorandum of Garnishee with Notice of Joint Accountholder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Debtor Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Garnishee Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Claim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Levy_Status__c</picklist>
+        <values>
+            <fullName>Draft%2Fpending review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finalized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to levying officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Served by levying officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn%2Freleased</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Levy_Type__c</picklist>
+        <values>
+            <fullName>Accounts Receivable Garnishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annuity%2FInsurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Garnishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keeper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Garnishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Personal Property %28e%2Eg%2E%2C jewelry%2C paintings%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %E2%80%93 Commercial Properties</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %E2%80%93 Residential Investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate %E2%80%93 Residential Owner Occupied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate -- Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rents Garnishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stocks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Till Tap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Garnishment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

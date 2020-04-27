@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date__c</fullName>
+    <description>Date for this balance sheet. From CreateOAMTRecords apex class - last day of the month for the month of this report. The month of this report is the month PREVIOUS to the month when the flow is being run, i.e., for a flow run on July 1, 2017 to get June 2017&#39;s totals, this field will show 6/30/2017.</description>
+    <externalId>false</externalId>
+    <label>Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

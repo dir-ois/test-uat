@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Plan_Balance__c</fullName>
+    <description>Calculates the balance based upon the total of the payment plan and the total payments made</description>
+    <externalId>false</externalId>
+    <formula>IF( BEGINS(Case__r.RecordType.Name, &quot;BOFE&quot;)  || BEGINS(Case__r.RecordType.Name, &quot;RCI&quot;) ,
+Payment_Plan_Total_Amount_Due__c -  Payment_Plan_Down__c - Total_Payment_Amount__c,
+Payment_Plan_Total_Amount_Due__c -  Payment_Plan_Down__c - Total_Payment_Amount__c +  Payment_Plan_Down__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Remaining balance on the payment plan.</inlineHelpText>
+    <label>Payment Plan Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

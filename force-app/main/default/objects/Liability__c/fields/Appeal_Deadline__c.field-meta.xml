@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appeal_Deadline__c</fullName>
+    <description>Set via workflow rule when liability is created based on the Appeal Deadline (Days) from the assessment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The default appeal deadline based on the Appeal Deadline (Days) from the parent assessment</inlineHelpText>
+    <label>Appeal Deadline</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

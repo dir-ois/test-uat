@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Semi_Monthly_Payment_Plan_Validation</fullName>
+    <active>true</active>
+    <description>If Semi Monthly PP selected, user may only select 2 values from picklist.</description>
+    <errorConditionFormula>IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;1&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;2&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;3&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;4&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;5&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;6&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;7&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;8&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;9&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;10&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;11&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;12&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;13&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;14&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;15&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;16&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;17&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;18&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;19&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;20&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;21&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;22&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;23&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;24&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;25&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;26&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;27&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;28&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;29&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;30&quot;),1,0) + 
+IF(INCLUDES(Days_of_Semi_Monthly_Payment_Due__c, &quot;31&quot;),1,0) &gt;2</errorConditionFormula>
+    <errorMessage>Only two days may be selected for Semi-Monthly Payment Plans.</errorMessage>
+</ValidationRule>

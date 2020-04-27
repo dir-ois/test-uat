@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_JEU_Can_Edit_Interest_Rate</fullName>
+    <active>true</active>
+    <description>Validation rule on Interest field that only allows that permission to edit the interest fields</description>
+    <errorConditionFormula>( 
+  ISCHANGED ( Total_Interest_Amount__c ) 
+)
+&amp;&amp;
+!$Permission.DLSE_JEU
+&amp;&amp;
+NOT( CONTAINS($Profile.Name, &#39;System Administrator&#39;) )
+&amp;&amp; 
+$Profile.Name &lt;&gt; &#39;WCA User&#39;
+&amp;&amp;
+$Profile.Name &lt;&gt; &#39;JEU User&#39;</errorConditionFormula>
+    <errorDisplayField>Interest_Payments_Received__c</errorDisplayField>
+    <errorMessage>Must have JEU Permission to edit this field</errorMessage>
+</ValidationRule>

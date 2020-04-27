@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duplicate_Case_Must_Have_Related_Case</fullName>
+    <active>true</active>
+    <description>If a case management record has its status set to &quot;Duplicate Case&quot; but does not have a related case assigned to it via the Related Case lookup, this validation rule will fire and prevent the record from saving.</description>
+    <errorConditionFormula>AND (OR( ISPICKVAL( Status__c , &quot;Duplicate Case&quot; ),AND( Record_Type_Name__c = &quot;WCA&quot;, ISPICKVAL ( Closure_Disposition__c , &quot;Duplicate Case&quot;))) , ISBLANK( Related_Case__c ) )</errorConditionFormula>
+    <errorMessage>You may not set a case management record as a duplicate without assigning it to another existing case via the Related Case field.</errorMessage>
+</ValidationRule>

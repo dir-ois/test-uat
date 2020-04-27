@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entity Type Descriptor --></label>
+    <name>Entity_Type_Descriptor__c</name>
+    <picklistValues>
+        <masterLabel>a Business Trust</masterLabel>
+        <translation><!-- a Business Trust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a California Corporation</masterLabel>
+        <translation><!-- a California Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Corporation</masterLabel>
+        <translation><!-- a Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Foreign Corporation</masterLabel>
+        <translation><!-- a Foreign Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a General Partnership</masterLabel>
+        <translation><!-- a General Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Joint Venture</masterLabel>
+        <translation><!-- a Joint Venture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Limited Liability Company</masterLabel>
+        <translation><!-- a Limited Liability Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Limited Liability Partnership</masterLabel>
+        <translation><!-- a Limited Liability Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Limited Partnership</masterLabel>
+        <translation><!-- a Limited Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Political Subdivision of the State of California</masterLabel>
+        <translation><!-- a Political Subdivision of the State of California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Professional Corporation</masterLabel>
+        <translation><!-- a Professional Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Professional Law Corporation</masterLabel>
+        <translation><!-- a Professional Law Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Registered Limited Liability Partnership</masterLabel>
+        <translation><!-- a Registered Limited Liability Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>a Trust</masterLabel>
+        <translation><!-- a Trust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an Individual</masterLabel>
+        <translation><!-- an Individual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>an Unincorporated Association</masterLabel>
+        <translation><!-- an Unincorporated Association --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

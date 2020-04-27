@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 41 Subpoena Options --></label>
+    <name>WCA_41_Subpoena_Options__c</name>
+    <picklistValues>
+        <masterLabel>Both</masterLabel>
+        <translation><!-- Both --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Subpoena</masterLabel>
+        <translation><!-- Personal Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena for Documents</masterLabel>
+        <translation><!-- Subpoena for Documents --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

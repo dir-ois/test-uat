@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If selecting Other / Specify, please enter the court name in the Court Name for PAGA Case field. --></help>
+    <label><!-- Court Name --></label>
+    <name>Court_Name__c</name>
+    <picklistValues>
+        <masterLabel>Alameda County Superior Court</masterLabel>
+        <translation><!-- Alameda County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alpine County Superior Court</masterLabel>
+        <translation><!-- Alpine County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amador County Superior Court</masterLabel>
+        <translation><!-- Amador County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Butte County Superior Court</masterLabel>
+        <translation><!-- Butte County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Ct. App. 1</masterLabel>
+        <translation><!-- Cal. Ct. App. 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Ct. App. 2</masterLabel>
+        <translation><!-- Cal. Ct. App. 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Ct. App. 3</masterLabel>
+        <translation><!-- Cal. Ct. App. 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Ct. App. 4</masterLabel>
+        <translation><!-- Cal. Ct. App. 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Ct. App. 5</masterLabel>
+        <translation><!-- Cal. Ct. App. 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Ct. App. 6</masterLabel>
+        <translation><!-- Cal. Ct. App. 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal. Supreme</masterLabel>
+        <translation><!-- Cal. Supreme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calaveras County Superior Court</masterLabel>
+        <translation><!-- Calaveras County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colusa County Superior Court</masterLabel>
+        <translation><!-- Colusa County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contra Costa County Superior Court</masterLabel>
+        <translation><!-- Contra Costa County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Del Norte County Superior Court</masterLabel>
+        <translation><!-- Del Norte County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Dorado County Superior Court</masterLabel>
+        <translation><!-- El Dorado County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno County Superior Court</masterLabel>
+        <translation><!-- Fresno County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glenn County Superior Court</masterLabel>
+        <translation><!-- Glenn County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Humboldt County Superior Court</masterLabel>
+        <translation><!-- Humboldt County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imperial County Superior Court</masterLabel>
+        <translation><!-- Imperial County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inyo County Superior Court</masterLabel>
+        <translation><!-- Inyo County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kern County Superior Court</masterLabel>
+        <translation><!-- Kern County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kings County Superior Court</masterLabel>
+        <translation><!-- Kings County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake County Superior Court</masterLabel>
+        <translation><!-- Lake County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lassen County Superior Court</masterLabel>
+        <translation><!-- Lassen County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles County Superior Court</masterLabel>
+        <translation><!-- Los Angeles County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madera County Superior Court</masterLabel>
+        <translation><!-- Madera County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marin County Superior Court</masterLabel>
+        <translation><!-- Marin County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mariposa County Superior Court</masterLabel>
+        <translation><!-- Mariposa County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mendocino County Superior Court</masterLabel>
+        <translation><!-- Mendocino County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merced County Superior Court</masterLabel>
+        <translation><!-- Merced County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modoc County Superior Court</masterLabel>
+        <translation><!-- Modoc County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mono County Superior Court</masterLabel>
+        <translation><!-- Mono County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monterey County Superior Court</masterLabel>
+        <translation><!-- Monterey County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Napa County Superior Court</masterLabel>
+        <translation><!-- Napa County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nevada County Superior Court</masterLabel>
+        <translation><!-- Nevada County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange County Superior Court</masterLabel>
+        <translation><!-- Orange County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Placer County Superior Court</masterLabel>
+        <translation><!-- Placer County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plumas County Superior Court</masterLabel>
+        <translation><!-- Plumas County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside County Superior Court</masterLabel>
+        <translation><!-- Riverside County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento County Superior Court</masterLabel>
+        <translation><!-- Sacramento County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Benito County Superior Court</masterLabel>
+        <translation><!-- San Benito County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino County Superior Court</masterLabel>
+        <translation><!-- San Bernardino County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego County Superior Court</masterLabel>
+        <translation><!-- San Diego County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco County Superior Court</masterLabel>
+        <translation><!-- San Francisco County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Joaquin County Superior Court</masterLabel>
+        <translation><!-- San Joaquin County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Luis Obispo County Superior Court</masterLabel>
+        <translation><!-- San Luis Obispo County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Mateo County Superior Court</masterLabel>
+        <translation><!-- San Mateo County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara County Superior Court</masterLabel>
+        <translation><!-- Santa Barbara County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Clara County Superior Court</masterLabel>
+        <translation><!-- Santa Clara County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Cruz County Superior Court</masterLabel>
+        <translation><!-- Santa Cruz County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shasta County Superior Court</masterLabel>
+        <translation><!-- Shasta County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra County Superior Court</masterLabel>
+        <translation><!-- Sierra County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siskiyou County Superior Court</masterLabel>
+        <translation><!-- Siskiyou County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solano County Superior Court</masterLabel>
+        <translation><!-- Solano County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonoma County Superior Court</masterLabel>
+        <translation><!-- Sonoma County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stanislaus County Superior Court</masterLabel>
+        <translation><!-- Stanislaus County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sutter County Superior Court</masterLabel>
+        <translation><!-- Sutter County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tehama County Superior Court</masterLabel>
+        <translation><!-- Tehama County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trinity County Superior Court</masterLabel>
+        <translation><!-- Trinity County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tulare County Superior Court</masterLabel>
+        <translation><!-- Tulare County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tuolumne County Superior Court</masterLabel>
+        <translation><!-- Tuolumne County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U.S. 9th Circuit</masterLabel>
+        <translation><!-- U.S. 9th Circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U.S. Central Dist. CA</masterLabel>
+        <translation><!-- U.S. Central Dist. CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U.S. Eastern Dist. CA</masterLabel>
+        <translation><!-- U.S. Eastern Dist. CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U.S. Northern Dist. CA</masterLabel>
+        <translation><!-- U.S. Northern Dist. CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U.S. Southern Dist. CA</masterLabel>
+        <translation><!-- U.S. Southern Dist. CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U.S. Supreme</masterLabel>
+        <translation><!-- U.S. Supreme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventura County Superior Court</masterLabel>
+        <translation><!-- Ventura County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yolo County Superior Court</masterLabel>
+        <translation><!-- Yolo County Superior Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yuba County Superior Court</masterLabel>
+        <translation><!-- Yuba County Superior Court --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_86_Restitution_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 86 Restitution Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FLC</fullName>
+                <default>false</default>
+                <label>FLC</label>
+            </value>
+            <value>
+                <fullName>Car Wash</fullName>
+                <default>false</default>
+                <label>Car Wash</label>
+            </value>
+            <value>
+                <fullName>Garment</fullName>
+                <default>false</default>
+                <label>Garment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

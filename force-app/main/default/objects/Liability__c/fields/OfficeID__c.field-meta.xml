@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OfficeID__c</fullName>
+    <description>Pulls the Office ID down for use in output documents that include office info.</description>
+    <externalId>false</externalId>
+    <formula>Case_Management__r.Office__c</formula>
+    <label>OfficeID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FileDatetoClosedDate__c</fullName>
+    <description>Calculation of the number of days from the Case Closed Date to the File Date</description>
+    <externalId>false</externalId>
+    <formula>Case_Closed_Date__c - DATEVALUE(File_Date_Time__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Time that has passed from File Date to Case Closed Date</inlineHelpText>
+    <label>File Date to Case Closed Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

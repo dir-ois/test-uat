@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the question to ask the person performing the inspection. --></help>
+    <label><!-- Inspection Question --></label>
+    <name>Inspection_Question__c</name>
+</CustomFieldTranslation>

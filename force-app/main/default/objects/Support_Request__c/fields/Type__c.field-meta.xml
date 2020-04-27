@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Fix</fullName>
+                <default>false</default>
+                <label>PROD Data Change</label>
+            </value>
+            <value>
+                <fullName>Config Change Deploy</fullName>
+                <default>false</default>
+                <label>Config Change Deploy</label>
+            </value>
+            <value>
+                <fullName>Quick Fix</fullName>
+                <default>false</default>
+                <label>Gearset Deploy</label>
+            </value>
+            <value>
+                <fullName>Training - New</fullName>
+                <default>false</default>
+                <label>Training - New</label>
+            </value>
+            <value>
+                <fullName>Training Issue</fullName>
+                <default>false</default>
+                <label>Training - Refresher</label>
+            </value>
+            <value>
+                <fullName>Training - Global Impact</fullName>
+                <default>false</default>
+                <label>Training - Global Impact</label>
+            </value>
+            <value>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <label>Password Reset</label>
+            </value>
+            <value>
+                <fullName>Sub-Project</fullName>
+                <default>false</default>
+                <label>Sub-Project</label>
+            </value>
+            <value>
+                <fullName>ServiceNow Request</fullName>
+                <default>false</default>
+                <label>ServiceNow Request</label>
+            </value>
+            <value>
+                <fullName>Salesforce for Outlook</fullName>
+                <default>false</default>
+                <label>Salesforce for Outlook</label>
+            </value>
+            <value>
+                <fullName>Salesforce Issue</fullName>
+                <default>false</default>
+                <label>Salesforce Issue</label>
+            </value>
+            <value>
+                <fullName>Support Request Enhancement</fullName>
+                <default>false</default>
+                <label>Support Request Enhancement</label>
+            </value>
+            <value>
+                <fullName>Account Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account Request</label>
+            </value>
+            <value>
+                <fullName>Change Request</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Change Request</label>
+            </value>
+            <value>
+                <fullName>Deployment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deployment</label>
+            </value>
+            <value>
+                <fullName>Project</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Project</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

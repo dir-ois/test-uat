@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 69 Attached Form --></label>
+    <name>WCA_69_Attached_Form__c</name>
+    <picklistValues>
+        <masterLabel>Amended Order, Decision or Award.</masterLabel>
+        <translation><!-- Amended Order, Decision or Award. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing.</masterLabel>
+        <translation><!-- Notice of Hearing. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Rescheduled Hearing.</masterLabel>
+        <translation><!-- Notice of Rescheduled Hearing. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order, Decision or Award.</masterLabel>
+        <translation><!-- Order, Decision or Award. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

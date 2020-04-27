@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Attorney__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Attorney to which this case is assigned for legal referrals</inlineHelpText>
+    <label>Assigned DLSE Attorney</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Case Management (Assigned Attorney)</relationshipLabel>
+    <relationshipName>Case_Management</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

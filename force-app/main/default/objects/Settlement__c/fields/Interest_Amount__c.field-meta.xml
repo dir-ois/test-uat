@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Amount__c</fullName>
+    <description>Interest calculated in workflow rule when amounts, interest rate, and date are entered</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Interest amount due on the due date of the settlement</inlineHelpText>
+    <label>Interest Amount</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

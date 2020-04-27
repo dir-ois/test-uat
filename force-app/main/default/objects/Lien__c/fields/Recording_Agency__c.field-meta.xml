@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recording_Agency__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Governmental body tasked with maintaining a record of a lien</inlineHelpText>
+    <label>Recording Agency</label>
+    <referenceTo>Office__c</referenceTo>
+    <relationshipLabel>Lien Recording Agency</relationshipLabel>
+    <relationshipName>Recording_Agency_Liens</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

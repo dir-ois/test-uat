@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this question should stop an auto-renewal from taking place if an answer is given of a certain value, enter the value that should stop the auto-renewal in this field. --></help>
+    <label><!-- Stop Auto-Renew Value --></label>
+    <name>Stop_Auto_Renew_Value__c</name>
+</CustomFieldTranslation>

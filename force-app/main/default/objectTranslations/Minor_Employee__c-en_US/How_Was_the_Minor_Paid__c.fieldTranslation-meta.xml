@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How was the Minor Employee Paid - by check, in cash, both cash and check, or other method? --></help>
+    <label><!-- How Was the Minor Paid? --></label>
+    <name>How_Was_the_Minor_Paid__c</name>
+</CustomFieldTranslation>

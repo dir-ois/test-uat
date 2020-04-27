@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Closed - Bankruptcy</masterLabel>
+        <translation><!-- Closed - Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Infeasible</masterLabel>
+        <translation><!-- Closed - Infeasible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Other</masterLabel>
+        <translation><!-- Closed - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Paid in Full (PIF)/Satisfied</masterLabel>
+        <translation><!-- Closed - Paid in Full (PIF)/Satisfied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Reassigned</masterLabel>
+        <translation><!-- Closed - Reassigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Satisfaction</masterLabel>
+        <translation><!-- Full Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open - Bankruptcy Stay</masterLabel>
+        <translation><!-- Open - Bankruptcy Stay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open - Payment Plan</masterLabel>
+        <translation><!-- Open - Payment Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Satisfaction</masterLabel>
+        <translation><!-- Partial Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending/Open</masterLabel>
+        <translation><!-- Pending/Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacated</masterLabel>
+        <translation><!-- Vacated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

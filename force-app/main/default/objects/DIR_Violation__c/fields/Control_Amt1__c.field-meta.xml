@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Control_Amt1__c</fullName>
+    <description>Control Count for Adjustment</description>
+    <externalId>false</externalId>
+    <label>Control_Amt1</label>
+    <summarizedField>Accounting_Data__c.Monetary_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Accounting_Data__c.Type_of_event__c</field>
+        <operation>notEqual</operation>
+        <value>New</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Accounting_Data__c.System_Defined__c</field>
+        <operation>equals</operation>
+        <value>&#39;A&#39;</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Accounting_Data__c.Case_Issue__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

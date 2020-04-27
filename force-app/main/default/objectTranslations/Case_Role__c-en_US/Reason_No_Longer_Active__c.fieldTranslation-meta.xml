@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason No Longer Active --></label>
+    <name>Reason_No_Longer_Active__c</name>
+</CustomFieldTranslation>

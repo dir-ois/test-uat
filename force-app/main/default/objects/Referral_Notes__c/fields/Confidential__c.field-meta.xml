@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confidential__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>No rules are currently driven by this field. Consider setting notes to private and adding a sharing rule to allow viewing of confidential records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box to indicate that the contents of this note are protected as confidential.</inlineHelpText>
+    <label>Confidential</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renew_Registration</fullName>
+    <availability>online</availability>
+    <description>Triggers renewal of this application by cloning the fields and child object data using the same method as the community renewal</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Renew Registration</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.open(&#39;/apex/RegistrationInternalRenew?RenewID={!License_Registration__c.Id}&#39;,&#39;_blank&#39;);</url>
+</WebLink>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Event Type --></label>
+    <name>Event_Type__c</name>
+    <picklistValues>
+        <masterLabel>Call</masterLabel>
+        <translation><!-- Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Review</masterLabel>
+        <translation><!-- Case Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashiering</masterLabel>
+        <translation><!-- Cashiering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow-Up</masterLabel>
+        <translation><!-- Follow-Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation><!-- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Person</masterLabel>
+        <translation><!-- In-Person --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI</masterLabel>
+        <translation><!-- RCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Text Message</masterLabel>
+        <translation><!-- Text Message --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

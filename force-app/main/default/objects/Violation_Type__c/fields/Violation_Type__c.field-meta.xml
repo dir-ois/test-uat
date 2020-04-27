@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type__c</fullName>
+    <description>Defines the form on which this violation should appear. Used within the violations vfp to group violations into an assessment. All violations created at the same time on a case with the same Citation Form are grouped into a single assessment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the citation form that this violation should appear on. Note that this is for grouping purposes and may not be an actual citation. For example, a NTD would be a citation form even though a penalty may not be levied.</inlineHelpText>
+    <label>Citation Form</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOFE 240A</fullName>
+                <default>false</default>
+                <label>BOFE 240A</label>
+            </value>
+            <value>
+                <fullName>BOFE 240B</fullName>
+                <default>false</default>
+                <label>BOFE 240B</label>
+            </value>
+            <value>
+                <fullName>BOFE 335</fullName>
+                <default>false</default>
+                <label>BOFE 335</label>
+            </value>
+            <value>
+                <fullName>BOFE 336</fullName>
+                <default>false</default>
+                <label>BOFE 336</label>
+            </value>
+            <value>
+                <fullName>BOFE 8</fullName>
+                <default>false</default>
+                <label>BOFE 8</label>
+            </value>
+            <value>
+                <fullName>BOFE 812</fullName>
+                <default>false</default>
+                <label>BOFE 812</label>
+            </value>
+            <value>
+                <fullName>BOFE 814</fullName>
+                <default>false</default>
+                <label>BOFE 814</label>
+            </value>
+            <value>
+                <fullName>BOFE 815</fullName>
+                <default>false</default>
+                <label>BOFE 815</label>
+            </value>
+            <value>
+                <fullName>BOFE 816</fullName>
+                <default>false</default>
+                <label>BOFE 816</label>
+            </value>
+            <value>
+                <fullName>JEU 238</fullName>
+                <default>false</default>
+                <label>JEU 238</label>
+            </value>
+            <value>
+                <fullName>JEU 238e</fullName>
+                <default>false</default>
+                <label>JEU 238e</label>
+            </value>
+            <value>
+                <fullName>LR 240A</fullName>
+                <default>false</default>
+                <label>LR 240A</label>
+            </value>
+            <value>
+                <fullName>Notice to Discontinue - DLSE 84</fullName>
+                <default>false</default>
+                <label>Notice to Discontinue - DLSE 84</label>
+            </value>
+            <value>
+                <fullName>PW 240A</fullName>
+                <default>false</default>
+                <label>PW 240A</label>
+            </value>
+            <value>
+                <fullName>PW 336</fullName>
+                <default>false</default>
+                <label>PW 336</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

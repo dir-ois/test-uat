@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authority_Designee_Start_Date__c</fullName>
+    <description>Start date when Authority Designee should be assigned to permission set</description>
+    <externalId>false</externalId>
+    <label>Authority Designee Start Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

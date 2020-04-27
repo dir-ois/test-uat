@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failure_To_Post__c</fullName>
+    <description>Suspected Violations of Employer - Failure to Post</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Full First Choice is Applicable Industrial Welfare Commission Order not posted.
+Full Last Choice is Rate of compensation not posted (for farmworkers only)</inlineHelpText>
+    <label>Failure To Post</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applicable Industrial Welfare Com.Order</fullName>
+                <default>false</default>
+                <label>Applicable Industrial Welfare Com.Order</label>
+            </value>
+            <value>
+                <fullName>Minimum Wage Order 2001 not posted</fullName>
+                <default>false</default>
+                <label>Minimum Wage Order 2001 not posted</label>
+            </value>
+            <value>
+                <fullName>Pay day notice not posted</fullName>
+                <default>false</default>
+                <label>Pay day notice not posted</label>
+            </value>
+            <value>
+                <fullName>Workers comp insurance notice not posted</fullName>
+                <default>false</default>
+                <label>Workers comp insurance notice not posted</label>
+            </value>
+            <value>
+                <fullName>Rate of compensation not posted (farms)</fullName>
+                <default>false</default>
+                <label>Rate of compensation not posted (farms)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

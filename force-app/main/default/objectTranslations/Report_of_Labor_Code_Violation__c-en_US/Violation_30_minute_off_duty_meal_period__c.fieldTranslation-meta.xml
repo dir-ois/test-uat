@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 30-minute off-duty meal period not provided by the end of the 5th hour of work --></help>
+    <label><!-- No 30-minute off-duty meal period --></label>
+    <name>Violation_30_minute_off_duty_meal_period__c</name>
+</CustomFieldTranslation>

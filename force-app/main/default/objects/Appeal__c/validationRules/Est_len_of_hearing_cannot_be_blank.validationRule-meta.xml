@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Est_len_of_hearing_cannot_be_blank</fullName>
+    <active>true</active>
+    <description>The estimated length of hearing field cannot be blank.</description>
+    <errorConditionFormula>ISBLANK(Estimated_Length_of_Hearing_In_Minutes__c) &amp;&amp;  (RecordType.DeveloperName  &lt;&gt; &#39;RCI&#39;)</errorConditionFormula>
+    <errorMessage>The estimated length of hearing in minutes field cannot be blank.</errorMessage>
+</ValidationRule>

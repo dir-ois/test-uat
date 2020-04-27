@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Sub_Category__c</fullName>
+    <description>Allows the user to select a sub-category for the reporting category</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the sub category for reporting categories that need to have a more granular reporting structure.</inlineHelpText>
+    <label>Reporting Sub-Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATTY FEES DUE DLSE</fullName>
+                <default>false</default>
+                <label>ATTY FEES DUE DLSE</label>
+            </value>
+            <value>
+                <fullName>ATTY FEES - GARMENT</fullName>
+                <default>false</default>
+                <label>ATTY FEES - GARMENT</label>
+            </value>
+            <value>
+                <fullName>COMMISSIONS - BLENDED</fullName>
+                <default>false</default>
+                <label>COMMISSIONS - BLENDED</label>
+            </value>
+            <value>
+                <fullName>COMMISSIONS - MIN WAGE</fullName>
+                <default>false</default>
+                <label>COMMISSIONS - MIN WAGE</label>
+            </value>
+            <value>
+                <fullName>COMMISSIONS - REG WAGE</fullName>
+                <default>false</default>
+                <label>COMMISSIONS - REG WAGE</label>
+            </value>
+            <value>
+                <fullName>LD - OT</fullName>
+                <default>false</default>
+                <label>LD - OT</label>
+            </value>
+            <value>
+                <fullName>LOCAL MIN WAGE</fullName>
+                <default>false</default>
+                <label>LOCAL MIN WAGE</label>
+            </value>
+            <value>
+                <fullName>PIECE RATE - BLENDED</fullName>
+                <default>false</default>
+                <label>PIECE RATE - BLENDED</label>
+            </value>
+            <value>
+                <fullName>PIECE RATE - MIN WAGE</fullName>
+                <default>false</default>
+                <label>PIECE RATE - MIN WAGE</label>
+            </value>
+            <value>
+                <fullName>PIECE RATE - REG WAGE</fullName>
+                <default>false</default>
+                <label>PIECE RATE - REG WAGE</label>
+            </value>
+            <value>
+                <fullName>SICK LEAVE - PENALTY</fullName>
+                <default>false</default>
+                <label>SICK LEAVE - PENALTY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

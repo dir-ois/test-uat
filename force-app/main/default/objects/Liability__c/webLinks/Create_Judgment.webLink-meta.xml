@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Judgment</fullName>
+    <availability>online</availability>
+    <description>Calls the Apex JudgmentCreateController and CreateJudgmentFromSettlement flow.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create Judgment</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/CreateJudgmentFromSettlement?vObjectType=Liability&amp;vCaseId=
+{!Liability__c.Case_ManagementId__c}&amp;varRecordId={!Liability__c.Id}&amp;varPenalties={!Liability__c.Total_Penalties_Assessed__c}&amp;varWages={!Liability__c.Total_Wages_Assessed__c}&amp;varInterest={!Liability__c.Total_Interest_Assessed__c}</url>
+</WebLink>

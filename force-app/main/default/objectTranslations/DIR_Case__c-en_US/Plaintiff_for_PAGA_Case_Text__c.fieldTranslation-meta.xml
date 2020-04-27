@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Hidden Field for text of Plaintiff Name. --></help>
+    <label><!-- Plaintiff for PAGA Case --></label>
+    <name>Plaintiff_for_PAGA_Case_Text__c</name>
+</CustomFieldTranslation>

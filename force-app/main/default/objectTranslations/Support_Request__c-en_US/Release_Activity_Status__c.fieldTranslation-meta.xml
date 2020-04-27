@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Release Activity Status --></label>
+    <name>Release_Activity_Status__c</name>
+    <picklistValues>
+        <masterLabel>Deployed</masterLabel>
+        <translation><!-- Deployed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A - Duplicate SR</masterLabel>
+        <translation><!-- N/A - Duplicate SR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ready to Deploy</masterLabel>
+        <translation><!-- Ready to Deploy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR Was Canceled</masterLabel>
+        <translation><!-- SR Was Canceled --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

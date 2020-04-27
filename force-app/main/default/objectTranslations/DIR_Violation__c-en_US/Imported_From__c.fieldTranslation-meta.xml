@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Imported From --></label>
+    <name>Imported_From__c</name>
+    <picklistValues>
+        <masterLabel>32-117</masterLabel>
+        <translation><!-- 32-117 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANA-WCA</masterLabel>
+        <translation><!-- ANA-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAK-WCA</masterLabel>
+        <translation><!-- BAK-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE -AR</masterLabel>
+        <translation><!-- BOFE -AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE AR</masterLabel>
+        <translation><!-- BOFE AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE AR IMPORT 2</masterLabel>
+        <translation><!-- BOFE AR IMPORT 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE FM Import 2</masterLabel>
+        <translation><!-- BOFE FM Import 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE-AR</masterLabel>
+        <translation><!-- BOFE-AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FM-TIPP</masterLabel>
+        <translation><!-- FM-TIPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE-WCA</masterLabel>
+        <translation><!-- FRE-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment</masterLabel>
+        <translation><!-- Garment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Import 2</masterLabel>
+        <translation><!-- Import 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAO-WCA</masterLabel>
+        <translation><!-- LAO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LBO-WCA</masterLabel>
+        <translation><!-- LBO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LBO_AR</masterLabel>
+        <translation><!-- LBO_AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OAK-WCA</masterLabel>
+        <translation><!-- OAK-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI-CMS</masterLabel>
+        <translation><!-- RCI-CMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RDG-WCA</masterLabel>
+        <translation><!-- RDG-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAC-WCA</masterLabel>
+        <translation><!-- SAC-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBA-WCA</masterLabel>
+        <translation><!-- SBA-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBR-WCA</masterLabel>
+        <translation><!-- SBR-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDO-WCA</masterLabel>
+        <translation><!-- SDO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SFO-WCA</masterLabel>
+        <translation><!-- SFO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SJO-WCA</masterLabel>
+        <translation><!-- SJO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SRO-WCA</masterLabel>
+        <translation><!-- SRO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STK-WCA</masterLabel>
+        <translation><!-- STK-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIPP-FM</masterLabel>
+        <translation><!-- TIPP-FM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VNO-WCA</masterLabel>
+        <translation><!-- VNO-WCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Claim</masterLabel>
+        <translation><!-- Wage Claim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

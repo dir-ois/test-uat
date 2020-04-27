@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Produce_ODA</fullName>
+    <availability>online</availability>
+    <description>Launches vfp to select the meeting participant to whom an ODA is to be issued</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Produce ODA</masterLabel>
+    <openType>sidebar</openType>
+    <page>CreateODA</page>
+    <protected>false</protected>
+</WebLink>

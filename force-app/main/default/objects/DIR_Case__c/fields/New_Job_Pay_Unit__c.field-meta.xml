@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Job_Pay_Unit__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>(for example, $10/hour)</inlineHelpText>
+    <label>New Job Pay Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hour</fullName>
+                <default>false</default>
+                <label>Hour</label>
+            </value>
+            <value>
+                <fullName>Day</fullName>
+                <default>false</default>
+                <label>Day</label>
+            </value>
+            <value>
+                <fullName>Week</fullName>
+                <default>false</default>
+                <label>Week</label>
+            </value>
+            <value>
+                <fullName>Month</fullName>
+                <default>false</default>
+                <label>Month</label>
+            </value>
+            <value>
+                <fullName>Bi-weekly</fullName>
+                <default>false</default>
+                <label>Bi-weekly</label>
+            </value>
+            <value>
+                <fullName>Semi-monthly</fullName>
+                <default>false</default>
+                <label>Semi-monthly</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Commission</fullName>
+                <default>false</default>
+                <label>Commission</label>
+            </value>
+            <value>
+                <fullName>Piece rate</fullName>
+                <default>false</default>
+                <label>Piece rate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

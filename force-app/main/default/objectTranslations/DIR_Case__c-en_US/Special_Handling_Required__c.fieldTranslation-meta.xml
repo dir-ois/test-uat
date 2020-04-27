@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Special Handling Required --></label>
+    <name>Special_Handling_Required__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_68_Paragraph__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 68 Paragraph</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1. No Service-Contact Deputy</fullName>
+                <default>false</default>
+                <label>1. No Service-Contact Deputy</label>
+            </value>
+            <value>
+                <fullName>2. No Service-Hearing Cancelled</fullName>
+                <default>false</default>
+                <label>2. No Service-Hearing Cancelled</label>
+            </value>
+            <value>
+                <fullName>3. No Service-Advise Personal Service Option</fullName>
+                <default>false</default>
+                <label>3. No Service-Advise Personal Service Option</label>
+            </value>
+            <value>
+                <fullName>4. No Service w/ Proof of Personal Service</fullName>
+                <default>false</default>
+                <label>4. No Service w/ Proof of Personal Service</label>
+            </value>
+            <value>
+                <fullName>5. Plaintiff Advise Progress of Personal Service</fullName>
+                <default>false</default>
+                <label>5. Plaintiff Advise Progress of Personal Service</label>
+            </value>
+            <value>
+                <fullName>6. Proof of Service-Plaintiff</fullName>
+                <default>false</default>
+                <label>6. Proof of Service-Plaintiff</label>
+            </value>
+            <value>
+                <fullName>7. Copy of Answer</fullName>
+                <default>false</default>
+                <label>7. Copy of Answer</label>
+            </value>
+            <value>
+                <fullName>8. Review Documents Submitted at Hearing</fullName>
+                <default>false</default>
+                <label>8. Review Documents Submitted at Hearing</label>
+            </value>
+            <value>
+                <fullName>9. ODA Personal Service Needed</fullName>
+                <default>false</default>
+                <label>9. ODA Personal Service Needed</label>
+            </value>
+            <value>
+                <fullName>10. ODA Progress of Personal Service</fullName>
+                <default>false</default>
+                <label>10. ODA Progress of Personal Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

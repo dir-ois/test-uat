@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 55 Pronoun --></label>
+    <name>WCA_55_Pronoun__c</name>
+    <picklistValues>
+        <masterLabel>He is</masterLabel>
+        <translation><!-- He is --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>He was</masterLabel>
+        <translation><!-- He was --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>She is</masterLabel>
+        <translation><!-- She is --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>She was</masterLabel>
+        <translation><!-- She was --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

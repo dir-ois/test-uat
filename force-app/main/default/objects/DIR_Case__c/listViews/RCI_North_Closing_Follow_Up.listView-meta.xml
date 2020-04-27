@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_North_Closing_Follow_Up</fullName>
+    <columns>File_Date_Time__c</columns>
+    <columns>NAME</columns>
+    <columns>Language2__c</columns>
+    <columns>Case_Type__c</columns>
+    <columns>Claimant__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Last_Case_Activity__c</columns>
+    <columns>DateofLastCaseActivity__c</columns>
+    <columns>Next_Action__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pre-Investigation Follow-up 2</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.RCI</value>
+    </filters>
+    <filters>
+        <field>Case_Type__c</field>
+        <operation>notEqual</operation>
+        <value>OSHA</value>
+    </filters>
+    <filters>
+        <field>Office__c</field>
+        <operation>notEqual</operation>
+        <value>RCI South</value>
+    </filters>
+    <filters>
+        <field>Assignment_Status__c</field>
+        <operation>equals</operation>
+        <value>Accept &amp; Assign INV</value>
+    </filters>
+    <label>RCI North Closing Follow-Up</label>
+</ListView>

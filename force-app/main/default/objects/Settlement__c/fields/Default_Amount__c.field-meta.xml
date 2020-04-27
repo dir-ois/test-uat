@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Amount__c</fullName>
+    <description>Calculated amount updated by wfr when the amounts, date, and interest are populated</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This amount is calculated using the amounts that accrue interest, those that do not, and the interest due on the settlement.</inlineHelpText>
+    <label>Default Amount</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>HR_EMAIL_ALERT_send_email_to_supervisor_on_probationary_due_dates_report</fullName>
+        <description>HR EMAIL ALERT send email to supervisor on probationary due dates report</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Division_Liaison_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Supervisor_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>humanresources@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/HR_Send_Email_on_New_Prob_Due_Date</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Send_Past_Due_Prob_Reminder_to_Liaison_and_Supv</fullName>
+        <description>HR Send PAST DUE Prob Reminder notification to Liaison and Supv</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Division_Liaison_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Supervisor_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <recipient>ble@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>humanresources@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/HR_Past_Due_Prob_Reminder</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>HR_Update_Employee_Name_on_Prob_Object</fullName>
+        <description>To be updated with employee contact name using wfr for sending email to supervisor on new prob due date report.</description>
+        <field>Employee_Name__c</field>
+        <formula>Appointment__r.Employee_Contact__r.FirstName &amp; &quot; &quot; &amp;  Appointment__r.Employee_Contact__r.LastName</formula>
+        <name>HR Update Employee Name on Prob Object</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Update_Liaison_Email_on_Prob_Object</fullName>
+        <description>for due dates notification</description>
+        <field>Division_Liaison_Email__c</field>
+        <formula>Appointment__r.Employee_Contact__r.HR_Probation_Liaison__r.Liaison_Name__r.Email</formula>
+        <name>HR Update Liaison Email on Prob Object</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Update_Position_Number_on_Prob_Object</fullName>
+        <description>To be updated with position number using wfr for sending email to supervisor on new prob due date report.</description>
+        <field>Position_Number__c</field>
+        <formula>Appointment__r.Position__r.Name</formula>
+        <name>HR Update Position Number on Prob Object</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Update_Sup_Email_on_Prob_Object</fullName>
+        <field>Supervisor_Email__c</field>
+        <formula>Appointment__r.Supervisor_Contact__r.Email</formula>
+        <name>HR Update Sup Email on Prob Object</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_update_past_due_date</fullName>
+        <field>First_Reminder_Date__c</field>
+        <formula>IF(
+DAY( TODAY() ) = 1,
+TODAY(),
+IF(
+MONTH(TODAY()) = 12,
+DATE( YEAR(TODAY())+1, 1, 1 ),
+DATE( YEAR(TODAY()), MONTH (TODAY()) + 1, 1 )
+)
+)</formula>
+        <name>HR update past due date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>HR Prob Due Date Update</fullName>
+        <actions>
+            <name>HR_update_past_due_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update HR Prob Due Date field when Past Due checkbox is checked and calculate the 1st date of the following month to send out monthly reminder.</description>
+        <formula>ISCHANGED( past_due_probe__c ) &amp;&amp; past_due_probe__c = true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR Update Supv Email Employee Name and Pos Num on Prob object</fullName>
+        <actions>
+            <name>HR_Update_Employee_Name_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>HR_Update_Position_Number_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>HR_Update_Sup_Email_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update supervisor email to send probationary due date email.</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR Update Supv and Liaison Email Employee Name and Pos Num on Prob object</fullName>
+        <actions>
+            <name>HR_Update_Employee_Name_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>HR_Update_Liaison_Email_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>HR_Update_Position_Number_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>HR_Update_Sup_Email_on_Prob_Object</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update supervisor email to send probationary due date email.</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR WFR Send Email on New Prob Due Date</fullName>
+        <actions>
+            <name>HR_EMAIL_ALERT_send_email_to_supervisor_on_probationary_due_dates_report</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>New probationary report due dates emailed to supervisor</description>
+        <formula>( ISNEW() &amp;&amp; NOT(ISNULL( X1st_Probe_due_date__c)) &amp;&amp; NOT(ISNULL( X2nd_Probe_Due_Date__c)) &amp;&amp; NOT(ISNULL( X3rd_Probe_Due_Date__c )) ) || ( ( ISCHANGED(X1st_Probe_due_date__c) || ISCHANGED( X2nd_Probe_Due_Date__c) || ISCHANGED( X3rd_Probe_Due_Date__c) ) &amp;&amp; ( NOT(ISNULL( X1st_Probe_due_date__c)) &amp;&amp; NOT(ISNULL( X2nd_Probe_Due_Date__c)) &amp;&amp; NOT(ISNULL( X3rd_Probe_Due_Date__c )) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

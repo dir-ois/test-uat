@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lookup the Meeting/Hearing that the violation was heard at. This will drive the calculation of interest where applicable. --></help>
+    <label><!-- Decided at (Meeting): --></label>
+    <name>Decided_at_Meeting__c</name>
+    <relationshipLabel><!-- Case Issues --></relationshipLabel>
+</CustomFieldTranslation>

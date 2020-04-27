@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required when Claim of Exemption Filed or Third Party Claim Filed is TRUE, on Record Types SB588 or Sheriff&apos;s Levy. --></help>
+    <label><!-- Claim of Exemption/Third Party Claim --></label>
+    <name>Claim_of_Exemption_Third_Party_Claim__c</name>
+    <relationshipLabel><!-- Levies (Claim of Exemption/Third Party Claim) --></relationshipLabel>
+</CustomFieldTranslation>

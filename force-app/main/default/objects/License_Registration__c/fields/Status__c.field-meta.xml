@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incomplete</fullName>
+                <default>true</default>
+                <label>Incomplete</label>
+            </value>
+            <value>
+                <fullName>Fee Calculation Ready</fullName>
+                <default>false</default>
+                <label>Fee Calculation Ready</label>
+            </value>
+            <value>
+                <fullName>Pending Payment</fullName>
+                <default>false</default>
+                <label>Pending Payment</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>In Review</fullName>
+                <default>false</default>
+                <label>In Review</label>
+            </value>
+            <value>
+                <fullName>Resubmitted</fullName>
+                <default>false</default>
+                <label>Resubmitted</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Pending / Defect</fullName>
+                <default>false</default>
+                <label>Pending / Defect</label>
+            </value>
+            <value>
+                <fullName>Referred for Investigation</fullName>
+                <default>false</default>
+                <label>Referred for Investigation</label>
+            </value>
+            <value>
+                <fullName>Referred to Legal</fullName>
+                <default>false</default>
+                <label>Referred to Legal</label>
+            </value>
+            <value>
+                <fullName>In Violation</fullName>
+                <default>false</default>
+                <label>In Violation</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Closed_Suspended</fullName>
+                <default>false</default>
+                <label>Closed - Suspended</label>
+            </value>
+            <value>
+                <fullName>Closed - Revoked</fullName>
+                <default>false</default>
+                <label>Closed - Revoked</label>
+            </value>
+            <value>
+                <fullName>Closed - Denied</fullName>
+                <default>false</default>
+                <label>Closed - Denied</label>
+            </value>
+            <value>
+                <fullName>Closed - Withdrawn</fullName>
+                <default>false</default>
+                <label>Closed - Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Closed - Inactive</fullName>
+                <default>false</default>
+                <label>Closed - Inactive</label>
+            </value>
+            <value>
+                <fullName>Closed - Rejected</fullName>
+                <default>false</default>
+                <label>Closed - Rejected</label>
+            </value>
+            <value>
+                <fullName>Closed - Renewed</fullName>
+                <default>false</default>
+                <label>Renewed</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Ineligible</fullName>
+                <default>false</default>
+                <label>Ineligible</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <label>Disqualified</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>No Payment</fullName>
+                <default>false</default>
+                <label>No Payment</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Pending Recertification</fullName>
+                <default>false</default>
+                <label>Pending Recertification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pay Discrimination on basis of sex (Labor Code § 1197.5) --></help>
+    <label><!-- Pay Discrim on basis of sex (LC1197.5) --></label>
+    <name>PAGAPay_Discrim_on_basis_of_sex_LC1097_5__c</name>
+</CustomFieldTranslation>

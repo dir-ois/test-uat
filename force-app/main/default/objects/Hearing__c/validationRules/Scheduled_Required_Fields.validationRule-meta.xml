@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduled_Required_Fields</fullName>
+    <active>true</active>
+    <description>Prevents the saving of a meeting as scheduled or rescheduled if the proper criteria are not met.</description>
+    <errorConditionFormula>AND(
+OR(ISBLANK(Meeting_Scheduled_For__c), ISBLANK(Meeting_Start_Date_Time__c),
+AND(ISBLANK( Estimated_Duration__c ), ISBLANK(Meeting_End_Date_Time__c ) )
+),
+OR ( ISPICKVAL(Status__c, &#39;Scheduled&#39;), ISPICKVAL(Status__c, &#39;Rescheduled&#39;) )
+)</errorConditionFormula>
+    <errorDisplayField>Appeal__c</errorDisplayField>
+    <errorMessage>Meeting Scheduled For,Meeting Start Date/Time and either an Estimated Duration or End Date and Time are required when Status = Scheduled or Rescheduled</errorMessage>
+</ValidationRule>

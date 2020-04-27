@@ -1,0 +1,142 @@
+<apex:page controller="RegistrationEWPPDFController" renderAs="{!renderingService}" standardStylesheets="false" applyBodyTag="false" docType="html-5.0">
+    <head>
+        <style type="text/css" media="print">
+            <apex:outputpanel layout="none" rendered="true">
+                .watermark {
+                background-repeat: repeat;
+                background-image: url("{!URLFOR($Resource.EWP_School_Watermark)}");
+                background-position: top;
+                }
+            </apex:outputpanel>
+        </style>
+    </head>
+    
+    <body class="watermark" style="font-size:11pt;">
+        <br/>
+        <br/>  
+        <br/>
+        <br/>
+        <br/>  
+        <br/>
+        <br/>
+        <apex:outputPanel style="text-align:center;" layout="block">APPLICATION FOR PERMISSION TO WORK</apex:outputPanel>
+        <apex:outputPanel style="text-align:center;" layout="block">IN THE ENTERTAINMENT INDUSTRY</apex:outputPanel>
+        <apex:outputPanel style="text-align:center;" layout="block">SCHOOL RECORD</apex:outputPanel>
+        
+        <apex:pageBlock title="">
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column style="border:1px solid black;font-weight:bold" >
+                    <apex:outputText value="{!pi.minorsFullName}">Name of Minor:&nbsp;</apex:outputText>
+                </apex:column>
+                <apex:column style="border:1px solid black;font-weight:bold" >
+                    <apex:outputText value="{!pi.minorsStageName}">Stage Name:&nbsp;</apex:outputText>
+                </apex:column>
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column headerValue="Address" style="border:1px solid black" value="{!pi.minorsAddress}"></apex:column>
+                <apex:column headerValue="City" style="border:1px solid black" value="{!pi.minorsCity}"></apex:column>
+                <apex:column headerValue="State" style="border:1px solid black" value="{!pi.minorsState}"></apex:column>
+                <apex:column headerValue="Zip" style="border:1px solid black" value="{!pi.minorsZip}"></apex:column>
+                <apex:column headerValue="Home Phone Number" style="border:1px solid black" value="{!pi.minorsHomePhone}"></apex:column>   
+            </apex:dataTable>
+            
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black;font-weight:bold" value="{!permitInfo}" var="pi">
+                <apex:column style="border:1px solid black" >
+                    <apex:outputText value="{!pi.minorsSchool}">School:&nbsp;</apex:outputText>
+                </apex:column>
+                <apex:column style="border:1px solid black" >
+                    <apex:outputText value="{!pi.minorsGrade}">Grade:&nbsp;</apex:outputText>
+                </apex:column>
+            </apex:dataTable>
+            
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column headerValue="Date of Birth" style="border:1px solid black" >
+                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!pi.minorsBirthDate}" /> 
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Height" style="border:1px solid black" value="{!pi.minorsHeight}"></apex:column>
+                <apex:column headerValue="Weight" style="border:1px solid black" value="{!pi.minorsWeight}"></apex:column>
+                <apex:column headerValue="Hair Color" style="border:1px solid black" value="{!pi.minorsHairColor}"></apex:column>
+                <apex:column headerValue="Eye Color" style="border:1px solid black" value="{!pi.minorsEyeColor}"></apex:column>
+                <apex:column headerValue="Gender" style="border:1px solid black" value="{!pi.minorsGender}"></apex:column>
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column >
+                    <apex:outputText style="font-weight:bold;" 
+                                     value="STATEMENTOF PARENT OR GUARDIAN: It is my desire that a 6 Month Entertainment Work Permit be issued to the above  
+                                            named child. I will read the rules governing such employment and will cooperate to the best of my ability in
+                                            safeguarding his or her educational, moral and physical interest. I hereby certify, under penalty of perjury, that the
+                                            foregoing statements are true and correct and that the information provided regarding the minor is correct."/>
+                </apex:column>
+            </apex:dataTable>
+            
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column headerValue="Name of Parent or Guardian" style="border:1px solid black" value="{!pi.parentsFullName}"></apex:column>
+                <apex:column headerValue="Signature" width="33%" style="border:1px solid black"><br/><br/></apex:column>
+                <apex:column headerValue="Daytime Phone Number" style="border:1px solid black"></apex:column>
+            </apex:dataTable>
+        </apex:pageBlock>
+        <br/>
+
+        <apex:outputPanel style="font-weight:bold;text-align:center;" layout="block">** Please CHECK the best description of the minor for each **</apex:outputPanel>
+        <apex:pageBlock title="">
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column style="border:1px solid black;font-weight:bold" >
+                    <apex:outputText value="{!pi.minorsFullName}">Name of Minor:&nbsp;</apex:outputText>
+                </apex:column>
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column width="220px" headerValue="Attendance" style="border:1px solid black" >
+                    <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>SATISFACTORY
+                    <br/>
+                    <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>UNSATISFACTORY
+                </apex:column>
+                <apex:column width="220px" headerValue="Academics (Grades)" style="border:1px solid black" >
+                    <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>SATISFACTORY
+                    <br/>
+                    <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>UNSATISFACTORY
+                </apex:column>
+                <apex:column headerValue="Health" style="border:1px solid black" >
+                    <div>Please indicate if the minor requires medical approval to obtain a permit</div>
+                    <apex:outputText ><apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>REQUIRED&nbsp;<apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>NOT NEEDED</apex:outputText>
+                </apex:column>
+            </apex:dataTable>
+        </apex:pageBlock>
+        
+
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black;" value="{!permitInfo}" var="pi">
+                <apex:column width="40%" style="border:1px solid black" >
+                    <apex:outputText value="Certification:"/><br/>
+                    <apex:outputText value="I certify that the above-named minor meets the school district's requireements with respect to age, school record and health"/><br/>
+                    <apex:outputText ><apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>AGREE</apex:outputText><br/>
+                    <apex:outputText ><apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/>UNACCEPTABLE</apex:outputText>
+                    <hr/>
+                    Signature and Title of Authorized<br/> School Official
+                    <br/><br/><br/>
+                    <hr/>
+                    Date Signed
+                    <hr/>
+                    
+                    
+                    School Address
+                    <br/><br/>
+                                        <hr/>
+                    Daytime Phone
+                    <br/>
+                </apex:column>
+                <apex:column style="font-weight:bold;border:1px solid black" >
+                    <br/><br/><br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <apex:outputText style="font-weight:bold;text-align:center" value="[School Seal/Stamp or Address Stamp](REQUIRED)"/>
+                     
+                </apex:column>
+            </apex:dataTable>
+        
+        
+        <apex:panelGrid style="font-weight:bold;text-align:center;" columns="1" width="100%" cellpadding="0" cellspacing="0" rules="all" columnClasses="colClass">
+            <apex:outputText style="text-align:center;" value="** All Areas Must state SATISFACTORY for issuance of permit **"/>
+            <apex:outputText style="text-align:center;" value="** No Alterations **"/>
+        </apex:panelGrid>             
+    </body>
+    
+</apex:page>

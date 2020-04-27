@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Independent Contractor status is claimed, indicate the outcome of the determination here. --></help>
+    <label><!-- IC Determination --></label>
+    <name>IC_Determination__c</name>
+    <picklistValues>
+        <masterLabel>Employee Status Established</masterLabel>
+        <translation><!-- Employee Status Established --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC Established</masterLabel>
+        <translation><!-- IC Established --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - No IC Determination Made</masterLabel>
+        <translation><!-- Settled - No IC Determination Made --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_button_text_for_complex</fullName>
+    <active>true</active>
+    <description>requires the user to enter the button text field for complex questions so that the button can be created properly.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &#39;Complex&#39; &amp;&amp; ISBLANK ( Button_Text__c  )</errorConditionFormula>
+    <errorMessage>Please enter button text</errorMessage>
+</ValidationRule>

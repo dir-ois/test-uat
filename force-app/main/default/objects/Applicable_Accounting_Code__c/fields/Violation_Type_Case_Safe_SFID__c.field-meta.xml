@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type_Case_Safe_SFID__c</fullName>
+    <description>18 character case safe SFID of the parent Violation Type</description>
+    <externalId>false</externalId>
+    <formula>Violation_Type__r.VT_CaseSafeID__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>18 character case safe SFID of the parent Violation Type</inlineHelpText>
+    <label>Violation Type Case Safe SFID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Audit</masterLabel>
+        <translation><!-- Audit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External</masterLabel>
+        <translation><!-- External --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intake</masterLabel>
+        <translation><!-- Intake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigation</masterLabel>
+        <translation><!-- Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L&amp;R/RCI/CIU</masterLabel>
+        <translation><!-- L&amp;R/RCI/CIU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liability</masterLabel>
+        <translation><!-- Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTA</masterLabel>
+        <translation><!-- OTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Submission</masterLabel>
+        <translation><!-- PAGA Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment</masterLabel>
+        <translation><!-- Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photos</masterLabel>
+        <translation><!-- Photos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena</masterLabel>
+        <translation><!-- Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

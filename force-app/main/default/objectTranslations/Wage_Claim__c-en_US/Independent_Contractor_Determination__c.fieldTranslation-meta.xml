@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Independent Contractor Determination --></label>
+    <name>Independent_Contractor_Determination__c</name>
+    <picklistValues>
+        <masterLabel>Claim Closed - No determination made</masterLabel>
+        <translation><!-- Claim Closed - No determination made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC established - dismissed</masterLabel>
+        <translation><!-- IC established - dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to hearing for IC determination</masterLabel>
+        <translation><!-- Referred to hearing for IC determination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - Employee status established</masterLabel>
+        <translation><!-- Settled - Employee status established --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - No IC determination made</masterLabel>
+        <translation><!-- Settled - No IC determination made --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WCA</fullName>
+                <default>false</default>
+                <label>WCA</label>
+            </value>
+            <value>
+                <fullName>JEU</fullName>
+                <default>false</default>
+                <label>JEU</label>
+            </value>
+            <value>
+                <fullName>PW</fullName>
+                <default>false</default>
+                <label>PW</label>
+            </value>
+            <value>
+                <fullName>CCU 32</fullName>
+                <default>false</default>
+                <label>CCU 32</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

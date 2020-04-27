@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Transmittal_Preview</links>
+    <links>Transmittal_Report</links>
+    <links>Transmittal_Exceptions</links>
+    <links>Transmittal_Reconciliation</links>
+    <links>Transmittal_Run_Batch</links>
+    <links>Transmittal_Generate_AR</links>
+    <links>Create_UWF</links>
+    <links>Generate_Calendar</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

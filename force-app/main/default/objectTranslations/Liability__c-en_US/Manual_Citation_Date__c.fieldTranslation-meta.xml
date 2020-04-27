@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If a citation is written from a citation book and later data entered into the system, then this is the date that the manual citation was issued. --></help>
+    <label><!-- Manual Citation Date --></label>
+    <name>Manual_Citation_Date__c</name>
+</CustomFieldTranslation>

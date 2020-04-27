@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field will be hidden from end users. It will be used to &quot;lock&quot; the Priority Level from future changes caused by new RLCVs since a Deputy Overrode the priority previously. Deputies can still make manual overrides if this is true. --></help>
+    <label><!-- Lock Priority from Automatic Updates --></label>
+    <name>Lock_Priority_from_Automatic_Updates__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who pays Employees? Full Name and Job Title/Positioin --></help>
+    <label><!-- Name and Job Title of Who Pays Employees --></label>
+    <name>Name_and_Job_Title_of_Who_Pays_Employees__c</name>
+</CustomFieldTranslation>

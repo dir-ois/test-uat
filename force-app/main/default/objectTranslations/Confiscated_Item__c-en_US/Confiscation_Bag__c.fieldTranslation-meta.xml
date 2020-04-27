@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Confiscation Bag --></label>
+    <name>Confiscation_Bag__c</name>
+    <relationshipLabel><!-- Confiscated Items --></relationshipLabel>
+</CustomFieldTranslation>

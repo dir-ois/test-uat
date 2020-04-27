@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Prior Contractor Registration --></label>
+    <name>Prior_Contractor_Registration__c</name>
+    <picklistValues>
+        <masterLabel>No, this is my first registration</masterLabel>
+        <translation><!-- No, this is my first registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, I have an existing registration</masterLabel>
+        <translation><!-- Yes, I have an existing registration --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

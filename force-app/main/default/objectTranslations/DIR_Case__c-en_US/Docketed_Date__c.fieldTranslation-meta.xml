@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date complaint is accepted for investigation --></help>
+    <label><!-- Docketed Date --></label>
+    <name>Docketed_Date__c</name>
+</CustomFieldTranslation>

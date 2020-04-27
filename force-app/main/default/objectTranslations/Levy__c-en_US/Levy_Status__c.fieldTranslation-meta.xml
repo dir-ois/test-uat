@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Levy Status --></label>
+    <name>Levy_Status__c</name>
+    <picklistValues>
+        <masterLabel>Draft/pending review</masterLabel>
+        <translation><!-- Draft/pending review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expired</masterLabel>
+        <translation><!-- Expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finalized</masterLabel>
+        <translation><!-- Finalized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On hold - other</masterLabel>
+        <translation><!-- On hold - other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On hold-bankruptcy</masterLabel>
+        <translation><!-- On hold-bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packaged documents ready</masterLabel>
+        <translation><!-- Packaged documents ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending review</masterLabel>
+        <translation><!-- Pending review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released</masterLabel>
+        <translation><!-- Released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reviewed</masterLabel>
+        <translation><!-- Reviewed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent to levying officer</masterLabel>
+        <translation><!-- Sent to levying officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Served</masterLabel>
+        <translation><!-- Served --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Served by levying officer</masterLabel>
+        <translation><!-- Served by levying officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn (cancelled/not served)</masterLabel>
+        <translation><!-- Withdrawn (cancelled/not served) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn/released</masterLabel>
+        <translation><!-- Withdrawn/released --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

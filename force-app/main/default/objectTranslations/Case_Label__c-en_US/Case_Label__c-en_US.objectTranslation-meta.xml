@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Label Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Label Roles</value>
+    </caseValues>
+    <layouts>
+        <layout>Case Label Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description/Notes --></label>
+            <section>Description/Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Intake Form Information --></label>
+            <section>Intake Form Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If Status = Active, the Inactive Reason field must be blank. --></errorMessage>
+        <name>Inactive_Reason_Status_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Status = Inactive, you must enter the reason into the Inactive Reason field. --></errorMessage>
+        <name>Inactive_Reason_Status_Inactive</name>
+    </validationRules>
+</CustomObjectTranslation>

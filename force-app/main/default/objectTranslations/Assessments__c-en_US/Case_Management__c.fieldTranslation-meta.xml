@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The case is a parent of the assessment. This field specifies the case for which the assessment is a child. --></help>
+    <label><!-- Case Management --></label>
+    <name>Case_Management__c</name>
+    <relationshipLabel><!-- Assessments --></relationshipLabel>
+</CustomFieldTranslation>

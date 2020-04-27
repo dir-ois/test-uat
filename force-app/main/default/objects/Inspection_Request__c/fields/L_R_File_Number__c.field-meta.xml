@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L_R_File_Number__c</fullName>
+    <description>Used to specify the License and Registration HQ Internal File Number</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to specify the License and Registration HQ Internal File Number</inlineHelpText>
+    <label>L&amp;R File Number</label>
+    <length>255</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

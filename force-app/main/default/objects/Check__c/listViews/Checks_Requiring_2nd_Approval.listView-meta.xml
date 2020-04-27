@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checks_Requiring_2nd_Approval</fullName>
+    <columns>Office_Account__c</columns>
+    <columns>NAME</columns>
+    <columns>Check_Number__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Payee_Name__c</columns>
+    <columns>Approved_By__c</columns>
+    <columns>Approved_Date__c</columns>
+    <columns>Check_Batch__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>15000</value>
+    </filters>
+    <filters>
+        <field>Secondary_Approver__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <label>Checks Requiring 2nd Approval</label>
+</ListView>

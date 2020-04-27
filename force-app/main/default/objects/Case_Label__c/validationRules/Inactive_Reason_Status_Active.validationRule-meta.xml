@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Reason_Status_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ TEXT(Status__c) = &#39;Active&#39;,
+ LEN( Inactive_Reason__c ) &gt; 0
+)</errorConditionFormula>
+    <errorMessage>If Status = Active, the Inactive Reason field must be blank.</errorMessage>
+</ValidationRule>

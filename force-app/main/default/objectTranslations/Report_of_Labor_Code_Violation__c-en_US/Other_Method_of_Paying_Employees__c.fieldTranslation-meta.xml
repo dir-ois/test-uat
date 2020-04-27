@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Other Method of Paying Employees in Addition to picklist options. --></help>
+    <label><!-- Other Method of Paying Employees --></label>
+    <name>Other_Method_of_Paying_Employees__c</name>
+</CustomFieldTranslation>

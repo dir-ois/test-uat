@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What Languages are Spoken by Employees? --></label>
+    <name>What_Languages_are_Spoken_by_Employees__c</name>
+    <picklistValues>
+        <masterLabel>Cambodian</masterLabel>
+        <translation><!-- Cambodian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cantonese</masterLabel>
+        <translation><!-- Cantonese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation><!-- English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hindi</masterLabel>
+        <translation><!-- Hindi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hmong</masterLabel>
+        <translation><!-- Hmong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Korean</masterLabel>
+        <translation><!-- Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mandarin</masterLabel>
+        <translation><!-- Mandarin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mixtec</masterLabel>
+        <translation><!-- Mixtec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Punjabi</masterLabel>
+        <translation><!-- Punjabi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russian</masterLabel>
+        <translation><!-- Russian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spanish</masterLabel>
+        <translation><!-- Spanish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tagalog</masterLabel>
+        <translation><!-- Tagalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thai</masterLabel>
+        <translation><!-- Thai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trique</masterLabel>
+        <translation><!-- Trique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vietnamese</masterLabel>
+        <translation><!-- Vietnamese --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

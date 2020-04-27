@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Decision_Due_Date_for_PAGA</fullName>
+    <active>true</active>
+    <description>Mark Janatpour required the PAGA Decision Due Date to be provided when the Case Source = LC 2699.</description>
+    <errorConditionFormula>IF(ISBLANK(  PAGA_Investigation_Due_Date__c  )&amp;&amp;ISPICKVAL( Case_Source__c , &quot;LC 2699&quot;),TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>PAGA_Investigation_Due_Date__c</errorDisplayField>
+    <errorMessage>If Case Source is LC 2699 (PAGA) then the PAGA Decision Due Date is required.</errorMessage>
+</ValidationRule>

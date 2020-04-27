@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the developer name of the record type for the registration you want to map --></help>
+    <label><!-- Record Type Developer Name --></label>
+    <name>Record_Type_Developer_Name__c</name>
+</CustomFieldTranslation>

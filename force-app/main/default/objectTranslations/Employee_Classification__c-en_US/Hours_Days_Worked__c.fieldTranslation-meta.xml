@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the Hours and Days worked. For example 8:00am - 5:00pm Monday-Friday --></help>
+    <label><!-- Hours &amp; Days Worked --></label>
+    <name>Hours_Days_Worked__c</name>
+</CustomFieldTranslation>

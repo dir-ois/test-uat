@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field check whether a position status is &quot;Vacant&quot;. If it is then output the word &quot;VACANT&quot;, if not get the first and last name of the employee who filled the position. --></help>
+    <label><!-- Employee Name or Vacant --></label>
+    <name>Employee_Name_or_Vacant__c</name>
+</CustomFieldTranslation>

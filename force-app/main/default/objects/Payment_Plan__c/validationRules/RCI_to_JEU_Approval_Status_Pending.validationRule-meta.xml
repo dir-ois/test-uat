@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_to_JEU_Approval_Status_Pending</fullName>
+    <active>false</active>
+    <errorConditionFormula>(Case__r.RecordType.Name=&quot;RCI&quot;) &amp;&amp;
+ISPICKVAL(Approval_Status__c,&quot;Pending&quot;) &amp;&amp;
+NOT($UserRole.Name=&quot;System Administrator&quot;)</errorConditionFormula>
+    <errorMessage>You may not edit the record while the Payment Plan is Pending Approval.</errorMessage>
+</ValidationRule>

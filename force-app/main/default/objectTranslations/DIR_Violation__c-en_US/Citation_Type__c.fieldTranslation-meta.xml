@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Citation Type --></label>
+    <name>Citation_Type__c</name>
+    <picklistValues>
+        <masterLabel>Car Wash Registration</masterLabel>
+        <translation><!-- Car Wash Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Labor</masterLabel>
+        <translation><!-- Child Labor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deduction Statement</masterLabel>
+        <translation><!-- Deduction Statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment Records Keeping</masterLabel>
+        <translation><!-- Garment Records Keeping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment Registration</masterLabel>
+        <translation><!-- Garment Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lactation Accommodation</masterLabel>
+        <translation><!-- Lactation Accommodation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meal Period Premium</masterLabel>
+        <translation><!-- Meal Period Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage</masterLabel>
+        <translation><!-- Minimum Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misclassification</masterLabel>
+        <translation><!-- Misclassification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overtime</masterLabel>
+        <translation><!-- Overtime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting Time or Pay</masterLabel>
+        <translation><!-- Reporting Time or Pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rest Period Premium</masterLabel>
+        <translation><!-- Rest Period Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Split Shift Premium</masterLabel>
+        <translation><!-- Split Shift Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlicensed Contractor</masterLabel>
+        <translation><!-- Unlicensed Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlicensed FLC</masterLabel>
+        <translation><!-- Unlicensed FLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers’ Comp</masterLabel>
+        <translation><!-- Workers’ Comp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

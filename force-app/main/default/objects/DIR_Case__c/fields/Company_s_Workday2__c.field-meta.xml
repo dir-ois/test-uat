@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_s_Workday2__c</fullName>
+    <description>Company&#39;s Workday from Accoun</description>
+    <externalId>false</externalId>
+    <formula>Employer__r.Company_s_Workday__c</formula>
+    <inlineHelpText>Company&#39;s Workday from Accoun</inlineHelpText>
+    <label>Company&#39;s Workday</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

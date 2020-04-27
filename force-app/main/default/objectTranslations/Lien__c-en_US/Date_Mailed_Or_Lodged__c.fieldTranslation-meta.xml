@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date sent or provided to recording agency --></help>
+    <label><!-- Date Mailed Or Lodged --></label>
+    <name>Date_Mailed_Or_Lodged__c</name>
+</CustomFieldTranslation>

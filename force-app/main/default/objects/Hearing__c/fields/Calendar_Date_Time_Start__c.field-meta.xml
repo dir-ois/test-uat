@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calendar_Date_Time_Start__c</fullName>
+    <description>Converts Meeting_Start_Time to text. DST and AM/PM included.</description>
+    <externalId>false</externalId>
+    <formula>IF (ISBLANK (Meeting_Start_Date_Time__c), &quot;&quot;, 
+	/* If date field is not blank, returns DATE in MM/DD/YYYY */
+	TEXT (MONTH (DATEVALUE (Meeting_Start_Date_Time__c) ) ) &amp;&quot;/&quot;&amp;TEXT (DAY (DATEVALUE (Meeting_Start_Date_Time__c) ) ) &amp;&quot;/&quot;&amp;TEXT (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ) ) 
+	&amp;&quot; &quot;&amp; IF (
+		/* Check if date is within DST of the date&#39;s year (3/8 -3/14 and end 11/1-11/7 depending on the &quot;2nd SUN of March&quot; and &quot;1st SUN of NOV&quot;) */
+		DATEVALUE (Meeting_Start_Date_Time__c) &gt;= DATE (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ), 3, 15) 
+			/*  MOD used to subtract the offset of days from 3/15 to 2nd SUN, and 11/8 from 1st SUN). CASE funtion used to (-) 7 where MOD = 0 */
+			- (CASE (MOD (DATE (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ), 3, 15) - DATE (1970, 6, 28), 7),
+			0, 7, 
+			MOD (DATE (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ), 3, 15) - DATE (1970, 6, 28), 7) ) )
+		&amp;&amp; DATEVALUE (Meeting_Start_Date_Time__c) &lt; DATE (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ), 11, 8) 
+			- (CASE (MOD (DATE (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ), 11, 8) - DATE (1970, 6, 28), 7),
+			0, 7, 
+			MOD (DATE (YEAR (DATEVALUE (Meeting_Start_Date_Time__c) ), 11, 8) - DATE (1970, 6, 28), 7) ) ), 
+		/* Ofset time to &quot;-7&quot; (PST during DST) and convert from military time to standand time. */
+		IF ( OR (
+			VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -7 = 0, 
+			VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -7 = 12 ),
+		&quot;12&quot;,  
+		TEXT (VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -7
+			- IF (VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -7 &lt; 12, 
+			0, 12 ) ) ) 
+		/* Append minutes and AM/PM */
+		&amp; &quot;:&quot; &amp; MID (TEXT (Meeting_Start_Date_Time__c), 15, 2) &amp; 
+			IF (VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) - 7 &lt; 12, 
+				&quot; AM&quot;, 
+				&quot; PM&quot; ),
+	/* Returns time offset to &quot;-8&quot; for PST non-DST */
+		IF (OR (
+			VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -8 = 0, 
+			VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -8 = 12 ), 
+		&quot;12&quot;,
+		TEXT (VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -8
+		- IF (VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) -8 &lt; 12, 
+		0, 12) ) ) &amp; &quot;:&quot; &amp; MID (TEXT (Meeting_Start_Date_Time__c), 15, 2) &amp;
+		IF (
+			VALUE (MID (TEXT (Meeting_Start_Date_Time__c), 12, 2) ) - 8 &lt; 12, 
+			&quot; AM&quot;,
+			&quot; PM&quot; )
+	 )
+)</formula>
+    <label>Calendar Date Time Start</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted Representation</masterLabel>
+        <translation><!-- Accepted Representation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Affirmed</masterLabel>
+        <translation><!-- Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Decision</masterLabel>
+        <translation><!-- Court Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Scheduled</masterLabel>
+        <translation><!-- Hearing Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modified - Affirmed</masterLabel>
+        <translation><!-- Modified - Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received</masterLabel>
+        <translation><!-- Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received - Timely</masterLabel>
+        <translation><!-- Received - Timely --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received - Untimely</masterLabel>
+        <translation><!-- Received - Untimely --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred</masterLabel>
+        <translation><!-- Referred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remanded for Investigation</masterLabel>
+        <translation><!-- Remanded for Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversed and Dismissed</masterLabel>
+        <translation><!-- Reversed and Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversed to Cause</masterLabel>
+        <translation><!-- Reversed to Cause --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent to Calendar Clerk</masterLabel>
+        <translation><!-- Sent to Calendar Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Pending</masterLabel>
+        <translation><!-- Trial Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn</masterLabel>
+        <translation><!-- Withdrawn --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

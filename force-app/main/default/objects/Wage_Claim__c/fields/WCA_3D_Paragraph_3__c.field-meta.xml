@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_3D_Paragraph_3__c</fullName>
+    <defaultValue>&#39;The case arises out of the claim that you filed with this office seeking to recover unreimbursed medical expenses.  Examination of your claim reveals that it presents a number of complex issues.  After a careful review of these issues, it is our view that the administrative process afforded by the Labor Commissioner is not well suited to resolution of the intricate legal questions presented by your claim.&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 3D Unreimbursed Medical Expenses</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

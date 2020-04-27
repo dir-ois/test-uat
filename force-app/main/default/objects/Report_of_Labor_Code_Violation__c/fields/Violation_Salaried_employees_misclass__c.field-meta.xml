@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Salaried_employees_misclass__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Salaried employees misclassified as exempt employees</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Salaried employees misclassified as exempt employees</inlineHelpText>
+    <label>Salaried employees misclassified</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The PostCasePaymentController apex class references this matrix to determine if the Save Recommend Allocation, Post Payment, or Post with PRs buttons should be visible and active.
+
+The code really only checks for an &quot;Active&quot; value in the 3 button rendering fields, though it could be extended to include &quot;Inactive&quot; which could display the button greyed out, once the controller code and VFP has been updated to do so.
+
+At least one of the DIR Case Recordtype Name, User Profile and Permission Set fields must be filled. Leaving either or both of the other 2 null will indicate a wildcard for that field--except leaving all 3 null will result in an MDT that never gets used by the code.
+
+The Condition Field and Condition Field Value fields are not used at this time (22 Dec 2019)</description>
+    <label>Post Case Payment Button Setting</label>
+    <pluralLabel>Post Case Payment Button Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

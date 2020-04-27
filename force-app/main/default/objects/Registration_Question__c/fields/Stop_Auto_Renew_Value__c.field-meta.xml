@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stop_Auto_Renew_Value__c</fullName>
+    <description>value populated from question bank when question is created. Used in auto-renewal process to determine if this reg can be auto-renewed or must go into review.</description>
+    <externalId>false</externalId>
+    <label>Stop Auto-Renew Value</label>
+    <length>5</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

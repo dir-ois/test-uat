@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>10062</label>
+    <protected>false</protected>
+    <values>
+        <field>Error_ID__c</field>
+        <value xsi:type="xsd:string">10062</value>
+    </values>
+    <values>
+        <field>Technical_Message__c</field>
+        <value xsi:type="xsd:string">&quot;Invalid settlement data (i.e., &#39;future&#39; date found, erroneous Pserve data found) (summary level).&quot;</value>
+    </values>
+    <values>
+        <field>User_Message__c</field>
+        <value xsi:type="xsd:string">Processing Error Please Try Again (62) Error from FDMS Nashville.</value>
+    </values>
+</CustomMetadata>

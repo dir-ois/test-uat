@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modified_Earned_Amount__c</fullName>
+    <description>When the amount earned is not what was initially captured, this is the new amount earned for the issue. Value is passed to flow and updates the earned amount on the issue</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Modify the amount earned to a different value as needed. This value will update the earned amount on the issue.</inlineHelpText>
+    <label>Modified Earned Amount (optional)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

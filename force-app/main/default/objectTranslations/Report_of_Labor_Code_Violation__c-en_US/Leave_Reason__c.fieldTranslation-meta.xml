@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Why did the employee leave? --></help>
+    <label><!-- Leave Reason --></label>
+    <name>Leave_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Fired</masterLabel>
+        <translation><!-- Fired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quit</masterLabel>
+        <translation><!-- Quit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Still Employed</masterLabel>
+        <translation><!-- Still Employed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

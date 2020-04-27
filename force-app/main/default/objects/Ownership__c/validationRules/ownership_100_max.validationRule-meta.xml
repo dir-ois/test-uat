@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ownership_100_max</fullName>
+    <active>true</active>
+    <errorConditionFormula>Ownership_Percentage__c &gt; 1</errorConditionFormula>
+    <errorMessage>Ownership percentage cannot be greater than 100</errorMessage>
+</ValidationRule>

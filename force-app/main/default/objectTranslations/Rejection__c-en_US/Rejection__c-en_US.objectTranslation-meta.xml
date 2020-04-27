@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rejection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rejections</value>
+    </caseValues>
+    <layouts>
+        <layout>Rejection Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DLSE Contact Details --></label>
+            <section>DLSE Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Notes &amp; Instructions to Applicant --></label>
+            <section>Notes &amp; Instructions to Applicant</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Send_Defect_Notice --></label>
+        <name>Send_Defect_Notice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Final_Rejection --></label>
+        <name>Send_Final_Rejection</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Follow_Up_Defect_Notice --></label>
+        <name>Send_Follow_Up_Defect_Notice</name>
+    </webLinks>
+</CustomObjectTranslation>

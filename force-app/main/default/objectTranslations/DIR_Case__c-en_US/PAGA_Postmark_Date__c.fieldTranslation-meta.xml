@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the date that is postmarked on the letter from the Private Attorney requesting to pursue civil litigation against an employer under L.C. 2698. --></help>
+    <label><!-- PAGA Claim Postmark Date --></label>
+    <name>PAGA_Postmark_Date__c</name>
+</CustomFieldTranslation>

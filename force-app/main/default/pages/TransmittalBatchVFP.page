@@ -1,0 +1,19 @@
+<apex:page controller="TransmittalBatchController">
+        <apex:form >
+            <div align="center">
+                <apex:pagemessages rendered="{!isRunning}"/>
+            </div>
+            
+            <apex:pageBlock title="Run Transmittal Batch" rendered="{!NOT(isRunning)}">
+                <apex:pageBlockSection columns="1">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputPanel >
+                            <apex:outputText value="Only CCU staff may run transmittal batches for CCU and JEU." /><br/><br/>
+                            <apex:outputText value="Clicking the 'Run Batch' button will execute the TransmittalBatch batch process." />&nbsp;&nbsp;&nbsp;&nbsp;
+                            <apex:commandButton value="Run Batch" action="{!runTransmittalBatch}" />
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:page>

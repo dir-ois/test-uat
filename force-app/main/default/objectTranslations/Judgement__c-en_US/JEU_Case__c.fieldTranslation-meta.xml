@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- JEU Case --></label>
+    <lookupFilter>
+        <errorMessage><!-- This field only accepts Case Management records with a JEU record type. --></errorMessage>
+    </lookupFilter>
+    <name>JEU_Case__c</name>
+    <relationshipLabel><!-- Related Case Judgments --></relationshipLabel>
+</CustomFieldTranslation>

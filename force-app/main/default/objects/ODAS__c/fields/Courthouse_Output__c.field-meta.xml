@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Courthouse_Output__c</fullName>
+    <description>Formula field to migrate the Courthouse information from the Meeting to the ODA object.</description>
+    <externalId>false</externalId>
+    <formula>Meeting__r.Courthouse__r.Name &amp; BR() &amp; Meeting__r.Courthouse__r.Address_1__c &amp; &quot; &quot; &amp; Meeting__r.Courthouse__r.Address_2__c &amp; BR() &amp;
+Meeting__r.Courthouse__r.City__c &amp; &quot;, &quot; &amp; Meeting__r.Courthouse__r.State__c &amp; &quot; &quot; &amp; Meeting__r.Courthouse__r.Zip_Code__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Courthouse Output</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

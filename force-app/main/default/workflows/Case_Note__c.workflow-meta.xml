@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Case_note_creation</fullName>
+        <description>New Case note creation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/New_Case_Note</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_Assigned_Deputy_Email</fullName>
+        <field>Deputy_Email__c</field>
+        <formula>Case_Management__r.Assigned_Deputy_Email__c</formula>
+        <name>Set Assigned Deputy Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Summary</fullName>
+        <description>Sets the summary field to the first 50 characters of the note if it is left blank</description>
+        <field>Event_Summary__c</field>
+        <formula>IF ( ISBLANK ( Event_Summary__c ) , LEFT (  Event_Note__c , 50 ), Event_Summary__c)
+
+
+/*
+BLANKVALUE (  Event_Summary__c , LEFT (  Event_Note__c , 50 ) )
+*/</formula>
+        <name>Set Summary</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Note Created Field Update</fullName>
+        <actions>
+            <name>Set_Assigned_Deputy_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Summary</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Notes Creation Notification</fullName>
+        <actions>
+            <name>New_Case_note_creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>For Created Case Notes, this will flag them in order to send email alert to assigned deputy.</description>
+        <formula>NOT(ISBLANK( Deputy_Email__c )) &amp;&amp;  CreatedBy.Email &lt;&gt; Deputy_Email__c &amp;&amp; ISNULL(Imported_From__c)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Case_Note_Created</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Case Note Created</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Completed</status>
+        <subject>Case Note Created</subject>
+    </tasks>
+</Workflow>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lookup the question that will be the &quot;master&quot; or &quot;preceding&quot; question to this question. --></help>
+    <label><!-- Controlling Question --></label>
+    <name>Controlling_Question__c</name>
+    <relationshipLabel><!-- Follow-up Question Configs --></relationshipLabel>
+</CustomFieldTranslation>

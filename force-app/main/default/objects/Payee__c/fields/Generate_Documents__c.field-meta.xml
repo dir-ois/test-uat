@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Documents__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;QueryId=[Governor]a0md0000003l2S0&quot; +
+&quot;&amp;QueryId=[PayeeInfo]a0md0000008uSKgAAM?pv0=&quot; + Id +
+&quot;&amp;templategroup=Payee&quot; +
+&quot;&amp;ofn={Template.Label} &quot; + Case_Role__c +
+&quot;&amp;sc0=1&quot; +
+&quot;&amp;sc1=Attachments&quot; +
+&quot;&amp;qmode=Download&quot; +
+&quot;&amp;templateid=a0nd0000007MiKd&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Generate Documents</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registration Accounts</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Agent --></label>
+        <name>Agent</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Agent-slim --></label>
+        <name>Agent_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- GP of JV Sole Prop --></label>
+        <name>GPofJVSoleProp</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- GP or JV Corproation --></label>
+        <name>GPorJVCorproation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- GP or JV GP --></label>
+        <name>GPorJVGP</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- GP or JV LLC --></label>
+        <name>GPorJVLLC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- GP or JV LP --></label>
+        <name>GPorJVLP</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Management Individual --></label>
+        <name>Management_Individual</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Management Individual TA --></label>
+        <name>Management_Individual_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW LLC --></label>
+        <name>PWLLC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Agent of Service --></label>
+        <name>PW_Agent_of_Service</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Company Info --></label>
+        <name>PW_Company_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Corporation or LLC --></label>
+        <name>PW_Corporation_or_LLC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW General Partnership --></label>
+        <name>PW_General_Partnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Joint Venture --></label>
+        <name>PW_Joint_Venture</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Limited Partnerships --></label>
+        <name>PW_Limited_Partnerships</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Other Contractor Details --></label>
+        <name>PW_Other_Contractor_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Sole Prop --></label>
+        <name>PW_Sole_Prop</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Sole Proprietor --></label>
+        <name>PW_Sole_Proprietor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Corp or LLC --></label>
+        <name>Registration_Corp_or_LLC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Corp or LLC - slim --></label>
+        <name>Registration_Corp_or_LLC_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration JV - slim --></label>
+        <name>Registration_JV_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Joint Venture --></label>
+        <name>Registration_Joint_Venture</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Limited Partnership --></label>
+        <name>Registration_Limited_Partnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration MGMT set --></label>
+        <name>Registration_MGMT_set</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration MGMT - slim --></label>
+        <name>Registration_MGMT_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Medical Record --></label>
+        <name>Registration_Medical_Record</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Medical Record Slim --></label>
+        <name>Registration_Medical_Record_Slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Minor Information --></label>
+        <name>Registration_Minor_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Minor Information - slim --></label>
+        <name>Registration_Minor_Information_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Parent Guardian --></label>
+        <name>Registration_Parent_Guardian</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Parent Guardian - slim --></label>
+        <name>Registration_Parent_Guardian_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Partnership --></label>
+        <name>Registration_Partnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Partnerships - slim --></label>
+        <name>Registration_Partnerships_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Permit Applicant --></label>
+        <name>Registration_Permit_Applicant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Permit Applicant slim --></label>
+        <name>Registration_Permit_Applicant_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration School Record --></label>
+        <name>Registration_School_Record</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration School Record Slim --></label>
+        <name>Registration_School_Record_Slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Sole Prop - slim --></label>
+        <name>Registration_Sole_Prop_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Sole Proprietorship --></label>
+        <name>Registration_Sole_Proprietorship</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Subcontractors Franchises FS --></label>
+        <name>Subcontractors_Franchises_FS</name>
+    </fieldSets>
+    <layouts>
+        <layout>Registration Account Layout</layout>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- Business Info --></label>
+            <section>Business Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Individual Information --></label>
+            <section>Individual Information</section>
+        </sections>
+        <sections>
+            <label><!-- Management Individual --></label>
+            <section>Management Individual</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Agent --></label>
+        <name>Agent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Corp or LLC --></label>
+        <name>Corp_or_LLC</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Individual Permit --></label>
+        <name>Individual_Permit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Joint Venture --></label>
+        <name>Joint_Venture</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Limited Partnership --></label>
+        <name>Limited_Partnership</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Management Individual --></label>
+        <name>Management_Individual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parent Company --></label>
+        <name>Parent_Company</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parent Guardian --></label>
+        <name>Parent_Guardian</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partnership --></label>
+        <name>Partnership</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sole Proprietorship --></label>
+        <name>Sole_Proprietorship</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Subcontractors Franchises --></label>
+        <name>Subcontractors_Franchises</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- P.O. Boxes are not accepted addresses. Please change to a physical location before moving forward. --></errorMessage>
+        <name>Address_cannot_have_PO_Box</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid city name. --></errorMessage>
+        <name>City_cannot_contain_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide an email address to continue. --></errorMessage>
+        <name>Email_address_is_required_for_online_JV</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- FEIN must be 9 numbers. Please correct to continue. --></errorMessage>
+        <name>FEIN_must_be_9_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you cannot answer Yes to being in good standing with the California Secretary of State at this time, please visit https://businesssearch.sos.ca.gov/ and resolve before submitting your application. --></errorMessage>
+        <name>Must_be_in_good_standing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please explain why this business is not in good standing with the Secretary of State. --></errorMessage>
+        <name>Must_explain_if_not_in_good_standing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only one Company is allowed per application. Please delete any extra business information records. --></errorMessage>
+        <name>Only_1_Business_Account_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have already entered the permit applicant&apos;s information for an Entertainment Work Permit, please edit the existing record instead of creating a new record. --></errorMessage>
+        <name>Only_1_EWP_permit_applicant_is_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have already entered permit applicant&apos;s information, please edit the record instead of creating a new record. --></errorMessage>
+        <name>Only_1_permit_applicant_is_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that ITIN and Re-typed ITIN match. --></errorMessage>
+        <name>PW_ITIN_Verification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that SSN and Re-typed SSN match. --></errorMessage>
+        <name>PW_SSN_Verification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An SSN or ITIN is required. It must only contain 9 alphanumeric characters. --></errorMessage>
+        <name>PW_SSN_or_ITIN_Required_w_9_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please validate that you are at least 16 years or older. --></errorMessage>
+        <name>Permit_Applicant_must_be_over_16</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a 10-digit phone number with no characters or spaces. --></errorMessage>
+        <name>Phone_can_only_have_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- USA phone numbers must be 10 numbers. Please correct to continue. --></errorMessage>
+        <name>Phone_must_be_10_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide details as to what additional authorizations should be granted to this agent. --></errorMessage>
+        <name>Require_Additional_Authorization_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out all required fields. --></errorMessage>
+        <name>Require_All_Agent_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- U.S. Zip codes must have 5 digits or 9 digits with a dash between the 5th and 6th digit. --></errorMessage>
+        <name>Require_formatting_for_US_zip_codes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SEIN must be 8 numbers. Please correct to continue. --></errorMessage>
+        <name>SEIN_must_be_8_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that SSN and Re-typed SSN match. --></errorMessage>
+        <name>SSN_Verification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Social Security numbers must have 9 numbers. --></errorMessage>
+        <name>SSN_must_be_9_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Zip Code must have at least 5 numbers. --></errorMessage>
+        <name>Zip_Code_must_have_at_least_5_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Applicants must be at least 15 days old or under age 18  to receive an Entertainment Work Permit. --></errorMessage>
+        <name>permit_applicant_must_be_15_days</name>
+    </validationRules>
+</CustomObjectTranslation>

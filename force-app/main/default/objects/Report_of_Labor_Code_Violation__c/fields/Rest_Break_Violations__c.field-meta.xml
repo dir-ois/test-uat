@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rest_Break_Violations__c</fullName>
+    <description>List of Rest Break Violations - 
+See Help Text for selection details.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Work days:
+Between 3.5 hrs &amp; up to 6 hrs/day, not allowed to take a 10-min rest break
+Of more than 6 hrs &amp; up to 10 hrs/day, not allowed to take two 10-min rest breaks
+Of more than 10 hrs &amp; up to 14 hrs/day, not allowed to take three 10-min rest breaks</inlineHelpText>
+    <label>Rest Break Violations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No 10-minute rest break</fullName>
+                <default>false</default>
+                <label>No 10-minute rest break</label>
+            </value>
+            <value>
+                <fullName>No two 10-minute rest breaks</fullName>
+                <default>false</default>
+                <label>No two 10-minute rest breaks</label>
+            </value>
+            <value>
+                <fullName>No three 10-minute rest breaks</fullName>
+                <default>false</default>
+                <label>No three 10-minute rest breaks</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Office</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Offices</value>
+    </caseValues>
+    <layouts>
+        <layout>Office Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Identifies offices as BOFE --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Central Cashiering Unit --></description>
+        <label><!-- CCU --></label>
+        <name>CCU</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This field is used to link the location where the Employer City Business License information is obtained from --></description>
+        <label><!-- City Business License --></label>
+        <name>City_Business_License</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This field is used to link where the Employer business information is obtained from --></description>
+        <label><!-- County Registrar --></label>
+        <name>County_Registrar</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Courthouse --></label>
+        <name>Courthouse</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For HR to identify DIR employee&apos;s work location --></description>
+        <label><!-- DIR Office --></label>
+        <name>DIR_Office</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Identifies an office as a garment office --></description>
+        <label><!-- Garment --></label>
+        <name>Garment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- JEU --></label>
+        <name>JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Legal Offices --></description>
+        <label><!-- Legal --></label>
+        <name>Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Identify as DLSE license &amp; registration office --></description>
+        <label><!-- License/Registration --></label>
+        <name>License_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendor --></label>
+        <name>Vendor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Identifies offices as WAGE --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Generate a Service Request to modify this office record.
+*Modifying this office record will change the information for ALL CASES assigned to this Office. It does not change the assigned office on a case. --></errorMessage>
+        <name>Prevent_DLSE_Offices_edit_by_user</name>
+    </validationRules>
+</CustomObjectTranslation>

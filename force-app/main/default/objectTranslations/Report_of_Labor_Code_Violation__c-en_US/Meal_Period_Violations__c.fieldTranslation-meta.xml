@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Selections details:
+1) 30-minute off-duty meal period not provided by the end of the 5th hour of work
+2) Second 30-minute off-duty meal period not provided when working more than 10 hours
+3) Meal period provided but less than 30 minutes --></help>
+    <label><!-- Meal Period Violations --></label>
+    <name>Meal_Period_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Less than 30 minutes meal</masterLabel>
+        <translation><!-- Less than 30 minutes meal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No 30-minute off-duty meal period</masterLabel>
+        <translation><!-- No 30-minute off-duty meal period --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No second 30-minute off-duty meal period</masterLabel>
+        <translation><!-- No second 30-minute off-duty meal period --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

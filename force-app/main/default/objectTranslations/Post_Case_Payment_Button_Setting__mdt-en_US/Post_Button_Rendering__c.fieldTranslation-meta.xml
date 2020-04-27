@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- View state of the Post Payment button on the PostCasePaymentVFP Visualforce page. 
+Enter &quot;Hidden&quot;, &quot;Inactive&quot;, or &quot;Active&quot;. --></help>
+    <label><!-- Post Button Rendering --></label>
+    <name>Post_Button_Rendering__c</name>
+</CustomFieldTranslation>

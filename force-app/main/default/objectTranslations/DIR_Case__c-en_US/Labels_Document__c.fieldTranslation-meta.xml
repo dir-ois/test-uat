@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Labels Document --></label>
+    <name>Labels_Document__c</name>
+    <picklistValues>
+        <masterLabel>Copy</masterLabel>
+        <translation><!-- Copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original</masterLabel>
+        <translation><!-- Original --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

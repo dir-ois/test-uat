@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the current status. --></help>
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>607 Created</masterLabel>
+        <translation><!-- 607 Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complete</masterLabel>
+        <translation><!-- Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Form 1 Received</masterLabel>
+        <translation><!-- Form 1 Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Budget</masterLabel>
+        <translation><!-- Submitted to Budget --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to DOF</masterLabel>
+        <translation><!-- Submitted to DOF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to SCO</masterLabel>
+        <translation><!-- Submitted to SCO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

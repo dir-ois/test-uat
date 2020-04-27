@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_3F_Paragraph_3__c</fullName>
+    <defaultValue>&#39;The case arises out of your claim for unpaid wages.  The information we have received indicates you are [a former high-level officer] [current shareholder] of the corporate employer named in your claim.  We have carefully reviewed the materials and information bearing on your relationship with the named corporate employer.  The nature of that relationship indicates that it would not be possible to resolve your claim without an extended and complex inquiry into the degree of your control over the named employer and the consequential impact such control might have on the legitimacy of your claim.  The procedures available in proceedings before the Labor Commissioner are not designed to accommodate the resolution of claims presenting such intricate intra-corporate disputes.  After carefully considering the circumstances of this case, it is our conclusion that the administrative process afforded by the Labor Commissioner does not provide an appropriate forum in which to resolve the complex issues of liability presented by your claim.&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 3F Shareholder/Officer</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

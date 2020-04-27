@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contractor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>For certain citations, the contractor is mentioned and displayed on the citation forms.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Contractor if required for citations created from this liability.</inlineHelpText>
+    <label>Contractor</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Liability</relationshipLabel>
+    <relationshipName>Liability_Contractor</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

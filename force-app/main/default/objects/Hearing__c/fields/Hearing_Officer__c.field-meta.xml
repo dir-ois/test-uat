@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearing_Officer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A link to the Employee Record of the Hearing Officer for this Hearing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A link to the Employee Record of the Hearing Officer for this Hearing.</inlineHelpText>
+    <label>Hearing Officer Old</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.Hearing_Officer__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Hearings</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

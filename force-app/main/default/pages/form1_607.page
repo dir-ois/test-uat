@@ -1,0 +1,6 @@
+<apex:page standardController="Form_1__c" extensions="form1_Extension" action="{!create607OnLoad}" >
+	<!--<apex:outputField value="{!Form_1__c.Position__c}" />-->
+	<apex:outputField value="{!Form_1__c.Classification__c}" />
+	<apex:outputField value="{!Form_1__c.Unit__c}" />
+	<apex:outputField value="{!Form_1__c.Serial__c}" />
+</apex:page>

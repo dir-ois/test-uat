@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Employee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Employees</value>
+    </caseValues>
+    <layouts>
+        <layout>DLSE Employee Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Employee Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- DLSE Employees Record Type --></description>
+        <label><!-- DLSE Employees --></label>
+        <name>DLSE_Employees</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Authority Designee Start Date and End Date are required when you enter a Authority Designee --></errorMessage>
+        <name>Authority_Designee_Rules</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When assigning a deputy, please assign a manger in order to save the record. --></errorMessage>
+        <name>BOFE_Deputy_Require_Manager</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Salesforce User or enter an Email address for this employee before saving. --></errorMessage>
+        <name>Employee_Require_Email_non_SFDC_user</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not change the Name on an employee record. Please create a new employee record. --></errorMessage>
+        <name>Prevent_changing_of_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Generate a Service Request to modify this employee record. --></errorMessage>
+        <name>Prevent_changing_of_User_record</name>
+    </validationRules>
+</CustomObjectTranslation>

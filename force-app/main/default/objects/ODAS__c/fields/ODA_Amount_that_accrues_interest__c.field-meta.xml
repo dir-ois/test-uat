@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ODA_Amount_that_accrues_interest__c</fullName>
+    <description>Filled in by deputy when producing a Judgment from this ODA</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Open the ODA document, total the amounts that should accrue interest, and fill in that value here before clicking &quot;Create Judgment&quot;</inlineHelpText>
+    <label>ODA Amount that accrues interest</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

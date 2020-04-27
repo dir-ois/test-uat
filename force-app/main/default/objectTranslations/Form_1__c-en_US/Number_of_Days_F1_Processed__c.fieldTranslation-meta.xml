@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of Elapsed days from when a Form 1 Created Date till Form 1 Completed Date --></help>
+    <label><!-- Number of Days F1 Processed --></label>
+    <name>Number_of_Days_F1_Processed__c</name>
+</CustomFieldTranslation>

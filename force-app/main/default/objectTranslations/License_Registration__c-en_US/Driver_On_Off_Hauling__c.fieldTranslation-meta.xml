@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Driver (On/Off Hauling) --></label>
+    <name>Driver_On_Off_Hauling__c</name>
+</CustomFieldTranslation>

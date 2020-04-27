@@ -1,0 +1,3845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>RCI_Compact</compactLayoutAssignment>
+    <description>Vertiba</description>
+    <label>RCI</label>
+    <picklistValues>
+        <picklist>Adverse_Action__c</picklist>
+        <values>
+            <fullName>Benefits Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changed Work Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disciplinary Action%2FWritten Warning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forced to Resign%2FQuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harassed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hours Reduced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intimidated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Hired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Rehired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Reduced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated%2FDischarged%2FFired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Threatened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Anonymous__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Assignment_Status__c</picklist>
+        <values>
+            <fullName>Accept %26 Assign INV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Closure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attached__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BOFE_Wage_Active__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Basis_of_Claim__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Race%2FEthnicity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sex</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BoFE_Office_Location_City__c</picklist>
+        <values>
+            <fullName>Bakersfield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Centro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fresno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oakland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salinas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Bernardino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Jose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Ana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Rosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stockton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van Nuys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bond_Requested__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>COVID_19__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Log__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Pathway__c</picklist>
+        <values>
+            <fullName>Settlement Probable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Re_Open_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Source__c</picklist>
+        <values>
+            <fullName>AB 633 Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anonymous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CBO Referral-Strategy Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDI Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDSS MOU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Group Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DA Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIR%2FDLSE Info Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Garment Home Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Industrial Homework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Sheltered Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R - Sub-Minimum Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLSE L%26R Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOL%2FEmpleo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deputy Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDD%2FEETF Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDD-MAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer%2FEmployer Association</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWC Exemption Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspection Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interagency Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kaiser Referral %28injured worker%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 2699</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LETF Call%2FEmail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Hours-Ag Ind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OD Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SB 869</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Stage__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Status_Progress_Bar__c</picklist>
+        <values>
+            <fullName>Admin Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Determination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Type__c</picklist>
+        <values>
+            <fullName>BOFE Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immigration threat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cashiering_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cause_Determination_Result__c</picklist>
+        <values>
+            <fullName>Appealed%2C Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appealed%2C Employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed on appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer non-compliance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Check_Stubs_Document__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Claimant_Claiming_Penalties__c</picklist>
+        <values>
+            <fullName>%22Bounced%22 checks %5BLabor Code 203%2E1%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting time penalties %5BLabor Code 203%5D</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closure_Disposition__c</picklist>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPL Court Filing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause Finding %E2%80%93 Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause Finding %E2%80%93 Enforcement Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause Finding %E2%80%93 Settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed %E2%80%93 Claimant Abandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed %E2%80%93 Claimant Withdrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed %E2%80%93 No Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed - Employer no longer in business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - ER JUST Merit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - ER JUST Other BF Factor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - ER JUST Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - ER JUST Seniority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - No Comparators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - No Pay Disparity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - No similar work conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPA - No substantially similar work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error%2FTest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction %E2%80%93 Atty Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction %E2%80%93 DFEH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction %E2%80%93 Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction - DOL %28WHD%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction - FMLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction - NRLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Jurisdiction - WCAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legitimate%2C Non-Retaliatory Reason</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFC %E2%80%93 No Causal Link</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFC %E2%80%93 No Employer Knowledge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFC %E2%80%93 No Protected Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PFC- No Adverse Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untimely %28Outside SOL%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Advocate_Group__c</picklist>
+        <values>
+            <fullName>Asian Law Caucus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian Pacific American Legal Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asian Pacific Islander Legal Outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bet Tzedek Legal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLEAN Car Wash Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRLA%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRLAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California Immigrant Policy Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro Legal de la Raza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese Progressive Assoc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coalition for Humane Immigrant Rights LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Rights Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equal Rights Advocates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KIWA - Korea Town Immigrants Workers Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>La Raza Centro Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lawyer%27s Committee for Civil Rights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Aid Foundation of L%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Aid Society-Employment Law Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Aid of Marin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Day Laborer Organization Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Employment Law Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Employment Law Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neighborhood Legal Services of LA County</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pilipino Worker Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant Opportunity Center-LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SoCal COSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Asian Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stanford Community Law Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UCLA Labor Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Justice Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse Worker Resource Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watsonville Law Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Women%27s Employment Rights Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worksafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Young Workers United</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Complaint_Screening_Question__c</picklist>
+        <values>
+            <fullName>EPA %28Equal Pay Act%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retaliation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Confiscation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Copy__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>County__c</picklist>
+        <values>
+            <fullName>Alameda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calaveras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colusa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del Norte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Dorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fresno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glenn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humboldt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imperial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lassen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mariposa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mendocino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mono</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monterey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Napa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Benito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Bernardino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Joaquin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Luis Obispo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Mateo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Clara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Cruz</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shasta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siskiyou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonoma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stanislaus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sutter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tehama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trinity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tulare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuolumne</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yolo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yuba</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Court_Name__c</picklist>
+        <values>
+            <fullName>Alameda County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpine County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amador County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butte County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Ct%2E App%2E 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Ct%2E App%2E 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Ct%2E App%2E 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Ct%2E App%2E 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Ct%2E App%2E 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Ct%2E App%2E 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cal%2E Supreme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calaveras County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colusa County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contra Costa County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del Norte County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Dorado County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fresno County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glenn County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Humboldt County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imperial County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inyo County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kern County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kings County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lake County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lassen County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madera County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marin County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mariposa County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mendocino County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merced County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modoc County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mono County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monterey County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Napa County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevada County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orange County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placer County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumas County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverside County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Benito County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Bernardino County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Joaquin County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Luis Obispo County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Mateo County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Clara County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Cruz County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shasta County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siskiyou County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solano County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonoma County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stanislaus County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sutter County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tehama County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trinity County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tulare County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuolumne County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E 9th Circuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Central Dist%2E CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Eastern Dist%2E CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Northern Dist%2E CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Southern Dist%2E CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2ES%2E Supreme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ventura County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yolo County Superior Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yuba County Superior Court</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Court_Type__c</picklist>
+        <values>
+            <fullName>California Appellate Courts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California Superior Courts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Courts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DIR_Lawsuit_Outcome__c</picklist>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Favor of DIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Favor of Employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DLSE_Program__c</picklist>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EEEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EETF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LETF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PASS THRU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Determination_Summary__c</picklist>
+        <values>
+            <fullName>Add%E2%80%99l staff training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change in nature of termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conf%2E terms ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribution of written materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Front pay monitary amts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTR of Recommendation%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost wages monitary amts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral job reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Posting a notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-instate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reimbursement of lost benefits</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Determination_Type__c</picklist>
+        <values>
+            <fullName>Cause</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Cause</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Document_Type__c</picklist>
+        <values>
+            <fullName>Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Domestic_Violence_Assault_Stalking__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EPA_Rights_Caused_Retaliation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ES_Still_Working_for_Employer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employee_Status__c</picklist>
+        <values>
+            <fullName>Discharged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Still Working for Employer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employer_Made_Immigration_Threats__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employer_Still_in_Business__c</picklist>
+        <values>
+            <fullName>I don%27t know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employment_Agreement_Type__c</picklist>
+        <values>
+            <fullName>a collective bargaining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a written</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>an oral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Event_Type__c</picklist>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Filed_Anonymously__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Wage_Type__c</picklist>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash and Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Wages_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Form_Name__c</picklist>
+        <values>
+            <fullName>EPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI-EPA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Garment_Joint_Employer_Liability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>H_S_Complaint_to_Employer_Supervisor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>H_S_Complaint_with_Govt_Agency__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>H_S_Input__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Holidays_Closed__c</picklist>
+        <values>
+            <fullName>4th of July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Christmas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labor Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorial Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Year%27s Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thanksgiving Day</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hourly_Employee__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IC_Determination__c</picklist>
+        <values>
+            <fullName>Claim Closed - No determination made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IC established - dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to hearing for IC determination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled - Employee status established</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled - No IC determination made</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ITF_Employer_Has_Additional_Claims__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ITF_Has_Claimant_Filed_Wage_Claim__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ITIN_SSN_Document__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Imported_From__c</picklist>
+        <values>
+            <fullName>32-117</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BAK-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM-TIPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDG-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAC-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBA-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDO-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIPP-FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VNO-WCA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inspection_Type__c</picklist>
+        <values>
+            <fullName>LCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selective</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intake_Origin__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interpreter_Needed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Investigation_Disposition__c</picklist>
+        <values>
+            <fullName>Abandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPL Court Filing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause Finding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Evidence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Jurisdiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Joint_liability_basis__c</picklist>
+        <values>
+            <fullName>Joint Employer LC 2810%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint Employer LC 558%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint liability LC 238%2E5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LC_Speak_with_Investigator_at_Worksite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LC_Wage_Claim_Against_Employer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Labels_Document__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language2__c</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambodian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cantonese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farsi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandarin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tagalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnamese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Low_Wage_Occupation__c</picklist>
+        <values>
+            <fullName>Agricultural Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Wash Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Day laborer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitorial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Nail salon worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Paid at minimum wage rate or less</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Paid via piece rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Care worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security guard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Low_wage_Industry__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Missed_Work__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Multiple_company_names__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NSF_Checks_Documents__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Job_Pay_Unit__c</picklist>
+        <values>
+            <fullName>Bi-weekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piece rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Job__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_Wage_Claim__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Notice_to_Discontinue__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OD_Legal_Referral__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OSHA_Complaint_Gov_Agency_Name__c</picklist>
+        <values>
+            <fullName>Cal%2FOSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Open_in_Legal__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_Time_Record_Documents__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_employees_filing_wage_claims__c</picklist>
+        <values>
+            <fullName>I Don%27t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAGA_Claim__c</picklist>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAGA_Decision__c</picklist>
+        <values>
+            <fullName>BOFE Will Investigate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE Will Not Investigate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAGA_Settlement_Disposition__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Agency Comment or Response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAGA_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Investigation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PAGA_entered_Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitorial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Low-Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other-Not-Low-Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Paid_Less_For_Similar_Work__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Paycheck_bounce__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Penalties__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pended__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Personal_time_and_or_pay_record_document__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Photo_ID_Document__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Piece_Rate_Document__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Possible_Related_EPA_claim__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Potential_238_5_Case__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Potential_2810_Case__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority_Level__c</picklist>
+        <values>
+            <fullName>Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority_Tracking_Report__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Promised_Fixed_Wages__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provided_Meal_Period__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provided_Rest_Period__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Received_Itemized_Wage_Statements__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Record_Type_Text__c</picklist>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Garment Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy WCA Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WCA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Refer_to_JEU__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Referred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referred_From__c</picklist>
+        <values>
+            <fullName>Attorney General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Governor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legislator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referred_To__c</picklist>
+        <values>
+            <fullName>Dept%2E of Fair Employment and Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dept%2E of Labor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Union</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referred_to_CIU__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retaliation_Complaint_filed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_BOFE_Claim__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Domestic_Violence__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Equal_Pay__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Healthy_and_Safety__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Immigration_Protection__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_OSHA__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Paid_Sick_Leave__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Wage_Claim__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SH_Workplace_Injury__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seaonal_Provided_Rest_Period__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seasonal_Holidays_Closed__c</picklist>
+        <values>
+            <fullName>4th of July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Christmas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labor Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorial Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Year%27s Day</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thanksgiving Day</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seasonal_Missed_Work__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seasonal_Provided_Meal_Period__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Method__c</picklist>
+        <values>
+            <fullName>1st Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1st Class %26 Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered Mail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Settlement_Grade__c</picklist>
+        <values>
+            <fullName>Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marginal Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pass</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Settlement_Scope__c</picklist>
+        <values>
+            <fullName>Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Someone_else_record_hours__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Handling__c</picklist>
+        <values>
+            <fullName>BOFE Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Violence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equal Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health %26 Safety Lic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immigration Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSHA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid Sick Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workplace Injury</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Appealed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conference Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Law School Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>OSHA Open Appeal Period</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Investigation Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Investigation Follow-up 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready to Assign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopened with Senior Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Investigation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Submission_Detail_Type__c</picklist>
+        <values>
+            <fullName>Amended Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court Order%2FJudgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cure Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Response%2FCure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Forma Pauperis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%26R%2FRCI%2FCIU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other PAGA Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposed Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Successor_Liability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Threat_Recipient_Type__c</picklist>
+        <values>
+            <fullName>LC Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Threat_Related_Language__c</picklist>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambodian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cantonese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farsi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandarin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjabi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tagalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnamese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Threat_Reported__c</picklist>
+        <values>
+            <fullName>In Person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_Card_Documents__c</picklist>
+        <values>
+            <fullName>Copy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Time_record_signed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Request__c</picklist>
+        <values>
+            <fullName>Judgment Enforcement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Union__c</picklist>
+        <values>
+            <fullName>Don%27t Know</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Union</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Union</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Union_contract_covering_your_employment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Violation_Type__c</picklist>
+        <values>
+            <fullName>Agricultural Labor Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apprenticeship Labor Code 3070 %E2%80%93 3098</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Labor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Classified as Independent Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper or Incomplete Wage Statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improper payment form incl%2E NSF check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Homework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kickbacks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lactation Accommodation %28LC 1030%E2%80%901033%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing%2C Registration or Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meal and Rest Breaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minimum Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Wage Statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Workers%E2%80%99 Compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nonexempt Classified as Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Paid Wages Due on Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not paid for all hours worked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not providing required time off%2C other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupational SAFE HLTH %28LC 6300 et seq%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Notice or Posting or Recordkeeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Unpaid Wages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PMNT Reimbursement of Empl Expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay Discrim on basis of sex %28LC1197%2E5%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Works %28Labor Code %C2%A7%C2%A7 1720 %E2%80%93 1815%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retaliation - Protected Status Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sick Leave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tips or Gratuities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unfair Immigration Activities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Violations_Identified_at_Intake__c</picklist>
+        <values>
+            <fullName>H%26S 1596%2E881 and 1596%2E882</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWC Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1019%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1024%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1025-1028</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1030-1033</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1041-1044</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1102%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1171</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1197%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1198%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1311%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 1512</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%28a%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%28b%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%28c%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%28e%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%28f%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E2%28b%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E7 and EdC 48900%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 230%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 232%28a%29 and %28b%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 232%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 233 and 234</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 244</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 245-249</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 2814</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 2929%28b%29 and %28c%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 2930</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 432%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 432%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 432%2E8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 6310</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 6311</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 6399%2E7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 6403%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 752</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 96%28k%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 98%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UI 1237</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wages__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wages_paid_Via__c</picklist>
+        <values>
+            <fullName>By Both Check %26 Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>By Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>By Check</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Were_you_paid_by_COMMISION__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Were_you_paid_by_PIECE_RATE__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Were_you_paid_more_than_one_hourly_rate__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Witness_Information_Provided__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WorkAddressDifferent__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Work_Hours_Days__c</picklist>
+        <values>
+            <fullName>Same Each Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varied%2FIrregular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Workers_Comp_Insurance_WCI_Information__c</picklist>
+        <values>
+            <fullName>Has WCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Has WCI w%2F Lapse of Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No WCI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2699_PAGA_Case__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X72_Hour_Notice__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

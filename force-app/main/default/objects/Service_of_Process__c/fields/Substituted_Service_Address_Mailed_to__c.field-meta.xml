@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Substituted_Service_Address_Mailed_to__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Only if Type of Service = Substituted Service
+Default value = Address Served</description>
+    <externalId>false</externalId>
+    <label>Substituted Service - Address Mailed to</label>
+    <referenceTo>Address__c</referenceTo>
+    <relationshipLabel>Service of Processes (Substituted Service - Address Mailed to)</relationshipLabel>
+    <relationshipName>Service_of_Processes1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seasonal_Holidays_Closed__c</fullName>
+    <externalId>false</externalId>
+    <label>Seasonal: Holidays Closed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Year&#39;s Day</fullName>
+                <default>false</default>
+                <label>New Year&#39;s Day</label>
+            </value>
+            <value>
+                <fullName>Memorial Day</fullName>
+                <default>false</default>
+                <label>Memorial Day</label>
+            </value>
+            <value>
+                <fullName>4th of July</fullName>
+                <default>false</default>
+                <label>4th of July</label>
+            </value>
+            <value>
+                <fullName>Labor Day</fullName>
+                <default>false</default>
+                <label>Labor Day</label>
+            </value>
+            <value>
+                <fullName>Thanksgiving Day</fullName>
+                <default>false</default>
+                <label>Thanksgiving Day</label>
+            </value>
+            <value>
+                <fullName>Christmas</fullName>
+                <default>false</default>
+                <label>Christmas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

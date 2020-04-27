@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Settlement_Summary__c</fullName>
+    <externalId>false</externalId>
+    <label>Settlement Summary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reinstate</fullName>
+                <default>false</default>
+                <label>Reinstate</label>
+            </value>
+            <value>
+                <fullName>Lost wages</fullName>
+                <default>false</default>
+                <label>Lost wages</label>
+            </value>
+            <value>
+                <fullName>Front pay</fullName>
+                <default>false</default>
+                <label>Front pay</label>
+            </value>
+            <value>
+                <fullName>Posting a notice</fullName>
+                <default>false</default>
+                <label>Posting a notice</label>
+            </value>
+            <value>
+                <fullName>Neutral job ref</fullName>
+                <default>false</default>
+                <label>Neutral job ref</label>
+            </value>
+            <value>
+                <fullName>LTR of Recommendation.</fullName>
+                <default>false</default>
+                <label>LTR of Recommendation.</label>
+            </value>
+            <value>
+                <fullName>Add’l staff Training</fullName>
+                <default>false</default>
+                <label>Add’l staff Training</label>
+            </value>
+            <value>
+                <fullName>Dist of written materials</fullName>
+                <default>false</default>
+                <label>Dist of written materials</label>
+            </value>
+            <value>
+                <fullName>RCI video</fullName>
+                <default>false</default>
+                <label>RCI video</label>
+            </value>
+            <value>
+                <fullName>Conf. terms ND</fullName>
+                <default>false</default>
+                <label>Conf. terms ND</label>
+            </value>
+            <value>
+                <fullName>Change in nature of term</fullName>
+                <default>false</default>
+                <label>Change in nature of term</label>
+            </value>
+            <value>
+                <fullName>Reimb. lost benefits</fullName>
+                <default>false</default>
+                <label>Reimb. lost benefits</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

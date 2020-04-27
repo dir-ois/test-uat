@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Geographic region in which lien has validity or application --></help>
+    <label><!-- Scope of Lien --></label>
+    <name>Scope_of_Lien__c</name>
+    <picklistValues>
+        <masterLabel>Alameda County, California</masterLabel>
+        <translation><!-- Alameda County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alpine County, California</masterLabel>
+        <translation><!-- Alpine County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amador County, California</masterLabel>
+        <translation><!-- Amador County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Butte County, California</masterLabel>
+        <translation><!-- Butte County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calaveras County, California</masterLabel>
+        <translation><!-- Calaveras County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City and County of San Francisco, California</masterLabel>
+        <translation><!-- City and County of San Francisco, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colusa County, California</masterLabel>
+        <translation><!-- Colusa County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contra Costa County, California</masterLabel>
+        <translation><!-- Contra Costa County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Del Norte County, California</masterLabel>
+        <translation><!-- Del Norte County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Dorado County, California</masterLabel>
+        <translation><!-- El Dorado County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno County, California</masterLabel>
+        <translation><!-- Fresno County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glenn County, California</masterLabel>
+        <translation><!-- Glenn County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Humboldt County, California</masterLabel>
+        <translation><!-- Humboldt County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imperial County, California</masterLabel>
+        <translation><!-- Imperial County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inyo County, California</masterLabel>
+        <translation><!-- Inyo County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kern County, California</masterLabel>
+        <translation><!-- Kern County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kings County, California</masterLabel>
+        <translation><!-- Kings County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake County, California</masterLabel>
+        <translation><!-- Lake County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lassen County, California</masterLabel>
+        <translation><!-- Lassen County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles County, California</masterLabel>
+        <translation><!-- Los Angeles County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madera County, California</masterLabel>
+        <translation><!-- Madera County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marin County, California</masterLabel>
+        <translation><!-- Marin County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mariposa County, California</masterLabel>
+        <translation><!-- Mariposa County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mendocino County, California</masterLabel>
+        <translation><!-- Mendocino County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merced County, California</masterLabel>
+        <translation><!-- Merced County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modoc County, California</masterLabel>
+        <translation><!-- Modoc County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mono County, California</masterLabel>
+        <translation><!-- Mono County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monterey County, California</masterLabel>
+        <translation><!-- Monterey County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Napa County, California</masterLabel>
+        <translation><!-- Napa County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nevada County, California</masterLabel>
+        <translation><!-- Nevada County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange County, California</masterLabel>
+        <translation><!-- Orange County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Placer County, California</masterLabel>
+        <translation><!-- Placer County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plumas County, California</masterLabel>
+        <translation><!-- Plumas County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside County, California</masterLabel>
+        <translation><!-- Riverside County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento County, California</masterLabel>
+        <translation><!-- Sacramento County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Benito County, California</masterLabel>
+        <translation><!-- San Benito County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino County, California</masterLabel>
+        <translation><!-- San Bernardino County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego County, California</masterLabel>
+        <translation><!-- San Diego County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Joaquin County, California</masterLabel>
+        <translation><!-- San Joaquin County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Luis Obispo County, California</masterLabel>
+        <translation><!-- San Luis Obispo County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Mateo County, California</masterLabel>
+        <translation><!-- San Mateo County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara County, California</masterLabel>
+        <translation><!-- Santa Barbara County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Clara County, California</masterLabel>
+        <translation><!-- Santa Clara County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Cruz County, California</masterLabel>
+        <translation><!-- Santa Cruz County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shasta County, California</masterLabel>
+        <translation><!-- Shasta County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra County, California</masterLabel>
+        <translation><!-- Sierra County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siskiyou County, California</masterLabel>
+        <translation><!-- Siskiyou County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solano County, California</masterLabel>
+        <translation><!-- Solano County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonoma County, California</masterLabel>
+        <translation><!-- Sonoma County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stanislaus County, California</masterLabel>
+        <translation><!-- Stanislaus County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State of California</masterLabel>
+        <translation><!-- State of California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sutter County, California</masterLabel>
+        <translation><!-- Sutter County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tehama County, California</masterLabel>
+        <translation><!-- Tehama County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trinity County, California</masterLabel>
+        <translation><!-- Trinity County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tulare County, California</masterLabel>
+        <translation><!-- Tulare County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tuolumne County, California</masterLabel>
+        <translation><!-- Tuolumne County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United States</masterLabel>
+        <translation><!-- United States --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventura County, California</masterLabel>
+        <translation><!-- Ventura County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yolo County, California</masterLabel>
+        <translation><!-- Yolo County, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yuba County, California</masterLabel>
+        <translation><!-- Yuba County, California --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

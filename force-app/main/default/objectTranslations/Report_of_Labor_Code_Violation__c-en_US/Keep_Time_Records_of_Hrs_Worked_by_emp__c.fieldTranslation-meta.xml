@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Does the Employer Keep Time Records of Hours Worked by Employees? --></help>
+    <label><!-- Keep Time Records of Hrs Worked by emp? --></label>
+    <name>Keep_Time_Records_of_Hrs_Worked_by_emp__c</name>
+    <picklistValues>
+        <masterLabel>Don&#39;t Know</masterLabel>
+        <translation><!-- Don&apos;t Know --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

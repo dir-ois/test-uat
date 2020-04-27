@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Type of Payment for the PAGA Payment --></help>
+    <label><!-- Type of Payment --></label>
+    <name>Type_of_Payment__c</name>
+    <picklistValues>
+        <masterLabel>Filing Fee from PAGA Employer</masterLabel>
+        <translation><!-- Filing Fee from PAGA Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filing Fee from PAGA Filer</masterLabel>
+        <translation><!-- Filing Fee from PAGA Filer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalty Payment</masterLabel>
+        <translation><!-- Penalty Payment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

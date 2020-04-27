@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- JEU Reject Reason --></label>
+    <name>JEU_Reject_Reason2__c</name>
+    <picklistValues>
+        <masterLabel>Incomplete</masterLabel>
+        <translation><!-- Incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need correction</masterLabel>
+        <translation><!-- Need correction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refer to CPL</masterLabel>
+        <translation><!-- Refer to CPL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refer to WJC</masterLabel>
+        <translation><!-- Refer to WJC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

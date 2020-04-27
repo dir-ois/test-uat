@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employer_Workweek__c</fullName>
+    <description>This formula field is used to display the the Employer workweek from the Parent Account to this object, it is also being used to pre-populate it on the Inspection Questions.</description>
+    <externalId>false</externalId>
+    <formula>Employer__r.Company_s_Workweek__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Company&#39;s Workweek</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

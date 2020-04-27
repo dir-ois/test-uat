@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SysAd_Migrated_Data_Wage_Claim_VNO_WCA</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Office__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Imported_From__c</field>
+        <operation>equals</operation>
+        <value>VNO-WCA</value>
+    </filters>
+    <label>SysAd - Migrated Data-Wage Claim-VNO-WCA</label>
+    <sharedTo>
+        <role>System_Administrators</role>
+    </sharedTo>
+</ListView>

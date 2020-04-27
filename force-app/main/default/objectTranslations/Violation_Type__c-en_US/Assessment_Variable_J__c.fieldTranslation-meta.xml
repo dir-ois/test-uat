@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Variable &quot;J&quot; in the Assessment Calculation. --></help>
+    <label><!-- Assessment Variable J --></label>
+    <name>Assessment_Variable_J__c</name>
+</CustomFieldTranslation>

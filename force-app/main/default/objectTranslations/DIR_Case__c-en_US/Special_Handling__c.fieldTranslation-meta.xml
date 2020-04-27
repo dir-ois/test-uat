@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Special Handling --></label>
+    <name>Special_Handling__c</name>
+    <picklistValues>
+        <masterLabel>BOFE Claim</masterLabel>
+        <translation><!-- BOFE Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic Violence</masterLabel>
+        <translation><!-- Domestic Violence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equal Pay</masterLabel>
+        <translation><!-- Equal Pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health &amp; Safety Lic</masterLabel>
+        <translation><!-- Health &amp; Safety Lic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immigration Protection</masterLabel>
+        <translation><!-- Immigration Protection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHA</masterLabel>
+        <translation><!-- OSHA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid Sick Leave</masterLabel>
+        <translation><!-- Paid Sick Leave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Claim</masterLabel>
+        <translation><!-- Wage Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workplace Injury</masterLabel>
+        <translation><!-- Workplace Injury --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDBX_Owner_Queue_ID__c</fullName>
+    <description>Used to hold the unique Sandbox (CS11): Office Queue ID for CS11 of BOFE offices.
+For BOFE Offices: Setup -&gt; Manage Users -&gt; Queues -&gt; Select: Office-Name -&gt; ID
+For WCA offices, set to any user&#39;s ID from sandbox.</description>
+    <externalId>false</externalId>
+    <label>SDBX Owner-Queue ID</label>
+    <length>18</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

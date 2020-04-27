@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_changing_of_User_record</fullName>
+    <active>true</active>
+    <description>Prevents users from modifying Employee record.</description>
+    <errorConditionFormula>AND 
+(PRIORVALUE(RecordTypeId) = &#39;012d00000019POZ&#39;, 
+NOT( CONTAINS($Profile.Name, &#39;System Administrator&#39;) ))</errorConditionFormula>
+    <errorMessage>Generate a Service Request to modify this employee record.</errorMessage>
+</ValidationRule>

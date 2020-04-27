@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Penalty_Balance_Due__c</fullName>
+    <description>Pulls the penalties balance due from the parent assessment</description>
+    <externalId>false</externalId>
+    <formula>If((RecordType.Name = &#39;BOFE&#39; &amp;&amp; ISPICKVAL(Status__c, &quot;Dismissed&quot;)),0, Assessment__r.Total_Citation_Penalties_Balance_Due__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Penalty Balance Due</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

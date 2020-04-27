@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fiscal_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(MONTH(DATEVALUE(CreatedDate))) = &quot;1&quot;, TEXT(YEAR(DATEVALUE(CreatedDate)-365)),
+
+IF(TEXT(MONTH(DATEVALUE(CreatedDate))) = &quot;2&quot;, TEXT(YEAR(DATEVALUE(CreatedDate)-365)),
+
+IF(TEXT(MONTH(DATEVALUE(CreatedDate))) = &quot;3&quot;, TEXT(YEAR(DATEVALUE(CreatedDate)-365)),
+
+IF(TEXT(MONTH(DATEVALUE(CreatedDate))) = &quot;4&quot;, TEXT(YEAR(DATEVALUE(CreatedDate)-365)),
+
+IF(TEXT(MONTH(DATEVALUE(CreatedDate))) = &quot;5&quot;, TEXT(YEAR(DATEVALUE(CreatedDate)-365)),
+
+IF(TEXT(MONTH(DATEVALUE(CreatedDate))) = &quot;6&quot;, TEXT(YEAR(DATEVALUE(CreatedDate)-365)),
+
+TEXT(YEAR(DATEVALUE(CreatedDate)) 
+)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fiscal Year</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

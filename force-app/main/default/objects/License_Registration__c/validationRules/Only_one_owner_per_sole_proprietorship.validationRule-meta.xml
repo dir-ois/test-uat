@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_one_owner_per_sole_proprietorship</fullName>
+    <active>true</active>
+    <description>Allows only one Owner per Registration for Sole Proprietorships.</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( Company_Type__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+AND(
+ISPICKVAL(Company_Type__c, &quot;Sole Proprietor&quot;),
+  Number_of_Ownership_Records__c  &lt;&gt; 1,
+ ISPICKVAL(Ready_to_Submit__c, &quot;Yes&quot;)
+)</errorConditionFormula>
+    <errorMessage>For Sole Proprietorships, one and only one owner is required. Please revisit the Company People tab and ensure that you have added a single owner.</errorMessage>
+</ValidationRule>

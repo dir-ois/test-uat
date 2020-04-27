@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used for NSF document to put who the letter should go to --></help>
+    <label><!-- NSF Demand Letter Attention To --></label>
+    <name>NSF_Demand_Letter_Attention_To__c</name>
+</CustomFieldTranslation>

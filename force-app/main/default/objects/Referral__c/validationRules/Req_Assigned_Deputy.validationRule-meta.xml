@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_Assigned_Deputy</fullName>
+    <active>true</active>
+    <description>7-28L updated to screen out PAGA cases. Requires assigned deputy on the case before a referral can be made</description>
+    <errorConditionFormula>ISBLANK ( Case__r.Assigned_Deputy__c ) &amp;&amp; NOT(Case__r.RecordType.DeveloperName = &#39;PAGA_Case&#39;)</errorConditionFormula>
+    <errorMessage>Please assign this case to a deputy before creating a referral</errorMessage>
+</ValidationRule>

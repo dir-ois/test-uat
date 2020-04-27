@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_Queue__c</fullName>
+    <externalId>false</externalId>
+    <label>Select Queue</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CalAtlas Business Team</fullName>
+                <default>false</default>
+                <label>CalAtlas Business Team</label>
+            </value>
+            <value>
+                <fullName>Salesforce Support Team</fullName>
+                <default>false</default>
+                <label>Salesforce Support Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

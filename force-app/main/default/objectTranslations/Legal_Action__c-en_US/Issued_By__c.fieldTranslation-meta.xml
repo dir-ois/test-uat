@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Issued By --></label>
+    <name>Issued_By__c</name>
+    <picklistValues>
+        <masterLabel>Court</masterLabel>
+        <translation><!-- Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Labor Commissioner</masterLabel>
+        <translation><!-- Labor Commissioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opposing Party</masterLabel>
+        <translation><!-- Opposing Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

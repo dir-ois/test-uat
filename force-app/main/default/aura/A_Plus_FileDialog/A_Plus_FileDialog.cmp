@@ -1,0 +1,90 @@
+<!--
+// @author: Oswin Correa
+// @date: 4/4/2018
+// @description: Component displayed within the modal and is used to create,update and move attachments
+-->
+<aura:component controller="A_Plus_Controller">
+
+	<aura:attribute name="recordId" type="String" default=""
+		description="Context parent Record Id" />
+	<aura:attribute name="headerInfoWrapper" type="Object" default="{}"
+		description="Wrapper to store field information to be displayed corresponding to the field type" />
+	<aura:attribute name="configDetails" type="Object" default="{}"
+		description="Details of the linked Attachment + configurtion record" />
+	<aura:attribute name="fileInfo" type="Object" default="{}"
+		description="Context Attachment + record" />
+	<aura:attribute name="isNoFilePresent" type="Boolean" default="true"
+		description="To disable upload file functionality when no file selected" />
+	<aura:attribute name="isEdit" type="Boolean" default="false"
+		description="To detect the edit mode of Context Attachment + record" />
+	<aura:attribute name="isMove" type="Boolean" default="false"
+		description="To detect the move mode of Context Attachment + record" />
+	<aura:attribute name="fileExtension" type="String" default=""
+		description="To store the file Extension of the Context Attachment + record" />
+	<aura:attribute name="fileType" type="String" default=""
+		description="To store the file type of the Context Attachment + record" />
+	<aura:attribute name="requiredFields" type="List" default="[]"
+		description="To store the Required Fields of the Context Attachment + record" />
+	<aura:attribute name="fileTypeOptionsToMove" type="Object" default="{}"
+		description="File types other than the file type of the Context Attachment + record" />
+	<aura:attribute name="internalcontentDocId" type="String" default=""
+		description="To store the internal Content Document Id created via lightning file upload component" />
+
+	<aura:registerEvent name="fetchAttachmentinfo"
+		type="c:A_Plus_FetchAttachmentInfo"
+		description="To fire event to fetch recent data pertaining to the file type" />
+	<aura:registerEvent name="deleteInternalRecords"
+		type="c:A_Plus_DeleteInternalRecords"
+		description="Application event to delete attachment plus and related records created internally while uploading file using lighning:fileupload component" />
+
+	<aura:handler name="init" action="{!c.doInit}" value="{!this}"
+		description="init method that runs on component load" />
+
+	<lightning:overlayLibrary aura:id="fileDialog" />
+
+	<lightning:spinner aura:id="dialogSpinner" class="slds-hide" />
+
+	<aura:if isTrue="{!!v.isEdit}">
+
+		<lightning:fileUpload name="fileUploader" aura:id="fileUploader"
+			multiple="false" recordId="{!v.recordId}"
+			onuploadfinished="{!c.handleUploadFinished}" />
+
+	</aura:if>
+
+	<aura:if isTrue="{!v.isMove}">
+		<ui:inputSelect aura:id="moveOptions" label="Move To"
+			change="{!c.onMoveOptionSelect}" class="slds-m-bottom_x-small"
+			required="true" />
+	</aura:if>
+
+	<ui:inputText aura:id="File_Name" label="File Name"
+		value="{!v.fileInfo.File_Name}" class="slds-m-bottom_x-small"
+		required="true" disabled="{!v.isMove}" />
+	<ui:inputCheckbox aura:id="Private" label="Private"
+		value="{!v.fileInfo.Private}" class="slds-m-bottom_x-small" /> 
+    
+   {!v.body}
+    
+   <ui:inputTextArea label="Description"
+		value="{!v.fileInfo.Description}" class="slds-m-bottom_x-small" />
+
+	<div class="slds-align_absolute-center">
+		<aura:if isTrue="{!!v.isMove}">
+			<aura:if isTrue="{!!v.isEdit}">
+				<lightning:button variant="brand" label="Save" onclick="{!c.save}"
+					disabled="{!v.isNoFilePresent}" />
+				<aura:set attribute="else">
+					<lightning:button variant="brand" label="Save" onclick="{!c.edit}" />
+				</aura:set>
+			</aura:if>
+			<aura:set attribute="else">
+				<lightning:button aura:id="move" variant="brand" label="Move"
+					onclick="{!c.move}" disabled="true" />
+			</aura:set>
+		</aura:if>
+		<lightning:button variant="neutral" label="Cancel"
+			onclick="{!c.handleCancel}" />
+	</div>
+
+</aura:component>

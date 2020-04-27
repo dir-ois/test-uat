@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Full Text of choices- 
+Uniforms not reimbursed or illegally charged to employees
+Tools, Supplies, or equipment not reimbursed or illegally charged to employees
+Illegal charges for cash shortages, breakage, or loss of equipment --></help>
+    <label><!-- Business Expense Violations --></label>
+    <name>Business_Expense_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Illegal charges for cash shortage</masterLabel>
+        <translation><!-- Illegal charges for cash shortage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No payback or illegal charge of uniform</masterLabel>
+        <translation><!-- No payback or illegal charge of uniform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools, equipment, supply not reimbursed</masterLabel>
+        <translation><!-- Tools, equipment, supply not reimbursed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

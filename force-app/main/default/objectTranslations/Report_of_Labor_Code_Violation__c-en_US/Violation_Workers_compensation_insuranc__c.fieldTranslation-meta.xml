@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Workers’ compensation insurance notice not posted --></help>
+    <label><!-- Workers’ compensation insurance notice --></label>
+    <name>Violation_Workers_compensation_insuranc__c</name>
+</CustomFieldTranslation>

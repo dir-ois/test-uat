@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This establishes a Master-Detail relationship do the DIR Case.  A Case must be created logically before a report of labor code violation may be created.  Reparentable --></help>
+    <label><!-- Case --></label>
+    <name>DIR_Case__c</name>
+    <relationshipLabel><!-- Reports of Labor Law Violations --></relationshipLabel>
+</CustomFieldTranslation>

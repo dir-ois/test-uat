@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Referral__c</columns>
+    <columns>Referral_Status__c</columns>
+    <columns>Assigned_Employee__c</columns>
+    <columns>Currently_Assigned__c</columns>
+    <columns>First_Reminder_Date__c</columns>
+    <columns>Second_Reminder_Date__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

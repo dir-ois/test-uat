@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A referral for Civil Litigation may result in a payment plan that is related to the Referral record. --></help>
+    <label><!-- Referral --></label>
+    <name>Referral__c</name>
+    <relationshipLabel><!-- Payment Plans --></relationshipLabel>
+</CustomFieldTranslation>

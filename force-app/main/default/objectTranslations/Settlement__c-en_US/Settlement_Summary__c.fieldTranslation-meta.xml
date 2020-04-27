@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Settlement Summary --></label>
+    <name>Settlement_Summary__c</name>
+    <picklistValues>
+        <masterLabel>Add’l staff Training</masterLabel>
+        <translation><!-- Add’l staff Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change in nature of term</masterLabel>
+        <translation><!-- Change in nature of term --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conf. terms ND</masterLabel>
+        <translation><!-- Conf. terms ND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dist of written materials</masterLabel>
+        <translation><!-- Dist of written materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Front pay</masterLabel>
+        <translation><!-- Front pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LTR of Recommendation.</masterLabel>
+        <translation><!-- LTR of Recommendation. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost wages</masterLabel>
+        <translation><!-- Lost wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neutral job ref</masterLabel>
+        <translation><!-- Neutral job ref --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Posting a notice</masterLabel>
+        <translation><!-- Posting a notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI video</masterLabel>
+        <translation><!-- RCI video --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reimb. lost benefits</masterLabel>
+        <translation><!-- Reimb. lost benefits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstate</masterLabel>
+        <translation><!-- Reinstate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

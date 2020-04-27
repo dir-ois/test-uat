@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_formatting_for_US_zip_codes</fullName>
+    <active>true</active>
+    <description>requires us zip codes conform to standad xxxxx-xxxx format</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( Residential_Postal_Code__c )
+||
+ISCHANGED ( Mailing_Postal_Code__c )
+||
+ISCHANGED ( Physical_Business_Postal_Code__c )
+
+)
+
+&amp;&amp;
+/* Core of validation rule */
+ 
+
+( 
+!ISBLANK ( Residential_Postal_Code__c) 
+&amp;&amp; ISPICKVAL ( Residential_Country__c , &#39;United States of America&#39;) 
+&amp;&amp; !REGEX(Residential_Postal_Code__c,&quot;\\d{5}(-\\d{4})?&quot;) 
+) 
+|| 
+( 
+!ISBLANK ( Mailing_Postal_Code__c) 
+&amp;&amp; ISPICKVAL ( Mailing_Country__c , &#39;United States of America&#39;) 
+&amp;&amp; !REGEX( Mailing_Postal_Code__c,&quot;\\d{5}(-\\d{4})?&quot;) 
+) 
+|| 
+( 
+!ISBLANK ( Physical_Business_Postal_Code__c) 
+&amp;&amp; ISPICKVAL ( Physical_Business_Country__c , &#39;United States of America&#39;) 
+&amp;&amp; !REGEX( Physical_Business_Postal_Code__c ,&quot;\\d{5}(-\\d{4})?&quot;) 
+)</errorConditionFormula>
+    <errorMessage>U.S. Zip codes must have 5 digits or 9 digits with a dash between the 5th and 6th digit.</errorMessage>
+</ValidationRule>

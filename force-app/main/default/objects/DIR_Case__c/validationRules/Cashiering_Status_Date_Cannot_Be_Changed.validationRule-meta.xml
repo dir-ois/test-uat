@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cashiering_Status_Date_Cannot_Be_Changed</fullName>
+    <active>true</active>
+    <description>Cashiering Status date cannot be changed once it has been populated by the workflow.</description>
+    <errorConditionFormula>ISCHANGED( Cashiering_Status_Date__c ) &amp;&amp;  
+NOT(ISBLANK(PRIORVALUE( Cashiering_Status_Date__c )))
+&amp;&amp;
+NOT($Permission.DLSE_Sr_Cashier)</errorConditionFormula>
+    <errorDisplayField>Cashiering_Status_Date__c</errorDisplayField>
+    <errorMessage>Date Field cannot be changed once the case has been closed</errorMessage>
+</ValidationRule>

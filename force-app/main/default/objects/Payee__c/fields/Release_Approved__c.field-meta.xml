@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Release_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If a release is required before payment may be made to this payee, and that release is on file, check this box.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If a release is required before payment may be made to this payee, and that release is on file, check this box.</inlineHelpText>
+    <label>Release Approved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

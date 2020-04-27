@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Reminder_Days__c</fullName>
+    <description>Business days after being sent for referral that a reminder should be set.</description>
+    <externalId>false</externalId>
+    <formula>/* setup BOFE Legal Referrals settings */ 
+IF ( 
+( 
+RecordType.DeveloperName = &#39;BOFE_Civil_Litigation_Referral&#39; 
+|| RecordType.DeveloperName = &#39;BOFE_Request_for_Legal_Court_Action&#39; 
+|| RecordType.DeveloperName = &#39;BOFE_Request_for_Legal_Services&#39; 
+) 
+, 8 
+, null 
+)</formula>
+    <label>Second Reminder Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

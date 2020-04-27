@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Type --></label>
+    <name>Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>Assignment Order</masterLabel>
+        <translation><!-- Assignment Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Amending Judgment</masterLabel>
+        <translation><!-- Order Amending Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Appointing Receiver</masterLabel>
+        <translation><!-- Order Appointing Receiver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Compelling Discovery Responses</masterLabel>
+        <translation><!-- Order Compelling Discovery Responses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Determining Claim of Exemption</masterLabel>
+        <translation><!-- Order Determining Claim of Exemption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Overruling Demurrer</masterLabel>
+        <translation><!-- Order Overruling Demurrer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Sustaining Demurrer</masterLabel>
+        <translation><!-- Order Sustaining Demurrer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Vacating Judgment</masterLabel>
+        <translation><!-- Order Vacating Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order for Sanctions</masterLabel>
+        <translation><!-- Order for Sanctions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order to Appear at Judgment Debtor Examination</masterLabel>
+        <translation><!-- Order to Appear at Judgment Debtor Examination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order to Compel</masterLabel>
+        <translation><!-- Order to Compel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order to Show Cause</masterLabel>
+        <translation><!-- Order to Show Cause --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Order</masterLabel>
+        <translation><!-- Other Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Right to Attach Order</masterLabel>
+        <translation><!-- Right to Attach Order --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

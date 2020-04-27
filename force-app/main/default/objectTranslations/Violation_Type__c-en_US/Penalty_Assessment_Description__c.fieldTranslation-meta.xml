@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Describe how the assessment is derived in terms that will be displayed on output documents. Use a ~ around a variable to display its value and use {} around a formula to be calculated. Ex. &quot;Number of employees (~A~) X Number of Days (~B~) = {~A~*~B~} --></help>
+    <label><!-- Penalty Assessment Description --></label>
+    <name>Penalty_Assessment_Description__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,175 @@
+<apex:page controller="RegistrationEWPPDFController" renderAs="{!renderingService}" standardStylesheets="false" applyBodyTag="false" docType="html-5.0">
+    <head>
+        <style type="text/css" media="print">
+            <apex:outputpanel layout="none" rendered="true">
+                .watermark {
+                background-repeat: repeat;
+                background-image: url("{!URLFOR($Resource.EWP_Health_Watermark)}");
+                background-position: top;
+                }
+            </apex:outputpanel>
+        </style>
+        
+    </head>
+    
+    <body class="watermark" style="font-size:11pt;">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>  
+        <br/>
+        <br/>
+        <apex:outputPanel style="text-align:center;" layout="block">APPLICATION FOR PERMISSION TO WORK</apex:outputPanel>
+        <apex:outputPanel style="text-align:center;" layout="block">IN THE ENTERTAINMENT INDUSTRY</apex:outputPanel>
+        <apex:outputPanel style="text-align:center;" layout="block">HEALTH RECORD</apex:outputPanel>
+        
+        <apex:pageBlock title="">
+            
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column style="border:1px solid black;font-weight:bold" >
+                    <apex:outputText value="{!pi.minorsFullName}">Name of Minor:&nbsp;</apex:outputText>
+                </apex:column>
+                <apex:column style="border:1px solid black;font-weight:bold" >
+                    <apex:outputText value="{!pi.minorsStageName}">Stage Name:&nbsp;</apex:outputText>
+                </apex:column>
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column headerValue="Address" style="border:1px solid black" value="{!pi.minorsAddress}"></apex:column>
+                <apex:column headerValue="City" style="border:1px solid black" value="{!pi.minorsCity}"></apex:column>
+                <apex:column headerValue="State" style="border:1px solid black" value="{!pi.minorsState}"></apex:column>
+                <apex:column headerValue="Zip" style="border:1px solid black" value="{!pi.minorsZip}"></apex:column>
+                <apex:column headerValue="Home Phone Number" style="border:1px solid black" value="{!pi.minorsHomePhone}"></apex:column>   
+            </apex:dataTable>
+            
+            <apex:dataTable width="100%" border="1px solid black" style="border:1px solid black;font-weight:bold" value="{!permitInfo}" var="pi">
+                <apex:column style="border:1px solid black;text-weight:normal" >
+                    <apex:outputText value="{!pi.minorsSchool}">School:&nbsp;</apex:outputText>
+                </apex:column>
+                <apex:column style="border:1px solid black;text-weight:normal" >
+                    <apex:outputText value="{!pi.minorsGrade}">Grade:&nbsp;</apex:outputText>
+                </apex:column>
+                
+                
+            </apex:dataTable>
+            
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column headerValue="Date of Birth" style="border:1px solid black" >
+                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!pi.minorsBirthDate}" /> 
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="Height" style="border:1px solid black" value="{!pi.minorsHeight}"></apex:column>
+                <apex:column headerValue="Weight" style="border:1px solid black" value="{!pi.minorsWeight}"></apex:column>
+                <apex:column headerValue="Hair Color" style="border:1px solid black" value="{!pi.minorsHairColor}"></apex:column>
+                <apex:column headerValue="Eye Color" style="border:1px solid black" value="{!pi.minorsEyeColor}"></apex:column>
+                <apex:column headerValue="Gender" style="border:1px solid black" value="{!pi.minorsGender}"></apex:column>
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column >
+                    <apex:outputText style="font-weight:bold;" 
+                                     value="STATEMENTOF PARENT OR GUARDIAN: It is my desire that a 6 Month Entertainment Work Permit be issued to the above  
+                                            named child. I will read the rules governing such employment and will cooperate to the best of my ability in
+                                            safeguarding his or her educational, moral and physical interest. I hereby certify, under penalty of perjury, that the
+                                            foregoing statements are true and correct and that the information provided regarding the minor is correct."/>
+                </apex:column>
+            </apex:dataTable>
+            
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column headerValue="Name of Parent or Guardian" style="border:1px solid black" value="{!pi.parentsFullName}"></apex:column>
+                <apex:column headerValue="Signature" width="33%" style="border:1px solid black"><br/><br/><br/></apex:column>
+                <apex:column headerValue="Daytime Phone Number" style="border:1px solid black"></apex:column>
+                
+            </apex:dataTable>
+            
+        </apex:pageBlock>
+
+        <apex:outputPanel style="font-weight:bold;text-align:center;" layout="block">Complete this section if required by the DLSE</apex:outputPanel>
+
+        <apex:pageBlock title="">
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">             
+                <apex:column width="33%" style="border:1px solid black; font-weight:bold;" >
+                    <apex:panelGrid columns="1" width="220px" cellpadding="2" cellspacing="0" rules="all" columnClasses="colClass">
+                        <apex:outputText value="{!pi.minorsFullName}">Name of Minor:&nbsp;</apex:outputText>
+                    </apex:panelGrid>
+                    <hr/>
+                    <apex:panelGrid style="padding-sides:2" columns="1" width="220px" cellspacing="0" rules="all" columnClasses="colClass">
+                        <apex:outputText />
+                            Doctor Name
+                    </apex:panelGrid> 
+                </apex:column>
+                
+                <apex:column width="33%" style="border:1px solid black" >
+                    Doctor Office Address
+                    <br/><br/><br/><br/><br/> 
+                </apex:column>
+                
+                <apex:column width="34%" style="border:1px solid black" >
+                    <apex:panelGrid style="" columns="1" width="220px" cellpadding="2" cellspacing="0" rules="all" columnClasses="colClass">
+                        Phone
+                        <br/>
+                    </apex:panelGrid> 
+                    <hr/>
+                    <apex:panelGrid style="" columns="1" width="220px" cellpadding="2" cellspacing="0" rules="all" columnClasses="colClass">
+                        Fax
+                        <br/>
+                    </apex:panelGrid> 
+                </apex:column>
+                
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column width="70%">
+                <apex:panelGrid >
+                    I certify that I am a licensed physician and surgeon who is Board Certified in Pediatrics and I have carefully examined the Minor listed above.
+                    In my professional opinion the minor:
+                    <apex:outputText >
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> IS&nbsp;
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> IS NOT
+                        physically fit to be emloyed in the production of motion pictures and television
+                    </apex:outputText>
+                    For infants under one month old (please check):
+                    
+                    <apex:outputText >
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> IS&nbsp;
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> IS NOT
+                        at least 15 days old
+                    </apex:outputText>                    
+                    <apex:outputText >
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> IS&nbsp;
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> IS NOT
+                        physically capable of handling the stress of filmmaking and the infants lungs, eyes, heart and immune system are sufficiently developed to withstand potential risks.
+                    </apex:outputText>                    
+                    <apex:outputText >                        
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> WAS&nbsp;
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> WAS NOT
+                        carried to full term
+                    </apex:outputText>                    
+                    <apex:outputText >
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> WAS&nbsp;
+                        <apex:image style="border:1px solid black" value="/img/checkbox_unchecked.gif"/> WAS NOT
+                        of normal birth weight.
+                    </apex:outputText>                    
+
+                </apex:panelGrid>                    
+                </apex:column>
+                <apex:column style="text-align:center" ><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Stamp</apex:column>
+            </apex:dataTable>
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock >
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column width="70%">Signature<br/><br/></apex:column>
+                <apex:column >Date<br/><br/></apex:column>
+            </apex:dataTable>
+            <apex:dataTable width="100%" border="1px solid black" style="font-weight:bold;border:1px solid black" value="{!permitInfo}" var="pi">
+                <apex:column >Remarks<br/><br/></apex:column>
+            </apex:dataTable>
+        </apex:pageBlock>     
+        
+        
+        
+    </body>
+    
+</apex:page>

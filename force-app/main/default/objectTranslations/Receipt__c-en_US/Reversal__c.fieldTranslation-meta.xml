@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Signifies a Reversal payment method, usually created via the Party to Party/Deductions button on the Case Management. --></help>
+    <label><!-- Reversal --></label>
+    <name>Reversal__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reporting Time Pay Amount Earned/Claimed --></label>
+    <name>Reporting_Time_Pay_Amount_Earned_Claimed__c</name>
+</CustomFieldTranslation>

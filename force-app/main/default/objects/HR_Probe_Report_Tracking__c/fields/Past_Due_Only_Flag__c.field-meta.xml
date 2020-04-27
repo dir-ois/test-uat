@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Past_Due_Only_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+((X1st_PD_NR_Total__c = 2 &amp;&amp;  X2nd_PD_NR_Total__c = 1 &amp;&amp;  X3rd_PD_NR_Total__c = 1)
+
+||
+
+(X1st_PD_NR_Total__c = 1 &amp;&amp;  X2nd_PD_NR_Total__c = 2 &amp;&amp;  X3rd_PD_NR_Total__c = 1)
+
+||
+
+(X1st_PD_NR_Total__c = 1 &amp;&amp;  X2nd_PD_NR_Total__c = 1 &amp;&amp;  X3rd_PD_NR_Total__c = 2)
+
+||
+
+(MOD( PD_NR_Column_Sum__c , 2)  &lt;&gt;  0)),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Past Due Only Flag</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

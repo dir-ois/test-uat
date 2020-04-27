@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Deputy</fullName>
+    <active>true</active>
+    <description>Requires a deputy to be assigned to the case before a payment may be recorded against it. Needed as a task may be sent to allocate the payment.</description>
+    <errorConditionFormula>AND (
+ISPICKVAL(Imported_From__c,&#39;&#39;),
+ISBLANK (Case__r.Assigned_Deputy__r.Id),
+NOT( RecordType.DeveloperName=&quot;PAGA&quot;)
+)</errorConditionFormula>
+    <errorMessage>A deputy must be assigned to the case before a payment may be recorded against the case.</errorMessage>
+</ValidationRule>

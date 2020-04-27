@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Office Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Office Accounts</value>
+    </caseValues>
+    <layouts>
+        <layout>Office Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The office must be populated and the office must have a record type before you can save this record. --></errorMessage>
+        <name>Mandatory_Office_and_Unit</name>
+    </validationRules>
+</CustomObjectTranslation>

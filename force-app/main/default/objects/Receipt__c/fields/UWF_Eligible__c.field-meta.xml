@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UWF_Eligible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Should be checked when the receipting cashier knows that the instrument is likely to have Unpaid Wage Fund mostly for Passthrough Payments.</description>
+    <externalId>false</externalId>
+    <label>UWF Eligible</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Grade --></label>
+    <name>Grade__c</name>
+    <picklistValues>
+        <masterLabel>10th</masterLabel>
+        <translation><!-- 10th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11th</masterLabel>
+        <translation><!-- 11th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12th</masterLabel>
+        <translation><!-- 12th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1st</masterLabel>
+        <translation><!-- 1st --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2nd</masterLabel>
+        <translation><!-- 2nd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd</masterLabel>
+        <translation><!-- 3rd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4th</masterLabel>
+        <translation><!-- 4th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5th</masterLabel>
+        <translation><!-- 5th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6th</masterLabel>
+        <translation><!-- 6th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7th</masterLabel>
+        <translation><!-- 7th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8th</masterLabel>
+        <translation><!-- 8th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9th</masterLabel>
+        <translation><!-- 9th --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day Care</masterLabel>
+        <translation><!-- Day Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kindergarten</masterLabel>
+        <translation><!-- Kindergarten --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-K</masterLabel>
+        <translation><!-- Pre-K --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

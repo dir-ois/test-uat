@@ -1,0 +1,6 @@
+<apex:page controller="RLLVInternalController" tabStyle="Report_of_Labor_Code_Violation__c" >
+    <flow:interview name="Internal_Report_of_Labor_Code_Violation_Entry_Flow" Interview="{!InternalRLLV}" finishLocation="{!RLLV}">
+        <apex:param name="UserID" assignTo="{!UserID}" value="{!$User.Id}" />
+        
+    </flow:interview>
+</apex:page>

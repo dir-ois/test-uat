@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- E-filing Vendor --></label>
+    <name>E_filing_Vendor__c</name>
+    <relationshipLabel><!-- Judgments (E-filing Vendor) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foreign_Phone_Number</fullName>
+    <active>true</active>
+    <description>validate length of foreign foreign number</description>
+    <errorConditionFormula>!ISPICKVAL( Physical_Business_Country__c , &#39;United States of America&#39;)
+&amp;&amp;
+( 
+  ( 
+   !ISBLANK( Daytime_Phone__c ) &amp;&amp;
+   LEN(  Daytime_Phone__c ) &lt; 12 )
+  ||
+  (
+   !ISBLANK ( Daytime_Phone__c) &amp;&amp;
+   LEN(  Daytime_Phone__c ) &gt; 15
+  ) 
+  ||
+  ( 
+   !ISBLANK( Mobile_Phone__c ) &amp;&amp;
+   LEN(  Mobile_Phone__c ) &lt; 12 )
+  ||
+  (
+   !ISBLANK ( Mobile_Phone__c) &amp;&amp;
+   LEN(  Mobile_Phone__c ) &gt; 15
+  )
+)</errorConditionFormula>
+    <errorMessage>Foreign phone numbers must be between 12 and 15 digits long</errorMessage>
+</ValidationRule>

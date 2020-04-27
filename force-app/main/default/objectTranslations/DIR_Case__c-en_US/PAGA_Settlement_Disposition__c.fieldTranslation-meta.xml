@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Settlement Disposition for PAGA --></help>
+    <label><!-- Settlement Disposition --></label>
+    <name>PAGA_Settlement_Disposition__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation><!-- Accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contested</masterLabel>
+        <translation><!-- Contested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Agency Comment or Response</masterLabel>
+        <translation><!-- No Agency Comment or Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

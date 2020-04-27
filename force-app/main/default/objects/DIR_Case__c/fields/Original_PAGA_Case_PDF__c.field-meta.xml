@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Original_PAGA_Case_PDF__c</fullName>
+    <description>&quot;&amp;LGAttachOption=2&quot; +
+&quot;&amp;SC0=1&quot; +
+&quot;&amp;FP0=1&quot; +
+&quot;&amp;LGAttachOption=0&quot; +
+
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;TemplateId=a0nr0000000HVic&quot; +
+&quot;&amp;QueryId=a0mr0000000P6v6&quot; +
+&quot;&amp;LGAttachOption=0&quot; +
+&quot;&amp;SC0=1&quot; +
+&quot;&amp;SC1=Chatter&quot; +
+&quot;&amp;QMode=Attachment&quot;</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;TemplateId=a0nt0000000AS7j&quot; +
+&quot;&amp;QueryId=a0mt0000000PiFu,a0mt0000000PiFp&quot; +
+&quot;&amp;SC0=1&quot; +
+&quot;&amp;SC1=Attachments&quot; +
+&quot;&amp;DefaultPDF=1&quot; +
+&quot;&amp;QMode=Attachments&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Original PAGA Case PDF</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

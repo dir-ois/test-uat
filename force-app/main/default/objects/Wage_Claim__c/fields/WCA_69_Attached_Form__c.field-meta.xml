@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_69_Attached_Form__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 69 Attached Form</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Order, Decision or Award.</fullName>
+                <default>false</default>
+                <label>Order, Decision or Award.</label>
+            </value>
+            <value>
+                <fullName>Amended Order, Decision or Award.</fullName>
+                <default>false</default>
+                <label>Amended Order, Decision or Award.</label>
+            </value>
+            <value>
+                <fullName>Notice of Hearing.</fullName>
+                <default>false</default>
+                <label>Notice of Hearing.</label>
+            </value>
+            <value>
+                <fullName>Notice of Rescheduled Hearing.</fullName>
+                <default>false</default>
+                <label>Notice of Rescheduled Hearing.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

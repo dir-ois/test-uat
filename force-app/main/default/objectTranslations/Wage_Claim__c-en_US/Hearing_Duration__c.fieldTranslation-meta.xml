@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hearing Duration --></label>
+    <name>Hearing_Duration__c</name>
+    <picklistValues>
+        <masterLabel>FULL DAY</masterLabel>
+        <translation><!-- FULL DAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONE HOUR</masterLabel>
+        <translation><!-- ONE HOUR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONE-HALF DAY</masterLabel>
+        <translation><!-- ONE-HALF DAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THREE HOURS</masterLabel>
+        <translation><!-- THREE HOURS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TWO HOURS</masterLabel>
+        <translation><!-- TWO HOURS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

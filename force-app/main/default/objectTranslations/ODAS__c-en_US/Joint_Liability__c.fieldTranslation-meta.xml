@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If there are multiple entities that are party to this ODA and they are jointly liable, this field will be checked. --></help>
+    <label><!-- Joint Liability --></label>
+    <name>Joint_Liability__c</name>
+</CustomFieldTranslation>

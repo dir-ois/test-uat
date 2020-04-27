@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Last_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Do not enter a name in this box if it is blank. Later if you need to make a change to the Case Name, then edit the name in this box. Note: Editing the name in this box does not change the Account Name.</inlineHelpText>
+    <label>Employee Last Name</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

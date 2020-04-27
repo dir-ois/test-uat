@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Only the individual owner or a general partner may sign.  If the business is a corporation or limited liability company, an authorized corporate officer or member may sign.  The name entered must match the full name on the individual&apos;s driver&apos;s license. --></help>
+    <label><!-- E-signature of Applicant --></label>
+    <name>E_signature_of_Applicant__c</name>
+</CustomFieldTranslation>

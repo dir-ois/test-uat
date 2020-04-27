@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adverse_Action__c</fullName>
+    <externalId>false</externalId>
+    <label>Adverse Action</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TerminatedDischargedFired</fullName>
+                <default>false</default>
+                <label>Terminated/Discharged/Fired</label>
+            </value>
+            <value>
+                <fullName>Demoted</fullName>
+                <default>false</default>
+                <label>Demoted</label>
+            </value>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <label>Suspended</label>
+            </value>
+            <value>
+                <fullName>Pay Reduced</fullName>
+                <default>false</default>
+                <label>Pay Reduced</label>
+            </value>
+            <value>
+                <fullName>Hours Reduced</fullName>
+                <default>false</default>
+                <label>Hours Reduced</label>
+            </value>
+            <value>
+                <fullName>Changed Work Schedule</fullName>
+                <default>false</default>
+                <label>Changed Work Schedule</label>
+            </value>
+            <value>
+                <fullName>Transferred</fullName>
+                <default>false</default>
+                <label>Transferred</label>
+            </value>
+            <value>
+                <fullName>Disciplinary Action/Written Warning</fullName>
+                <default>false</default>
+                <label>Disciplinary Action/Written Warning</label>
+            </value>
+            <value>
+                <fullName>Poor Evaluation</fullName>
+                <default>false</default>
+                <label>Poor Evaluation</label>
+            </value>
+            <value>
+                <fullName>Threatened</fullName>
+                <default>false</default>
+                <label>Threatened</label>
+            </value>
+            <value>
+                <fullName>Benefits_Denied</fullName>
+                <default>false</default>
+                <label>Benefits Denied</label>
+            </value>
+            <value>
+                <fullName>Not Hired</fullName>
+                <default>false</default>
+                <label>Not Hired</label>
+            </value>
+            <value>
+                <fullName>Not Rehired</fullName>
+                <default>false</default>
+                <label>Not Rehired</label>
+            </value>
+            <value>
+                <fullName>Harassed</fullName>
+                <default>false</default>
+                <label>Harassed</label>
+            </value>
+            <value>
+                <fullName>Intimidated</fullName>
+                <default>false</default>
+                <label>Intimidated</label>
+            </value>
+            <value>
+                <fullName>Forced to Resign/Quit</fullName>
+                <default>false</default>
+                <label>Forced to Resign/Quit</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Disc Action</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Disc Action</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Formed__c</fullName>
+    <description>Mapped to Date_Formed__c Account field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date format: mm/dd/yyyy or select the downward arrow to select a date from a calendar view.</inlineHelpText>
+    <label>Date Formed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

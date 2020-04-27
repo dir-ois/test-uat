@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_of_Appeared_participants__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Counts all meeting participants that appeared</inlineHelpText>
+    <label>Count of Appeared participants</label>
+    <summaryFilterItems>
+        <field>Meeting_Participant__c.Attendance__c</field>
+        <operation>equals</operation>
+        <value>Appeared</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Meeting_Participant__c.Meeting__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_To_DIR__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To check if the new employee is new to DIR or internal transfer.</description>
+    <externalId>false</externalId>
+    <label>New To DIR</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

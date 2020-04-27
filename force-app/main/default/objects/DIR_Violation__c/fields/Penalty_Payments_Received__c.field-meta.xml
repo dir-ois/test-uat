@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Penalty_Payments_Received__c</fullName>
+    <description>Total of Liability Payments under this Case Issue allocated to penalties. Populated by &#39;liabilityPaymentTrigger&#39; and &#39;liabilityPaymentMethods&#39; apex classes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total of all funds received allocated to penalties.</inlineHelpText>
+    <label>Civil Penalty Payment Received</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

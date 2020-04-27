@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receipt_void_reason</fullName>
+    <active>true</active>
+    <description>Required reason when status set to void</description>
+    <errorConditionFormula>ISPICKVAL ( Status__c, &#39;Void&#39; ) &amp;&amp; ISBLANK ( Void_Reason__c )</errorConditionFormula>
+    <errorMessage>Please enter the reason for voiding this receipt</errorMessage>
+</ValidationRule>

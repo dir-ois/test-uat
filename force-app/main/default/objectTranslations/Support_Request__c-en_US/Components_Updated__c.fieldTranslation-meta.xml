@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Components Updated --></label>
+    <name>Components_Updated__c</name>
+    <picklistValues>
+        <masterLabel>Apex Classes</masterLabel>
+        <translation><!-- Apex Classes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apex Triggers</masterLabel>
+        <translation><!-- Apex Triggers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apps</masterLabel>
+        <translation><!-- Apps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignment Rules</masterLabel>
+        <translation><!-- Assignment Rules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conga Buttons</masterLabel>
+        <translation><!-- Conga Buttons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Fields</masterLabel>
+        <translation><!-- Custom Fields --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Metadata</masterLabel>
+        <translation><!-- Custom Metadata --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Objects</masterLabel>
+        <translation><!-- Custom Objects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Settings</masterLabel>
+        <translation><!-- Custom Settings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Templates</masterLabel>
+        <translation><!-- Email Templates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Page Layout</masterLabel>
+        <translation><!-- Page Layout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validation Rule</masterLabel>
+        <translation><!-- Validation Rule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visualforce Pages</masterLabel>
+        <translation><!-- Visualforce Pages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workflows</masterLabel>
+        <translation><!-- Workflows --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

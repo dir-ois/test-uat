@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Wage amount collected on behalf of this liable party related to this liability. --></help>
+    <label><!-- Wage Amount Collected --></label>
+    <name>Wage_Amount_Collected__c</name>
+</CustomFieldTranslation>

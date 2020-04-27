@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>permit_applicant_must_be_15_days</fullName>
+    <active>true</active>
+    <description>For Entertainment Work Permit applicants. Applicants must be 15 days old to receive an Entertainment Work Permit.</description>
+    <errorConditionFormula>IF((Registration__r.RecordType.DeveloperName = &#39;Entertainment_Work&#39;)
+   &amp;&amp;(RecordType.DeveloperName = &#39;Individual_Permit&#39;)
+, Birth_Date__c &gt; (Today() - 15)
+, False)</errorConditionFormula>
+    <errorMessage>Applicants must be at least 15 days old or under age 18  to receive an Entertainment Work Permit.</errorMessage>
+</ValidationRule>

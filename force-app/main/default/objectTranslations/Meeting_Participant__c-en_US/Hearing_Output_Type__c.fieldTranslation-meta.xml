@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hearing Output Type --></label>
+    <name>Hearing_Output_Type__c</name>
+    <picklistValues>
+        <masterLabel>An Individual</masterLabel>
+        <translation><!-- An Individual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Behalf of Employer</masterLabel>
+        <translation><!-- On Behalf of Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operating Under Fictitious Name</masterLabel>
+        <translation><!-- Operating Under Fictitious Name --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

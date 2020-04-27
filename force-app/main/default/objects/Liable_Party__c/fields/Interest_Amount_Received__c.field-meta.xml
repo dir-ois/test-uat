@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_Amount_Received__c</fullName>
+    <description>payments received against interest roll to this amount on the LP.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Payments received applied to interest.</inlineHelpText>
+    <label>Interest Amount Received</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

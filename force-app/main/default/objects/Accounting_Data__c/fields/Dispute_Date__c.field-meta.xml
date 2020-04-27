@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispute_Date__c</fullName>
+    <description>Dispute Date
+
+Indicates the date that an item was disputed.</description>
+    <externalId>false</externalId>
+    <formula>IF( Dispute_Chkbox__c = &#39;Y&#39;,(IF(MONTH(Case_Issue__r.Appeal_Date__c) &lt; 10, &quot;0&quot;, &quot;&quot;)+ TEXT(MONTH(Case_Issue__r.Appeal_Date__c) )+IF(DAY(Case_Issue__r.Appeal_Date__c) &lt; 10, &quot;0&quot;, &quot;&quot;)+ TEXT(DAY(Case_Issue__r.Appeal_Date__c))
++TEXT(YEAR(Case_Issue__r.Appeal_Date__c))),&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>DISPUTE_DATE is required when DISPUTE_CHKBOX is &#39;Y&#39;.
+
+DISPUTE_DATE must be blank when DISPUTE_CHKBOX is &#39;N&#39;.</inlineHelpText>
+    <label>Dispute_Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

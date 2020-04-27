@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_Number_Required_on_Accepted</fullName>
+    <active>true</active>
+    <description>Requires that the JEU Number is required once the case is marked as Accepted.</description>
+    <errorConditionFormula>IF (ISBLANK (JEU_Number__c) &amp;&amp; ISPICKVAL( Refer_to_JEU__c , &quot;Accepted&quot;), TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>JEU_Number__c</errorDisplayField>
+    <errorMessage>You must populate the JEU# now that this has been accepted.</errorMessage>
+</ValidationRule>

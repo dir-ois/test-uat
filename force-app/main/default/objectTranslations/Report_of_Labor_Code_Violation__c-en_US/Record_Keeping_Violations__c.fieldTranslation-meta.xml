@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Keeping Violations --></label>
+    <name>Record_Keeping_Violations__c</name>
+    <picklistValues>
+        <masterLabel>No daily time records or inaccurate</masterLabel>
+        <translation><!-- No daily time records or inaccurate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No notice to new hires (L.C.S 2810.5)</masterLabel>
+        <translation><!-- No notice to new hires (L.C.S 2810.5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No payroll records or inaccurate</masterLabel>
+        <translation><!-- No payroll records or inaccurate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

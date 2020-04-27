@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Posted_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field to Account object to relate a bond to an Employer/Entity</description>
+    <externalId>false</externalId>
+    <label>Posted By</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Bonds</relationshipLabel>
+    <relationshipName>Bonds</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

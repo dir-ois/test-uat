@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If Status = Admin Dismissed, must decide if associated violations should be Admin Dismissed as well and Penalties zeroed out.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative Dismissal</fullName>
+                <default>false</default>
+                <label>Administrative Dismissal</label>
+            </value>
+            <value>
+                <fullName>Affirmed</fullName>
+                <default>false</default>
+                <label>Affirmed</label>
+            </value>
+            <value>
+                <fullName>Appeal Withdrawn</fullName>
+                <default>false</default>
+                <label>Appeal Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Canceled-Invalid</fullName>
+                <default>false</default>
+                <label>Canceled-Invalid</label>
+            </value>
+            <value>
+                <fullName>Dismissed</fullName>
+                <default>false</default>
+                <label>Dismissed</label>
+            </value>
+            <value>
+                <fullName>Final</fullName>
+                <default>false</default>
+                <label>Final</label>
+            </value>
+            <value>
+                <fullName>Hearing Complete</fullName>
+                <default>false</default>
+                <label>Hearing Complete</label>
+            </value>
+            <value>
+                <fullName>Modified</fullName>
+                <default>false</default>
+                <label>Modified</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>true</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Out of Statute</fullName>
+                <default>false</default>
+                <label>Out of Statute</label>
+            </value>
+            <value>
+                <fullName>Paid Off</fullName>
+                <default>false</default>
+                <label>Paid Off</label>
+            </value>
+            <value>
+                <fullName>Pending Writ</fullName>
+                <default>false</default>
+                <label>Pending Writ</label>
+            </value>
+            <value>
+                <fullName>Request Dismissal</fullName>
+                <default>false</default>
+                <label>Request Dismissal</label>
+            </value>
+            <value>
+                <fullName>Under Appeal</fullName>
+                <default>false</default>
+                <label>Under Appeal</label>
+            </value>
+            <value>
+                <fullName>Under Payment</fullName>
+                <default>false</default>
+                <label>Under Payment</label>
+            </value>
+            <value>
+                <fullName>Writ Affirmed</fullName>
+                <default>false</default>
+                <label>Writ Affirmed</label>
+            </value>
+            <value>
+                <fullName>Writ Modified</fullName>
+                <default>false</default>
+                <label>Writ Modified</label>
+            </value>
+            <value>
+                <fullName>Writ Received</fullName>
+                <default>false</default>
+                <label>Writ Received</label>
+            </value>
+            <value>
+                <fullName>Writ Remanded</fullName>
+                <default>false</default>
+                <label>Writ Remanded</label>
+            </value>
+            <value>
+                <fullName>Writ Settled</fullName>
+                <default>false</default>
+                <label>Writ Settled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

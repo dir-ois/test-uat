@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Judgment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Judgments</value>
+    </caseValues>
+    <layouts>
+        <layout>BOFE</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Info --></label>
+            <section>Financial Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Judgment Layout</layout>
+        <sections>
+            <label><!-- 2810.4 --></label>
+            <section>2810.4</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Info --></label>
+            <section>Financial Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Info --></label>
+            <section>Financial Info</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- BOFE and Judgment Enforcement Unit --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Judgment Enforcement Unit --></description>
+        <label><!-- JEU --></label>
+        <name>JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Wage Claim Adjudication and Garment Judgments --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_Documents --></label>
+        <name>Generate_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_JEU_Referral --></label>
+        <name>New_JEU_Referral</name>
+    </webLinks>
+</CustomObjectTranslation>

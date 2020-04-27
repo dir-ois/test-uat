@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Business Account&apos;s phone, or Person Account&apos;s mobile phone number. --></help>
+    <label><!-- Entity Phone --></label>
+    <name>Entity_Phone__c</name>
+</CustomFieldTranslation>

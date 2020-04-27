@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the Employer designated a standard or scheduled meal time, enter the start time including am/pm. --></help>
+    <label><!-- Meal Designated Start Time --></label>
+    <name>Meal_Designated_Start_Time__c</name>
+</CustomFieldTranslation>

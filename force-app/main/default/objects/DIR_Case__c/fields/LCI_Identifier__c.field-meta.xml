@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LCI_Identifier__c</fullName>
+    <description>F0196 A string that identifies a case as being part of a particular LCI. Used for reporting on a LCI by selecting only those cases that are part of the same LCI.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>F0196 A string that identifies a case as being part of a particular LCI. Used for reporting on a LCI by selecting only those cases that are part of the same LCI.</inlineHelpText>
+    <label>LCI Identifier</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recruitment Status --></label>
+    <name>Recruitment_Status__c</name>
+    <picklistValues>
+        <masterLabel>Advertise</masterLabel>
+        <translation><!-- Advertise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>App/Cert List Provided</masterLabel>
+        <translation><!-- App/Cert List Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application released</masterLabel>
+        <translation><!-- Application released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cal HR review</masterLabel>
+        <translation><!-- Cal HR review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CalHR Approved</masterLabel>
+        <translation><!-- CalHR Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CalHR Denied (w/notes)</masterLabel>
+        <translation><!-- CalHR Denied (w/notes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CalHR Packet submitted</masterLabel>
+        <translation><!-- CalHR Packet submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CalHR Review in Progress</masterLabel>
+        <translation><!-- CalHR Review in Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CalHR decision (w/notes)</masterLabel>
+        <translation><!-- CalHR decision (w/notes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candidate accepted</masterLabel>
+        <translation><!-- Candidate accepted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candidate declined - Other</masterLabel>
+        <translation><!-- Candidate declined - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candidate declined – Other offer</masterLabel>
+        <translation><!-- Candidate declined – Other offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candidate declined – Salary</masterLabel>
+        <translation><!-- Candidate declined – Salary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Copy to Certs</masterLabel>
+        <translation><!-- Copy to Certs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Hold (this would include revisiting Eligibility)</masterLabel>
+        <translation><!-- HR Hold (this would include revisiting Eligibility) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR review final CalHR packet</masterLabel>
+        <translation><!-- HR review final CalHR packet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - Duty statement</masterLabel>
+        <translation><!-- Info Hold - Duty statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - Interview questions</masterLabel>
+        <translation><!-- Info Hold - Interview questions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - Job bulletin</masterLabel>
+        <translation><!-- Info Hold - Job bulletin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - Justification</masterLabel>
+        <translation><!-- Info Hold - Justification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - KSA</masterLabel>
+        <translation><!-- Info Hold - KSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - Other</masterLabel>
+        <translation><!-- Info Hold - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - SOQ</masterLabel>
+        <translation><!-- Info Hold - SOQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold - Screening matrix</masterLabel>
+        <translation><!-- Info Hold - Screening matrix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold – Eligibility see HR Hold</masterLabel>
+        <translation><!-- Info Hold – Eligibility see HR Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info Hold – Org chart</masterLabel>
+        <translation><!-- Info Hold – Org chart --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interview being Held</masterLabel>
+        <translation><!-- Interview being Held --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interviews - conducted</masterLabel>
+        <translation><!-- Interviews - conducted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interviews – scheduled</masterLabel>
+        <translation><!-- Interviews – scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Offered</masterLabel>
+        <translation><!-- Job Offered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job offer clearance notification</masterLabel>
+        <translation><!-- Job offer clearance notification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job offered to candidate</masterLabel>
+        <translation><!-- Job offered to candidate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MQ review</masterLabel>
+        <translation><!-- MQ review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPF/TEC review</masterLabel>
+        <translation><!-- OPF/TEC review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer was declined</masterLabel>
+        <translation><!-- Offer was declined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packet to HR – receipt</masterLabel>
+        <translation><!-- Packet to HR – receipt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packet to HR – review</masterLabel>
+        <translation><!-- Packet to HR – review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request to hire submitted</masterLabel>
+        <translation><!-- Request to hire submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screening Docs Received</masterLabel>
+        <translation><!-- Screening Docs Received --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

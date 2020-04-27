@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HR Mandatory Training Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HR Mandatory Training Trackings</value>
+    </caseValues>
+    <layouts>
+        <layout>HR Leadership Training MTT Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HR Mandatory Training Tracking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Basic Supervisory Training --></description>
+        <label><!-- Basic Supervision --></label>
+        <name>Basic_Supervision</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Per GC 19995.4 (e), 20 hours of leadership training must be completed within 12 months of appointment --></description>
+        <label><!-- CEA Leadership Training --></label>
+        <name>CEA_Leadership_Training_Initial_Appointment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- EEO Laws and Discrimination Prevention training --></description>
+        <label><!-- EEO Laws and Discrimination Prevention --></label>
+        <name>EEO_Laws_and_Discrimination_Prevention</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- EEO Laws and Discrimination Prevention Supervisor Supplement training --></description>
+        <label><!-- EEO Laws and Discrimination Prevention Supervisor Supplement --></label>
+        <name>EEO_Laws_and_Discrimination_Prevention_Supervisor_Supplement</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Ethics Training --></description>
+        <label><!-- Ethics --></label>
+        <name>Ethics</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Per Government Code 19995.4 (c) 20 hours of leadership training must be completed every other year --></description>
+        <label><!-- Leadership Training --></label>
+        <name>Leadership_Training_Biennially</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Per GC 19995.4 (d), 40 hours of leadership training must be completed within 12 months of appointment --></description>
+        <label><!-- Manager Leadership --></label>
+        <name>Manager_Leadership_Initial_Appointment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Sexual Harassment Prevention for California Supervisors training --></description>
+        <label><!-- Sexual Harassment Prevention for California Supervisors --></label>
+        <name>Sexual_Harassment_Prevention_for_California_Supervisors</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Preventing Workplace Harassment Training --></description>
+        <label><!-- Unlawful Harassment Prevention --></label>
+        <name>Unlawful_Harassment_Prevention</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Workplace Bullying and Violence Prevention training --></description>
+        <label><!-- Workplace Bullying and Violence Prevention --></label>
+        <name>Workplace_Bullying_and_Violence_Prevention</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

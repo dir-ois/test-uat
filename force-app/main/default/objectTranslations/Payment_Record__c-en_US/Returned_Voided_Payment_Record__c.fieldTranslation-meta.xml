@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Returned/Voided Payment Record --></label>
+    <name>Returned_Voided_Payment_Record__c</name>
+    <relationshipLabel><!-- Returned/Voided By --></relationshipLabel>
+</CustomFieldTranslation>

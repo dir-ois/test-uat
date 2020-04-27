@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Require_Email_non_SFDC_user</fullName>
+    <active>true</active>
+    <description>When and employee is not a salesforce user, require the email address be populated.</description>
+    <errorConditionFormula>ISBLANK( User__c ) &amp;&amp; 
+ISBLANK (  Email__c )</errorConditionFormula>
+    <errorMessage>Please select a Salesforce User or enter an Email address for this employee before saving.</errorMessage>
+</ValidationRule>

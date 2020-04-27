@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>120-Position Number Change</masterLabel>
+        <translation><!-- 120-Position Number Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>405-Time Base Change</masterLabel>
+        <translation><!-- 405-Time Base Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>565-Reinstatement from IDL/TD</masterLabel>
+        <translation><!-- 565-Reinstatement from IDL/TD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-CEA appointment from list</masterLabel>
+        <translation><!-- A01-CEA appointment from list --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-Graduate Student Assistant</masterLabel>
+        <translation><!-- A01-Graduate Student Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-Limited Term from List</masterLabel>
+        <translation><!-- A01-Limited Term from List --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-Permanent Appointment from List</masterLabel>
+        <translation><!-- A01-Permanent Appointment from List --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-Student Assistant</masterLabel>
+        <translation><!-- A01-Student Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-TAU in Lieu of Limited Term</masterLabel>
+        <translation><!-- A01-TAU in Lieu of Limited Term --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-TAU in Lieu of Permanent Appointment</masterLabel>
+        <translation><!-- A01-TAU in Lieu of Permanent Appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A01-Youth Aid</masterLabel>
+        <translation><!-- A01-Youth Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A02-Emergency</masterLabel>
+        <translation><!-- A02-Emergency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A02-Reinstatement (permissive)</masterLabel>
+        <translation><!-- A02-Reinstatement (permissive) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A02-Retired Annuitant</masterLabel>
+        <translation><!-- A02-Retired Annuitant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A02-Transfer</masterLabel>
+        <translation><!-- A02-Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A03-Reinstatement (mandatory)</masterLabel>
+        <translation><!-- A03-Reinstatement (mandatory) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A03-Reinstatement from LOA</masterLabel>
+        <translation><!-- A03-Reinstatement from LOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A03-Reinstatement from NDI</masterLabel>
+        <translation><!-- A03-Reinstatement from NDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A03-Reinstatement from SDI</masterLabel>
+        <translation><!-- A03-Reinstatement from SDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A04-Training &amp; Development</masterLabel>
+        <translation><!-- A04-Training &amp; Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A11-Involuntary Reassignment</masterLabel>
+        <translation><!-- A11-Involuntary Reassignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A14 - Adverse Demotion</masterLabel>
+        <translation><!-- A14 - Adverse Demotion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A20-Reallocation</masterLabel>
+        <translation><!-- A20-Reallocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A22-In Lieu of Appt through Cert Process</masterLabel>
+        <translation><!-- A22-In Lieu of Appt through Cert Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A30/A31-Exempt</masterLabel>
+        <translation><!-- A30/A31-Exempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPC-Special Change</masterLabel>
+        <translation><!-- SPC-Special Change --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

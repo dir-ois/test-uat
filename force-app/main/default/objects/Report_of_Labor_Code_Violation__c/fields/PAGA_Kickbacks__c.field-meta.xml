@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Kickbacks__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>PAGA Kickbacks Violation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>PAGA Kickbacks Violation</inlineHelpText>
+    <label>Kickbacks</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

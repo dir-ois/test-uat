@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition_cannot_be_NULL</fullName>
+    <active>true</active>
+    <description>When Status = Closed, the Disposition must have data.
+
+For Wage and Garment.
+Added RCI 3/15/18</description>
+    <errorConditionFormula>(CONTAINS(RecordType.DeveloperName, &quot;WCA&quot;) || (CONTAINS(RecordType.DeveloperName, &quot;RCI&quot;)))
+&amp;&amp;
+TEXT( Request_Status__c ) = &quot;Closed&quot;
+&amp;&amp;
+ISPICKVAL(Disposition__c, &quot;&quot;)</errorConditionFormula>
+    <errorMessage>You must enter a value into Disposition when Status = Closed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Expenses</masterLabel>
+        <translation><!-- Business Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commissions</masterLabel>
+        <translation><!-- Commissions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meal Period Wages</masterLabel>
+        <translation><!-- Meal Period Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overtime Wages</masterLabel>
+        <translation><!-- Overtime Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular Wages</masterLabel>
+        <translation><!-- Regular Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting Time Pay</masterLabel>
+        <translation><!-- Reporting Time Pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rest Period Wages</masterLabel>
+        <translation><!-- Rest Period Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Split Shift Premium</masterLabel>
+        <translation><!-- Split Shift Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlawful Deductions</masterLabel>
+        <translation><!-- Unlawful Deductions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacation Wages</masterLabel>
+        <translation><!-- Vacation Wages --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

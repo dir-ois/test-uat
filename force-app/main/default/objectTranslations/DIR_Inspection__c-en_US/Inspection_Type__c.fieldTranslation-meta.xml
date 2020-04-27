@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of inspection being performed. --></help>
+    <label><!-- Inspection Type --></label>
+    <name>Inspection_Type__c</name>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCI</masterLabel>
+        <translation><!-- LCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Selective</masterLabel>
+        <translation><!-- Selective --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

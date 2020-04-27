@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Transferred from Division or Dept --></label>
+    <name>Transferred_from_Division_or_Dept__c</name>
+    <picklistValues>
+        <masterLabel>Administrative Law, Office of</masterLabel>
+        <translation><!-- Administrative Law, Office of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Afro-American Museum</masterLabel>
+        <translation><!-- Afro-American Museum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aging, California Commission</masterLabel>
+        <translation><!-- Aging, California Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aging, Department of</masterLabel>
+        <translation><!-- Aging, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agnews State Hospital</masterLabel>
+        <translation><!-- Agnews State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agricultural Labor Relations Board (ALRB)</masterLabel>
+        <translation><!-- Agricultural Labor Relations Board (ALRB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Resources Board (ARB)</masterLabel>
+        <translation><!-- Air Resources Board (ARB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alcoholic Beverage Control Appeals Board</masterLabel>
+        <translation><!-- Alcoholic Beverage Control Appeals Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alcoholic Beverage Control, Department of (ABC)</masterLabel>
+        <translation><!-- Alcoholic Beverage Control, Department of (ABC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alternative Energy Source Financing Authority, California</masterLabel>
+        <translation><!-- Alternative Energy Source Financing Authority, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arts Council, California</masterLabel>
+        <translation><!-- Arts Council, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atascadero State Hospital</masterLabel>
+        <translation><!-- Atascadero State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avenal State Prison</masterLabel>
+        <translation><!-- Avenal State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baldwin Hills Conservancy</masterLabel>
+        <translation><!-- Baldwin Hills Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banking Department, State</masterLabel>
+        <translation><!-- Banking Department, State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board of State and Community Corrections</masterLabel>
+        <translation><!-- Board of State and Community Corrections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boating and Waterways, Department of</masterLabel>
+        <translation><!-- Boating and Waterways, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Oversight, Department of</masterLabel>
+        <translation><!-- Business Oversight, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business, Consumer Services and Housing Agency</masterLabel>
+        <translation><!-- Business, Consumer Services and Housing Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA Polytechnic State University, San Luis Obispo</masterLabel>
+        <translation><!-- CA Polytechnic State University, San Luis Obispo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State College, Bakersfield</masterLabel>
+        <translation><!-- CA State College, Bakersfield --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State College, San Bernardino</masterLabel>
+        <translation><!-- CA State College, San Bernardino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State Polytechnic University, Pomona</masterLabel>
+        <translation><!-- CA State Polytechnic University, Pomona --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Channel Islands</masterLabel>
+        <translation><!-- CA State University, Channel Islands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Chico</masterLabel>
+        <translation><!-- CA State University, Chico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Dominguez Hills</masterLabel>
+        <translation><!-- CA State University, Dominguez Hills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, East Bay</masterLabel>
+        <translation><!-- CA State University, East Bay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Fresno</masterLabel>
+        <translation><!-- CA State University, Fresno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Fullerton</masterLabel>
+        <translation><!-- CA State University, Fullerton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Long Beach</masterLabel>
+        <translation><!-- CA State University, Long Beach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Los Angeles</masterLabel>
+        <translation><!-- CA State University, Los Angeles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Maritime Academy</masterLabel>
+        <translation><!-- CA State University, Maritime Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Monterey Bay</masterLabel>
+        <translation><!-- CA State University, Monterey Bay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Northridge</masterLabel>
+        <translation><!-- CA State University, Northridge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Sacramento</masterLabel>
+        <translation><!-- CA State University, Sacramento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, San Marcos</masterLabel>
+        <translation><!-- CA State University, San Marcos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA State University, Stanislaus</masterLabel>
+        <translation><!-- CA State University, Stanislaus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Career Resource Network</masterLabel>
+        <translation><!-- California Career Resource Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Children and Families First Commission</masterLabel>
+        <translation><!-- California Children and Families First Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Citizens Compensation Commission</masterLabel>
+        <translation><!-- California Citizens Compensation Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California City Correctional Facility</masterLabel>
+        <translation><!-- California City Correctional Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Coastal Commission</masterLabel>
+        <translation><!-- California Coastal Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Commission on Disability Access</masterLabel>
+        <translation><!-- California Commission on Disability Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Consumer Power and Conservation Financing Authority</masterLabel>
+        <translation><!-- California Consumer Power and Conservation Financing Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Department of Human Resources</masterLabel>
+        <translation><!-- California Department of Human Resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Earthquake Authority</masterLabel>
+        <translation><!-- California Earthquake Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Environmental Protection Agency</masterLabel>
+        <translation><!-- California Environmental Protection Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Exposition and State Fair</masterLabel>
+        <translation><!-- California Exposition and State Fair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Gambling Control Commission</masterLabel>
+        <translation><!-- California Gambling Control Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Health Benefit Exchange</masterLabel>
+        <translation><!-- California Health Benefit Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Health Care Facility</masterLabel>
+        <translation><!-- California Health Care Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Housing Insurance Fund</masterLabel>
+        <translation><!-- California Housing Insurance Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Mortgage Bond and Tax Credit Allocation Committee</masterLabel>
+        <translation><!-- California Mortgage Bond and Tax Credit Allocation Committee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Northern Reentry Facility</masterLabel>
+        <translation><!-- California Northern Reentry Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Prison Health Care Services, Central Region</masterLabel>
+        <translation><!-- California Prison Health Care Services, Central Region --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Prison Health Care Services, Headquarters</masterLabel>
+        <translation><!-- California Prison Health Care Services, Headquarters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Prison Health Care Services, Northern Region</masterLabel>
+        <translation><!-- California Prison Health Care Services, Northern Region --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Prison Health Care Services, Southern Region</masterLabel>
+        <translation><!-- California Prison Health Care Services, Southern Region --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Public Employee&#39;s Retirement System</masterLabel>
+        <translation><!-- California Public Employee&apos;s Retirement System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California School Finance Authority</masterLabel>
+        <translation><!-- California School Finance Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Senior Legislature</masterLabel>
+        <translation><!-- California Senior Legislature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Auditor&#39;s Office</masterLabel>
+        <translation><!-- California State Auditor&apos;s Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Library</masterLabel>
+        <translation><!-- California State Library --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Lottery</masterLabel>
+        <translation><!-- California State Lottery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Calipatria</masterLabel>
+        <translation><!-- California State Prison, Calipatria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Centinela State Prison</masterLabel>
+        <translation><!-- California State Prison, Centinela State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Corcoran</masterLabel>
+        <translation><!-- California State Prison, Corcoran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, High Desert State Prison</masterLabel>
+        <translation><!-- California State Prison, High Desert State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Ironwood State Prison</masterLabel>
+        <translation><!-- California State Prison, Ironwood State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Kern Valley State Prison</masterLabel>
+        <translation><!-- California State Prison, Kern Valley State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Los Angeles County</masterLabel>
+        <translation><!-- California State Prison, Los Angeles County --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, North Kern State Prison</masterLabel>
+        <translation><!-- California State Prison, North Kern State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Pleasant Valley State Prison</masterLabel>
+        <translation><!-- California State Prison, Pleasant Valley State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Sacramento County</masterLabel>
+        <translation><!-- California State Prison, Sacramento County --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Salinas Valley State Prison</masterLabel>
+        <translation><!-- California State Prison, Salinas Valley State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Solano County</masterLabel>
+        <translation><!-- California State Prison, Solano County --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Valley State Prison for Women</masterLabel>
+        <translation><!-- California State Prison, Valley State Prison for Women --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Prison, Wasco</masterLabel>
+        <translation><!-- California State Prison, Wasco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California State Summer School for the Arts</masterLabel>
+        <translation><!-- California State Summer School for the Arts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Substance Abuse Treatment Facility and State Prison at Corcoran</masterLabel>
+        <translation><!-- California Substance Abuse Treatment Facility and State Prison at Corcoran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Tahoe Conservancy</masterLabel>
+        <translation><!-- California Tahoe Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canyon Springs</masterLabel>
+        <translation><!-- Canyon Springs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Central California Women&#39;s Facility</masterLabel>
+        <translation><!-- Central California Women&apos;s Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chaderjian School</masterLabel>
+        <translation><!-- Chaderjian School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chancellor&#39;s Office, CSU</masterLabel>
+        <translation><!-- Chancellor&apos;s Office, CSU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Support Services, Department of</masterLabel>
+        <translation><!-- Child Support Services, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chiropractic Examiners, Board of</masterLabel>
+        <translation><!-- Chiropractic Examiners, Board of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chuckawalla Valley State Prison</masterLabel>
+        <translation><!-- Chuckawalla Valley State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citizens Redistricting Commission</masterLabel>
+        <translation><!-- Citizens Redistricting Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coachella Valley Mountains Conservancy</masterLabel>
+        <translation><!-- Coachella Valley Mountains Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coalinga Secure Treatment Facility</masterLabel>
+        <translation><!-- Coalinga Secure Treatment Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coastal Conservancy, State</masterLabel>
+        <translation><!-- Coastal Conservancy, State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorado River Board of California</masterLabel>
+        <translation><!-- Colorado River Board of California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commerce, Department of</masterLabel>
+        <translation><!-- Commerce, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission for the Review of the Master Plan for Higher Education</masterLabel>
+        <translation><!-- Commission for the Review of the Master Plan for Higher Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission on California State Government</masterLabel>
+        <translation><!-- Commission on California State Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission on State Mandates</masterLabel>
+        <translation><!-- Commission on State Mandates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission on Uniform State Laws</masterLabel>
+        <translation><!-- Commission on Uniform State Laws --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Colleges, Board of Governors of the California</masterLabel>
+        <translation><!-- Community Colleges, Board of Governors of the California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Services and Development, Department of</masterLabel>
+        <translation><!-- Community Services and Development, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compensation Insurance Fund, State (SCIF)</masterLabel>
+        <translation><!-- Compensation Insurance Fund, State (SCIF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conservation Corps, California (CCC)</masterLabel>
+        <translation><!-- Conservation Corps, California (CCC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conservation, Department of</masterLabel>
+        <translation><!-- Conservation, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Affairs, Department of</masterLabel>
+        <translation><!-- Consumer Affairs, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Controller, Office of the State (SCO)</masterLabel>
+        <translation><!-- Controller, Office of the State (SCO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correctional Center, California (CCC)</masterLabel>
+        <translation><!-- Correctional Center, California (CCC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correctional Institution at Tehachapi, California</masterLabel>
+        <translation><!-- Correctional Institution at Tehachapi, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correctional Training Facility (CTF)</masterLabel>
+        <translation><!-- Correctional Training Facility (CTF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corrections and Rehabilitation, CA. Department of</masterLabel>
+        <translation><!-- Corrections and Rehabilitation, CA. Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courts of Appeal, Districts 1-6</masterLabel>
+        <translation><!-- Courts of Appeal, Districts 1-6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Criminal Justice Planning, Office of</masterLabel>
+        <translation><!-- Criminal Justice Planning, Office of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - Accounting</masterLabel>
+        <translation><!-- DIR - Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - Budgets</masterLabel>
+        <translation><!-- DIR - Budgets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - Business Services</masterLabel>
+        <translation><!-- DIR - Business Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - CHSWC</masterLabel>
+        <translation><!-- DIR - CHSWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - CRM: RTW/SELSP/UEBTF/SEBTF</masterLabel>
+        <translation><!-- DIR - CRM: RTW/SELSP/UEBTF/SEBTF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - DAS</masterLabel>
+        <translation><!-- DIR - DAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - DLSE</masterLabel>
+        <translation><!-- DIR - DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - DOSH</masterLabel>
+        <translation><!-- DIR - DOSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - DWC</masterLabel>
+        <translation><!-- DIR - DWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - Human Resources</masterLabel>
+        <translation><!-- DIR - Human Resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OD - Drug Formulary</masterLabel>
+        <translation><!-- DIR - OD - Drug Formulary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OD - Legal</masterLabel>
+        <translation><!-- DIR - OD - Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OD - PAGA</masterLabel>
+        <translation><!-- DIR - OD - PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OD - Research</masterLabel>
+        <translation><!-- DIR - OD - Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OD/Anti-Fraud Unit</masterLabel>
+        <translation><!-- DIR - OD/Anti-Fraud Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OSHAB</masterLabel>
+        <translation><!-- DIR - OSHAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - OSHSB</masterLabel>
+        <translation><!-- DIR - OSHSB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - Office of Info Services</masterLabel>
+        <translation><!-- DIR - Office of Info Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - Office of The Director</masterLabel>
+        <translation><!-- DIR - Office of The Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - PIO/Communications</masterLabel>
+        <translation><!-- DIR - PIO/Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - SIP</masterLabel>
+        <translation><!-- DIR - SIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR - WCAB</masterLabel>
+        <translation><!-- DIR - WCAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debt Advisory Commission, California</masterLabel>
+        <translation><!-- Debt Advisory Commission, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debt Limit Allocation Committee, California</masterLabel>
+        <translation><!-- Debt Limit Allocation Committee, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delta Protection Commission</masterLabel>
+        <translation><!-- Delta Protection Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delta Stewardship Council</masterLabel>
+        <translation><!-- Delta Stewardship Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deuel Vocational Institution</masterLabel>
+        <translation><!-- Deuel Vocational Institution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developmental Disabilities, Area Boards on</masterLabel>
+        <translation><!-- Developmental Disabilities, Area Boards on --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developmental Disabilities, Council on</masterLabel>
+        <translation><!-- Developmental Disabilities, Council on --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developmental Services, Department of (DDS)</masterLabel>
+        <translation><!-- Developmental Services, Department of (DDS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dewitt Correctional Training</masterLabel>
+        <translation><!-- Dewitt Correctional Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnostic Center, Central California</masterLabel>
+        <translation><!-- Diagnostic Center, Central California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnostic Center, Northern California</masterLabel>
+        <translation><!-- Diagnostic Center, Northern California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnostic Center, Southern California</masterLabel>
+        <translation><!-- Diagnostic Center, Southern California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economic Development Commission</masterLabel>
+        <translation><!-- Economic Development Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education Audit Appeals Panel</masterLabel>
+        <translation><!-- Education Audit Appeals Panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education, California State Department of (DOE)</masterLabel>
+        <translation><!-- Education, California State Department of (DOE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educational Facilities Authority, California</masterLabel>
+        <translation><!-- Educational Facilities Authority, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Paso de Robles School</masterLabel>
+        <translation><!-- El Paso de Robles School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Medical Services Authority</masterLabel>
+        <translation><!-- Emergency Medical Services Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Services, Office of</masterLabel>
+        <translation><!-- Emergency Services, Office of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employment Development Department</masterLabel>
+        <translation><!-- Employment Development Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employment Development Department (UTAB)</masterLabel>
+        <translation><!-- Employment Development Department (UTAB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy Resources Conservation and Development Commission</masterLabel>
+        <translation><!-- Energy Resources Conservation and Development Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Health Hazard Assessment, Office of</masterLabel>
+        <translation><!-- Environmental Health Hazard Assessment, Office of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equalization, Board of</masterLabel>
+        <translation><!-- Equalization, Board of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estrella Correctional Facility</masterLabel>
+        <translation><!-- Estrella Correctional Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fair Employment and Housing Commission</masterLabel>
+        <translation><!-- Fair Employment and Housing Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fair Employment and Housing, Department of</masterLabel>
+        <translation><!-- Fair Employment and Housing, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fair Political Practices Commission (FPPS)</masterLabel>
+        <translation><!-- Fair Political Practices Commission (FPPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fairview State Hospital</masterLabel>
+        <translation><!-- Fairview State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field - Division of Juvenile Justice</masterLabel>
+        <translation><!-- Field - Division of Juvenile Justice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field - Headquarters Programs</masterLabel>
+        <translation><!-- Field - Headquarters Programs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field - Inmate Welfare Fund</masterLabel>
+        <translation><!-- Field - Inmate Welfare Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field -- Division of Adult of Parole Operations</masterLabel>
+        <translation><!-- Field - -  Division of Adult of Parole Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance, Department of</masterLabel>
+        <translation><!-- Finance, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Information System for California Office</masterLabel>
+        <translation><!-- Financial Information System for California Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Institutions, Department of</masterLabel>
+        <translation><!-- Financial Institutions, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Marshal, Office of the State</masterLabel>
+        <translation><!-- Fire Marshal, Office of the State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fish and Wildlife, Department of</masterLabel>
+        <translation><!-- Fish and Wildlife, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Folsom State Prison</masterLabel>
+        <translation><!-- Folsom State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food and Agriculture, Department of (DFA)</masterLabel>
+        <translation><!-- Food and Agriculture, Department of (DFA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forestry and Fire Protection, Department of</masterLabel>
+        <translation><!-- Forestry and Fire Protection, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Franchise Tax Board (FTB)</masterLabel>
+        <translation><!-- Franchise Tax Board (FTB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Services, Department of (DGS)</masterLabel>
+        <translation><!-- General Services, Department of (DGS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government Operations Agency</masterLabel>
+        <translation><!-- Government Operations Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Governor&#39;s Office</masterLabel>
+        <translation><!-- Governor&apos;s Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Governor&#39;s Office of Business and Economic Development (Go Biz)</masterLabel>
+        <translation><!-- Governor&apos;s Office of Business and Economic Development (Go Biz) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Habeas Corpus Resource Center</masterLabel>
+        <translation><!-- Habeas Corpus Resource Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Care Services, Department of (DHCS)</masterLabel>
+        <translation><!-- Health Care Services, Department of (DHCS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Facilities Financing Authority, California</masterLabel>
+        <translation><!-- Health Facilities Financing Authority, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Planning and Development, Office of Statewide (OSHPD)</masterLabel>
+        <translation><!-- Health Planning and Development, Office of Statewide (OSHPD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health and Human Services Agency</masterLabel>
+        <translation><!-- Health and Human Services Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Highway Patrol, California Department of (CHP)</masterLabel>
+        <translation><!-- Highway Patrol, California Department of (CHP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Horse Racing Board, California</masterLabel>
+        <translation><!-- Horse Racing Board, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing Finance Agency, California</masterLabel>
+        <translation><!-- Housing Finance Agency, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing and Community Development, Department of (DHCD)</masterLabel>
+        <translation><!-- Housing and Community Development, Department of (DHCD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Humboldt State University</masterLabel>
+        <translation><!-- Humboldt State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Development, California</masterLabel>
+        <translation><!-- Industrial Development, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Institute for Regenerative Medicine, California</masterLabel>
+        <translation><!-- Institute for Regenerative Medicine, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Institution for Men, California (CIM)</masterLabel>
+        <translation><!-- Institution for Men, California (CIM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Institution for Women, California (CIW)</masterLabel>
+        <translation><!-- Institution for Women, California (CIW) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance, Department of</masterLabel>
+        <translation><!-- Insurance, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judicial Center Library, California</masterLabel>
+        <translation><!-- Judicial Center Library, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judicial Council of California</masterLabel>
+        <translation><!-- Judicial Council of California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judicial Performance, Commission on</masterLabel>
+        <translation><!-- Judicial Performance, Commission on --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Justice, Department of</masterLabel>
+        <translation><!-- Justice, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Labor and Workforce Development Agency</masterLabel>
+        <translation><!-- Labor and Workforce Development Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lanterman State Hospital</masterLabel>
+        <translation><!-- Lanterman State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Law Revision Commission, California</masterLabel>
+        <translation><!-- Law Revision Commission, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legislative Counsel Bureau</masterLabel>
+        <translation><!-- Legislative Counsel Bureau --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legislature (Assembly)</masterLabel>
+        <translation><!-- Legislature (Assembly) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legislature (Senate)</masterLabel>
+        <translation><!-- Legislature (Senate) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lieutenant Governor, Office of the</masterLabel>
+        <translation><!-- Lieutenant Governor, Office of the --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managed Care, Department of</masterLabel>
+        <translation><!-- Managed Care, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managed Risk Medical Insurance Board</masterLabel>
+        <translation><!-- Managed Risk Medical Insurance Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Assistance Commission, California</masterLabel>
+        <translation><!-- Medical Assistance Commission, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Facility, California (CIW)</masterLabel>
+        <translation><!-- Medical Facility, California (CIW) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Men&#39;s Colony, California (CMC)</masterLabel>
+        <translation><!-- Men&apos;s Colony, California (CMC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mental Health Services Oversight &amp; Accountability Commission</masterLabel>
+        <translation><!-- Mental Health Services Oversight &amp; Accountability Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metropolitan State Hospital</masterLabel>
+        <translation><!-- Metropolitan State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military Department</masterLabel>
+        <translation><!-- Military Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Vehicles, Department of (DMV)</masterLabel>
+        <translation><!-- Motor Vehicles, Department of (DMV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mule Creek State Prison</masterLabel>
+        <translation><!-- Mule Creek State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Museum of Science and Industry, California</masterLabel>
+        <translation><!-- Museum of Science and Industry, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Napa State Hospital</masterLabel>
+        <translation><!-- Napa State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Native American Heritage Commission</masterLabel>
+        <translation><!-- Native American Heritage Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northern California Reentry Facility</masterLabel>
+        <translation><!-- Northern California Reentry Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northern California Youth Center</masterLabel>
+        <translation><!-- Northern California Youth Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.J. Hawkins Data Center</masterLabel>
+        <translation><!-- O.J. Hawkins Data Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office of State Publishing</masterLabel>
+        <translation><!-- Office of State Publishing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office of Systems Integration</masterLabel>
+        <translation><!-- Office of Systems Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office of Tax Appeals</masterLabel>
+        <translation><!-- Office of Tax Appeals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office of the Inspector General</masterLabel>
+        <translation><!-- Office of the Inspector General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office of the State Architect</masterLabel>
+        <translation><!-- Office of the State Architect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Osteopathic Examiners, Board of</masterLabel>
+        <translation><!-- Osteopathic Examiners, Board of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parks and Recreation, Department of</masterLabel>
+        <translation><!-- Parks and Recreation, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parole and Community Services</masterLabel>
+        <translation><!-- Parole and Community Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patton State Hospital</masterLabel>
+        <translation><!-- Patton State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peace Officer Standards and Training, Commission on (POST)</masterLabel>
+        <translation><!-- Peace Officer Standards and Training, Commission on (POST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pelican Bay State Prison</masterLabel>
+        <translation><!-- Pelican Bay State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personnel Board, State (SPB)</masterLabel>
+        <translation><!-- Personnel Board, State (SPB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pesticide Regulation, Department of</masterLabel>
+        <translation><!-- Pesticide Regulation, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pilot Commissioners for the Bays of San Francisco, San Pablo and Suisun, Board of</masterLabel>
+        <translation><!-- Pilot Commissioners for the Bays of San Francisco, San Pablo and Suisun, Board of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning and Research, Office of (OPR)</masterLabel>
+        <translation><!-- Planning and Research, Office of (OPR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pollution Control Financing Authority, California</masterLabel>
+        <translation><!-- Pollution Control Financing Authority, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Porterville State Hospital</masterLabel>
+        <translation><!-- Porterville State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postsecondary Education Commission, California</masterLabel>
+        <translation><!-- Postsecondary Education Commission, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preston School of Industry</masterLabel>
+        <translation><!-- Preston School of Industry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatric Program, Vacaville</masterLabel>
+        <translation><!-- Psychiatric Program, Vacaville --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Defender, State</masterLabel>
+        <translation><!-- Public Defender, State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Employment Relations Board (PERB)</masterLabel>
+        <translation><!-- Public Employment Relations Board (PERB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Health, California Department</masterLabel>
+        <translation><!-- Public Health, California Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Utilities Commission, State of California (PUC)</masterLabel>
+        <translation><!-- Public Utilities Commission, State of California (PUC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R. J. Donovan Correction Facility</masterLabel>
+        <translation><!-- R. J. Donovan Correction Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rehabilitation Center, California (CRC)</masterLabel>
+        <translation><!-- Rehabilitation Center, California (CRC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rehabilitation, Department of (DR)</masterLabel>
+        <translation><!-- Rehabilitation, Department of (DR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requirements of Governor-Elect and the Outgoing Governor</masterLabel>
+        <translation><!-- Requirements of Governor-Elect and the Outgoing Governor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resources Agency</masterLabel>
+        <translation><!-- Resources Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resources, Recycling and Recovery, Department of</masterLabel>
+        <translation><!-- Resources, Recycling and Recovery, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Richard A. McGee Correctional Training Center</masterLabel>
+        <translation><!-- Richard A. McGee Correctional Training Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sac - San Joaquin Delta Conservancy</masterLabel>
+        <translation><!-- Sac - San Joaquin Delta Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salinas Valley Psychiatric Program</masterLabel>
+        <translation><!-- Salinas Valley Psychiatric Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego River Conservancy</masterLabel>
+        <translation><!-- San Diego River Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego State University</masterLabel>
+        <translation><!-- San Diego State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco Bay Conservation and Development Commission (BCDC)</masterLabel>
+        <translation><!-- San Francisco Bay Conservation and Development Commission (BCDC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco State University</masterLabel>
+        <translation><!-- San Francisco State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Gabriel Lower Los Angeles Rivers and Mountain Conservancy</masterLabel>
+        <translation><!-- San Gabriel Lower Los Angeles Rivers and Mountain Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Joaquin River Conservancy</masterLabel>
+        <translation><!-- San Joaquin River Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose State University</masterLabel>
+        <translation><!-- San Jose State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Quentin State Prison</masterLabel>
+        <translation><!-- San Quentin State Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Quentin State Prison, Plata</masterLabel>
+        <translation><!-- San Quentin State Prison, Plata --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Monica Mountains Conservancy</masterLabel>
+        <translation><!-- Santa Monica Mountains Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scholarshare Investment Board</masterLabel>
+        <translation><!-- Scholarshare Investment Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School for the Blind</masterLabel>
+        <translation><!-- School for the Blind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School for the Deaf, Fremont</masterLabel>
+        <translation><!-- School for the Deaf, Fremont --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School for the Deaf, Riverside</masterLabel>
+        <translation><!-- School for the Deaf, Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary for State and Consumer Services Agency</masterLabel>
+        <translation><!-- Secretary for State and Consumer Services Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary of State</masterLabel>
+        <translation><!-- Secretary of State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seismic Safety Commission</masterLabel>
+        <translation><!-- Seismic Safety Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra Conservation Center (SCC)</masterLabel>
+        <translation><!-- Sierra Conservation Center (SCC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra Nevada Conservancy</masterLabel>
+        <translation><!-- Sierra Nevada Conservancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sierra Vista Facility</masterLabel>
+        <translation><!-- Sierra Vista Facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Services, Department of (DSS)</masterLabel>
+        <translation><!-- Social Services, Department of (DSS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonoma State Hospital</masterLabel>
+        <translation><!-- Sonoma State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonoma State University</masterLabel>
+        <translation><!-- Sonoma State University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southern Reception Center and Clinic</masterLabel>
+        <translation><!-- Southern Reception Center and Clinic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Hospitals, Department of (DSH)</masterLabel>
+        <translation><!-- State Hospitals, Department of (DSH) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Independent Living Council</masterLabel>
+        <translation><!-- State Independent Living Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Lands Commission</masterLabel>
+        <translation><!-- State Lands Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Teachers Retirement System (STRS)</masterLabel>
+        <translation><!-- State Teachers Retirement System (STRS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State University, California CSU</masterLabel>
+        <translation><!-- State University, California CSU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status of Women, Commission on the</masterLabel>
+        <translation><!-- Status of Women, Commission on the --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory Employees</masterLabel>
+        <translation><!-- Statutory Employees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockton State Hospital</masterLabel>
+        <translation><!-- Stockton State Hospital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student Aid Commission, California</masterLabel>
+        <translation><!-- Student Aid Commission, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student Loan Authority, California</masterLabel>
+        <translation><!-- Student Loan Authority, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supreme Court of California</masterLabel>
+        <translation><!-- Supreme Court of California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teacher Credentialing, Commission on</masterLabel>
+        <translation><!-- Teacher Credentialing, Commission on --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology, California Department of</masterLabel>
+        <translation><!-- Technology, California Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology, Department of</masterLabel>
+        <translation><!-- Technology, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toxic Substances Control, Department of</masterLabel>
+        <translation><!-- Toxic Substances Control, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Safety, Office of</masterLabel>
+        <translation><!-- Traffic Safety, Office of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation Commission, California</masterLabel>
+        <translation><!-- Transportation Commission, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation, Department of (Cal Trans) (DOT)</masterLabel>
+        <translation><!-- Transportation, Department of (Cal Trans) (DOT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treasurer&#39;s Office, State</masterLabel>
+        <translation><!-- Treasurer&apos;s Office, State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urban Waterfront Area Restoration, California</masterLabel>
+        <translation><!-- Urban Waterfront Area Restoration, California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ventura School</masterLabel>
+        <translation><!-- Ventura School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veteran&#39;s Affairs, Department of</masterLabel>
+        <translation><!-- Veteran&apos;s Affairs, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Victim Compensation and Government Claims Board</masterLabel>
+        <translation><!-- Victim Compensation and Government Claims Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Resources Control State</masterLabel>
+        <translation><!-- Water Resources Control State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water Resources, Department of</masterLabel>
+        <translation><!-- Water Resources, Department of --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wildlife Conservation Board</masterLabel>
+        <translation><!-- Wildlife Conservation Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youth Conservation Camps</masterLabel>
+        <translation><!-- Youth Conservation Camps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youth Training School</masterLabel>
+        <translation><!-- Youth Training School --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

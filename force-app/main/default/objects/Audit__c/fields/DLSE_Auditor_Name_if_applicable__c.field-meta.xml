@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLSE_Auditor_Name_if_applicable__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup up to Internal Employee record with title of Payroll Auditor.</description>
+    <externalId>false</externalId>
+    <label>DLSE Auditor Name (if applicable)</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>DIR_Employee__c.Title__c</field>
+            <operation>equals</operation>
+            <value>Payroll Auditor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Audits</relationshipLabel>
+    <relationshipName>Audits</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

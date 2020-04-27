@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_Attendee_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Replace zName of Attendee</description>
+    <externalId>false</externalId>
+    <label>Name of Attendee</label>
+    <referenceTo>Case_Role__c</referenceTo>
+    <relationshipLabel>Meeting Participants (Name of Attendee)</relationshipLabel>
+    <relationshipName>Meeting_Participants2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 102 Date Appeal Filed --></label>
+    <name>WCA_102_Date_Appeal_Filed__c</name>
+</CustomFieldTranslation>

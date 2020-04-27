@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Inputs_Invalid_notification</name>
+        <label>Inputs Invalid notification</label>
+        <locationX>178</locationX>
+        <locationY>287</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>IssueModificationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>txtInvalidInputDebug</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>179</locationX>
+        <locationY>26</locationY>
+        <assignmentItems>
+            <assignToReference>CaseViolationID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1EZ0000001cq05</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ModificationCategory</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Wage Modification</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varModificationAmount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>800.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varEarnedAmount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>800.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IssueModificationID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a2BZ0000000RbOP</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Type_on_Issue_Modification</name>
+        <label>Check Category on Issue Modification</label>
+        <locationX>581</locationX>
+        <locationY>140</locationY>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>Type_Wage</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>ModificationCategory</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wage Modification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_What</targetReference>
+            </connector>
+            <label>Type Wage</label>
+        </rules>
+        <rules>
+            <name>Type_Penalty</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>ModificationCategory</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Penalty Modification</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_Violation_with_Penalty_Amount_0</targetReference>
+            </connector>
+            <label>Type Penalty</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Update_What</name>
+        <label>Update What</label>
+        <locationX>455</locationX>
+        <locationY>341</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Both</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>boolEarnedChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>boolAmountDueSet</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_Violation_with_Wage_Amount_0</targetReference>
+            </connector>
+            <label>Both</label>
+        </rules>
+        <rules>
+            <name>AmountDue</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>boolAmountDueSet</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_Violation_with_Wage_Amount_0_0_0</targetReference>
+            </connector>
+            <label>Amount Due</label>
+        </rules>
+        <rules>
+            <name>Amount_Earned</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>boolEarnedChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_Violation_with_Wage_Amount_0_0</targetReference>
+            </connector>
+            <label>Amount Earned</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>175</locationX>
+        <locationY>145</locationY>
+        <defaultConnector>
+            <targetReference>Inputs_Invalid_notification</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_Valid</name>
+            <conditionLogic>1 AND 2 AND ( 3 OR 4 )</conditionLogic>
+            <conditions>
+                <leftValueReference>CaseViolationID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ModificationCategory</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varModificationAmount</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varEarnedAmount</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Type_on_Issue_Modification</targetReference>
+            </connector>
+            <label>Outcome Valid</label>
+        </rules>
+    </decisions>
+    <description>Added update to amount earned on case violation
+- Added flags to indicate what needs to be updated to be passed from pb because checking for null was failing to process the flow</description>
+    <interviewLabel>Issue Modifications Update on Case Violations {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Issue Modifications Update on Case Violations</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>This will update the Total Penalty Modification Field on Case Violation Record</description>
+        <name>Update_Case_Violation_with_Penalty_Amount_0</name>
+        <label>Update Case Violation with Wage Amount</label>
+        <locationX>698</locationX>
+        <locationY>346</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseViolationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Citation_Amount__c</field>
+            <value>
+                <elementReference>varModificationAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DIR_Violation__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>This will update the Total Wage Modification Field on Case Violation Record</description>
+        <name>Update_Case_Violation_with_Wage_Amount_0</name>
+        <label>Update Case Violation with Wage Amount</label>
+        <locationX>320</locationX>
+        <locationY>591</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseViolationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Amount_Earned__c</field>
+            <value>
+                <elementReference>varEarnedAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Wages_Due__c</field>
+            <value>
+                <elementReference>varModificationAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DIR_Violation__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>This will update the Total Wage Modification Field on Case Violation Record</description>
+        <name>Update_Case_Violation_with_Wage_Amount_0_0</name>
+        <label>Update Case Violation with Wage Amount</label>
+        <locationX>456</locationX>
+        <locationY>651</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseViolationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Amount_Earned__c</field>
+            <value>
+                <elementReference>varEarnedAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DIR_Violation__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>This will update the Total Wage Modification Field on Case Violation Record</description>
+        <name>Update_Case_Violation_with_Wage_Amount_0_0_0</name>
+        <label>Update Case Violation with Wage Amount</label>
+        <locationX>592</locationX>
+        <locationY>599</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CaseViolationID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Wages_Due__c</field>
+            <value>
+                <elementReference>varModificationAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DIR_Violation__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <description>Displays message about the modification when inputs are valid</description>
+        <name>txtInputsValidDebug</name>
+        <text>Inputs were invalid to roll the modification to the case issue. Inputs were:
+Modification ID: {!IssueModificationID}
+Issue ID: {!CaseViolationID}
+Category: {!ModificationCategory}
+Modified Amount: {!varModificationAmount}
+Amount Earned: 
+Amount Earned Raw value: {!varEarnedAmount}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>debug details for invalid modification</description>
+        <name>txtInvalidInputDebug</name>
+        <text>Inputs were invalid to roll the modification to the case issue. Inputs were:
+Modification ID: {!IssueModificationID}
+Issue ID: {!CaseViolationID}
+Category: {!ModificationCategory}
+Modified Amount: {!varModificationAmount}
+Amount Earned: {!varEarnedAmount}</text>
+    </textTemplates>
+    <variables>
+        <description>flag sent from pb indicating that the amount due needs to be updated</description>
+        <name>boolAmountDueSet</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>flag sent from pb indicating that the amount earned has changed</description>
+        <name>boolEarnedChanged</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>CaseViolationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>IssueModificationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ModificationCategory</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Earned amount entered on the issue modification</description>
+        <name>varEarnedAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>Amount to which the issue is being modified to</description>
+        <name>varModificationAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+</Flow>

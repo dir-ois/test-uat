@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Can_Be_Processed__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Use to hide/unhide the reason fields on ICL. (replacing the field &quot;Can Payment Be Processed?&quot;</description>
+    <externalId>false</externalId>
+    <label>Payment Can Be Processed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the sub category for reporting categories that need to have a more granular reporting structure. --></help>
+    <label><!-- Reporting Sub-Category --></label>
+    <name>Reporting_Sub_Category__c</name>
+    <picklistValues>
+        <masterLabel>ATTY FEES - GARMENT</masterLabel>
+        <translation><!-- ATTY FEES - GARMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATTY FEES DUE DLSE</masterLabel>
+        <translation><!-- ATTY FEES DUE DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMMISSIONS - BLENDED</masterLabel>
+        <translation><!-- COMMISSIONS - BLENDED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMMISSIONS - MIN WAGE</masterLabel>
+        <translation><!-- COMMISSIONS - MIN WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMMISSIONS - REG WAGE</masterLabel>
+        <translation><!-- COMMISSIONS - REG WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LD - OT</masterLabel>
+        <translation><!-- LD - OT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOCAL MIN WAGE</masterLabel>
+        <translation><!-- LOCAL MIN WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIECE RATE - BLENDED</masterLabel>
+        <translation><!-- PIECE RATE - BLENDED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIECE RATE - MIN WAGE</masterLabel>
+        <translation><!-- PIECE RATE - MIN WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIECE RATE - REG WAGE</masterLabel>
+        <translation><!-- PIECE RATE - REG WAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SICK LEAVE - PENALTY</masterLabel>
+        <translation><!-- SICK LEAVE - PENALTY --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

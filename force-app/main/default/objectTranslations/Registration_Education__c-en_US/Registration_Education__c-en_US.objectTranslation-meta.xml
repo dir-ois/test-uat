@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration Education</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registration Education</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Registration Education - DIR View --></label>
+        <name>Registration_Education_DIR_View</name>
+    </fieldSets>
+    <layouts>
+        <layout>Registration Education Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Registration Info --></label>
+            <section>Registration Info</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot change exam name. Please cancel and edit again to add Attendee, Language, and Date, if known. --></errorMessage>
+        <name>Community_User_Cannot_Change_Exam_Name</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_Exam_Authorization --></label>
+        <name>Send_Exam_Authorization</name>
+    </webLinks>
+</CustomObjectTranslation>

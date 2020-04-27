@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Post_Hearing_Interest__c</fullName>
+    <externalId>false</externalId>
+    <formula>Post_Hearing_Interest_Per_LC_1194_2__c +  Post_Hearing_Interest_Per_LC_2802__c + Post_Hearing_Interest_Per_LC_98_1__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Post-Hearing Interest</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Seq_Num__c</fullName>
+    <defaultValue>1</defaultValue>
+    <description>Address Sequence Number
+
+Customer address location for the receivable where the invoice was sent or where the customer correspondence may be sent.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Must be a valid customer address sequence number based on the FI$Cal Customer setup (e.g. 1, 2, 25).
+
+If not provided, field will default from customer bill to primary address.</inlineHelpText>
+    <label>Address_Seq_Num</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

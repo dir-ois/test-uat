@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_Referral__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set when an RLCV has been created via a wage case referral. Used in case prioritization.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates than an RLCV has originated from a wage case referral.</inlineHelpText>
+    <label>WCA Referral</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

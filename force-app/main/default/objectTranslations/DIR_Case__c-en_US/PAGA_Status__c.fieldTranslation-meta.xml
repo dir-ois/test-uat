@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PAGA Status --></label>
+    <name>PAGA_Status__c</name>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Closure</masterLabel>
+        <translation><!-- Pending Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement Pending</masterLabel>
+        <translation><!-- Settlement Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Investigation</masterLabel>
+        <translation><!-- Under Investigation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

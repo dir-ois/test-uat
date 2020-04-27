@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Limited/Unlimited --></label>
+    <name>CM_010_Limited_Unlimited__c</name>
+    <picklistValues>
+        <masterLabel>Limited</masterLabel>
+        <translation><!-- Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unlimited</masterLabel>
+        <translation><!-- Unlimited --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Either PYMNT_TERMS_CD or DUE_DT must be provided.  
+
+PYMNT_TERMS_CD must be populated if DUE_DT is left blank (the due date will be calculated through ASOF_DT and the Payment Term.). --></help>
+    <label><!-- Pymnt_Terms_Cd --></label>
+    <name>Pymnt_Terms_Cd__c</name>
+</CustomFieldTranslation>

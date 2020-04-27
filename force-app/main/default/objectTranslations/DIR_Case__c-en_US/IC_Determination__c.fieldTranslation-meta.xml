@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- IC Information/AB-5 --></label>
+    <name>IC_Determination__c</name>
+    <picklistValues>
+        <masterLabel>AB5 Assigned</masterLabel>
+        <translation><!-- AB5 Assigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AB5 Final</masterLabel>
+        <translation><!-- AB5 Final --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AB5 Not 226.8</masterLabel>
+        <translation><!-- AB5 Not 226.8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AB5 RLLV</masterLabel>
+        <translation><!-- AB5 RLLV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim Closed - No determination made</masterLabel>
+        <translation><!-- Claim Closed - No determination made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commonly misclassified worker</masterLabel>
+        <translation><!-- Commonly misclassified worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant alleges IC status</masterLabel>
+        <translation><!-- Defendant alleges IC status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC established - dismissed</masterLabel>
+        <translation><!-- IC established - dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff reports IC misclassification</masterLabel>
+        <translation><!-- Plaintiff reports IC misclassification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to hearing for IC determination</masterLabel>
+        <translation><!-- Referred to hearing for IC determination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - Employee status established</masterLabel>
+        <translation><!-- Settled - Employee status established --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - No IC determination made</masterLabel>
+        <translation><!-- Settled - No IC determination made --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

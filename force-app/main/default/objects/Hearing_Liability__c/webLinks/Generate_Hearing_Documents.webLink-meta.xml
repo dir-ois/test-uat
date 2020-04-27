@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Hearing_Documents</fullName>
+    <availability>online</availability>
+    <description>Conga document for Hearing</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Generate Hearing Documents</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var ids= {!GETRECORDIDS($ObjectType.Hearing_Liability__c)}; 
+var idsReport=ids.join(&quot;|&quot;); 
+var idsQuery=ids.join(&quot;&#39;|&#39;&quot;); 
+
+if (ids.length == &#39;0&#39;)
+{
+alert(&quot;Please select a Hearing Liability&quot;);
+}
+else if(ids.length &gt; &#39;1&#39;) 
+{ 
+alert(&quot;Only one Hearing may be selected&quot;); 
+} 
+else 
+{
+var CongaURL = &quot;https://composer.congamerge.com&quot; + 
+&quot;?sessionId={!$Api.Session_ID}&quot; + 
+&quot;&amp;ServerUrl={!$Api.Partner_Server_URL_290}&quot; + 
+&quot;&amp;id={!Hearing__c.Id}&quot; +
+&quot;&amp;templategroup=BOFEHearing&quot; + 
+&quot;&amp;AC0=1&quot; + 
+&quot;&amp;SC0=1&quot; + 
+&quot;&amp;DS6=1&quot; + 
+&quot;&amp;&amp;FP0=0&quot; +  
+&quot;&amp;SC1=Attachments&quot; + 
+&quot;&amp;QueryId=[defandjoint]a0md00000064cjRAAQ&quot; + &quot;&amp;QueryId=[Governor]a0md0000003l2S0&quot; + &quot;&amp;QueryId=[HearingQuery]a0md0000003l2Rc?pv0=&quot; + idsReport + 
+&quot;&amp;reportid=[HearingReport]00Od0000004WoyL?pv0=&quot; + idsQuery;
+window.open( CongaURL, &quot;Conga&quot;, &quot;width=700,height=550,menubar=0&quot; );
+}</url>
+</WebLink>

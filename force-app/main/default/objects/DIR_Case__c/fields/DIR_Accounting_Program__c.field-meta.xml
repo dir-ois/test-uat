@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DIR_Accounting_Program__c</fullName>
+    <description>Some DLSE Programs are the same as others for the purpose of looking up DIR Accounting Codes.</description>
+    <externalId>false</externalId>
+    <formula>&quot;BOFE&quot;</formula>
+    <inlineHelpText>This field is used to find a DIR Accounting Code for a DLSE Program that is the same as another for the purpose of reporting to DIR Accounting. This field saves having to setup new Accounting Codes and Applicable Accounting Codes for a new DLSE Program.</inlineHelpText>
+    <label>DIR Accounting Program</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

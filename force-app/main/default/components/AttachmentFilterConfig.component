@@ -1,0 +1,80 @@
+<apex:component controller="FieldUpdateConfigController" allowDML="true">
+
+<apex:outputPanel layout="block">
+    <fieldset data-role="controlgroup" data-mini="true" data-corners="false" id="attPlusFilterList" style="margin: 0px; width:95%;">
+        <header><h2>Attachment Filters</h2></header>
+        <div style="height: 600px; width: 100%; border:1px solid black; overflow-y: scroll;">
+            <apex:variable value="{!3}" var="rowNum"/>
+            <table cellSpacing="20%" data-role="none" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable2" width="100%">
+                <apex:commandButton value="New" onClick="newFilter();" rerender="breakPanel" html-data-ajax="false" />
+                <thead>
+                    <tr>
+                        <th align="left" data-priority="2">Filter Name</th>
+                        <th align="left" data-priority="2">Criteria</th>
+                        <th align="left" data-priority="2">Operator</th>
+                        <th align="left" data-priority="2">Type</th>
+                        <th align="left" data-priority="2">Active</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!attList}" var="att">
+                        <tr>
+                            <td align="left">
+                                <a href="#popup{!att.thisAtt.Id}" data-rel="popup">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                <a href="#popupDelete{!att.thisAtt.Id}" data-rel="popup">Delete</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <apex:outputText value="{!att.thisAtt.Name}" />
+                            </td>
+                            <td align="left">
+                                <apex:outputText value="{!att.thisAtt.Attachment_Criteria__c}" />
+                            </td>
+                            <td align="left">
+                                <apex:outputText value="{!att.thisAtt.Attachment_Operator__c}" />
+                            </td>
+                            <td align="left">
+                                <apex:outputText value="{!att.thisAtt.Type__c}" />
+                            </td>
+                            <td align="left">
+                                <apex:inputCheckbox value="{!att.thisAtt.Active__c}" disabled="true" />
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                    </tbody>
+                </table>
+        </div>
+        <apex:repeat value="{!attList}" var="att">
+        <div data-role="popup" id="popupDelete{!att.thisAtt.Id}" data-position-to="window" data-transition="flow" data-overlay-theme="a">
+			<div data-role="header">
+				<h1>Are You Sure?</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+				<p>You will permanently delete this attachment. Do you wish to proceed?</p>
+				<table>
+					<tr>
+						<td>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Cancel</a>
+						</td>
+						<td>
+							<apex:commandButton value="Continue" styleClass="ui-btn ui-corner-all ui-shadow ui-btn-inline" html-data-ajax="false">
+								<apex:param name="deleteAttString" value="{!att.thisAtt.Id}" id="deleteString" assignTo="{!deleteAttId}"/> 
+							</apex:commandButton>
+						</td>
+					</tr>
+				
+				</table>
+			</div>
+		</div>
+		</apex:repeat>
+    </fieldset>
+    
+    <br/><br/>
+                <div align="center">
+        <table cellSpacing="20%">
+            <tr>
+                <td><apex:commandButton value="Cancel" action="{!resetView}" rerender="breakPanel"/></td>
+                <td><apex:commandButton value="Save" action="{!saveAtts}" rerender="breakPanel" html-data-ajax="false" onComplete="$('#firststepDiv').trigger('create');"/></td>
+            </tr>
+        </table>
+    </div>
+</apex:outputPanel>
+
+</apex:component>

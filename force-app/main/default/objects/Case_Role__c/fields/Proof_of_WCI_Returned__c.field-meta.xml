@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proof_of_WCI_Returned__c</fullName>
+    <description>Allows users to record the response to a 601 form regarding the proof of an entity&#39;s Worker&#39;s Compensation Insurance and whether it is acceptable or a referral to BOFE is necessary.</description>
+    <externalId>false</externalId>
+    <label>Proof of WCI Returned</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Returned</fullName>
+                <default>true</default>
+                <label>Not Returned</label>
+            </value>
+            <value>
+                <fullName>Acceptable</fullName>
+                <default>false</default>
+                <label>Acceptable</label>
+            </value>
+            <value>
+                <fullName>Returned, Refer Anyway</fullName>
+                <default>false</default>
+                <label>Returned, Refer Anyway</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Investigation Decision Deadline Date from the Case. Field is editable on the Case but not on the Child Referral. --></help>
+    <label><!-- Deadline to Accept for Investigation --></label>
+    <name>Investigation_Decision_Deadline_Date__c</name>
+</CustomFieldTranslation>

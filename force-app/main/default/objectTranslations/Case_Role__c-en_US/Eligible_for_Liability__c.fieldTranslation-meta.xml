@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is set by a formula. contact your administrator if you need to add or remove roles from those eligible to be liable parties. --></help>
+    <label><!-- Eligible for Liability --></label>
+    <name>Eligible_for_Liability__c</name>
+</CustomFieldTranslation>

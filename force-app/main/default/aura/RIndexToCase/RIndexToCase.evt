@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template">
+    <aura:attribute name="Pass_Rct_Index" type="Double" default="0.00"/>
+    <aura:attribute name="Pass_Current_RList" type="Receipt__c[]" />
+    <aura:attribute name="Pass_Current_RctCaseList" type="Receipt__c[]" />
+</aura:event>

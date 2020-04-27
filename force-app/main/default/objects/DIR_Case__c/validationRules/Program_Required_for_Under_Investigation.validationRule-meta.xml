@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Required_for_Under_Investigation</fullName>
+    <active>true</active>
+    <description>The DLSE Program must be set in order to move a case to Under Investigation</description>
+    <errorConditionFormula>((RecordType.Name &lt;&gt; &quot;WCA&quot;) 
+&amp;&amp; (RecordType.Name &lt;&gt; &quot;Garment&quot;) 
+&amp;&amp; (RecordType.Name  &lt;&gt; &quot;PAGA Case&quot;)
+&amp;&amp; (RecordType.Name  &lt;&gt; &quot;Legacy WCA Case&quot;)
+&amp;&amp; (RecordType.Name  &lt;&gt; &quot;Legacy Garment Case&quot;)
+&amp;&amp; (RecordType.Name &lt;&gt; &quot;RCI&quot;)) 
+&amp;&amp; 
+ISPICKVAL ( Status__c, &quot;Under Investigation&quot;) 
+&amp;&amp; ISBLANK(TEXT(DLSE_Program__c))</errorConditionFormula>
+    <errorDisplayField>DLSE_Program__c</errorDisplayField>
+    <errorMessage>You must set a DLSE Program in order to move this case to Under Investigation.</errorMessage>
+</ValidationRule>

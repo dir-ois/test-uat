@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appeal_Findings_Date__c</fullName>
+    <description>Deprecate. DK 11-19-16. Same field as Appeal Finding Date.
+To hold AR: appeal_find_date. AR data updated 10/28/16 to SF.</description>
+    <externalId>false</externalId>
+    <label>Appeal Findings Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Violation_Calculations</fullName>
+    <availability>online</availability>
+    <description>Opens the wizard to allow the user to edit the violation details</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Edit Violation Calculations</masterLabel>
+    <openType>sidebar</openType>
+    <page>UpdateViolation</page>
+    <protected>false</protected>
+</WebLink>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Determination_Served_Date_plus_35_days__c</fullName>
+    <externalId>false</externalId>
+    <formula>Determination_Served_Date__c + 35</formula>
+    <label>Determination Served Date plus 35 days</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

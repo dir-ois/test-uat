@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_No_premium_pay_for_missing_mea__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>No premium pay for missing meal or rest periods.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>No premium pay for missing meal or rest periods.</inlineHelpText>
+    <label>No premium pay for missing meal or rest</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

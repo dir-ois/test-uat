@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_on_Behalf_of__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>When saving a payment through the payment system, this is the party that the payment is on behalf of, if this applies. This rolls into the payments on the liable parties to reduce the balance due by the party.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Party on whose behalf the payment was made.</inlineHelpText>
+    <label>Payment on Behalf of</label>
+    <referenceTo>Liable_Party__c</referenceTo>
+    <relationshipLabel>Payments Received</relationshipLabel>
+    <relationshipName>Liability_Payments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

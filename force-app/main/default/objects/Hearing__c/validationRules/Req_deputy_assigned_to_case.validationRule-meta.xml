@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_deputy_assigned_to_case</fullName>
+    <active>true</active>
+    <description>requires that a deputy be assigned to the case before the meeting can be scheduled.</description>
+    <errorConditionFormula>ISPICKVAL ( Status__c , &#39;Scheduled&#39; ) 
+&amp;&amp;
+ISBLANK (  Case__r.Assigned_Deputy__c )</errorConditionFormula>
+    <errorMessage>A deputy must be assigned to the case before the meeting can be scheduled.</errorMessage>
+</ValidationRule>

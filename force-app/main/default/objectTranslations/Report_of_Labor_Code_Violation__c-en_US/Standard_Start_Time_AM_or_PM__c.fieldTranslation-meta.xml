@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What time did the employer designate? --></help>
+    <label><!-- Standard Start Time AM or PM --></label>
+    <name>Standard_Start_Time_AM_or_PM__c</name>
+    <picklistValues>
+        <masterLabel>AM</masterLabel>
+        <translation><!-- AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM</masterLabel>
+        <translation><!-- PM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

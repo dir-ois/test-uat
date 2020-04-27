@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- To which company is this owner associated in the joint venture? --></help>
+    <label><!-- Legal Entity Name --></label>
+    <name>Joint_Venture_Company__c</name>
+</CustomFieldTranslation>

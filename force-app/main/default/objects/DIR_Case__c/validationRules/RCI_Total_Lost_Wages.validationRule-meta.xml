@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Total_Lost_Wages</fullName>
+    <active>true</active>
+    <description>Only 1 Case Issue with Lost Wages is allowed per RCI case.</description>
+    <errorConditionFormula>(RecordType.Name=&quot;RCI&quot;) &amp;&amp;
+(Total_Lost_Wages__c &gt; 1)</errorConditionFormula>
+    <errorMessage>Only 1 Case Issue with Lost Wages is allowed per RCI case. 
+Please review the existing Case Issues.</errorMessage>
+</ValidationRule>

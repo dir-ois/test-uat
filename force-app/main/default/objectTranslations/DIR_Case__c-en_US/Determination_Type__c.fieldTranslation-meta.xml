@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required for Determination Approval process. --></help>
+    <label><!-- Determination Type --></label>
+    <name>Determination_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cause</masterLabel>
+        <translation><!-- Cause --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Cause</masterLabel>
+        <translation><!-- No Cause --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

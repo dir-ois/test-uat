@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the starting check number for this batch when printing --></help>
+    <label><!-- Starting Check Number --></label>
+    <name>Starting_Check_Number__c</name>
+</CustomFieldTranslation>

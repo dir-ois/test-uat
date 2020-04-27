@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X731_Report_Category__c</fullName>
+    <description>Violations under this type will be reported on the Monthly Statistical Reporting under this category.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Violations under this type will be reported on the Monthly Statistical Reporting under this category.</inlineHelpText>
+    <label>Report Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PENALTIES PURSUANT TO LC 1198.5(k)</fullName>
+                <default>false</default>
+                <label>PENALTIES PURSUANT TO LC 1198.5(k)</label>
+            </value>
+            <value>
+                <fullName>PENALTIES PURSUANT TO LC 1695(a)(5)</fullName>
+                <default>false</default>
+                <label>PENALTIES PURSUANT TO LC 1695(a)(5)</label>
+            </value>
+            <value>
+                <fullName>PENALTIES PURSUANT TO LC 226(f)</fullName>
+                <default>false</default>
+                <label>PENALTIES PURSUANT TO LC 226(f)</label>
+            </value>
+            <value>
+                <fullName>PENALTIES PURSUANT TO LC 203.1</fullName>
+                <default>false</default>
+                <label>PENALTIES PURSUANT TO LC 203.1</label>
+            </value>
+            <value>
+                <fullName>PENALTIES PURSUANT TO LC 210</fullName>
+                <default>false</default>
+                <label>PENALTIES PURSUANT TO LC 210</label>
+            </value>
+            <value>
+                <fullName>ATTORNEY FEES</fullName>
+                <default>false</default>
+                <label>ATTORNEY FEES</label>
+            </value>
+            <value>
+                <fullName>BONUS</fullName>
+                <default>false</default>
+                <label>BONUS</label>
+            </value>
+            <value>
+                <fullName>BUSINESS EXPENSES</fullName>
+                <default>false</default>
+                <label>BUSINESS EXPENSES</label>
+            </value>
+            <value>
+                <fullName>CAR WASH REGISTRATION</fullName>
+                <default>false</default>
+                <label>CAR WASH REGISTRATION</label>
+            </value>
+            <value>
+                <fullName>CHILD LABOR</fullName>
+                <default>false</default>
+                <label>CHILD LABOR</label>
+            </value>
+            <value>
+                <fullName>COMMISSION WAGES</fullName>
+                <default>false</default>
+                <label>COMMISSION WAGES</label>
+            </value>
+            <value>
+                <fullName>CONTRACT RATE</fullName>
+                <default>false</default>
+                <label>CONTRACT RATE</label>
+            </value>
+            <value>
+                <fullName>DEDUCTION STATEMENT</fullName>
+                <default>false</default>
+                <label>DEDUCTION STATEMENT</label>
+            </value>
+            <value>
+                <fullName>UNLAWFUL DEDUCTIONS</fullName>
+                <default>false</default>
+                <label>UNLAWFUL DEDUCTIONS</label>
+            </value>
+            <value>
+                <fullName>FILING FEE</fullName>
+                <default>false</default>
+                <label>FILING FEE</label>
+            </value>
+            <value>
+                <fullName>FLC SEXUAL HARASSMENT TRAINING</fullName>
+                <default>false</default>
+                <label>FLC SEXUAL HARASSMENT TRAINING</label>
+            </value>
+            <value>
+                <fullName>GARMENT DISPLAY OF REG #</fullName>
+                <default>false</default>
+                <label>GARMENT DISPLAY OF REG #</label>
+            </value>
+            <value>
+                <fullName>GARMENT RECSKPNG</fullName>
+                <default>false</default>
+                <label>GARMENT RECSKPNG</label>
+            </value>
+            <value>
+                <fullName>GARMENT REGISTRATION</fullName>
+                <default>false</default>
+                <label>GARMENT REGISTRATION</label>
+            </value>
+            <value>
+                <fullName>HEAT RECOVERY PREMIUM WAGES</fullName>
+                <default>false</default>
+                <label>HEAT RECOVERY PREMIUM WAGES</label>
+            </value>
+            <value>
+                <fullName>LACTATION ACCOMMODATION</fullName>
+                <default>false</default>
+                <label>LACTATION ACCOMMODATION</label>
+            </value>
+            <value>
+                <fullName>LIQUIDATED DAMAGES</fullName>
+                <default>false</default>
+                <label>LIQUIDATED DAMAGES</label>
+            </value>
+            <value>
+                <fullName>MEAL PERIOD PREMIUM WAGES</fullName>
+                <default>false</default>
+                <label>MEAL PERIOD PREMIUM WAGES</label>
+            </value>
+            <value>
+                <fullName>MINIMUM WAGE</fullName>
+                <default>false</default>
+                <label>MINIMUM WAGE</label>
+            </value>
+            <value>
+                <fullName>MISCLASSIFICATION</fullName>
+                <default>false</default>
+                <label>MISCLASSIFICATION</label>
+            </value>
+            <value>
+                <fullName>NON-REPORTING</fullName>
+                <default>false</default>
+                <label>NON-REPORTING</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>OVERTIME WAGES</fullName>
+                <default>false</default>
+                <label>OVERTIME WAGES</label>
+            </value>
+            <value>
+                <fullName>PIECE RATE WAGES</fullName>
+                <default>false</default>
+                <label>PIECE RATE WAGES</label>
+            </value>
+            <value>
+                <fullName>PUBLIC WORKS</fullName>
+                <default>false</default>
+                <label>PUBLIC WORKS</label>
+            </value>
+            <value>
+                <fullName>REGULAR WAGES</fullName>
+                <default>false</default>
+                <label>REGULAR WAGES</label>
+            </value>
+            <value>
+                <fullName>REPORTING TIME PAY</fullName>
+                <default>false</default>
+                <label>REPORTING TIME PAY</label>
+            </value>
+            <value>
+                <fullName>REST PERIOD PREMIUM WAGE</fullName>
+                <default>false</default>
+                <label>REST PERIOD PREMIUM WAGE</label>
+            </value>
+            <value>
+                <fullName>SICK LEAVE</fullName>
+                <default>false</default>
+                <label>SICK LEAVE</label>
+            </value>
+            <value>
+                <fullName>SPLIT SHIFT PREMIUM</fullName>
+                <default>false</default>
+                <label>SPLIT SHIFT PREMIUM</label>
+            </value>
+            <value>
+                <fullName>TIPS</fullName>
+                <default>false</default>
+                <label>TIPS</label>
+            </value>
+            <value>
+                <fullName>TOOLS/EQUIPMENT</fullName>
+                <default>false</default>
+                <label>TOOLS/EQUIPMENT</label>
+            </value>
+            <value>
+                <fullName>UNIFORM</fullName>
+                <default>false</default>
+                <label>UNIFORM</label>
+            </value>
+            <value>
+                <fullName>UNLICENSED CONTRACTOR</fullName>
+                <default>false</default>
+                <label>UNLICENSED CONTRACTOR</label>
+            </value>
+            <value>
+                <fullName>UNLICENSED FLC</fullName>
+                <default>false</default>
+                <label>UNLICENSED FLC</label>
+            </value>
+            <value>
+                <fullName>VACATION WAGE</fullName>
+                <default>false</default>
+                <label>VACATION WAGE</label>
+            </value>
+            <value>
+                <fullName>WAITING TIME PENALTIES</fullName>
+                <default>false</default>
+                <label>WAITING TIME PENALTIES</label>
+            </value>
+            <value>
+                <fullName>WORKERS&#39; COMP</fullName>
+                <default>false</default>
+                <label>WORKERS&#39; COMP</label>
+            </value>
+            <value>
+                <fullName>Labor Code 238/240</fullName>
+                <default>false</default>
+                <label>Labor Code 238/240</label>
+            </value>
+            <value>
+                <fullName>Expanded Liability Action</fullName>
+                <default>false</default>
+                <label>Expanded Liability Action</label>
+            </value>
+            <value>
+                <fullName>LABOR CODE VIOLATION</fullName>
+                <default>false</default>
+                <label>LABOR CODE VIOLATION</label>
+            </value>
+            <value>
+                <fullName>REMEDY</fullName>
+                <default>false</default>
+                <label>REMEDY</label>
+            </value>
+            <value>
+                <fullName>DAMAGES 226(e)(1)</fullName>
+                <default>false</default>
+                <label>DAMAGES 226(e)(1)</label>
+            </value>
+            <value>
+                <fullName>Janitorial Registration</fullName>
+                <default>false</default>
+                <label>Janitorial Registration</label>
+            </value>
+            <value>
+                <fullName>Unlicensed Janitor</fullName>
+                <default>false</default>
+                <label>Unlicensed Janitor</label>
+            </value>
+            <value>
+                <fullName>Talent Agent</fullName>
+                <default>false</default>
+                <label>Talent Agent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

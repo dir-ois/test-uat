@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Defaults to 15 days from the Date Issued by DLSE --></help>
+    <label><!-- Date Response Due from Garnishee --></label>
+    <name>Date_Response_Due_from_Garnishee__c</name>
+</CustomFieldTranslation>

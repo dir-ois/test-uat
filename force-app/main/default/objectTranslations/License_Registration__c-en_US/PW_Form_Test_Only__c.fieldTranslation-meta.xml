@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PW Form Test Only --></label>
+    <name>PW_Form_Test_Only__c</name>
+    <picklistValues>
+        <masterLabel>July1 - April30</masterLabel>
+        <translation><!-- July1 - April30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>May1 - July1</masterLabel>
+        <translation><!-- May1 - July1 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

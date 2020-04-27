@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Position Type --></label>
+    <name>Position_Type__c</name>
+    <picklistValues>
+        <masterLabel>Backfill</masterLabel>
+        <translation><!-- Backfill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legacy</masterLabel>
+        <translation><!-- Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Move</masterLabel>
+        <translation><!-- Move --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Position</masterLabel>
+        <translation><!-- New Position --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promote in place</masterLabel>
+        <translation><!-- Promote in place --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reclassification</masterLabel>
+        <translation><!-- Reclassification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary Authorized</masterLabel>
+        <translation><!-- Temporary Authorized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporary Help</masterLabel>
+        <translation><!-- Temporary Help --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training and Development</masterLabel>
+        <translation><!-- Training and Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer</masterLabel>
+        <translation><!-- Transfer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

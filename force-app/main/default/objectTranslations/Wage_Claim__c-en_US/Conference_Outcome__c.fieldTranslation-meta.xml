@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Conference Outcome --></label>
+    <name>Conference_Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Dismissed - Claimant Did Not Appear</masterLabel>
+        <translation><!-- Dismissed - Claimant Did Not Appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - Claimant Withdrew</masterLabel>
+        <translation><!-- Dismissed - Claimant Withdrew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - No Jurisdiction</masterLabel>
+        <translation><!-- Dismissed - No Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Hearing - Claimant Only Appeared</masterLabel>
+        <translation><!-- Referred to Hearing - Claimant Only Appeared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Hearing - no Settlement</masterLabel>
+        <translation><!-- Referred to Hearing - no Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

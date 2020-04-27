@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required when referred --></help>
+    <label><!-- Garment Fund Referral Date --></label>
+    <name>Garment_Fund_Referral_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Judgment Case Violation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Judgment Case Violations</value>
+    </caseValues>
+    <layouts>
+        <layout>Judgement Case Violation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

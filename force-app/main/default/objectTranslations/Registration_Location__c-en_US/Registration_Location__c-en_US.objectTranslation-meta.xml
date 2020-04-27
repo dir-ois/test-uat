@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration Location</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registration Locations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- DBA TA --></label>
+        <name>DBA_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Location Fields --></label>
+        <name>Registration_Location_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Location Fields - JS --></label>
+        <name>Registration_Location_Fields_JS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Location Fields TA --></label>
+        <name>Registration_Location_Fields_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Location - slim --></label>
+        <name>Registration_Location_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Location - slim - JS --></label>
+        <name>Registration_Location_slim_JS</name>
+    </fieldSets>
+    <layouts>
+        <layout>Registration Location Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Registration Location --></label>
+        <name>Registration_Location</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- P.O. Boxes are not accepted addresses. Please change to a physical location before moving forward. --></errorMessage>
+        <name>Address_cannot_have_PO_Box</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Business License Expiration Date must be at least 14 days in the future --></errorMessage>
+        <name>Business_License_Expiration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Business License Expiration date for this location. --></errorMessage>
+        <name>Business_License_Required_for_Compliance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid city name. --></errorMessage>
+        <name>City_cannot_contain_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- US phone numbers must be 10 numbers. Please correct to continue. --></errorMessage>
+        <name>Phone_must_be_10_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- U.S. Zip codes must have 5 digits or 9 digits with a dash between the 5th and 6th digit. --></errorMessage>
+        <name>Require_formatting_for_US_zip_codes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Zip Code must have at least 5 numbers. --></errorMessage>
+        <name>Zip_Code_must_have_at_least_5_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The date a location is deactivated must be in the past --></errorMessage>
+        <name>deactivated_date_in_past</name>
+    </validationRules>
+</CustomObjectTranslation>

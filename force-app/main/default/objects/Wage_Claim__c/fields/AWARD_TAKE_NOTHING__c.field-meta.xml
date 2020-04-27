@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AWARD_TAKE_NOTHING__c</fullName>
+    <description>Listed in FMP as: AWARD/TAKE NOTHING</description>
+    <externalId>false</externalId>
+    <label>Ordered That:</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Plaintiff recover from Defendant.</fullName>
+                <default>false</default>
+                <label>Plaintiff recover from Defendant.</label>
+            </value>
+            <value>
+                <fullName>Plaintiff take nothing by virtue of his/her complaint.</fullName>
+                <default>false</default>
+                <label>Plaintiff take nothing by virtue of his/her complaint.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

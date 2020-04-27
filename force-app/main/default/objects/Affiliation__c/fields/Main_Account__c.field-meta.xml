@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The &quot;source&quot; account that an affiliation is created FROM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The &quot;source&quot; account that an affiliation is created FROM. When reading the affiliation, the relationship should read:
+[Affiliated Account/contact] is a [Affiliation Type] of [Main Account/contact].</inlineHelpText>
+    <label>Main Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Affiliations (Main Account)</relationshipLabel>
+    <relationshipName>Affiliations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

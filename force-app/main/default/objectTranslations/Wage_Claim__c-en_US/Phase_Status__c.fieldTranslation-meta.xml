@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Phase Status --></label>
+    <name>Phase_Status__c</name>
+    <picklistValues>
+        <masterLabel>Address Correction Received</masterLabel>
+        <translation><!-- Address Correction Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Address Correction requested</masterLabel>
+        <translation><!-- Address Correction requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Address Correction requested 2</masterLabel>
+        <translation><!-- Address Correction requested 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended Complaint sent to Plaintiff</masterLabel>
+        <translation><!-- Amended Complaint sent to Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assigned to Deputy</masterLabel>
+        <translation><!-- Assigned to Deputy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignment Received</masterLabel>
+        <translation><!-- Assignment Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignment Sent</masterLabel>
+        <translation><!-- Assignment Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting appeal period</masterLabel>
+        <translation><!-- Awaiting appeal period --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting response from Plaintiff</masterLabel>
+        <translation><!-- Awaiting response from Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case refered to hearing</masterLabel>
+        <translation><!-- Case refered to hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citation Hearing Referral Received</masterLabel>
+        <translation><!-- Citation Hearing Referral Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarification Received</masterLabel>
+        <translation><!-- Clarification Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarification Requested</masterLabel>
+        <translation><!-- Clarification Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarification Requested 2</masterLabel>
+        <translation><!-- Clarification Requested 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference Rescheduled</masterLabel>
+        <translation><!-- Conference Rescheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference continuance requested</masterLabel>
+        <translation><!-- Conference continuance requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuance Request denied</masterLabel>
+        <translation><!-- Continuance Request denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuance request received</masterLabel>
+        <translation><!-- Continuance request received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date of Hearing</masterLabel>
+        <translation><!-- Date of Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Findings - All Others</masterLabel>
+        <translation><!-- Findings - All Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Findings - Stop Order</masterLabel>
+        <translation><!-- Findings - Stop Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forward to BOFE</masterLabel>
+        <translation><!-- Forward to BOFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forwarded to HQ</masterLabel>
+        <translation><!-- Forwarded to HQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Continuance request denied</masterLabel>
+        <translation><!-- Hearing Continuance request denied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Scheduled</masterLabel>
+        <translation><!-- Hearing Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing rescheduled</masterLabel>
+        <translation><!-- Hearing rescheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice to HQ</masterLabel>
+        <translation><!-- Invoice to HQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing to Plaintiff returned</masterLabel>
+        <translation><!-- Notice of Hearing to Plaintiff returned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice to Plaintiff returned by USPS</masterLabel>
+        <translation><!-- Notice to Plaintiff returned by USPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA Notice Returned-PLT</masterLabel>
+        <translation><!-- ODA Notice Returned-PLT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre Berman Packet Sent</masterLabel>
+        <translation><!-- Pre Berman Packet Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Release Sent to Plaintiff</masterLabel>
+        <translation><!-- Release Sent to Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request for representation received</masterLabel>
+        <translation><!-- Request for representation received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request of Representation Mailed</masterLabel>
+        <translation><!-- Request of Representation Mailed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Response received from Plaintiff</masterLabel>
+        <translation><!-- Response received from Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned mail to BOFE</masterLabel>
+        <translation><!-- Returned mail to BOFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schedule Citation Hearing</masterLabel>
+        <translation><!-- Schedule Citation Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled for conference</masterLabel>
+        <translation><!-- Scheduled for conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed Complaint Form received</masterLabel>
+        <translation><!-- Signed Complaint Form received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmittal approved by Senior Deputy</masterLabel>
+        <translation><!-- Transmittal approved by Senior Deputy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 13 Sent</masterLabel>
+        <translation><!-- WCA 13 Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 2</masterLabel>
+        <translation><!-- WCA 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 2 Sent</masterLabel>
+        <translation><!-- WCA 2 Sent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

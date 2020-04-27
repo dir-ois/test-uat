@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HR Prob Report Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HR Prob Report Trackings</value>
+    </caseValues>
+    <layouts>
+        <layout>HR Probe Report Tracking Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Prob Due Date --></label>
+            <section>Prob Due Date</section>
+        </sections>
+        <sections>
+            <label><!-- Prob Received Date --></label>
+            <section>Prob Received Date</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>HR Prob Report Tracking Name</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- &quot;report never completed&quot; field cannot be checked when corresponding due date is not passed --></errorMessage>
+        <name>Invalid_Never_Completed_Status</name>
+    </validationRules>
+</CustomObjectTranslation>

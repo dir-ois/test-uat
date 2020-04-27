@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Levy Type --></label>
+    <name>Levy_Type__c</name>
+    <picklistValues>
+        <masterLabel>Accounts Receivable Garnishment</masterLabel>
+        <translation><!-- Accounts Receivable Garnishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Annuity/Insurance</masterLabel>
+        <translation><!-- Annuity/Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank Garnishment</masterLabel>
+        <translation><!-- Bank Garnishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment</masterLabel>
+        <translation><!-- Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inventory</masterLabel>
+        <translation><!-- Inventory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keeper</masterLabel>
+        <translation><!-- Keeper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Claim</masterLabel>
+        <translation><!-- Legal Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Garnishment</masterLabel>
+        <translation><!-- Other Garnishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Personal Property (e.g., jewelry, paintings)</masterLabel>
+        <translation><!-- Other Personal Property (e.g., jewelry, paintings) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate -- Other</masterLabel>
+        <translation><!-- Real Estate - -  Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate – Commercial Properties</masterLabel>
+        <translation><!-- Real Estate – Commercial Properties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate – Residential Investment</masterLabel>
+        <translation><!-- Real Estate – Residential Investment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate – Residential Owner Occupied</masterLabel>
+        <translation><!-- Real Estate – Residential Owner Occupied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rents Garnishment</masterLabel>
+        <translation><!-- Rents Garnishment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stocks</masterLabel>
+        <translation><!-- Stocks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Till Tap</masterLabel>
+        <translation><!-- Till Tap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vehicle</masterLabel>
+        <translation><!-- Vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Garnishment</masterLabel>
+        <translation><!-- Wage Garnishment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VIPAgreementsReviewed__c</fullName>
+    <description>Used in the form tool to display required fields only to external users.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL($Profile.UserType, &#39;CspLitePortal&#39;) 
+&amp;&amp; 
+AgreementsDA__c = true, 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>VIP Agreements Reviewed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

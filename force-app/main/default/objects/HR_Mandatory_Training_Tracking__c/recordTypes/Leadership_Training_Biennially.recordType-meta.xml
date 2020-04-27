@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leadership_Training_Biennially</fullName>
+    <active>true</active>
+    <description>Per Government Code 19995.4 (c) 20 hours of leadership training must be completed every other year</description>
+    <label>Leadership Training</label>
+</RecordType>

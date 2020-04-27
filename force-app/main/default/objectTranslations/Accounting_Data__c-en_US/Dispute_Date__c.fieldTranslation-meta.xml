@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DISPUTE_DATE is required when DISPUTE_CHKBOX is &apos;Y&apos;.
+
+DISPUTE_DATE must be blank when DISPUTE_CHKBOX is &apos;N&apos;. --></help>
+    <label><!-- Dispute_Date --></label>
+    <name>Dispute_Date__c</name>
+</CustomFieldTranslation>

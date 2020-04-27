@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unassigned_User_Account_Request</fullName>
+    <columns>NAME</columns>
+    <columns>Create_Date_Time__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Account_Request_Type__c</columns>
+    <columns>User_Account_Request_For__c</columns>
+    <columns>Assigned_To__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Support_Request__c.User_Account_Request</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Unassigned - User Account Request</label>
+    <queue>Salesforce_Support_Team</queue>
+    <sharedTo>
+        <group>CalAtlas_Business_Team</group>
+        <role>System_Administrators</role>
+    </sharedTo>
+</ListView>

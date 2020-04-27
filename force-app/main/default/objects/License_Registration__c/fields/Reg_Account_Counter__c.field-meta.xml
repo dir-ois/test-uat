@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reg_Account_Counter__c</fullName>
+    <description>Count number of reg accounts</description>
+    <externalId>false</externalId>
+    <label>Reg Account Counter</label>
+    <summaryFilterItems>
+        <field>Registration_Account__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Individual Permit</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Registration_Account__c.Registration__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

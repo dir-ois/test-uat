@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bugs_Assigned_to_Me</fullName>
+    <columns>NAME</columns>
+    <columns>Bug_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>Assigned_To_Business_User__c</columns>
+    <columns>Assigned_To_Support_Team__c</columns>
+    <columns>Project__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Bugs Assigned to Me</label>
+</ListView>

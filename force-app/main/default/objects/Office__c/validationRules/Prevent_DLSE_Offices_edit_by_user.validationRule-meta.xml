@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_DLSE_Offices_edit_by_user</fullName>
+    <active>true</active>
+    <description>Prevents user from editing dlse offices.</description>
+    <errorConditionFormula>AND 
+(OR((PRIORVALUE(RecordTypeId) = &#39;012d0000000PB8I&#39;), (PRIORVALUE(RecordTypeId) = &#39;012d0000001tZc6&#39;), 
+(PRIORVALUE(RecordTypeId) = &#39;012d00000019PP0&#39;), 
+(PRIORVALUE(RecordTypeId) = &#39;012d00000019PP1&#39;), (PRIORVALUE(RecordTypeId) = &#39;012d0000000PB8J&#39;)), 
+
+NOT( CONTAINS($Profile.Name, &#39;System Administrator&#39;) )
+)</errorConditionFormula>
+    <errorMessage>Generate a Service Request to modify this office record.
+*Modifying this office record will change the information for ALL CASES assigned to this Office. It does not change the assigned office on a case.</errorMessage>
+</ValidationRule>

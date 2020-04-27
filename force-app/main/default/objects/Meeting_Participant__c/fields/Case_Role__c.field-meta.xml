@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to Case Role for Meeting participant</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Help Text Needed</inlineHelpText>
+    <label>Case Role</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Case_Role__c.Case__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Case__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Case_Role__c</referenceTo>
+    <relationshipLabel>Meeting Participants</relationshipLabel>
+    <relationshipName>Meeting_Participants</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

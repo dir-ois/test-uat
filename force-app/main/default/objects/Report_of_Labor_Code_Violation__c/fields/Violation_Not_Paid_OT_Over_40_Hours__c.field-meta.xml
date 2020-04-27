@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Not_Paid_OT_Over_40_Hours__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Not paid weekly overtime for hours worked over 40 hours per week</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Not paid weekly overtime for hours worked over 40 hours per week</inlineHelpText>
+    <label>Not Paid OT Over 40 Hours</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

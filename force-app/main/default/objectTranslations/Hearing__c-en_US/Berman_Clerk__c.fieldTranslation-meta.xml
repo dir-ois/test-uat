@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the person serving as the Berman Clerk for this meeting. --></help>
+    <label><!-- Berman Clerk --></label>
+    <name>Berman_Clerk__c</name>
+    <relationshipLabel><!-- Meetings (Berman Clerk) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 16A Status --></label>
+    <name>Hearing_Form_Returned_Status__c</name>
+    <picklistValues>
+        <masterLabel>Acceptable</masterLabel>
+        <translation><!-- Acceptable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned, Refer anyway</masterLabel>
+        <translation><!-- Returned, Refer anyway --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

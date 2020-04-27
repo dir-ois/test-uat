@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Accounts Payable (To Employees)
+Accounts Receivable (From Employers) --></help>
+    <label><!-- Payment Type --></label>
+    <name>Payment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Accounts Payable</masterLabel>
+        <translation><!-- Accounts Payable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accounts Receivable</masterLabel>
+        <translation><!-- Accounts Receivable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

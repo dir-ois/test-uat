@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pay_Stub_Violations__c</fullName>
+    <description>List of Pay Stub Violations - See Help Text for selection details.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Details for each selections:
+1) Paid by check or cash without an itemized wage deduction statement
+2) Itemized wage deduction statement provided but not accurate and/or incomplete
+3) Itemized wage deduction statement not provided at least semi-monthly</inlineHelpText>
+    <label>Pay Stub Violations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Paid by Cash or No wage statement</fullName>
+                <default>false</default>
+                <label>Paid by Cash or No wage statement</label>
+            </value>
+            <value>
+                <fullName>Inaccurate wage statement</fullName>
+                <default>false</default>
+                <label>Inaccurate wage statement</label>
+            </value>
+            <value>
+                <fullName>No statement  at least semi-monthly</fullName>
+                <default>false</default>
+                <label>No statement  at least semi-monthly</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

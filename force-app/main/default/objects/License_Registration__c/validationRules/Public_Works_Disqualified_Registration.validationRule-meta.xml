@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_Works_Disqualified_Registration</fullName>
+    <active>false</active>
+    <description>In order to save a disqualified record, user will be prompted to select a disqualified reason.</description>
+    <errorConditionFormula>(RecordType.Name=&quot;Public Works&quot;) &amp;&amp;
+
+ISPICKVAL(Status__c,&quot;Disqualified&quot;) &amp;&amp;
+
+ISBLANK(Disqualified_Reason__c) &amp;&amp;
+
+ISBLANK(Disqualification_Start_Date__c) &amp;&amp;
+
+ISBLANK(Disqualification_End_Date__c)</errorConditionFormula>
+    <errorDisplayField>Disqualified_Reason__c</errorDisplayField>
+    <errorMessage>Please enter Disqualification Dates and why this Registration is Disqualified.</errorMessage>
+</ValidationRule>

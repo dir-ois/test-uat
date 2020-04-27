@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Balance due of interest --></help>
+    <label><!-- Interest Balance Due --></label>
+    <name>Interest_Balance_Due__c</name>
+</CustomFieldTranslation>

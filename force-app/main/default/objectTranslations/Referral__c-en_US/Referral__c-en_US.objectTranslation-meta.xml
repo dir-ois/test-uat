@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referrals</value>
+    </caseValues>
+    <layouts>
+        <layout>BOFE Legal Requests</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE Legal Requests Legal</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE Litigation Referral</layout>
+        <sections>
+            <label><!-- Affirmative Litigation --></label>
+            <section>Affirmative Litigation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE Litigation Referral Legal</layout>
+        <sections>
+            <label><!-- Affirmative Litigation --></label>
+            <section>Affirmative Litigation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE Strategic Case</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PAGA Referral Layout</layout>
+        <sections>
+            <label><!-- Affirmative Litigation --></label>
+            <section>Affirmative Litigation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Case Closure Approval Layout</layout>
+        <sections>
+            <label><!-- Approval Status --></label>
+            <section>Approval Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Referral Layout</layout>
+        <sections>
+            <label><!-- Approval Status --></label>
+            <section>Approval Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Judgment --></label>
+            <section>Judgment</section>
+        </sections>
+        <sections>
+            <label><!-- Settlement --></label>
+            <section>Settlement</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Report/Determination Approval Layout</layout>
+        <sections>
+            <label><!-- Approval Status --></label>
+            <section>Approval Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RS Referral</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refer to JEU</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Referral Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Referral Layout Legal</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Referral to BOFE - Approved</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Referral to BOFE - Pending</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA De Novo</layout>
+        <sections>
+            <label><!-- Amounts --></label>
+            <section>Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Legal Action</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Judgment/Settlement Info --></label>
+            <section>Judgment/Settlement Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Legal Opinion</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Referrals for affirmative action --></description>
+        <label><!-- BOFE Civil Litigation Referral --></label>
+        <name>BOFE_Civil_Litigation_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BOFE Referral to District Attorney --></label>
+        <name>BOFE_Referral_to_District_Attorney</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For when BOFE needs to email JEU for assistance with Levies, Stop Orders, ect. --></description>
+        <label><!-- BOFE Request for JEU Support --></label>
+        <name>BOFE_Request_for_JEU_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Various types of court orders sought --></description>
+        <label><!-- BOFE Request for Legal Court Action --></label>
+        <name>BOFE_Request_for_Legal_Court_Action</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- General requests for all types of consultations that do not require a court action --></description>
+        <label><!-- BOFE Request for Legal Services --></label>
+        <name>BOFE_Request_for_Legal_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BOFE Strategic Case --></label>
+        <name>BOFE_Strategic_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- JEU Referral to Legal --></label>
+        <name>JEU_Referral_to_Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PAGA Referral --></label>
+        <name>PAGA_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Priority Referral to RCI --></label>
+        <name>Priority_Referral_to_RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Case Closure Approval --></label>
+        <name>RCI_Case_Closure_Approval</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Report/Determination Approval --></label>
+        <name>RCI_Cause_Finding_Approval</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Cause Finding - Enforcement Legal --></label>
+        <name>RCI_Demand_Enforcement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Legal Opinion --></label>
+        <name>RCI_Legal_Opinion</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- RCI --></description>
+        <label><!-- RCI Referral --></label>
+        <name>RCI_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral for H&amp;S Hearing --></label>
+        <name>RCI_Referral_for_H_S_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral for Investigative Hearing --></label>
+        <name>RCI_Referral_for_Investigative_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- RCI to BOFE --></description>
+        <label><!-- RCI Referral to BOFE --></label>
+        <name>RCI_Referral_to_BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral to CIU --></label>
+        <name>RCI_Referral_to_CIU</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral to DOSH --></label>
+        <name>RCI_Referral_to_DOSH</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral to JEU --></label>
+        <name>RCI_Referral_to_JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral to Mediation --></label>
+        <name>RCI_Referral_to_Mediation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Referral to WCA --></label>
+        <name>RCI_Referral_to_WCA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Request for Legal Action --></label>
+        <name>RCI_Request_for_Legal_Action</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to refer cases or registrations to BOFE for investigation --></description>
+        <label><!-- RS Refer to BOFE --></label>
+        <name>RS_Refer_to_BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to refer a Liable Party to JEU for WCA and Garment --></description>
+        <label><!-- WCA Referral to JEU --></label>
+        <name>Refer_to_JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Wage - De Novo Referral (Berman Appeal) --></description>
+        <label><!-- WCA De Novo Referral --></label>
+        <name>WCA_De_Novo_Referral</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Creates a referral request to BOFE from a WCA or Garment Case which is approved and triggers the creation of a BOFE case from the current case --></description>
+        <label><!-- WCA/Garment Referral to BOFE --></label>
+        <name>WCA_Garment_Referral_to_BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Allows page layout to display the refer to BOFE only when the referral has been approved. Approval process changes rec type. --></description>
+        <label><!-- WCA/Garment Referral to BOFE - Approved --></label>
+        <name>WCA_Garment_Referral_to_BOFE_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Wage - Request for legal opinion --></description>
+        <label><!-- WCA Legal Opinion --></label>
+        <name>WCA_Legal_Opinion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WCA Request for Legal Action --></label>
+        <name>WCA_Request_for_Legal_Action</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You have assigned too many individuals to this referral type. --></errorMessage>
+        <name>BOFE_Legal_Max_Assignments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Determination Type is required on Case Management in order to create a new RCI Report/Determination Approval referral record. --></errorMessage>
+        <name>Determine_Type_required_for_RCI_Referral</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a value into Disposition when Status = Closed --></errorMessage>
+        <name>Disposition_cannot_be_NULL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the case created from this referral in order to accept it. --></errorMessage>
+        <name>RS_Referral_status_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please assign this case to a deputy before creating a referral --></errorMessage>
+        <name>Req_Assigned_Deputy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please assign a deputy to the registration before creating the registration. --></errorMessage>
+        <name>Req_assigned_Deputy_on_registration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an outcome in order to close a request --></errorMessage>
+        <name>Require_outcome_on_close</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- L_R_Inspection_Request --></label>
+        <name>L_R_Inspection_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refer_to_BOFE --></label>
+        <name>Refer_to_BOFE</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- This BOFE referral has been approved. Complete the referral to BOFE by clicking the &quot;Refer to BOFE&quot; button and completing the questions. --></description>
+        <name>Complete_BOFE_referral</name>
+        <subject><!-- Complete BOFE referral --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This referral was rejected. There is likely information missing that is needed to refer to legal. --></description>
+        <name>De_Novo_Legal_Referral_Rejected</name>
+        <subject><!-- De Novo Legal Referral Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This referral was rejected. There is likely information missing that is needed to refer to JEU. --></description>
+        <name>Judgement_referral_to_JEU_rejected</name>
+        <subject><!-- Judgement referral to JEU rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- The WJC has notified the Sr Deputy that the following Judgment has been Rejected. --></description>
+        <name>Judgment_Referral_Rejected_by_WJC</name>
+        <subject><!-- Judgment Referral Rejected by WJC --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>No_Activity_on_Mediation_Referral_in_120_Days</name>
+        <subject><!-- No Activity on Mediation Referral in 120 Days --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>RCI_Referral_Approved</name>
+        <subject><!-- RCI Referral Approved --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>RCI_Referral_Rejected</name>
+        <subject><!-- RCI Referral Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- The referral request was not approved. Please contact the senior deputy. --></description>
+        <name>WCA_Referral_to_JEU_Rejected</name>
+        <subject><!-- WCA Referral to JEU Rejected --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Legal_Outcome__c</fullName>
+    <description>Attorney will select the Final Legal Outcome from the list of options then set the Request Status to Closed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Attorney will select the Final Legal Outcome from the list of options then set the Request Status to Closed.</inlineHelpText>
+    <label>Final Legal Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Settlement</fullName>
+                <default>false</default>
+                <label>Settlement</label>
+            </value>
+            <value>
+                <fullName>Judgment for DLSE</fullName>
+                <default>false</default>
+                <label>Judgment for DLSE</label>
+            </value>
+            <value>
+                <fullName>Judgment for Employer</fullName>
+                <default>false</default>
+                <label>Judgment for Employer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

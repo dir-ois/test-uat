@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>hleake@dir.ca.gov</email>
+    <name>Canceled SR</name>
+    <queueMembers>
+        <users>
+            <user>hleake@dir.ca.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Support_Request__c</sobjectType>
+    </queueSobject>
+</Queue>

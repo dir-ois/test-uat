@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Violation_Count__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Count of total number of violations</inlineHelpText>
+    <label>Total Violation Count</label>
+    <summaryForeignKey>DIR_Violation__c.Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

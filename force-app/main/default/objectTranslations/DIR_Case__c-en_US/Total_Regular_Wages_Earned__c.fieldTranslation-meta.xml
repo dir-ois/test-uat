@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Total Regular Wages Earned --></label>
+    <name>Total_Regular_Wages_Earned__c</name>
+</CustomFieldTranslation>

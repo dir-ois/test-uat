@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Intake_Case_Triage_San_Jose</fullName>
+    <columns>Case_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_Case_Received__c</columns>
+    <columns>Priority_Level__c</columns>
+    <columns>Case_Source__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Date_Assigned__c</columns>
+    <columns>Days_Elapsed_Since_Assigned__c</columns>
+    <columns>Status__c</columns>
+    <columns>Deadline__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.BOFE_Intake,DIR_Case__c.BOFE_Inspection_Request</value>
+    </filters>
+    <filters>
+        <field>Office__c</field>
+        <operation>equals</operation>
+        <value>San Jose BOFE</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Pending</value>
+    </filters>
+    <label>BOFE Intake Case Triage - San Jose</label>
+</ListView>

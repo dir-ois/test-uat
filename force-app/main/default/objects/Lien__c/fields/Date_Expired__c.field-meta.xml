@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Expired__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Lien_Type__c, &#39;Personal Property Judgment Lien (JL-1)&#39;), DATE(YEAR( Date_Filed__c ) +5,MONTH(Date_Filed__c),DAY(Date_Filed__c)),
+IF(ISPICKVAL(Lien_Type__c, &#39;Certificate of Penalty Lien (Workers Comp)&#39;),DATE(YEAR( Date_Filed__c ) +10,MONTH(Date_Filed__c),DAY(Date_Filed__c)),
+IF(ISPICKVAL(Lien_Type__c,&#39;Certificate of Lien (98.2g)&#39;),DATE(YEAR( Date_Filed__c ) +10,MONTH(Date_Filed__c),DAY(Date_Filed__c)),
+IF(ISPICKVAL(Lien_Type__c,&#39;UCC Financing Statement (UCC-1)&#39;),DATE(YEAR( Date_Filed__c ) +5,MONTH(Date_Filed__c),DAY(Date_Filed__c)),
+IF(ISPICKVAL(Lien_Type__c,&#39;Abstract of Judgment (Real Property Lien)&#39;),DATE(YEAR( Date_Filed__c ) +10,MONTH(Date_Filed__c),DAY(Date_Filed__c)),
+IF(ISPICKVAL(Lien_Type__c,&#39;Mechanics Lien&#39;),Date_Filed__c+90,
+NULL))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Date Lien Expires: 10 years for real property, 5 years for personal-property/UCC, etc</inlineHelpText>
+    <label>Date Expired</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

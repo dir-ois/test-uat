@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wage_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of wage paid to employees</inlineHelpText>
+    <label>Wage Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+                <label>Hourly</label>
+            </value>
+            <value>
+                <fullName>Salary - Daily</fullName>
+                <default>false</default>
+                <label>Salary - Daily</label>
+            </value>
+            <value>
+                <fullName>Salary - Weekly</fullName>
+                <default>false</default>
+                <label>Salary - Weekly</label>
+            </value>
+            <value>
+                <fullName>Salary - Monthly</fullName>
+                <default>false</default>
+                <label>Salary - Monthly</label>
+            </value>
+            <value>
+                <fullName>Piece Rate</fullName>
+                <default>false</default>
+                <label>Piece Rate</label>
+            </value>
+            <value>
+                <fullName>Commission</fullName>
+                <default>false</default>
+                <label>Commission</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

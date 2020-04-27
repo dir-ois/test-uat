@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Registration_Document</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Registration Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!License_Registration__c.Id}
+&amp;TemplateGroup=Registration_Documents
+&amp;QueryId=[Education]a0mt00000000sKw,
+[CW]a0mt00000019yiW?pv0={!License_Registration__c.Id}~pv1={!License_Registration__c.Record_Type_Name__c},
+[JS]a0mt00000019yiR?pv0={!License_Registration__c.Id}~pv1={!License_Registration__c.Record_Type_Name__c},
+[Disclaimer]a0mt00000001R1N?pv1={!License_Registration__c.Record_Type_Name__c},
+[REG]a0mt00000000sKq,
+[Reglocation]a0mt00000000sKx,
+[Bond]a0mt00000000sKv,
+[Owner]a0mt00000000sKr,
+[Manager]a0mt00000000sKt,
+[REGACT]a0mt0000000J0uD,
+[Parent]a0mt0000000fs02,
+[FUQues]a0mt00000000sKu,
+[Ques]a0mt00000000sKs,
+[Attach]a0mt00000000sKy,
+[Document]a0mt00000000sKp,
+[Trade]a0mt0000000J0uI,
+[LiveScan]a0mt0000000J0z4
+&amp;DefaultPDF=1
+&amp;AC0=1
+&amp;sc0=1
+&amp;fp0=1
+&amp;sc1=Attachments
+&amp;AttachmentParentID={!License_Registration__c.Id}
+&amp;EmailToId={!License_Registration__c.ApplicantId__c}
+&amp;OFN={!License_Registration__c.License_Registration_Number__c}+-+{!License_Registration__c.Legal_Entity_Name__c}
+&amp;DS6=1
+&amp;DS0=0</url>
+</WebLink>

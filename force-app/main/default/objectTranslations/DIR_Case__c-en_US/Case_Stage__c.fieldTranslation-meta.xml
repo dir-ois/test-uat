@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Stage --></label>
+    <name>Case_Stage__c</name>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference</masterLabel>
+        <translation><!-- Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigation</masterLabel>
+        <translation><!-- Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Referral</masterLabel>
+        <translation><!-- JEU Referral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment</masterLabel>
+        <translation><!-- Judgment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

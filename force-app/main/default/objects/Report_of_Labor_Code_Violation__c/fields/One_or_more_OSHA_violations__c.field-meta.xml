@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_or_more_OSHA_violations__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Includes one or more listed in Labor Code 2699.5- not curable subject to 2699.3(a)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Includes one or more listed in Labor Code 2699.5- not curable subject to 2699.3(a)</inlineHelpText>
+    <label>One or more OSHA violations</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

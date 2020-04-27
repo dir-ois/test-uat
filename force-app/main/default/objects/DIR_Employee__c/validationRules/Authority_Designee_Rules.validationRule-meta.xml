@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authority_Designee_Rules</fullName>
+    <active>true</active>
+    <description>If Authority Designee is entered, start date and end date are required</description>
+    <errorConditionFormula>NOT(ISBLANK(Authority_Designee__c))
+&amp;&amp;
+OR(
+ISBLANK( Authority_Designee_Start_Date__c ),
+ISBLANK( Authority_Designee_End_Date__c )
+)</errorConditionFormula>
+    <errorMessage>Authority Designee Start Date and End Date are required when you enter a Authority Designee</errorMessage>
+</ValidationRule>

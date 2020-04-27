@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Interest due between the date the defendant was required to pay and the date the judgment was sent to the court. --></help>
+    <label><!-- Post-Hearing Interest --></label>
+    <name>Interest_Due__c</name>
+</CustomFieldTranslation>

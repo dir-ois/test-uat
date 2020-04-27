@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closure_Disposition__c</fullName>
+    <description>Dismissed Reason</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the status of the case at closure</inlineHelpText>
+    <label>Closure Disposition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dismissed – Claimant Withdrew</fullName>
+                <default>false</default>
+                <label>Dismissed – Claimant Withdrew</label>
+            </value>
+            <value>
+                <fullName>Dismissed – Claimant Abandoned</fullName>
+                <default>false</default>
+                <label>Dismissed – Claimant Abandoned</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction – DFEH</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – DFEH</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction - WCAB</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – WCAB</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction - FMLA</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – FMLA</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction - NRLA</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – NLRA</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction - DOL (WHD)</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – DOL (WHD)</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction – Atty Referral</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – Atty Referral</label>
+            </value>
+            <value>
+                <fullName>Lack of Jurisdiction – Other</fullName>
+                <default>false</default>
+                <label>Lack of Jurisdiction – Other</label>
+            </value>
+            <value>
+                <fullName>Untimely (Outside SOL)</fullName>
+                <default>false</default>
+                <label>Untimely (Outside SOL)</label>
+            </value>
+            <value>
+                <fullName>PFC – No Protected Activity</fullName>
+                <default>false</default>
+                <label>PFC – No Protected Activity</label>
+            </value>
+            <value>
+                <fullName>PFC – No Employer Knowledge</fullName>
+                <default>false</default>
+                <label>PFC – No Employer Knowledge</label>
+            </value>
+            <value>
+                <fullName>PFC- No Adverse Action</fullName>
+                <default>false</default>
+                <label>PFC – No Adverse Action</label>
+            </value>
+            <value>
+                <fullName>PFC – No Causal Link</fullName>
+                <default>false</default>
+                <label>PFC – No Causal Link</label>
+            </value>
+            <value>
+                <fullName>EPA - No Pay Disparity</fullName>
+                <default>false</default>
+                <label>EPA – No Pay Disparity</label>
+            </value>
+            <value>
+                <fullName>EPA - No Comparators</fullName>
+                <default>false</default>
+                <label>EPA – No Comparators</label>
+            </value>
+            <value>
+                <fullName>EPA - No substantially similar work</fullName>
+                <default>false</default>
+                <label>EPA – No substantially similar work</label>
+            </value>
+            <value>
+                <fullName>EPA - No similar work conditions</fullName>
+                <default>false</default>
+                <label>EPA – No similar work conditions</label>
+            </value>
+            <value>
+                <fullName>EPA - ER JUST Merit</fullName>
+                <default>false</default>
+                <label>EPA – ER JUST Merit</label>
+            </value>
+            <value>
+                <fullName>EPA - ER JUST Seniority</fullName>
+                <default>false</default>
+                <label>EPA – ER JUST Seniority</label>
+            </value>
+            <value>
+                <fullName>EPA - ER JUST Production</fullName>
+                <default>false</default>
+                <label>EPA – ER JUST Production</label>
+            </value>
+            <value>
+                <fullName>EPA - ER JUST Other BF Factor</fullName>
+                <default>false</default>
+                <label>EPA – ER JUST Other BF Factor</label>
+            </value>
+            <value>
+                <fullName>Legitimate, Non-Retaliatory Reason</fullName>
+                <default>false</default>
+                <label>Legitimate, Non-Retaliatory Reason</label>
+            </value>
+            <value>
+                <fullName>Cause Finding – Compliance</fullName>
+                <default>false</default>
+                <label>Cause Finding – Compliance</label>
+            </value>
+            <value>
+                <fullName>Cause Finding – Enforcement Legal</fullName>
+                <default>false</default>
+                <label>Cause Finding – Enforcement Legal</label>
+            </value>
+            <value>
+                <fullName>Cause Finding – Settled</fullName>
+                <default>false</default>
+                <label>Cause Finding – Settled</label>
+            </value>
+            <value>
+                <fullName>Settled</fullName>
+                <default>false</default>
+                <label>Settled</label>
+            </value>
+            <value>
+                <fullName>CPL Court Filing</fullName>
+                <default>false</default>
+                <label>CPL Court Filing</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+                <label>Bankruptcy</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Employer no longer in business</fullName>
+                <default>false</default>
+                <label>Dismissed – Employer no longer in business</label>
+            </value>
+            <value>
+                <fullName>Dismissed – No Defendant</fullName>
+                <default>false</default>
+                <label>Dismissed – No Defendant</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Error/Test</fullName>
+                <default>false</default>
+                <label>Error/Test</label>
+            </value>
+            <value>
+                <fullName>Settled – Pre-Conference</fullName>
+                <default>false</default>
+                <label>Settled – Pre-Conference</label>
+            </value>
+            <value>
+                <fullName>Settled – At Conference</fullName>
+                <default>false</default>
+                <label>Settled – At Conference</label>
+            </value>
+            <value>
+                <fullName>Settled – Pre-hearing</fullName>
+                <default>false</default>
+                <label>Settled – Pre-hearing</label>
+            </value>
+            <value>
+                <fullName>Settled – At hearing</fullName>
+                <default>false</default>
+                <label>Settled – At hearing</label>
+            </value>
+            <value>
+                <fullName>Settled – Post Hearing (Prior to ODA)</fullName>
+                <default>false</default>
+                <label>Settled – Post Hearing (Prior to ODA)</label>
+            </value>
+            <value>
+                <fullName>Settled – Post Hearing (Post ODA, Prior to Judgment)</fullName>
+                <default>false</default>
+                <label>Settled – Post Hearing (Post ODA, Prior to Judgment)</label>
+            </value>
+            <value>
+                <fullName>Settled – Post Hearing (Post Judgment, Prior to JEU referral)</fullName>
+                <default>false</default>
+                <label>Settled – Post Hearing (Post Judgment, Prior to JEU referral)</label>
+            </value>
+            <value>
+                <fullName>Settled – Post Appeal</fullName>
+                <default>false</default>
+                <label>Settled – Post Appeal</label>
+            </value>
+            <value>
+                <fullName>Dismissed – No Jurisdiction</fullName>
+                <default>false</default>
+                <label>Dismissed – No Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Dismissed – Claimant failed to appear</fullName>
+                <default>false</default>
+                <label>Dismissed – Claimant failed to appear</label>
+            </value>
+            <value>
+                <fullName>Dismissed – Claimant cannot be located</fullName>
+                <default>false</default>
+                <label>Dismissed – Claimant cannot be located</label>
+            </value>
+            <value>
+                <fullName>Dismissed – Employer cannot be located</fullName>
+                <default>false</default>
+                <label>Dismissed – Employer cannot be located</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Other</fullName>
+                <default>false</default>
+                <label>Dismissed – Other</label>
+            </value>
+            <value>
+                <fullName>Unpaid Wage Fund</fullName>
+                <default>false</default>
+                <label>Unpaid Wage Fund</label>
+            </value>
+            <value>
+                <fullName>Paid in Full – Pre-Hearing</fullName>
+                <default>false</default>
+                <label>Paid in Full – Pre-Hearing</label>
+            </value>
+            <value>
+                <fullName>Paid in Full – Post ODA</fullName>
+                <default>false</default>
+                <label>Paid in Full – Post ODA</label>
+            </value>
+            <value>
+                <fullName>Paid in Full – Post Judgment Entry</fullName>
+                <default>false</default>
+                <label>Paid in Full – Post Judgment Entry</label>
+            </value>
+            <value>
+                <fullName>Claimant Incarcerated</fullName>
+                <default>false</default>
+                <label>Claimant Incarcerated</label>
+            </value>
+            <value>
+                <fullName>De Novo Referral</fullName>
+                <default>false</default>
+                <label>De Novo Referral</label>
+            </value>
+            <value>
+                <fullName>Plaintiff rec’d ODA</fullName>
+                <default>false</default>
+                <label>Plaintiff rec’d ODA</label>
+            </value>
+            <value>
+                <fullName>Plaintiff rec’d $0 ODA</fullName>
+                <default>false</default>
+                <label>Plaintiff rec’d $0 ODA</label>
+            </value>
+            <value>
+                <fullName>Judgment</fullName>
+                <default>false</default>
+                <label>Judgment</label>
+            </value>
+            <value>
+                <fullName>Judgment – Claimant Collect</fullName>
+                <default>false</default>
+                <label>Judgment – Claimant Collect</label>
+            </value>
+            <value>
+                <fullName>Judgment – JEU</fullName>
+                <default>false</default>
+                <label>Judgment – JEU</label>
+            </value>
+            <value>
+                <fullName>Fast Track Ref to Remedial fund</fullName>
+                <default>false</default>
+                <label>Fast Track Ref to Remedial fund</label>
+            </value>
+            <value>
+                <fullName>PAGA Notice Withrdrawn</fullName>
+                <default>false</default>
+                <label>PAGA Notice Withrdrawn</label>
+            </value>
+            <value>
+                <fullName>Duplicate Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>Case does not involve PAGA claims</fullName>
+                <default>false</default>
+                <label>Case does not involve PAGA claims</label>
+            </value>
+            <value>
+                <fullName>Complaint filed w/o PAGA claim</fullName>
+                <default>false</default>
+                <label>Complaint filed w/o PAGA claim</label>
+            </value>
+            <value>
+                <fullName>PAGA claim abandoned/withdrawn</fullName>
+                <default>false</default>
+                <label>PAGA claim abandoned/withdrawn</label>
+            </value>
+            <value>
+                <fullName>Claim settled pre-litigation</fullName>
+                <default>false</default>
+                <label>Claim settled pre-litigation</label>
+            </value>
+            <value>
+                <fullName>Claim voluntarily dismissed</fullName>
+                <default>false</default>
+                <label>Claim voluntarily dismissed</label>
+            </value>
+            <value>
+                <fullName>Abandoned</fullName>
+                <default>false</default>
+                <label>Abandoned</label>
+            </value>
+            <value>
+                <fullName>Complied</fullName>
+                <default>false</default>
+                <label>Complied</label>
+            </value>
+            <value>
+                <fullName>Dismissed without Prejudice</fullName>
+                <default>false</default>
+                <label>Dismissed without Prejudice</label>
+            </value>
+            <value>
+                <fullName>Insufficient Evidence</fullName>
+                <default>false</default>
+                <label>Insufficient Evidence</label>
+            </value>
+            <value>
+                <fullName>Judgment - Assign to CPL</fullName>
+                <default>false</default>
+                <label>Judgment – Assign to CPL</label>
+            </value>
+            <value>
+                <fullName>No Defendant</fullName>
+                <default>false</default>
+                <label>No Defendant</label>
+            </value>
+            <value>
+                <fullName>No Jurisdiction</fullName>
+                <default>false</default>
+                <label>No Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>No Respondent</fullName>
+                <default>false</default>
+                <label>No Respondent</label>
+            </value>
+            <value>
+                <fullName>Settled by Mediation</fullName>
+                <default>false</default>
+                <label>Settled by Mediation</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Administrative Closure</fullName>
+                <default>false</default>
+                <label>Administrative Closure</label>
+            </value>
+            <value>
+                <fullName>Dismissed - Exceeds Statute of Limitations</fullName>
+                <default>false</default>
+                <label>Dismissed – Exceeds Statute of Limitations</label>
+            </value>
+            <value>
+                <fullName>Cause Finding</fullName>
+                <default>false</default>
+                <label>Cause Finding</label>
+            </value>
+            <value>
+                <fullName>Settled - Paid in Full</fullName>
+                <default>false</default>
+                <label>Settled – Paid in Full</label>
+            </value>
+            <value>
+                <fullName>Dismissed with Prejudice</fullName>
+                <default>false</default>
+                <label>Dismissed with Prejudice</label>
+            </value>
+            <value>
+                <fullName>Admin Closure - Other</fullName>
+                <default>false</default>
+                <label>Admin Closure – Other</label>
+            </value>
+            <value>
+                <fullName>Closed - Citation Issued</fullName>
+                <default>false</default>
+                <label>Closed – Citation Issued</label>
+            </value>
+            <value>
+                <fullName>Closed - No Citation Issued</fullName>
+                <default>false</default>
+                <label>Closed – No Citation Issued</label>
+            </value>
+            <value>
+                <fullName>Closed - Settled</fullName>
+                <default>false</default>
+                <label>Closed – Settled</label>
+            </value>
+            <value>
+                <fullName>Coordinated case</fullName>
+                <default>false</default>
+                <label>Coordinated case</label>
+            </value>
+            <value>
+                <fullName>Consolidated Case</fullName>
+                <default>false</default>
+                <label>Consolidated Case</label>
+            </value>
+            <value>
+                <fullName>No Cause</fullName>
+                <default>false</default>
+                <label>No Cause</label>
+            </value>
+            <value>
+                <fullName>Admin Closure - Other (Legacy)</fullName>
+                <default>false</default>
+                <label>Admin Closure – Other (Legacy)</label>
+            </value>
+            <value>
+                <fullName>Admin Closure - Lack of Jurisdiction (Legacy)</fullName>
+                <default>false</default>
+                <label>Admin Closure – Lack of Jurisdiction (Legacy)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

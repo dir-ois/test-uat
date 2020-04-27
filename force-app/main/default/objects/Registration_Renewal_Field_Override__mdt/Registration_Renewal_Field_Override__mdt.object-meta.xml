@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides &quot;override&quot; values that set field values on the registration object that are different from the values of the original registration so that the user is required to set these values manually on the renewal application. These can be set by registration record type</description>
+    <label>Registration Renewal Field Override</label>
+    <pluralLabel>Registration Renewal Field Overrides</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

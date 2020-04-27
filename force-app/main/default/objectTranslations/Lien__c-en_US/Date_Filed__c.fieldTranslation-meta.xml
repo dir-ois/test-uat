@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date stamped by the recording agency on the conformed copy of the lien. This is the date the lien becomes perfected against third parties through its official recording --></help>
+    <label><!-- Date Filed --></label>
+    <name>Date_Filed__c</name>
+</CustomFieldTranslation>

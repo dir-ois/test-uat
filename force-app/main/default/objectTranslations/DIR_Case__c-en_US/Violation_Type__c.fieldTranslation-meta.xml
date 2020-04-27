@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Violation Type --></label>
+    <name>Violation_Type__c</name>
+    <picklistValues>
+        <masterLabel>Agricultural Labor Relations</masterLabel>
+        <translation><!-- Agricultural Labor Relations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apprenticeship Labor Code 3070 – 3098</masterLabel>
+        <translation><!-- Apprenticeship Labor Code 3070 – 3098 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Labor</masterLabel>
+        <translation><!-- Child Labor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Classified as Independent Contractor</masterLabel>
+        <translation><!-- Classified as Independent Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improper or Incomplete Wage Statements</masterLabel>
+        <translation><!-- Improper or Incomplete Wage Statements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improper payment form incl. NSF check</masterLabel>
+        <translation><!-- Improper payment form incl. NSF check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Homework</masterLabel>
+        <translation><!-- Industrial Homework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kickbacks</masterLabel>
+        <translation><!-- Kickbacks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lactation Accommodation (LC 1030‐1033)</masterLabel>
+        <translation><!-- Lactation Accommodation (LC 1030‐1033) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Licensing, Registration or Permit</masterLabel>
+        <translation><!-- Licensing, Registration or Permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meal and Rest Breaks</masterLabel>
+        <translation><!-- Meal and Rest Breaks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage</masterLabel>
+        <translation><!-- Minimum Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Wage Statements</masterLabel>
+        <translation><!-- No Wage Statements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Workers’ Compensation</masterLabel>
+        <translation><!-- No Workers’ Compensation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nonexempt Classified as Exempt</masterLabel>
+        <translation><!-- Nonexempt Classified as Exempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Paid Wages Due on Termination</masterLabel>
+        <translation><!-- Not Paid Wages Due on Termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not paid for all hours worked</masterLabel>
+        <translation><!-- Not paid for all hours worked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not providing required time off, other</masterLabel>
+        <translation><!-- Not providing required time off, other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational SAFE HLTH (LC 6300 et seq)</masterLabel>
+        <translation><!-- Occupational SAFE HLTH (LC 6300 et seq) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Notice or Posting or Recordkeeping</masterLabel>
+        <translation><!-- Other Notice or Posting or Recordkeeping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Unpaid Wages</masterLabel>
+        <translation><!-- Other Unpaid Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overtime</masterLabel>
+        <translation><!-- Overtime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMNT Reimbursement of Empl Expenses</masterLabel>
+        <translation><!-- PMNT Reimbursement of Empl Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay Discrim on basis of sex (LC1197.5)</masterLabel>
+        <translation><!-- Pay Discrim on basis of sex (LC1197.5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Works (Labor Code §§ 1720 – 1815)</masterLabel>
+        <translation><!-- Public Works (Labor Code §§ 1720 – 1815) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retaliation - Protected Status Activity</masterLabel>
+        <translation><!-- Retaliation - Protected Status Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sick Leave</masterLabel>
+        <translation><!-- Sick Leave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tips or Gratuities</masterLabel>
+        <translation><!-- Tips or Gratuities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unfair Immigration Activities</masterLabel>
+        <translation><!-- Unfair Immigration Activities --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

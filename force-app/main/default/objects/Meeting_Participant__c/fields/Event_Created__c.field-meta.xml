@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Event_Created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag that indicates that the event for this participant has been created. Prevents creating multiple events for the same meeting for the same person. Value is set by meeting participant created process when the event is created on this participant</description>
+    <externalId>false</externalId>
+    <label>Event Created</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA RLLVs Retaliation of Protected Status or activity. --></help>
+    <label><!-- Retaliation for Protected StatusActivity --></label>
+    <name>PAGA_Retaliation_for_Prot_StatusActivity__c</name>
+</CustomFieldTranslation>

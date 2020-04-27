@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bankruptcy Court --></label>
+    <name>Bankruptcy_Court__c</name>
+    <picklistValues>
+        <masterLabel>Bakersfield</masterLabel>
+        <translation><!-- Bakersfield --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno</masterLabel>
+        <translation><!-- Fresno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles</masterLabel>
+        <translation><!-- Los Angeles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modesto</masterLabel>
+        <translation><!-- Modesto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oakland</masterLabel>
+        <translation><!-- Oakland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside</masterLabel>
+        <translation><!-- Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento</masterLabel>
+        <translation><!-- Sacramento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego</masterLabel>
+        <translation><!-- San Diego --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco</masterLabel>
+        <translation><!-- San Francisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose</masterLabel>
+        <translation><!-- San Jose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Ana</masterLabel>
+        <translation><!-- Santa Ana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara</masterLabel>
+        <translation><!-- Santa Barbara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Rosa</masterLabel>
+        <translation><!-- Santa Rosa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Woodland Hills</masterLabel>
+        <translation><!-- Woodland Hills --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

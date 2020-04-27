@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Interest on the judgement following the filing date --></help>
+    <label><!-- Post-Judgment Interest --></label>
+    <name>Post_Judgement_Interest__c</name>
+</CustomFieldTranslation>

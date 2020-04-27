@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Agree_to_IsConvicted</fullName>
+    <active>true</active>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+ISCHANGED ( isConvicted__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+CONTAINS( TEXT(isConvicted__c ), &quot;Yes&quot;)</errorConditionFormula>
+    <errorMessage>&quot;Persuant to Labor Code Section 1706(f) you can not apply for a CPS Permit.</errorMessage>
+</ValidationRule>

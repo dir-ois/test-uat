@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_WCA</fullName>
+    <columns>NAME</columns>
+    <columns>Help_Text__c</columns>
+    <columns>Violation_Section__c</columns>
+    <columns>Short_Description__c</columns>
+    <columns>Wage_Assessment_Description__c</columns>
+    <columns>Wizard_Search_Text__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>X731_Report_Category__c</columns>
+    <columns>Sort_Order__c</columns>
+    <columns>Reporting_Category_Sort_Order__c</columns>
+    <columns>Interest_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Violation_Type__c.WCA_Violations,Violation_Type__c.WCA_Issues_New</value>
+    </filters>
+    <label>Active WCA</label>
+</ListView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meeting Participant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meeting Participants</value>
+    </caseValues>
+    <layouts>
+        <layout>Conference Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Meeting Participant Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used for Conferences --></description>
+        <label><!-- Conference --></label>
+        <name>Conference</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for meetings and hearings --></description>
+        <label><!-- Meeting/Hearing --></label>
+        <name>Meeting</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot have both a Case Role and an Internal Employee on the same record. --></errorMessage>
+        <name>Cannot_have_internal_and_case_role</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the entity being served is operating under a fictitious name, you must enter a value for the fictitious name prior to saving the record. --></errorMessage>
+        <name>Fictitious_Name_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Case on the Case Role must equal the Case on the Meeting --></errorMessage>
+        <name>Require_Case_to_match_Case_Role</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Calendar_Test --></label>
+        <name>Calendar_Test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_633_61_EMP_Document --></label>
+        <name>Generate_633_61_EMP_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_633_61_GUAR_Document --></label>
+        <name>Generate_633_61_GUAR_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Subpoena_633_15a --></label>
+        <name>Generate_Subpoena_633_15a</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Subpoena_633_15b --></label>
+        <name>Generate_Subpoena_633_15b</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Subpoena_WCA_42 --></label>
+        <name>Generate_Subpoena_WCA_42</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Subpoena_WCA_43 --></label>
+        <name>Generate_Subpoena_WCA_43</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_WCA_61_Document --></label>
+        <name>Generate_WCA_61_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_WCA_62_Document --></label>
+        <name>Generate_WCA_62_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_WCA_Document --></label>
+        <name>Generate_WCA_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Conference_Participant --></label>
+        <name>New_Conference_Participant</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Meeting_Participant --></label>
+        <name>New_Meeting_Participant</name>
+    </webLinks>
+</CustomObjectTranslation>

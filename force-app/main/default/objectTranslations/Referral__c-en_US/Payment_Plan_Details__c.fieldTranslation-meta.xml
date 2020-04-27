@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter details of: payment plan schedule, including Total Settlement Amount, date first payment due, future payment dates, payment amount(s) --></help>
+    <label><!-- Payment Plan Details --></label>
+    <name>Payment_Plan_Details__c</name>
+</CustomFieldTranslation>

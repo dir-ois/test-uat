@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Deputy__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field to Internal Employee object for populating output documents via Conga</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Deputy who performed initial intake interview with claimant (if / when applicable)</inlineHelpText>
+    <label>Intake Deputy</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Case Management (Intake Deputy)</relationshipLabel>
+    <relationshipName>Case_Management1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

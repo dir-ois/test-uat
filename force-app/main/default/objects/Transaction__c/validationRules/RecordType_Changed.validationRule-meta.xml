@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordType_Changed</fullName>
+    <active>false</active>
+    <description>Only Transaction Super Users are allowed to change the Record Type</description>
+    <errorConditionFormula>AND(ISCHANGED(RecordTypeId),
+!$Permission.Transaction_Super_User,
+$Profile.Name != &#39;System Administrator LTD&#39;,
+$Profile.Name != &#39;System Administrator&#39;)</errorConditionFormula>
+    <errorMessage>Only Transaction Super Users can change the Record Types</errorMessage>
+</ValidationRule>

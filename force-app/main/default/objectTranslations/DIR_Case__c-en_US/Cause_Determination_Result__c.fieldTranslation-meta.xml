@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cause Determination Result --></label>
+    <name>Cause_Determination_Result__c</name>
+    <picklistValues>
+        <masterLabel>Appealed, Employee</masterLabel>
+        <translation><!-- Appealed, Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appealed, Employer</masterLabel>
+        <translation><!-- Appealed, Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed on appeal</masterLabel>
+        <translation><!-- Dismissed on appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer compliance</masterLabel>
+        <translation><!-- Employer compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer non-compliance</masterLabel>
+        <translation><!-- Employer non-compliance --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

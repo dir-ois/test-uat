@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Report_A_Problem</links>
+    <links>Account_Request</links>
+    <links>Change_Request</links>
+    <links>My_Support_Requests</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

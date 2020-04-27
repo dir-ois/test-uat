@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Minimum Wage Violations --></label>
+    <name>Minimum_Wage_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Asked employee to pay back wages paid</masterLabel>
+        <translation><!-- Asked employee to pay back wages paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No split shift premium pay</masterLabel>
+        <translation><!-- No split shift premium pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not paid at all for overtime hours</masterLabel>
+        <translation><!-- Not paid at all for overtime hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not paid for all hours, travel &amp; try-out</masterLabel>
+        <translation><!-- Not paid for all hours, travel &amp; try-out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid below minimum wage</masterLabel>
+        <translation><!-- Paid below minimum wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paycheck issued with insufficient funds</masterLabel>
+        <translation><!-- Paycheck issued with insufficient funds --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

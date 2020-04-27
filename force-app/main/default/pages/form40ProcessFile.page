@@ -1,0 +1,64 @@
+<apex:page controller="form40ImportController" sidebar="false" showHeader="Boolean">
+    <style>
+      .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+
+      .show{
+        display:inline-block;
+
+      }
+
+      .hidden{
+        display:none;
+      }
+
+    
+
+
+    </style>
+
+    <script>
+      function startLoading(){
+          document.getElementById("ldr").className = "loader show";
+          //document.getElementById('{!$Component.theForm.pblock.upload}').setAttribute("disabled", "disabled");
+          document.getElementById('{!$Component.theForm.pblock.upload}').className = "btnDisabled";
+      }
+
+      function closeWin() {
+          window.close();   
+      }
+
+    </script>
+    <apex:form id="theForm">
+    <apex:actionRegion id="theRegion">
+    
+      <apex:sectionHeader title="Process File"/>
+      
+      <apex:pageBlock id="pblock">
+          <apex:pagemessages />
+             <!--  Component to allow user to upload file from local machine -->
+             <center>                 
+                 <apex:actionFunction action="{!ProcessFile}" name="processFile" status="Processing"/>
+                 
+                 <div id="ldr" class="loader hidden"></div>
+                 <br /> <apex:commandButton rendered="{!showProcessButton == true}" action="{!processFile}" onclick="startLoading();" value="Process File" id="upload" status="Processing" />
+
+                  <apex:commandButton onclick="closeWin();" value="Close" id="close"/>
+             </center>  
+      
+      </apex:pageBlock> 
+   
+      </apex:actionRegion>  
+   </apex:form>   
+</apex:page>

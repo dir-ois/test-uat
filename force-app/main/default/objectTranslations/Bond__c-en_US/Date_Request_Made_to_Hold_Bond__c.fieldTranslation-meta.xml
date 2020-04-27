@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Date Request Made to Hold Bond --></label>
+    <name>Date_Request_Made_to_Hold_Bond__c</name>
+</CustomFieldTranslation>

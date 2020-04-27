@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_be_in_good_standing</fullName>
+    <active>true</active>
+    <description>Must answer Yes to being in good standing with the secretary of state to move forward.</description>
+    <errorConditionFormula>ISPICKVAL(Good_standing_with_CA_Secretary_of_State__c, &quot;No&quot;)</errorConditionFormula>
+    <errorMessage>If you cannot answer Yes to being in good standing with the California Secretary of State at this time, please visit https://businesssearch.sos.ca.gov/ and resolve before submitting your application.</errorMessage>
+</ValidationRule>

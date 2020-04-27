@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wage_Claim__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Wage Claim that referred this RLLV</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Wage Claim that referred this RLLV</inlineHelpText>
+    <label>Wage Claim</label>
+    <referenceTo>Wage_Claim__c</referenceTo>
+    <relationshipLabel>Reports of Labor Law Violations</relationshipLabel>
+    <relationshipName>Reports_of_Labor_Law_Violations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

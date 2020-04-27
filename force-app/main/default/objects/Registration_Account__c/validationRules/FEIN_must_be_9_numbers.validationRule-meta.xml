@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FEIN_must_be_9_numbers</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( 
+AND( 
+LEN(  Federal_Employer_Identification_Number__c ) &lt;&gt; 9, 
+NOT(ISBLANK( Federal_Employer_Identification_Number__c )), 
+RecordType.Name &lt;&gt; &quot;Management Individual&quot; 
+), 
+AND( 
+NOT(ISNUMBER( Federal_Employer_Identification_Number__c )), 
+NOT(ISBLANK(Federal_Employer_Identification_Number__c )), 
+RecordType.Name &lt;&gt; &quot;Management Individual&quot; 
+) 
+)</errorConditionFormula>
+    <errorMessage>FEIN must be 9 numbers. Please correct to continue.</errorMessage>
+</ValidationRule>

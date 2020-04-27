@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the date periods for which this employer was not registered. The value you enter in this field will be merged in to output documents directly, so type exactly as you want the dates listed. e.g. (1/1/2014 - 5/4/2014 and 6/14/2015 - 7/5/2015 --></help>
+    <label><!-- Unregistered Period --></label>
+    <name>Unregistered_Period__c</name>
+</CustomFieldTranslation>

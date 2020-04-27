@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Split_Percentage__c</fullName>
+    <defaultValue>1</defaultValue>
+    <description>When applied funds are to be split between two or more codes, this field defines the split applied to each accounting code.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there is more than one code that applies on to a violation type, enter the percent split that a payment on this violation type should go to this accounting code.</inlineHelpText>
+    <label>Split Percentage</label>
+    <precision>5</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

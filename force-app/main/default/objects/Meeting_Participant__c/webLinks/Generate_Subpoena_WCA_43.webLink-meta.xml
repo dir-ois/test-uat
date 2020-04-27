@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Subpoena_WCA_43</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Generate Subpoena WCA 43</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>// STEP 1: CHANGE THE NEXT LINE TO THE TYPE OF RECORDS YOU&#39;RE ACCESSING ON THE VIEW 
+var idArray = {!GETRECORDIDS( $ObjectType.Meeting_Participant__c )}; 
+
+// STEP 2: CHANGE THE NEXT LINE TO THE API NAME OF THE FIELD THAT CONTAINS THE CONGA COMPOSER URL 
+var urlFieldName=&quot;Subpoena43_URL__c&quot;; 
+
+
+// DO NOT MODIFY ANYTHING BELOW THIS POINT ******************** 
+
+// YOU MAY PASS UP TO 50 IDS 
+
+var CongaURL = &quot;https://conductor.congamerge.com&quot; + 
+&quot;?MOID=&quot; + idArray + 
+&quot;&amp;sessionId={!$Api.Session_ID}&quot;+ 
+&quot;&amp;serverUrl={!API.Partner_Server_URL_290}&quot;+ 
+&quot;&amp;UrlFieldName=&quot;+urlFieldName; 
+
+window.open( CongaURL, &quot;Conga&quot;, &quot;width=700,height=450,menubar=0&quot; );</url>
+</WebLink>

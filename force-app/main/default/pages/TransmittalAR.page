@@ -1,0 +1,51 @@
+<apex:page docType="html-5.0" controller="TransmittalInterface" tabStyle="Account">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="AR018 {!$User.FirstName}">
+            <table width="100%">
+                <tr>
+                    <td width="15%">
+                        <b>Deposit ID:</b><br/>
+                            <apex:inputText value="{!depositId}"/>
+                    </td>
+                    <td width="15%">
+                        <b>Deposit Date:</b><br/>
+                        <apex:input type="date" value="{!bankDepositDate1}"/>
+                    </td>
+                    <td width="15%">
+                        <b>Deposit Type:</b><br/>
+                        <apex:selectList value="{!depositType}" multiselect="false" size="1"> 
+                            <apex:selectOption itemLabel="Regular" itemValue="R"/>
+                            <apex:selectOption itemLabel="Remote" itemValue="E"/>
+                            <apex:selectOption itemLabel="Zero Balance Account" itemValue="Z"/>
+                        </apex:selectList>
+                    </td>
+                    <td width="15%">
+                        <b>AR018 Grouping:</b><br/>
+                        <apex:selectList value="{!paymentMethod}" multiselect="false" size="1"> 
+                            <apex:selectOption itemLabel="Lockbox" itemValue="CHK"/>
+                            <apex:selectOption itemLabel="EFT" itemValue="EFT"/>
+                        </apex:selectList>
+                    </td>
+                    <td width="15%">
+                        <b>Deposit Slip Number:</b><br/>
+                        <apex:inputText value="{!depositSlipNumber}"/>
+                    </td>
+                    <td width="15%">
+                        <br/>
+                        <apex:commandButton action="{!sendAR}" value="Generate AR"/>
+                    </td>
+                </tr>
+            </table>
+        </apex:pageBlock>
+        <!--
+        <apex:pageBlock title="AR0037 {!$User.FirstName}">
+            From: 
+            <apex:input type="date" value="{!startDate}"/>
+            To:
+            <apex:input type="date" value="{!endDate}"/> 
+            <apex:commandButton action="{!sendCustomerAR}" value="generate Customer AR"/>            
+        </apex:pageBlock> 
+        -->
+    </apex:form>
+</apex:page>

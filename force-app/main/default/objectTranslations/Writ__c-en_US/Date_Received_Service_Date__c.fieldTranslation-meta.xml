@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date Write Received / Service Date --></help>
+    <label><!-- Date Received/Service Date --></label>
+    <name>Date_Received_Service_Date__c</name>
+</CustomFieldTranslation>

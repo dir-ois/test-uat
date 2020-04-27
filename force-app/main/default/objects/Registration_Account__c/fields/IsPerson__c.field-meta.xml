@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPerson__c</fullName>
+    <description>Looks at the record type to determine if the registration account references a person or a business. This determines what type of account is created when the registration is approved.</description>
+    <externalId>false</externalId>
+    <formula>IF (
+RecordType.DeveloperName = &#39;Agent&#39; 
+|| RecordType.DeveloperName = &#39;Management_Individual&#39;
+|| RecordType.DeveloperName = &#39;Sole_Proprietorship&#39;
+|| RecordType.DeveloperName = &#39;Individual_Permit&#39;
+|| RecordType.DeveloperName = &#39;Parent_Guardian&#39;,
+TRUE , FALSE )</formula>
+    <label>IsPerson</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

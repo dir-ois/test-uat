@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Violation Type --></label>
+    <name>Violation_Type__c</name>
+    <picklistValues>
+        <masterLabel>Meal Period Premium</masterLabel>
+        <translation><!-- Meal Period Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage</masterLabel>
+        <translation><!-- Minimum Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Wages – Illegal Deductions</masterLabel>
+        <translation><!-- Non-Wages – Illegal Deductions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Wages – Liquidated Damages</masterLabel>
+        <translation><!-- Non-Wages – Liquidated Damages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Wages – Mileage</masterLabel>
+        <translation><!-- Non-Wages – Mileage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Wages – Other</masterLabel>
+        <translation><!-- Non-Wages – Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Wages – Tips</masterLabel>
+        <translation><!-- Non-Wages – Tips --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Wages – Waiting Time Penalties</masterLabel>
+        <translation><!-- Non-Wages – Waiting Time Penalties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overtime</masterLabel>
+        <translation><!-- Overtime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reimbursable Expenses LC 2802</masterLabel>
+        <translation><!-- Reimbursable Expenses LC 2802 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting Time Pay</masterLabel>
+        <translation><!-- Reporting Time Pay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rest Period Premium</masterLabel>
+        <translation><!-- Rest Period Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Split Shift Premium</masterLabel>
+        <translation><!-- Split Shift Premium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid Wages – Bonus</masterLabel>
+        <translation><!-- Unpaid Wages – Bonus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid Wages – Commission</masterLabel>
+        <translation><!-- Unpaid Wages – Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid Wages – Contract Rate</masterLabel>
+        <translation><!-- Unpaid Wages – Contract Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid Wages – Vacation</masterLabel>
+        <translation><!-- Unpaid Wages – Vacation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

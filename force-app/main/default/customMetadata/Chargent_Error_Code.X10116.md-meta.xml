@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>10116</label>
+    <protected>false</protected>
+    <values>
+        <field>Error_ID__c</field>
+        <value xsi:type="xsd:string">10116</value>
+    </values>
+    <values>
+        <field>Technical_Message__c</field>
+        <value xsi:type="xsd:string">&quot;CVV2, CID, etc result was blocked by CVVresponse fraud module.&quot;</value>
+    </values>
+    <values>
+        <field>User_Message__c</field>
+        <value xsi:type="xsd:string">Unable to verify card ID number.</value>
+    </values>
+</CustomMetadata>

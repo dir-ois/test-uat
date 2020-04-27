@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicate which unit marked the payment as a returned item; DIR Accounting or DLSE Cashiering. --></help>
+    <label><!-- Returned Item Received By --></label>
+    <name>Returned_Item_Received_By__c</name>
+    <picklistValues>
+        <masterLabel>ACCT</masterLabel>
+        <translation><!-- ACCT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE</masterLabel>
+        <translation><!-- DLSE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

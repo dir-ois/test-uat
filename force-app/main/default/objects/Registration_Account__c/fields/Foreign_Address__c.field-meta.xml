@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foreign_Address__c</fullName>
+    <description>Mapped to Foreign_Address__c Account field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If your business has a foreign address, please enter that address here.</inlineHelpText>
+    <label>Foreign Address</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

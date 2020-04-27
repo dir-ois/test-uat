@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Description of the penalty assessment using the variable values --></help>
+    <label><!-- Penalty Assessment Description --></label>
+    <name>Penalty_Assessment_Description__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Referred To --></label>
+    <name>Referred_To__c</name>
+    <picklistValues>
+        <masterLabel>Dept. of Fair Employment and Housing</masterLabel>
+        <translation><!-- Dept. of Fair Employment and Housing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dept. of Labor</masterLabel>
+        <translation><!-- Dept. of Labor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDD</masterLabel>
+        <translation><!-- EDD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Union</masterLabel>
+        <translation><!-- Union --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

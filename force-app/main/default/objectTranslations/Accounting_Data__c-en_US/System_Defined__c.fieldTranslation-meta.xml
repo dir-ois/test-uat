@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Entry Type:  DR &amp;&amp; Monetary: + =  A
+Entry Type:  DR &amp;&amp; Monetary: -  =  U
+Entry Type:  CR &amp;&amp; Monetary: + =  U
+Entry Type:  DR &amp;&amp; Monetary: -  =  A --></help>
+    <label><!-- System_Defined --></label>
+    <name>System_Defined__c</name>
+</CustomFieldTranslation>

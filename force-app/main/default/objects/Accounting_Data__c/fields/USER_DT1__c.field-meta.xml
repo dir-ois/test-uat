@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>USER_DT1__c</fullName>
+    <description>User Date 1
+
+Date associated with the payroll period for an Employee AR open item.</description>
+    <externalId>false</externalId>
+    <label>USER_DT1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

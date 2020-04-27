@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 66 Selected Documents --></label>
+    <name>WCA_66_Selected_Documents__c</name>
+    <picklistValues>
+        <masterLabel>Amended Complaint</masterLabel>
+        <translation><!-- Amended Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended Notice Hearing</masterLabel>
+        <translation><!-- Amended Notice Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended ODA</masterLabel>
+        <translation><!-- Amended ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Answer</masterLabel>
+        <translation><!-- Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignment</masterLabel>
+        <translation><!-- Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assignment Letter</masterLabel>
+        <translation><!-- Assignment Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attachment(s)</masterLabel>
+        <translation><!-- Attachment(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collection Letter</masterLabel>
+        <translation><!-- Collection Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal</masterLabel>
+        <translation><!-- Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal &amp; Signed Release</masterLabel>
+        <translation><!-- Dismissal &amp; Signed Release --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Satisfaction Judgment</masterLabel>
+        <translation><!-- Full Satisfaction Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment</masterLabel>
+        <translation><!-- Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Set Aside</masterLabel>
+        <translation><!-- Judgment Set Aside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ltr Denying Continuance</masterLabel>
+        <translation><!-- Ltr Denying Continuance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ltr Granting Continuance</masterLabel>
+        <translation><!-- Ltr Granting Continuance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ntc Hearing Cancellation</masterLabel>
+        <translation><!-- Ntc Hearing Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ntc of Am Complaint</masterLabel>
+        <translation><!-- Ntc of Am Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ntc of Continuance/Reset</masterLabel>
+        <translation><!-- Ntc of Continuance/Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ntc of Hearing</masterLabel>
+        <translation><!-- Ntc of Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ntc of Judgment Entry</masterLabel>
+        <translation><!-- Ntc of Judgment Entry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA</masterLabel>
+        <translation><!-- ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA NPT</masterLabel>
+        <translation><!-- ODA NPT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA by Settlement</masterLabel>
+        <translation><!-- ODA by Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order on 98(f)</masterLabel>
+        <translation><!-- Order on 98(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Satisfaction Judgment</masterLabel>
+        <translation><!-- Partial Satisfaction Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-Hearing Worksheet</masterLabel>
+        <translation><!-- Post-Hearing Worksheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reassignment</masterLabel>
+        <translation><!-- Reassignment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

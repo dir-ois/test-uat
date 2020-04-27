@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authority_Designee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used to designate another employee as a Sr. Cashier for a temp. basis.
+
+Req. 50797</description>
+    <externalId>false</externalId>
+    <label>Authority Designee</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Authority Designee must be a Salesforce User</errorMessage>
+        <filterItems>
+            <field>DIR_Employee__c.User__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Internal Employees (Authority Desigee)</relationshipLabel>
+    <relationshipName>Internal_Employees</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

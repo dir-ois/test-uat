@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If a release is required before payment may be made to this payee, and that release is on file, check this box. --></help>
+    <label><!-- Release Approved --></label>
+    <name>Release_Approved__c</name>
+</CustomFieldTranslation>

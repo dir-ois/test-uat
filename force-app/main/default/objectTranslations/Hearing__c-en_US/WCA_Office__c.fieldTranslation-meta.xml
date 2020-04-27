@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Office where meeting is to take place --></help>
+    <label><!-- Meeting Location (Office) --></label>
+    <name>WCA_Office__c</name>
+    <relationshipLabel><!-- Meetings --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Paycheck_issued_with_ISF__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Paycheck issued with insufficient funds</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Paycheck issued with insufficient funds</inlineHelpText>
+    <label>Paycheck issued with insufficient funds</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

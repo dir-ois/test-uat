@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 30 Rescheduled Office --></label>
+    <name>WCA_30_Rescheduled_Office__c</name>
+    <relationshipLabel><!-- Wage Claims (WCA 30 Rescheduled Office) --></relationshipLabel>
+</CustomFieldTranslation>

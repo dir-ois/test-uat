@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Delivery_Method__c</fullName>
+    <externalId>false</externalId>
+    <label>Check Delivery Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mailed</fullName>
+                <default>false</default>
+                <label>Mailed</label>
+            </value>
+            <value>
+                <fullName>Hand Delivered</fullName>
+                <default>false</default>
+                <label>Hand Delivered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CM_010_Other_PI_PD_WD_Tort__c</fullName>
+    <externalId>false</externalId>
+    <label>CM-010 Other PI/PD/WD Tort</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asbestos</fullName>
+                <default>false</default>
+                <label>Asbestos</label>
+            </value>
+            <value>
+                <fullName>Product liability</fullName>
+                <default>false</default>
+                <label>Product liability</label>
+            </value>
+            <value>
+                <fullName>Medical malpractice</fullName>
+                <default>false</default>
+                <label>Medical malpractice</label>
+            </value>
+            <value>
+                <fullName>Other PI/PD/WD</fullName>
+                <default>false</default>
+                <label>Other PI/PD/WD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

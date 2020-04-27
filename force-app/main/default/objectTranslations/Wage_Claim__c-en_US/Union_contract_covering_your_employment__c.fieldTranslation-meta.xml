@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Union contract covering your employment --></label>
+    <name>Union_contract_covering_your_employment__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes (Attach a copy of the Collective Bargaining Agreement)</masterLabel>
+        <translation><!-- Yes (Attach a copy of the Collective Bargaining Agreement) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

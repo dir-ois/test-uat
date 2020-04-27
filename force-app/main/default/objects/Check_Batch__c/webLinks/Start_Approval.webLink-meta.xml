@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Approval</fullName>
+    <availability>online</availability>
+    <description>Starts the approval flow for the check batches.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Start Approval</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/apex/Check_Batch_Flow_Button_Page?batchId={!Check_Batch__c.Id}&amp;reviewedBy={!Check_Batch__c.Reviewed_ById__c}&amp;batchStatus={!Check_Batch__c.Status__c}&amp;batchName={!Check_Batch__c.Name}</url>
+</WebLink>

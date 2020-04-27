@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Meeting Held By --></label>
+    <lookupFilter>
+        <errorMessage><!-- Only employees with the hearing officer position can be selected. --></errorMessage>
+    </lookupFilter>
+    <name>Hearing_Officer_Employee__c</name>
+    <relationshipLabel><!-- Hearings --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service of Process</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Services of Process</value>
+    </caseValues>
+    <layouts>
+        <layout>Service of Process Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Substituted Service Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Electronic --></label>
+        <name>Electronic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Overnight/Express Delivery --></label>
+        <name>Overnight_Express_Delivery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Personal --></label>
+        <name>Personal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registered\Certified Mail --></label>
+        <name>Registered_Certified_Mail</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registered\Certified Mail- - Return Receipt Requested --></label>
+        <name>Registered_Certified_Mail_Return_Receipt_Requested</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Substituted Service --></label>
+        <name>Substituted_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- US Mail --></label>
+        <name>US_Mail</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cost of Service is required if Professional Process Server is TRUE --></errorMessage>
+        <name>Cost_paid_to_process_server</name>
+    </validationRules>
+</CustomObjectTranslation>

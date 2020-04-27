@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Associated Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Associated Parties</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Advocate Information --></label>
+        <name>AdvocateInformation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Advocate List View --></label>
+        <name>AdvocateListView</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employee Info List View --></label>
+        <name>EmployeeInfoListView</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employee Information --></label>
+        <name>EmployeeInformation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer Information --></label>
+        <name>EmployerInformation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer List View --></label>
+        <name>EmployerListView</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LC Information --></label>
+        <name>LCInformation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Other Employee Info --></label>
+        <name>OtherEmployeeInfo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Other Employer Info --></label>
+        <name>OtherEmployerInfo</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Witness --></label>
+        <name>Witness</name>
+    </fieldSets>
+    <layouts>
+        <layout>Advocate</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Associated Party Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Staff</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Other Employee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Witness</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- AP-Advocate --></label>
+        <name>AP_Advocate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AP-Employee --></label>
+        <name>AP_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AP-Employer --></label>
+        <name>AP_Employer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AP-Internal Staff --></label>
+        <name>AP_Internal_Staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AP-Other Employee --></label>
+        <name>AP_Other_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AP-Witness --></label>
+        <name>AP_Witness</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

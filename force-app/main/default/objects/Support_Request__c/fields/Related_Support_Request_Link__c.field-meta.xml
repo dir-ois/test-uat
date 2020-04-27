@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Support_Request_Link__c</fullName>
+    <description>This field is a link to the parent support request and is being used in the duplicate email notification.</description>
+    <externalId>false</externalId>
+    <formula>&#39;https://cadir.my.salesforce.com/&#39; &amp; Support_Request__r.Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related Support Request Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

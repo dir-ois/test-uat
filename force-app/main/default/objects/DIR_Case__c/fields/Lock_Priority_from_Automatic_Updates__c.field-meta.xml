@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Priority_from_Automatic_Updates__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will be hidden from end users. It will be used to &quot;lock&quot; the Priority Level from future changes caused by new RLCVs since a Deputy Overrode the priority previously. Deputies can still make manual overrides if this is true.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field will be hidden from end users. It will be used to &quot;lock&quot; the Priority Level from future changes caused by new RLCVs since a Deputy Overrode the priority previously. Deputies can still make manual overrides if this is true.</inlineHelpText>
+    <label>Lock Priority from Automatic Updates</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

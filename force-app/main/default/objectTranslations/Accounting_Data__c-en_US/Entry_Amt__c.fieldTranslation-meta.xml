@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Daily difference of the penalty assessed amount to the previous amount --></help>
+    <label><!-- Entry_Amt --></label>
+    <name>Entry_Amt__c</name>
+</CustomFieldTranslation>

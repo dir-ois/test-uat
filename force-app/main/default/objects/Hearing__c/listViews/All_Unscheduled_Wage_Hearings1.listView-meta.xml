@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Unscheduled_Wage_Hearings1</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Case_Employer__c</columns>
+    <columns>Length_of_Hearing__c</columns>
+    <columns>Meeting_Scheduled_For__c</columns>
+    <columns>Meeting_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Imported_From__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Hearing__c.WCA_Conference,Hearing__c.Garment_Conference</value>
+    </filters>
+    <filters>
+        <field>Meeting_Start_Date_Time__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>All Wage &amp; Garment Conferences</label>
+</ListView>

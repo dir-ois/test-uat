@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_86_Legal_Entity__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 86 Legal Entity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Corporation</fullName>
+                <default>false</default>
+                <label>Corporation</label>
+            </value>
+            <value>
+                <fullName>General Partnership</fullName>
+                <default>false</default>
+                <label>General Partnership</label>
+            </value>
+            <value>
+                <fullName>Limited Liability</fullName>
+                <default>false</default>
+                <label>Limited Liability</label>
+            </value>
+            <value>
+                <fullName>Co</fullName>
+                <default>false</default>
+                <label>Co</label>
+            </value>
+            <value>
+                <fullName>LLP</fullName>
+                <default>false</default>
+                <label>LLP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

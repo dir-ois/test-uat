@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Registration_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>License/Registration Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ABC</fullName>
+                <default>false</default>
+                <label>ABC</label>
+            </value>
+            <value>
+                <fullName>Agricultural Employers of Minors</fullName>
+                <default>false</default>
+                <label>Agricultural Employers of Minors</label>
+            </value>
+            <value>
+                <fullName>Agricultural Produce Unloaders</fullName>
+                <default>false</default>
+                <label>Agricultural Produce Unloaders</label>
+            </value>
+            <value>
+                <fullName>BOE/Seller’s Permit</fullName>
+                <default>false</default>
+                <label>BOE/Seller’s Permit</label>
+            </value>
+            <value>
+                <fullName>Bureau of Automotive Repair</fullName>
+                <default>false</default>
+                <label>Bureau of Automotive Repair</label>
+            </value>
+            <value>
+                <fullName>Business License</fullName>
+                <default>false</default>
+                <label>Business License</label>
+            </value>
+            <value>
+                <fullName>Car Wash</fullName>
+                <default>false</default>
+                <label>Car Wash</label>
+            </value>
+            <value>
+                <fullName>Child Performer Services</fullName>
+                <default>false</default>
+                <label>Child Performer Services</label>
+            </value>
+            <value>
+                <fullName>CSLB</fullName>
+                <default>false</default>
+                <label>CSLB</label>
+            </value>
+            <value>
+                <fullName>DOL</fullName>
+                <default>false</default>
+                <label>DOL</label>
+            </value>
+            <value>
+                <fullName>DSS Facility</fullName>
+                <default>false</default>
+                <label>DSS Facility</label>
+            </value>
+            <value>
+                <fullName>Electricians and electrician trainees</fullName>
+                <default>false</default>
+                <label>Electricians and electrician trainees</label>
+            </value>
+            <value>
+                <fullName>FBNS</fullName>
+                <default>false</default>
+                <label>FBNS</label>
+            </value>
+            <value>
+                <fullName>FLC</fullName>
+                <default>false</default>
+                <label>FLC</label>
+            </value>
+            <value>
+                <fullName>Garment Registration</fullName>
+                <default>false</default>
+                <label>Garment Registration</label>
+            </value>
+            <value>
+                <fullName>Health Permit</fullName>
+                <default>false</default>
+                <label>Health Permit</label>
+            </value>
+            <value>
+                <fullName>Industrial Homeworker Permit</fullName>
+                <default>false</default>
+                <label>Industrial Homeworker Permit</label>
+            </value>
+            <value>
+                <fullName>Industrial Homeworkers</fullName>
+                <default>false</default>
+                <label>Industrial Homeworkers</label>
+            </value>
+            <value>
+                <fullName>Industrial Homework License</fullName>
+                <default>false</default>
+                <label>Industrial Homework License</label>
+            </value>
+            <value>
+                <fullName>Janitorial</fullName>
+                <default>false</default>
+                <label>Janitorial</label>
+            </value>
+            <value>
+                <fullName>Secretary of State Number</fullName>
+                <default>false</default>
+                <label>Secretary of State Number</label>
+            </value>
+            <value>
+                <fullName>SEIN</fullName>
+                <default>false</default>
+                <label>SEIN</label>
+            </value>
+            <value>
+                <fullName>Sheltered Workshops (non‐profit)</fullName>
+                <default>false</default>
+                <label>Sheltered Workshops (non‐profit)</label>
+            </value>
+            <value>
+                <fullName>Special Minimum Wage</fullName>
+                <default>false</default>
+                <label>Special Minimum Wage</label>
+            </value>
+            <value>
+                <fullName>Studio Teacher Certification</fullName>
+                <default>false</default>
+                <label>Studio Teacher Certification</label>
+            </value>
+            <value>
+                <fullName>Talent Agency</fullName>
+                <default>false</default>
+                <label>Talent Agency</label>
+            </value>
+            <value>
+                <fullName>Work Permits for Child Performers</fullName>
+                <default>false</default>
+                <label>Work Permits for Child Performers</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>BSIS</fullName>
+                <default>false</default>
+                <label>BSIS</label>
+            </value>
+            <value>
+                <fullName>Public Works</fullName>
+                <default>false</default>
+                <label>Public Works</label>
+            </value>
+            <value>
+                <fullName>Entertainment Work</fullName>
+                <default>false</default>
+                <label>Entertainment Work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

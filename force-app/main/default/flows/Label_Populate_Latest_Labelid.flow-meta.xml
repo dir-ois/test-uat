@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Check_vLabelId</name>
+        <label>Check vLabelid</label>
+        <locationX>288</locationX>
+        <locationY>15</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Labelid_is_not_NULL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>vLabelId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_AttachmentId</targetReference>
+            </connector>
+            <label>Labelid is not NULL</label>
+        </rules>
+    </decisions>
+    <description>Used to populate the field Last Label Id on the Label object.</description>
+    <interviewLabel>Label: Populate Latest Labelid {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Label: Populate Latest Labelid</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_AttachmentId</name>
+        <label>Get AttachmentId</label>
+        <locationX>292</locationX>
+        <locationY>131</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Label_Object</targetReference>
+        </connector>
+        <filters>
+            <field>ParentId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>vLabelId</elementReference>
+            </value>
+        </filters>
+        <object>Attachment</object>
+        <outputAssignments>
+            <assignToReference>vAttachment</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Label_Object</name>
+        <label>Update Label Object</label>
+        <locationX>293</locationX>
+        <locationY>237</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>vLabelId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Latest_AttachmentId__c</field>
+            <value>
+                <elementReference>vAttachment</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Labels__c</object>
+    </recordUpdates>
+    <startElementReference>Check_vLabelId</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>vAttachment</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>vLabelId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

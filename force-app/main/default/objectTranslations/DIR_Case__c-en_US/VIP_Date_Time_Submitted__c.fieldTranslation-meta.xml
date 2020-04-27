@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set by the system to show the date and time that an online form was submitted to begin this complaint --></help>
+    <label><!-- VIP Date/Time Submitted --></label>
+    <name>VIP_Date_Time_Submitted__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Settlement_Type_when_Settled</fullName>
+    <active>true</active>
+    <description>When a Violation is Set to settled, the Settlement type is required.</description>
+    <errorConditionFormula>ISBLANK(TEXT(Settlement_Type__c))  &amp;&amp;  ISPICKVAL(Status__c, &quot;Settled&quot;) &amp;&amp;  RecordType.DeveloperName = &quot;BOFE_Violations&quot;</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Please select the settlement type when marking the violation settled.</errorMessage>
+</ValidationRule>

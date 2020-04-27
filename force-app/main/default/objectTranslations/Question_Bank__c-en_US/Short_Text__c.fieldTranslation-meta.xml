@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter a short text of the question or the first 255 characters of the actual question text will be displayed. --></help>
+    <label><!-- Short Text --></label>
+    <name>Short_Text__c</name>
+</CustomFieldTranslation>

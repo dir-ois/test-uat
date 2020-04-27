@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Fees__c</fullName>
+    <description>Roll-up Summary Total of all Fees where Fee Type = Registration Fee</description>
+    <externalId>false</externalId>
+    <label>Registration Fees</label>
+    <summarizedField>Fee__c.Fee__c</summarizedField>
+    <summaryFilterItems>
+        <field>Fee__c.Fee_Type__c</field>
+        <operation>equals</operation>
+        <value>Registration Fee</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Fee__c.Fee_Summary__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

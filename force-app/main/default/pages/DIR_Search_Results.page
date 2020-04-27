@@ -1,0 +1,49 @@
+<apex:page docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false">
+    <apex:composition template="DIR_Template">
+        <apex:define name="body">
+            
+            <ol class="breadcrumb">
+                <li><a href="/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                <li class="active">Search Results</li>
+            </ol>
+            
+            <h1>Search Results</h1>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 col-lg-1">
+                    <label>Filters</label>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-lg-3">
+                    <select class="form-control">
+                        <option>Employer City</option>
+                    </select>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4 col-lg-3">
+                    <input class="form-control"/>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-lg-2">
+                    <button class="btn btn-custom">Filter</button>
+                </div>
+            </div>
+            <div class="row mb">
+                <div class="col-xs-12 col-sm-4 col-sm-offset-2 col-lg-3 col-lg-offset-1">
+                    <a href="">+ Add Filter Fields</a>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="row">
+                <div class="col-xs-12">
+                    <table id="table" class="cell-border stripe" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            
+        </apex:define>
+    </apex:composition>
+</apex:page>

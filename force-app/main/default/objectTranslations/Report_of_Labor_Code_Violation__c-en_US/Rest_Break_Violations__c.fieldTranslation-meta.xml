@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Work days:
+Between 3.5 hrs &amp; up to 6 hrs/day, not allowed to take a 10-min rest break
+Of more than 6 hrs &amp; up to 10 hrs/day, not allowed to take two 10-min rest breaks
+Of more than 10 hrs &amp; up to 14 hrs/day, not allowed to take three 10-min rest breaks --></help>
+    <label><!-- Rest Break Violations --></label>
+    <name>Rest_Break_Violations__c</name>
+    <picklistValues>
+        <masterLabel>No 10-minute rest break</masterLabel>
+        <translation><!-- No 10-minute rest break --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No three 10-minute rest breaks</masterLabel>
+        <translation><!-- No three 10-minute rest breaks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No two 10-minute rest breaks</masterLabel>
+        <translation><!-- No two 10-minute rest breaks --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

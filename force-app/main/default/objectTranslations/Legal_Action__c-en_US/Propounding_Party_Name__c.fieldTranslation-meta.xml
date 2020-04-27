@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Propounding Party Name --></label>
+    <name>Propounding_Party_Name__c</name>
+    <relationshipLabel><!-- Legal Action as Propounding Party --></relationshipLabel>
+</CustomFieldTranslation>

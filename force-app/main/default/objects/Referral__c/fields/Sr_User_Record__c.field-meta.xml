@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sr_User_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>User record of the assigned deputy&#39;s senior. Used to determine the senior who will approve the referral request.</description>
+    <externalId>false</externalId>
+    <label>Sr User Record</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Referrals</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

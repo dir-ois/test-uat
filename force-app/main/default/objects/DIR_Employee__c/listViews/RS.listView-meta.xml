@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RS</fullName>
+    <columns>NAME</columns>
+    <columns>Office__c</columns>
+    <columns>Manager__c</columns>
+    <columns>User__c</columns>
+    <columns>Email__c</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Position__c</field>
+        <operation>equals</operation>
+        <value>Registration_Services</value>
+    </filters>
+    <label>RS</label>
+</ListView>

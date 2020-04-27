@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the citation form that this violation should appear on. Note that this is for grouping purposes and may not be an actual citation. For example, a NTD would be a citation form even though a penalty may not be levied. --></help>
+    <label><!-- Citation Form --></label>
+    <name>Violation_Type__c</name>
+    <picklistValues>
+        <masterLabel>BOFE 240A</masterLabel>
+        <translation><!-- BOFE 240A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 240B</masterLabel>
+        <translation><!-- BOFE 240B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 335</masterLabel>
+        <translation><!-- BOFE 335 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 336</masterLabel>
+        <translation><!-- BOFE 336 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 8</masterLabel>
+        <translation><!-- BOFE 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 812</masterLabel>
+        <translation><!-- BOFE 812 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 814</masterLabel>
+        <translation><!-- BOFE 814 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 815</masterLabel>
+        <translation><!-- BOFE 815 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE 816</masterLabel>
+        <translation><!-- BOFE 816 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU 238</masterLabel>
+        <translation><!-- JEU 238 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU 238e</masterLabel>
+        <translation><!-- JEU 238e --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LR 240A</masterLabel>
+        <translation><!-- LR 240A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice to Discontinue - DLSE 84</masterLabel>
+        <translation><!-- Notice to Discontinue - DLSE 84 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PW 240A</masterLabel>
+        <translation><!-- PW 240A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PW 336</masterLabel>
+        <translation><!-- PW 336 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

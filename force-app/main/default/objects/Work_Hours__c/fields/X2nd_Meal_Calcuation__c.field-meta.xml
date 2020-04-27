@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2nd_Meal_Calcuation__c</fullName>
+    <externalId>false</externalId>
+    <formula>(X2nd_Meal_End_Hour__c + 
+     CASE(TEXT( X2nd_Meal_End_Minutes__c ),
+       &quot;0&quot;, 0,
+       &quot;00&quot;, 0,
+       &quot;15&quot;, 0.25,
+       &quot;30&quot;, 0.5,
+       &quot;45&quot;, 0.75,
+       0
+     )
+
+ + IF( TEXT( X2nd_Meal_End_AM_PM__c ) = &quot;PM&quot;, 12, 0)
+)
+-
+(X2nd_Meal_Start_Hour__c + 
+     CASE(TEXT( X2nd_Meal_Start_Minutes__c ),
+       &quot;0&quot;, 0,
+       &quot;00&quot;, 0,
+       &quot;15&quot;, 0.25,
+       &quot;30&quot;, 0.5,
+       &quot;45&quot;, 0.75,
+       0
+     )
+ + IF( TEXT( X2nd_Meal_Start_AM_PM__c ) = &quot;PM&quot;, 12, 0)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>2nd Meal Calcuation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

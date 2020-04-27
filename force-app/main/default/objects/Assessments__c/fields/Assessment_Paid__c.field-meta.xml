@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assessment_Paid__c</fullName>
+    <description>Total_Citation_Penalties_Balance_Due__c &lt;= 0</description>
+    <externalId>false</externalId>
+    <formula>Total_Citation_Penalties_Balance_Due__c &lt;= 0 
+&amp;&amp;  Total_Wages_Balance_Due__c &lt;= 0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Assessment Paid</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

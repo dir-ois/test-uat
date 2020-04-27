@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date this Case Payment&apos;s allocations to Case Issues or Judgments were Applied (aka Posted). --></help>
+    <label><!-- Case Payment Posted Date --></label>
+    <name>Case_Payment_Posted_Date__c</name>
+</CustomFieldTranslation>

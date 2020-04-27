@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the criteria that would be used in a WHERE clause to specify which child object records this attachment should be created for. e.g. Status = TRUE or Type = &apos;my type&apos;
+Fields must be on the child record itself. --></help>
+    <label><!-- Child Object Criteria --></label>
+    <name>Child_Object_Criteria__c</name>
+</CustomFieldTranslation>

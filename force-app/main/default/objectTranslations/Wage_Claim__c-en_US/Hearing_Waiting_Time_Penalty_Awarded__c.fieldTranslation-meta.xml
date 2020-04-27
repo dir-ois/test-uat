@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hearing Waiting Time Penalty Awarded --></label>
+    <name>Hearing_Waiting_Time_Penalty_Awarded__c</name>
+</CustomFieldTranslation>

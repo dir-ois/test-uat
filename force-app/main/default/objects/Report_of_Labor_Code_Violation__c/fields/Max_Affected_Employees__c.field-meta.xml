@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Affected_Employees__c</fullName>
+    <description>Returns the max number of employees affected reported on this RLCV. Used to roll up to the case to show the max number of employees affected for all RLCVs</description>
+    <externalId>false</externalId>
+    <formula>MAX( No_of_employees_affected_failure_to_post__c, No_of_employees_affected_record_keeping__c, No_of_employees_affected_meal_period__c, No_of_employees_minimum_wage__c, No_of_employee_affected_unpaid_overtime__c, No_of_employees_affected_pay_stub__c, No_of_employees_affected_rest_break__c, No_of_employees_affected_business_expens__c, No_of_employees_affected_lactation_space__c, No_of_employees_affected_misclassficatio__c, No_of_employees_affected_other_violation__c, No_of_employees_affected_other_wage__c, No_of_employees_affected_pay_date__c, No_number_of_minors_affected__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Max Affected Employees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

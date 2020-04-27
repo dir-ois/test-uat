@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Config</fullName>
+    <availability>online</availability>
+    <description>Used to get fields for Conga Docs</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Conga Config</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Case_Role__c.Id}
+&amp;reportid=[Employee]00Od0000004pzun?pv2={!Case_Role__c.CaseId__c},[Employors]00Od0000004pzuo?pv2={!Case_Role__c.CaseId__c},[All]00Od0000004pzup?pv2={!Case_Role__c.CaseId__c}</url>
+</WebLink>

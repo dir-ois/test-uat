@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receipt__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&#39;/&#39; &amp; Liability_Payment__r.Case_Payment__r.Receipt__c, Liability_Payment__r.Case_Payment__r.Receipt__r.Name)</formula>
+    <label>Receipt</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

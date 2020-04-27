@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- An RLCV has been submitted from an Industry Association. --></help>
+    <label><!-- Industry Association Referral --></label>
+    <name>Industry_Association_Referral__c</name>
+</CustomFieldTranslation>

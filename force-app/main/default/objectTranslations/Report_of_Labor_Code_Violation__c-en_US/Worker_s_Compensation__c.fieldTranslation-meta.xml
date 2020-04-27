@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- F0649: Worker&apos;s Compensation Violation --></help>
+    <label><!-- Worker&apos;s Compensation --></label>
+    <name>Worker_s_Compensation__c</name>
+</CustomFieldTranslation>

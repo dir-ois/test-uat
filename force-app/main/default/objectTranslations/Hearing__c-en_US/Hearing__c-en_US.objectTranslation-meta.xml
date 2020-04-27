@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meeting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meetings</value>
+    </caseValues>
+    <layouts>
+        <layout>BOFE CONFERENCE</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Hearing Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Hearing Layout</layout>
+        <sections>
+            <label><!-- Approval Status --></label>
+            <section>Approval Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hearing Results --></label>
+            <section>Hearing Results</section>
+        </sections>
+        <sections>
+            <label><!-- Mailing Section --></label>
+            <section>Mailing Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Meeting Layout</layout>
+        <sections>
+            <label><!-- Approval Status --></label>
+            <section>Approval Status</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hearing Results --></label>
+            <section>Hearing Results</section>
+        </sections>
+        <sections>
+            <label><!-- Mailing Section --></label>
+            <section>Mailing Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registration Conference</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registration Hearing</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Hearing</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hearing Results --></label>
+            <section>Hearing Results</section>
+        </sections>
+        <sections>
+            <label><!-- Mailings Section --></label>
+            <section>Mailings Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA/Garment Subpoena</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Mailings Section --></label>
+            <section>Mailings Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA_Garment Conference</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- BOFE Conference --></label>
+        <name>BOFE_Conference</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- BOFE Hearing --></label>
+        <name>BOFE_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Garment Conference --></label>
+        <name>Garment_Conference</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Garment Hearing --></label>
+        <name>Garment_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Garment Revocation Hearing --></label>
+        <name>Garment_Revocation_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Legal/Court --></label>
+        <name>Legal_Court</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Paid Pre-Hearing --></label>
+        <name>Paid_Pre_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Hearing --></label>
+        <name>RCI_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI Meeting --></label>
+        <name>RCI_Meeting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration Conference --></label>
+        <name>Registration_Conference</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration Hearing --></label>
+        <name>Registration_Hearing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for collecting all details in order to refer a fast track case --></description>
+        <label><!-- Remedial Fast Track --></label>
+        <name>Remedial_Fast_Track</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Conference --></label>
+        <name>WCA_Conference</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Subpoena --></label>
+        <name>WCA_Garment_Subpoena</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- WCA Hearing --></label>
+        <name>WCA_Hearing</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Estimated Duration cannot be greater than 20,160 minutes (14 days) --></errorMessage>
+        <name>Estimated_Duration_Not_More_Than_14_Days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Meeting End Date/Time cannot be more than 14 days after Meeting Start Date/Time --></errorMessage>
+        <name>Meeting_End_DateTime_not_gt_14_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Meeting End Date/Time must be after Meeting Start Date/Time --></errorMessage>
+        <name>Meeting_End_must_be_after_Meeting_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A meeting that has been rescheduled cannot be set back to Scheduled status. --></errorMessage>
+        <name>Meeting_Rescheduled_cannot_be_scheduled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the Meeting Start Date and who the Meeting is For before marking as Scheduled. --></errorMessage>
+        <name>RCI_Meeting_Hearing_Scheduled_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must change the status to &quot;rescheduled&quot; in order to change the start time or estimated duration of the meeting. --></errorMessage>
+        <name>Req_Status_rescheduled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A deputy must be assigned to the case before the meeting can be scheduled. --></errorMessage>
+        <name>Req_deputy_assigned_to_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter the length of the hearing before completing the hearing results. --></errorMessage>
+        <name>Require_Length_of_Hearing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Meeting Scheduled For,Meeting Start Date/Time and either an Estimated Duration or End Date and Time are required when Status = Scheduled or Rescheduled --></errorMessage>
+        <name>Scheduled_Required_Fields</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_WCA_Document --></label>
+        <name>Generate_WCA_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Hearing_Result --></label>
+        <name>Hearing_Result</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Meeting_Calendar --></label>
+        <name>Meeting_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Calendar --></label>
+        <name>Print_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Produce_ODA --></label>
+        <name>Produce_ODA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>S_Docs</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Hearing_Approval_Workfloinitiated</name>
+        <subject><!-- Hearing Approval Initiated --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Hearing_Approved_by_Sr</name>
+        <subject><!-- Hearing Approved by Sr. --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Your RCI Hearing Request has been rejected --></description>
+        <name>RCI_Hearing_Approval_Rejected</name>
+        <subject><!-- RCI Hearing Approval Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Your RCI Hearing Request has been Approved --></description>
+        <name>RCI_Hearing_Approved</name>
+        <subject><!-- RCI Hearing Approved --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

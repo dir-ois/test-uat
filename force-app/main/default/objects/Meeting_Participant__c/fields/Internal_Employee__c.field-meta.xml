@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Employee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Help Text Needed</inlineHelpText>
+    <label>Internal Employee</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Meeting Participants</relationshipLabel>
+    <relationshipName>Meeting_Participants</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

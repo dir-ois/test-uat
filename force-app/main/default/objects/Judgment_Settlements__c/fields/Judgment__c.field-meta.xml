@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Judgment__c</fullName>
+    <externalId>false</externalId>
+    <label>Judgment</label>
+    <referenceTo>Judgement__c</referenceTo>
+    <relationshipLabel>Judgment Settlements</relationshipLabel>
+    <relationshipName>Judgment_Settlements</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

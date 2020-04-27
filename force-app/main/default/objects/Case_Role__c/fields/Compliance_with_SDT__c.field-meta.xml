@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_with_SDT__c</fullName>
+    <description>Indicates the entitie&#39;s compliance or not with a subpoena</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In the even that a subpoena has been issued to this party, select whether or not the party complied or not.</inlineHelpText>
+    <label>Compliance with SDT</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full</fullName>
+                <default>false</default>
+                <label>Full</label>
+            </value>
+            <value>
+                <fullName>Partial</fullName>
+                <default>false</default>
+                <label>Partial</label>
+            </value>
+            <value>
+                <fullName>Non-Compliance</fullName>
+                <default>false</default>
+                <label>Non-Compliance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Occupational_SAFE_HLTH_LC6300_et_seq__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Occupational Safety and Health (Labor Code §§ 6300 et seq.)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Occupational Safety and Health (Labor Code §§ 6300 et seq.)</inlineHelpText>
+    <label>Occupational SAFE HLTH (LC 6300 et seq)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

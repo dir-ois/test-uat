@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emergency_Releases</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Release_Date_Time__c</columns>
+    <columns>Release_Description__c</columns>
+    <columns>Status__c</columns>
+    <columns>Reason_for_Emergency_Release__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Release__c.Emergency_Release</value>
+    </filters>
+    <filters>
+        <field>Release_Description__c</field>
+        <operation>contains</operation>
+        <value>Emergency</value>
+    </filters>
+    <label>Emergency Releases</label>
+</ListView>

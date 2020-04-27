@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hire_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Hire Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Form1_Status_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New to State</fullName>
+                <default>false</default>
+                <label>New to State</label>
+            </value>
+            <value>
+                <fullName>Previous State EE</fullName>
+                <default>false</default>
+                <label>Previous State EE</label>
+            </value>
+            <value>
+                <fullName>Current DIR EE</fullName>
+                <default>false</default>
+                <label>Current DIR EE</label>
+            </value>
+            <value>
+                <fullName>Transfer from other Department</fullName>
+                <default>false</default>
+                <label>Transfer from other Department</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>HR - Job Offer Clearance Notification</controllingFieldValue>
+            <valueName>New to State</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR - Job Offer Clearance Notification</controllingFieldValue>
+            <valueName>Previous State EE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR - Job Offer Clearance Notification</controllingFieldValue>
+            <valueName>Current DIR EE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR - Job Offer Clearance Notification</controllingFieldValue>
+            <valueName>Transfer from other Department</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

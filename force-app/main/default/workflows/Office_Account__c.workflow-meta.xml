@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_Account_Signers_of_Void_Request</fullName>
+        <description>Notify Account Signers of Void Request</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cashiering_Email_Templates/Void_Requested</template>
+    </alerts>
+</Workflow>

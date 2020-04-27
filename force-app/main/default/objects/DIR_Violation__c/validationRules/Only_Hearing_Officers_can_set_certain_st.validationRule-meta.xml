@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Hearing_Officers_can_set_certain_st</fullName>
+    <active>true</active>
+    <description>Only Hearing Officers can change a Case Violation to Dismissed, Affirmed, or Modified. Updated permission set so that applied payments</description>
+    <errorConditionFormula>OR((ISPICKVAL( Status__c, &quot;Dismissed&quot;)), (ISPICKVAL( Status__c, &quot;Affirmed&quot;)),(ISPICKVAL( Status__c, &quot;Modified&quot;)))&amp;&amp; ISCHANGED( Status__c)&amp;&amp;($Profile.Name &lt;&gt; &quot;WCA User&quot; )</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Only hearing officers can update status to affirmed, modified, or dismissed.</errorMessage>
+</ValidationRule>

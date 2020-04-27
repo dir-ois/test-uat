@@ -1,0 +1,99 @@
+<apex:page controller="CommunityLoginController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" title="PAGA Search">
+    <script>
+        $j = jQuery.noConflict();
+    </script>
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body">
+            <apex:form styleClass="form-horizontal">
+                <br/>
+                <h1>Login</h1>
+                <br/>
+                <apex:outputPanel id="maintenanceMsgId" rendered="{!isMaintenanceMsg}">
+                    <div class="alert alert-info">
+                        <H2><apex:outputText style="color:red" value="{!$Label.Reg_Maintenance_Msg}"/></H2>
+                        <br/>
+                        <br/>
+                    </div>
+                </apex:outputPanel>
+                <apex:outputPanel id="errorPanel">
+                    <div class="alert alert-info">
+                        <H4>To apply for your license or registration, you must <u><apex:commandLink action="{!SignIn}" value="create a new account"  /></u>.
+                        If you handle registration for multiple entities, please create only one user account.</H4>
+                        <br/>
+                        <H4>Your username and password in the old system will not work.</H4>
+                        <br/>
+                        <H4>In order for the system to function properly you will need to use the Chrome browser.</H4>
+                    </div>
+                </apex:outputPanel>
+                
+                <apex:outputPanel id="error">
+                    <div style="display:{!errorDisplay}" class="{!errortype}">
+                        <apex:messages />
+                        <ul>
+                            <li>{!errormessage}</li>
+                            <li>{!errormessage2}</li>
+                        </ul>
+                        <br/>
+                    </div>
+                </apex:outputPanel>
+
+                <div class="row">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4">
+                        <label for="username">Username / Email Address</label>
+                        <apex:inputText value="{!username}" id="username" styleclass="form-control"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4">
+                        <label for="password">Password</label>
+                        <apex:inputSecret id="password" value="{!password}" styleclass="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <br />
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4">
+                        <apex:commandLink id="loginbt" action="{!login}" value="Login" styleclass="btn btn-custom" />
+                        &nbsp;&nbsp;<apex:commandLink action="{!ForgotPassword}" >Forgot Your Password?</apex:commandLink>
+                    </div>
+                </div>
+                <div class="row">
+                    <br />
+                </div>
+                <div class="alert alert-info">
+                    You can apply for the following programs:
+                    <br/>
+                    <ul><u><a href="http://www.dir.ca.gov/dlse/Car_Wash_Polishing.htm">Car Washing and Polishing Registration</a></u></ul>
+                    <ul><u><a href="https://www.dir.ca.gov/dlse/Child_performer_services_permit.htm">Child Performer Services Permit</a></u></ul>
+                    <ul><u><a href="https://www.dir.ca.gov/dlse/Janitorial_Providers_Contractors.html">Janitorial Services Registration</a></u></ul>
+                    <ul><u><a href="https://www.dir.ca.gov/Public-Works/Contractor-Registration.html">Public Works Contractor Registration</a></u></ul>
+                    <ul><u><a href="https://www.dir.ca.gov/dlse/Entertainment-Work-Permit.htm">Entertainment Work Permit for Minors</a></u></ul>
+                    <ul><u><a href="https://www.dir.ca.gov/dlse/Talent%20Agency_License_and_Fee-Related_Talent_Services.htm">Talent Agency License</a></u></ul>
+                    
+                    <br/>
+                    Click on the program link above for more information on specific application requirements.
+                    <br/>
+                    In order to complete your application you will need to install <u><a href="https://get.adobe.com/reader/">Adobe Acrobat Reader</a></u>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <center><strong> Info! </strong>We recommend using the Chrome browser to create, view, and edit applications on this site for optimal performance.<br />
+                    You can download the Chrome browser <a href="https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=en" target="_blank"><u>here</u></a></center> 
+                </div>
+                <script type="text/javascript">
+                    $j(document).keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                             document.getElementById('{!$Component.loginbt}').click();
+                             
+                        }
+                    });
+                    
+                </script> 
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+    
+</apex:page>

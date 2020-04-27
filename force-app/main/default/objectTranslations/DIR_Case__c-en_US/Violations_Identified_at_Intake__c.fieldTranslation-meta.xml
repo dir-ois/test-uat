@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Intake Staff to add possible case violations. Deputy will create Violations during Investigation. --></help>
+    <label><!-- Violations Identified at Intake --></label>
+    <name>Violations_Identified_at_Intake__c</name>
+    <picklistValues>
+        <masterLabel>H&amp;S 1596.881 and 1596.882</masterLabel>
+        <translation><!-- H&amp;S 1596.881 and 1596.882 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IWC Orders</masterLabel>
+        <translation><!-- IWC Orders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1019</masterLabel>
+        <translation><!-- LC 1019 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1019.1</masterLabel>
+        <translation><!-- LC 1019.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1024.6</masterLabel>
+        <translation><!-- LC 1024.6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1025-1028</masterLabel>
+        <translation><!-- LC 1025-1028 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1030-1033</masterLabel>
+        <translation><!-- LC 1030-1033 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1041-1044</masterLabel>
+        <translation><!-- LC 1041-1044 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1101</masterLabel>
+        <translation><!-- LC 1101 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1102</masterLabel>
+        <translation><!-- LC 1102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1102.5</masterLabel>
+        <translation><!-- LC 1102.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1171</masterLabel>
+        <translation><!-- LC 1171 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1197.5</masterLabel>
+        <translation><!-- LC 1197.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1198.3</masterLabel>
+        <translation><!-- LC 1198.3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1311.5</masterLabel>
+        <translation><!-- LC 1311.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 1512</masterLabel>
+        <translation><!-- LC 1512 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230(a)</masterLabel>
+        <translation><!-- LC 230(a) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230(b)</masterLabel>
+        <translation><!-- LC 230(b) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230(c)</masterLabel>
+        <translation><!-- LC 230(c) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230(e)</masterLabel>
+        <translation><!-- LC 230(e) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230(f)</masterLabel>
+        <translation><!-- LC 230(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.1</masterLabel>
+        <translation><!-- LC 230.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.2(b)</masterLabel>
+        <translation><!-- LC 230.2(b) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.3</masterLabel>
+        <translation><!-- LC 230.3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.4</masterLabel>
+        <translation><!-- LC 230.4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.5</masterLabel>
+        <translation><!-- LC 230.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.7 and EdC 48900.1</masterLabel>
+        <translation><!-- LC 230.7 and EdC 48900.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 230.8</masterLabel>
+        <translation><!-- LC 230.8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 232(a) and (b)</masterLabel>
+        <translation><!-- LC 232(a) and (b) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 232.5</masterLabel>
+        <translation><!-- LC 232.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 233 and 234</masterLabel>
+        <translation><!-- LC 233 and 234 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 244</masterLabel>
+        <translation><!-- LC 244 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 245-249</masterLabel>
+        <translation><!-- LC 245-249 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 2814</masterLabel>
+        <translation><!-- LC 2814 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 2929(b) and (c)</masterLabel>
+        <translation><!-- LC 2929(b) and (c) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 2930</masterLabel>
+        <translation><!-- LC 2930 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 432.3</masterLabel>
+        <translation><!-- LC 432.3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 432.7</masterLabel>
+        <translation><!-- LC 432.7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 432.8</masterLabel>
+        <translation><!-- LC 432.8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 6310</masterLabel>
+        <translation><!-- LC 6310 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 6311</masterLabel>
+        <translation><!-- LC 6311 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 6399.7</masterLabel>
+        <translation><!-- LC 6399.7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 6403.5</masterLabel>
+        <translation><!-- LC 6403.5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 752</masterLabel>
+        <translation><!-- LC 752 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 96(k)</masterLabel>
+        <translation><!-- LC 96(k) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC 98.6</masterLabel>
+        <translation><!-- LC 98.6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UI 1237</masterLabel>
+        <translation><!-- UI 1237 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

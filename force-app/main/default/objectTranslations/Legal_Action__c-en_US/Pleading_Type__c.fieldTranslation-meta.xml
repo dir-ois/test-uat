@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pleading Type --></label>
+    <name>Pleading_Type__c</name>
+    <picklistValues>
+        <masterLabel>Abstract of Judgment</masterLabel>
+        <translation><!-- Abstract of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended Answer</masterLabel>
+        <translation><!-- Amended Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended Complaint</masterLabel>
+        <translation><!-- Amended Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Answer</masterLabel>
+        <translation><!-- Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bankruptcy Petition</masterLabel>
+        <translation><!-- Bankruptcy Petition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chapter 11 Plan (Bankruptcy)</masterLabel>
+        <translation><!-- Chapter 11 Plan (Bankruptcy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chapter 13 Plan (Bankruptcy)</masterLabel>
+        <translation><!-- Chapter 13 Plan (Bankruptcy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claim of Exemption</masterLabel>
+        <translation><!-- Claim of Exemption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross-Answer</masterLabel>
+        <translation><!-- Cross-Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross-Complaint</masterLabel>
+        <translation><!-- Cross-Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demurrer</masterLabel>
+        <translation><!-- Demurrer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Memorandum of Costs after Judgment</masterLabel>
+        <translation><!-- Memorandum of Costs after Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Objection</masterLabel>
+        <translation><!-- Objection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petition to Compel</masterLabel>
+        <translation><!-- Petition to Compel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proof of Claim</masterLabel>
+        <translation><!-- Proof of Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewal of Judgment</masterLabel>
+        <translation><!-- Renewal of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stipulation</masterLabel>
+        <translation><!-- Stipulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summons</masterLabel>
+        <translation><!-- Summons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ of Attachment</masterLabel>
+        <translation><!-- Writ of Attachment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ of Execution</masterLabel>
+        <translation><!-- Writ of Execution --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

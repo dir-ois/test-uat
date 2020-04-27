@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_Was_the_Minor_Paid__c</fullName>
+    <description>How was the Minor Employee Paid - by check, in cash, both cash and check, or other method?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How was the Minor Employee Paid - by check, in cash, both cash and check, or other method?</inlineHelpText>
+    <label>How Was the Minor Paid?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

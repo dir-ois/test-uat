@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>holds settings for determining if an account is a low wage industry. Used by the Account_Methods class called by Account_Trigger to set the Low_Wage_Industry_Selection__c field on the account record. The Name field holds the NAICS code prefix and the industry field is the industry related to the NAICS code. The Industry value is returned and set on the Low Wage Industry selection field.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>BOFE Low Wage Industry</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Calendar</fullName>
+    <availability>online</availability>
+    <description>This is the code that will be used to print DIR Calendar. Please do not touch. Thank you.</description>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Meeting Calendar</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Hearing__c.Id}
+&amp;reportid=[Calendar]00Od0000004pzuZ=&quot;{!Hearing__c.Meeting_Location_Name__c}&quot;~pv1=&quot;{!Hearing__c.DV_Start_Date__c}&quot;~pv2=&quot;{!Hearing__c.DV_End_Date__c}&quot;
+&amp;templateid=a0nd0000005OStj
+&amp;DS7=3</url>
+</WebLink>

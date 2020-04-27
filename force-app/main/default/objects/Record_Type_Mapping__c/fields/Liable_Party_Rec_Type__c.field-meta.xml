@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liable_Party_Rec_Type__c</fullName>
+    <description>Rec Type of the liable party created from cases of this type.</description>
+    <externalId>false</externalId>
+    <label>Liable Party Rec Type</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

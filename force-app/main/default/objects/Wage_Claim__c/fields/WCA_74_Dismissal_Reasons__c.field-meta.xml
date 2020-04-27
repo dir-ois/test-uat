@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_74_Dismissal_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 74 Dismissal Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>For want of prosecution due...</fullName>
+                <default>false</default>
+                <label>For want of prosecution due...</label>
+            </value>
+            <value>
+                <fullName>For want of statutory jurisdiction...</fullName>
+                <default>false</default>
+                <label>For want of statutory jurisdiction...</label>
+            </value>
+            <value>
+                <fullName>Due to payment...</fullName>
+                <default>false</default>
+                <label>Due to payment...</label>
+            </value>
+            <value>
+                <fullName>As a result of a settlement...</fullName>
+                <default>false</default>
+                <label>As a result of a settlement...</label>
+            </value>
+            <value>
+                <fullName>As a result of Plaintiff abandoning...</fullName>
+                <default>false</default>
+                <label>As a result of Plaintiff abandoning...</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

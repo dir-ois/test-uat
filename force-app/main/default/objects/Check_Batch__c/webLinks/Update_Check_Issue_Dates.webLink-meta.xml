@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Check_Issue_Dates</fullName>
+    <availability>online</availability>
+    <description>Updates all check.issuedates for checks within this check batch.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Update Checks to Printed</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/CheckBatch_Update_Check_IssueDate?vCheckBatchId={!Check_Batch__c.Id}&amp;retURL={!Check_Batch__c.Id}</url>
+</WebLink>

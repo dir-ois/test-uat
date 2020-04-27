@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Number of Employees Listed on Claim Form --></label>
+    <name>Number_of_Employees_Listed_on_Claim_Form__c</name>
+</CustomFieldTranslation>

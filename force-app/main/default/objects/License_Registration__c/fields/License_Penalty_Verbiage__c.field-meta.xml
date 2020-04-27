@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Penalty_Verbiage__c</fullName>
+    <description>To include in email template when Registration is up for renewal.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(License_Registration_Type__c, &quot;Car Wash&quot;), &quot;Per California Labor Code §2064: An employer who fails to register pursuant to Section 2054 is subject to a civil fine of one hundred dollars ($100) for each calendar day, not to exceed ten thousand dollars ($10,000) the employer conducts car washing and polishing while unregistered.&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;FLC&quot;), &quot;Per California Labor Code §1695.7 (c)(1): Any person who acts in the capacity of a farm labor contractor without first securing a license or while his or her license has been suspended or revoked is guilty of a misdemeanor punishable by a fine of not less than one thousand dollars ($1,000) nor more than five thousand dollars ($5,000), or imprisonment in the county jail for not more than six months, or both, and is subject to other sanctions under this chapter, including subdivisions (b) and (c) of Section 1697.&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;CSLB&quot;), &quot;Per California Labor Code §1706.1: A person who willfully violates any provision of this chapter is guilty of a misdemeanor. Each violation is punishable by a fine not exceeding ten thousand dollars ($10,000), by imprisonment in a county jail for not more than one year, or by both that fine and imprisonment.&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;Talent Agency&quot;), &quot;Per California Labor Code §1700.5: No person shall engage in or carry on the occupation of a talent agency without first procuring a license therefore from the Labor Commissioner. Unlicensed talent agencies cannot collect any fee from artists for procuring any employment. They are not entitled to any commission without being licensed in the State of California.&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;STC&quot;), &quot;Per California Labor Code §1308.6: No consent shall be given at any time unless the officer giving it is satisfied that all of the following conditions are met:…(c) The minor’s education will not be neglected or hampered by his or her participation in the performance, concert, or entertainment.&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;Janitorial Registration&quot;), &quot;Per California Labor Code §1432 (a): An employer who fails to register pursuant to Section 1423 is subject to a civil fine of one hundred dollars ($100) for each calendar day that the employer is unregistered, not to exceed ten thousand dollars ($10,000).&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;Industrial Homeworker Permit&quot;), &quot;Per California Labor Code §2660.5: Every person who does industrial homework without having in his possession a valid homeworker’s permit issued to him by the division is guilty of a misdemeanor which misdemeanor shall be punishable for the first offense by a fine of not more than fifty dollars ($50) and for the second offense by a fine of not more than one hundred dollars ($100).&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;Industrial Homework License&quot;), &quot;Per California Labor Code §2658.5: Every person who term shall be deemed to include manufacturers, contractors, jobbers, and wholesalers, who, without having in his possession a then-valid industrial homework license issued to him by the Division of Labor Standards Enforcement, employs an industrial homeworker…is guilty of a misdemeanor which misdemeanor shall be punished for the first offense by a fine of not more than one thousand dollars ($1,000) or by imprisonment in the county jail for not more than 30 days, or by both such fine and imprisonment…second conviction by a fine of not more than five thousand dollars ($5,000) or imprisonment…or by both.&quot;,
+IF(ISPICKVAL(License_Registration_Type__c, &quot;Garment Registration&quot;), &quot;Per California Labor Code §2676: Any person engaged in the business of garment manufacturing who is not registered is guilty of a misdemeanor, except as provided in subdivision (d) of Section 2678.&quot;,NULL)
+))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>License Penalty Verbiage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

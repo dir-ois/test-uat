@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Deputies_Senior__c</fullName>
+    <description>The Assigned Deputies Manager (Typically a Senior Deputy)</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; + Assigned_Deputy__r.Manager__r.Id,  Assigned_Deputy__r.Manager__r.Name)</formula>
+    <inlineHelpText>The Assigned Deputies Manager (Typically a Senior Deputy)</inlineHelpText>
+    <label>Assigned Deputy&#39;s Senior</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

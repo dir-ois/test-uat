@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Note_Cannot_be_Blank</fullName>
+    <active>true</active>
+    <description>This validation Rule Prevents from completing a task without a work note</description>
+    <errorConditionFormula>ISBLANK(Work_Notes__c) &amp;&amp;  ISPICKVAL(Status__c,&#39;Completed&#39;)</errorConditionFormula>
+    <errorDisplayField>Work_Notes__c</errorDisplayField>
+    <errorMessage>You must complete the work note to complete this task</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>List of rules for allowing employees to be assigned to referrals. For example, only employees with a legal position can be referred a legal case.
+
+Enter the Record Type Name of the Referral in the Name field to be matched to allowed positions</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Referral Assignment Rules</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_of_all_Amounts_Earned_Claimed__c</fullName>
+    <externalId>false</externalId>
+    <formula>Regular_Wages_Amount_Earned_Claimed__c + Overtime_Wages_Amount_Earned_Claimed__c + Meal_Period_Wages_Amount_Earned_Claimed__c + Rest_Period_Wages_Amount_Earned_Claimed__c + Split_Shift_Prem_Amount_Earned_Claimed__c + Reporting_Time_Pay_Amount_Earned_Claimed__c + Commissions_Amount_Earned_Claimed__c + Vacation_Wages_Amount_Earned_Claimed__c + Business_Expenses_Amount_Earned_Claimed__c + Unlawful_Deduction_Amount_Earned_Claimed__c + Other_Amount_Earned_Claimed__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal of all Amounts Earned/Claimed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

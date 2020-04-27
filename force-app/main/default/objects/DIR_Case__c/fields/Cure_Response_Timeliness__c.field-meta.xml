@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cure_Response_Timeliness__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( ISBLANK ( Cure_Employer_Response_Submission_Date__c ) , NULL ,
+IF (Cure_Employer_Response_Submission_Date__c  &gt; PAGA_Cure_Response_Deadline_Date__c, &quot;Not Timely&quot;, &quot;Timely&quot;) )</formula>
+    <label>Cure Response Timeliness</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Party__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The party that reported this report of labor code violation</description>
+    <externalId>false</externalId>
+    <label>Reporting Party</label>
+    <referenceTo>Reporting_Party__c</referenceTo>
+    <relationshipName>Reports_of_Labor_Code_Violations</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

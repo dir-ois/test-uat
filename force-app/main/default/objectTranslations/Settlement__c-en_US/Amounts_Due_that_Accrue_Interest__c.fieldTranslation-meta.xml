@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the amounts due that accrue interest by evaluating the case issues on the liabilities that the settling parties are settling. --></help>
+    <label><!-- Amounts Due that Accrue Interest --></label>
+    <name>Amounts_Due_that_Accrue_Interest__c</name>
+</CustomFieldTranslation>

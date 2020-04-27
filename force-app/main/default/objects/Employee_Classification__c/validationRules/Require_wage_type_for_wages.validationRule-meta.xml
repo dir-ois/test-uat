@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_wage_type_for_wages</fullName>
+    <active>true</active>
+    <description>Requires the user to select a wage type when entering a wage</description>
+    <errorConditionFormula>NOT( ISBLANK ( Wages__c ) )
+&amp;&amp; ISPICKVAL (  Wage_Type__c , &#39;&#39; )</errorConditionFormula>
+    <errorMessage>Please select a wage type when entering a wage.</errorMessage>
+</ValidationRule>

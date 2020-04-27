@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wages_Due__c</fullName>
+    <description>Wages due on this violation. Derived from the Wage Assessment Formula on the violation type and the variable values entered by the user when creating the violation
+Previous label: Current Amount Payable to EE(s)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the amount due including the most recent modification (if any).</inlineHelpText>
+    <label>EE(s) Amt Assessed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

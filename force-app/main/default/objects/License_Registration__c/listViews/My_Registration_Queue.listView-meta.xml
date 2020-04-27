@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Registration_Queue</fullName>
+    <columns>NAME</columns>
+    <columns>License_Registration_Number__c</columns>
+    <columns>Legal_Entity_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>Submission_Type__c</columns>
+    <columns>Service_Type__c</columns>
+    <columns>Received_Date__c</columns>
+    <columns>Renewal__c</columns>
+    <columns>VIP_Date_Time_Submitted__c</columns>
+    <columns>Expiration_Date__c</columns>
+    <columns>License_Registration_Type__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending Payment,Submitted,In Review,Resubmitted,Pending / Defect</value>
+    </filters>
+    <filters>
+        <field>Assigned_Deputy__c</field>
+        <operation>equals</operation>
+        <value>Melinda Ramirez</value>
+    </filters>
+    <label>My Registration Queue</label>
+</ListView>

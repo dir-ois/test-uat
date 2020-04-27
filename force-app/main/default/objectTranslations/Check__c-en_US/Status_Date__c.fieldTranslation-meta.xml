@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date of last status change --></help>
+    <label><!-- Status Date --></label>
+    <name>Status_Date__c</name>
+</CustomFieldTranslation>

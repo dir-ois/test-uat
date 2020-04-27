@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date the Cure Response is due by. It is normally set to 33 days after the postmark date. --></help>
+    <label><!-- Cure Response Deadline Date --></label>
+    <name>PAGA_Cure_Response_Deadline_Date__c</name>
+</CustomFieldTranslation>

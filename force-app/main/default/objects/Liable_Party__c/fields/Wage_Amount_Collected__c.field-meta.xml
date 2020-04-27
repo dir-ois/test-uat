@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wage_Amount_Collected__c</fullName>
+    <description>Wage amount collected on behalf on this liable party. Generally will be updated automatically when a payment is collected.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Wage amount collected on behalf of this liable party related to this liability.</inlineHelpText>
+    <label>Wage Amount Collected</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

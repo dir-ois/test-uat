@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Promised Amount Schedule --></label>
+    <name>Promised_Amount_Schedule__c</name>
+    <picklistValues>
+        <masterLabel>2 Weeks</masterLabel>
+        <translation><!-- 2 Weeks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day</masterLabel>
+        <translation><!-- Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Month</masterLabel>
+        <translation><!-- Month --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semi-Monthly</masterLabel>
+        <translation><!-- Semi-Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Week</masterLabel>
+        <translation><!-- Week --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

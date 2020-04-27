@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Attachment</masterLabel>
+        <translation><!-- Attachment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Update</masterLabel>
+        <translation><!-- Field Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task</masterLabel>
+        <translation><!-- Task --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

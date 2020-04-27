@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue Modification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issue Modifications</value>
+    </caseValues>
+    <layouts>
+        <layout>Issue Modification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Issue Modifications Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Issue modification for BOFE issue types --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- WCA Case issue modification --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Comment required when Modification Type is &quot;Other&quot;. --></errorMessage>
+        <name>Comment_required_for_Other_Mod_Type</name>
+    </validationRules>
+</CustomObjectTranslation>

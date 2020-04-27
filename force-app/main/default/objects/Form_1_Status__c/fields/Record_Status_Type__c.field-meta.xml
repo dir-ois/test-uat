@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Status_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   (  TEXT (Form1_Status_Type__c) = &quot;Canceled by Division&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Canceled by HR&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Request to Hire Submitted&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Release of Applications&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Interviews - Conducted&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Packet to HR - Part 1 Received&quot; 
+   || TEXT (Form1_Status_Type__c) = &quot;Packet to HR - Part 1 Under Review&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Packet to HR - Part 2 Received&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;Packet to HR - Part 2 Under Review&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;HR Final Packet - Analyst Approved&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;HR Final Packet - Manager Approved&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;HR Final Packet - Submitted to CalHR&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;CalHR - Approved&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;CalHR - Denied&quot;
+   || TEXT (Form1_Status_Type__c) = &quot;HR - Job Offer Clearance Notification&quot;)
+   ,
+   &quot;Tracked&quot;
+   ,
+   (
+     IF (
+           CONTAINS( TEXT(Form1_Status_Type__c), &quot;Hold&quot;)
+   ,
+   &quot;Hold-Tracked&quot;
+   ,
+   &quot;&quot;)
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Record Status Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

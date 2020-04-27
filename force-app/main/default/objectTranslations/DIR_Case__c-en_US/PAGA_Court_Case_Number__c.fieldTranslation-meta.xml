@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the court case number of the Private Attorney&apos;s civil case under the PAGA L.C. 2698. --></help>
+    <label><!-- PAGA Court Case Number --></label>
+    <name>PAGA_Court_Case_Number__c</name>
+</CustomFieldTranslation>

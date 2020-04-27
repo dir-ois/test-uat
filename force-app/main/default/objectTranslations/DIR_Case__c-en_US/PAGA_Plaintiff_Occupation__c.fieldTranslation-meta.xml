@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Occupation of PAGA Plaintiff --></help>
+    <label><!-- Plaintiff Occupation --></label>
+    <name>PAGA_Plaintiff_Occupation__c</name>
+</CustomFieldTranslation>

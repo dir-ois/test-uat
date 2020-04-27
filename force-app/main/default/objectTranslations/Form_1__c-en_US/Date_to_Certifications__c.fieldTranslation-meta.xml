@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Approved by Personnel --></help>
+    <label><!-- Date to Certifications --></label>
+    <name>Date_to_Certifications__c</name>
+</CustomFieldTranslation>

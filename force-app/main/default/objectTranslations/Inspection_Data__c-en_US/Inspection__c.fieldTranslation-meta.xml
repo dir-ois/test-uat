@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This establishes a Master-Detail relationship with the Inspection that this data is related to.  -Not Reparentable --></help>
+    <label><!-- Inspection --></label>
+    <name>Inspection__c</name>
+    <relationshipLabel><!-- Inspection Data --></relationshipLabel>
+</CustomFieldTranslation>

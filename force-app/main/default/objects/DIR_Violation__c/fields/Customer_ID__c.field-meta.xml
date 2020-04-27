@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_ID__c</fullName>
+    <description>Accounting ID signifying the associated case/account with each case issue</description>
+    <externalId>false</externalId>
+    <formula>IF(DATEVALUE(CreatedDate)&lt;=DATE(2018,6,30),&quot;CSTARDLSEROLLUP&quot;,IF(DATEVALUE(CreatedDate)&gt;=DATE(2018,7,1),&quot;FISCALDLSEACCT&quot;,(&quot;DLSE&quot;&amp;Substitute(Case__r.Name,&quot;CM-&quot;,&quot;&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

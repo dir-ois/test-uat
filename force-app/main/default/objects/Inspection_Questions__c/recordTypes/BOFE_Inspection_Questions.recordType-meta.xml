@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Inspection_Questions</fullName>
+    <active>true</active>
+    <description>Collection of fields defining the setup of BOFE inspection questions</description>
+    <label>BOFE Inspection Questions</label>
+    <picklistValues>
+        <picklist>Inspection_Section__c</picklist>
+        <values>
+            <fullName>Employer%2FPrinciple Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Header</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWC Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interviewee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Employer Detail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worker%27s Compensation Insurance Information</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inspection_Type__c</picklist>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Response_Type__c</picklist>
+        <values>
+            <fullName>Checkbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Picklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>BOFE General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm Labor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

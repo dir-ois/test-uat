@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>HR_700_Filer_Status_Alert_from_Ethics_to_HR</fullName>
+        <ccEmails>Form700@dir.ca.gov</ccEmails>
+        <description>HR 700 Filer Status Alert from Ethics to HR</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Analyst_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>humanresources@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/HR_700_Filer_Status_from_Ethics_to_HR</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Approved_F1_Alert_CG1</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR Approved F1 Alert CG1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Cert_Group_1</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form1_Final_Approval_Notice_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Approved_F1_Alert_CG2</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR Approved F1 Alert CG2</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Cert_Group_2</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form1_Final_Approval_Notice_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Approved_F1_Alert_CG3</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR Approved F1 Alert CG3</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Cert_Group_3</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form1_Final_Approval_Notice_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Approved_F1_Alert_CG4</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR Approved F1 Alert CG4</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Cert_Group_4</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form1_Final_Approval_Notice_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Approved_F1_Alert_CG5</fullName>
+        <ccEmails>ble@dir.ca.gov</ccEmails>
+        <description>HR Approved F1 Alert CG5</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Cert_Group_5</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form1_Final_Approval_Notice_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Form_1_Final_Approval_Notice_Alert</fullName>
+        <description>HR Form 1 Final Approval Notice Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>HR_FORM_1_ANALYSTS</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form1_Final_Approval_Notice_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Form_1_Reject_Alert</fullName>
+        <description>HR Form 1 Reject Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>HR_Cert_Unit</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>HR_FORM_1_ANALYSTS</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/HR_Form_1_Reject</template>
+    </alerts>
+    <alerts>
+        <fullName>HR_Send_Form_700_Filer_to_Director_Office</fullName>
+        <ccEmails>DIREthics@dir.ca.gov</ccEmails>
+        <ccEmails>Form700@dir.ca.gov</ccEmails>
+        <description>HR Send Form 700 Filer to Director Office</description>
+        <protected>false</protected>
+        <senderAddress>humanresources@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/HR_Send_Form_700_Filer_to_Directors_Offce</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Division_Reject</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected by Division</literalValue>
+        <name>Division Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Form_1_Status_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Form 1 Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Amended_Old_ID_Update_2</fullName>
+        <field>Canceled_Old_Form1_ID_2__c</field>
+        <formula>Id</formula>
+        <name>HR Amended Old ID Update 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Apprv_Status_Field_Update_Not_Submit</fullName>
+        <field>Status__c</field>
+        <literalValue>Not Submitted</literalValue>
+        <name>HR Apprv Status Field Update Not Submit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Form_1_Number_Update</fullName>
+        <field>Form_1_Unique_Number__c</field>
+        <formula>IF(!(ISBLANK(TEXT($User.Division__c)) ||  ISNULL(TEXT($User.Division__c))) , 
+&quot;P&quot; &amp; &quot;-&quot; &amp; Name &amp; &quot;-&quot;&amp; RIGHT(Fiscal_Year__c,2) &amp; &quot;-&quot;&amp; TEXT($User.Division__c), &quot;P&quot; &amp; &quot;-&quot; &amp; Name &amp; &quot;-&quot;&amp; RIGHT(Fiscal_Year__c,2))</formula>
+        <name>HR Form 1 Number Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HR_Manager_Reject</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected by HR Manager</literalValue>
+        <name>HR Manager Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pending_Analyst_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending Analyst Approval</literalValue>
+        <name>Pending Analyst Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pending_Division_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending Division Approval</literalValue>
+        <name>Pending Division Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Pending_Manager_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending Manager Approval</literalValue>
+        <name>Pending Manager Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_by_HR_Analyst</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected by HR Analyst</literalValue>
+        <name>Rejected by HR Analyst</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_by_HR_Manager</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected by HR Manager</literalValue>
+        <name>Rejected by HR Manager</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Date</fullName>
+        <description>Update Approval Date field Form 1</description>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SEC1_Working_HQ</fullName>
+        <field>SEC1_Working_Headquarters__c</field>
+        <formula>Unit__r.Location__c</formula>
+        <name>Update SEC1 Working HQ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Submission_Date</fullName>
+        <description>When Div manager approves F1, update field submission date</description>
+        <field>Requested_Effective_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Submission Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>HR Form 1 Approval Status Not Submitted</fullName>
+        <actions>
+            <name>HR_Apprv_Status_Field_Update_Not_Submit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Approval Status =  Not Submitted when Form 1 is created</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR Update Canceled Old F1 w New F1 ID</fullName>
+        <actions>
+            <name>HR_Amended_Old_ID_Update_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Status__c ) &amp;&amp;  TEXT(Status__c ) = &quot;Canceled Due to Amendment&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HR Update Form 1 Number</fullName>
+        <actions>
+            <name>HR_Form_1_Number_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updating field Unique Form 1 Number with auto-number and formula.</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send F1 approved email to Cert per division</fullName>
+        <active>false</active>
+        <description>Send F1 approved email to Cert per division</description>
+        <formula>ISCHANGED( Status__c ) &amp;&amp; text(Status__c) = &quot;Approved&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Working HQ from Units</fullName>
+        <actions>
+            <name>Update_SEC1_Working_HQ</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update  Working HQ location (SEC1 and SEC2) field with Units&#39; locations</description>
+        <formula>Unit__r.Location__c &lt;&gt; &quot;&quot; &amp;&amp; ( SEC1_Working_Headquarters__c = &quot;&quot; || SEC2_Working_Headquarters__c =&quot;&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

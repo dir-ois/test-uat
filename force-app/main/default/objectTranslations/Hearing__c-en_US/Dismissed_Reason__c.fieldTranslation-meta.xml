@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dismissed Reason --></label>
+    <name>Dismissed_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Claimant Did not appear</masterLabel>
+        <translation><!-- Claimant Did not appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full payment by Defendant</masterLabel>
+        <translation><!-- Full payment by Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Jurisdiction</masterLabel>
+        <translation><!-- Lack of Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Jurisdiction</masterLabel>
+        <translation><!-- No Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff failed to appear</masterLabel>
+        <translation><!-- Plaintiff failed to appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stipulated Settlement</masterLabel>
+        <translation><!-- Stipulated Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawal</masterLabel>
+        <translation><!-- Withdrawal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

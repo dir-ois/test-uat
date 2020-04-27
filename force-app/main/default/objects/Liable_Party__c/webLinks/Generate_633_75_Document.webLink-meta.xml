@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_633_75_Document</fullName>
+    <availability>online</availability>
+    <description>DK 6/13 - Legacy - Used to create ODA before denormalization.
+Button to be designed before conversion to JS Conductor button to handle the production of the 633 75 ODA template.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate 633 75 Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Liable_Party__c.Id}
+&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[Defendant]a0md00000064cjRAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[DefandJoint]a0md00000064cj8AAA?pv0={!Liable_Party__c.Case_ID__c},
+[Occupation]a0md00000064cjPAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[VioTable]a0md00000064cjSAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[Guarantor]a0md00000064cjNAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[Successor]a0md00000064cjLAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[WCAOffice]a0md00000064cjOAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[HearingInfo]a0md00000064cjuAAA?pv0={!Liable_Party__c.Case_ID__c},
+[CaseInfo]a0md00000064cjCAAQ?pv0={!Liable_Party__c.Case_ID__c},
+[EMP]a0md00000064cj2AAA?pv0={!Liable_Party__c.Case_ID__c}~pv1=&quot;Case employer&quot;,
+[GUAR]a0md00000064cj2AAA?pv0={!Liable_Party__c.Case_ID__c}~pv1=&quot;Guarantor&quot;,
+[ODATable]a0md00000064cjmAAA?pv0={!Liable_Party__c.Case_ID__c},
+[ODAClaimant]a0md00000064cj1AAA?pv0={!Liable_Party__c.Case_ID__c}~pv1=&quot;Claimant&quot;,
+[ODADefendant]a0md00000064cj1AAA?pv0={!Liable_Party__c.Case_ID__c}~pv1=&quot;Defendant&quot;,
+[CourtHO]a0md00000064cjMAAQ?pv0={!Liable_Party__c.Case_ID__c}
+&amp;TemplateGroup=WCALiableParty
+&amp;Templateid=a0nd0000005OStJ</url>
+</WebLink>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_required_for_adjustment</fullName>
+    <active>true</active>
+    <description>When depositing an adjustment, an amount is required</description>
+    <errorConditionFormula>ISPICKVAL ( Transaction_Type__c , &#39;Adjustment&#39; )
+&amp;&amp;
+Deposit_Total__c = 0
+&amp;&amp; 
+( !ISBLANK ( Treasury_Deposit_Number__c ) || ISPICKVAL ( Transaction_Status__c , &#39;Deposited&#39; ) )</errorConditionFormula>
+    <errorMessage>Please enter an amount to adjust the account by</errorMessage>
+</ValidationRule>

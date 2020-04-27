@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEC5 Approval --></label>
+    <name>SEC5_Approval__c</name>
+    <picklistValues>
+        <masterLabel>Approved as Requested</masterLabel>
+        <translation><!-- Approved as Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved as modified</masterLabel>
+        <translation><!-- Approved as modified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disapproved</masterLabel>
+        <translation><!-- Disapproved --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transmittal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The transmittal that this check is a part of. Set via batch apex that runs nightly to collect all payments generated since the last transmittal into a new transmittal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The transmittal this payment is a part of.</inlineHelpText>
+    <label>Transmittal</label>
+    <referenceTo>Transmittal__c</referenceTo>
+    <relationshipLabel>Case Payments</relationshipLabel>
+    <relationshipName>Case_Payments</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violations_Identified_at_Intake__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Intake Staff to add possible case violations. Deputy will create Violations during Investigation.</inlineHelpText>
+    <label>Violations Identified at Intake</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LC 96(k)</fullName>
+                <default>false</default>
+                <label>LC 96(k)</label>
+            </value>
+            <value>
+                <fullName>LC 98.6</fullName>
+                <default>false</default>
+                <label>LC 98.6</label>
+            </value>
+            <value>
+                <fullName>LC 230(a)</fullName>
+                <default>false</default>
+                <label>LC 230(a)</label>
+            </value>
+            <value>
+                <fullName>LC 230(b)</fullName>
+                <default>false</default>
+                <label>LC 230(b)</label>
+            </value>
+            <value>
+                <fullName>LC 230(c)</fullName>
+                <default>false</default>
+                <label>LC 230(c)</label>
+            </value>
+            <value>
+                <fullName>LC 230(e)</fullName>
+                <default>false</default>
+                <label>LC 230(e)</label>
+            </value>
+            <value>
+                <fullName>LC 230(f)</fullName>
+                <default>false</default>
+                <label>LC 230(f)</label>
+            </value>
+            <value>
+                <fullName>LC 230.1</fullName>
+                <default>false</default>
+                <label>LC 230.1</label>
+            </value>
+            <value>
+                <fullName>LC 230.2(b)</fullName>
+                <default>false</default>
+                <label>LC 230.2(b)</label>
+            </value>
+            <value>
+                <fullName>LC 230.3</fullName>
+                <default>false</default>
+                <label>LC 230.3</label>
+            </value>
+            <value>
+                <fullName>LC 230.4</fullName>
+                <default>false</default>
+                <label>LC 230.4</label>
+            </value>
+            <value>
+                <fullName>LC 230.5</fullName>
+                <default>false</default>
+                <label>LC 230.5</label>
+            </value>
+            <value>
+                <fullName>LC 230.7 and EdC 48900.1</fullName>
+                <default>false</default>
+                <label>LC 230.7 and EdC 48900.1</label>
+            </value>
+            <value>
+                <fullName>LC 230.8</fullName>
+                <default>false</default>
+                <label>LC 230.8</label>
+            </value>
+            <value>
+                <fullName>LC 232(a) and (b)</fullName>
+                <default>false</default>
+                <label>LC 232(a) and (b)</label>
+            </value>
+            <value>
+                <fullName>LC 232.5</fullName>
+                <default>false</default>
+                <label>LC 232.5</label>
+            </value>
+            <value>
+                <fullName>LC 233 and 234</fullName>
+                <default>false</default>
+                <label>LC 233 and 234</label>
+            </value>
+            <value>
+                <fullName>LC 244</fullName>
+                <default>false</default>
+                <label>LC 244</label>
+            </value>
+            <value>
+                <fullName>LC 245-249</fullName>
+                <default>false</default>
+                <label>LC 245-249</label>
+            </value>
+            <value>
+                <fullName>LC 432.3</fullName>
+                <default>false</default>
+                <label>LC 432.3</label>
+            </value>
+            <value>
+                <fullName>LC 432.7</fullName>
+                <default>false</default>
+                <label>LC 432.7</label>
+            </value>
+            <value>
+                <fullName>LC 432.8</fullName>
+                <default>false</default>
+                <label>LC 432.8</label>
+            </value>
+            <value>
+                <fullName>LC 752</fullName>
+                <default>false</default>
+                <label>LC 752</label>
+            </value>
+            <value>
+                <fullName>LC 1019</fullName>
+                <default>false</default>
+                <label>LC 1019</label>
+            </value>
+            <value>
+                <fullName>LC 1019.1</fullName>
+                <default>false</default>
+                <label>LC 1019.1</label>
+            </value>
+            <value>
+                <fullName>LC 1024.6</fullName>
+                <default>false</default>
+                <label>LC 1024.6</label>
+            </value>
+            <value>
+                <fullName>LC 1025-1028</fullName>
+                <default>false</default>
+                <label>LC 1025-1028</label>
+            </value>
+            <value>
+                <fullName>LC 1030-1033</fullName>
+                <default>false</default>
+                <label>LC 1030-1033</label>
+            </value>
+            <value>
+                <fullName>LC 1041-1044</fullName>
+                <default>false</default>
+                <label>LC 1041-1044</label>
+            </value>
+            <value>
+                <fullName>LC 1101</fullName>
+                <default>false</default>
+                <label>LC 1101</label>
+            </value>
+            <value>
+                <fullName>LC 1102</fullName>
+                <default>false</default>
+                <label>LC 1102</label>
+            </value>
+            <value>
+                <fullName>LC 1102.5</fullName>
+                <default>false</default>
+                <label>LC 1102.5</label>
+            </value>
+            <value>
+                <fullName>LC 1171</fullName>
+                <default>false</default>
+                <label>LC 1171</label>
+            </value>
+            <value>
+                <fullName>LC 1197.5</fullName>
+                <default>false</default>
+                <label>LC 1197.5</label>
+            </value>
+            <value>
+                <fullName>LC 1198.3</fullName>
+                <default>false</default>
+                <label>LC 1198.3</label>
+            </value>
+            <value>
+                <fullName>LC 1311.5</fullName>
+                <default>false</default>
+                <label>LC 1311.5</label>
+            </value>
+            <value>
+                <fullName>LC 1512</fullName>
+                <default>false</default>
+                <label>LC 1512</label>
+            </value>
+            <value>
+                <fullName>LC 2814</fullName>
+                <default>false</default>
+                <label>LC 2814</label>
+            </value>
+            <value>
+                <fullName>LC 2929(b) and (c)</fullName>
+                <default>false</default>
+                <label>LC 2929(b) and (c)</label>
+            </value>
+            <value>
+                <fullName>LC 2930</fullName>
+                <default>false</default>
+                <label>LC 2930</label>
+            </value>
+            <value>
+                <fullName>LC 6310</fullName>
+                <default>false</default>
+                <label>LC 6310</label>
+            </value>
+            <value>
+                <fullName>LC 6311</fullName>
+                <default>false</default>
+                <label>LC 6311</label>
+            </value>
+            <value>
+                <fullName>LC 6399.7</fullName>
+                <default>false</default>
+                <label>LC 6399.7</label>
+            </value>
+            <value>
+                <fullName>LC 6403.5</fullName>
+                <default>false</default>
+                <label>LC 6403.5</label>
+            </value>
+            <value>
+                <fullName>H&amp;S 1596.881 and 1596.882</fullName>
+                <default>false</default>
+                <label>H&amp;S 1596.881 and 1596.882</label>
+            </value>
+            <value>
+                <fullName>UI 1237</fullName>
+                <default>false</default>
+                <label>UI 1237</label>
+            </value>
+            <value>
+                <fullName>IWC Orders</fullName>
+                <default>false</default>
+                <label>IWC Orders</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

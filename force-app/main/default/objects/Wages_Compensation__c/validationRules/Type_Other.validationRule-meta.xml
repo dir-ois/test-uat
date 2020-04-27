@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Other</fullName>
+    <active>true</active>
+    <description>Only allow the Type - Other field to be populated when the Type = Other</description>
+    <errorConditionFormula>AND(TEXT( Type__c ) = &quot;Other&quot;, ISBLANK( Type_Other__c ))</errorConditionFormula>
+    <errorMessage>When selecting a Type = Other, you must enter the description into the Type - Other field.</errorMessage>
+</ValidationRule>

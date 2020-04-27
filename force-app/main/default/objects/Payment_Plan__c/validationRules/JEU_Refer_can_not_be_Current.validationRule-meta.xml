@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_Refer_can_not_be_Current</fullName>
+    <active>false</active>
+    <description>If you attempt to refer a case to JEU, the payment plan must not be current.</description>
+    <errorConditionFormula>ISPICKVAL(Payment_Plan_Status__c, &quot;Current&quot;) &amp;&amp; ISPICKVAL( Case__r.Refer_to_JEU__c, &quot;Referred&quot;)</errorConditionFormula>
+    <errorMessage>You can not refer a case to JEU when the payment plan is current.</errorMessage>
+</ValidationRule>

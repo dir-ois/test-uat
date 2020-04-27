@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_1_Applicant_can_fill_form</fullName>
+    <active>false</active>
+    <description>The Applicant should be filling out the form only once.</description>
+    <errorConditionFormula>(numberOfApplicantManagers__c + numberOfApplicantOwners__c) &gt; 1</errorConditionFormula>
+    <errorDisplayField>accAlreadyCreated__c</errorDisplayField>
+    <errorMessage>Please fill out the information for yourself only once.</errorMessage>
+</ValidationRule>

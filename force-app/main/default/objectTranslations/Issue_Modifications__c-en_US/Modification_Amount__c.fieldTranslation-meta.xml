@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the amount to which you want set this issue&apos;s assessed amount to --></help>
+    <label><!-- Modified Assessed Amount --></label>
+    <name>Modification_Amount__c</name>
+</CustomFieldTranslation>

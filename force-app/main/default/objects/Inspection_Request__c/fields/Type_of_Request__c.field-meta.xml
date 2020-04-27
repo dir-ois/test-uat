@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Request__c</fullName>
+    <description>Select the type of request being made. Make sure to attach all supporting materials</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of request being made. Make sure to attach all supporting materials</inlineHelpText>
+    <label>Type of Request</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inspection - Garment Home Inspection</fullName>
+                <default>false</default>
+                <label>Inspection - Garment Home Inspection</label>
+            </value>
+            <value>
+                <fullName>Inspection - Car Wash</fullName>
+                <default>false</default>
+                <label>Inspection - Car Wash</label>
+            </value>
+            <value>
+                <fullName>Inspection - Sheltered Workshop</fullName>
+                <default>false</default>
+                <label>Inspection - Sheltered Workshop</label>
+            </value>
+            <value>
+                <fullName>Inspection - Sub‐Minimum Wage</fullName>
+                <default>false</default>
+                <label>Inspection - Sub‐Minimum Wage</label>
+            </value>
+            <value>
+                <fullName>Inspection - Industrial Homework</fullName>
+                <default>false</default>
+                <label>Inspection - Industrial Homework</label>
+            </value>
+            <value>
+                <fullName>Inspection - IWC Exemption Request</fullName>
+                <default>false</default>
+                <label>Inspection - IWC Exemption Request</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

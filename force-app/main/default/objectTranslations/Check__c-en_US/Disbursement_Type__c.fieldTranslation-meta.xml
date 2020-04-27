@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Disbursement Type --></label>
+    <name>Disbursement_Type__c</name>
+    <picklistValues>
+        <masterLabel>Apprenticeship</masterLabel>
+        <translation><!-- Apprenticeship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attorney Fees</masterLabel>
+        <translation><!-- Attorney Fees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buyback</masterLabel>
+        <translation><!-- Buyback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAC Payment</masterLabel>
+        <translation><!-- CAC Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certified Payroll Fee (CPR)</masterLabel>
+        <translation><!-- Certified Payroll Fee (CPR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conceded</masterLabel>
+        <translation><!-- Conceded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Costs</masterLabel>
+        <translation><!-- Court Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant</masterLabel>
+        <translation><!-- Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDD Payment</masterLabel>
+        <translation><!-- EDD Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IRS</masterLabel>
+        <translation><!-- IRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest</masterLabel>
+        <translation><!-- Interest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levy</masterLabel>
+        <translation><!-- Levy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over payment</masterLabel>
+        <translation><!-- Over payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalty Fee</masterLabel>
+        <translation><!-- Penalty Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photo Copy Fee</masterLabel>
+        <translation><!-- Photo Copy Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff</masterLabel>
+        <translation><!-- Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redemption of Check (NSF)</masterLabel>
+        <translation><!-- Redemption of Check (NSF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund</masterLabel>
+        <translation><!-- Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund Certified Payroll Fee (CPR)</masterLabel>
+        <translation><!-- Refund Certified Payroll Fee (CPR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund Garment Registration</masterLabel>
+        <translation><!-- Refund Garment Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return Taxes</masterLabel>
+        <translation><!-- Return Taxes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return to Defendant</masterLabel>
+        <translation><!-- Return to Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena Cost Recovery</masterLabel>
+        <translation><!-- Subpoena Cost Recovery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Lien</masterLabel>
+        <translation><!-- Tax Lien --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To Assignee</masterLabel>
+        <translation><!-- To Assignee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training Fund</masterLabel>
+        <translation><!-- Training Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid Wage Fund</masterLabel>
+        <translation><!-- Unpaid Wage Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness Fees</masterLabel>
+        <translation><!-- Witness Fees --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

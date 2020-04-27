@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>One_or_more_2699_5_curable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Includes one or more violations not listed in Labor Code 2699.5 - curable subject to 2699.3(b)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Includes one or more violations not listed in Labor Code 2699.5 - curable subject to 2699.3(b)</inlineHelpText>
+    <label>One or more 2699.5 curable</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

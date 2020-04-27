@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FEIN_must_be_9_numbers</fullName>
+    <active>true</active>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( Federal_Employer_Identification_Number__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+!ISBLANK(Federal_Employer_Identification_Number__c )
+&amp;&amp;
+(
+!ISNUMBER( Federal_Employer_Identification_Number__c ) 
+|| LEN (Federal_Employer_Identification_Number__c ) &lt;&gt; 9
+)</errorConditionFormula>
+    <errorMessage>FEIN must be 9 numbers. Please correct to continue.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_SSN_or_ITIN_Required_w_9_characters</fullName>
+    <active>false</active>
+    <description>Used in the PW Registration Form</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;Sole Proprietorship&quot;,
+Registration__r.Record_Type_Name__c = &quot;Public_Works&quot;,
+LEN(SSN__c) = 0,
+LEN( ITIN__c) = 0
+)
+||
+AND( 
+RecordType.Name = &quot;Sole Proprietorship&quot;, 
+Registration__r.Record_Type_Name__c = &quot;Public_Works&quot;, 
+LEN( SSN__c ) &lt;&gt; 9, 
+LEN(ITIN__c) &lt;&gt;9)
+||
+AND( 
+RecordType.Name = &quot;Sole Proprietorship&quot;, 
+Registration__r.Record_Type_Name__c = &quot;Public_Works&quot;, 
+NOT(ISNUMBER( SSN__c )), 
+LEN(SSN__c) &lt;&gt;0) 
+|| 
+AND( 
+RecordType.Name = &quot;Sole Proprietorship&quot;, 
+Registration__r.Record_Type_Name__c = &quot;Public_Works&quot;, 
+NOT(ISNUMBER( ITIN__c )), 
+LEN(ITIN__c ) &lt;&gt; 0 
+)</errorConditionFormula>
+    <errorMessage>An SSN or ITIN is required. It must only contain 9 alphanumeric characters.</errorMessage>
+</ValidationRule>

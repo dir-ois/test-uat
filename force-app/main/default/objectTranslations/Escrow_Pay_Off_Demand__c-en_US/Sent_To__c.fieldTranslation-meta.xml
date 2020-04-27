@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Escrow officer or Trustee or other person that demand was directed to --></help>
+    <label><!-- Sent To --></label>
+    <name>Sent_To__c</name>
+    <relationshipLabel><!-- Escrow/Pay-Off Demands (Sent To) --></relationshipLabel>
+</CustomFieldTranslation>

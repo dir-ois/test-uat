@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the position the employee holds --></help>
+    <label><!-- Position --></label>
+    <name>Position__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation><!-- Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIU</masterLabel>
+        <translation><!-- CIU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashiering</masterLabel>
+        <translation><!-- Cashiering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clerk</masterLabel>
+        <translation><!-- Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy</masterLabel>
+        <translation><!-- Deputy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Officer</masterLabel>
+        <translation><!-- Hearing Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registration Services</masterLabel>
+        <translation><!-- Registration Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Deputy</masterLabel>
+        <translation><!-- Senior Deputy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

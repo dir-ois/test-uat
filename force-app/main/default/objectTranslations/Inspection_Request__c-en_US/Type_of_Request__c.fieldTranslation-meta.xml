@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of request being made. Make sure to attach all supporting materials --></help>
+    <label><!-- Type of Request --></label>
+    <name>Type_of_Request__c</name>
+    <picklistValues>
+        <masterLabel>Inspection - Car Wash</masterLabel>
+        <translation><!-- Inspection - Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection - Garment Home Inspection</masterLabel>
+        <translation><!-- Inspection - Garment Home Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection - IWC Exemption Request</masterLabel>
+        <translation><!-- Inspection - IWC Exemption Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection - Industrial Homework</masterLabel>
+        <translation><!-- Inspection - Industrial Homework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection - Sheltered Workshop</masterLabel>
+        <translation><!-- Inspection - Sheltered Workshop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection - Sub‐Minimum Wage</masterLabel>
+        <translation><!-- Inspection - Sub‐Minimum Wage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

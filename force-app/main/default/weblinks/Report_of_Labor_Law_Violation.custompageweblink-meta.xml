@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <description>Brings the user to the Report of Labor Law Violation Flow</description>
+    <displayType>link</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Report of Labor Law Violation</masterLabel>
+    <openType>sidebar</openType>
+    <page>RLLVInternal</page>
+    <protected>false</protected>
+</CustomPageWebLink>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Cases_Assigned_to_My_Staff</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Date_Assigned__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Claimant__c</columns>
+    <columns>Office__c</columns>
+    <columns>County__c</columns>
+    <columns>Address_Primary_Street__c</columns>
+    <columns>Address_Primary_City__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_am_assigned_deputy_s_senior__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Record_Type_Name__c</field>
+        <operation>equals</operation>
+        <value>RCI</value>
+    </filters>
+    <label>RCI Cases Assigned to My Staff</label>
+    <sharedTo>
+        <group>RCI_Senior</group>
+    </sharedTo>
+</ListView>

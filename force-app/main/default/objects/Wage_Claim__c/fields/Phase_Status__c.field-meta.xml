@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Phase Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Phase__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WCA 2</fullName>
+                <default>false</default>
+                <label>WCA 2</label>
+            </value>
+            <value>
+                <fullName>WCA 2 Sent</fullName>
+                <default>false</default>
+                <label>WCA 2 Sent</label>
+            </value>
+            <value>
+                <fullName>Assigned to Deputy</fullName>
+                <default>false</default>
+                <label>Assigned to Deputy</label>
+            </value>
+            <value>
+                <fullName>Clarification Requested</fullName>
+                <default>false</default>
+                <label>Clarification Requested</label>
+            </value>
+            <value>
+                <fullName>Clarification Requested 2</fullName>
+                <default>false</default>
+                <label>Clarification Requested 2</label>
+            </value>
+            <value>
+                <fullName>Clarification Received</fullName>
+                <default>false</default>
+                <label>Clarification Received</label>
+            </value>
+            <value>
+                <fullName>WCA 13 Sent</fullName>
+                <default>false</default>
+                <label>WCA 13 Sent</label>
+            </value>
+            <value>
+                <fullName>Awaiting response from Plaintiff</fullName>
+                <default>false</default>
+                <label>Awaiting response from Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Scheduled for conference</fullName>
+                <default>false</default>
+                <label>Scheduled for conference</label>
+            </value>
+            <value>
+                <fullName>Notice to Plaintiff returned by USPS</fullName>
+                <default>false</default>
+                <label>Notice to Plaintiff returned by USPS</label>
+            </value>
+            <value>
+                <fullName>Address Correction requested</fullName>
+                <default>false</default>
+                <label>Address Correction requested</label>
+            </value>
+            <value>
+                <fullName>Address Correction requested 2</fullName>
+                <default>false</default>
+                <label>Address Correction requested 2</label>
+            </value>
+            <value>
+                <fullName>Address Correction Received</fullName>
+                <default>false</default>
+                <label>Address Correction Received</label>
+            </value>
+            <value>
+                <fullName>Conference continuance requested</fullName>
+                <default>false</default>
+                <label>Conference continuance requested</label>
+            </value>
+            <value>
+                <fullName>Conference Rescheduled</fullName>
+                <default>false</default>
+                <label>Conference Rescheduled</label>
+            </value>
+            <value>
+                <fullName>Continuance Request denied</fullName>
+                <default>false</default>
+                <label>Continuance Request denied</label>
+            </value>
+            <value>
+                <fullName>Release Sent to Plaintiff</fullName>
+                <default>false</default>
+                <label>Release Sent to Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Pre Berman Packet Sent</fullName>
+                <default>false</default>
+                <label>Pre Berman Packet Sent</label>
+            </value>
+            <value>
+                <fullName>Signed Complaint Form received</fullName>
+                <default>false</default>
+                <label>Signed Complaint Form received</label>
+            </value>
+            <value>
+                <fullName>Case refered to hearing</fullName>
+                <default>false</default>
+                <label>Case refered to hearing</label>
+            </value>
+            <value>
+                <fullName>Transmittal approved by Senior Deputy</fullName>
+                <default>false</default>
+                <label>Transmittal approved by Senior Deputy</label>
+            </value>
+            <value>
+                <fullName>Awaiting appeal period</fullName>
+                <default>false</default>
+                <label>Awaiting appeal period</label>
+            </value>
+            <value>
+                <fullName>Hearing Scheduled</fullName>
+                <default>false</default>
+                <label>Hearing Scheduled</label>
+            </value>
+            <value>
+                <fullName>Notice of Hearing to Plaintiff returned</fullName>
+                <default>false</default>
+                <label>Notice of Hearing to Plaintiff returned</label>
+            </value>
+            <value>
+                <fullName>Continuance request received</fullName>
+                <default>false</default>
+                <label>Continuance request received</label>
+            </value>
+            <value>
+                <fullName>Hearing Continuance request denied</fullName>
+                <default>false</default>
+                <label>Hearing Continuance request denied</label>
+            </value>
+            <value>
+                <fullName>Amended Complaint sent to Plaintiff</fullName>
+                <default>false</default>
+                <label>Amended Complaint sent to Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Hearing rescheduled</fullName>
+                <default>false</default>
+                <label>Hearing rescheduled</label>
+            </value>
+            <value>
+                <fullName>Response received from Plaintiff</fullName>
+                <default>false</default>
+                <label>Response received from Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Date of Hearing</fullName>
+                <default>false</default>
+                <label>Date of Hearing</label>
+            </value>
+            <value>
+                <fullName>ODA Notice Returned-PLT</fullName>
+                <default>false</default>
+                <label>ODA Notice Returned-PLT</label>
+            </value>
+            <value>
+                <fullName>Request of Representation Mailed</fullName>
+                <default>false</default>
+                <label>Request of Representation Mailed</label>
+            </value>
+            <value>
+                <fullName>Request for representation received</fullName>
+                <default>false</default>
+                <label>Request for representation received</label>
+            </value>
+            <value>
+                <fullName>Assignment Sent</fullName>
+                <default>false</default>
+                <label>Assignment Sent</label>
+            </value>
+            <value>
+                <fullName>Assignment Received</fullName>
+                <default>false</default>
+                <label>Assignment Received</label>
+            </value>
+            <value>
+                <fullName>Citation Hearing Referral Received</fullName>
+                <default>false</default>
+                <label>Citation Hearing Referral Received</label>
+            </value>
+            <value>
+                <fullName>Schedule Citation Hearing</fullName>
+                <default>false</default>
+                <label>Schedule Citation Hearing</label>
+            </value>
+            <value>
+                <fullName>Returned mail to BOFE</fullName>
+                <default>false</default>
+                <label>Returned mail to BOFE</label>
+            </value>
+            <value>
+                <fullName>Findings - All Others</fullName>
+                <default>false</default>
+                <label>Findings - All Others</label>
+            </value>
+            <value>
+                <fullName>Findings - Stop Order</fullName>
+                <default>false</default>
+                <label>Findings - Stop Order</label>
+            </value>
+            <value>
+                <fullName>Forward to BOFE</fullName>
+                <default>false</default>
+                <label>Forward to BOFE</label>
+            </value>
+            <value>
+                <fullName>Invoice to HQ</fullName>
+                <default>false</default>
+                <label>Invoice to HQ</label>
+            </value>
+            <value>
+                <fullName>Forwarded to HQ</fullName>
+                <default>false</default>
+                <label>Forwarded to HQ</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Docket</controllingFieldValue>
+            <valueName>WCA 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Docket</controllingFieldValue>
+            <valueName>WCA 2 Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Docket</controllingFieldValue>
+            <valueName>Assigned to Deputy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Clarification Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Clarification Requested 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Clarification Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>WCA 13 Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Awaiting response from Plaintiff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Scheduled for conference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Notice to Plaintiff returned by USPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Address Correction requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Address Correction requested 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Address Correction Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Conference continuance requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Conference Rescheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Continuance Request denied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <valueName>Release Sent to Plaintiff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Conference</controllingFieldValue>
+            <controllingFieldValue>Conference</controllingFieldValue>
+            <valueName>Pre Berman Packet Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conference</controllingFieldValue>
+            <valueName>Signed Complaint Form received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conference</controllingFieldValue>
+            <valueName>Case refered to hearing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Conference</controllingFieldValue>
+            <valueName>Transmittal approved by Senior Deputy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post Hearing</controllingFieldValue>
+            <valueName>Awaiting appeal period</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post Hearing</controllingFieldValue>
+            <valueName>Assignment Sent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post Hearing</controllingFieldValue>
+            <valueName>Assignment Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Hearing Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Notice of Hearing to Plaintiff returned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Continuance request received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Hearing Continuance request denied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Amended Complaint sent to Plaintiff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Hearing rescheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-hearing</controllingFieldValue>
+            <valueName>Response received from Plaintiff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hearing</controllingFieldValue>
+            <valueName>Date of Hearing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hearing</controllingFieldValue>
+            <valueName>ODA Notice Returned-PLT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hearing</controllingFieldValue>
+            <valueName>Request of Representation Mailed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hearing</controllingFieldValue>
+            <valueName>Request for representation received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Citation Appeal</controllingFieldValue>
+            <valueName>Citation Hearing Referral Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Citation Appeal</controllingFieldValue>
+            <valueName>Schedule Citation Hearing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Citation Appeal</controllingFieldValue>
+            <valueName>Returned mail to BOFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Citation Appeal</controllingFieldValue>
+            <valueName>Findings - All Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Citation Appeal</controllingFieldValue>
+            <valueName>Findings - Stop Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Citation Appeal</controllingFieldValue>
+            <valueName>Forward to BOFE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HQ</controllingFieldValue>
+            <valueName>Invoice to HQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HQ</controllingFieldValue>
+            <valueName>Forwarded to HQ</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

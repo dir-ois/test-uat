@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Account Request Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Change Request</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Duplicate Request --></label>
+            <section>Duplicate Request</section>
+        </sections>
+        <sections>
+            <label><!-- Impact Analysis and Recommendations --></label>
+            <section>Impact Analysis and Recommendations</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Release Activities and Progress --></label>
+            <section>Release Activities and Progress</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Information --></label>
+            <section>Resolution Information</section>
+        </sections>
+        <sections>
+            <label><!-- Situation to be Addressed --></label>
+            <section>Situation to be Addressed</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Salesforce Support Team</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description and Steps to Reproduce --></label>
+            <section>Description and Steps to Reproduce</section>
+        </sections>
+        <sections>
+            <label><!-- Division Liaison Information --></label>
+            <section>Division Liaison Information</section>
+        </sections>
+        <sections>
+            <label><!-- Duplicate Request --></label>
+            <section>Duplicate Request</section>
+        </sections>
+        <sections>
+            <label><!-- Project Information --></label>
+            <section>Project Information</section>
+        </sections>
+        <sections>
+            <label><!-- Release Activities and Progress --></label>
+            <section>Release Activities and Progress</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Information --></label>
+            <section>Resolution Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Support Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description and Steps to Reproduce --></label>
+            <section>Description and Steps to Reproduce</section>
+        </sections>
+        <sections>
+            <label><!-- Division Liaison Information --></label>
+            <section>Division Liaison Information</section>
+        </sections>
+        <sections>
+            <label><!-- Duplicate Request --></label>
+            <section>Duplicate Request</section>
+        </sections>
+        <sections>
+            <label><!-- Release Activities and Progress --></label>
+            <section>Release Activities and Progress</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Change Request --></label>
+        <name>Change_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sub-Project --></label>
+        <name>Sub_Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support Request --></label>
+        <name>Support_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- User Account Request --></label>
+        <name>User_Account_Request</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must put a value into Assign To field --></errorMessage>
+        <name>Assigned_To_Cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Support Request must be assigned before closing --></errorMessage>
+        <name>CBT_Assigned_To_Cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Resolution field --></errorMessage>
+        <name>CBT_Resolution_Cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Type --></errorMessage>
+        <name>CBT_Type_Cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select the queue --></errorMessage>
+        <name>CalAtlas_Business_Team_Must_Select_Queue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Support Request cannot be closed without adding it to a Release --></errorMessage>
+        <name>Closing_Support_Request_Without_a_Releas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the resolution information before you close the Support Request --></errorMessage>
+        <name>Closure_Cannot_Be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the Resolution before closing --></errorMessage>
+        <name>Data_Fix_must_have_Support_Request_Note</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select the Division Name --></errorMessage>
+        <name>Division_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete &quot;Estimated Hours Spent&quot; before closing this SR --></errorMessage>
+        <name>Hour_Spend_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are trying to link the Support Request to a completed Release --></errorMessage>
+        <name>Linking_to_the_Wrong_Release</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must link it to the parent Support Request --></errorMessage>
+        <name>Mark_as_Duplicate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to reverse the &quot;Mark As Duplicate&quot;, you must delete the support parent support request and change the status back to the previous e value. --></errorMessage>
+        <name>Mark_as_Duplicate_Reversed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only a System Administrator Can Change the Status to the value you selected --></errorMessage>
+        <name>Only_Tech_Support_Team_Can_Close_this_SR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the reason for Cancellation --></errorMessage>
+        <name>Reason_for_Cancellation_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide the reason for rejecting this SR. --></errorMessage>
+        <name>Reason_for_Rejection_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When changing the status to &quot;Confirmed&quot; or &quot;In Development&quot;, the &quot;Assigned To&quot; and &quot;Type&quot; cannot be blank. --></errorMessage>
+        <name>Status_to_Confirmed_or_In_Development</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a type --></errorMessage>
+        <name>Type_Cannot_be_blank</name>
+    </validationRules>
+</CustomObjectTranslation>

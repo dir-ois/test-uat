@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Senior_Request_Dismissal</fullName>
+        <description>Email Senior - Request Dismissal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Senior_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Request_Dismissal_on_Liability</template>
+    </alerts>
+    <alerts>
+        <fullName>Generate_Demand_Letter_to_Collect</fullName>
+        <description>Generate Demand Letter to Collect</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Generate_Demand_Letter_to_Colllect</template>
+    </alerts>
+    <alerts>
+        <fullName>Liability_30_Days_Past_Appeal_Deadline</fullName>
+        <description>Liability: 30 Days Past Appeal Deadline</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X30_Days_Past_Appeal_Deadline</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_Dismissal_on</fullName>
+        <description>Request Dismissal on Liability email sent to senior deputies.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>BOFE_Senior_Deputies</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Request_Dismissal_on_Liability</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Liability_Refer_to_JEU</fullName>
+        <description>Refer to JEU field status update on Liability object</description>
+        <field>Refer_to_JEU__c</field>
+        <literalValue>Referred</literalValue>
+        <name>Liability - Refer to JEU</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Liability_Refer_to_JEU_Date</fullName>
+        <description>Log date of referral</description>
+        <field>Refer_to_JEU_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Liability - Refer to JEU Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Liability_Status_New</fullName>
+        <description>Sets the Liablity__c.Status__c field to &quot;New&quot; and re-evaluates workflow rules after field change.</description>
+        <field>Status__c</field>
+        <literalValue>New</literalValue>
+        <name>Liability: Status - New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Liability_status_under_appeal</fullName>
+        <description>Sets liability status to under appeal. Used when count of open appeals is &gt; 0 as calculated by &quot;Open Appeals&quot; rollup summary field.</description>
+        <field>Status__c</field>
+        <literalValue>Under Appeal</literalValue>
+        <name>Liability status under appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_by_senior</fullName>
+        <description>The referral was rejected by the Senior</description>
+        <field>Refer_to_JEU__c</field>
+        <literalValue>Rejected-Sr</literalValue>
+        <name>Rejected by senior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Appeal_Deadline_date</fullName>
+        <description>Sets the appeal deadline on the liability using the appeal deadline days from the assessment</description>
+        <field>Appeal_Deadline__c</field>
+        <formula>today() +   Appeal_Timeframe__c</formula>
+        <name>Set Appeal Deadline date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Senior_Email</fullName>
+        <description>Sets the senior&#39;s email address for use in the email notification that follows.</description>
+        <field>Senior_Email__c</field>
+        <formula>Case_Management__r.Assigned_Deputy__r.Manager__r.Email__c</formula>
+        <name>Set Senior Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Assigned_Deputy_Email</fullName>
+        <description>Update Assigned Duputy Email from Case: for wf rule &quot;30 Days Past Appeal Deadline&quot;</description>
+        <field>Assigned_Deputy_Email__c</field>
+        <name>Update Assigned Deputy Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Assigned_Deputy_Email_from_CM</fullName>
+        <description>for WF rule &quot;30 Days Past Appeal Deadline&quot;</description>
+        <field>Assigned_Deputy_Email__c</field>
+        <formula>Test__c</formula>
+        <name>Update Assigned Deputy Email from CM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Industry</fullName>
+        <field>Industry__c</field>
+        <formula>Assessment__r.Industry__c</formula>
+        <name>Update Industry</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>submitted_for_referral</fullName>
+        <description>Submitted by deputy for approval by senior</description>
+        <field>Refer_to_JEU__c</field>
+        <literalValue>Pending Approval</literalValue>
+        <name>submitted for referral</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Copy Assigned Deputy Email from CM to Liability</fullName>
+        <actions>
+            <name>Update_Assigned_Deputy_Email_from_CM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liability__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>For WF rule &quot;30 Days Past Appeal Deadline&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deputy Requests Dismissal on Liability</fullName>
+        <actions>
+            <name>Set_Senior_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liability__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Request Dismissal</value>
+        </criteriaItems>
+        <description>When a liability is set to &quot;Request Dismissal&quot;, this workflow sends an email to the senior deputy group for review and action.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Email_Senior_Request_Dismissal</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Liability%3A Appeal Deadline Passed</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Liability__c.Appeal_Deadline__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Appeal Deadline has been set, and has been passed.  Notify BOFE Cashiering to generate the Demand Letter to Collect.</description>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Liability__c.Appeal_Deadline__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Liability%3A Follow Up After 30 Appeal Deadline</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liability__c.Open_Appeals__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Liability__c.Appeal_Deadline__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Liability__c.Imported_From__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>30 Days after the Appeal Deadline, notify the case owner to follow up to receive payment for the liability.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Liability_30_Days_Past_Appeal_Deadline</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Liability__c.Appeal_Deadline__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Liability%3A Follow Up After 30 Day</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Liability__c.Appeals_on_Liability__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>30 Days after the Appeal Deadline, notify the case owner to follow up to receive payment for the liability.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Liability- Generate Demand Letter to Collect</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liability__c.Appeal_Deadline__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Liability__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Paid Off,Administrative Dismissal,Under Appeal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Liability__c.Imported_From__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Liability__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE</value>
+        </criteriaItems>
+        <description>Informs the Deputy assigned to the Case that they must generate a demand letter to collect if the liability has not been appealed or paid off within the appeal deadline.</description>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Generate_Demand_Letter_to_Collect</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Liability__c.Appeal_Deadline__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Liablity%3A On Create New Status</fullName>
+        <actions>
+            <name>Liability_Status_New</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liability__c.Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Sets the Status to &quot;New&quot; on the creation of a Liability if some other value is not set.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Sr Email</fullName>
+        <active>true</active>
+        <description>Sets the senior deputy&#39;s email address when the liability is changed.</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set under appeal</fullName>
+        <actions>
+            <name>Liability_status_under_appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sets the liability status when appeals are opened</description>
+        <formula>Open_Appeals__c &gt; 0</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Industry from Assessment</fullName>
+        <actions>
+            <name>Update_Industry</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liability__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Liability,BOFE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Liability__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This workflow rule update the Industry value from Assessment to Liability</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

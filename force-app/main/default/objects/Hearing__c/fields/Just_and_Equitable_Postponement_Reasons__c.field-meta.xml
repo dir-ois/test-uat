@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Just_and_Equitable_Postponement_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Just and Equitable Postponement Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inability to determine legal entity</fullName>
+                <default>false</default>
+                <label>Inability to determine legal entity</label>
+            </value>
+            <value>
+                <fullName>Delay in the return of the Complaint</fullName>
+                <default>false</default>
+                <label>Delay in the return of the Complaint</label>
+            </value>
+            <value>
+                <fullName>Delay due to Plaintiff perfecting complaint</fullName>
+                <default>false</default>
+                <label>Delay due to Plaintiff perfecting complaint</label>
+            </value>
+            <value>
+                <fullName>Lengthy Audit needed</fullName>
+                <default>false</default>
+                <label>Lengthy Audit needed</label>
+            </value>
+            <value>
+                <fullName>Correction(s) to Complaint needed</fullName>
+                <default>false</default>
+                <label>Correction(s) to Complaint needed</label>
+            </value>
+            <value>
+                <fullName>Plaintiff amended complaint</fullName>
+                <default>false</default>
+                <label>Plaintiff amended complaint</label>
+            </value>
+            <value>
+                <fullName>Incomplete evidence/exhibits</fullName>
+                <default>false</default>
+                <label>Incomplete evidence/exhibits</label>
+            </value>
+            <value>
+                <fullName>Defendant’s delayed response</fullName>
+                <default>false</default>
+                <label>Defendant’s delayed response</label>
+            </value>
+            <value>
+                <fullName>Defendant failure to respond</fullName>
+                <default>false</default>
+                <label>Defendant failure to respond</label>
+            </value>
+            <value>
+                <fullName>Parties attempted settlement</fullName>
+                <default>false</default>
+                <label>Parties attempted settlement</label>
+            </value>
+            <value>
+                <fullName>Unreported address change</fullName>
+                <default>false</default>
+                <label>Unreported address change</label>
+            </value>
+            <value>
+                <fullName>Legal referral response time</fullName>
+                <default>false</default>
+                <label>Legal referral response time</label>
+            </value>
+            <value>
+                <fullName>Continuance request</fullName>
+                <default>false</default>
+                <label>Continuance request</label>
+            </value>
+            <value>
+                <fullName>Incorrect party named</fullName>
+                <default>false</default>
+                <label>Incorrect party named</label>
+            </value>
+            <value>
+                <fullName>Illness of one of the parties</fullName>
+                <default>false</default>
+                <label>Illness of one of the parties</label>
+            </value>
+            <value>
+                <fullName>Out of state employer</fullName>
+                <default>false</default>
+                <label>Out of state employer</label>
+            </value>
+            <value>
+                <fullName>Out of state Plaintiff</fullName>
+                <default>false</default>
+                <label>Out of state Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Plaintiff out of the country</fullName>
+                <default>false</default>
+                <label>Plaintiff out of the country</label>
+            </value>
+            <value>
+                <fullName>Defendant out of the country</fullName>
+                <default>false</default>
+                <label>Defendant out of the country</label>
+            </value>
+            <value>
+                <fullName>Related litigation</fullName>
+                <default>false</default>
+                <label>Related litigation</label>
+            </value>
+            <value>
+                <fullName>Delay for resolution of secondary civil case</fullName>
+                <default>false</default>
+                <label>Delay for resolution of secondary civil case</label>
+            </value>
+            <value>
+                <fullName>Potential bankruptcy filing</fullName>
+                <default>false</default>
+                <label>Potential bankruptcy filing</label>
+            </value>
+            <value>
+                <fullName>Unable to obtain service</fullName>
+                <default>false</default>
+                <label>Unable to obtain service</label>
+            </value>
+            <value>
+                <fullName>Translation of documents needed</fullName>
+                <default>false</default>
+                <label>Translation of documents needed</label>
+            </value>
+            <value>
+                <fullName>Criminal charges pending</fullName>
+                <default>false</default>
+                <label>Criminal charges pending</label>
+            </value>
+            <value>
+                <fullName>Commissions not due at the time the claim was filed</fullName>
+                <default>false</default>
+                <label>Commissions not due at the time the claim was filed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

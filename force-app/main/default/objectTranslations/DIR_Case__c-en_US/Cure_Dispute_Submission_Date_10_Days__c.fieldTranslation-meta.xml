@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cure Dispute Submission Date + 17 Days --></label>
+    <name>Cure_Dispute_Submission_Date_10_Days__c</name>
+</CustomFieldTranslation>

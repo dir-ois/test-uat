@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>BOFE Oakland</name>
+    <queueMembers>
+        <users>
+            <user>cschmeding@dir.ca.gov</user>
+            <user>snord@dir.ca.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>DIR_Case__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Office__c</sobjectType>
+    </queueSobject>
+</Queue>

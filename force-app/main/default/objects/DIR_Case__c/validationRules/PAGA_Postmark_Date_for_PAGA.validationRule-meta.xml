@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Postmark_Date_for_PAGA</fullName>
+    <active>true</active>
+    <description>Mark Janatpour required the PAGA Postmark Date to be provided when the Case Source = LC 2699.</description>
+    <errorConditionFormula>IF(ISBLANK( PAGA_Postmark_Date__c )&amp;&amp;ISPICKVAL( Case_Source__c , &quot;LC 2699&quot;),TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>PAGA_Postmark_Date__c</errorDisplayField>
+    <errorMessage>If Case Source is LC 2699 (PAGA) then the PAGA Postmark Date is required.</errorMessage>
+</ValidationRule>

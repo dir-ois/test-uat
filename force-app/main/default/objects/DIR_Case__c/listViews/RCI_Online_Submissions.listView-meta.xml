@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Online_Submissions</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND ((5 AND 6 AND 7) OR 8)</booleanFilter>
+    <columns>File_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Intake_Deputy__c</columns>
+    <columns>Last_Modified_Days__c</columns>
+    <columns>Language2__c</columns>
+    <columns>Complaint_Screening_Question__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.RCI</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>RCIComplaint Site Guest User</value>
+    </filters>
+    <filters>
+        <field>VIP_Date_Time_Submitted__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>Complaint_Screening_Question__c</field>
+        <operation>equals</operation>
+        <value>Retaliation</value>
+    </filters>
+    <filters>
+        <field>H_S_Complaint_to_Employer_Supervisor__c</field>
+        <operation>notEqual</operation>
+        <value>Yes</value>
+    </filters>
+    <filters>
+        <field>H_S_Complaint_with_Govt_Agency__c</field>
+        <operation>notEqual</operation>
+        <value>Yes</value>
+    </filters>
+    <filters>
+        <field>Complaint_Screening_Question__c</field>
+        <operation>equals</operation>
+        <value>EPA (Equal Pay Act)</value>
+    </filters>
+    <label>RCI - Online Submissions</label>
+</ListView>

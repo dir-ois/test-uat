@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VIPCompanyPeople__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name = &quot;Company People&quot;, true, false)</formula>
+    <label>VIP Company People</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

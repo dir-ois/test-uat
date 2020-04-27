@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Advocate_on_Case_Creation</fullName>
+        <description>Email Advocate on Case Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Advocate_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Advocate_Notification_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Claimant_on_Case_Creation</fullName>
+        <description>Email Claimant on Case Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>WCA_Email_Templates/New_Intake_Form_Confirmation_to_Claimant</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Claimant_Case_Information</fullName>
+        <description>Email to Claimant - Case Information</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Case_Creation_Case_Role_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Intake_Form_Email_Claimant</fullName>
+        <description>New Intake Form - Email Claimant</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email_Address__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/New_Intake_Form_Confirmation_to_Claimant</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Officer_Agent_Auto_Insert</fullName>
+        <description>Auto Insert Account Name of Case Role related Account if no value entered.</description>
+        <field>Officer_Agent__c</field>
+        <formula>IF( Entity__r.Name = &quot;&quot;, Entity__r.PersonContact.FirstName + &quot; &quot; + Entity__r.PersonContact.LastName , Entity__r.Name )</formula>
+        <name>Officer/Agent Auto Insert</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Advocate_Email_Field</fullName>
+        <description>Populate CR Advocate Email Field with CM&#39;s.</description>
+        <field>Advocate_Email__c</field>
+        <formula>Case__r.Advocate_Email__c</formula>
+        <name>Update Advocate Email Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Role - Claimant - Email Notification to Claimant</fullName>
+        <actions>
+            <name>Email_to_Claimant_Case_Information</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case_Role__c.Role__c</field>
+            <operation>equals</operation>
+            <value>Claimant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Role__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA,Garment</value>
+        </criteriaItems>
+        <description>Workflow rule designed to trigger when a Case Role of Role = Claimant is created; notifies claimant of their case creation and information about the case.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Role - Conf Email to Claimant</fullName>
+        <actions>
+            <name>Email_Claimant_on_Case_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>New_Intake_Form_Email_Claimant</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Emails the claimant when the case is created as a confirmation</description>
+        <formula>ISPICKVAL( Role__c , &#39;Claimant&#39; ) &amp;&amp;  NOT ( ISBLANK ( Email_Address__c ) )  &amp;&amp; (       Case__r.RecordType.Name = &#39;WCA&#39;       || Case__r.RecordType.Name = &#39;Garment&#39;    )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Advocate</fullName>
+        <actions>
+            <name>Email_Advocate_on_Case_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Case_Role__c.Role__c</field>
+            <operation>equals</operation>
+            <value>Claimant</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>WCA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Garment</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Officer_Agent Auto Insert</fullName>
+        <actions>
+            <name>Officer_Agent_Auto_Insert</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Role__c.Officer_Agent__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case_Role__c.Imported_From__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>If user does not enter a value for the Officer/Agent text field on a Case Role record, this workflow automatically inserts the name of the related Account on the Case Role as the default value.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Advocate Email</fullName>
+        <actions>
+            <name>Update_Advocate_Email_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case_Role__c.Role__c</field>
+            <operation>equals</operation>
+            <value>Claimant</value>
+        </criteriaItems>
+        <description>Update Advocate Email from CM</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

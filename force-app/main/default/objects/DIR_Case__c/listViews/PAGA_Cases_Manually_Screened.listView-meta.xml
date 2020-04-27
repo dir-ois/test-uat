@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Cases_Manually_Screened</fullName>
+    <columns>NAME</columns>
+    <columns>Employer__c</columns>
+    <columns>Status__c</columns>
+    <columns>Plaintiff_for_PAGA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PAGA_Manual_Screened__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>PAGA Cases Manually Screened</label>
+</ListView>

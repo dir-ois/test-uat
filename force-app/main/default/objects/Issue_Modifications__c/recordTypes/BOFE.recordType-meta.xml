@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE</fullName>
+    <active>true</active>
+    <description>Issue modification for BOFE issue types</description>
+    <label>BOFE</label>
+    <picklistValues>
+        <picklist>Modification_Category__c</picklist>
+        <values>
+            <fullName>Penalty Modification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Modification</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modification_Type__c</picklist>
+        <values>
+            <fullName>Violation Mod Down</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violation Mod Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Mod Down%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Mod Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

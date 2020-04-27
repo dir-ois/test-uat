@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_Violation_Types_Active</fullName>
+    <columns>NAME</columns>
+    <columns>Civil_Penalty_Section__c</columns>
+    <columns>Violation_Type__c</columns>
+    <columns>Short_Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Violation_Type__c.JEU_Violations</value>
+    </filters>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>JEU Violation Types - Active</label>
+    <sharedTo>
+        <group>BOFE_Admin</group>
+        <group>BOFE_Deputies</group>
+        <group>BOFE_Senior_Deputies</group>
+    </sharedTo>
+</ListView>

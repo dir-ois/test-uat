@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of location at this address</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Primary</fullName>
+                <default>false</default>
+                <label>Primary</label>
+            </value>
+            <value>
+                <fullName>Business Location</fullName>
+                <default>false</default>
+                <label>Business Location</label>
+            </value>
+            <value>
+                <fullName>Home</fullName>
+                <default>false</default>
+                <label>Home</label>
+            </value>
+            <value>
+                <fullName>Job Site</fullName>
+                <default>false</default>
+                <label>Job Site</label>
+            </value>
+            <value>
+                <fullName>Location of Records</fullName>
+                <default>false</default>
+                <label>Location of Records</label>
+            </value>
+            <value>
+                <fullName>PO Box</fullName>
+                <default>false</default>
+                <label>PO Box</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Mailing Address</fullName>
+                <default>false</default>
+                <label>Mailing Address</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

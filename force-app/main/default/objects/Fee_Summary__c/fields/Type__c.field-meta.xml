@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Field explains what type of fee this is for</description>
+    <externalId>false</externalId>
+    <label>zzFee Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Exam Fee</fullName>
+                <default>false</default>
+                <label>Exam Fee</label>
+            </value>
+            <value>
+                <fullName>Registration Fee</fullName>
+                <default>false</default>
+                <label>Registration Fee</label>
+            </value>
+            <value>
+                <fullName>Assessment Fee</fullName>
+                <default>false</default>
+                <label>Assessment Fee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

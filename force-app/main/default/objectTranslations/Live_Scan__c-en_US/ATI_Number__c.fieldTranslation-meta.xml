@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 10-digit Automated Transaction Identifier found on the live scan certification. --></help>
+    <label><!-- ATI Number --></label>
+    <name>ATI_Number__c</name>
+</CustomFieldTranslation>

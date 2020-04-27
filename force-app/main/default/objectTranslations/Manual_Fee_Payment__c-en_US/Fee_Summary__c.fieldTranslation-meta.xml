@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fee Summary --></label>
+    <name>Fee_Summary__c</name>
+    <relationshipLabel><!-- Manual Fee Payments --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Modification Category --></label>
+    <name>Modification_Category__c</name>
+    <picklistValues>
+        <masterLabel>Penalty Modification</masterLabel>
+        <translation><!-- Penalty Modification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Modification</masterLabel>
+        <translation><!-- Wage Modification --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

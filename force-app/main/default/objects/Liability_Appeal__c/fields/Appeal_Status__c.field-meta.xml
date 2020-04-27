@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appeal_Status__c</fullName>
+    <description>Status of the parent appeal record. Used for rules that send reminders based on timelines of liabilities where appeals may have been filed.</description>
+    <externalId>false</externalId>
+    <label>Appeal Status</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

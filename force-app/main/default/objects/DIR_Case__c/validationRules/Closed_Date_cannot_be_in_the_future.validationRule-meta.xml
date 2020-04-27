@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Date_cannot_be_in_the_future</fullName>
+    <active>true</active>
+    <description>Closed Date can not be in the future when a case is closed</description>
+    <errorConditionFormula>(RecordType.Name = &quot;WCA&quot;  ||  RecordType.Name = &quot;Garment&quot;)  &amp;&amp; 
+Case_Closed_Date__c &gt; TODAY()</errorConditionFormula>
+    <errorDisplayField>Case_Closed_Date__c</errorDisplayField>
+    <errorMessage>Closed Date can not be in the future. Please enter correct Closed Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_66_Selected_Documents__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 66 Selected Documents</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amended Complaint</fullName>
+                <default>false</default>
+                <label>Amended Complaint</label>
+            </value>
+            <value>
+                <fullName>Amended Notice Hearing</fullName>
+                <default>false</default>
+                <label>Amended Notice Hearing</label>
+            </value>
+            <value>
+                <fullName>Amended ODA</fullName>
+                <default>false</default>
+                <label>Amended ODA</label>
+            </value>
+            <value>
+                <fullName>Answer</fullName>
+                <default>false</default>
+                <label>Answer</label>
+            </value>
+            <value>
+                <fullName>Assignment</fullName>
+                <default>false</default>
+                <label>Assignment</label>
+            </value>
+            <value>
+                <fullName>Assignment Letter</fullName>
+                <default>false</default>
+                <label>Assignment Letter</label>
+            </value>
+            <value>
+                <fullName>Attachment(s)</fullName>
+                <default>false</default>
+                <label>Attachment(s)</label>
+            </value>
+            <value>
+                <fullName>Collection Letter</fullName>
+                <default>false</default>
+                <label>Collection Letter</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Dismissal</fullName>
+                <default>false</default>
+                <label>Dismissal</label>
+            </value>
+            <value>
+                <fullName>Dismissal &amp; Signed Release</fullName>
+                <default>false</default>
+                <label>Dismissal &amp; Signed Release</label>
+            </value>
+            <value>
+                <fullName>Full Satisfaction Judgment</fullName>
+                <default>false</default>
+                <label>Full Satisfaction Judgment</label>
+            </value>
+            <value>
+                <fullName>Judgment</fullName>
+                <default>false</default>
+                <label>Judgment</label>
+            </value>
+            <value>
+                <fullName>Judgment Set Aside</fullName>
+                <default>false</default>
+                <label>Judgment Set Aside</label>
+            </value>
+            <value>
+                <fullName>Ltr Denying Continuance</fullName>
+                <default>false</default>
+                <label>Ltr Denying Continuance</label>
+            </value>
+            <value>
+                <fullName>Ltr Granting Continuance</fullName>
+                <default>false</default>
+                <label>Ltr Granting Continuance</label>
+            </value>
+            <value>
+                <fullName>Ntc of Am Complaint</fullName>
+                <default>false</default>
+                <label>Ntc of Am Complaint</label>
+            </value>
+            <value>
+                <fullName>Ntc of Continuance/Reset</fullName>
+                <default>false</default>
+                <label>Ntc of Continuance/Reset</label>
+            </value>
+            <value>
+                <fullName>Ntc of Judgment Entry</fullName>
+                <default>false</default>
+                <label>Ntc of Judgment Entry</label>
+            </value>
+            <value>
+                <fullName>Ntc of Hearing</fullName>
+                <default>false</default>
+                <label>Ntc of Hearing</label>
+            </value>
+            <value>
+                <fullName>Ntc Hearing Cancellation</fullName>
+                <default>false</default>
+                <label>Ntc Hearing Cancellation</label>
+            </value>
+            <value>
+                <fullName>Order on 98(f)</fullName>
+                <default>false</default>
+                <label>Order on 98(f)</label>
+            </value>
+            <value>
+                <fullName>ODA</fullName>
+                <default>false</default>
+                <label>ODA</label>
+            </value>
+            <value>
+                <fullName>ODA by Settlement</fullName>
+                <default>false</default>
+                <label>ODA by Settlement</label>
+            </value>
+            <value>
+                <fullName>ODA NPT</fullName>
+                <default>false</default>
+                <label>ODA NPT</label>
+            </value>
+            <value>
+                <fullName>Reassignment</fullName>
+                <default>false</default>
+                <label>Reassignment</label>
+            </value>
+            <value>
+                <fullName>Partial Satisfaction Judgment</fullName>
+                <default>false</default>
+                <label>Partial Satisfaction Judgment</label>
+            </value>
+            <value>
+                <fullName>Post-Hearing Worksheet</fullName>
+                <default>false</default>
+                <label>Post-Hearing Worksheet</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

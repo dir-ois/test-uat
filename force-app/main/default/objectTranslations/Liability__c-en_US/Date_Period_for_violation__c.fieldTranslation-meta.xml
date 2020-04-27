@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the date range or other description for when the violations occurred. Will be output on certain citation forms. --></help>
+    <label><!-- Date/Period for Violation --></label>
+    <name>Date_Period_for_violation__c</name>
+</CustomFieldTranslation>

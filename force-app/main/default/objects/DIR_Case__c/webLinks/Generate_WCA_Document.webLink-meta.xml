@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_Document</fullName>
+    <availability>online</availability>
+    <description>Conga button specifically designed to allow WCA users to generate WCA templates directly from Case MGMT records.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate WCA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!DIR_Case__c.Id}
+&amp;qvar1id=a0mt00000006HgK
+&amp;qvar1format=21010
+&amp;queryid=[Complainant]a0md00000064cjQAAQ,
+[ServAdd]a0md00000064cjG?pv0={qvar1},
+[Judgments]a0md00000064cjbAAA?pv0={!DIR_Case__c.Id},
+[Defendant]a0md00000064cjRAAQ,
+[DefandJoint]a0md00000064cj8AAA,
+[Occupation]a0md00000064cjPAAQ,
+[VioTable]a0md00000064cjSAAQ,
+[Guarantor]a0md00000064cjNAAQ,
+[Successor]a0md00000064cjLAAQ,
+[WCAOffice]a0md00000064cjOAAQ,
+[HearingInfo]a0md00000064cjuAAA,
+[GovName]a0md0000003l2S0,
+[DefRoleOnly]a0md00000064cj9AAA?pv0={!DIR_Case__c.Id}~pv2=&quot;Defendant&quot;,
+[2673.1b]a0mt0000000H3tm?pv0={!DIR_Case__c.Id}~pv1=&quot;Guarantor Status Liability&quot;,
+[2677a]a0mt0000000H3tm?pv0={!DIR_Case__c.Id}~pv1=&quot;Guarantor LC 2677&quot;,
+[Stlmt]a0md00000064cjH,
+[UserInfo]a0md00000064cjIAAQ,
+&amp;reportid=[14ASucc]00Od0000004pzui,
+[14ADef]00Od0000004pzuh,
+[14ADefnonguarsucc]00Od0000004pzuj,
+[SSNITIN]00Od0000004pzuc?pv0={!DIR_Case__c.Id},
+[OTWAGES]00Od0000004pzud?pv0={!DIR_Case__c.Id}~pv1=&quot;OVERTIME&quot;,
+[REGWAGES]00Od0000004pzud?pv0={!DIR_Case__c.Id}~pv1=&quot;REGULAR WAGES&quot;,
+&amp;TemplateGroup=WCACaseMGMT
+&amp;OFN={Template.Label} + {!DIR_Case__c.Case_Number__c} + {!DIR_Case__c.Employer__c}
+&amp;DS6=1
+&amp;SC0=1
+&amp;SC1=Attachments</url>
+</WebLink>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_or_New_to_DIR</fullName>
+    <active>false</active>
+    <description>Alerts users and prevents saving when &quot;Current DIR Emnployee&quot; and &quot;New to DIR&quot; checkboxes are not checked or both are checked</description>
+    <errorConditionFormula>(ISNULL(End_Date__c))&amp;&amp; ((New_To_DIR__c = true &amp;&amp;  Current_DIR_Employee__c = true) || (New_To_DIR__c = false &amp;&amp;  Current_DIR_Employee__c = false))</errorConditionFormula>
+    <errorMessage>Please Select  &quot;New to DIR&quot; or &quot;Current DIR Employee&quot;</errorMessage>
+</ValidationRule>

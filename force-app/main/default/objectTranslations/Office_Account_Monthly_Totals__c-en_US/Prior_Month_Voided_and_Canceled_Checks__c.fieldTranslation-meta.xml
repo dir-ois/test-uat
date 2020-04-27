@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- + Prior Month Voided and Canceled Checks --></label>
+    <name>Prior_Month_Voided_and_Canceled_Checks__c</name>
+</CustomFieldTranslation>

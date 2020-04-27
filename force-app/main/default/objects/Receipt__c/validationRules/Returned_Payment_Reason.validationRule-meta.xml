@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returned_Payment_Reason</fullName>
+    <active>true</active>
+    <description>At least one checkbox must be true in the Return Payment Reason Section if the payment cannot be processed.</description>
+    <errorConditionFormula>AND(
+( IF(Not_Processed_Stale_Date__c,1,0)+
+IF(Not_Processed_Insufficient_Signature_s__c,1,0)+
+IF(Not_Processed_Amounts_Do_Not_Match__c,1,0)+
+IF(Not_Processed_No_Amount__c,1,0)+
+IF( Not_Processed_Post_Dated__c,1,0)+
+IF(Not_Processed_Other__c,1,0)+
+IF(Not_Processed_Limit_Exceeded__c,1,0)+
+IF(Not_Processed_Paid_In_Full__c,1,0) ) &lt;1,
+OR(Payment_Can_Be_Processed__c = FALSE))</errorConditionFormula>
+    <errorDisplayField>Payment_Can_Be_Processed__c</errorDisplayField>
+    <errorMessage>When Payment Cannot Be Processed is checked True, please indicate why you are returning the payment to the sender.</errorMessage>
+</ValidationRule>

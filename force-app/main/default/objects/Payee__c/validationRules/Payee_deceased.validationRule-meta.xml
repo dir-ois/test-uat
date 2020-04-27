@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payee_deceased</fullName>
+    <active>true</active>
+    <description>If &#39;Payee Heir or Successor&#39; checkbox is checked, the &#39;Name of Heir or Successor&#39; field must be filled, and vice versa.</description>
+    <errorConditionFormula>OR(
+AND( 
+Payee_Heir_or_Successor__c, 
+ISBLANK( Name_of_Heir_or_Successor__c ) 
+),
+AND(
+NOT(Payee_Heir_or_Successor__c), 
+NOT(ISBLANK(Name_of_Heir_or_Successor__c)) 
+) 
+)</errorConditionFormula>
+    <errorMessage>If &#39;Payee Heir or Successor&#39; checkbox is checked, the &#39;Name of Heir or Successor&#39; field must be filled, and vice versa.</errorMessage>
+</ValidationRule>

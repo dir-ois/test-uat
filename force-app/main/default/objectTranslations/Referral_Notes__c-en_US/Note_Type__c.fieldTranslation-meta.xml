@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select a type of note for easy classification --></help>
+    <label><!-- Note Type --></label>
+    <name>Note_Type__c</name>
+    <picklistValues>
+        <masterLabel>Case Conclusion</masterLabel>
+        <translation><!-- Case Conclusion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejection Reason</masterLabel>
+        <translation><!-- Rejection Reason --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status Update</masterLabel>
+        <translation><!-- Status Update --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The estimate length of this hearing in minutes.  i.e. 60 minutes for 1 hour, or 90 minutes for 1 hour 30 minutes. --></help>
+    <label><!-- Estimated Length of Hearing (In Minutes) --></label>
+    <name>Estimated_Length_of_Hearing_In_Minutes__c</name>
+</CustomFieldTranslation>

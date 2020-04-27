@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DID THE EMPLOYER DESIGNATE WHAT TIME THE WORKDAY BEGAN FOR EMPLOYEES? --></help>
+    <label><!-- Designate Standard Workday Begin Time --></label>
+    <name>Designate_Standard_Workday_Begin_Time__c</name>
+    <picklistValues>
+        <masterLabel>Don&#39;t Know</masterLabel>
+        <translation><!-- Don&apos;t Know --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

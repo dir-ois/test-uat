@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA Payment or Reimbursement of Employee Expenses --></help>
+    <label><!-- PMNT Reimbursement of Empl Expenses --></label>
+    <name>PAGA_PMNT_Reimbursement_of_Empl_Expenses__c</name>
+</CustomFieldTranslation>

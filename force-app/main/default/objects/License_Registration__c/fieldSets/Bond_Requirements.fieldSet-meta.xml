@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bond_Requirements</fullName>
+    <description>Company Finances section</description>
+    <displayedFields>
+        <field>Bond_Requirements__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Bond Requirements</label>
+</FieldSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to indicate that this document is not subject to PRA requests --></help>
+    <label><!-- Not Subject to PRA --></label>
+    <name>Not_Subject_to_PRA__c</name>
+</CustomFieldTranslation>

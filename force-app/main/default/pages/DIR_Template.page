@@ -1,0 +1,659 @@
+<apex:page applyBodyTag="false" applyHtmlTag="false" docType="HTML-5.0" id="Template" showChat="false" showHeader="false" sidebar="false" standardStylesheets="false">
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js" lang="en"> <!--<![endif]-->
+        <head>
+            <meta charset="utf-8" />
+            <title>Paga Search</title>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            
+            <!-- For all browsers -->
+            <apex:stylesheet value="https://www.dir.ca.gov/css/cagov.core.ALTERED.css"/>
+            <apex:stylesheet value="https://www.dir.ca.gov/css/tabs.css"/>
+            
+            <apex:stylesheet value="https://www.dir.ca.gov/css/colorscheme-oceanside.ALTERED.css"/>
+            
+            <!-- Custom CSS -->
+            <apex:stylesheet value="https://www.dir.ca.gov/css/custom.css"/>
+            
+            <!-- Datatables CSS -->
+            <apex:stylesheet value="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
+            
+            <!-- Fonts -->
+            <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            
+            <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+            <!--[if (lt IE 9) & (!IEMobile)]>
+<apex:includeScript value="https://www.dir.ca.gov/js/libs/selectivizr-min.js"/>
+<![endif]-->
+            
+            <!-- modernizr.com, feature detection -->
+            <apex:includeScript value="https://www.dir.ca.gov/js/libs/modernizr-2.0.6.min.js"/>
+            
+            <!-- For iPad 3-->
+            <link rel="apple-touch-icon" sizes="144x144" href="https://www.dir.ca.gov/images/template2014/apple-touch-icon-144x144.png"/>
+            <!-- For iPhone 4 -->
+            <link rel="apple-touch-icon" sizes="114x114" href="https://www.dir.ca.gov/images/template2014/apple-touch-icon-114x114.png"/>
+            <!-- For iPad 1-->
+            <link rel="apple-touch-icon" sizes="72x72" href="https://www.dir.ca.gov/images/template2014/apple-touch-icon-72x72.png"/>
+            <!-- For iPhone 3G, iPod Touch and Android -->
+            <link rel="apple-touch-icon" href="https://www.dir.ca.gov/images/template2014/apple-touch-icon-57x57.png"/>
+            <!-- For Nokia -->
+            <link rel="shortcut icon" href="https://www.dir.ca.gov/images/template2014/apple-touch-icon-57x57.png"/>
+            <!-- For everything else -->
+            <link rel="shortcut icon" href="https://www.dir.ca.gov/favicon.ico"/>
+            
+            <style>
+                ul, ol, .footer_links ul li {
+                    margin-left:0;
+                }
+                .search-container .textfield-container {width:97%;}
+                .breadcrumb li:first-child,
+                .top-level-nav li{
+                    margin-left:0;
+                }
+                .breadcrumb li:first-child {
+                    padding-right:0;
+                }
+                h1, h2 {display:block;}
+                label {
+                    font-weight:normal;
+                }
+                .form-group.required label:after {
+                    content:'*';
+                    color:#CC6600;
+                    display:inline;
+                    font-size: 18px;
+                font-weight:bold;
+                    margin-left: 2px;
+                } 
+                .form-control {
+                    border-radius:3px;
+                    box-shadow:none;
+                    border-color:#637383;
+                }
+                .panel {border-radius:0;}
+                .panel-body {
+                    background-color:#F4F4F4;
+                    padding:6px 0;
+                }
+                .mb {
+                    margin-bottom:15px;
+                }
+                .btn-custom {
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4887c2+0,295b8f+100 */
+                    background: #348ada; /* Old browsers */
+                    background: -moz-linear-gradient(top, #348ada 0%, #195fa9 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, #348ada 0%,#195fa9 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, #348ada 0%,#195fa9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#348ada', endColorstr='#195fa9',GradientType=0 ); /* IE6-9 */
+                color:#fff;
+                font-weight:normal;
+                border-radius:5px;
+                border:0;
+                }
+                .btn-custom:hover {
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#295b8f+3,4887c2+100 */
+background: #195fa9; /* Old browsers */
+background: -moz-linear-gradient(top, #195fa9 3%, #348ada 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #195fa9 3%,#348ada 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #195fa9 3%,#348ada 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195fa9', endColorstr='#348ada',GradientType=0 ); /* IE6-9 */
+                    color:#fff;
+                }
+                a {
+                    cursor:pointer;
+                }
+                .input-group-addon {
+                    color:#53688e;
+                    top: 33px;
+                    right: 25px;
+                    position: absolute;
+                }
+                
+                table.dataTable.cell-border tbody tr th:first-child,
+                table.dataTable.cell-border tbody tr td:first-child,
+                table.dataTable.cell-border tbody th, table.dataTable.cell-border tbody td,
+                table.dataTable thead th, table.dataTable thead td,
+                table.dataTable.no-footer {
+                    border-color:#979797;
+                }
+                table.dataTable thead {
+                    background: #708ba6!important; /* Old browsers */
+                    background: -moz-linear-gradient(top, #708ba6 0%, #52697f 100%)!important; /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, #708ba6 0%,#52697f 100%)!important; /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, #708ba6 0%,#52697f 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#708ba6', endColorstr='#52697f',GradientType=0 )!important; /* IE6-9 */
+                	color:#fff;
+                	font-weight:normal;
+                	font-size:13px;
+                }
+                .dataTables_wrapper .dataTables_info {
+                    font-weight:bold;
+                }
+                .dataTables_wrapper .dataTables_paginate .paginate_button,
+                .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+                .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+                    background:transparent!important;
+                    color:#2881ea!important;
+                    font-weight:bold;
+                border:0!important;
+                box-shadow:none!important;
+                }
+                .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+                .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+                .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+                    color:#9b9b9b!important;
+                }
+                .btn-group-lg>.btn, .btn-md {
+                padding: 8px 12px;
+                font-size: 15px;
+                line-height: 1.42857143;
+                border-radius: 6px;
+                }
+                .dateFormat  {
+                display:none;visibility:hidden;
+                }
+            </style>
+            
+        </head>
+        
+        <body>
+            <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+            <apex:insert name="header">
+                <header role="banner" id="header" class="global-header">
+                    <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+                    <!-- BEGIN /ssi/branding.html -->
+                    <!-- header branding -->
+                    <div class="branding">
+                        <div class="header-cagov-logo"><a href="http://www.ca.gov/"><img src="https://www.dir.ca.gov/images/template2014/header-ca.gov.png" alt="CA.gov" /></a></div>
+                        <div class="header-organization-banner"><a href="https://www.dir.ca.gov"><img src="https://www.dir.ca.gov/images/template2014/header-organization.png" alt="Organization Title" /></a></div>
+                    </div>
+                    <!-- END /ssi/branding.html -->
+                    
+                    <!-- BEGIN /ssi/mobile-controls.html -->
+                    <!-- mobile navigation controls -->
+                    <div class="mobile-controls">
+                        <span class="mobile-control cagov-logo"><span class="ca-gov-icon-logo" aria-hidden="false"></span></span>
+                        <span class="mobile-control toggle-menu"><span class="ca-gov-icon-menu" aria-hidden="true"></span><span class="sr-only">Menu</span></span>
+                        <span class="mobile-control-group mobile-header-icons">
+                            <span class="mobile-control contact-link"><span class="ca-gov-icon-chat" aria-hidden="true"></span><span class="sr-only">Contact</span></span>
+                            <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+                        </span>
+                        <span class="mobile-control toggle-search"><span class="ca-gov-icon-search" aria-hidden="true"></span><span class="sr-only">Search</span></span>
+                        <span class="mobile-control-group mobile-menu-icons">
+                            <!-- Add more mobile controls here. These will be on the top right section of the expanded mobile menu -->
+                        </span>
+                    </div>
+                    <!-- END /ssi/mobile-controls.html -->
+                    
+                    <div class="navigation-search">
+                        
+                        <div id="head-search" class="search-container">
+                            <!-- BEGIN /ssi/search.html -->
+                            
+                            <form id="local_form" action="http://www.google.com/cse"> <!-- the form action will be changed using javascript -->
+                                <div class="textfield-container">
+                                    
+                                    <label for="search_local_textfield" accesskey="s" style="position:absolute;clip:rect(1px, 1px, 1px, 1px);">Search this site: </label>
+                                    <input type="text" name="q" id="search_local_textfield" class="search-textfield" size="35" autocomplete="off" value="Search" onfocus="if(this.value=='Search')this.value=''" onblur="if(this.value=='')this.value='Search'" />
+                                    
+                                    <input type="hidden" name="cx" value="001779225245372747843:hq74utyoxui" /> 
+                                    <input type="hidden" name="cof" value="" /> <!-- this value will be set using javascript -->
+                                    <input type="hidden" name="ie" value="UTF-8" />
+                                    <input type="hidden" name="nojs" value="1" />
+                                    
+                                </div>
+                                <div class="submit-container">
+                                    <button type="submit"><span class="ca-gov-icon-search"><span class="sr-only">Search</span></span></button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        
+                        
+                        <nav id="navigation" class="main-navigation dropdown off-canvas auto-highlight">
+                            <ul id="nav_list" class="top-level-nav">
+                                <li class="home-link nav-item">
+                                    <a href="/" class="first-level-link"><span id="nav_home_container" class="ca-gov-icon-home" aria-hidden="true"></span><span class="sr-only">Home</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/dlse/dlse.html" class="first-level-link">Labor Law</a>
+                                    <div class="sub-nav">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/dlseWagesAndHours.html" class="second-level-link">Wages</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/DistrictOffices.htm" class="second-level-link">Offices</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/dlse-bofe.html" class="second-level-link">BOFE</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/DLSE-CL.htm" class="second-level-link">Minors</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/Manual-Instructions.htm" class="second-level-link">Policy</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/DLSE-Databases.htm" class="second-level-link">Databases</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/DLSE_OpinionLetters.htm" class="second-level-link">Opinions</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/dlseRetaliation.html" class="second-level-link">Retaliation</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/Training.htm" class="second-level-link">Training</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/wp.asp" class="second-level-link">Postings</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/Licensing_Registration_Permits.html" class="second-level-link">Permits</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/Public-Works/PublicWorks.html" class="second-level-link">Public Works</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dlse/ECU/ElectricalTrade.html" class="second-level-link">Electrician Certification</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/dosh/dosh1.html" class="first-level-link">Cal/OSHA - Safety &amp; Health</a>
+                                    <div class="sub-nav">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/consultation.html" class="second-level-link">Consultation</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/Required-Notifications.html" class="second-level-link">Required Notifications</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/permits-licenses-certifications.html" class="second-level-link">Permits, Registrations, Certifications, &amp; Licenses</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/Enforcementpage.htm" class="second-level-link">Enforcement</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/cal_vpp/vpp_index.html" class="second-level-link">Partnership Programs</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/etools/09-031/index.htm" class="second-level-link">Injury &amp; Illness Prevention Program</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/wp.asp" class="second-level-link">Workplace Postings</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/HeatIllnessInfo.html" class="second-level-link">Heat Illness Prevention</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/Payment_options.html" class="second-level-link">Payment Options</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/cfoi/cfoi.htm" class="second-level-link">Statistics</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dosh/PublicSafety.html" class="second-level-link">Public Safety</a>
+                                                <div class="link-description">(Elevator, Ride &amp; Tramway, Pressure Vessel)</div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-nav-decoration" style="background:url('/sample/images/sample-nav-image2.jpg')"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/dwc/dwc_home_page.htm" class="first-level-link">Workers' Comp</a>
+                                    <div class="sub-nav with-image-sm-right">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/a_z_index.htm" class="second-level-link">A - Z Index</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/DWC/CourtCalendar/CourtCal.asp" class="second-level-link">Court calendar</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/DEU.html" class="second-level-link">Disability Evaluation Unit</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/dir2.htm" class="second-level-link">District Offices</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/eams/eams.htm" class="second-level-link">Electronic Adjudication Management System</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/employer.htm" class="second-level-link">Employer Information</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/IMR.htm" class="second-level-link">Independent Medical Review</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/IandA.html" class="second-level-link">Information and Assistance Unit</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/injuredworker.htm" class="second-level-link">Injured Worker</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/MedicalUnit/imchp.html" class="second-level-link">Medical Unit</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/SB863/SB863.htm" class="second-level-link">Senate Bill 863</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/dwc/claims.html" class="second-level-link">UEBTF &amp; SIBTF</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-nav-decoration"></div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/osip/sip.html" class="first-level-link">Self Insurance</a>
+                                    <div class="sub-nav with-image-md-right">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/AppRequirements.htm" class="second-level-link">About</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/SelfInsuredEmployers.htm" class="second-level-link">Employers</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/SI-groups/index.html" class="second-level-link">Groups</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/examination.htm" class="second-level-link">Third Party Administrators</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/PublicEntitiesAndJPA.htm" class="second-level-link">Joint Power Authorities</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/pubandforms.htm" class="second-level-link">Forms</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/lawsandregs.htm" class="second-level-link">Regulations</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/OSIP-AuditUnit.html" class="second-level-link">Audits</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/generalinfo.htm" class="second-level-link">Contact</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-nav-decoration"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/das/das.html" class="first-level-link">Apprenticeship</a>
+                                    <div class="sub-nav with-image-sm-left">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/databases/das/aigstart.asp" class="second-level-link">Apprenticeship search</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/das/publicworks.html" class="second-level-link">Public Works</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/das/ProgramSponsor.htm" class="second-level-link">Sponsors</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/databases/das/descOfAppr.html" class="second-level-link">Overview</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/das/educators.htm" class="second-level-link">Educators</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/das/employers.htm" class="second-level-link">Employers</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/das/veterans.html" class="second-level-link">Veterans</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-nav-decoration"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/directors_office.html" class="first-level-link">Director's Office</a>
+                                    <div class="sub-nav with-image-sm-left">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/OPRL/Statistics_Research.html" class="second-level-link">Policy, Research, <br />&amp; Legislation</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/mediaroom.html" class="second-level-link">Press Room</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/Public-Works/PublicWorks.html" class="second-level-link">Public Works</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/osip/sip.html" class="second-level-link">Self Insurance Plans</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/LETF/LETF.html" class="second-level-link">Labor Enforcement</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/aboutdir.html" class="second-level-link">About DIR</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/RTWSP/RTWSP.html" class="second-level-link">The Return-to-Work Supplement Program</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-nav-decoration"></div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.dir.ca.gov/BoardsAndCommissions.html" class="first-level-link">Boards</a>
+                                    <div class="sub-nav with-image-md-left far-right">
+                                        <ul class="second-level-nav">
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/chswc/chswc.html" class="second-level-link">Commission on Health and Safety and Workers' Compensation (CHSWC)</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/oshsb/oshsb.html" class="second-level-link">Occupational Safety &amp; Health <span style="color:#bfdffe;">Standards Board</span> <br />(OSHSB)</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/oshab/oshab.html" class="second-level-link">Occupational Safety &amp; Health <span style="color:#bfdffe;">Appeals Board</span> (OSHAB)</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/wcab/wcab.htm" class="second-level-link">Workers' Compensation <span style="color:#bfdffe;">Appeals Board</span> <br />(WCAB)</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.dir.ca.gov/iwc/iwc.html" class="second-level-link">Industrial Welfare Commission <br />(IWC)</a>
+                                                <div class="link-description"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-nav-decoration"></div>
+                                    </div>
+                                </li>
+                                    <li class="home-link nav-item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <!-- <a href="/Contactus.html" class="first-level-link"><span id="nav_home_container" class="ca-gov-icon-contact-us" aria-hidden="true"></span><span class="sr-only">Contact Us</span></a> -->
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--END include /ssi/navigation.html-->
+                        
+                        
+                        <div class="top-reference-links"><a href="https://www.dir.ca.gov/mediaroom.html">Press room</a> | <a href="https://www.dir.ca.gov/multilingual/Spanish/index.html">&Iacute;ndice en espa&ntilde;ol</a></div>
+                        
+                    </div>
+                    <div class="header-decoration"></div>
+                </header>
+            </apex:insert>
+            
+            <div id="main-content" class="main-content">
+                <div class="wrapper">
+                    <main role="main" class="main-primary">
+                        
+                        <apex:insert name="body">
+                            <h1>
+                                This is the template, the body is overwritten by each individual page.
+                            </h1>
+                        </apex:insert>
+                        
+                    </main>
+                </div> <!-- .main-secondary -->
+            </div> <!-- .wrapper -->
+            
+            <apex:insert name="footer">
+                <footer id="footer" class="global-footer">
+                    
+                    <div class="upper_footer" >
+                        
+                        <div class="footer_links">
+                            <h2>About DIR</h2>
+                            <ul>
+                                <li><a href="https://www.dir.ca.gov/aboutdir.html">Who we are</a></li>
+                                <li><a href="https://www.dir.ca.gov/divisions_and_programs.html">DIR Divisions, Boards &amp; Commissions</a></li>
+                                <li><a href="https://www.dir.ca.gov/Contactus.html">Contact DIR</a></li>
+                            </ul>
+                        </div><!-- .footer_links -->
+                        
+                        <div class="footer_links">
+                            <h2>Work with Us</h2>
+                            <ul>
+                                <li><a href="https://www.dir.ca.gov/dirjobs/dirjobs.htm">Jobs at DIR</a></li>
+                                <li><a href="https://www.dir.ca.gov/permits-licenses-certifications.html">Licensing, registrations, certifications &amp; permits</a></li>
+                                <li><a href="https://www.dir.ca.gov/dosh/Required-Notifications.html">Required Notifications</a></li>
+                                <li><a href="https://www.dir.ca.gov/pra_request.html">Public Records Requests</a></li>
+                            </ul>
+                        </div><!-- .footer_links -->
+                        
+                        <div class="footer_links">
+                            <h2>Learn More</h2>
+                            <ul>
+                                <li><a href="http://www.dir.ca.gov//Bilingual-Services-Act/default.html">Acceso al idioma</a></li>
+                                <li><a href="https://www.dir.ca.gov/faqslist.html">Frequently Asked Questions</a></li>
+                                <li><a href="https://www.dir.ca.gov/sitemap/sitemap.html">Site Map</a></li>
+                            </ul>
+                            
+                        </div><!-- .footer_links -->
+                        
+                        <div class="clear_left"></div>
+                        
+                    </div><!-- upper_footer -->
+                    <div class="feedback-rect"><a href="http://www.surveygizmo.com/s3/2233483/01a291c9c220"><img src="https://www.dir.ca.gov/images/icons/btn_sqr_feedback.png" alt="Site Feedback" /></a></div>
+                    
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/CaliforniaDIR"><img src="https://www.dir.ca.gov/_images/icon_facebook_large.png" alt="Facebook image" /></a>
+                        <a href="https://twitter.com/#!/CA_DIR"><img src="https://www.dir.ca.gov/_images/icon_twitter_large.png" alt="Twitter image" /></a>
+                        <a href="http://www.youtube.com/CaliforniaDIR"><img src="https://www.dir.ca.gov/_images/icon_youtube_large.png" alt="Youtube image" /></a>
+                    </div><!-- .social_icons -->
+                    
+                    <div style="clear:left;"></div>
+                    <div class="spacer"></div>
+                    
+                    <ul class="footer_end_links">
+                        <li><a href="#skip-to-content">Back to Top</a></li>
+                        <li><a href="https://www.dir.ca.gov/od_pub/conditions.html">Conditions of Use</a></li>
+                        <li><a href="https://www.dir.ca.gov/od_pub/privacy.html">Privacy Policy</a></li>
+                        <li><a href="https://www.dir.ca.gov/od_pub/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="https://www.dir.ca.gov/disability_Accommodation.html">Disability Accommodation</a></li>
+                        <li><a href="https://www.dir.ca.gov/Standard-Browser-Usability-Features.html">Standard Browser Usability Features</a></li>
+                        <li><a href="https://www.dir.ca.gov/od_pub/help.html">Site Help</a></li>
+                    </ul>
+                    
+                    <!-- Copyright Statement -->
+                    <div class="copyright">
+                        Copyright &copy; 2017 State of California
+                    </div>
+                </footer>
+                
+                <!-- Extra Decorative Content -->
+                <div class="decoration-last">&nbsp;</div>
+            </apex:insert>
+            
+            <!-- Load jQuery from CDN with fallback to local copy -->
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
+            <script>
+            //Fall back to local copy if no jquery found
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='https://www.dir.ca.gov/js/libs/jquery-1.11.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+            </script>
+            
+            <!-- Load template core -->
+            <apex:includeScript value="https://www.dir.ca.gov/js/cagov.core.js"/>
+            <apex:includeScript value="https://www.dir.ca.gov/js/search.js"/>
+            
+            <apex:includeScript value="https://www.dir.ca.gov/javascript/custom_scripts.js"/>
+            
+            <apex:includeScript value="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"/>
+            
+            <!-- Custom scripts are inserted here after our javascript libraries, and site wide code have loaded -->
+            <apex:insert name="scripts"/>
+            
+            
+        </body>
+    </html>
+    
+</apex:page>

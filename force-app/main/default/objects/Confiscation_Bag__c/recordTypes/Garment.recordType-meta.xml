@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Garment</fullName>
+    <active>true</active>
+    <description>This bag contains only &#39;Garment&#39; type item</description>
+    <label>Garment</label>
+</RecordType>

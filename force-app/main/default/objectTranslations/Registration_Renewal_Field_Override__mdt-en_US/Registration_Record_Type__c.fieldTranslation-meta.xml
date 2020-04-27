@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the developer name of the registration record type to which this override applies. Leaving blank means that this override will apply to ALL registration types --></help>
+    <label><!-- Registration Record Type --></label>
+    <name>Registration_Record_Type__c</name>
+</CustomFieldTranslation>

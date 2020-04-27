@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The name and Job title of the person in charge. --></help>
+    <label><!-- Name and Job Title of Person in Charge --></label>
+    <name>Name_and_Job_Title_of_Person_in_Charge__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>WCA</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Sr_User_Record__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Step 1</label>
+        <name>Step_1</name>
+    </approvalStep>
+    <emailTemplate>WCA_Email_Templates/WCA_Garment_Referral_to_BOFE_Request</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Referral__c.RecordType</field>
+            <operation>equals</operation>
+            <value>WCA/Garment Referral to BOFE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.Request_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Approval,Denied</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>BOFE_Referral_Approval_Rec_Type_Update</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Complete_BOFE_referral</name>
+            <type>Task</type>
+        </action>
+        <action>
+            <name>Referral_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Referral_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>WCA_Garment_Referral_to_BOFE_Rejected</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>WCA Referral to BOFE</label>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

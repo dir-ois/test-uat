@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Plan</fullName>
+    <fields>Name</fields>
+    <fields>Case__c</fields>
+    <fields>Date_of_First_Payment__c</fields>
+    <fields>Frequency__c</fields>
+    <fields>Number_of_Payments__c</fields>
+    <fields>Payment_Plan_Status__c</fields>
+    <label>Payment Plan</label>
+</CompactLayout>

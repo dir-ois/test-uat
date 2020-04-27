@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Letter_Follow_Up_PDF__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;templateid=a0n35000000K0rx&quot; +
+&quot;&amp;defaultpdf=1&quot; +
+&quot;&amp;queryid=[Rejections]a0m350000002lLw,[RejectionDefect]a0m350000002lLx,[Manager]a0mt00000000sKt&quot; +
+&quot;&amp;EmailTemplateId=[00Xr0000000MXml]&quot; +
+&quot;&amp;EmailAdditionalTo=&quot; + Registration__r.Applicant__r.Email +
+&quot;&amp;EmailRelatedToId=&quot; +  Registration__r.Id  +
+&quot;&amp;qmode=SendEmail&quot; +
+&quot;DS7=2&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rejection Letter Follow Up PDF</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

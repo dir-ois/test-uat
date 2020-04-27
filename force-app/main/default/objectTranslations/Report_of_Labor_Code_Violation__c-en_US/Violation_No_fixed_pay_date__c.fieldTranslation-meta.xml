@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- No fixed pay date --></help>
+    <label><!-- No fixed pay date --></label>
+    <name>Violation_No_fixed_pay_date__c</name>
+</CustomFieldTranslation>

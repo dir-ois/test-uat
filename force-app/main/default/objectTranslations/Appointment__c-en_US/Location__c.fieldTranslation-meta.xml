@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Location --></label>
+    <name>Location__c</name>
+    <picklistValues>
+        <masterLabel>American Canyon</masterLabel>
+        <translation><!-- American Canyon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anaheim</masterLabel>
+        <translation><!-- Anaheim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bakersfield</masterLabel>
+        <translation><!-- Bakersfield --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concord</masterLabel>
+        <translation><!-- Concord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Centro</masterLabel>
+        <translation><!-- El Centro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eureka</masterLabel>
+        <translation><!-- Eureka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foster City</masterLabel>
+        <translation><!-- Foster City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fremont</masterLabel>
+        <translation><!-- Fremont --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno</masterLabel>
+        <translation><!-- Fresno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glendale</masterLabel>
+        <translation><!-- Glendale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goleta</masterLabel>
+        <translation><!-- Goleta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>La Palma</masterLabel>
+        <translation><!-- La Palma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Beach</masterLabel>
+        <translation><!-- Long Beach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles</masterLabel>
+        <translation><!-- Los Angeles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marina del Rey</masterLabel>
+        <translation><!-- Marina del Rey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modesto</masterLabel>
+        <translation><!-- Modesto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monrovia</masterLabel>
+        <translation><!-- Monrovia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oakland</masterLabel>
+        <translation><!-- Oakland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oxnard</masterLabel>
+        <translation><!-- Oxnard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pomona</masterLabel>
+        <translation><!-- Pomona --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rancho Cordova</masterLabel>
+        <translation><!-- Rancho Cordova --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redding</masterLabel>
+        <translation><!-- Redding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Riverside</masterLabel>
+        <translation><!-- Riverside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento</masterLabel>
+        <translation><!-- Sacramento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salinas</masterLabel>
+        <translation><!-- Salinas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino</masterLabel>
+        <translation><!-- San Bernardino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego</masterLabel>
+        <translation><!-- San Diego --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco</masterLabel>
+        <translation><!-- San Francisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose</masterLabel>
+        <translation><!-- San Jose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Leandro</masterLabel>
+        <translation><!-- San Leandro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Luis Obispo</masterLabel>
+        <translation><!-- San Luis Obispo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Ana</masterLabel>
+        <translation><!-- Santa Ana --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara</masterLabel>
+        <translation><!-- Santa Barbara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Rosa</masterLabel>
+        <translation><!-- Santa Rosa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockton</masterLabel>
+        <translation><!-- Stockton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torrance</masterLabel>
+        <translation><!-- Torrance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van Nuys</masterLabel>
+        <translation><!-- Van Nuys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Covina</masterLabel>
+        <translation><!-- West Covina --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

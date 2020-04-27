@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is set to True once a Senior Deputy has Approved the Recommendation --></help>
+    <label><!-- Recommendation Approved --></label>
+    <name>Recommendation_Approved__c</name>
+</CustomFieldTranslation>

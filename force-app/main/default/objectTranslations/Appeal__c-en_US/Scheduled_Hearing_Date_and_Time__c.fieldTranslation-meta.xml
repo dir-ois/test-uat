@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Scheduled Date and Time of the Hearing when the hearing was created --></help>
+    <label><!-- Scheduled Hearing Date and Time --></label>
+    <name>Scheduled_Hearing_Date_and_Time__c</name>
+</CustomFieldTranslation>

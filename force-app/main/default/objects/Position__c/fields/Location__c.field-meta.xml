@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <description>Position Location</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the DIR office location for this position.</inlineHelpText>
+    <label>Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMERICAN CANYON</fullName>
+                <default>false</default>
+                <label>AMERICAN CANYON</label>
+            </value>
+            <value>
+                <fullName>ANAHEIM</fullName>
+                <default>false</default>
+                <label>ANAHEIM</label>
+            </value>
+            <value>
+                <fullName>BAKERSFIELD</fullName>
+                <default>false</default>
+                <label>BAKERSFIELD</label>
+            </value>
+            <value>
+                <fullName>CHICO</fullName>
+                <default>false</default>
+                <label>CHICO</label>
+            </value>
+            <value>
+                <fullName>CONCORD</fullName>
+                <default>false</default>
+                <label>CONCORD</label>
+            </value>
+            <value>
+                <fullName>EL CENTRO</fullName>
+                <default>false</default>
+                <label>EL CENTRO</label>
+            </value>
+            <value>
+                <fullName>EUREKA</fullName>
+                <default>false</default>
+                <label>EUREKA</label>
+            </value>
+            <value>
+                <fullName>FOSTER CITY</fullName>
+                <default>false</default>
+                <label>FOSTER CITY</label>
+            </value>
+            <value>
+                <fullName>FREMONT</fullName>
+                <default>false</default>
+                <label>FREMONT</label>
+            </value>
+            <value>
+                <fullName>FRESNO</fullName>
+                <default>false</default>
+                <label>FRESNO</label>
+            </value>
+            <value>
+                <fullName>GLENDALE</fullName>
+                <default>false</default>
+                <label>GLENDALE</label>
+            </value>
+            <value>
+                <fullName>GOLETA</fullName>
+                <default>false</default>
+                <label>GOLETA</label>
+            </value>
+            <value>
+                <fullName>LA PALMA</fullName>
+                <default>false</default>
+                <label>LA PALMA</label>
+            </value>
+            <value>
+                <fullName>LOS ANGELES</fullName>
+                <default>false</default>
+                <label>LOS ANGELES</label>
+            </value>
+            <value>
+                <fullName>LONG BEACH</fullName>
+                <default>false</default>
+                <label>LONG BEACH</label>
+            </value>
+            <value>
+                <fullName>MARINA DEL REY</fullName>
+                <default>false</default>
+                <label>MARINA DEL REY</label>
+            </value>
+            <value>
+                <fullName>MODESTO</fullName>
+                <default>false</default>
+                <label>MODESTO</label>
+            </value>
+            <value>
+                <fullName>MONROVIA</fullName>
+                <default>false</default>
+                <label>MONROVIA</label>
+            </value>
+            <value>
+                <fullName>OAKLAND</fullName>
+                <default>false</default>
+                <label>OAKLAND</label>
+            </value>
+            <value>
+                <fullName>OXNARD</fullName>
+                <default>false</default>
+                <label>OXNARD</label>
+            </value>
+            <value>
+                <fullName>POMONA</fullName>
+                <default>false</default>
+                <label>POMONA</label>
+            </value>
+            <value>
+                <fullName>REDDING</fullName>
+                <default>false</default>
+                <label>REDDING</label>
+            </value>
+            <value>
+                <fullName>RIVERSIDE</fullName>
+                <default>false</default>
+                <label>RIVERSIDE</label>
+            </value>
+            <value>
+                <fullName>SACRAMENTO</fullName>
+                <default>false</default>
+                <label>SACRAMENTO</label>
+            </value>
+            <value>
+                <fullName>SALINAS</fullName>
+                <default>false</default>
+                <label>SALINAS</label>
+            </value>
+            <value>
+                <fullName>SAN BERNARDINO</fullName>
+                <default>false</default>
+                <label>SAN BERNARDINO</label>
+            </value>
+            <value>
+                <fullName>SAN DIEGO</fullName>
+                <default>false</default>
+                <label>SAN DIEGO</label>
+            </value>
+            <value>
+                <fullName>SAN FRANCISCO</fullName>
+                <default>false</default>
+                <label>SAN FRANCISCO</label>
+            </value>
+            <value>
+                <fullName>SAN JOSE</fullName>
+                <default>false</default>
+                <label>SAN JOSE</label>
+            </value>
+            <value>
+                <fullName>SAN LEANDRO</fullName>
+                <default>false</default>
+                <label>SAN LEANDRO</label>
+            </value>
+            <value>
+                <fullName>SAN LUIS OBISPO</fullName>
+                <default>false</default>
+                <label>SAN LUIS OBISPO</label>
+            </value>
+            <value>
+                <fullName>SANTA ANA</fullName>
+                <default>false</default>
+                <label>SANTA ANA</label>
+            </value>
+            <value>
+                <fullName>SANTA BARBARA</fullName>
+                <default>false</default>
+                <label>SANTA BARBARA</label>
+            </value>
+            <value>
+                <fullName>SANTA FE SPRINGS</fullName>
+                <default>false</default>
+                <label>SANTA FE SPRINGS</label>
+            </value>
+            <value>
+                <fullName>SANTA ROSA</fullName>
+                <default>false</default>
+                <label>SANTA ROSA</label>
+            </value>
+            <value>
+                <fullName>STOCKTON</fullName>
+                <default>false</default>
+                <label>STOCKTON</label>
+            </value>
+            <value>
+                <fullName>TORRANCE</fullName>
+                <default>false</default>
+                <label>TORRANCE</label>
+            </value>
+            <value>
+                <fullName>TRUCKEE</fullName>
+                <default>false</default>
+                <label>TRUCKEE</label>
+            </value>
+            <value>
+                <fullName>VAN NUYS</fullName>
+                <default>false</default>
+                <label>VAN NUYS</label>
+            </value>
+            <value>
+                <fullName>VENTURA</fullName>
+                <default>false</default>
+                <label>VENTURA</label>
+            </value>
+            <value>
+                <fullName>WEST COVINA</fullName>
+                <default>false</default>
+                <label>WEST COVINA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

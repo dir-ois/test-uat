@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When Employees are Paid per Hour, this is the amount per hour. There is a separate field if the amount per hour varies. --></help>
+    <label><!-- How Much Employees are Paid per Hour? --></label>
+    <name>How_Much_Employees_are_Paid_per_Hour__c</name>
+</CustomFieldTranslation>

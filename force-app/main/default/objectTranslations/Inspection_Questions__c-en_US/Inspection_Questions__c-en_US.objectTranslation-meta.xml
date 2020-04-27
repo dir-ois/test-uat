@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inspection Question</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inspection Questions</value>
+    </caseValues>
+    <layouts>
+        <layout>BOFE Inspection Questions</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection Question Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Collection of fields defining the setup of BOFE inspection questions --></description>
+        <label><!-- BOFE Inspection Questions --></label>
+        <name>BOFE_Inspection_Questions</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter a source data field in order to update the parent record data. --></errorMessage>
+        <name>Only_update_when_source_data_present</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_changing_of_Name</fullName>
+    <active>true</active>
+    <description>Prevents the employee name from being changed.</description>
+    <errorConditionFormula>ISCHANGED (  Name  ) 
+&amp;&amp;  NOT( CONTAINS($Profile.Name, &#39;System Administrator&#39;) )</errorConditionFormula>
+    <errorMessage>You may not change the Name on an employee record. Please create a new employee record.</errorMessage>
+</ValidationRule>

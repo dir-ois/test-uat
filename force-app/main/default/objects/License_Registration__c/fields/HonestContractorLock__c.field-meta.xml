@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HonestContractorLock__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+AND( 
+RecordType.DeveloperName = &quot;Public_Works&quot;, 
+HonestContractor__c = false, 
+NOT(ISBLANK(VIP_Date_Time_Submitted__c))),true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Honest Contractor Lock</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

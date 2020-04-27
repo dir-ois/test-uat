@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interest_due_on_calculation_date__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*
+(  Judgment_Balance__c  +   Post_hearing_Interest_Balance_Due__c  + Filing_Fees_Balance_Due__c +  Attorney_Fees_Balance_Due__c ) * (  Interest_Calculation_Date__c - Judgement_Date__c ) / 365 *  Interest_Rate__c
+*/
+
+IF (  Post_Judgement_Interest__c = 0 || ISBLANK ( Post_Judgement_Interest__c ) ,
+/* No post Judgment interest yet */
+(  Judgment_Balance__c  +   Post_hearing_Interest_Balance_Due__c  + Filing_Fees_Balance_Due__c +  Attorney_Fees_Balance_Due__c ) * (  Interest_Calculation_Date__c - Judgement_Date__c ) / 365 *  Interest_Rate__c ,
+/* Some interest already applied */
+(Judgment_Balance__c  +   Post_hearing_Interest_Balance_Due__c  + Filing_Fees_Balance_Due__c +  Attorney_Fees_Balance_Due__c ) * ( Interest_Calculation_Date__c - Today() + 1  ) / 365 *  Interest_Rate__c + Post_judgment_Interest_Balance_Due__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Interest amount due on the date specified in the Interest Calculation Date field</inlineHelpText>
+    <label>Interest Due On Calculation Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

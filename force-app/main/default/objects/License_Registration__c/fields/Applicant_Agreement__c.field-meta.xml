@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicant_Agreement__c</fullName>
+    <description>Used in Registration forms.</description>
+    <externalId>false</externalId>
+    <formula>&quot;I hereby authorize the Division of Labor Standards Enforcement (DLSE) Licensing &amp; Registration Unit to release information regarding my application to the below listed individuals. (Click &#39;Add Agent&#39; to add individuals.)&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Applicant Agreement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the inspection that this set of payroll records is related to. --></help>
+    <label><!-- Inspection --></label>
+    <name>Inspection__c</name>
+    <relationshipLabel><!-- Payroll Records --></relationshipLabel>
+</CustomFieldTranslation>

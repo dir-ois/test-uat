@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Legal Closed Reason --></label>
+    <name>Legal_Closed_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Acknowledgement of Full Satisfaction</masterLabel>
+        <translation><!-- Acknowledgement of Full Satisfaction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case settled and all settlement terms were complied with</masterLabel>
+        <translation><!-- Case settled and all settlement terms were complied with --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case settled and awaiting compliance</masterLabel>
+        <translation><!-- Case settled and awaiting compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case settled and legal has to enforce settlement</masterLabel>
+        <translation><!-- Case settled and legal has to enforce settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case settled and plaintiff has received full settlement amt</masterLabel>
+        <translation><!-- Case settled and plaintiff has received full settlement amt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed due to Bankruptcy</masterLabel>
+        <translation><!-- Closed due to Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance</masterLabel>
+        <translation><!-- Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Default Judgment Entered</masterLabel>
+        <translation><!-- Default Judgment Entered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Default Judgment Rejected</masterLabel>
+        <translation><!-- Default Judgment Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment entered against Labor Commissioner</masterLabel>
+        <translation><!-- Judgment entered against Labor Commissioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment entered for Labor Commissioner</masterLabel>
+        <translation><!-- Judgment entered for Labor Commissioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment entered for the plaintiff who shoes to pursue</masterLabel>
+        <translation><!-- Judgment entered for the plaintiff who shoes to pursue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment for the plaintiff but no know bank assets</masterLabel>
+        <translation><!-- Judgment for the plaintiff but no know bank assets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral Declined</masterLabel>
+        <translation><!-- Referral Declined --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

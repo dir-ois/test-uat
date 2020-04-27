@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DBA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DBAs</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- DBA Registration Form Fields --></label>
+        <name>DBA_Registration_Form_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- DBA TA --></label>
+        <name>DBA_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW DBA --></label>
+        <name>PW_DBA</name>
+    </fieldSets>
+    <layouts>
+        <layout>DBA Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a DBA name. --></errorMessage>
+        <name>DBA_Name_is_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

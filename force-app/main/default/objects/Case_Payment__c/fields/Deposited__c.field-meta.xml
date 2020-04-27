@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deposited__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Receipt__r.Status__c) = &#39;Deposited&#39;, TRUE, FALSE)</formula>
+    <label>Deposited</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

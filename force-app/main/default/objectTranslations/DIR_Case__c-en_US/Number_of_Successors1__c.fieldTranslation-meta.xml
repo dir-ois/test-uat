@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of case roles with the &quot;successor&quot; role --></help>
+    <label><!-- Number of Successors --></label>
+    <name>Number_of_Successors1__c</name>
+</CustomFieldTranslation>

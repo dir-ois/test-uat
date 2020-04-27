@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the meeting is a followup, indicate so by checking this box. --></help>
+    <label><!-- Secondary/Subsequent --></label>
+    <name>Secondary_Subsequent__c</name>
+</CustomFieldTranslation>

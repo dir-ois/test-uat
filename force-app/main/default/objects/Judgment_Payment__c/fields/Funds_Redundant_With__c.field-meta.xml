@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funds_Redundant_With__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>When a Case Payment is posted to Case Issues and the Case has Judgments, both Liability Payments and Judgment Payments are created for the same funds. This field looks up to the Liability Payment that this Judgment Payment duplicates. This field is intended to be populated by the PostCasePaymentController and PartyPaymentController apex classes only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When a Case Payment is posted to Case Issues and the Case has Judgments, both Liability Payments and Judgment Payments are created for the same funds. This field looks up to the Liability Payment that this Judgment Payment duplicates.</inlineHelpText>
+    <label>Funds Redundant With</label>
+    <referenceTo>Liability_Payment__c</referenceTo>
+    <relationshipLabel>Redundant Judgment Payments</relationshipLabel>
+    <relationshipName>Redundant_Judgment_Payments</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

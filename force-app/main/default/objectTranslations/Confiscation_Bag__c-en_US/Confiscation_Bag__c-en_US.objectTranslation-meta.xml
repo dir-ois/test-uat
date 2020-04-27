@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Confiscation Bag</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Confiscation Bags</value>
+    </caseValues>
+    <layouts>
+        <layout>Confiscation Bag Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- This bag contains only &apos;Equipment&apos; type item --></description>
+        <label><!-- Equipment --></label>
+        <name>Equipment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This bag contains only &apos;Garment&apos; type item --></description>
+        <label><!-- Garment --></label>
+        <name>Garment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

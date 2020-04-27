@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Related To --></label>
+    <name>Related_To__c</name>
+    <picklistValues>
+        <masterLabel>BOFE</masterLabel>
+        <translation><!-- BOFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CASHIERING</masterLabel>
+        <translation><!-- CASHIERING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR</masterLabel>
+        <translation><!-- HR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA</masterLabel>
+        <translation><!-- PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PWCR</masterLabel>
+        <translation><!-- PWCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI</masterLabel>
+        <translation><!-- RCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REGISTRATION</masterLabel>
+        <translation><!-- REGISTRATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SERVICE MANAGEMENT</masterLabel>
+        <translation><!-- SERVICE MANAGEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA</masterLabel>
+        <translation><!-- WCA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

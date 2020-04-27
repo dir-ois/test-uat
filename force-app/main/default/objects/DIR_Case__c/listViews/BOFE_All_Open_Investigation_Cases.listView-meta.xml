@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_All_Open_Investigation_Cases</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Account_DBA__c</columns>
+    <columns>Office__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Total_Penalties_Assessed__c</columns>
+    <columns>Total_Penalties_Balance_Due__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.BOFE_Investigation</value>
+    </filters>
+    <label>BOFE All Open Investigation Cases</label>
+    <sharedTo>
+        <roleAndSubordinates>BOFE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

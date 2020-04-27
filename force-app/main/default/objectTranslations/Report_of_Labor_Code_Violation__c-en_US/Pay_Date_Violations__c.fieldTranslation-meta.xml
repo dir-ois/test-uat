@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select more than 1 if neccessary --></help>
+    <label><!-- Pay Date Violations --></label>
+    <name>Pay_Date_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Late payment of wages</masterLabel>
+        <translation><!-- Late payment of wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No fixed pay date</masterLabel>
+        <translation><!-- No fixed pay date --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When Employees are Paid per Hour and the amount varies, this is the field for the explanation of why it varies. There is a separate field if the amount does not vary. --></help>
+    <label><!-- When Hourly Amount of Pay Varies? --></label>
+    <name>When_Hourly_Amount_of_Pay_Varies__c</name>
+</CustomFieldTranslation>

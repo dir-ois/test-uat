@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>293</locationX>
+        <locationY>104</locationY>
+        <assignmentItems>
+            <assignToReference>varPaymentRecordID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a2h630000008Z9n</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCheckID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCheckStatus</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCheckIssued</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Update_Necessary</name>
+        <label>Update Necessary</label>
+        <locationX>529</locationX>
+        <locationY>245</locationY>
+        <defaultConnectorLabel>n/a</defaultConnectorLabel>
+        <rules>
+            <name>Check_deleted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckIssued</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCheckID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Check_Issued_False</targetReference>
+            </connector>
+            <label>Check deleted</label>
+        </rules>
+        <rules>
+            <name>Check_No_Longer_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckIssued</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>flaCheckValid</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Check_Issued_False</targetReference>
+            </connector>
+            <label>Check No Longer Valid</label>
+        </rules>
+        <rules>
+            <name>Check_added</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCheckIssued</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>flaCheckValid</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Check_Issued_True</targetReference>
+            </connector>
+            <label>Check added</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>293</locationX>
+        <locationY>248</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varPaymentRecordID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Necessary</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Tested to perform as expected</description>
+    <formulas>
+        <description>Formula to determine if the check is valid or not. Used in the decision elements that determine which action to take</description>
+        <name>flaCheckValid</name>
+        <dataType>Boolean</dataType>
+        <expression>IF (
+{!varCheckStatus} = &#39;Pending Approval&#39; ||
+{!varCheckStatus} = &#39;Secondary Approval Needed&#39; ||
+{!varCheckStatus} = &#39;Approved&#39; ||
+{!varCheckStatus} = &#39;Printed&#39; ||
+{!varCheckStatus} = &#39;Uncleared&#39; ||
+{!varCheckStatus} = &#39;Cleared&#39; ,
+TRUE, FALSE )</expression>
+    </formulas>
+    <interviewLabel>Payment Record - Update Check Issued {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Payment Record - Update Check Issued</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Check_Issued_False</name>
+        <label>Set Check Issued False</label>
+        <locationX>784</locationX>
+        <locationY>336</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varPaymentRecordID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Check_Issued__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Payment_Record__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Check_Issued_True</name>
+        <label>Set Check Issued True</label>
+        <locationX>784</locationX>
+        <locationY>165</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varPaymentRecordID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Check_Issued__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Payment_Record__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>ID of Check passed from process builder when check is populated on payment record</description>
+        <name>varCheckID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>boolean value passed from pb indicating that the check has been issued and is valid</description>
+        <name>varCheckIssued</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Status of check related to the payment record when passed from process builder</description>
+        <name>varCheckStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>payment record that started the flow passed from the process</description>
+        <name>varPaymentRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

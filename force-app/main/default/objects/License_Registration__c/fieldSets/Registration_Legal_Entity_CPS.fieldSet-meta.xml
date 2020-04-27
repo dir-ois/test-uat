@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Legal_Entity_CPS</fullName>
+    <description>VIP From Tool Registration for Child Performer Services</description>
+    <displayedFields>
+        <field>Business_Name__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Registration_Legal_Entity_CPS</label>
+</FieldSet>

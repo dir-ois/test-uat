@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Document</fullName>
+    <active>true</active>
+    <label>Registration Document</label>
+    <picklistValues>
+        <picklist>Attachment_Needed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cure_Dispute_Status__c</picklist>
+        <values>
+            <fullName>Evaluated%2FCure Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated%2FEmployer Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated%2FNo Cure Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened%2FNo Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened%2FTo be evaluated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manual_Screen_Status__c</picklist>
+        <values>
+            <fullName>Not Screened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Settlement_Disposition1__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No agency comment of response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Articles of Incorporation%2FOrganization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond Collective Bargaining Agreement %28CBA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certificate of Limited Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Leasing WCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Employer Identification Number %28FEIN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRS Clearance Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Waste Discharge Permit Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Required Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Leasing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed Employee Leasing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Employer Identification Number %28SEIN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers Compensation Insurance %28WCI%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

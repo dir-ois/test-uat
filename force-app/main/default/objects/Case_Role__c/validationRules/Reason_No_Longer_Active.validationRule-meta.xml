@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_No_Longer_Active</fullName>
+    <active>true</active>
+    <description>When Status contains Dismissal then field Reason No Longer Active is required.</description>
+    <errorConditionFormula>(
+(TEXT(Case_Role_Status__c)) = &quot;Dismissal - Claimant&quot; || 
+(TEXT(Case_Role_Status__c)) = &quot;Dismissal - Deputy&quot; || 
+(TEXT(Case_Role_Status__c)) = &quot;Dismissal - Ineffective service&quot; ||
+(TEXT(Case_Role_Status__c)) = &quot;No Longer Active On Case&quot;
+) &amp;&amp; 
+( ISBLANK(Reason_No_Longer_Active__c))</errorConditionFormula>
+    <errorDisplayField>Reason_No_Longer_Active__c</errorDisplayField>
+    <errorMessage>Reason No Longer Active is required</errorMessage>
+</ValidationRule>

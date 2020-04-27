@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_End_DateTime_not_gt_14_days</fullName>
+    <active>true</active>
+    <description>The Meeting End Date/Time cannot be greater than 14 days (20160 minutes) after the Meeting Start Date/Time because a Flow subsequently creates an Event, and Events cannot be longer than 14 days.</description>
+    <errorConditionFormula>Meeting_End_Date_Time__c - Meeting_Start_Date_Time__c &gt; 14</errorConditionFormula>
+    <errorMessage>Meeting End Date/Time cannot be more than 14 days after Meeting Start Date/Time</errorMessage>
+</ValidationRule>

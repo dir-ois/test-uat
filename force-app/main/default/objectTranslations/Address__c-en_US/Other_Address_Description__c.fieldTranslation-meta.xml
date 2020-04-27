@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Address type is other, please provide a description --></help>
+    <label><!-- Other Address Description --></label>
+    <name>Other_Address_Description__c</name>
+</CustomFieldTranslation>

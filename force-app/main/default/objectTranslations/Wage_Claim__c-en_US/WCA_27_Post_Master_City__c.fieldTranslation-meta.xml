@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 27 Post Master City --></label>
+    <name>WCA_27_Post_Master_City__c</name>
+</CustomFieldTranslation>

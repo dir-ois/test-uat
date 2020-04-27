@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Be_Returned_If_Not_Deposited</fullName>
+    <active>true</active>
+    <description>Item can not be marked Returned if the Status is not Deposited.</description>
+    <errorConditionFormula>Returned_Item__c = TRUE &amp;&amp;
+NOT(ISPICKVAL(Status__c, &#39;Deposited&#39;)) &amp;&amp;
+NOT(ISPICKVAL(Status__c, &#39;Returned&#39;))</errorConditionFormula>
+    <errorDisplayField>Returned_Item__c</errorDisplayField>
+    <errorMessage>Item can not be marked Returned if the Status is not Deposited.</errorMessage>
+</ValidationRule>

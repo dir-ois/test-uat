@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fee Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fee Schedules</value>
+    </caseValues>
+    <layouts>
+        <layout>Fee Schedule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Flat Fee --></label>
+        <name>Flat_Fee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Per x --></label>
+        <name>Per_x</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Percent --></label>
+        <name>Percent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Range --></label>
+        <name>Range</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Reference Field is required for Range fee types. --></errorMessage>
+        <name>Reference_Field_reqd_for_Range_Percent</name>
+    </validationRules>
+</CustomObjectTranslation>

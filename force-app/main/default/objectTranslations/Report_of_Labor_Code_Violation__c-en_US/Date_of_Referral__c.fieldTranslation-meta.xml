@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- F0006: Date of Referral from Wage. --></help>
+    <label><!-- Date of Referral --></label>
+    <name>Date_of_Referral__c</name>
+</CustomFieldTranslation>

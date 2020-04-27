@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissed_Other_Reason_is_required</fullName>
+    <active>true</active>
+    <description>Dismissed - Other Reason is required</description>
+    <errorConditionFormula>TEXT( Closure_Disposition__c ) = &quot;Dismissed - Other&quot;  &amp;&amp;  ISBLANK( Closure_Disposition_Other_Reason__c )</errorConditionFormula>
+    <errorDisplayField>Closure_Disposition_Other_Reason__c</errorDisplayField>
+    <errorMessage>Dismissed - Other Reason is required</errorMessage>
+</ValidationRule>

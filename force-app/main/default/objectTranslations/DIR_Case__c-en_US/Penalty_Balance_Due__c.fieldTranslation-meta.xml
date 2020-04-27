@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Penalty balance due for total penalty payments not received, --></help>
+    <label><!-- Penalty Balance Due --></label>
+    <name>Penalty_Balance_Due__c</name>
+</CustomFieldTranslation>

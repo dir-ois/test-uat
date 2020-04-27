@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Senior_Deputy_Assignment</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number_Legacy__c</columns>
+    <columns>Claim_Status__c</columns>
+    <columns>Date_of_Docket__c</columns>
+    <columns>Senior_Deputy_Labor_Commissioner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Claim_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Senior Deputy Assignment</label>
+</ListView>

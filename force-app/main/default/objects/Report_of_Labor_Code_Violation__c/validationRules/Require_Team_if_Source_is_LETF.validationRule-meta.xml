@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Team_if_Source_is_LETF</fullName>
+    <active>false</active>
+    <description>Related to 17421 - If Violation source is LETF Call\Email, Require Team #</description>
+    <errorConditionFormula>AND(ISPICKVAL( Source__c , &quot;LETF Call/Email&quot;),
+  ISNULL(Team__c))</errorConditionFormula>
+    <errorDisplayField>Team__c</errorDisplayField>
+    <errorMessage>When LETF Call/Email is selected as the Violation Source, you must enter Team #</errorMessage>
+</ValidationRule>

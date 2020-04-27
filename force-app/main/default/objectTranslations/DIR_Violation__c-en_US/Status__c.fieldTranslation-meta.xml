@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If Sr. administratively dismisses violation, they must also adjust penalties and/or wages due to zero. --></help>
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted by JEU</masterLabel>
+        <translation><!-- Accepted by JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administrative Dismissal</masterLabel>
+        <translation><!-- Administrative Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Affirmed</masterLabel>
+        <translation><!-- Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alleged</masterLabel>
+        <translation><!-- Alleged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended</masterLabel>
+        <translation><!-- Amended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appeal Withdrawn</masterLabel>
+        <translation><!-- Appeal Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled - Invalid</masterLabel>
+        <translation><!-- Canceled - Invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled/Invalid</masterLabel>
+        <translation><!-- Canceled/Invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claimant Withdrew</masterLabel>
+        <translation><!-- Claimant Withdrew --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De Novo Appeal</masterLabel>
+        <translation><!-- De Novo Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Uncitable</masterLabel>
+        <translation><!-- Demand Uncitable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed</masterLabel>
+        <translation><!-- Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed at Conference</masterLabel>
+        <translation><!-- Dismissed at Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed at Hearing</masterLabel>
+        <translation><!-- Dismissed at Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Found</masterLabel>
+        <translation><!-- Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment</masterLabel>
+        <translation><!-- Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legacy Closed</masterLabel>
+        <translation><!-- Legacy Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modified</masterLabel>
+        <translation><!-- Modified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer in Compromise</masterLabel>
+        <translation><!-- Offer in Compromise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Statute</masterLabel>
+        <translation><!-- Out of Statute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid Off</masterLabel>
+        <translation><!-- Paid Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid in Full</masterLabel>
+        <translation><!-- Paid in Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to JEU</masterLabel>
+        <translation><!-- Referred to JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by JEU</masterLabel>
+        <translation><!-- Rejected by JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Dismissal</masterLabel>
+        <translation><!-- Request Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restitution Fund (no Judgment)</masterLabel>
+        <translation><!-- Restitution Fund (no Judgment) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Audit Discount</masterLabel>
+        <translation><!-- Self Audit Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Appeal</masterLabel>
+        <translation><!-- Under Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unsubstantiated</masterLabel>
+        <translation><!-- Unsubstantiated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ Affirmed</masterLabel>
+        <translation><!-- Writ Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ Dismissed</masterLabel>
+        <translation><!-- Writ Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ Settled by Legal</masterLabel>
+        <translation><!-- Writ Settled by Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Write Off</masterLabel>
+        <translation><!-- Write Off --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

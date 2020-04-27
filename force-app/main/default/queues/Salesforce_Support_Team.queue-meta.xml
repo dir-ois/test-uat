@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>hleake@dir.ca.gov</email>
+    <name>Salesforce Support Team</name>
+    <queueMembers>
+        <users>
+            <user>ble@dir.ca.gov</user>
+            <user>cbae@dir.ca.gov</user>
+            <user>cawong@dir.ca.gov</user>
+            <user>dkwon@dir.ca.gov</user>
+            <user>dchu@dir.ca.gov</user>
+            <user>hleake@dir.ca.gov</user>
+            <user>kwong@dir.ca.gov</user>
+            <user>mteixeira@dir.ca.gov</user>
+            <user>tnegussay@dir.ca.gov</user>
+            <user>tken@dir.ca.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Support_Request__c</sobjectType>
+    </queueSobject>
+</Queue>

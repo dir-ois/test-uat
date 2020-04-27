@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Improper_form_incl_NSF_check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Improper form of payment (including NSF paychecks)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Improper form of payment (including NSF paychecks)</inlineHelpText>
+    <label>Improper payment form incl. NSF check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

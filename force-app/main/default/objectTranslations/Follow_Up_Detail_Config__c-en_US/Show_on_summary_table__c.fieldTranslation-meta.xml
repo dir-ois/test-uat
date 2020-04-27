@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select this to show the field in the summary table after entering a &quot;record&quot; --></help>
+    <label><!-- Show on summary table --></label>
+    <name>Show_on_summary_table__c</name>
+</CustomFieldTranslation>

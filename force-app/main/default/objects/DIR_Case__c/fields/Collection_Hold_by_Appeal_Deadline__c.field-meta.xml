@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Hold_by_Appeal_Deadline__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This hidden field when checked indicate that Collection Hold is on when appeal deadline on a case issue has not passed.</description>
+    <externalId>false</externalId>
+    <label>Collection Hold by Appeal Deadline</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

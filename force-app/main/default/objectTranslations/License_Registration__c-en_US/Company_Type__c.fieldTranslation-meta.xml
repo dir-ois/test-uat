@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Company Type --></label>
+    <name>Company_Type__c</name>
+    <picklistValues>
+        <masterLabel>Advocate Organization</masterLabel>
+        <translation><!-- Advocate Organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Association</masterLabel>
+        <translation><!-- Association --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporation</masterLabel>
+        <translation><!-- Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Partnership</masterLabel>
+        <translation><!-- General Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Individual Permit</masterLabel>
+        <translation><!-- Individual Permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joint Venture</masterLabel>
+        <translation><!-- Joint Venture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLC</masterLabel>
+        <translation><!-- LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LLP LP</masterLabel>
+        <translation><!-- LLP LP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partnership</masterLabel>
+        <translation><!-- Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Corporation</masterLabel>
+        <translation><!-- Professional Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Entity</masterLabel>
+        <translation><!-- Public Entity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sole Proprietorship</masterLabel>
+        <translation><!-- Sole Proprietorship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trust</masterLabel>
+        <translation><!-- Trust --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

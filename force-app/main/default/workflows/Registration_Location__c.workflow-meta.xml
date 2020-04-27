@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Business_License_Expiration_Email_Alert</fullName>
+        <description>Business License Expiration Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Expiration_of_the_Business_License</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Business_License_Invalid</fullName>
+        <field>Business_License_Invalid__c</field>
+        <literalValue>1</literalValue>
+        <name>Business License Invalid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_License_is_Valid</fullName>
+        <description>Unchecks Business License Invalid box</description>
+        <field>Business_License_Invalid__c</field>
+        <literalValue>0</literalValue>
+        <name>Business License is Valid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>45 Day Business License Expiration Notice</fullName>
+        <active>true</active>
+        <description>Sends email to registration applicant 45 days prior to the expiration date of their business license.</description>
+        <formula>IF(Business_License_Expiration__c - TODAY() = 45, TRUE, FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Business_License_Expiration_Email_Alert</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Registration_Location__c.Business_License_Expiration__c</offsetFromField>
+            <timeLength>-45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>REG%3A Business License Invalid</fullName>
+        <actions>
+            <name>Business_License_Invalid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Marks Business_License_Invalid__c to true when Business_License_Expiration__c is less than 14 days from today.</description>
+        <formula>AND(Business_License_Expiration__c &lt; (Today() + 14), NOT(ISBLANK(Business_License_Expiration__c)), ISPICKVAL(Business_Regulatory_Compliance__c, &quot;Yes&quot;) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Business_License_Invalid</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Registration_Location__c.Business_License_Expiration__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>REG%3A Business License Valid</fullName>
+        <actions>
+            <name>Business_License_is_Valid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Uncheck Invalid box when license date is updated to more than 14 days from today.</description>
+        <formula>OR( ISBLANK(Business_License_Expiration__c), Business_License_Expiration__c &gt; (TODAY() + 14) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

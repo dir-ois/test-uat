@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Unregistered car wash --></help>
+    <label><!-- Unregistered car wash --></label>
+    <name>Violation_Unregistered_car_wash__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Case_Management</fullName>
+    <active>true</active>
+    <description>Case Management field cannot be changed.</description>
+    <errorConditionFormula>ISCHANGED(Case_Management__c)</errorConditionFormula>
+    <errorDisplayField>Case_Management__c</errorDisplayField>
+    <errorMessage>The data on this field cannot be changed.</errorMessage>
+</ValidationRule>

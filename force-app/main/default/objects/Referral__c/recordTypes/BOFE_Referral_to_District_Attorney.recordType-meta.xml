@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Referral_to_District_Attorney</fullName>
+    <active>true</active>
+    <label>BOFE Referral to District Attorney</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Basis_for_SOL__c</picklist>
+        <values>
+            <fullName>Determination Issued Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Determination Served Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Appeal Demand Letter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_File__c</picklist>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Confidential__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>De_Nova_Closed_Reason__c</picklist>
+        <values>
+            <fullName>An Acknowledgment of Full Satisfaction of Judgment has been filed and entered by the court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant%E2%80%99s appeal has been dismissed%2E Request is hereby made for district office to enter judgment on underlying ODA and record Certificate of lien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment entered for the plaintiff who chose to pursue collection of judgment on his%2Fher own behalf %28see Reassignment of Claim%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment for the plaintiff but no known bank assets for defendant employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment in plaintiff%E2%80%99s favor has been partially satisfied%2E No other known assets of the defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The case has been settled and plaintiff has received the full settlement amount</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Decision__c</picklist>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disposition__c</picklist>
+        <values>
+            <fullName>Appeal Withdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decline Representation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment in favor of Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment in favor of Plaintiff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jurisdiction Established</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Jurisdiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Jurisdiction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to Dep - More Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representation Not Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement Reached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stay Pending a Grievance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Legal_Outcome__c</picklist>
+        <values>
+            <fullName>Judgment for DLSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment for Employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Further_Action_Needed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_Provided__c</picklist>
+        <values>
+            <fullName>Mailed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaintiff Picked Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Car Wash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitorial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>JEU_Reject_Reason2__c</picklist>
+        <values>
+            <fullName>Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer to CPL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer to WJC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legal_Category__c</picklist>
+        <values>
+            <fullName>Costs of Suit %28General Fund%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costs of Suit %28Reimbursable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Damages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty L%2EC%2E 1019%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty L%2EC%2E 1102%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty L%2EC%2E 245 -249 see app A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty L%2EC%2E 2814</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty L%2EC%2E 98%2E6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wages %2F Back Pay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legal_Closed_Reason__c</picklist>
+        <values>
+            <fullName>Acknowledgement of Full Satisfaction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case settled and plaintiff has received full settlement amt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment entered for the plaintiff who shoes to pursue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment for the plaintiff but no know bank assets</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Litigation_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mediation_Status__c</picklist>
+        <values>
+            <fullName>Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome__c</picklist>
+        <values>
+            <fullName>Case Settled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgement against DLSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment in favor of DLSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Litigation Pending%2FFiled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Declined by Legal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Approval</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Request Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review in Process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Approver_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Strategic_Referral__c</picklist>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Request__c</picklist>
+        <values>
+            <fullName>Wages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers Compensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit__c</picklist>
+        <values>
+            <fullName>BOFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wage_Justice_Center_Disposition__c</picklist>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>zApproval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

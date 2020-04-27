@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Home phone number of the reporting party. --></help>
+    <label><!-- Reporting Party Home Phone --></label>
+    <name>Reporting_Party_Home_Phone__c</name>
+</CustomFieldTranslation>

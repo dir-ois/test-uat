@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DLSE Program --></label>
+    <name>DLSE_Program__c</name>
+    <picklistValues>
+        <masterLabel>BOFE</masterLabel>
+        <translation><!-- BOFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EEEC</masterLabel>
+        <translation><!-- EEEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EETF</masterLabel>
+        <translation><!-- EETF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLC</masterLabel>
+        <translation><!-- FLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JANITORIAL</masterLabel>
+        <translation><!-- JANITORIAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LETF</masterLabel>
+        <translation><!-- LETF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA</masterLabel>
+        <translation><!-- PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PASS THRU</masterLabel>
+        <translation><!-- PASS THRU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PW</masterLabel>
+        <translation><!-- PW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TALENT</masterLabel>
+        <translation><!-- TALENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WARN</masterLabel>
+        <translation><!-- WARN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

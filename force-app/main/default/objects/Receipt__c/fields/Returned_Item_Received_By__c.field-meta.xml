@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returned_Item_Received_By__c</fullName>
+    <description>RFO requirement F-0255</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate which unit marked the payment as a returned item; DIR Accounting or DLSE Cashiering.</inlineHelpText>
+    <label>Returned Item Received By</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCT</fullName>
+                <default>false</default>
+                <label>ACCT</label>
+            </value>
+            <value>
+                <fullName>DLSE</fullName>
+                <default>false</default>
+                <label>DLSE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

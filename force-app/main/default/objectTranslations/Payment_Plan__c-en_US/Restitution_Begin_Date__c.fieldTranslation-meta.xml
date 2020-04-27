@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date first payment of payment plan is due. --></help>
+    <label><!-- Restitution Begin Date --></label>
+    <name>Restitution_Begin_Date__c</name>
+</CustomFieldTranslation>

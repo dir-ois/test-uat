@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEC2_Transaction_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>SEC2 Transaction Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Establishment of New Position</fullName>
+                <default>true</default>
+                <label>Establishment of New Position</label>
+            </value>
+            <value>
+                <fullName>Limited Term Appointment from Temporary Help Funds</fullName>
+                <default>false</default>
+                <label>Limited Term Appointment from Temporary Help Funds</label>
+            </value>
+            <value>
+                <fullName>Change of Present Position</fullName>
+                <default>false</default>
+                <label>Change of Present Position</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

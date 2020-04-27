@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Settlement_Phase__c</fullName>
+    <externalId>false</externalId>
+    <label>RCI Settlement Phase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Conference</fullName>
+                <default>false</default>
+                <label>Pre-Conference</label>
+            </value>
+            <value>
+                <fullName>At Conference</fullName>
+                <default>false</default>
+                <label>At Conference</label>
+            </value>
+            <value>
+                <fullName>Pre-Determination</fullName>
+                <default>false</default>
+                <label>Pre-Determination</label>
+            </value>
+            <value>
+                <fullName>Post-Determination</fullName>
+                <default>false</default>
+                <label>Post-Determination</label>
+            </value>
+            <value>
+                <fullName>At Wage Conference</fullName>
+                <default>false</default>
+                <label>At Wage Conference</label>
+            </value>
+            <value>
+                <fullName>Pre-Judgment</fullName>
+                <default>false</default>
+                <label>Pre-Judgment</label>
+            </value>
+            <value>
+                <fullName>Post Judgment</fullName>
+                <default>false</default>
+                <label>Post Judgment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

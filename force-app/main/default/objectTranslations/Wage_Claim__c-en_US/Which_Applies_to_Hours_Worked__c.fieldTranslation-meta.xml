@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Which Applies to Hours Worked --></label>
+    <name>Which_Applies_to_Hours_Worked__c</name>
+    <picklistValues>
+        <masterLabel>My work hours and days of work were usually the same each week that I worked.</masterLabel>
+        <translation><!-- My work hours and days of work were usually the same each week that I worked. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>My work hours and/or days of work varied per week or were irregular. If you select this and you are claiming unpaid wages or meal and rest period violations, you should also fill out and submit the DLSE FORM 55.</masterLabel>
+        <translation><!-- My work hours and/or days of work varied per week or were irregular. If you select this and you are claiming unpaid wages or meal and rest period violations, you should also fill out and submit the DLSE FORM 55. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

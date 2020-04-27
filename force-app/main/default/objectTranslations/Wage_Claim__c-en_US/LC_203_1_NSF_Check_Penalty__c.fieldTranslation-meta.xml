@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LC 203.1 NSF Check Penalty --></label>
+    <name>LC_203_1_NSF_Check_Penalty__c</name>
+</CustomFieldTranslation>

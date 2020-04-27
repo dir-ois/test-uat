@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cure_Dispute_Status__c</fullName>
+    <description>For Cure Disputes, this is the status.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For Cure Disputes, this is the status.</inlineHelpText>
+    <label>Cure Dispute Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Screened/No Action</fullName>
+                <default>false</default>
+                <label>Screened/No Action</label>
+            </value>
+            <value>
+                <fullName>Screened/To be evaluated</fullName>
+                <default>false</default>
+                <label>Screened/To be evaluated</label>
+            </value>
+            <value>
+                <fullName>Evaluated/Employer Extension</fullName>
+                <default>false</default>
+                <label>Evaluated/Employer Extension</label>
+            </value>
+            <value>
+                <fullName>Evaluated/Cure Decision</fullName>
+                <default>false</default>
+                <label>Evaluated/Cure Decision</label>
+            </value>
+            <value>
+                <fullName>Evaluated/No Cure Decision</fullName>
+                <default>false</default>
+                <label>Evaluated/No Cure Decision</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

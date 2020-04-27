@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>10118</label>
+    <protected>false</protected>
+    <values>
+        <field>Error_ID__c</field>
+        <value xsi:type="xsd:string">10118</value>
+    </values>
+    <values>
+        <field>Technical_Message__c</field>
+        <value xsi:type="xsd:string">The UMmd5hash did not match the hash that was calculated for the transaction.</value>
+    </values>
+    <values>
+        <field>User_Message__c</field>
+        <value xsi:type="xsd:string">Transaction authentication failed.</value>
+    </values>
+</CustomMetadata>

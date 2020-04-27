@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Title --></label>
+    <name>Title__c</name>
+    <picklistValues>
+        <masterLabel>CEO/President</masterLabel>
+        <translation><!-- CEO/President --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managing Member</masterLabel>
+        <translation><!-- Managing Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation><!-- Secretary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sole Proprietor</masterLabel>
+        <translation><!-- Sole Proprietor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treasurer/CFO</masterLabel>
+        <translation><!-- Treasurer/CFO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice President</masterLabel>
+        <translation><!-- Vice President --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEC5_Approval__c</fullName>
+    <externalId>false</externalId>
+    <label>SEC5 Approval</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved as Requested</fullName>
+                <default>true</default>
+                <label>Approved as Requested</label>
+            </value>
+            <value>
+                <fullName>Approved as modified</fullName>
+                <default>false</default>
+                <label>Approved as modified</label>
+            </value>
+            <value>
+                <fullName>Disapproved</fullName>
+                <default>false</default>
+                <label>Disapproved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

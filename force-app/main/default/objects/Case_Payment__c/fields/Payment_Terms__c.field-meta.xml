@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms__c</fullName>
+    <externalId>false</externalId>
+    <label>Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Payment</fullName>
+                <default>false</default>
+                <label>Full Payment</label>
+            </value>
+            <value>
+                <fullName>Full Payment per Settlement</fullName>
+                <default>false</default>
+                <label>Full Payment per Settlement</label>
+            </value>
+            <value>
+                <fullName>Partial Payment per Settlement</fullName>
+                <default>false</default>
+                <label>Partial Payment per Settlement</label>
+            </value>
+            <value>
+                <fullName>Full Payment Pursuant to the ODA</fullName>
+                <default>false</default>
+                <label>Full Payment Pursuant to the ODA</label>
+            </value>
+            <value>
+                <fullName>Employer Concedes Amount</fullName>
+                <default>false</default>
+                <label>Employer Concedes Amount</label>
+            </value>
+            <value>
+                <fullName>Employer Concedes-Restrictive Endorsement</fullName>
+                <default>false</default>
+                <label>Employer Concedes-Restrictive Endorsement</label>
+            </value>
+            <value>
+                <fullName>Employer Correspondence</fullName>
+                <default>false</default>
+                <label>Employer Correspondence</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

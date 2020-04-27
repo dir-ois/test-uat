@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligibility_Notification__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+Question_ID__r.Disqualified_Answer__c = TEXT(YesNo__c),&quot;&quot;,&quot;Answering &quot;+( Question_ID__r.Disqualified_Answer__c)+&quot; to the question: &#39;&quot;+(Question_Short_Text__c)+&quot;&#39; makes this application ineligible for submission. Please correct before submitting.&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eligibility Notification</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

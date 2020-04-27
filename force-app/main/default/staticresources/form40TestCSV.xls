@@ -1,0 +1,5 @@
+Employee First Name,Employee Last Name,Employee Street,Employee City,Employee State,Employee Zip,SSN,Period Covered by Adjustment,Total Wage Assessment,Gross Wages Paid,Deductions: State Disability Insurance,Deductions: Social Security,Deductions: Medicare,Deductions: State Withholding,Deductions: Federal Withholding,Deductions: Total,Net Wages Paid,Factor
+John,Doe,123 Main,Sacramento,CA,92865,123456789,Period 1 to 2,5000,0,75,80,50,100,150,455,3545,35
+Bill,Greenhaw,555 Somewhere,Sacramento,CA,92865,555-55-5555,1/1/2016-5/1/2016,4000,0,50,55,30,80,120,335,3165,30
+Jeremy,Case,999 Street,Sacramento,CA,92865,999999999,Dec to March,3000,0,30,35,20,60,80,225,1275,35
+Rob,Lucas,888 Street,Sacramento,CA,92865,444444444,Dec to March,3000,0,30,35,20,60,80,225,1275,0

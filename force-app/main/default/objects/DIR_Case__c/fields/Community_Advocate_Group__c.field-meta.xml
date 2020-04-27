@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Advocate_Group__c</fullName>
+    <description>Selection list of Community Advocate Group</description>
+    <externalId>false</externalId>
+    <label>Community Advocate Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asian Pacific American Legal Center</fullName>
+                <default>false</default>
+                <label>Asian Pacific American Legal Center</label>
+            </value>
+            <value>
+                <fullName>Asian Pacific Islander Legal Outreach</fullName>
+                <default>false</default>
+                <label>Asian Pacific Islander Legal Outreach</label>
+            </value>
+            <value>
+                <fullName>Asian Law Caucus</fullName>
+                <default>false</default>
+                <label>Asian Law Caucus</label>
+            </value>
+            <value>
+                <fullName>Bet Tzedek Legal Services</fullName>
+                <default>false</default>
+                <label>Bet Tzedek Legal Services</label>
+            </value>
+            <value>
+                <fullName>California Immigrant Policy Center</fullName>
+                <default>false</default>
+                <label>California Immigrant Policy Center</label>
+            </value>
+            <value>
+                <fullName>CRLA, Inc.</fullName>
+                <default>false</default>
+                <label>CRLA, Inc.</label>
+            </value>
+            <value>
+                <fullName>CRLAF</fullName>
+                <default>false</default>
+                <label>CRLAF</label>
+            </value>
+            <value>
+                <fullName>Centro Legal de la Raza</fullName>
+                <default>false</default>
+                <label>Centro Legal de la Raza</label>
+            </value>
+            <value>
+                <fullName>Chinese Progressive Assoc.</fullName>
+                <default>false</default>
+                <label>Chinese Progressive Assoc.</label>
+            </value>
+            <value>
+                <fullName>CLEAN Car Wash Campaign</fullName>
+                <default>false</default>
+                <label>CLEAN Car Wash Campaign</label>
+            </value>
+            <value>
+                <fullName>Coalition for Humane Immigrant Rights LA</fullName>
+                <default>false</default>
+                <label>Coalition for Humane Immigrant Rights LA</label>
+            </value>
+            <value>
+                <fullName>Employee Rights Center</fullName>
+                <default>false</default>
+                <label>Employee Rights Center</label>
+            </value>
+            <value>
+                <fullName>Equal Rights Advocates</fullName>
+                <default>false</default>
+                <label>Equal Rights Advocates</label>
+            </value>
+            <value>
+                <fullName>KIWA - Korea Town Immigrants Workers Alliance</fullName>
+                <default>false</default>
+                <label>KIWA - Korea Town Immigrants Workers Alliance</label>
+            </value>
+            <value>
+                <fullName>La Raza Centro Legal</fullName>
+                <default>false</default>
+                <label>La Raza Centro Legal</label>
+            </value>
+            <value>
+                <fullName>Lawyer&#39;s Committee for Civil Rights</fullName>
+                <default>false</default>
+                <label>Lawyer&#39;s Committee for Civil Rights</label>
+            </value>
+            <value>
+                <fullName>Legal Aid Foundation of L.A.</fullName>
+                <default>false</default>
+                <label>Legal Aid Foundation of L.A.</label>
+            </value>
+            <value>
+                <fullName>Legal Aid of Marin</fullName>
+                <default>false</default>
+                <label>Legal Aid of Marin</label>
+            </value>
+            <value>
+                <fullName>Legal Aid Society-Employment Law Center</fullName>
+                <default>false</default>
+                <label>Legal Aid Society-Employment Law Center</label>
+            </value>
+            <value>
+                <fullName>National Day Laborer Organization Network</fullName>
+                <default>false</default>
+                <label>National Day Laborer Organization Network</label>
+            </value>
+            <value>
+                <fullName>National Employment Law Project</fullName>
+                <default>false</default>
+                <label>National Employment Law Project</label>
+            </value>
+            <value>
+                <fullName>National Employment Law Center</fullName>
+                <default>false</default>
+                <label>National Employment Law Center</label>
+            </value>
+            <value>
+                <fullName>Neighborhood Legal Services of LA County</fullName>
+                <default>false</default>
+                <label>Neighborhood Legal Services of LA County</label>
+            </value>
+            <value>
+                <fullName>Pilipino Worker Center</fullName>
+                <default>false</default>
+                <label>Pilipino Worker Center</label>
+            </value>
+            <value>
+                <fullName>Restaurant Opportunity Center-LA</fullName>
+                <default>false</default>
+                <label>Restaurant Opportunity Center-LA</label>
+            </value>
+            <value>
+                <fullName>SoCal COSH</fullName>
+                <default>false</default>
+                <label>SoCal COSH</label>
+            </value>
+            <value>
+                <fullName>South Asian Network</fullName>
+                <default>false</default>
+                <label>South Asian Network</label>
+            </value>
+            <value>
+                <fullName>Stanford Community Law Clinic</fullName>
+                <default>false</default>
+                <label>Stanford Community Law Clinic</label>
+            </value>
+            <value>
+                <fullName>UCLA Labor Center</fullName>
+                <default>false</default>
+                <label>UCLA Labor Center</label>
+            </value>
+            <value>
+                <fullName>Wage Justice Center</fullName>
+                <default>false</default>
+                <label>Wage Justice Center</label>
+            </value>
+            <value>
+                <fullName>Warehouse Worker Resource Center</fullName>
+                <default>false</default>
+                <label>Warehouse Worker Resource Center</label>
+            </value>
+            <value>
+                <fullName>Watsonville Law Center</fullName>
+                <default>false</default>
+                <label>Watsonville Law Center</label>
+            </value>
+            <value>
+                <fullName>Women&#39;s Employment Rights Center</fullName>
+                <default>false</default>
+                <label>Women&#39;s Employment Rights Center</label>
+            </value>
+            <value>
+                <fullName>Worksafe</fullName>
+                <default>false</default>
+                <label>Worksafe</label>
+            </value>
+            <value>
+                <fullName>Young Workers United</fullName>
+                <default>false</default>
+                <label>Young Workers United</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

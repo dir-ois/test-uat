@@ -1,0 +1,104 @@
+<apex:page standardController="DIR_Case__c" extensions="PAGACaseDetailsController" renderAs="pdf" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false">
+    <html>
+    <head>
+        <style>
+           
+            @page {  
+                     size: A4 landscape; /* ISO/JIS A4 (210mm�297mm) */  
+                     margin-top: 140px;
+                     margin-bottom: 50px; 
+                     @top-center {
+                        content: element(header);
+                     }
+                     @bottom-left {
+                         content: element(footer);
+                     }
+                  } 
+            div.header {
+                     padding: 10px;
+                     
+                     position: running(header);
+            }
+            div.footer {
+                     display: block;
+                     padding: 5px;
+                     position: running(footer);
+            }
+            div.content{
+                     font-size:8pt; 
+            }
+            .pagenumber:before {
+                     content: counter(page);
+            }
+            .pagecount:before {
+                     content: counter(pages);
+            }
+            table {
+                -fs-table-paginate: paginate;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div> 
+                <apex:image url="{!URLFOR($Resource.PAGA_Search_PDF_Logo)}" />
+                <center><h4>PAGA NOTICE PUBLIC SEARCH - CASE DETAIL</h4></center>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div>{!MONTH(TODAY())}/{!DAY(TODAY())}/{!YEAR(TODAY())}  | Page <span class="pagenumber"/> of <span class="pagecount"/></div>
+        </div>
+        <div class="content">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Case Information</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row mb">
+                        <apex:repeat value="{!$ObjectType.DIR_Case__c.FieldSets.PAGA_Search_Details}" var="f"> 
+                            <div class="form-group col-md-6">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><b>{!f.Label}:</b></label>&nbsp;&nbsp;
+                                <apex:outputField value="{!DIR_Case__c[f]}" styleclass="form-control"  />
+                            </div>
+                        </apex:repeat>
+                    </div>       
+                </div>
+            </div>
+            <br /><br />
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Attachments</h3>
+                </div>
+                <div class="panel-body">
+                <div class="row mb">                  
+                    <div class="form-group col-md-12">
+                        <table id="theTableC" border="1" valign="center" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="20%">Attachment Name</th>
+                                    <th width="40%">Description</th>
+                                    <th width="20%">Date Submitted</th>
+                                    <th width="20%">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <apex:repeat value="{!Attachments}" var="att"> 
+                                    <tr>
+                                        <td>{!att.Attachment_Name__c}</td>
+                                        <td>{!att.Description__c}</td>
+                                        <td><apex:outputField value="{!att.CreatedDate}" /></td>
+                                        <td>{!att.Type__c}</td>
+                                    </tr>
+                                </apex:repeat>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>     
+    </body>
+    </html>               
+</apex:page>

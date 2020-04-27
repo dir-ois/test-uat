@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the date that the Violation was administratively dismissed.  This will be automatically populated with today&apos;s date if it is not populated manually upon the status being set to Dismissed or Administratively Dismissed. --></help>
+    <label><!-- Admin. Dismissal Date --></label>
+    <name>Dismissed_Date__c</name>
+</CustomFieldTranslation>

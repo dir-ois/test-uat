@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payee_Heir_or_Successor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Signifies that this Payee is deceased and has an heir or successor.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Signifies that this Payee is deceased and has an heir or successor. If checked, please complete the Name of Heir or Successor field.</inlineHelpText>
+    <label>Payee Heir/Successor/Assignee</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

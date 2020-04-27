@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Requesting Party User Account for Notifications --></help>
+    <label><!-- Requesting Party --></label>
+    <name>Requesting_Party_User__c</name>
+    <relationshipLabel><!-- Inspection Requests (Requesting Party) --></relationshipLabel>
+</CustomFieldTranslation>

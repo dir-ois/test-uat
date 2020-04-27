@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_Violations</fullName>
+    <active>true</active>
+    <description>Violation types that apply to WCA and AB633</description>
+    <label>WCA Issues - Active</label>
+    <picklistValues>
+        <picklist>Accounting_Payment_Type__c</picklist>
+        <values>
+            <fullName>Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Appeal_Deadline_Selector__c</picklist>
+        <values>
+            <fullName>Business Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calendar Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interest_Type__c</picklist>
+        <values>
+            <fullName>1194%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>248%2E5%28f%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2802%28b%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98%2E1%28c%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Judgment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Judgement_Category__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reporting_Sub_Category__c</picklist>
+        <values>
+            <fullName>ATTY FEES - GARMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATTY FEES DUE DLSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMMISSIONS - BLENDED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMMISSIONS - MIN WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMMISSIONS - REG WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LD - OT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCAL MIN WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIECE RATE - BLENDED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIECE RATE - MIN WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIECE RATE - REG WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SICK LEAVE - PENALTY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Violation_Type__c</picklist>
+        <values>
+            <fullName>BOFE 240A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 240B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 335</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 336</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 812</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 814</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 815</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE 816</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU 238</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU 238e</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice to Discontinue - DLSE 84</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X731_Report_Category__c</picklist>
+        <values>
+            <fullName>ATTORNEY FEES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BONUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BUSINESS EXPENSES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAR WASH REGISTRATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHILD LABOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMMISSION WAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONTRACT RATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEDUCTION STATEMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expanded Liability Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FILING FEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GARMENT DISPLAY OF REG %23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GARMENT RECSKPNG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GARMENT REGISTRATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEAT RECOVERY PREMIUM WAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LACTATION ACCOMMODATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIQUIDATED DAMAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labor Code 238%2F240</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEAL PERIOD PREMIUM WAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINIMUM WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MISCLASSIFICATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON-REPORTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OVERTIME WAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENALTIES PURSUANT TO LC 1198%2E5%28k%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENALTIES PURSUANT TO LC 1695%28a%29%285%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENALTIES PURSUANT TO LC 203%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENALTIES PURSUANT TO LC 210</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PENALTIES PURSUANT TO LC 226%28f%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIECE RATE WAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REGULAR WAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPORTING TIME PAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REST PERIOD PREMIUM WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SICK LEAVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPLIT SHIFT PREMIUM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOOLS%2FEQUIPMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFORM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNLAWFUL DEDUCTIONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNLICENSED CONTRACTOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNLICENSED FLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VACATION WAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAITING TIME PENALTIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WORKERS%27 COMP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

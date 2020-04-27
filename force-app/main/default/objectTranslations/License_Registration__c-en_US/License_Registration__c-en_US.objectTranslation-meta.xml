@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registrations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Agent Authorization Reviewed? --></label>
+        <name>AgentAuthorizationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Agent Authorization --></label>
+        <name>Agent_Authorization</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Agent Authorization Inclusions --></label>
+        <name>Agent_Authorization_Inclusions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Agreements Reviewed? --></label>
+        <name>AgreementsReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Bond Requirements --></label>
+        <name>Bond_Requirements</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CBA --></label>
+        <name>CBA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Address Info Reviewed --></label>
+        <name>CompanyAddressInfoReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Contact Reviewed? --></label>
+        <name>CompanyContactReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Finances Reviewed? --></label>
+        <name>CompanyFinancesReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Information Reviewed? --></label>
+        <name>CompanyInformationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Locations Reviewed? --></label>
+        <name>CompanyLocationsReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Managers Reviewed? --></label>
+        <name>CompanyManagersReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Name &amp; Type Reviewed? --></label>
+        <name>CompanyNameTypeReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Owners Reviewed? --></label>
+        <name>CompanyOwnersReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Type - Renewal Reviewed? --></label>
+        <name>CompanyTypeRenewalReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- CompanyTypeReviewed --></label>
+        <name>CompanyTypeReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Company Contact --></label>
+        <name>Company_Contact</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Contracting Employee Leasing --></label>
+        <name>Contracting_Employee_Leasing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Corp Entity --></label>
+        <name>Corp_Entity</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Corp Entity TA --></label>
+        <name>Corp_Entity_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Disclaimer Reviewed? --></label>
+        <name>DisclaimerReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Education Reviewed? --></label>
+        <name>EducationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Exam Language --></label>
+        <name>Exam_Language</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fee Balance Due --></label>
+        <name>Fee_Balance_Due</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Fees Reviewed? --></label>
+        <name>FeesReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Follow up Questions Reviewed? --></label>
+        <name>FollowupQuestionsReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Function Employee Leasing --></label>
+        <name>Function_Employee_Leasing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Internal Notes --></label>
+        <name>Internal_Notes</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Joint Venture Entity --></label>
+        <name>Joint_Venture_Entity</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Joint Venture Entity TA --></label>
+        <name>Joint_Venture_Entity_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LiveScanReviewed --></label>
+        <name>LiveScanReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- LocationDocumentationReviewed --></label>
+        <name>LocationDocumentationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MAddress --></label>
+        <name>MAddress</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MedicalInformationReviewed --></label>
+        <name>MedicalInformationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MinorInformationReviewed --></label>
+        <name>MinorInformationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Need to assign agent? --></label>
+        <name>Need_to_assign_agent</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PAddress --></label>
+        <name>PAddress</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PAddressCPS --></label>
+        <name>PAddressCPS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW FEIN Number --></label>
+        <name>PWFEINNumber</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PWJanuary1 --></label>
+        <name>PWJanuary1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Lapse April 1 to Last FY --></label>
+        <name>PWLapseApril1toLastFY</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalty II Applied --></label>
+        <name>PWPenaltyIIApplied</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW CSLB Certification --></label>
+        <name>PW_CSLB_Certification</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW CSLB Required --></label>
+        <name>PW_CSLB_Required</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Contractor Address --></label>
+        <name>PW_Contractor_Address</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Contractor Cert I Agree --></label>
+        <name>PW_Contractor_Cert_I_Agree</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Contractor Info --></label>
+        <name>PW_Contractor_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Contractor PhysicalAdd --></label>
+        <name>PW_Contractor_PhysicalAdd</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Contractor Trade Name DBA --></label>
+        <name>PW_Contractor_Trade_Name_DBA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Crafts --></label>
+        <name>PW_Crafts</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Debarment Certification --></label>
+        <name>PW_Debarment_Certification</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Duplicate Found Accept --></label>
+        <name>PW_Duplicate_Found_Accept</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Duplicate Found Proceed --></label>
+        <name>PW_Duplicate_Found_Proceed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Effective Date --></label>
+        <name>PW_Effective_Date</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW End Date 1 Year --></label>
+        <name>PW_End_Date_1_Year</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW End Date 2 Year --></label>
+        <name>PW_End_Date_2_Year</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW End Date 3 Year --></label>
+        <name>PW_End_Date_3_Year</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW FEIN and Entity Number --></label>
+        <name>PW_FEIN_and_Entity_Number</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Failure Inadvertent --></label>
+        <name>PW_Failure_Inadvertent</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Failure Inadvertent Explanation --></label>
+        <name>PW_Failure_Inadvertent_Explanation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Foreign Address Mailing --></label>
+        <name>PW_Foreign_Address_Mailing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Have you done work --></label>
+        <name>PW_Have_you_done_work</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Have you paid for it --></label>
+        <name>PW_Have_you_paid_for_it</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW July1 June30+1 --></label>
+        <name>PW_July1_June30_1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW July1 June30+2 --></label>
+        <name>PW_July1_June30_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW July1 June30+3 --></label>
+        <name>PW_July1_June30_3</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW July1 Start Date --></label>
+        <name>PW_July1_Start_Date</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Lapse April1 Today --></label>
+        <name>PW_Lapse_April1_Today</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Lapse in Reg Grace Period --></label>
+        <name>PW_Lapse_in_Reg_Grace_Period</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Lapse in Registration Certifcation --></label>
+        <name>PW_Lapse_in_Registration_Certifcation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Liability Certification --></label>
+        <name>PW_Liability_Certification</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW License Type License Number --></label>
+        <name>PW_License_Type_License_Number</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Now-June30+1 --></label>
+        <name>PW_Now_June30_1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Now-June30+2 --></label>
+        <name>PW_Now_June30_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Now-June30+3 --></label>
+        <name>PW_Now_June30_3</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW PEO --></label>
+        <name>PW_PEO</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW PEO Info --></label>
+        <name>PW_PEO_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Payment Method --></label>
+        <name>PW_Payment_Method</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalties Paid For Failure Register --></label>
+        <name>PW_Penalties_Paid_For_Failure_Register</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalty I Applied --></label>
+        <name>PW_Penalty_I_Applied</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalty of Perjury --></label>
+        <name>PW_Penalty_of_Perjury</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalty of Perjury Date --></label>
+        <name>PW_Penalty_of_Perjury_Date</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalty of Perjury Legal Name --></label>
+        <name>PW_Penalty_of_Perjury_Legal_Name</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Penalty of Perjury Statement --></label>
+        <name>PW_Penalty_of_Perjury_Statement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Prior Contractor Registration --></label>
+        <name>PW_Prior_Contractor_Registration</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Prior Contractor Registration ID --></label>
+        <name>PW_Prior_Contractor_Registration_ID</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Reg Fees 1200 --></label>
+        <name>PW_Reg_Fees_1200</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Reg Fees 400 --></label>
+        <name>PW_Reg_Fees_400</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Reg Fees 800 --></label>
+        <name>PW_Reg_Fees_800</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Reg Next2 --></label>
+        <name>PW_Reg_Next2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Reg Next3 --></label>
+        <name>PW_Reg_Next3</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Reg NextFY --></label>
+        <name>PW_Reg_NextFY</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Registration Fees Due --></label>
+        <name>PW_Registration_Fees_Due</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Registration Period 2 --></label>
+        <name>PW_Registration_Period_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Registration Periods --></label>
+        <name>PW_Registration_Periods</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Registration Periods July 1v2 --></label>
+        <name>PW_Registration_Periods_July_1v2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Same As MailingAdd --></label>
+        <name>PW_Same_As_MailingAdd</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Start Today --></label>
+        <name>PW_Start_Today</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Type of Registration --></label>
+        <name>PW_Type_of_Registration</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW WorkComp Carrier --></label>
+        <name>PW_WorkComp_Carrier</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW WorkComp Carrier Dates --></label>
+        <name>PW_WorkComp_Carrier_Dates</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW WorkComp Exempt --></label>
+        <name>PW_WorkComp_Exempt</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW WorkComp Self Insured --></label>
+        <name>PW_WorkComp_Self_Insured</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Workers Comp Exempt Out of State --></label>
+        <name>PW_Workers_Comp_Exempt_Out_of_State</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Workers Comp Insurance --></label>
+        <name>PW_Workers_Comp_Insurance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PW Workers Comp Insurance ExemptEmployee --></label>
+        <name>PW_Workers_Comp_Insurance_ExemptEmployee</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ParentGuardianInformationReviewed --></label>
+        <name>ParentGuardianInformationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Permit Applicant Reviewed --></label>
+        <name>PermitApplicantReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Primary Parent Email --></label>
+        <name>Primary_Parent_Email</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Questionnaire Reviewed? --></label>
+        <name>QuestionnaireReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ready to Resubmit? --></label>
+        <name>Ready_to_Resubmit</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ready to Submit? --></label>
+        <name>Ready_to_Submit</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RegistrationDurationReviewed --></label>
+        <name>RegistrationDurationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RegistrationQualifyingSection --></label>
+        <name>RegistrationQualifyingSection</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Upload Document Reviewed --></label>
+        <name>RegistrationUploadDocumentReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Company Type --></label>
+        <name>Registration_Company_Type</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Company Type - CPS --></label>
+        <name>Registration_Company_Type_CPS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Corp/LLC - slim --></label>
+        <name>Registration_Corp_LLC_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Corp or LLC --></label>
+        <name>Registration_Corp_or_LLC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Disclaimer Confirmation --></label>
+        <name>Registration_Disclaimer_Confirmation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Duration --></label>
+        <name>Registration_Duration</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Effective Date --></label>
+        <name>Registration_Effective_Date</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Labor Code Acknowledgement --></label>
+        <name>Registration_Labor_Code_Acknowledgement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration_Legal_Entity_CPS --></label>
+        <name>Registration_Legal_Entity_CPS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Limited Partnership --></label>
+        <name>Registration_Limited_Partnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Limited Partnership TA --></label>
+        <name>Registration_Limited_Partnership_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration MGMT - slim --></label>
+        <name>Registration_MGMT_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Management Individual --></label>
+        <name>Registration_Management_Individual</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Number --></label>
+        <name>Registration_Number</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Ownership Completion --></label>
+        <name>Registration_Ownership_Completion</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Partnership --></label>
+        <name>Registration_Partnership</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration_Partnership TA --></label>
+        <name>Registration_Partnership_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Partnerships - slim --></label>
+        <name>Registration_Partnerships_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration_Search_Details --></label>
+        <name>Registration_Search_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Sole Prop - slim --></label>
+        <name>Registration_Sole_Prop_slim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Sole Proprietorship --></label>
+        <name>Registration_Sole_Proprietorship</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Regulatory Compliance --></label>
+        <name>Regulatory_Compliance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Reviewed --></label>
+        <name>Reviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SP Self --></label>
+        <name>SP_Self</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- School Information Reviewed --></label>
+        <name>SchoolInformationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Sole Prop Entity --></label>
+        <name>Sole_Prop_Entity</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Submit Payment --></label>
+        <name>Submit_Payment</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Surety Type --></label>
+        <name>Surety_Type</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- WCI Documentation Reviewed? --></label>
+        <name>WCIDocumentationReviewed</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- WCI Carrier --></label>
+        <name>WCI_Carrier</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- WCI Exempt --></label>
+        <name>WCI_Exempt</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- WCI Selector --></label>
+        <name>WCI_Selector</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- WCI Self Insured --></label>
+        <name>WCI_Self_Insured</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Workers Compensation Insurance Reviewed? --></label>
+        <name>WorkersCompensationInsuranceReviewed</name>
+    </fieldSets>
+    <layouts>
+        <layout>Car Wash Registration Layout</layout>
+        <sections>
+            <label><!-- Application Responses --></label>
+            <section>Application Responses</section>
+        </sections>
+        <sections>
+            <label><!-- Bond/CBA Info --></label>
+            <section>Bond/CBA Info</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Effective Dates --></label>
+            <section>Effective Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label><!-- WCI Info --></label>
+            <section>WCI Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Info --></label>
+            <section>Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DLSE License and Registration Layout</layout>
+        <sections>
+            <label><!-- Bond/CBA Info --></label>
+            <section>Bond/CBA Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Effective Dates --></label>
+            <section>Effective Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>License</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>License &amp; Registration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>License Registration Layout</layout>
+        <sections>
+            <label><!-- Bond/CBA Info --></label>
+            <section>Bond/CBA Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Effective Dates --></label>
+            <section>Effective Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Public Works</layout>
+        <sections>
+            <label><!-- Application Responses --></label>
+            <section>Application Responses</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Craft --></label>
+            <section>Craft</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Effective Dates --></label>
+            <section>Effective Dates</section>
+        </sections>
+        <sections>
+            <label><!-- PEO --></label>
+            <section>PEO</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Testing Only --></label>
+            <section>Testing Only</section>
+        </sections>
+        <sections>
+            <label><!-- WCI Info --></label>
+            <section>WCI Info</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Registration for car wash owners. --></description>
+        <label><!-- Car Wash --></label>
+        <name>Car_Wash</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Registration for CPS. --></description>
+        <label><!-- Child Performer Services --></label>
+        <name>Child_Performer_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contractor Registration --></label>
+        <name>Contractor_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Registration for Entertainment Work Permit --></description>
+        <label><!-- Entertainment Work --></label>
+        <name>Entertainment_Work</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Registration for janitorial owners. --></description>
+        <label><!-- Janitorial --></label>
+        <name>Janitorial</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Public Works lookup back to Registration --></description>
+        <label><!-- License --></label>
+        <name>License</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Placeholder for develoment. Do not deploy this record type --></description>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Public Works --></label>
+        <name>Public_Works</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Talent Agency Registration --></description>
+        <label><!-- Talent Agency --></label>
+        <name>Talent_Agency</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must have an Account or another Registration selected. --></errorMessage>
+        <name>Account_or_License_Requred</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- P.O. Boxes are not accepted addresses. Please change to a physical location before moving forward. --></errorMessage>
+        <name>Address_cannot_have_PO_Box</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Business Email is required. Please select &quot;- - None- - &quot; for &quot;Ready to Complete Payment?&quot; below and return to the Company Contact section to enter a Business Email. --></errorMessage>
+        <name>Business_Email_Required_for_Online_Reg</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Collective Bargaining Agreement expiration must be at least 30 days from today. --></errorMessage>
+        <name>CBA_Contract_Expiration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Defects must be fixed prior to approval. Please resolve all defects prior to approving the registration. --></errorMessage>
+        <name>Cannot_Approve_Reg_with_Defects</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You currently have one or more locations with an expired or soon-to-be expired business license. Please change your answer below to &quot;No&quot; and make sure all locations have current business licenses that are valid for at least 14 days from today. --></errorMessage>
+        <name>Cannot_have_invalid_business_licenses</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid city name. --></errorMessage>
+        <name>City_cannot_contain_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add a closure reason before closing the Registration. --></errorMessage>
+        <name>Closure_Reason_Required_to_Close_LR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate that you have reviewed the defects on the Company Type section to continue. --></errorMessage>
+        <name>Company_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate that you have reviewed the defects on the Disclaimer section to continue. --></errorMessage>
+        <name>Disclaimer_Reviewed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the registration status is changed to Disqualified. The Disqualified Reason and Disqualification Start Date are required.  Please fill out those fields and reattempt to save the record. --></errorMessage>
+        <name>Disqualification_Fields_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- FEIN must be 9 numbers. Please correct to continue. --></errorMessage>
+        <name>FEIN_must_be_9_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Foreign phone numbers must be between 12 and 15 digits long --></errorMessage>
+        <name>Foreign_Phone_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Warning: Legal Entity type or name cannot be changed after registration is approved.  A new application with fees must be submitted for a new Legal Entity. --></errorMessage>
+        <name>Legal_Name_And_Entity_Not_Editable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you do not agree, please close the tab to exit the application. --></errorMessage>
+        <name>Must_Agree_to_Disclaimer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Persuant to Labor Code Section 1706(f) you can not apply for a CPS Permit. --></errorMessage>
+        <name>Must_Agree_to_IsConvicted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you do not agree, please close the tab to exit the application. --></errorMessage>
+        <name>Must_Agree_to_Labor_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that all required document attachments are uploaded. Change your answer below to &quot;No&quot; and add all necessary documentation to continue. --></errorMessage>
+        <name>Must_Provide_Required_Attachments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All questions must be answered before submitting. Please change the answer below to &quot;- - None- - &quot;, return to the Questionnaire tab, and complete all questions before submitting. --></errorMessage>
+        <name>Must_answer_all_questions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you cannot answer Yes to being in good standing with the California Secretary of State at this time, please visit https://businesssearch.sos.ca.gov/ and resolve before submitting your application. --></errorMessage>
+        <name>Must_be_in_good_standing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please explain why this business is not in good standing with the Secretary of State. --></errorMessage>
+        <name>Must_explain_if_not_in_good_standing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out the information for yourself only once. --></errorMessage>
+        <name>Only_1_Applicant_can_fill_form</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may only select either a standard or secured license or registration type per record. --></errorMessage>
+        <name>Only_allow_one_type_of_registration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Sole Proprietorships, one and only one owner is required. Please revisit the Company People tab and ensure that you have added a single owner. --></errorMessage>
+        <name>Only_one_owner_per_sole_proprietorship</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your Contractor Certification information prevents you from registering with Public Works. Contractors who do not meet this business condition are ineligible for registration. Please email Publicworks@dir.ca.gov for registration eligibility questions. --></errorMessage>
+        <name>PW_Certification_questions_not_approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not permitted to change the Legal Entity Name. Please let Public works staff know if there is a need for a change. --></errorMessage>
+        <name>PW_Legal_Name_Not_editiable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not permitted to change the Legal Entity Type. You will need to create a new registration and will receive a new Registration Number. --></errorMessage>
+        <name>PW_Legal_type_Not_editiable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You many not enter an expired Workers Comp Policy --></errorMessage>
+        <name>PW_Worker_Comp_Expired_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are required to have at least 2 partners. --></errorMessage>
+        <name>Partners_Req_Partnership_Comp_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;I certify this on&quot; date must be today&apos;s date. Please select today&apos;s date. --></errorMessage>
+        <name>Penalty_of_Perjury_Date_Equals_Today</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Effective Date should not be greater than 30 day from current date --></errorMessage>
+        <name>Permit_applicant_effective_date_30days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Effective Date can not be less than current date. Change your answer to None and return to the Registration Duration section to correct the Effective Date. --></errorMessage>
+        <name>Permit_applicant_effective_date_inpast</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- US phone numbers must be 10 numbers. Please correct to continue. --></errorMessage>
+        <name>Phone_must_be_10_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Disqualification Dates and why this Registration is Disqualified. --></errorMessage>
+        <name>Public_Works_Disqualified_Registration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide a Physical Address if it is not the same as your Mailing Address. --></errorMessage>
+        <name>Public_Works_Physical_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Public Works users may edit a Public Works record. --></errorMessage>
+        <name>Public_Works_Record_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please assign a deputy to proceed. --></errorMessage>
+        <name>Req_Assigned_Deputy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Name for the &quot;Other&quot; license or registration type. --></errorMessage>
+        <name>Require_description_for_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- U.S. Zip codes must have 5 digits or 9 digits with a dash between the 5th and 6th digit. --></errorMessage>
+        <name>Require_formatting_for_US_zip_codes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SEIN must be 8 numbers. Please correct to continue. --></errorMessage>
+        <name>SEIN_must_be_8_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that SSN and Re-typed SSN match. --></errorMessage>
+        <name>SSN_Verification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Social Security numbers must have 9 numbers. --></errorMessage>
+        <name>SSN_must_be_9_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When entering license types, please enter both the type and the number.
+When entering the Secured types, please enter the value in the Secured Number field and vice versa --></errorMessage>
+        <name>Type_Number_in_sync</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Workers&apos; Compensation expiration date cannot be less than 14 days from today. Please provide the most current WCI certification. --></errorMessage>
+        <name>WCI_Expiration_Date_Must_be_14_Days_Out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Workers&apos; Compensation expiration date cannot be less than 30 days from today. Please provide the most current WCI certification. --></errorMessage>
+        <name>WCI_Expiration_Date_Must_be_30_Days_Out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The initial certification date for Workers&apos; Compensation Insurance must be in today date or in the past. --></errorMessage>
+        <name>WCI_Initial_Cert_Date_in_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the reason why your company is exempt from Workers&apos; Compensation Insurance --></errorMessage>
+        <name>WCI_Require_Exempt_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error: This question is required; Do you have current workers’ compensation insurance coverage? Select workers’ compensation insurance coverage type below --></errorMessage>
+        <name>Workers_Compensation_Selection_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Minor&apos;s information.  Change the answer below to &quot;No&quot;, return to the Minors tab, and complete all required information to continue. --></errorMessage>
+        <name>must_enter_minor_information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Parents&apos;s information.  Change the answer below to &quot;No&quot;, return to the Parent&apos;s Tab, and complete all required information to continue. --></errorMessage>
+        <name>must_enter_parent_information</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_Registration_Document --></label>
+        <name>Generate_Registration_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_S_Doc --></label>
+        <name>Generate_S_Doc</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Launch_in_VIP_Form_Tool --></label>
+        <name>Launch_in_VIP_Form_Tool</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Registration --></label>
+        <name>Renew_Registration</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_License --></label>
+        <name>Send_License</name>
+    </webLinks>
+</CustomObjectTranslation>

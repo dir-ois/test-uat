@@ -1,0 +1,249 @@
+<aura:component controller="ReceiptLogFormController" access="global" implements="forceCommunity:availableForAllPageTypes">
+    <ltng:require scripts="/resource/jquery214, /resource/Lgt_InputLookup/js/bootstrap.min.js" afterScriptsLoaded="{!c.addBankFields}"/>
+    
+    <aura:registerevent name="loadRctCaseDetail" type="c:ReceiptCasePayment" />
+    <aura:registerevent name="loadMyEvent" type="c:ResultPayment" />
+    <aura:registerevent name="letsReset" type="c:ResetFormEvent" />
+    <aura:attribute name="listReceiptLog" type="Receipt__c[]" />
+    <aura:attribute name="countReceipt" type="Integer" default="0"/>
+    <!-- <aura:attribute name="totalAmt" type="Currency"/> --> 
+    <aura:attribute name="AddPmtDisable" type="Boolean" default="false" />
+    <aura:attribute name="receiptLog" type="Receipt__c"
+                    default="{
+                             'Id':'',
+                             'Payment_Type__c' : 'Check',
+                             'Instrument_Number__c' : '',
+                             'Date_Received__c' :null,
+                             'Deposit_Account__c' : 'None',
+                             'Bank_Deposit_Date__c':null,
+                             'Bank_Location__c' : 'None',
+                             'Payment_Exchange__c' : 'Division Payment',
+                             'Payor__c' : '',
+                             'Payor__r.Name' : '',
+                             'Add_Deduction__c' : false,
+                             'Gross_Amount__c' : '',
+                             'Payment_Amount__c' : '',
+                             'Deduction_Amount__c' : '',
+                             'Case_Assigned__c' : false,
+                             'Status__c' : '',
+                             'Office_Unit__c' : 'CCU',
+                             'Payment_Can_Be_Processed__c': true,
+                             'Not_Processed_Stale_Date__c': false,
+                             'Not_Processed_Insufficient_Signature_s__c': false,
+                             'Not_Processed_Amounts_Do_Not_Match__c': false,
+                             'Not_Processed_No_Amount__c': false,
+                             'Not_Processed_Limit_Exceeded__c':false,
+                             'Not_Processed_Post_Dated__c':false,
+                             'Not_Processed_Paid_In_Full__c':false,
+                             'Not_Processed_Paid_In_Full_Date__c':null,
+                             'Not_Processed_Other__c':false,
+                             'Not_Processed_Other_Reason__c':null,
+                             'Amount_Remaining__c':'0.00'
+                             }" access="GLOBAL" />
+    
+    <aura:handler event="c:EditPayments" action="{!c.getModifPayment}" /> 
+    <aura:handler event="c:requireJSLoaded" action="{!c.getLookUpId}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="fieldSet" type="Aura.Component[]" />
+    <aura:attribute name="fsValues" type="Object[]" />
+    <aura:attribute name="values" type="Object[]" />
+    
+    <div class="container">
+        <form class="slsds-form--stacked" autocomplete="off">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col inputData">
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Payment Type</label>
+                            <ui:inputselect class="slds-select inputArea" aura:id="paymentTypesId" value="{!v.receiptLog.Payment_Type__c}" change="{!c.changePaymentType}"/>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control" id="checkNoId">
+                            <label id="instrNrErr">Instrument Number</label>
+                            <ui:inputtext aura:id="checkInstrumentNoId" class="slds-input instr changeRequired inputArea" labelclass="slds-form-element__label"
+                                          value="{!v.receiptLog.Instrument_Number__c}"/>
+                            <label class="pageErr checkErr" id="checkErrId"></label>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control" id="dateReceiv">
+                            <label>Date Received(MM/DD/YYYY)</label>
+                            <ui:inputDate aura:id="receivedDate" class="slds-input changeRequired inputArea" format="MM/DD/YYYY" value="{!v.receiptLog.Date_Received__c}"
+                                          displayDatePicker="true" required="true"/>
+                            <label class="pageErr recvDateErr" id="recvDateErrId"></label>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Deposit Account</label>
+                            <ui:inputselect class="slds-select inputArea" aura:id="depositAccountId" value="{!v.receiptLog.Deposit_Account__c}" change="{!c.addBankFields}"/>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required" id="BankDepositDateIdField" style="display: none;">
+                        <div class="slds-form-element__control" id="dateDeposit">
+                            <label>Bank Deposit Date(MM/DD/YYYY)</label>
+                            <ui:inputDate aura:id="bankDate" class="slds-input changeRequired inputArea" format="MM/DD/YYYY" value="{!v.receiptLog.Bank_Deposit_Date__c}"
+                                          displayDatePicker="true" required="true"/>
+                            <label class="pageErr depDateErr" id="depDateErrId"></label>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Bank Location</label>
+                            <ui:inputselect class="slds-select changeRequired inputArea" aura:id="bankLocationId" value="{!v.receiptLog.Bank_Location__c}"/>
+                            <label class="pageErr bankLocErr" id="bankLocErrId"></label>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Payment Exchange</label>
+                            <ui:inputselect aura:id="paymentExchangeId" class="slds-select inputArea" value="{!v.receiptLog.Payment_Exchange__c}"/>
+                        </div>
+                    </div>
+                                        
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control" id="payeeValId">
+                            <label class="payee" id="payeeErr">Payor</label>
+                            <c:inputLookup type="Account" value="{!v.receiptLog.Payor__r.Name}" unicId="payee01"/>
+                            <lightning:input aura:id="payeeValId1" value="{!v.receiptLog.Payor__c}" class="slds-input change-id payee" label="Payor" type="text"/>
+                            <!--<ui:inputtext aura:id="payeeValId1" value="{!v.receiptLog.Payor__c}" class="slds-input change-id payee"/>-->
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Office Unit</label>
+                            <ui:inputselect aura:id="officeUnitId" class="slds-select inputArea" value="{!v.receiptLog.Office_Unit__c}"/>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slds-col inputData">
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Add Deduction</label>
+                            <ui:inputcheckbox aura:id="addDeducId" class="addDeduc inputArea" value="{!v.receiptLog.Add_Deduction__c}" change="{!c.showHideAmtOpts}" />
+                            <!-- <label class="pageErr canProcErr" id="canProcErrId"></label> -->
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												   
+                        </div>
+                    </div>
+                    <br></br>
+                    <div id="grossAmt" style="display: none;">
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Gross Amount</label>
+                            <ui:inputCurrency aura:id="grossAmtID" class="slds-input inputArea changeRequired" labelclass="slds-form-element__label"  
+                                          value="{!v.receiptLog.Gross_Amount__c}" placeholder="$ 0.00" change="{!c.calculateDeducAmt}" />
+                            <label class="pageErr grossAmtErr" id="grossAmtErrId"></label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Net Amount</label>
+                            <ui:inputCurrency aura:id="paymentAmountID" class="slds-input inputArea changeRequired" labelclass="slds-form-element__label"
+                                          value="{!v.receiptLog.Payment_Amount__c}" placeholder="$ 0.00" change="{!c.calculateDeducAmt}" />
+                            <label class="pageErr payAmtErr" id="payAmtErrId"></label>
+                        </div>
+                    </div>
+                    <div id="deducAmt" style="display: none;">
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Deduction Amount</label>
+                            <ui:outputCurrency aura:id="deductionAmtID" class="slds-input inputArea"
+                                          value="{!v.receiptLog.Deduction_Amount__c}"/>
+                            <label class="pageErr deducAmtErr" id="deducAmtErrId"></label>
+                        </div>
+                    </div>
+                    </div>
+                    <br></br>
+                    
+                    <div class="slds-form-element slds-is-required">
+                        <div class="slds-form-element__control">
+                            <label>Can Payment Be Processed?</label>
+                            <ui:inputcheckbox aura:id="canBeProcId" class="canPmt inputArea" value="{!v.receiptLog.Payment_Can_Be_Processed__c}" change="{!c.showHideChqOpts}" />
+                            <label class="pageErr canProcErr" id="canProcErrId"></label>
+                        </div>
+                    </div>
+                    <div id="chqNotProcessed" style="display: none;">
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="staleDateId" class="canPmt" value="{!v.receiptLog.Not_Processed_Stale_Date__c}"/>
+                                <label class="paymReason">Stale Date</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="insuffSignId" class="canPmt" value="{!v.receiptLog.Not_Processed_Insufficient_Signature_s__c}"/>
+                                <label class="paymReason">Insufficient Signature(s)</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="amountsNotMachId" class="canPmt" value="{!v.receiptLog.Not_Processed_Amounts_Do_Not_Match__c}"/>
+                                <label class="paymReason">Amounts Do Not Match</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="noAmountOnChkId" class="canPmt" value="{!v.receiptLog.Not_Processed_No_Amount__c}"/>
+                                <label class="paymReason">No Amount On Check</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="limitExceedId" class="canPmt" value="{!v.receiptLog.Not_Processed_Limit_Exceeded__c}"/>
+                                <label class="paymReason">Limit Exceeded</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="postDatedId" class="canPmt" value="{!v.receiptLog.Not_Processed_Post_Dated__c}"/>
+                                <label class="paymReason">Post Dated</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="paidInFullId" class="canPmt" value="{!v.receiptLog.Not_Processed_Paid_In_Full__c}" change="{!c.addPaidDate}"/>
+                                <label class="paymReason">Paid In Full</label>
+                            </div>
+                        </div>
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control" id="PaidFullDateId" style="display: none;">
+                                <div class="slds-form-element__control" id="datePaid">
+                                    <label>Paid Date(MM/DD/YYYY)</label>
+                                    <ui:inputdate aura:id="paidDateId" class="slds-input changeRequired inputArea" format="MM/DD/YYYY" value="{!v.receiptLog.Not_Processed_Paid_In_Full_Date__c}"
+                                                  displayDatePicker="true" required="true" change="{!c.datePaidValidation}"/>
+                                    <label class="pageErr paidDateErr" id="paidDateErrId"></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slds-form-element slds-is-required">
+                            <div class="slds-form-element__control">
+                                <ui:inputcheckbox aura:id="othersId" class="canPmt" value="{!v.receiptLog.Not_Processed_Other__c}" change="{!c.showHideOtherReason}"/>
+                                <label class="paymReason">Others</label>
+                                <br></br>
+                                <div id="OtherReason" style="display: none;">
+                                    <label>Please Specify..</label>
+                                    <ui:inputtextarea aura:id="otherReasonTxtId" class="slds-textarea changeRequired txtArea" required="true" value="{!v.receiptLog.Not_Processed_Other_Reason__c}"/>
+                                    <label class="pageErr otherReasonErr" id="otherReasonErrId"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <br></br>
+            <div class="addPaymBtn" style=" text-align: center;">
+                <!-- <button class="slds-button slds-button-neutral" onclick="{!c.addPayment}" id="addPaymBtn">Add Payment</button> -->
+                 <!--<ui:button class="slds-button slds-button-neutral" label="Add Payment" aura:id="addPmtBtn" press="{!c.addPayment}"/>-->
+                <lightning:button  aura:id="addPmtBtn" label="Add Payment" value="Add Payment" class="slds-button slds-button--neutral" disabled="{!v.AddPmtDisable}" onclick="{!c.addPayment}"/>
+            </div>
+            
+        </form>
+    </div>
+</aura:component>

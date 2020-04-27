@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Required_Fields_to_Close_a_Case</fullName>
+    <active>true</active>
+    <description>Fields must be filled in to close: Closure disposition, Resolution date, Case Closed date, Purge date</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;RCI&quot; &amp;&amp; 
+Closed__c=TRUE &amp;&amp; 
+ISPICKVAL(Closure_Disposition__c,&quot;&quot;) &amp;&amp; 
+ISBLANK(Resolution_Date__c) &amp;&amp; 
+ISBLANK(Case_Closed_Date__c) &amp;&amp; 
+ISBLANK(Purge_Date__c)</errorConditionFormula>
+    <errorMessage>Please fill in the following fields to close a case: Closure Disposition, Case Closed Date, Purge Date, Resolution Date</errorMessage>
+</ValidationRule>

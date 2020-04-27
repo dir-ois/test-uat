@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this location is closed, sold or otherwise no longer active for your company, enter the date which you ceased using this location --></help>
+    <label><!-- Date Deactivated --></label>
+    <name>Date_Deactivated__c</name>
+</CustomFieldTranslation>

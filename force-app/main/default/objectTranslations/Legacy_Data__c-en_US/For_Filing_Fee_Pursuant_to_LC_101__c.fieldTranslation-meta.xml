@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- For Filing Fee, Pursuant to LC 101 --></label>
+    <name>For_Filing_Fee_Pursuant_to_LC_101__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>School_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>School Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public School</fullName>
+                <default>false</default>
+                <label>Public School</label>
+            </value>
+            <value>
+                <fullName>Online/Virtual School</fullName>
+                <default>false</default>
+                <label>Online/Virtual School</label>
+            </value>
+            <value>
+                <fullName>Home School</fullName>
+                <default>false</default>
+                <label>Home School</label>
+            </value>
+            <value>
+                <fullName>Private School</fullName>
+                <default>false</default>
+                <label>Private School</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

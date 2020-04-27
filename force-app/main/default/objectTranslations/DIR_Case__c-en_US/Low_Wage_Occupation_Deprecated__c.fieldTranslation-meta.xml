@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this field only if the wage claimant has a qualified low wage occupation. --></help>
+    <label><!-- Low Wage Occupation - Deprecated --></label>
+    <name>Low_Wage_Occupation_Deprecated__c</name>
+</CustomFieldTranslation>

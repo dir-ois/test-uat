@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is the Average Length of Time for an Employee&apos;s Meal Period in minutes? --></help>
+    <label><!-- Average Time for Employee Meal Period? --></label>
+    <name>Average_Time_for_Employee_Meal_Period__c</name>
+</CustomFieldTranslation>

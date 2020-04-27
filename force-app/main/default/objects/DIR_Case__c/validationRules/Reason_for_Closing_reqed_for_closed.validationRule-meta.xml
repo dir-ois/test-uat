@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Closing_reqed_for_closed</fullName>
+    <active>true</active>
+    <description>A &quot;Reason for Closing&quot; when case status is set to &quot;Closed&quot;</description>
+    <errorConditionFormula>RecordType.Name &lt;&gt; &quot;Legacy WCA Case&quot;  &amp;&amp;
+RecordType.Name &lt;&gt; &quot;Legacy Garment Case&quot;  &amp;&amp;
+RecordType.Name &lt;&gt; &quot;WCA&quot;  &amp;&amp;
+RecordType.Name &lt;&gt; &quot;Garment&quot;  &amp;&amp;
+RecordType.Name &lt;&gt; &quot;RCI&quot;  &amp;&amp;
+ISCHANGED ( Status__c ) &amp;&amp;
+ISPICKVAL( Status__c , &quot;Closed&quot;)  &amp;&amp; 
+ISBLANK( Reason_For_Closing__c  )  &amp;&amp; 
+NOT( CONTAINS($Profile.Name, &#39;System Administrator&#39;) )</errorConditionFormula>
+    <errorDisplayField>Reason_For_Closing__c</errorDisplayField>
+    <errorMessage>A Reason for Closing is required for closed cases. Please fill out the &quot;Reason for Closing&quot; and then close again.</errorMessage>
+</ValidationRule>

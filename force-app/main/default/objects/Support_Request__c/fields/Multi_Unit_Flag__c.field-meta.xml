@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Multi_Unit_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Support_Request_For__c, 
+&#39;BOFE&#39;,&#39;BOFE&#39;, 
+&#39;WCA&#39;,&#39;WCA&#39;,
+&#39;CASHIERING&#39;,&#39;CASHIERING&#39;,
+&#39;PAGA&#39;,&#39;PAGA&#39;,
+&#39;HR&#39;,&#39;HR&#39;,
+&#39;OIS&#39;,&#39;OIS&#39;,
+&#39;JEU&#39;,&#39;JEU&#39;,
+&#39;REGISTRATION&#39;,&#39;REGISTRATION&#39;,
+&#39;RCI&#39;,&#39;RCI&#39;,
+&#39;ACCOUNTING&#39;,&#39;ACCOUNTING&#39;,
+&#39;MULTI-UNIT/ACCOUNT REQUEST&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

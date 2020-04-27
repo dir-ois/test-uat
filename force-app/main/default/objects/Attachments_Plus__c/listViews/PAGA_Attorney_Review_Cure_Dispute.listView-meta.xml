@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Attorney_Review_Cure_Dispute</fullName>
+    <columns>NAME</columns>
+    <columns>Type__c</columns>
+    <columns>Case_Management__c</columns>
+    <columns>Court_Case_Number__c</columns>
+    <columns>Notice_Filer_Name__c</columns>
+    <columns>Law_Firm__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Plaintiff_Information__c</columns>
+    <columns>Manual_Screen_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Cure_Dispute_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Cure Dispute</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Attachments_Plus__c.General_Document</value>
+    </filters>
+    <label>PAGA Attorney Review - Cure Dispute</label>
+</ListView>

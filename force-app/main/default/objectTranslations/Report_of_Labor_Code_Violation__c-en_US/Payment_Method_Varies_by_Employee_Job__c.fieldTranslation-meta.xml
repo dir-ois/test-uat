@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Explanation of when Payment Method Varies Per Employee or Job position. Relates back to picklist for employee payment method. --></help>
+    <label><!-- Payment Method Varies by Employee\Job --></label>
+    <name>Payment_Method_Varies_by_Employee_Job__c</name>
+</CustomFieldTranslation>

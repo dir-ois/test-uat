@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Tips_or_Grauities__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>PAGA tips or gratuities</description>
+    <externalId>false</externalId>
+    <inlineHelpText>PAGA tips or gratuities</inlineHelpText>
+    <label>Tips or Grauities</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

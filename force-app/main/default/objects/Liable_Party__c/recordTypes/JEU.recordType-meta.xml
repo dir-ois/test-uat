@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU</fullName>
+    <active>true</active>
+    <label>JEU</label>
+    <picklistValues>
+        <picklist>Basis_for_Liability__c</picklist>
+        <values>
+            <fullName>Bad Faith LD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Liability LC 238%2E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Liability LC 2810%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Liability LC 558%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guarantor LC 2677</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guarantor Status Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Liability LC 1197%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Liability LC 558</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint Employer AB 633</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 238%2E5 plus LC 2810%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 238%2E5 plus LC 558%2E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 2677  %28Garment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 558%2E1 plus LC 2677</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC 558%2E1 plus LC 2810%2E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Successor Empl Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Successor Liability</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Type__c</picklist>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail-Out of State</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Liable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Liable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Category_Group_Field__c</fullName>
+    <description>Field to migrate value from Reporting Category formula field in order to group in SOQL.</description>
+    <externalId>false</externalId>
+    <label>Reporting Category - Group Field</label>
+    <length>150</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

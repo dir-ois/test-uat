@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Scheduled_to_Me__c</fullName>
+    <description>Used to create the Meeting list view &quot;My Scheduled Meetings&quot; to filter for all the meetings scheduled to the current User.</description>
+    <externalId>false</externalId>
+    <formula>$User.Id =  Meeting_Scheduled_For__r.User__r.Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Meeting Scheduled to Me</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

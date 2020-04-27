@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- past due prob --></label>
+    <name>past_due_probe__c</name>
+</CustomFieldTranslation>

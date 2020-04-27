@@ -1,0 +1,164 @@
+<apex:page controller="CommunityPayCreditConfirm" title="Confirm Pay Credit" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li class="active">My Registrations</li>
+                    <li class="active">Submit Payment</li>
+                </ol>
+                <h1>Confirm &amp; Submit Pay Credit</h1>
+                <br/>
+                <apex:outputPanel id="errorPanel">
+                    <div class="row mb">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <div style="display:{!errorDisplay}" class="{!errortype}">
+                                <center>{!errormessage}</center> 
+                            </div>
+                        </div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                </apex:outputPanel>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <label for="{!$Component.Total}"><b>Total Amount Due</b></label><br />
+                        <apex:outputField id="Total" value="{!ChargentOrder.ChargentOrders__Total__c}" label="Total" styleclass="form-control" />
+                    </div>
+                </div>
+                <br /><br />
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <label for="{!$Component.cardNumber}"><b>Card Number</b></label><br />
+                        <apex:outputField id="cardNumber" value="{!ChargentOrder.ChargentOrders__Card_Number__c}" label="Card Number" styleclass="form-control" />
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <label for="{!$Component.SecurityCode}"><b>Security Code</b></label><br />
+                        <apex:outputField id="SecurityCode" value="{!ChargentOrder.ChargentOrders__Card_Security_Code__c}" label="Security Code" styleclass="form-control" />
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">    
+                        <label for="{!$Component.expirationMonth}"><b>Expiration Date</b></label><br />
+                        <apex:outputField id="expirationMonth" value="{!ChargentOrder.ChargentOrders__Card_Expiration_Month__c}" label="Expiration Month" styleclass="form-control" />
+                        <apex:outputField id="expirationYear" value="{!ChargentOrder.ChargentOrders__Card_Expiration_Year__c}" label="Expiration Year" styleclass="form-control" />
+                    </div>
+                </div>
+                <br />
+                
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <label for="{!$Component.firstName}"><b>Name</b></label><br />
+                        <apex:outputField id="firstName" value="{!ChargentOrder.ChargentOrders__Billing_First_Name__c}" label="First Name" styleclass="form-control" />&nbsp;
+                        <apex:outputField id="lastName" value="{!ChargentOrder.ChargentOrders__Billing_Last_Name__c}" label="Last Name" styleclass="form-control" />
+                    </div>
+                </div>
+                
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <label for="{!$Component.Phone}"><b>Phone</b></label><br />
+                        <apex:outputField id="Phone" value="{!ChargentOrder.ChargentOrders__Billing_Phone__c}" label="Security Code" styleclass="form-control" />
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <label for="{!$Component.Email}"><b>Email</b></label><br />
+                        <apex:outputField id="Email" value="{!ChargentOrder.ChargentOrders__Billing_Email__c}" label="Email" styleclass="form-control" />
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <label for="{!$Component.Company}"><b>Company</b></label><br />
+                        <apex:outputField id="Company" value="{!ChargentOrder.ChargentOrders__Billing_Company__c}" label="Company" styleclass="form-control" />
+                    </div>
+                </div>
+                <br /><br />
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <label for="{!$Component.Address}"><b>Address</b></label><br />
+                        <apex:outputField id="Address" value="{!ChargentOrder.ChargentOrders__Billing_Address__c}" label="Address" styleclass="form-control" />
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>    
+                    <div class="col-lg-4">
+                        <label for="{!$Component.Address_Line_2}"><b>Address Line 2</b></label><br />
+                        <b><apex:outputField id="Address_Line_2" value="{!ChargentOrder.ChargentOrders__Billing_Address_Line_2__c}" label="Address Line 2" styleclass="form-control" /></b>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2">
+                        <label for="{!$Component.City}"><b>City</b></label><br />
+                        <apex:outputField id="City" value="{!ChargentOrder.ChargentOrders__Billing_City__c}" label="CityLine 2" styleclass="form-control" />
+                    </div>
+                    <div class="col-lg-2">      
+                        <label for="{!$Component.State}"><b>State</b></label><br />
+                        <apex:outputField id="State" value="{!ChargentOrder.ChargentOrders__Billing_State__c}" label="State" styleclass="form-control" />
+                     </div>
+                    <div class="col-lg-2">     
+                        <label for="{!$Component.zip}"><b>Postal Code</b></label><br />
+                        <apex:outputField id="zip" value="{!ChargentOrder.ChargentOrders__Billing_Zip_Postal__c}" label="Zip" styleclass="form-control" />                 
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                       <label for="{!$Component.Country}"><b>Country</b></label><br />
+                       <apex:outputField id="Country" value="{!ChargentOrder.ChargentOrders__Billing_Country__c}" label="Country" styleclass="form-control" />
+                    </div>
+                </div>
+                <br />
+                
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <apex:outputPanel id="btnpanel">
+                        <apex:actionStatus id="saveStatus">
+                            <apex:facet name="stop">
+                                <apex:outputPanel >
+                                    <div class="col-lg-4">
+                                        <apex:commandButton action="{!Back}" value="Back" style="text-decoration:none;" styleclass="btn btn-custom"/>&nbsp;&nbsp;
+                                        <apex:commandButton action="{!CancelPayment}" value="Cancel Payment" style="text-decoration:none;" styleclass="btn btn-custom"/>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-1">
+                                        <apex:commandLink action="{!ConfirmSubmitPayment}" value="Confirm & Submit Payment" style="text-decoration:none;" status="saveStatus" styleclass="btn btn-custom" rerender="btnpanel, errorPanel" />
+                                    </div>
+                                </apex:outputPanel>
+                            </apex:facet>
+                            <apex:facet name="start">
+                                <apex:outputPanel >
+                                    <div class="col-lg-4">
+                                        <apex:commandButton action="{!Back}" disabled="true" value="Back" style="text-decoration:none;" styleclass="btn btn-custom"/>&nbsp;&nbsp;
+                                        <apex:commandButton action="{!CancelPayment}" disabled="true" value="Cancel Payment" style="text-decoration:none;" styleclass="btn btn-custom"/>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+                                    <div class="col-lg-1">
+                                        <apex:commandButton value="Submitting Payment..." disabled="true" status="saveStatus" styleclass="btn btn-custom"/>
+                                    </div>
+                                </apex:outputPanel>
+                            </apex:facet>
+                        </apex:actionStatus>
+                    </apex:outputPanel>
+                </div>
+                <br />
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                        <apex:outputText value="{!$Label.Reg_Com_Payment_Confirm}"  /> 
+                      
+                </div>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

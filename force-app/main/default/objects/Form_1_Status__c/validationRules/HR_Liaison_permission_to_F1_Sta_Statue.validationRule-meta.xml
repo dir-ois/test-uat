@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HR_Liaison_permission_to_F1_Sta_Statue</fullName>
+    <active>true</active>
+    <description>HR Liaison permission to F1-Status Status Type field&#39;s values</description>
+    <errorConditionFormula>NOT(
+ISPICKVAL(Form1_Status_Type__c,&quot;Request to Hire Submitted&quot;)
+||
+ISPICKVAL(Form1_Status_Type__c,&quot;Job Offered to Candidate&quot;)
+||
+ISPICKVAL(Form1_Status_Type__c,&quot;Candidate Accepts&quot;)
+||
+ISPICKVAL(Form1_Status_Type__c,&quot;Candidate Declined – Salary&quot;)
+||
+ISPICKVAL(Form1_Status_Type__c,&quot;Candidate Declined – Other Offer&quot;)
+||
+ISPICKVAL(Form1_Status_Type__c,&quot;Candidate Declined - Other&quot;)
+)
+&amp;&amp;
+$Profile.Name = &#39;HR Division User&#39;</errorConditionFormula>
+    <errorMessage>This Status Type is not available to your profile.</errorMessage>
+</ValidationRule>

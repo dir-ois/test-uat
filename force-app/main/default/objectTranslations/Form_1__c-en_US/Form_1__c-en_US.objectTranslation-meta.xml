@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Form 1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Form 1s</value>
+    </caseValues>
+    <layouts>
+        <layout>Form 1 Layout</layout>
+        <sections>
+            <label><!-- 700 Filing Status --></label>
+            <section>700 Filing Status</section>
+        </sections>
+        <sections>
+            <label><!-- Attachment Checklist --></label>
+            <section>Attachment Checklist</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Form 1 General Status --></label>
+            <section>Form 1 General Status</section>
+        </sections>
+        <sections>
+            <label><!-- Form 1 Tracked Progress Status --></label>
+            <section>Form 1 Tracked Progress Status</section>
+        </sections>
+        <sections>
+            <label><!-- Section 1 Present Position Information --></label>
+            <section>Section 1 Present Position Information</section>
+        </sections>
+        <sections>
+            <label><!-- Section 2 Nature of Request --></label>
+            <section>Section 2 Nature of Request</section>
+        </sections>
+        <sections>
+            <label><!-- Section 3 Justification and Remarks. Must clear SROA/Surplus --></label>
+            <section>Section 3 Justification and Remarks. Must clear SROA/Surplus</section>
+        </sections>
+        <sections>
+            <label><!-- Section 4 Special Instructions --></label>
+            <section>Section 4 Special Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Section 5 For Personnel Section Use --></label>
+            <section>Section 5 For Personnel Section Use</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Form 1 Layout ADMIN</layout>
+        <sections>
+            <label><!-- 700 Filing Status --></label>
+            <section>700 Filing Status</section>
+        </sections>
+        <sections>
+            <label><!-- Attachment Checklist --></label>
+            <section>Attachment Checklist</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Form 1 General Status --></label>
+            <section>Form 1 General Status</section>
+        </sections>
+        <sections>
+            <label><!-- Form 1 Tracked Progress Status --></label>
+            <section>Form 1 Tracked Progress Status</section>
+        </sections>
+        <sections>
+            <label><!-- Section 1 Present Position Information --></label>
+            <section>Section 1 Present Position Information</section>
+        </sections>
+        <sections>
+            <label><!-- Section 2 Nature of Request --></label>
+            <section>Section 2 Nature of Request</section>
+        </sections>
+        <sections>
+            <label><!-- Section 3 Justification and Remarks. Must clear SROA/Surplus --></label>
+            <section>Section 3 Justification and Remarks. Must clear SROA/Surplus</section>
+        </sections>
+        <sections>
+            <label><!-- Section 4 Special Instructions --></label>
+            <section>Section 4 Special Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Section 5 For Personnel Section Use --></label>
+            <section>Section 5 For Personnel Section Use</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill in Position Number before making change to this field. --></errorMessage>
+        <name>Change_Form_700_Status_wo_Pos_Num</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone_2 --></label>
+        <name>Clone_2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_607 --></label>
+        <name>Create_607</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Form1 --></label>
+        <name>New_Form1</name>
+    </webLinks>
+</CustomObjectTranslation>

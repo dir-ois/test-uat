@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Basis_for_Liability__c</fullName>
+    <description>Holds the basis for this party&#39;s liability for an amount owed. Set when adding liable parties to the liability via the case issue engine. Options for values are defined in the custom setting &quot;Record Type Mapping&quot;</description>
+    <externalId>false</externalId>
+    <label>Basis for Liability</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employer Liability</fullName>
+                <default>false</default>
+                <label>Employer Liability</label>
+            </value>
+            <value>
+                <fullName>Joint Employer AB 633</fullName>
+                <default>false</default>
+                <label>Joint Employer AB 633</label>
+            </value>
+            <value>
+                <fullName>Joint Liability</fullName>
+                <default>false</default>
+                <label>Joint Liability</label>
+            </value>
+            <value>
+                <fullName>Successor Liability</fullName>
+                <default>false</default>
+                <label>Successor Liability</label>
+            </value>
+            <value>
+                <fullName>Guarantor Status Liability</fullName>
+                <default>false</default>
+                <label>Guarantor Status Liability</label>
+            </value>
+            <value>
+                <fullName>Guarantor LC 2677</fullName>
+                <default>false</default>
+                <label>Guarantor LC 2677</label>
+            </value>
+            <value>
+                <fullName>Bad Faith LD</fullName>
+                <default>false</default>
+                <label>Bad Faith LD</label>
+            </value>
+            <value>
+                <fullName>Successor Empl Liability</fullName>
+                <default>false</default>
+                <label>Successor Empl Liability</label>
+            </value>
+            <value>
+                <fullName>Employer Liability LC 238.5</fullName>
+                <default>false</default>
+                <label>Employer Liability LC 238.5</label>
+            </value>
+            <value>
+                <fullName>Employer Liability LC 2810.3</fullName>
+                <default>false</default>
+                <label>Employer Liability LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>Employer Liability - CE LC 2810.3</fullName>
+                <default>false</default>
+                <label>Employer Liability - CE LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>Employer Liability LC 558.1</fullName>
+                <default>false</default>
+                <label>Employer Liability LC 558.1</label>
+            </value>
+            <value>
+                <fullName>Individual Liability LC 1197.1</fullName>
+                <default>false</default>
+                <label>Individual Liability LC 1197.1</label>
+            </value>
+            <value>
+                <fullName>Individual Liability LC 558</fullName>
+                <default>false</default>
+                <label>Individual Liability LC 558</label>
+            </value>
+            <value>
+                <fullName>LC 238.5 plus LC 558.1</fullName>
+                <default>false</default>
+                <label>LC 238.5 plus LC 558.1</label>
+            </value>
+            <value>
+                <fullName>LC 238.5 plus LC 2810.3</fullName>
+                <default>false</default>
+                <label>LC 238.5 plus LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>LC 558.1 plus LC 2810.3</fullName>
+                <default>false</default>
+                <label>LC 558.1 plus LC 2810.3</label>
+            </value>
+            <value>
+                <fullName>LC 2677  (Garment)</fullName>
+                <default>false</default>
+                <label>LC 2677  (Garment)</label>
+            </value>
+            <value>
+                <fullName>LC 558.1 plus LC 2677</fullName>
+                <default>false</default>
+                <label>LC 558.1 plus LC 2677</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

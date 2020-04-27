@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disbursement_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Disbursement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apprenticeship</fullName>
+                <default>false</default>
+                <label>Apprenticeship</label>
+            </value>
+            <value>
+                <fullName>Attorney Fees</fullName>
+                <default>false</default>
+                <label>Attorney Fees</label>
+            </value>
+            <value>
+                <fullName>Buyback</fullName>
+                <default>false</default>
+                <label>Buyback</label>
+            </value>
+            <value>
+                <fullName>CAC Payment</fullName>
+                <default>false</default>
+                <label>CAC Payment</label>
+            </value>
+            <value>
+                <fullName>Certified Payroll Fee (CPR)</fullName>
+                <default>false</default>
+                <label>Certified Payroll Fee (CPR)</label>
+            </value>
+            <value>
+                <fullName>Conceded</fullName>
+                <default>false</default>
+                <label>Conceded</label>
+            </value>
+            <value>
+                <fullName>Court Costs</fullName>
+                <default>false</default>
+                <label>Court Costs</label>
+            </value>
+            <value>
+                <fullName>Defendant</fullName>
+                <default>false</default>
+                <label>Defendant</label>
+            </value>
+            <value>
+                <fullName>EDD Payment</fullName>
+                <default>false</default>
+                <label>EDD Payment</label>
+            </value>
+            <value>
+                <fullName>Interest</fullName>
+                <default>false</default>
+                <label>Interest</label>
+            </value>
+            <value>
+                <fullName>IRS</fullName>
+                <default>false</default>
+                <label>IRS</label>
+            </value>
+            <value>
+                <fullName>Levy</fullName>
+                <default>false</default>
+                <label>Levy</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Over payment</fullName>
+                <default>false</default>
+                <label>Over payment</label>
+            </value>
+            <value>
+                <fullName>Penalty Fee</fullName>
+                <default>false</default>
+                <label>Penalty Fee</label>
+            </value>
+            <value>
+                <fullName>Photo Copy Fee</fullName>
+                <default>false</default>
+                <label>Photo Copy Fee</label>
+            </value>
+            <value>
+                <fullName>Plaintiff</fullName>
+                <default>false</default>
+                <label>Plaintiff</label>
+            </value>
+            <value>
+                <fullName>Redemption of Check (NSF)</fullName>
+                <default>false</default>
+                <label>Redemption of Check (NSF)</label>
+            </value>
+            <value>
+                <fullName>Refund</fullName>
+                <default>false</default>
+                <label>Refund</label>
+            </value>
+            <value>
+                <fullName>Refund Certified Payroll Fee (CPR)</fullName>
+                <default>false</default>
+                <label>Refund Certified Payroll Fee (CPR)</label>
+            </value>
+            <value>
+                <fullName>Refund Garment Registration</fullName>
+                <default>false</default>
+                <label>Refund Garment Registration</label>
+            </value>
+            <value>
+                <fullName>Return Taxes</fullName>
+                <default>false</default>
+                <label>Return Taxes</label>
+            </value>
+            <value>
+                <fullName>Return to Defendant</fullName>
+                <default>false</default>
+                <label>Return to Defendant</label>
+            </value>
+            <value>
+                <fullName>Subpoena Cost Recovery</fullName>
+                <default>false</default>
+                <label>Subpoena Cost Recovery</label>
+            </value>
+            <value>
+                <fullName>Tax Lien</fullName>
+                <default>false</default>
+                <label>Tax Lien</label>
+            </value>
+            <value>
+                <fullName>To Assignee</fullName>
+                <default>false</default>
+                <label>To Assignee</label>
+            </value>
+            <value>
+                <fullName>Training Fund</fullName>
+                <default>false</default>
+                <label>Training Fund</label>
+            </value>
+            <value>
+                <fullName>Unpaid Wage Fund</fullName>
+                <default>false</default>
+                <label>Unpaid Wage Fund</label>
+            </value>
+            <value>
+                <fullName>Witness Fees</fullName>
+                <default>false</default>
+                <label>Witness Fees</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

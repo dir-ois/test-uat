@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Child RLCVs have child labor violations alleged --></help>
+    <label><!-- Child Labor --></label>
+    <name>Child_Labor__c</name>
+</CustomFieldTranslation>

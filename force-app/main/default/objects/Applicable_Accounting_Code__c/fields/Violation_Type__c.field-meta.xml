@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type__c</fullName>
+    <description>Links one or more codes to a violation type so that monies applied as payments to a violation type can be applied to the appropriate accounts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Violation Type for which the selected code is to apply</inlineHelpText>
+    <label>Violation Type</label>
+    <referenceTo>Violation_Type__c</referenceTo>
+    <relationshipLabel>Applicable Accounting Codes</relationshipLabel>
+    <relationshipName>Applicable_Accounting_Codes</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

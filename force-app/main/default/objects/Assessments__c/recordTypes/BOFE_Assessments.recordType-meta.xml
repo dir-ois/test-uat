@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Assessments</fullName>
+    <active>true</active>
+    <description>Assessments on BOFE cases</description>
+    <label>BOFE Assessments</label>
+    <picklistValues>
+        <picklist>Appeal_Deadline_Selector__c</picklist>
+        <values>
+            <fullName>Business Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calendar Days</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Imported_From__c</picklist>
+        <values>
+            <fullName>FM-TIPP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referred_to_CIU__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referred_to_Legal__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

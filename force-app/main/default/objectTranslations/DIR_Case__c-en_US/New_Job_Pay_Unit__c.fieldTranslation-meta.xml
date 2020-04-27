@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- (for example, $10/hour) --></help>
+    <label><!-- New Job Pay Unit --></label>
+    <name>New_Job_Pay_Unit__c</name>
+    <picklistValues>
+        <masterLabel>Bi-weekly</masterLabel>
+        <translation><!-- Bi-weekly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commission</masterLabel>
+        <translation><!-- Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day</masterLabel>
+        <translation><!-- Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hour</masterLabel>
+        <translation><!-- Hour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Month</masterLabel>
+        <translation><!-- Month --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation><!-- Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piece rate</masterLabel>
+        <translation><!-- Piece rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semi-monthly</masterLabel>
+        <translation><!-- Semi-monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Week</masterLabel>
+        <translation><!-- Week --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

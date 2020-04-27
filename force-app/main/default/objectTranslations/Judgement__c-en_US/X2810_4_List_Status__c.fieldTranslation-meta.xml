@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 2810.4 List Status --></label>
+    <name>X2810_4_List_Status__c</name>
+    <picklistValues>
+        <masterLabel>Confirmed-Off List</masterLabel>
+        <translation><!-- Confirmed-Off List --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirmed-On List</masterLabel>
+        <translation><!-- Confirmed-On List --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Investigation/Appeal</masterLabel>
+        <translation><!-- Under Investigation/Appeal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

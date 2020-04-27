@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_Requested</fullName>
+    <active>true</active>
+    <description>When a void is requested, only certain users can change to void.</description>
+    <errorConditionFormula>AND(NOT($Permission.DLSE_Sr_Cashier), 
+   NOT( CONTAINS($Profile.Name, &#39;System Administrator&#39;) ),
+   ISPICKVAL(PRIORVALUE(Status__c),&#39;Void Requested&#39;),
+   ISCHANGED(Status__c)
+)</errorConditionFormula>
+    <errorMessage>You are not authorized to change the status while it is currently Void Requested</errorMessage>
+</ValidationRule>

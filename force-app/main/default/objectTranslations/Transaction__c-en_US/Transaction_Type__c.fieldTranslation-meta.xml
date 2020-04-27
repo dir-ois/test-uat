@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set to Adjustment if submitting this transaction to modify the balance of the bank account for any reason other than a standard deposit. --></help>
+    <label><!-- Transaction Type --></label>
+    <name>Transaction_Type__c</name>
+    <picklistValues>
+        <masterLabel>Adjustment</masterLabel>
+        <translation><!-- Adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposit</masterLabel>
+        <translation><!-- Deposit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return</masterLabel>
+        <translation><!-- Return --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

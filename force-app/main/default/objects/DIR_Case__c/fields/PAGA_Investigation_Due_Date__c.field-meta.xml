@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Investigation_Due_Date__c</fullName>
+    <description>Date that the PAGA investigation is due.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This date is the deadline by which BOFE must decide whether BOFE will investigate, or allow the Private Attorney to pursue a civil case.</inlineHelpText>
+    <label>PAGA Decision Due Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

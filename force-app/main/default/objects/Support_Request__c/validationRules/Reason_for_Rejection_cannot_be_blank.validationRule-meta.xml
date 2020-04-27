@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Rejection_cannot_be_blank</fullName>
+    <active>true</active>
+    <description>This is to validate the status cannot be changed to rejected without providing the reason.</description>
+    <errorConditionFormula>ISPICKVAL(Status__c, &#39;Rejected&#39;) &amp;&amp;  ISBLANK(Reason_for_Rejection__c)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Rejection__c</errorDisplayField>
+    <errorMessage>You must provide the reason for rejecting this SR.</errorMessage>
+</ValidationRule>

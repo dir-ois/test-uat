@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_RCI_case_with_approved_referrals</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(RecordType.DeveloperName = &#39;RCI&#39;,IF(ISPICKVAL(Status__c, &quot;Closed&quot;),IF(ISPICKVAL($User.Position__c, &#39;Deputy&#39;),IF(RCI_Referral_Status_for_Closing__c = FALSE,TRUE,FALSE),FALSE),FALSE),FALSE)</errorConditionFormula>
+    <errorMessage>If you are a deputy closing a RCI case, the case would require an approved referral record of type &quot;RCI Case Closure Approval&quot; or &quot;RCI Report/Determination Approval&quot;.</errorMessage>
+</ValidationRule>

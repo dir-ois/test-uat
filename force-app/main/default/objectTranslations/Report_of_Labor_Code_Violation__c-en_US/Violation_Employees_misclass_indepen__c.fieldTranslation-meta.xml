@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Employees misclassified as independent contractors --></help>
+    <label><!-- Employees misclassified as independent --></label>
+    <name>Violation_Employees_misclass_indepen__c</name>
+</CustomFieldTranslation>

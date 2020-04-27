@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Must be a valid customer address sequence number based on the FI$Cal Customer setup (e.g. 1, 2, 25).
+
+If not provided, field will default from customer bill to primary address. --></help>
+    <label><!-- Address_Seq_Num --></label>
+    <name>Address_Seq_Num__c</name>
+</CustomFieldTranslation>

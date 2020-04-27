@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lien_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Lien Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abstract of Judgment (Real Property Lien)</fullName>
+                <default>false</default>
+                <label>Abstract of Judgment (Real Property Lien)</label>
+            </value>
+            <value>
+                <fullName>Certificate of Lien (98.2g)</fullName>
+                <default>false</default>
+                <label>Certificate of Lien (98.2(g))</label>
+            </value>
+            <value>
+                <fullName>Certificate of Penalty Lien (Workers Comp)</fullName>
+                <default>false</default>
+                <label>Certificate of Penalty Lien (Worker&#39;s Comp)</label>
+            </value>
+            <value>
+                <fullName>Deed of Trust</fullName>
+                <default>false</default>
+                <label>Deed of Trust</label>
+            </value>
+            <value>
+                <fullName>Labor Code 238.2 Lien</fullName>
+                <default>false</default>
+                <label>Labor Code 238.2 Lien</label>
+            </value>
+            <value>
+                <fullName>Labor Code 238.3 Lien</fullName>
+                <default>false</default>
+                <label>Labor Code 238.3 Lien</label>
+            </value>
+            <value>
+                <fullName>Lien in Pending Action</fullName>
+                <default>false</default>
+                <label>Lien in Pending Action</label>
+            </value>
+            <value>
+                <fullName>Mechanics Lien</fullName>
+                <default>false</default>
+                <label>Mechanics Lien</label>
+            </value>
+            <value>
+                <fullName>Personal Property Judgment Lien (JL-1)</fullName>
+                <default>false</default>
+                <label>Personal Property Judgment Lien (JL-1)</label>
+            </value>
+            <value>
+                <fullName>UCC Financing Statement (UCC-1)</fullName>
+                <default>false</default>
+                <label>UCC Financing Statement (UCC-1)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payees_owed_Salinas</fullName>
+    <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Case_Management__c</columns>
+    <columns>DIR_Office__c</columns>
+    <columns>Payee_Name__c</columns>
+    <columns>Payee_Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Wage_Payable_Balance__c</columns>
+    <columns>Verification_Letter_Sent__c</columns>
+    <columns>Penalty_Payable_Balance__c</columns>
+    <columns>Other_Payable_Balance__c</columns>
+    <columns>Release_Required__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Wage_Payable_Balance__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Other_Payable_Balance__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Penalty_Payable_Balance__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>DIR_Office__c</field>
+        <operation>equals</operation>
+        <value>Salinas WCA</value>
+    </filters>
+    <label>Payees owed Salinas</label>
+</ListView>

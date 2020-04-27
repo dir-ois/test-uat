@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wage_Assessment_Description__c</fullName>
+    <description>Set by vfp when the case violation is created. Contains the calculation for the penalty assessment for use in display on citation or other output documents. Derived from the Wage_Assessment_Description__c on the violation type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Description of the wage assessment using the variable values</inlineHelpText>
+    <label>Wage Assessment Description</label>
+    <length>2000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

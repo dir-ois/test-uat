@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Question Bank</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Question Bank</value>
+    </caseValues>
+    <layouts>
+        <layout>Complex Question Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualification --></label>
+            <section>Disqualification</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Question Bank Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Disqualification --></label>
+            <section>Disqualification</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Complex --></label>
+        <name>Complex</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Simple --></label>
+        <name>Simple</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter button text --></errorMessage>
+        <name>Require_button_text_for_complex</name>
+    </validationRules>
+</CustomObjectTranslation>

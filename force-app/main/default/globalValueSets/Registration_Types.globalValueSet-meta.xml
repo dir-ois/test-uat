@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Car Wash</fullName>
+        <default>false</default>
+        <label>Car Wash</label>
+    </customValue>
+    <customValue>
+        <fullName>Farm Labor</fullName>
+        <default>false</default>
+        <label>Farm Labor</label>
+    </customValue>
+    <customValue>
+        <fullName>Garment</fullName>
+        <default>false</default>
+        <label>Garment</label>
+    </customValue>
+    <customValue>
+        <fullName>Talent Agency</fullName>
+        <default>false</default>
+        <label>Talent Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Studio Teachers</fullName>
+        <default>false</default>
+        <label>Studio Teachers</label>
+    </customValue>
+    <customValue>
+        <fullName>Janitorial</fullName>
+        <default>false</default>
+        <label>Janitorial</label>
+    </customValue>
+    <customValue>
+        <fullName>Child Performer Services</fullName>
+        <default>false</default>
+        <label>Child Performer Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Entertainment Work</fullName>
+        <default>false</default>
+        <label>Entertainment Work</label>
+    </customValue>
+    <description>Reflective of the different Registration record types and corresponding templates.</description>
+    <masterLabel>Registration Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

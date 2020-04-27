@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Separation_Not_Transfer_Promo</fullName>
+    <active>true</active>
+    <description>When it is not Transfering/Promoting &quot;Vacated Position&quot; is required</description>
+    <errorConditionFormula>AND ( (NOT(CONTAINS($Profile.Name,&#39;System Administrator&#39;))),
+(
+
+( 
+ISPICKVAL( Type_of_Separation__c , &quot;S01-Resignation&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S21-AWOL&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S31-No Layoff&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S40-Termination with fault&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S41-Dismissal&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S70-Service Retirement&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S71-Disability Retirement&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S80 Termination-Illegal Appointment&quot;)
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S90-Probe Rejection&quot;) 
+|| 
+ISPICKVAL( Type_of_Separation__c , &quot;S95-Death&quot;) 
+
+) 
+&amp;&amp;
+(Vacated_Position__c =&#39;&#39;)
+
+))</errorConditionFormula>
+    <errorMessage>Please provide &#39;Vacated Position&#39; information.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Levy_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Levy Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft/pending review</fullName>
+                <default>false</default>
+                <label>Draft/pending review</label>
+            </value>
+            <value>
+                <fullName>Finalized</fullName>
+                <default>false</default>
+                <label>Finalized</label>
+            </value>
+            <value>
+                <fullName>Sent to levying officer</fullName>
+                <default>false</default>
+                <label>Sent to levying officer</label>
+            </value>
+            <value>
+                <fullName>Withdrawn/released</fullName>
+                <default>false</default>
+                <label>Withdrawn/released</label>
+            </value>
+            <value>
+                <fullName>Served by levying officer</fullName>
+                <default>false</default>
+                <label>Served by levying officer</label>
+            </value>
+            <value>
+                <fullName>Pending review</fullName>
+                <default>false</default>
+                <label>Pending review</label>
+            </value>
+            <value>
+                <fullName>Reviewed</fullName>
+                <default>false</default>
+                <label>Reviewed</label>
+            </value>
+            <value>
+                <fullName>Packaged documents ready</fullName>
+                <default>false</default>
+                <label>Packaged documents ready</label>
+            </value>
+            <value>
+                <fullName>Served</fullName>
+                <default>false</default>
+                <label>Served</label>
+            </value>
+            <value>
+                <fullName>Withdrawn (cancelled/not served)</fullName>
+                <default>false</default>
+                <label>Withdrawn (cancelled/not served)</label>
+            </value>
+            <value>
+                <fullName>Released</fullName>
+                <default>false</default>
+                <label>Released</label>
+            </value>
+            <value>
+                <fullName>On hold-bankruptcy</fullName>
+                <default>false</default>
+                <label>On hold-bankruptcy</label>
+            </value>
+            <value>
+                <fullName>On hold - other</fullName>
+                <default>false</default>
+                <label>On hold - other</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

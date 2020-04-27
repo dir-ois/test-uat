@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>CASH San Bernardino WCA Account Signers</name>
+    <queueMembers>
+        <users>
+            <user>fcarrasquillo@dir.ca.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Check_Batch__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Office_Account__c</sobjectType>
+    </queueSobject>
+</Queue>

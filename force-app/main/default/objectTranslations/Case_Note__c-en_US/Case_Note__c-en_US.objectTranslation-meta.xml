@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Note</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Notes</value>
+    </caseValues>
+    <layouts>
+        <layout>Case Note Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>JEU Case Note Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- JEU --></label>
+        <name>JEU</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The data on this field cannot be changed. --></errorMessage>
+        <name>Cannot_Change_Case_Management</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The data on this field cannot be changed. --></errorMessage>
+        <name>Cannot_Change_Event_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The data on this field cannot be changed. --></errorMessage>
+        <name>Cannot_Change_Event_Note</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The data on this field cannot be changed. --></errorMessage>
+        <name>Cannot_Change_Event_Summary</name>
+    </validationRules>
+    <workflowTasks>
+        <description><!-- Case Note Created --></description>
+        <name>Case_Note_Created</name>
+        <subject><!-- Case Note Created --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

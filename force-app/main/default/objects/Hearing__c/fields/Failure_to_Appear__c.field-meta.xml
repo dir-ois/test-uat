@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failure_to_Appear__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set by vfp when entering hearing results. Also on W CA meetings when applicable to a Plaintiff.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Appellant / Plaintiff failed to appear at meeting.</inlineHelpText>
+    <label>Failure to Appear</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

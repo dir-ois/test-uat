@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Collection of tabs needed for configuring BOFE processes</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>BOFE Configuration</label>
+    <tabs>DIR_Case__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>DIR_Employee__c</tabs>
+    <tabs>Affiliation_Pair__c</tabs>
+    <tabs>Inspection_Questions__c</tabs>
+    <tabs>Violation_Type__c</tabs>
+    <tabs>Office__c</tabs>
+    <tabs>Case_Payment__c</tabs>
+    <tabs>Attachments_Plus__c</tabs>
+    <tabs>Case_History_Configuration</tabs>
+    <tabs>Field_History_Config</tabs>
+    <tabs>Attachment_Configuration__c</tabs>
+    <tabs>Referral_Assignment__c</tabs>
+    <tabs>DIR_Inspection__c</tabs>
+    <tabs>HR_Mandatory_Training_Tracking__c</tabs>
+    <tabs>HR_Mandatory_Training_Reminder__c</tabs>
+    <tabs>Support_Request__c</tabs>
+    <tabs>Question_Bank__c</tabs>
+    <tabs>Registration_Location__c</tabs>
+</CustomApplication>

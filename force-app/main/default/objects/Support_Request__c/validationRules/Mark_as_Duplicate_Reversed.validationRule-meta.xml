@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mark_as_Duplicate_Reversed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Mark_as_Duplicate__c) 
+&amp;&amp; 
+Mark_as_Duplicate__c = False 
+&amp;&amp;
+PRIORVALUE(Mark_as_Duplicate__c) = True
+&amp;&amp;
+!ISBLANK( Support_Request__c)</errorConditionFormula>
+    <errorMessage>In order to reverse the &quot;Mark As Duplicate&quot;, you must delete the support parent support request and change the status back to the previous e value.</errorMessage>
+</ValidationRule>

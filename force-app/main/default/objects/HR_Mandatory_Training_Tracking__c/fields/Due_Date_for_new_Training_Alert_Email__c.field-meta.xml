@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Due_Date_for_new_Training_Alert_Email__c</fullName>
+    <description>Indicates Due Date for new Training Alert Email based on RT, is updated by wfr</description>
+    <externalId>false</externalId>
+    <label>Due Date for new Training Alert Email</label>
+    <length>30</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

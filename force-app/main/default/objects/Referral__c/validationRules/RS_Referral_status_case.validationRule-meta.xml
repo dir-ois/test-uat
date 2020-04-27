@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RS_Referral_status_case</fullName>
+    <active>true</active>
+    <description>require a case when the referral status is set to accepted</description>
+    <errorConditionFormula>RecordType.DeveloperName = &#39;RS_Refer_to_BOFE&#39;
+&amp;&amp;
+ISPICKVAL ( Request_Status__c , &#39;Accepted&#39; )
+&amp;&amp; 
+ISBLANK ( Case__c )</errorConditionFormula>
+    <errorMessage>Please select the case created from this referral in order to accept it.</errorMessage>
+</ValidationRule>

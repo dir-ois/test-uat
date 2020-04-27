@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- License Type --></label>
+    <name>License_Type__c</name>
+    <picklistValues>
+        <masterLabel>CSLB</masterLabel>
+        <translation><!-- CSLB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None Required</masterLabel>
+        <translation><!-- None Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PUC</masterLabel>
+        <translation><!-- PUC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Inspector</masterLabel>
+        <translation><!-- Special Inspector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surveyor</masterLabel>
+        <translation><!-- Surveyor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Occupational Safety and Health (Labor Code §§ 6300 et seq.) --></help>
+    <label><!-- Occupational SAFE HLTH (LC 6300 et seq) --></label>
+    <name>Occupational_SAFE_HLTH_LC6300_et_seq__c</name>
+</CustomFieldTranslation>

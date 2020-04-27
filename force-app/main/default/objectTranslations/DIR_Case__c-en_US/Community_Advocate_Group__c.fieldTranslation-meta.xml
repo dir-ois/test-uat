@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Community Advocate Group --></label>
+    <name>Community_Advocate_Group__c</name>
+    <picklistValues>
+        <masterLabel>Asian Law Caucus</masterLabel>
+        <translation><!-- Asian Law Caucus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian Pacific American Legal Center</masterLabel>
+        <translation><!-- Asian Pacific American Legal Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian Pacific Islander Legal Outreach</masterLabel>
+        <translation><!-- Asian Pacific Islander Legal Outreach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bet Tzedek Legal Services</masterLabel>
+        <translation><!-- Bet Tzedek Legal Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLEAN Car Wash Campaign</masterLabel>
+        <translation><!-- CLEAN Car Wash Campaign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRLA, Inc.</masterLabel>
+        <translation><!-- CRLA, Inc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRLAF</masterLabel>
+        <translation><!-- CRLAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Immigrant Policy Center</masterLabel>
+        <translation><!-- California Immigrant Policy Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centro Legal de la Raza</masterLabel>
+        <translation><!-- Centro Legal de la Raza --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese Progressive Assoc.</masterLabel>
+        <translation><!-- Chinese Progressive Assoc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coalition for Humane Immigrant Rights LA</masterLabel>
+        <translation><!-- Coalition for Humane Immigrant Rights LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Rights Center</masterLabel>
+        <translation><!-- Employee Rights Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equal Rights Advocates</masterLabel>
+        <translation><!-- Equal Rights Advocates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KIWA - Korea Town Immigrants Workers Alliance</masterLabel>
+        <translation><!-- KIWA - Korea Town Immigrants Workers Alliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>La Raza Centro Legal</masterLabel>
+        <translation><!-- La Raza Centro Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawyer&#39;s Committee for Civil Rights</masterLabel>
+        <translation><!-- Lawyer&apos;s Committee for Civil Rights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Aid Foundation of L.A.</masterLabel>
+        <translation><!-- Legal Aid Foundation of L.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Aid Society-Employment Law Center</masterLabel>
+        <translation><!-- Legal Aid Society-Employment Law Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Aid of Marin</masterLabel>
+        <translation><!-- Legal Aid of Marin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Day Laborer Organization Network</masterLabel>
+        <translation><!-- National Day Laborer Organization Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Employment Law Center</masterLabel>
+        <translation><!-- National Employment Law Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Employment Law Project</masterLabel>
+        <translation><!-- National Employment Law Project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neighborhood Legal Services of LA County</masterLabel>
+        <translation><!-- Neighborhood Legal Services of LA County --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pilipino Worker Center</masterLabel>
+        <translation><!-- Pilipino Worker Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant Opportunity Center-LA</masterLabel>
+        <translation><!-- Restaurant Opportunity Center-LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SoCal COSH</masterLabel>
+        <translation><!-- SoCal COSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Asian Network</masterLabel>
+        <translation><!-- South Asian Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stanford Community Law Clinic</masterLabel>
+        <translation><!-- Stanford Community Law Clinic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UCLA Labor Center</masterLabel>
+        <translation><!-- UCLA Labor Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Justice Center</masterLabel>
+        <translation><!-- Wage Justice Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse Worker Resource Center</masterLabel>
+        <translation><!-- Warehouse Worker Resource Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Watsonville Law Center</masterLabel>
+        <translation><!-- Watsonville Law Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Women&#39;s Employment Rights Center</masterLabel>
+        <translation><!-- Women&apos;s Employment Rights Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worksafe</masterLabel>
+        <translation><!-- Worksafe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Young Workers United</masterLabel>
+        <translation><!-- Young Workers United --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

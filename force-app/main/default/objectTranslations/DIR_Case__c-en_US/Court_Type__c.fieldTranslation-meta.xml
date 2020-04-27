@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Court Type --></label>
+    <name>Court_Type__c</name>
+    <picklistValues>
+        <masterLabel>California Appellate Courts</masterLabel>
+        <translation><!-- California Appellate Courts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California Superior Courts</masterLabel>
+        <translation><!-- California Superior Courts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Courts</masterLabel>
+        <translation><!-- Federal Courts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

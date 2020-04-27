@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entry Type --></label>
+    <name>Entry_Type__c</name>
+    <picklistValues>
+        <masterLabel>CR</masterLabel>
+        <translation><!-- CR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRINV</masterLabel>
+        <translation><!-- CRINV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRYEC</masterLabel>
+        <translation><!-- CRYEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DR</masterLabel>
+        <translation><!-- DR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRYEC</masterLabel>
+        <translation><!-- DRYEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INV</masterLabel>
+        <translation><!-- INV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OC</masterLabel>
+        <translation><!-- OC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

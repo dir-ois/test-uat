@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claimant_Claiming_Penalties__c</fullName>
+    <externalId>false</externalId>
+    <label>Claimant Claiming Penalties</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waiting time penalties [Labor Code 203]</fullName>
+                <default>true</default>
+                <label>Waiting time penalties [Labor Code 203]</label>
+            </value>
+            <value>
+                <fullName>&quot;Bounced&quot; checks [Labor Code 203.1]</fullName>
+                <default>false</default>
+                <label>&quot;Bounced&quot; checks [Labor Code 203.1]</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

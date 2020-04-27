@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Others_Threatened_Conditional_1</fullName>
+    <description>ITF</description>
+    <displayedFields>
+        <field>Other_Adverse_Action_Explanation__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Does_Claimant_Want_to_File_Retaliation__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Others Threatened Conditional 1</label>
+</FieldSet>

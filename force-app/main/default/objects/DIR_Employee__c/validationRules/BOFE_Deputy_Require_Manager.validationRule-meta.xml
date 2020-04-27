@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Deputy_Require_Manager</fullName>
+    <active>true</active>
+    <description>For a BOFE deputy, require a manager be set</description>
+    <errorConditionFormula>RecordType.DeveloperName = &#39;BOFE_Employees&#39;
+&amp;&amp;
+ Active__c 
+&amp;&amp;
+ ISPICKVAL ( Position__c , &#39;Deputy&#39; )
+&amp;&amp; 
+ ISBLANK ( Manager__c )</errorConditionFormula>
+    <errorMessage>When assigning a deputy, please assign a manger in order to save the record.</errorMessage>
+</ValidationRule>

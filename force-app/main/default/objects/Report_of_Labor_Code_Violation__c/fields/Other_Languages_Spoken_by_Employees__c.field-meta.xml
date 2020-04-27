@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Languages_Spoken_by_Employees__c</fullName>
+    <description>Other Languages Spoken by Employees in addition to picklist.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Other Languages Spoken by Employees in addition to picklist.</inlineHelpText>
+    <label>Other Languages Spoken by Employees</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

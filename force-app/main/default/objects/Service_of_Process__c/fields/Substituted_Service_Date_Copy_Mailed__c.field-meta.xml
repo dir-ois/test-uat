@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Substituted_Service_Date_Copy_Mailed__c</fullName>
+    <description>Only if Type of Service = Substituted Service</description>
+    <externalId>false</externalId>
+    <label>Substituted Service - Date Copy Mailed</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

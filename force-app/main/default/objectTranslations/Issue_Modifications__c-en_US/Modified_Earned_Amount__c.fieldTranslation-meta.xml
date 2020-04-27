@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Modify the amount earned to a different value as needed. This value will update the earned amount on the issue. --></help>
+    <label><!-- Modified Earned Amount (optional) --></label>
+    <name>Modified_Earned_Amount__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returned_Voided_Receipt__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Returned/Voided Receipt</label>
+    <lookupFilter>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <filterItems>
+            <field>Receipt__c.Returned_Item__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>Receipt__c.Voided_Item__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Receipt__c</referenceTo>
+    <relationshipLabel>Returned/Voided By</relationshipLabel>
+    <relationshipName>Returned_Voided_By</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

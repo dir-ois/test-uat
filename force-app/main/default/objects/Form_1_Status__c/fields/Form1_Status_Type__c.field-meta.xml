@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form1_Status_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Form1 Status Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertise</fullName>
+                <default>false</default>
+                <label>Advertise</label>
+            </value>
+            <value>
+                <fullName>CalHR - Approved</fullName>
+                <default>false</default>
+                <label>CalHR - Approved</label>
+            </value>
+            <value>
+                <fullName>CalHR - Denied</fullName>
+                <default>false</default>
+                <label>CalHR - Denied</label>
+            </value>
+            <value>
+                <fullName>CalHR - Hold</fullName>
+                <default>false</default>
+                <label>CalHR - Hold</label>
+            </value>
+            <value>
+                <fullName>CalHR - Received</fullName>
+                <default>false</default>
+                <label>CalHR - Received</label>
+            </value>
+            <value>
+                <fullName>CalHR - Under Review</fullName>
+                <default>false</default>
+                <label>CalHR - Under Review</label>
+            </value>
+            <value>
+                <fullName>Canceled by Division</fullName>
+                <default>false</default>
+                <label>Canceled by Division</label>
+            </value>
+            <value>
+                <fullName>Canceled by HR</fullName>
+                <default>false</default>
+                <label>Canceled by HR</label>
+            </value>
+            <value>
+                <fullName>Candidate Accepts</fullName>
+                <default>false</default>
+                <label>Candidate Accepts</label>
+            </value>
+            <value>
+                <fullName>Candidate Declined - Other</fullName>
+                <default>false</default>
+                <label>Candidate Declined - Other</label>
+            </value>
+            <value>
+                <fullName>Candidate Declined - Other Offer</fullName>
+                <default>false</default>
+                <label>Candidate Declined - Other Offer</label>
+            </value>
+            <value>
+                <fullName>Candidate Declined - Salary</fullName>
+                <default>false</default>
+                <label>Candidate Declined - Salary</label>
+            </value>
+            <value>
+                <fullName>HR Final Packet - Analyst Approved</fullName>
+                <default>false</default>
+                <label>HR Final Packet - Analyst Approved</label>
+            </value>
+            <value>
+                <fullName>HR Final Packet - Manager Approved</fullName>
+                <default>false</default>
+                <label>HR Final Packet - Manager Approved</label>
+            </value>
+            <value>
+                <fullName>HR Final Packet - Submitted to CalHR</fullName>
+                <default>false</default>
+                <label>HR Final Packet - Submitted to CalHR</label>
+            </value>
+            <value>
+                <fullName>HR Hold</fullName>
+                <default>false</default>
+                <label>HR Hold</label>
+            </value>
+            <value>
+                <fullName>HR - Job Offer Clearance Notification</fullName>
+                <default>false</default>
+                <label>HR - Job Offer Clearance Notification</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Duty statement</fullName>
+                <default>false</default>
+                <label>Info Hold - Duty statement</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Eligibility  see HR Hold</fullName>
+                <default>false</default>
+                <label>Info Hold - Eligibility  see HR Hold</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Interview Questions</fullName>
+                <default>false</default>
+                <label>Info Hold - Interview Questions</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Job Bulletin</fullName>
+                <default>false</default>
+                <label>Info Hold - Job Bulletin</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Justification</fullName>
+                <default>false</default>
+                <label>Info Hold - Justification</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Knowledge, Skills, Abilities</fullName>
+                <default>false</default>
+                <label>Info Hold - Knowledge, Skills, Abilities</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Org chart</fullName>
+                <default>false</default>
+                <label>Info Hold - Org chart</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Other</fullName>
+                <default>false</default>
+                <label>Info Hold - Other</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Screening Matrix</fullName>
+                <default>false</default>
+                <label>Info Hold - Screening Matrix</label>
+            </value>
+            <value>
+                <fullName>Info Hold - Statement of Qualifications</fullName>
+                <default>false</default>
+                <label>Info Hold - Statement of Qualifications</label>
+            </value>
+            <value>
+                <fullName>Interviews - Conducted</fullName>
+                <default>false</default>
+                <label>Interviews - Conducted</label>
+            </value>
+            <value>
+                <fullName>Interviews - Scheduled</fullName>
+                <default>false</default>
+                <label>Interviews - Scheduled</label>
+            </value>
+            <value>
+                <fullName>Job Offered to Candidate</fullName>
+                <default>false</default>
+                <label>Job Offered to Candidate</label>
+            </value>
+            <value>
+                <fullName>Minimum Qualification review</fullName>
+                <default>false</default>
+                <label>Minimum Qualification review</label>
+            </value>
+            <value>
+                <fullName>Official Personnel File/Transfer Eligibility Check Review</fullName>
+                <default>false</default>
+                <label>Official Personnel File/Transfer Eligibility Check Review</label>
+            </value>
+            <value>
+                <fullName>Packet to HR - Part 1 Received</fullName>
+                <default>false</default>
+                <label>Packet to HR - Part 1 Received</label>
+            </value>
+            <value>
+                <fullName>Packet to HR - Part 1 Under Review</fullName>
+                <default>false</default>
+                <label>Packet to HR - Part 1 Under Review</label>
+            </value>
+            <value>
+                <fullName>Packet to HR - Part 2 Received</fullName>
+                <default>false</default>
+                <label>Packet to HR - Part 2 Received</label>
+            </value>
+            <value>
+                <fullName>Packet to HR - Part 2 Under Review</fullName>
+                <default>false</default>
+                <label>Packet to HR - Part 2 Under Review</label>
+            </value>
+            <value>
+                <fullName>Release Applications</fullName>
+                <default>false</default>
+                <label>Release Applications</label>
+            </value>
+            <value>
+                <fullName>Request to Hire Submitted</fullName>
+                <default>false</default>
+                <label>Request to Hire Submitted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

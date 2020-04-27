@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the date the certified letter notifying parties of the intent to investigate. This is manually set. --></help>
+    <label><!-- Date of Notice of Intent to Investigate --></label>
+    <name>PAGA_Investigation_Decision_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is hidden and is for HR vacancy report. This field checks whether Last Pay Period (date) is greater (later) then End Date, then it is the Last Pay Period, if not End Date is picked. If Last Pay Period and End Date are blank, the result is blank --></help>
+    <label><!-- True Last Pay Period --></label>
+    <name>True_Last_Pay_Period__c</name>
+</CustomFieldTranslation>

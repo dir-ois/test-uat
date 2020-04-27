@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Handling_Required__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Domestic_Violence_Assault_Stalking__c,&quot;Yes&quot;), (IMAGE(&quot;/servlet/servlet.FileDownload?file=01535000000A8rk&quot;,&quot;Domestic Violence&quot;)),
+IF(
+ISPICKVAL(Employer_Made_Immigration_Threats__c,&quot;Yes&quot;), (IMAGE(&quot;/servlet/servlet.FileDownload?file=01535000000A8rk&quot;,&quot;Immigration Protection&quot;)),
+IF(
+ISPICKVAL(H_S_Complaint_to_Employer_Supervisor__c,&quot;Yes&quot;), (IMAGE(&quot;/servlet/servlet.FileDownload?file=01535000000A8rk&quot;,&quot;OSHA&quot;)),
+IF(
+ISPICKVAL(H_S_Complaint_with_Govt_Agency__c,&quot;Yes&quot;), (IMAGE(&quot;/servlet/servlet.FileDownload?file=01535000000A8rk&quot;,&quot;OSHA&quot;)),
+IF(
+ISPICKVAL(Paid_Less_For_Similar_Work__c,&quot;Yes&quot;), (IMAGE(&quot;/servlet/servlet.FileDownload?file=01535000000A8rk&quot;,&quot;Equal Pay&quot;)), 
+NULL)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Special Handling Required</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

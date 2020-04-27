@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How often did this person come to the factory? --></help>
+    <label><!-- Factory Time --></label>
+    <name>Factory_Time__c</name>
+</CustomFieldTranslation>

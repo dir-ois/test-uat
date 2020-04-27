@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For work days of more than 10 hours and up to 14 hours per day, not allowed to take three 10-minute rest breaks --></help>
+    <label><!-- For work days between 10 and 14 hours --></label>
+    <name>Violation_For_work_days_between_10_and14__c</name>
+</CustomFieldTranslation>

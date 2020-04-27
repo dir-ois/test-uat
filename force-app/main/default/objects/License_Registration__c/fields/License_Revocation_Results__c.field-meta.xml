@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Revocation_Results__c</fullName>
+    <description>Records the results of a license revocation hearing</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Records the results of a license revocation hearing</inlineHelpText>
+    <label>License Revocation Results</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Revoke License</fullName>
+                <default>false</default>
+                <label>Revoke License</label>
+            </value>
+            <value>
+                <fullName>Deny License Renewal</fullName>
+                <default>false</default>
+                <label>Deny License Renewal</label>
+            </value>
+            <value>
+                <fullName>Retain License &amp; Renew</fullName>
+                <default>false</default>
+                <label>Retain License &amp; Renew</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BOFE_Legal_Referral_Approved</fullName>
+        <description>BOFE Legal Referral Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Assigned_Deputy</fullName>
+        <description>Email Assigned Deputy</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Assignment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_new_WCA_Referral_to_JEU</fullName>
+        <description>Email new WCA Referral to JEU</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>JEU</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Referral_to_JEU</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_all_JEU_users</fullName>
+        <ccEmails>tnegussay@dir.ca.gov</ccEmails>
+        <description>Email to all JEU users</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>JEU</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Referral_to_JEU</template>
+    </alerts>
+    <alerts>
+        <fullName>JEU_Referral_Approved</fullName>
+        <description>JEU Referral Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/JEU_Referral_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>JEU_Referral_Rejected</fullName>
+        <description>JEU Referral Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/JEU_Referral_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Non_Response_notificatino</fullName>
+        <description>Non-Response notificatino</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_non_response</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_BOFE_Division_Investigator_when_assigned_to_a_Referral</fullName>
+        <description>Notify BOFE Division Investigator when assigned to a Referral</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <field>BOFE_Division_Investigator_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Management_Email_Templates/PAGA_Referral_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_SR_Deputy_of_new_Case_Closure_Approval</fullName>
+        <description>Notify SR Deputy of new Case Closure Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sr_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Case_Closure_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_SR_Deputy_of_new_Report_Determination_Approval</fullName>
+        <description>Notify SR Deputy of new Report/Determination Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sr_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Report_Determination_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Referral_15_Days_Late</fullName>
+        <description>RCI Referral 15 Days Late</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_15_Days_Late</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Referral_Closed_Notify_Deputies</fullName>
+        <description>RCI Referral Closed - Notify Deputies</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Sr_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Closed</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Referral_Request_Approved</fullName>
+        <description>RCI Referral Request Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>RCI_Referral_Request_Rejected</fullName>
+        <description>RCI Referral Request Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/RCI_Referral_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_Approval_Rejected</fullName>
+        <description>Referral Approval Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Legal_Referral_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Referral_status_outcome_notification</fullName>
+        <description>Referral status/outcome notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/BOFE_Referral_change</template>
+    </alerts>
+    <alerts>
+        <fullName>Update_Referring_Deputy_on_Referral_Status</fullName>
+        <description>Update Referring Deputy on Referral Status</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Referral_Email_Templates/Update_Referring_Deputy</template>
+    </alerts>
+    <alerts>
+        <fullName>WCA_Garment_Referral_to_BOFE_Rejected</fullName>
+        <description>WCA/Garment Referral to BOFE Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Garment_Referral_to_BOFE_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>WCA_Garment_referral_to_bofe_approved</fullName>
+        <description>WCA/Garment referral to bofe approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sr_User_Record__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Garment_Referral_to_BOFE_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Referral_Closed</fullName>
+        <description>Wage - Referral Closed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Wage_Referral_Closed</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_Day_Notification_before_Investigation_Deadline</fullName>
+        <description>30-Day Notification before Investigation Deadline</description>
+        <protected>false</protected>
+        <recipients>
+            <field>PAGA_Point_Person_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/X30_Day_Reminder_before_Investigation_Deadline_for_PAGA_Referral</template>
+    </alerts>
+    <alerts>
+        <fullName>send_email_to_deputy_when_status_is_referred</fullName>
+        <description>send email to deputy when status is referred</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/WCA_Referral_to_JEU_Approved</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Status_Approved</fullName>
+        <field>zApproval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Pending</fullName>
+        <field>zApproval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Approval Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Status_Rejected</fullName>
+        <field>zApproval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BOFE_Referral_Approval_Rec_Type_Update</fullName>
+        <description>Updates the rec type of the BOFE referral to approved so that the referral flow can be launched. Triggers page layout change.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>WCA_Garment_Referral_to_BOFE_Approved</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>BOFE Referral Approval Rec Type Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JEU_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>JEU Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JEU_Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>JEU Approval Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JEU_Approval_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>JEU Approval Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JEU_Clear_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <name>JEU Clear Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JEU_Clear_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <name>JEU Clear Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JEU_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>JEU Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Legal Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Legal Approval Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Approval_Status_Pending</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Legal Approval Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Approval_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Legal Approval Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Clear_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <name>Legal Clear Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Clear_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <name>Legal Clear Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Legal_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Legal Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>RCI Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Approval_Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>RCI Approval Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Approval_Status_Pending</fullName>
+        <field>zApproval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>RCI Approval Status = Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Approval_Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>RCI Approval Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Clear_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <name>RCI Clear Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Clear_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <name>RCI Clear Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Referral_Status_Approved</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Request Approved</literalValue>
+        <name>RCI Referral Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Referral_Status_Rejected</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>RCI Referral Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Referral_Status_Request_Approved</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Request Approved</literalValue>
+        <name>RCI Referral Status = Request Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RCI_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>RCI Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Referral_Approved</fullName>
+        <description>Sets the status of the referral to approved</description>
+        <field>Request_Status__c</field>
+        <literalValue>Request Approved</literalValue>
+        <name>Referral Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Referral_Rejected</fullName>
+        <description>Sets the referral status to rejected</description>
+        <field>Request_Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Referral Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Referral_Status_Accepted</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Request Approved</literalValue>
+        <name>Referral Status = Accepted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Referral_Status_Rejected</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Referral Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_by_senior</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Rejected by senior</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_approved</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Request Approved</literalValue>
+        <name>Request approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Pending_Approval</fullName>
+        <description>Sets the referral status to &quot;pending approval&quot; and triggers process builder to create task for the senior deputy</description>
+        <field>Request_Status__c</field>
+        <literalValue>Pending Approval</literalValue>
+        <name>Set Pending Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Referral_Status_approved</fullName>
+        <description>Sets the referral status to sent to legal</description>
+        <field>Request_Status__c</field>
+        <literalValue>Request Sent</literalValue>
+        <name>Set Referral Status - approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Referral_date</fullName>
+        <description>Set referral date after approval</description>
+        <field>Referral_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Set Referral date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Status_Referred</fullName>
+        <description>Sets the status of the referral to &quot;Referred&quot; after the senior has approved the referral.</description>
+        <field>Request_Status__c</field>
+        <literalValue>Referred</literalValue>
+        <name>Set Status Referred</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Status_to_Pending</fullName>
+        <description>Change Status to pending approval</description>
+        <field>Request_Status__c</field>
+        <literalValue>Pending Approval</literalValue>
+        <name>Set Status to Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Status_to_Referred</fullName>
+        <field>Request_Status__c</field>
+        <literalValue>Referred</literalValue>
+        <name>Set Status to Referred</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Date</fullName>
+        <field>Approval_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Status</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Legal_Referral_Field</fullName>
+        <field>Legal_Referral__c</field>
+        <formula>1</formula>
+        <name>Update Legal Referral Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Referral_Date</fullName>
+        <field>Referral_Date__c</field>
+        <formula>Today()</formula>
+        <name>Update Referral Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rejected_Date</fullName>
+        <field>Rejected_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update Rejected Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rejected_Status</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Rejected Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>BOFE Referral Non-response</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Referral__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BOFE Request for Legal Services,BOFE Request for Legal Court Action,BOFE Civil Litigation Referral</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.Request_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Pending Approval,Denied,Review in Process,Closed</value>
+        </criteriaItems>
+        <description>Actions to take when an referral has not been responded to as expected</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Non_Response_notificatino</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>BOFE Referral Status Change</fullName>
+        <actions>
+            <name>Referral_status_outcome_notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Rule fires when the status changes on a referral from a BOFE</description>
+        <formula>(  RecordType.DeveloperName =    &#39;BOFE_Civil_Litigation_Referral&#39;  ||  RecordType.DeveloperName =    &#39;BOFE_Request_for_Legal_Court_Action&#39;  ||  RecordType.DeveloperName =    &#39;BOFE_Request_for_Legal_Services&#39; ) &amp;&amp; (   ISCHANGED ( Request_Status__c )   ||   ISCHANGED ( Outcome__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>RCI Referral - WJC Rejected</fullName>
+        <actions>
+            <name>Judgment_Referral_Rejected_by_WJC</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Referral__c.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>RCI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.Wage_Justice_Center_Disposition__c</field>
+            <operation>equals</operation>
+            <value>Rejected</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.Referred_to_Wage_Justice_Center__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Closed__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>RCI Referral Approved</fullName>
+        <actions>
+            <name>Email_Assigned_Deputy</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Referral_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Referral__c.Request_Status__c</field>
+            <operation>equals</operation>
+            <value>Request Approved,Referred</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Referral__c.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>RCI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>RCI Referral for Mediation</fullName>
+        <actions>
+            <name>No_Activity_on_Mediation_Referral_in_120_Days</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Send notification 120 days from Last Activity Date</description>
+        <formula>(RecordType.DeveloperName = &quot;RCI Referral to Mediation&quot;) &amp;&amp; LastActivityDate &gt; DATEVALUE(CreatedDate+1)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>RCI Update Legal Referral Count</fullName>
+        <actions>
+            <name>Update_Legal_Referral_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Referral__c.RCILegalReferral__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Referral%3A Notify PAGA Investigator 30 days before Investigation deadlline</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Referral__c.Investigation_Deadline_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Case__c.Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Notify PAGA investigator 30 days before the Investigation Deadline Date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X30_Day_Notification_before_Investigation_Deadline</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Referral__c.Investigation_Deadline_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Complete_BOFE_referral</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This BOFE referral has been approved. Complete the referral to BOFE by clicking the &quot;Refer to BOFE&quot; button and completing the questions.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Complete BOFE referral</subject>
+    </tasks>
+    <tasks>
+        <fullName>De_Novo_Legal_Referral_Rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This referral was rejected. There is likely information missing that is needed to refer to legal.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>De Novo Legal Referral Rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>Judgement_referral_to_JEU_rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This referral was rejected. There is likely information missing that is needed to refer to JEU.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Judgement referral to JEU rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>Judgment_Referral_Rejected_by_WJC</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>The WJC has notified the Sr Deputy that the following Judgment has been Rejected.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Judgment Referral Rejected by WJC</subject>
+    </tasks>
+    <tasks>
+        <fullName>No_Activity_on_Mediation_Referral_in_120_Days</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Referral__c.Referral_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>No Activity on Mediation Referral in 120 Days</subject>
+    </tasks>
+    <tasks>
+        <fullName>RCI_Referral_Approved</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Referral__c.Approval_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>RCI Referral Approved</subject>
+    </tasks>
+    <tasks>
+        <fullName>RCI_Referral_Rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Referral__c.Rejected_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>RCI Referral Rejected</subject>
+    </tasks>
+    <tasks>
+        <fullName>WCA_Referral_to_JEU_Rejected</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>The referral request was not approved. Please contact the senior deputy.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>WCA Referral to JEU Rejected</subject>
+    </tasks>
+</Workflow>

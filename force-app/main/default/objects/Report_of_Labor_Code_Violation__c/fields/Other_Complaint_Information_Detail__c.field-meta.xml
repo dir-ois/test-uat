@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Complaint_Information_Detail__c</fullName>
+    <description>In the space provided, please provide any other information about your complaint that you believe is import for the Labor Commissioner to know:</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In the space provided, please provide any other information about your complaint that you believe is import for the Labor Commissioner to know:</inlineHelpText>
+    <label>Other Complaint Information - Detail</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

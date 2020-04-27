@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>BOFE_Report_of_Labor_Law_Violations</links>
+    <links>Generate_Calendar</links>
+    <links>BOFE_Deputy_Resources_Library</links>
+    <links>WCA_Deputy_Resources_Library</links>
+    <links>Tasks_and_Events</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

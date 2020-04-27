@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Requesting Cashier --></label>
+    <name>Requesting_Cashier__c</name>
+    <relationshipLabel><!-- Check Batches (Requesting Cashier) --></relationshipLabel>
+</CustomFieldTranslation>

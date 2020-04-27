@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Full Satisfaction Options --></label>
+    <name>CM_010_Full_Satisfaction_Options__c</name>
+    <picklistValues>
+        <masterLabel>Judgment creditor has accepted payment of performance</masterLabel>
+        <translation><!-- Judgment creditor has accepted payment of performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment is satisfied in full.</masterLabel>
+        <translation><!-- Judgment is satisfied in full. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

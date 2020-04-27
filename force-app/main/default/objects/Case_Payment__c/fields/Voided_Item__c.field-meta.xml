@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Voided_Item__c</fullName>
+    <externalId>false</externalId>
+    <formula>Receipt__r.Voided_Item__c</formula>
+    <inlineHelpText>This CP is void because it&#39;s parent RCT is void</inlineHelpText>
+    <label>Voided Item</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

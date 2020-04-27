@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicate why the business is exempt from Workers&apos; Compensation Insurance --></help>
+    <label><!-- Exempt Reason --></label>
+    <name>Exempt_Reason__c</name>
+    <picklistValues>
+        <masterLabel>All employees leased through temp agency or PEO</masterLabel>
+        <translation><!-- All employees leased through temp agency or PEO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business has no (zero) employees</masterLabel>
+        <translation><!-- Business has no (zero) employees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of state employees only</masterLabel>
+        <translation><!-- Out of state employees only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of state insurance</masterLabel>
+        <translation><!-- Out of state insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner/Operator</masterLabel>
+        <translation><!-- Owner/Operator --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

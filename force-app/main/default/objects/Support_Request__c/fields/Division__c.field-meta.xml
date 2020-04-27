@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>For HR Division User Request Only</inlineHelpText>
+    <label>Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Role_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acctng</fullName>
+                <default>false</default>
+                <label>Acctng</label>
+            </value>
+            <value>
+                <fullName>DIR/SB</fullName>
+                <default>false</default>
+                <label>DIR/SB</label>
+            </value>
+            <value>
+                <fullName>OIS</fullName>
+                <default>false</default>
+                <label>OIS</label>
+            </value>
+            <value>
+                <fullName>ODLS</fullName>
+                <default>false</default>
+                <label>ODLS</label>
+            </value>
+            <value>
+                <fullName>CHSWC</fullName>
+                <default>false</default>
+                <label>CHSWC</label>
+            </value>
+            <value>
+                <fullName>DWC</fullName>
+                <default>false</default>
+                <label>DWC</label>
+            </value>
+            <value>
+                <fullName>DLSE</fullName>
+                <default>false</default>
+                <label>DLSE</label>
+            </value>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>Budget</label>
+            </value>
+            <value>
+                <fullName>DAS</fullName>
+                <default>false</default>
+                <label>DAS</label>
+            </value>
+            <value>
+                <fullName>ODR</fullName>
+                <default>false</default>
+                <label>ODR</label>
+            </value>
+            <value>
+                <fullName>ODA</fullName>
+                <default>false</default>
+                <label>ODA</label>
+            </value>
+            <value>
+                <fullName>ODPIO</fullName>
+                <default>false</default>
+                <label>ODPIO</label>
+            </value>
+            <value>
+                <fullName>CRM</fullName>
+                <default>false</default>
+                <label>CRM</label>
+            </value>
+            <value>
+                <fullName>RTWSP</fullName>
+                <default>false</default>
+                <label>RTWSP</label>
+            </value>
+            <value>
+                <fullName>DOSH</fullName>
+                <default>false</default>
+                <label>DOSH</label>
+            </value>
+            <value>
+                <fullName>OSHAB</fullName>
+                <default>false</default>
+                <label>OSHAB</label>
+            </value>
+            <value>
+                <fullName>BSO</fullName>
+                <default>false</default>
+                <label>BSO</label>
+            </value>
+            <value>
+                <fullName>ODLN</fullName>
+                <default>false</default>
+                <label>ODLN</label>
+            </value>
+            <value>
+                <fullName>SIP</fullName>
+                <default>false</default>
+                <label>SIP</label>
+            </value>
+            <value>
+                <fullName>WCAB</fullName>
+                <default>false</default>
+                <label>WCAB</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>Acctng</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>DIR/SB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>OIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>ODLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>CHSWC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>DWC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>DLSE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>DAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>ODR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>ODA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>ODPIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>CRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>RTWSP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>DOSH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>OSHAB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>BSO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>ODLN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>SIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Division User</controllingFieldValue>
+            <valueName>WCAB</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

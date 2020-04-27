@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subject_to_Lien_Garnishment__c</fullName>
+    <description>Pulls the value of the subject to lien or subject to garnishment fields forward from the account for exposure within the check approval flow</description>
+    <externalId>false</externalId>
+    <formula>IF ( Payee__r.Case_Role__r.Entity__r.Subject_to_Garnishment__c || Payee__r.Case_Role__r.Entity__r.Subject_to_Lien__c, TRUE, FALSE )</formula>
+    <inlineHelpText>Indicates if the payee is subject to a lien or garnishment</inlineHelpText>
+    <label>Subject to Lien/Garnishment</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

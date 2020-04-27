@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Run_Me_Complete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used as a flag for process builder criteria that run on all updates to a record. Prevents multiple runs of the same actions when recursive</description>
+    <externalId>false</externalId>
+    <label>Run Me Complete</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motion_Application_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Motion/Application Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application (Misc.)</fullName>
+                <default>false</default>
+                <label>Application (Misc.)</label>
+            </value>
+            <value>
+                <fullName>Application for Judgment Debtor Examination</fullName>
+                <default>false</default>
+                <label>Application for Judgment Debtor Examination</label>
+            </value>
+            <value>
+                <fullName>Application for OSC</fullName>
+                <default>false</default>
+                <label>Application for OSC</label>
+            </value>
+            <value>
+                <fullName>Application for Service by Publication</fullName>
+                <default>false</default>
+                <label>Application for Service by Publication</label>
+            </value>
+            <value>
+                <fullName>Default Prove-Up</fullName>
+                <default>false</default>
+                <label>Default Prove-Up</label>
+            </value>
+            <value>
+                <fullName>Demurrer</fullName>
+                <default>false</default>
+                <label>Demurrer</label>
+            </value>
+            <value>
+                <fullName>Ex Parte App to Shorten Time</fullName>
+                <default>false</default>
+                <label>Ex Parte App to Shorten Time</label>
+            </value>
+            <value>
+                <fullName>Motion/App for Right to Attach Order</fullName>
+                <default>false</default>
+                <label>Motion/App for Right to Attach Order</label>
+            </value>
+            <value>
+                <fullName>Motion (Misc.)</fullName>
+                <default>false</default>
+                <label>Motion (Misc.)</label>
+            </value>
+            <value>
+                <fullName>Motion for Assignment Order</fullName>
+                <default>false</default>
+                <label>Motion for Assignment Order</label>
+            </value>
+            <value>
+                <fullName>Motion for Charging Order</fullName>
+                <default>false</default>
+                <label>Motion for Charging Order</label>
+            </value>
+            <value>
+                <fullName>Motion for Consolidation</fullName>
+                <default>false</default>
+                <label>Motion for Consolidation</label>
+            </value>
+            <value>
+                <fullName>Motion for Relief from Stay</fullName>
+                <default>false</default>
+                <label>Motion for Relief from Stay</label>
+            </value>
+            <value>
+                <fullName>Motion for Terminating Sanctions</fullName>
+                <default>false</default>
+                <label>Motion for Terminating Sanctions</label>
+            </value>
+            <value>
+                <fullName>Motion In Limine</fullName>
+                <default>false</default>
+                <label>Motion In Limine</label>
+            </value>
+            <value>
+                <fullName>Motion to Amend Judgment</fullName>
+                <default>false</default>
+                <label>Motion to Amend Judgment</label>
+            </value>
+            <value>
+                <fullName>Motion to Appoint Receiver</fullName>
+                <default>false</default>
+                <label>Motion to Appoint Receiver</label>
+            </value>
+            <value>
+                <fullName>Motion to Compel Arbitration</fullName>
+                <default>false</default>
+                <label>Motion to Compel Arbitration</label>
+            </value>
+            <value>
+                <fullName>Motion to Compel Discovery Responses</fullName>
+                <default>false</default>
+                <label>Motion to Compel Discovery Responses</label>
+            </value>
+            <value>
+                <fullName>Motion to Convert</fullName>
+                <default>false</default>
+                <label>Motion to Convert</label>
+            </value>
+            <value>
+                <fullName>Motion to Deem RFAs Admitted</fullName>
+                <default>false</default>
+                <label>Motion to Deem RFAs Admitted</label>
+            </value>
+            <value>
+                <fullName>Motion to Determine Claim of Exemption</fullName>
+                <default>false</default>
+                <label>Motion to Determine Claim of Exemption</label>
+            </value>
+            <value>
+                <fullName>Motion to Dismiss</fullName>
+                <default>false</default>
+                <label>Motion to Dismiss</label>
+            </value>
+            <value>
+                <fullName>Motion to Quash</fullName>
+                <default>false</default>
+                <label>Motion to Quash</label>
+            </value>
+            <value>
+                <fullName>Motion to Remove Mechanic&#39;s Lien</fullName>
+                <default>false</default>
+                <label>Motion to Remove Mechanic&#39;s Lien</label>
+            </value>
+            <value>
+                <fullName>Motion to Vacate Judgment</fullName>
+                <default>false</default>
+                <label>Motion to Vacate Judgment</label>
+            </value>
+            <value>
+                <fullName>Motion to Withdraw</fullName>
+                <default>false</default>
+                <label>Motion to Withdraw</label>
+            </value>
+            <value>
+                <fullName>Opposition to Claim of Exemption</fullName>
+                <default>false</default>
+                <label>Opposition to Claim of Exemption</label>
+            </value>
+            <value>
+                <fullName>Opposition to Motion/Application</fullName>
+                <default>false</default>
+                <label>Opposition to Motion/Application</label>
+            </value>
+            <value>
+                <fullName>Other Brief</fullName>
+                <default>false</default>
+                <label>Other Brief</label>
+            </value>
+            <value>
+                <fullName>Other Ex Parte App</fullName>
+                <default>false</default>
+                <label>Other Ex Parte App</label>
+            </value>
+            <value>
+                <fullName>Reply to Opposition to Motion</fullName>
+                <default>false</default>
+                <label>Reply to Opposition to Motion</label>
+            </value>
+            <value>
+                <fullName>Request for Default</fullName>
+                <default>false</default>
+                <label>Request for Default</label>
+            </value>
+            <value>
+                <fullName>Request for Dismissal</fullName>
+                <default>false</default>
+                <label>Request for Dismissal</label>
+            </value>
+            <value>
+                <fullName>Summary Judgment Motion</fullName>
+                <default>false</default>
+                <label>Summary Judgment Motion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

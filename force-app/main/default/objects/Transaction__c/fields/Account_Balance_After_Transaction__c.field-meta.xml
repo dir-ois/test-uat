@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Balance_After_Transaction__c</fullName>
+    <description>Set via flow when transaction is deposited or returned and captures the balance of the account after the transaction is committed.</description>
+    <externalId>false</externalId>
+    <label>Account Balance After Transaction</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

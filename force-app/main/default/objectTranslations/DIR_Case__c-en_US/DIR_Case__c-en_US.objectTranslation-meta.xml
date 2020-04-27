@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Management</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Management</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Advocate Info 1 --></label>
+        <name>Advocate_Info_1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Advocate Info 2 --></label>
+        <name>Advocate_Info_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Anonymous --></label>
+        <name>Anonymous</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 7. Claim Amendment Information --></label>
+        <name>Claim_Amendment_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Claim to LC --></label>
+        <name>Claim_to_LC</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Claim to LC explanation (conditional) --></label>
+        <name>Claim_to_LC_explanation_conditional</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Claimant Acknowledgement --></label>
+        <name>Claimant_Acknowledgement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Complaint Screening Question --></label>
+        <name>Complaint_Screening_Question</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 5. Court/Hearing Information --></label>
+        <name>Court_Hearing_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Date of Hire --></label>
+        <name>Date_of_Hire</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Different Work Address --></label>
+        <name>DifferentWorkAddress</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EMP Status: Applies to you --></label>
+        <name>EMP_Status_Applies_to_you</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EPA Complaint --></label>
+        <name>EPA_Complaint</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- EPA Complaint (Condtional) --></label>
+        <name>EPA_Complaint_Condtional</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employee Contact Info --></label>
+        <name>Employee_Contact_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer Contact Info --></label>
+        <name>Employer_Contact_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Employer Reasons --></label>
+        <name>Employer_Reasons</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 4. Employer Response/Cure/Cure Dispute Information --></label>
+        <name>Employer_Response_Cure_Cure_Dispute_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Final Rate of Pay --></label>
+        <name>Final_Rate_of_Pay</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Health and Safety --></label>
+        <name>Health_and_Safety</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Health and Safety Explanation (conditional) --></label>
+        <name>Health_and_Safety_Explanation_condition</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Health and Safety Gov --></label>
+        <name>Health_and_Safety_Gov</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Health and Safety Gov Explanation (Conditional) --></label>
+        <name>Health_and_Safety_Gov_Explanation_Condi</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ignore Changes inTrigger --></label>
+        <name>IgnoreChangesInTrigger</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Immigration Explanation (conditional) --></label>
+        <name>Immigration_Explanation_conditional</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Immigration Threat --></label>
+        <name>Immigration_Threat</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Interpreter Requested --></label>
+        <name>Interpreter_Requested</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Labor Commissioner --></label>
+        <name>Labor_Commissioner</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Labor Commissioner Explanation (Conditional) --></label>
+        <name>Labor_Commissioner_Explanation_Conditio</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Labor Commissioner Info --></label>
+        <name>Labor_Commissioner_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Language --></label>
+        <name>Language</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Job --></label>
+        <name>New_Job</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 2. Notice Information --></label>
+        <name>Notice_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- OSHA Signature --></label>
+        <name>OSHA_Signature</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 1. PAGA Search Details --></label>
+        <name>PAGA_Search_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 6. Payment Information --></label>
+        <name>Payment_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Person in Charge --></label>
+        <name>Person_in_Charge</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Personeel File --></label>
+        <name>Personeel_File</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Personnel Release Signature --></label>
+        <name>Personnel_Release_Signature</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RCI Card --></label>
+        <name>RCI_Card</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Remedies --></label>
+        <name>Remedies</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Reporting Investigator --></label>
+        <name>Reporting_Investigator</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 3. Review and Investigation Information --></label>
+        <name>Review_and_Investigation_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- 8. Settlement Information --></label>
+        <name>Settlement_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Victim --></label>
+        <name>Victim</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Victim Conditional --></label>
+        <name>Victim_Conditional</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Where Worked Address --></label>
+        <name>Where_Worked_Address</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Witnesses Info Provided --></label>
+        <name>Witnesses_Info_Provided</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Your Complaint --></label>
+        <name>Your_Complaint</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Your Complaint (Conditional) --></label>
+        <name>Your_Complaint_Conditional</name>
+    </fieldSets>
+    <layouts>
+        <layout>BOFE AdminPage</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Reported Violations --></label>
+            <section>Reported Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+        <sections>
+            <label><!-- Summaries --></label>
+            <section>Summaries</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE Deputy Intake</layout>
+        <sections>
+            <label><!-- Attachment Plus --></label>
+            <section>Attachment Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- PAGA --></label>
+            <section>PAGA</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE DeputyClosed</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- PAGA --></label>
+            <section>PAGA</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE DeputyInvestigation</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- PAGA --></label>
+            <section>PAGA</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE DeputyInvestigation - Restricted</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- PAGA --></label>
+            <section>PAGA</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Management Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cashiering</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Cashiering --></label>
+            <section>Cashiering</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Progress Bar --></label>
+            <section>Progress Bar</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DIR Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deputy Notes --></label>
+            <section>Deputy Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>JEU</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Legacy</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Complaint Information --></label>
+            <section>Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Wages/Bounced Checks From Initial Claim --></label>
+            <section>Final Wages/Bounced Checks From Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Key Information from Initial Claim --></label>
+            <section>Key Information from Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Named Employer on Initial Claim --></label>
+            <section>Named Employer on Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Payment of Wages from Initial Claim --></label>
+            <section>Payment of Wages from Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Progress Bar --></label>
+            <section>Progress Bar</section>
+        </sections>
+        <sections>
+            <label><!-- Seasonal Schedule from Intake Form --></label>
+            <section>Seasonal Schedule from Intake Form</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PAGA Case - Read Only</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Claim Amendment Information --></label>
+            <section>Claim Amendment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Court/Hearing Information --></label>
+            <section>Court/Hearing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Response/Cure/Cure Dispute Information --></label>
+            <section>Employer Response/Cure/Cure Dispute Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notice Information --></label>
+            <section>Notice Information</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Review and Investigation Information --></label>
+            <section>Review and Investigation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Settlement Information --></label>
+            <section>Settlement Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PAGA Case Page</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Claim Amendment Information --></label>
+            <section>Claim Amendment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Court Order or Judgment --></label>
+            <section>Court Order or Judgment</section>
+        </sections>
+        <sections>
+            <label><!-- Court/Hearing Information --></label>
+            <section>Court/Hearing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Response/Cure/Cure Dispute Information --></label>
+            <section>Employer Response/Cure/Cure Dispute Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notice Information --></label>
+            <section>Notice Information</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Review and Investigation Information --></label>
+            <section>Review and Investigation Information</section>
+        </sections>
+        <sections>
+            <label><!-- Settlement Information --></label>
+            <section>Settlement Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PASS</layout>
+        <sections>
+            <label><!-- Attachment Plus --></label>
+            <section>Attachment Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI</layout>
+        <sections>
+            <label><!-- Assignment --></label>
+            <section>Assignment</section>
+        </sections>
+        <sections>
+            <label><!-- Case Complaint Information --></label>
+            <section>Case Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case EPA Complaint Information --></label>
+            <section>Case EPA Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Indicators --></label>
+            <section>Case Indicators</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Cashiering --></label>
+            <section>Cashiering</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Determination --></label>
+            <section>Determination</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Information --></label>
+            <section>Employer Information</section>
+        </sections>
+        <sections>
+            <label><!-- JEU --></label>
+            <section>JEU</section>
+        </sections>
+        <sections>
+            <label><!-- Special Handling --></label>
+            <section>Special Handling</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Closed</layout>
+        <sections>
+            <label><!-- Assignment --></label>
+            <section>Assignment</section>
+        </sections>
+        <sections>
+            <label><!-- Case Complaint Information --></label>
+            <section>Case Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case EPA Complaint Information --></label>
+            <section>Case EPA Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Indicators --></label>
+            <section>Case Indicators</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Determination --></label>
+            <section>Determination</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Information --></label>
+            <section>Employer Information</section>
+        </sections>
+        <sections>
+            <label><!-- JEU --></label>
+            <section>JEU</section>
+        </sections>
+        <sections>
+            <label><!-- Special Handling --></label>
+            <section>Special Handling</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registration Services</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment and Banking Information --></label>
+            <section>Payment and Banking Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Information --></label>
+            <section>Status Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Layout</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Complaint Information --></label>
+            <section>Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Wages/Bounced Checks From Initial Claim --></label>
+            <section>Final Wages/Bounced Checks From Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Key Information from Initial Claim --></label>
+            <section>Key Information from Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Named Employer on Initial Claim --></label>
+            <section>Named Employer on Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Payment of Wages from Initial Claim --></label>
+            <section>Payment of Wages from Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Progress Bar --></label>
+            <section>Progress Bar</section>
+        </sections>
+        <sections>
+            <label><!-- Seasonal Schedule from Intake Form --></label>
+            <section>Seasonal Schedule from Intake Form</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Layout Pmts</layout>
+        <sections>
+            <label><!-- Attachments Plus --></label>
+            <section>Attachments Plus</section>
+        </sections>
+        <sections>
+            <label><!-- Case Totals --></label>
+            <section>Case Totals</section>
+        </sections>
+        <sections>
+            <label><!-- Complaint Information --></label>
+            <section>Complaint Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Wages/Bounced Checks From Initial Claim --></label>
+            <section>Final Wages/Bounced Checks From Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Key Information from Initial Claim --></label>
+            <section>Key Information from Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Named Employer on Initial Claim --></label>
+            <section>Named Employer on Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Payment of Wages from Initial Claim --></label>
+            <section>Payment of Wages from Initial Claim</section>
+        </sections>
+        <sections>
+            <label><!-- Progress Bar --></label>
+            <section>Progress Bar</section>
+        </sections>
+        <sections>
+            <label><!-- Seasonal Schedule from Intake Form --></label>
+            <section>Seasonal Schedule from Intake Form</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Correspondence --></label>
+        <name>Correspondence</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New PAGA Notice --></label>
+        <name>New_PAGA_Notice</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>New_Task_Custom</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- BOFE Closed Cases --></description>
+        <label><!-- BOFE Closed --></label>
+        <name>BOFE_Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- BOFE Inspection Request for Incoming L&amp;R Inspections --></description>
+        <label><!-- BOFE Inspection Request --></label>
+        <name>BOFE_Inspection_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- BOFE Intake Cases --></description>
+        <label><!-- BOFE Intake --></label>
+        <name>BOFE_Intake</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- BOFE Investigation Cases --></description>
+        <label><!-- BOFE Investigation --></label>
+        <name>BOFE_Investigation</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Garment Cases --></description>
+        <label><!-- Garment --></label>
+        <name>Garment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- JEU Cases, may or may not be affiliated with BOFE, WCA or RCI cases. --></description>
+        <label><!-- JEU --></label>
+        <name>JEU</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Migrated Data --></description>
+        <label><!-- Legacy Garment Case --></label>
+        <name>Legacy_Garment_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for Migrated Data --></description>
+        <label><!-- Legacy WCA Case --></label>
+        <name>Legacy_WCA_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PAGA Case --></label>
+        <name>PAGA_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Wage Pass Through Records --></description>
+        <label><!-- PASS --></label>
+        <name>PASS</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Vertiba --></description>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Wage Cases --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Review the errors on this page. A Determination Type was selected. Please complete the following fields to close the case: Determination Issued Date, Determination Served Date. --></errorMessage>
+        <name>Additional_rules_for_closing_RCI_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Assigned Deputy must be a Salesforce User. --></errorMessage>
+        <name>Assigned_Deputy_Must_have_user</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the assigned deputy can accept a case. --></errorMessage>
+        <name>Assigned_Deputy_only_can_accept_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The office you selected is not valid for this type of case. --></errorMessage>
+        <name>CM_Office_Case_Record_Type_Match</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please close all Case Issues before closing this case --></errorMessage>
+        <name>Cannot_Close_Case_with_Open_Violations</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed cases may not be edited. Please fill out Case Re-Open Reason and submit your case for Sr Deputy approval. --></errorMessage>
+        <name>Cannot_Edit_a_Closed_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a case closure disposition in order to close a case. --></errorMessage>
+        <name>Case_Closure_Disposition_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Team Number is required when the &quot;Case Source&quot; is &quot;LETF Call/Email&quot; --></errorMessage>
+        <name>Case_Source_LETF_Call_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cashiering Case Status cannot be set to closed if the balance due on the case is greater than zero. --></errorMessage>
+        <name>Cashiering_Case_Status_and_Payables</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date Field cannot be changed once the case has been closed --></errorMessage>
+        <name>Cashiering_Status_Date_Cannot_Be_Changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Date can not be in the future. Please enter correct Closed Date --></errorMessage>
+        <name>Closed_Date_cannot_be_in_the_future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When closing a case, Closed date is required. Please enter Case Closed Date --></errorMessage>
+        <name>Closed_Date_required_on_Case_Closing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are a deputy closing a RCI case, the case would require an approved referral record of type &quot;RCI Case Closure Approval&quot; or &quot;RCI Report/Determination Approval&quot;. --></errorMessage>
+        <name>Closing_RCI_case_with_approved_referrals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Dismissal Date is required when Case is Dismissed. --></errorMessage>
+        <name>Date_of_Dismissal_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dismissed - Other Reason is required --></errorMessage>
+        <name>Dismissed_Other_Reason_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not set a case management record as a duplicate without assigning it to another existing case via the Related Case field. --></errorMessage>
+        <name>Duplicate_Case_Must_Have_Related_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Error:You may not set a case to be eligible for closure while there are open violations present. Please ensure all violations are set to the correct status before setting the case to &quot;Eligible for Closure&quot;. --></errorMessage>
+        <name>Eligible_for_Closure_Open_Violations</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If selecting a Court Name of &quot;Other / Specify,&quot; please enter the court name in the Court Name for PAGA Case field. --></errorMessage>
+        <name>If_Court_Name_is_Other_Require_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not refer this case to JEU until 55 days after the Hearing Date. --></errorMessage>
+        <name>JEU_55_Days_from_Hearing_Finding</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must populate the JEU# now that this has been accepted. --></errorMessage>
+        <name>JEU_Number_Required_on_Accepted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify the reason this case is being rejected by the JEU --></errorMessage>
+        <name>JEU_Rejection_Reason_Required_on_Reject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can only assign a case to a deputy that has a manager. Ensure that the deputy being assigned has a manager defined in their internal employee record. --></errorMessage>
+        <name>Manager_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are only allowed to enter one work location. --></errorMessage>
+        <name>Only_1_RP_Work_Location_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only a Senior Deputy can close a BOFE case. --></errorMessage>
+        <name>Only_Senior_Deputies_Can_Close_a_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Senior Deputy can enter or update Case Closed Date --></errorMessage>
+        <name>Only_SrDep_Update_Case_Closed_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are only allow one entry of Your Information --></errorMessage>
+        <name>Only_one_claimant_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Case Source is LC 2699 (PAGA) then the PAGA Decision Due Date is required. --></errorMessage>
+        <name>PAGA_Decision_Due_Date_for_PAGA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Case Source is LC 2699 (PAGA) then the PAGA Postmark Date is required. --></errorMessage>
+        <name>PAGA_Postmark_Date_for_PAGA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must set a DLSE Program in order to move this case to Under Investigation. --></errorMessage>
+        <name>Program_Required_for_Under_Investigation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not enter a Purge Date if the Open in Legal field is True. --></errorMessage>
+        <name>Purge_Date_Criteria</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not enter a Purge Date less than 2 years or more than 10 years from Case Closed Date. --></errorMessage>
+        <name>Purge_Date_Time_Frame</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please assign a Deputy before changing the Case Status --></errorMessage>
+        <name>RCI_Case_Must_Have_Deputy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If H&amp;S Input is Yes, please provide a H&amp;S Report Date --></errorMessage>
+        <name>RCI_Health_and_Safety_Input</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the following fields to close a case: Closure Disposition, Case Closed Date, Purge Date, Resolution Date --></errorMessage>
+        <name>RCI_Required_Fields_to_Close_a_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only 1 Case Issue with Lost Wages is allowed per RCI case. 
+Please review the existing Case Issues. --></errorMessage>
+        <name>RCI_Total_Lost_Wages</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Reason for Closing is required for closed cases. Please fill out the &quot;Reason for Closing&quot; and then close again. --></errorMessage>
+        <name>Reason_for_Closing_reqed_for_closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Reason for Pending is required for all cases set to pending. Please fill out the &quot;Reason for Pending&quot; and then set to pending again. --></errorMessage>
+        <name>Reason_for_Pending</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Reason for Rejection is required for rejected cases. Please fill out the &quot;Reason for Rejection&quot; and then reject the case again. --></errorMessage>
+        <name>Reason_for_Rejection_reqed_for_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Referred From - Other is required when Referred From = &quot;Other&quot; --></errorMessage>
+        <name>Referred_from_Other_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Referred to - Other is required when Referred to has the value &quot;Other&quot; --></errorMessage>
+        <name>Referred_to_Other_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A deputy must be assigned in order to make place this case under investigation. --></errorMessage>
+        <name>Require_Assigned_Deputy_for_Investigatio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case cannot be closed without an assigned deputy and case issue created. --></errorMessage>
+        <name>Restrict_closing_RCI_Cases_with_no_CIs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Returned to Claimant Date --></errorMessage>
+        <name>Returned_to_Claimant_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_Appeal --></label>
+        <name>Add_Appeal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Apply_Payment --></label>
+        <name>Apply_Payment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Attach_Original_PAGA_Case --></label>
+        <name>Attach_Original_PAGA_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Backup_Generate_WCA_Document --></label>
+        <name>Backup_Generate_WCA_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Closing_Summary_Report --></label>
+        <name>Closing_Summary_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer --></label>
+        <name>Conga_Composer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Display_Attachments_Plus --></label>
+        <name>Display_Attachments_Plus</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Investigation_Extension_Letter --></label>
+        <name>Generate_Investigation_Extension_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_PAGA_Documents --></label>
+        <name>Generate_PAGA_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_RCI_Documents --></label>
+        <name>Generate_RCI_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_WCA_Document --></label>
+        <name>Generate_WCA_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Import_Form_40 --></label>
+        <name>Import_Form_40</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Violation --></label>
+        <name>New_Violation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Open_in_Form_Wiard --></label>
+        <name>Open_in_Form_Wiard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Party_to_Party_Payment --></label>
+        <name>Party_to_Party_Payment</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Calendar --></label>
+        <name>Print_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Process_File --></label>
+        <name>Process_File</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Store_Page --></label>
+        <name>Store_Page</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Upload_PAGA_Document --></label>
+        <name>Upload_PAGA_Document</name>
+    </webLinks>
+    <workflowTasks>
+        <name>A_New_Case_Has_Been_Assigned_To_You</name>
+        <subject><!-- A New Case Has Been Assigned To You --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This case has not been updated in 60 days. --></description>
+        <name>Case_Follow_Up_Required_60_Days</name>
+        <subject><!-- Case Follow Up Required 60 Days --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This case has not been updated in 90 Days. --></description>
+        <name>Case_Follow_Up_Required_90_Days</name>
+        <subject><!-- Case Follow Up Required 90 Days --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This is the date of the hearing.  Please refer to the Case directly for full schedule details. --></description>
+        <name>Case_Hearing_Date_Set</name>
+        <subject><!-- Case Hearing Date Set --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Your Determination Request has been Rejected and needs to be re-submitted. --></description>
+        <name>Determination_Rejected_1_Week</name>
+        <subject><!-- Determination Rejected 1 Week --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- The following Determination Request has been Rejected. 
+
+Case Status: {!DIR_Case__c.Status__c} 
+Case Type: {!DIR_Case__c.Case_Type__c} 
+Case Priority: {!DIR_Case__c.Case_Priority__c} 
+DIR Office: {!DIR_Case__c.Office__c} --></description>
+        <name>Determination_Rejected_DIR_Case_c_Case_Number_c</name>
+        <subject><!-- Determination Rejected - {!DIR_Case__c.Case_Number__c} --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Your Determination Request has been Approved and is ready to be served. --></description>
+        <name>Determination_Request_Approved</name>
+        <subject><!-- Determination Request Approved --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Your Determination Request has been Rejected. --></description>
+        <name>Determination_Request_Rejected</name>
+        <subject><!-- Determination Request Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- It has been 1 week since your request was Rejected. Please re-submit this case.
+
+Case:  {!DIR_Case__c.Case_Number__c} --></description>
+        <name>Determination_Request_Rejected_1_Week</name>
+        <subject><!-- Determination Request Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- There has been no activity on your case in 120 days. Please follow up and update the case. --></description>
+        <name>No_Activity_in_120_Days_on_Appealed_Case</name>
+        <subject><!-- No Activity in 120 Days on Appealed Case --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- This Determination was Approved 37 days ago and may be ready for closure. --></description>
+        <name>Possible_Case_Ready_for_Closure</name>
+        <subject><!-- Possible Case Ready for Closure --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>RCI_Case_Re_Open_Approved</name>
+        <subject><!-- RCI Case Re-Open Approved --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>RCI_Case_Re_Open_Rejected</name>
+        <subject><!-- RCI Case Re-Open Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- The Sr Deputy has approved the first step in the Determination Approval. 
+Please review this Determination request. --></description>
+        <name>Sr_Deputy_has_Approved_this_Determination</name>
+        <subject><!-- Sr Deputy has Approved this Determination --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

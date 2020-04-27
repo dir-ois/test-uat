@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause__c</fullName>
+    <externalId>false</externalId>
+    <label>Cause</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Failure to pay wages 204</fullName>
+                <default>false</default>
+                <label>Failure to pay wages 204</label>
+            </value>
+            <value>
+                <fullName>Penalties per §210 for violating 204</fullName>
+                <default>false</default>
+                <label>Penalties per §210 for violating 204</label>
+            </value>
+            <value>
+                <fullName>Minimum Wage Violation §1194</fullName>
+                <default>false</default>
+                <label>Minimum Wage Violation §1194</label>
+            </value>
+            <value>
+                <fullName>Minimum Wage Violation §1194.2</fullName>
+                <default>false</default>
+                <label>Minimum Wage Violation §1194.2</label>
+            </value>
+            <value>
+                <fullName>Minimum Wage Violation §1197.1</fullName>
+                <default>false</default>
+                <label>Minimum Wage Violation §1197.1</label>
+            </value>
+            <value>
+                <fullName>Overtime Wages Violation §510</fullName>
+                <default>false</default>
+                <label>Overtime Wages Violation §510</label>
+            </value>
+            <value>
+                <fullName>Overtime Wage Violation  §558</fullName>
+                <default>false</default>
+                <label>Overtime Wage Violation  §558</label>
+            </value>
+            <value>
+                <fullName>Failure to Provide Meal Period §510</fullName>
+                <default>false</default>
+                <label>Failure to Provide Meal Period §510</label>
+            </value>
+            <value>
+                <fullName>Failure to Provide Meal Period §558</fullName>
+                <default>false</default>
+                <label>Failure to Provide Meal Period §558</label>
+            </value>
+            <value>
+                <fullName>Failure to Provide Rest Period IWC Order §12</fullName>
+                <default>false</default>
+                <label>Failure to Provide Rest Period IWC Order §12</label>
+            </value>
+            <value>
+                <fullName>Failure to Provide Rest Period §558</fullName>
+                <default>false</default>
+                <label>Failure to Provide Rest Period §558</label>
+            </value>
+            <value>
+                <fullName>Violation of Split Shift Premium ‐ IWC Order §4(c)</fullName>
+                <default>false</default>
+                <label>Violation of Split Shift Premium ‐ IWC Order §4(c)</label>
+            </value>
+            <value>
+                <fullName>Violation of Split Shift Premium ‐ penalty</fullName>
+                <default>false</default>
+                <label>Violation of Split Shift Premium ‐ penalty</label>
+            </value>
+            <value>
+                <fullName>Violation of Reporting Time Pay ‐ IWC Order §5</fullName>
+                <default>false</default>
+                <label>Violation of Reporting Time Pay ‐ IWC Order §5</label>
+            </value>
+            <value>
+                <fullName>Waiting Time Penalties §203</fullName>
+                <default>false</default>
+                <label>Waiting Time Penalties §203</label>
+            </value>
+            <value>
+                <fullName>Statutory Penalties §203.1</fullName>
+                <default>false</default>
+                <label>Statutory Penalties §203.1</label>
+            </value>
+            <value>
+                <fullName>Non‐negotiable wage payment §212</fullName>
+                <default>false</default>
+                <label>Non‐negotiable wage payment §212</label>
+            </value>
+            <value>
+                <fullName>Kickbacks §221</fullName>
+                <default>false</default>
+                <label>Kickbacks §221</label>
+            </value>
+            <value>
+                <fullName>Penalties per §225.5 for §212/§221 violation</fullName>
+                <default>false</default>
+                <label>Penalties per §225.5 for §212/§221 violation</label>
+            </value>
+            <value>
+                <fullName>Itemized Wage Stmt §226(a)</fullName>
+                <default>false</default>
+                <label>Itemized Wage Stmt §226(a)</label>
+            </value>
+            <value>
+                <fullName>Itemized Wage Stmt §226(e)</fullName>
+                <default>false</default>
+                <label>Itemized Wage Stmt §226(e)</label>
+            </value>
+            <value>
+                <fullName>WARN Act violation §1402</fullName>
+                <default>false</default>
+                <label>WARN Act violation §1402</label>
+            </value>
+            <value>
+                <fullName>WARN Act violation §1403</fullName>
+                <default>false</default>
+                <label>WARN Act violation §1403</label>
+            </value>
+            <value>
+                <fullName>Indemnification for business expenses §2802</fullName>
+                <default>false</default>
+                <label>Indemnification for business expenses §2802</label>
+            </value>
+            <value>
+                <fullName>Contract Obligations_§2810</fullName>
+                <default>false</default>
+                <label>Contract Obligations_§2810</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

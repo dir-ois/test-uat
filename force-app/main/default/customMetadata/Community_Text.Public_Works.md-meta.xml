@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Public Works</label>
+    <protected>false</protected>
+    <values>
+        <field>Content__c</field>
+        <value xsi:type="xsd:string">• Beginning 5/1/2019, contractors may register for 1, 2 or 3 fiscal years. A fiscal year begins on 7/1 and ends on 6/30. Additionally, online applications require online payments by debit card or credit card. The effective date of the registration will be as of the successful payment submission date.
+
+• Payments by business check must be submitted by mail with the paper application form (pdf) and will be effective as of the check clearance date which may be a week or more.
+
+• Note: Phase II will include requirement to submit payroll reports which must be submitted electronically so all contractors will have a login at that time.</value>
+    </values>
+    <values>
+        <field>Record_Type__c</field>
+        <value xsi:type="xsd:string">Public_Works</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">Active</value>
+    </values>
+</CustomMetadata>

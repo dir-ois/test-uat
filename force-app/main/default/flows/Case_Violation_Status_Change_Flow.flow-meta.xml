@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Email_Senior_Requesting_Dismissal</name>
+        <label>Email Senior Requesting Dismissal</label>
+        <locationX>675</locationX>
+        <locationY>314</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>DismissalEmailtoSenior</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Violation Dismissal Requested</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varSeniorDeputyEmail</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Invalid_inputs_to_flow</name>
+        <label>Invalid inputs to flow</label>
+        <locationX>533</locationX>
+        <locationY>155</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varCaseViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[Salesforce Support Team] Case Violation Status Change Flow: This case issue did not have the proper inputs.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>URL_Lookup_fault</name>
+        <label>URL Lookup fault</label>
+        <locationX>507</locationX>
+        <locationY>453</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varCaseViolationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>@[Salesforce Support Team] Case Violation Status Change Flow: Unable to retrieve the base URL from the key value store custom setting.</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>233</locationX>
+        <locationY>34</locationY>
+        <assignmentItems>
+            <assignToReference>varCaseViolationID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCaseID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ViolationStatus</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CaseNumber</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ViolationNumber</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varSeniorDeputyEmail</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varAssessmentID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Case_Violation_ID_Passed</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Case_Violation_ID_Passed</name>
+        <label>Check Case Violation ID Passed</label>
+        <locationX>234</locationX>
+        <locationY>160</locationY>
+        <defaultConnector>
+            <targetReference>Invalid_inputs_to_flow</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Expected_Variables_Passed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varCaseID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varCaseViolationID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>ViolationStatus</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status</targetReference>
+            </connector>
+            <label>Expected Variables Passed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Value that the status was changed to</description>
+        <name>Status</name>
+        <label>Status</label>
+        <locationX>232</locationX>
+        <locationY>313</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Request_Dismissal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ViolationStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Request Dismissal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Base_URL</targetReference>
+            </connector>
+            <label>Request Dismissal</label>
+        </rules>
+        <rules>
+            <name>Canceled_Invalid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ViolationStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Canceled - Invalid</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Assessment</targetReference>
+            </connector>
+            <label>Canceled - Invalid</label>
+        </rules>
+    </decisions>
+    <description>Performs all actions necessary when a case violation&#39;s status is changed</description>
+    <formulas>
+        <description>concatenates the base URL and the violation ID</description>
+        <name>URLLink</name>
+        <dataType>String</dataType>
+        <expression>{!BaseURL}+{!varCaseViolationID}</expression>
+    </formulas>
+    <interviewLabel>Case Violation Status Change Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Violation Status Change Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Base_URL</name>
+        <label>Get Base URL</label>
+        <locationX>506</locationX>
+        <locationY>316</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Email_Senior_Requesting_Dismissal</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>URL_Lookup_fault</targetReference>
+        </faultConnector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>BaseURL</stringValue>
+            </value>
+        </filters>
+        <object>Key_Value_Store__c</object>
+        <outputAssignments>
+            <assignToReference>BaseURL</assignToReference>
+            <field>Value__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Check_Case_Violation_ID_Passed</startElementReference>
+    <status>Active</status>
+    <subflows>
+        <name>Update_Assessment</name>
+        <label>Update Assessment</label>
+        <locationX>230</locationX>
+        <locationY>462</locationY>
+        <flowName>Rollup_violation_amounts_to_Assessment</flowName>
+        <inputAssignments>
+            <name>AssessmentID</name>
+            <value>
+                <elementReference>varAssessmentID</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <textTemplates>
+        <description>Email to senior requesting dismissal</description>
+        <name>DismissalEmailtoSenior</name>
+        <text>A deputy has requested dismissal of a Case Violation {!ViolationNumber} which is on Case {!CaseNumber}.
+
+You can view the Violation here and change the status as appropriate.
+{!URLLink}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Chatter post for dismissal request</description>
+        <name>DismissalRequestChatter</name>
+        <text>Dismissal was requested by: {!CurrentUser} at {!$Flow.CurrentDateTime}</text>
+    </textTemplates>
+    <variables>
+        <description>Base URL of the org</description>
+        <name>BaseURL</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Case number passed by process builder, used in emails</description>
+        <name>CaseNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Current User that triggered the flow. Passed by Process Builder</description>
+        <name>CurrentUser</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of the parent assessment of the violation. Used for passing into the rollup flow if needed</description>
+        <name>varAssessmentID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Case ID of the Inspection Request</description>
+        <name>varCaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Case Violation ID passed in from Process Builder</description>
+        <name>varCaseViolationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Senior Deputies Email</description>
+        <name>varSeniorDeputyEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Readable violation number passed by Process builder used in emails</description>
+        <name>ViolationNumber</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Status violation was changed to as passed by the process builder triggering the flow.</description>
+        <name>ViolationStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

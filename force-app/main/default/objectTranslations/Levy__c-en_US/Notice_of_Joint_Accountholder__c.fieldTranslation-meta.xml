@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notice of Joint-Accountholder --></label>
+    <name>Notice_of_Joint_Accountholder__c</name>
+</CustomFieldTranslation>

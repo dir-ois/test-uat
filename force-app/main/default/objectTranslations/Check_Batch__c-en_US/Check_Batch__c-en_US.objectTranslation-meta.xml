@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Check Batch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Check Batches</value>
+    </caseValues>
+    <layouts>
+        <layout>Check Batch Layout</layout>
+        <sections>
+            <label><!-- Check Approval Info --></label>
+            <section>Check Approval Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Void Request --></label>
+            <section>Void Request</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must select an office account to submit for approval. --></errorMessage>
+        <name>Office_Account_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once status has been changed to printed the value of this field cannot be changed. --></errorMessage>
+        <name>Printed_Status_cannot_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a reason to request a check batch be voided. --></errorMessage>
+        <name>Require_Description_on_void_request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change the status while it is currently Void Requested --></errorMessage>
+        <name>Void_Requested</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_Check_Batch --></label>
+        <name>Generate_Check_Batch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Test --></label>
+        <name>Merge_Test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Checks --></label>
+        <name>Print_Checks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Checks_FX --></label>
+        <name>Print_Checks_FX</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Checks_LQ --></label>
+        <name>Print_Checks_LQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Checks_Web_Page --></label>
+        <name>Print_Checks_Web_Page</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Start_Approval --></label>
+        <name>Start_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_Approval --></label>
+        <name>Submit_for_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Update_Check_Issue_Dates --></label>
+        <name>Update_Check_Issue_Dates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void_Check_Batch --></label>
+        <name>Void_Check_Batch</name>
+    </webLinks>
+</CustomObjectTranslation>

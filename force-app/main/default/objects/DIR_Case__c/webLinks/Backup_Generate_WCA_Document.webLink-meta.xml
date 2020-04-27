@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backup_Generate_WCA_Document</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Backup Generate WCA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!DIR_Case__c.Id}
+&amp;queryid=[Complainant]a0m7A000000ADhr,
+[Judgments]a0m7A000000ADkc?pv0={!DIR_Case__c.Id},
+[Defendant]a0m7A000000ADhw,
+[DefandJoint]a0m7A000000ADjA,
+[Occupation]a0m7A000000ADhn,
+[VioTable]a0m7A000000ADi1,
+[Guarantor]a0m7A000000ADi6,
+[Successor]a0m7A000000ADiB,
+[WCAOffice]a0m7A000000ADiG,
+[HearingInfo]a0m7A000000ADiL,
+[GovName]a0md0000003l2S0,
+[DefRoleOnly]a0m7A000000ADj5?pv0={!DIR_Case__c.Id}~pv2=&quot;Defendant&quot;,
+[DefJEOnly]a0m7A000000ADjA,
+[UserInfo]a0m7A000000ADlV,
+&amp;reportid=[14ASucc]00O7A000000Jpcl,
+[14ADef]00O7A000000Jpck,
+[14ADefnonguarsucc]00O7A000000Jpcm,
+[2673.1b]00O7A000000Jpcn?pv0={!DIR_Case__c.Id}~pv1=&quot;Guarantor Status Liability&quot;,
+[2677a]00Ot0000000SZXa?pv0={!DIR_Case__c.Id}~pv1={!Liable_Party__c.Basis_for_Liability__c},
+[SSNITIN]00O7A000000Jpcg?pv0={!DIR_Case__c.Id},
+[OTWAGES]00O7A000000Jpch?pv0={!DIR_Case__c.Id}~pv1=&quot;OVERTIME&quot;,
+[REGWAGES]00O7A000000Jpch?pv0={!DIR_Case__c.Id}~pv1=&quot;REGULAR WAGES&quot;,
+&amp;TemplateGroup=WCACaseMGMT
+&amp;OFN={Template.Label} + {!DIR_Case__c.Case_Number__c} + {!DIR_Case__c.Employer__c}
+&amp;SC0=1
+&amp;SC1=Attachments</url>
+</WebLink>

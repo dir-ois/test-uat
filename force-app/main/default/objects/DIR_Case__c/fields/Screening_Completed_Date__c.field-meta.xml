@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screening_Completed_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Set by process when the Assignment Status field is changed.  If you wish to modify the date, please use the calendar pop-up to select a date (do not type out the date in this field because a necessary process rule will over-write it).</inlineHelpText>
+    <label>Screening Completed Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

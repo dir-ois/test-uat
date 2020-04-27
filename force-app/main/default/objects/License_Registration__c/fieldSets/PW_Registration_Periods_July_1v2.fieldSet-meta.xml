@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Registration_Periods_July_1v2</fullName>
+    <description>PW</description>
+    <label>PW Registration Periods July 1v2</label>
+</FieldSet>

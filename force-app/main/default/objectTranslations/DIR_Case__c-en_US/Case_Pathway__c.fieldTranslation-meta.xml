@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For Future Use --></help>
+    <label><!-- Case Pathway --></label>
+    <name>Case_Pathway__c</name>
+    <picklistValues>
+        <masterLabel>Settlement Probable</masterLabel>
+        <translation><!-- Settlement Probable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value 2</masterLabel>
+        <translation><!-- Value 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value 3</masterLabel>
+        <translation><!-- Value 3 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

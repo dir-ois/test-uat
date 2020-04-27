@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Governmental body tasked with maintaining a record of a lien --></help>
+    <label><!-- Recording Agency --></label>
+    <name>Recording_Agency__c</name>
+    <relationshipLabel><!-- Lien Recording Agency --></relationshipLabel>
+</CustomFieldTranslation>

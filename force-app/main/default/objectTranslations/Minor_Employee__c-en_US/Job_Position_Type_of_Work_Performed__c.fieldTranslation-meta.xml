@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The position of the employed minor or the type of work performed by the minor. --></help>
+    <label><!-- Job Position/Type of Work Performed --></label>
+    <name>Job_Position_Type_of_Work_Performed__c</name>
+</CustomFieldTranslation>

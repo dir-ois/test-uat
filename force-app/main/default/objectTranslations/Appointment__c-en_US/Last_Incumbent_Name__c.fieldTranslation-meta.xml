@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is hidden from page layout and is for HR vacancy report. This field checks whether a position status is &apos;vacant&apos; AND the EndDate is of the latest appointment. If so, it retrieves the name of the last incumbent. --></help>
+    <label><!-- Last Incumbent Name --></label>
+    <name>Last_Incumbent_Name__c</name>
+</CustomFieldTranslation>

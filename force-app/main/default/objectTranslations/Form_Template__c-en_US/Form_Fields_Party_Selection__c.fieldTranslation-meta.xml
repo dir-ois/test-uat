@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determines the type of selector displayed on the Form Fields page. --></help>
+    <label><!-- Form Fields Party Selection --></label>
+    <name>Form_Fields_Party_Selection__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation><!-- All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Defendants</masterLabel>
+        <translation><!-- All Defendants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Defendants</masterLabel>
+        <translation><!-- Multiple Defendants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Parties</masterLabel>
+        <translation><!-- Multiple Parties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Defendant</masterLabel>
+        <translation><!-- One Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Party</masterLabel>
+        <translation><!-- One Party --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

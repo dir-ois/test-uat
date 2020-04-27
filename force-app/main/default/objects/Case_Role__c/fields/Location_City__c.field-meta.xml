@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_City__c</fullName>
+    <description>This field us used for the Conga document. The Location information from the Address that is attached to a Case Role is copied into this formula fields so that it can be pulled into the Conga document.</description>
+    <externalId>false</externalId>
+    <formula>Location__r.City__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Location_City</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

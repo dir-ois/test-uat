@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Not_paid_OT_for_working_7th__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Not paid overtime for working on the 7th consecutive workday in a workweek</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Not paid overtime for working on the 7th consecutive workday in a workweek</inlineHelpText>
+    <label>Not paid OT for working 7th consecutive</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the Division --></help>
+    <label><!-- Division --></label>
+    <name>Division__c</name>
+    <picklistValues>
+        <masterLabel>Admin-Accounting</masterLabel>
+        <translation><!-- Admin-Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin-Admin Services</masterLabel>
+        <translation><!-- Admin-Admin Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin-Budgets</masterLabel>
+        <translation><!-- Admin-Budgets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin-Business Serv</masterLabel>
+        <translation><!-- Admin-Business Serv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin-Human Resources</masterLabel>
+        <translation><!-- Admin-Human Resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin-OIS</masterLabel>
+        <translation><!-- Admin-OIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin-RTWS</masterLabel>
+        <translation><!-- Admin-RTWS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHSWC</masterLabel>
+        <translation><!-- CHSWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAS</masterLabel>
+        <translation><!-- DAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE</masterLabel>
+        <translation><!-- DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE-IWC</masterLabel>
+        <translation><!-- DLSE-IWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE-PWD/OD-Research</masterLabel>
+        <translation><!-- DLSE-PWD/OD-Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOSH</masterLabel>
+        <translation><!-- DOSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOSH-CFOI/OD-Research</masterLabel>
+        <translation><!-- DOSH-CFOI/OD-Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOSH-OIIS/OD-Research</masterLabel>
+        <translation><!-- DOSH-OIIS/OD-Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DWC</masterLabel>
+        <translation><!-- DWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DWC-RTW/Claims Mgmt</masterLabel>
+        <translation><!-- DWC-RTW/Claims Mgmt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DWC-RTW/SELSP</masterLabel>
+        <translation><!-- DWC-RTW/SELSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OD-Drug Formulary</masterLabel>
+        <translation><!-- OD-Drug Formulary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OD-Legal N</masterLabel>
+        <translation><!-- OD-Legal N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OD-Legal S</masterLabel>
+        <translation><!-- OD-Legal S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OD-PAGA</masterLabel>
+        <translation><!-- OD-PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OD-PIO/Communications</masterLabel>
+        <translation><!-- OD-PIO/Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OIS</masterLabel>
+        <translation><!-- OIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHAB</masterLabel>
+        <translation><!-- OSHAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHSB</masterLabel>
+        <translation><!-- OSHSB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office of The Director</masterLabel>
+        <translation><!-- Office of The Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP</masterLabel>
+        <translation><!-- SIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCAB</masterLabel>
+        <translation><!-- WCAB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_Note__c</fullName>
+    <description>Master Detail relationship field</description>
+    <externalId>false</externalId>
+    <label>Position_Note</label>
+    <referenceTo>Position__c</referenceTo>
+    <relationshipLabel>Position Status Notes</relationshipLabel>
+    <relationshipName>Position_Status_Notes</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

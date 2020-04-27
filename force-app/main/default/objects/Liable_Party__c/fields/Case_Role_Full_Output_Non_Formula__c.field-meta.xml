@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Role_Full_Output_Non_Formula__c</fullName>
+    <description>Non-formula field used to migrate the value in the Case Role Entity Full Output on the Liable Party to this field; we then will use it to group Liable Parties together in a SOQL query for output in the 633 75 ODA document.</description>
+    <externalId>false</externalId>
+    <label>Case Role Full Output Non-Formula</label>
+    <length>200</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

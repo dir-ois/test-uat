@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Renew_Record__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND ( 
+( Approval_Date_Time__c - Payment_Date_Time__c  )*24  &lt; 1,
+ ISPICKVAL( Service_Type__c , &#39;Renewal&#39;),
+ ISPICKVAL(Status__c  , &#39;Approved&#39;),
+ ISPICKVAL(Submission_Type__c , &#39;Online&#39;),
+ ISBLANK(Assigned_Deputy__c)
+)</formula>
+    <label>Auto Renew Record</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

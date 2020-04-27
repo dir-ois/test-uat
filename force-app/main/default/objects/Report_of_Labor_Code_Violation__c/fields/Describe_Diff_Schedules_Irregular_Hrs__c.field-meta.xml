@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Describe_Diff_Schedules_Irregular_Hrs__c</fullName>
+    <description>If Employees Work different schedules or irregular hours, briefly describe the different schedules or irregular hours as best you can:</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If Employees Work different schedules or irregular hours, briefly describe the different schedules or irregular hours as best you can:</inlineHelpText>
+    <label>Describe Diff. Schedules Irregular Hrs</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

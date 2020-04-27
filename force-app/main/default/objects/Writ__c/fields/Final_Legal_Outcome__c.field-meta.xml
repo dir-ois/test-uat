@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Legal_Outcome__c</fullName>
+    <description>Final Legal Outcome of the Writ</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Final Legal Outcome of the Writ</inlineHelpText>
+    <label>Final Legal Outcome</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dismissed  </fullName>
+                <default>false</default>
+                <label>Dismissed  </label>
+            </value>
+            <value>
+                <fullName>Denied - in whole</fullName>
+                <default>false</default>
+                <label>Denied - in whole</label>
+            </value>
+            <value>
+                <fullName>Denied - in part</fullName>
+                <default>false</default>
+                <label>Denied - in part</label>
+            </value>
+            <value>
+                <fullName>Granted - No Remand</fullName>
+                <default>false</default>
+                <label>Granted - No Remand</label>
+            </value>
+            <value>
+                <fullName>Granted - Remand for New Hearing</fullName>
+                <default>false</default>
+                <label>Granted - Remand for New Hearing</label>
+            </value>
+            <value>
+                <fullName>Granted - Remand for New Findings</fullName>
+                <default>false</default>
+                <label>Granted - Remand for New Findings</label>
+            </value>
+            <value>
+                <fullName>Settled</fullName>
+                <default>false</default>
+                <label>Settled</label>
+            </value>
+            <value>
+                <fullName>Withdrawn by Employer</fullName>
+                <default>false</default>
+                <label>Withdrawn by Employer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

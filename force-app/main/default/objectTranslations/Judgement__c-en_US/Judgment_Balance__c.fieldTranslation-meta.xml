@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Judgment amount minus any payments received against the violations on the judgment. --></help>
+    <label><!-- Judgment Balance Due --></label>
+    <name>Judgment_Balance__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Car Wash Registrations</name>
+    <queueMembers>
+        <roles>
+            <role>Car_Wash_Manager</role>
+            <role>Car_Wash_User</role>
+        </roles>
+        <users>
+            <user>hang@dir.ca.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>License_Registration__c</sobjectType>
+    </queueSobject>
+</Queue>

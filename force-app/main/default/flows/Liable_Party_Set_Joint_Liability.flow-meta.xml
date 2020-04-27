@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Input_Check</name>
+        <label>Input Check</label>
+        <locationX>169</locationX>
+        <locationY>114</locationY>
+        <assignmentItems>
+            <assignToReference>LiablePartyID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1QZ0000003hkEW</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LiabilityID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>a1PZ0000001Apc1</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LiabilityRecType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>WCA</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Valid_Inputs</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Provides method for updating the parent liability on the basis for liability being joint employer</description>
+        <name>Joint_Employer</name>
+        <label>Joint Employer</label>
+        <locationX>380</locationX>
+        <locationY>623</locationY>
+        <assignmentItems>
+            <assignToReference>UpdateBoolean</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Joint_Liability_True</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Basis_for_Liability</name>
+        <label>Basis for Liability</label>
+        <locationX>382</locationX>
+        <locationY>502</locationY>
+        <defaultConnector>
+            <targetReference>Iterate_over_Liable_Parties</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>Joint_Liability</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>CurrentLiableParty.Basis_for_Liability__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Joint Liability</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CurrentLiableParty.Basis_for_Liability__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Joint Employer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Joint_Employer</targetReference>
+            </connector>
+            <label>Joint Liability</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Joint_Liability_update_needed</name>
+        <label>Joint Liability update needed</label>
+        <locationX>155</locationX>
+        <locationY>627</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Joint</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>UpdateBoolean</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Joint_Liability_True</targetReference>
+            </connector>
+            <label>Joint</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines the path to take based on the rec type of the Liability</description>
+        <name>Liability_Record_Type</name>
+        <label>Liability Record Type</label>
+        <locationX>162</locationX>
+        <locationY>236</locationY>
+        <defaultConnectorLabel>Not Applicable</defaultConnectorLabel>
+        <rules>
+            <name>WCA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LiabilityRecType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>WCA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_Liable_Parties</targetReference>
+            </connector>
+            <label>WCA</label>
+        </rules>
+        <rules>
+            <name>Garment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LiabilityRecType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Garment</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_all_Liable_Parties</targetReference>
+            </connector>
+            <label>Garment</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>349</locationX>
+        <locationY>114</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LiablePartyID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>LiabilityID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Liability_Record_Type</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <description>Determines if the joint liability checkbox should be set based on the liable parties that are children of the liability</description>
+    <interviewLabel>Liabile Party - Set Joint Liability {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Liabile Party - Set Joint Liability</label>
+    <loops>
+        <description>Loops thorught all liable parties on the liability</description>
+        <name>Iterate_over_Liable_Parties</name>
+        <label>Iterate over Liable Parties</label>
+        <locationX>158</locationX>
+        <locationY>504</locationY>
+        <assignNextValueToReference>CurrentLiableParty</assignNextValueToReference>
+        <collectionReference>LiableParties</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Basis_for_Liability</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Joint_Liability_update_needed</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets all the liable parties associated with the parent liability</description>
+        <name>Get_all_Liable_Parties</name>
+        <label>Get all Liable Parties</label>
+        <locationX>160</locationX>
+        <locationY>378</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_over_Liable_Parties</targetReference>
+        </connector>
+        <filters>
+            <field>Liability__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LiabilityID</elementReference>
+            </value>
+        </filters>
+        <object>Liable_Party__c</object>
+        <outputReference>LiableParties</outputReference>
+        <queriedFields>Basis_for_Liability__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets the joint liability field on the parent liability to true</description>
+        <name>Set_Joint_Liability_True</name>
+        <label>Set Joint Liability True</label>
+        <locationX>380</locationX>
+        <locationY>743</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LiabilityID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Joint_Liability__c</field>
+            <value>
+                <elementReference>UpdateBoolean</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Liability__c</object>
+    </recordUpdates>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>The current Liable party when iterating over the collection</description>
+        <name>CurrentLiableParty</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Liable_Party__c</objectType>
+    </variables>
+    <variables>
+        <description>ID of the parent liability of the liable party that triggers the flow</description>
+        <name>LiabilityID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Record Type of the parent liability</description>
+        <name>LiabilityRecType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>All Liable parties on the liability that is the parent of the liable party that triggered the flow</description>
+        <name>LiableParties</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Liable_Party__c</objectType>
+    </variables>
+    <variables>
+        <description>ID of the liable party that triggered the flow</description>
+        <name>LiablePartyID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Boolean value for updating checkbox vields</description>
+        <name>UpdateBoolean</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

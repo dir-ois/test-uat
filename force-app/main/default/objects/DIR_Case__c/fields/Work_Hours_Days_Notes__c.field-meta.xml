@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Hours_Days_Notes__c</fullName>
+    <description>This field is for migration purpose, the Wage Claim data is a free text and we can&#39;t fit the information into the picklist value of Work Hours/Days Notes</description>
+    <externalId>false</externalId>
+    <label>Work Hours/Days Notes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

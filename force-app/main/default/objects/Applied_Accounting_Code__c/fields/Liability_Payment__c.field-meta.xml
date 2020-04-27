@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liability_Payment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Payment to which the amount applies</inlineHelpText>
+    <label>Liability Payment</label>
+    <referenceTo>Liability_Payment__c</referenceTo>
+    <relationshipLabel>Applied Accounting Codes</relationshipLabel>
+    <relationshipName>Applied_Accounting_Codes</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

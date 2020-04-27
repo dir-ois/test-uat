@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total_Citation_Penalties_Assessed__c -  Total_Citation_Penalties_Paid__c --></help>
+    <label><!-- Total Citation Penalties Balance Due --></label>
+    <name>Total_Citation_Penalties_Balance_Due__c</name>
+</CustomFieldTranslation>

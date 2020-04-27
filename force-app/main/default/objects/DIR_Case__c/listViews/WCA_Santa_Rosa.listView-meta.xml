@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_Santa_Rosa</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Address_Primary_Street__c</columns>
+    <columns>Address_Primary_City__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Office__c</field>
+        <operation>equals</operation>
+        <value>Santa Rosa WCA</value>
+    </filters>
+    <label>WCA Santa Rosa</label>
+    <sharedTo>
+        <roleAndSubordinates>DLSE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

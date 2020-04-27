@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exam_Expiration_Date__c</fullName>
+    <description>Exam Expiration Date from Registration Eduction</description>
+    <externalId>false</externalId>
+    <label>Exam Expiration Date</label>
+    <summarizedField>Registration_Education__c.Exam_Expiration_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Registration_Education__c.Pass_Fail__c</field>
+        <operation>equals</operation>
+        <value>Pass</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Registration_Education__c.Exam_Expiration_Date__c</field>
+        <operation>notEqual</operation>
+        <value/>
+    </summaryFilterItems>
+    <summaryForeignKey>Registration_Education__c.Registration__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

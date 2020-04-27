@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA tips or gratuities --></help>
+    <label><!-- Tips or Grauities --></label>
+    <name>PAGA_Tips_or_Grauities__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Threat Method --></label>
+    <name>Threat_Method__c</name>
+    <picklistValues>
+        <masterLabel>ICE Inquiry</masterLabel>
+        <translation><!-- ICE Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICE in Labor Commissioner’s Office</masterLabel>
+        <translation><!-- ICE in Labor Commissioner’s Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In writing, email</masterLabel>
+        <translation><!-- In writing, email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In writing, letter</masterLabel>
+        <translation><!-- In writing, letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In writing, text</masterLabel>
+        <translation><!-- In writing, text --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oral, in person</masterLabel>
+        <translation><!-- Oral, in person --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oral, over the phone</masterLabel>
+        <translation><!-- Oral, over the phone --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

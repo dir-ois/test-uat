@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Duplicate_Found_Proceed</fullName>
+    <description>PW</description>
+    <displayedFields>
+        <field>Dup_Found_Proceed__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>PW Duplicate Found Proceed</label>
+</FieldSet>

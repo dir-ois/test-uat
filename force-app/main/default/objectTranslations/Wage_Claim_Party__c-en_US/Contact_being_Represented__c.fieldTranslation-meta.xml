@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contact being Represented --></label>
+    <name>Contact_being_Represented__c</name>
+    <relationshipLabel><!-- Wage Claim Parties (Contact being Represented) --></relationshipLabel>
+</CustomFieldTranslation>

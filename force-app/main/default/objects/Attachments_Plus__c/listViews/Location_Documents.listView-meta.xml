@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Documents</fullName>
+    <columns>NAME</columns>
+    <columns>Registration__c</columns>
+    <columns>Registration_ID__c</columns>
+    <columns>Registration_Document_Name__c</columns>
+    <columns>VIP_Form_Section__c</columns>
+    <columns>Registration_Document_Category__c</columns>
+    <columns>Number_of_Attachments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Attachments_Plus__c.Registration_Document</value>
+    </filters>
+    <filters>
+        <field>VIP_Form_Section__c</field>
+        <operation>equals</operation>
+        <value>Company Locations</value>
+    </filters>
+    <label>Location documents</label>
+</ListView>

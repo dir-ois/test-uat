@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of relation of the terminating Case to this Case</inlineHelpText>
+    <label>Relation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOFE Case</fullName>
+                <default>true</default>
+                <label>BOFE Case</label>
+            </value>
+            <value>
+                <fullName>WCA Case</fullName>
+                <default>false</default>
+                <label>WCA Case</label>
+            </value>
+            <value>
+                <fullName>Same Judgment</fullName>
+                <default>false</default>
+                <label>Same Judgment</label>
+            </value>
+            <value>
+                <fullName>RCI Case</fullName>
+                <default>false</default>
+                <label>RCI Case</label>
+            </value>
+            <value>
+                <fullName>JEU Case</fullName>
+                <default>false</default>
+                <label>JEU Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

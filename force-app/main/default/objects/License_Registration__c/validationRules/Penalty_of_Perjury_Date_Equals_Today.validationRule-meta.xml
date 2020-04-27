@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Penalty_of_Perjury_Date_Equals_Today</fullName>
+    <active>true</active>
+    <description>Penalty of perjury date has to equal today</description>
+    <errorConditionFormula>IF( 
+RecordType.DeveloperName = &quot;Public_Works&quot; 
+&amp;&amp; 
+AND( 
+ISCHANGED(CertifyDate__c), 
+CertifyDate__c &lt;&gt;TODAY()), true, false)</errorConditionFormula>
+    <errorMessage>The &quot;I certify this on&quot; date must be today&#39;s date. Please select today&#39;s date.</errorMessage>
+</ValidationRule>

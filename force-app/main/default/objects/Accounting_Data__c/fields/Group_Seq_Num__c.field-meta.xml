@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Seq_Num__c</fullName>
+    <description>System-generated row number for the report; will it be with other groups or its own batch. check with Cal/OSHA IT</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Must be a unique number within a Group ID. The GROUP_SEQ_NUM should start with 1 and increment for each additional open item.</inlineHelpText>
+    <label>Group_Seq_Num</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

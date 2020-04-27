@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Payments</value>
+    </caseValues>
+    <layouts>
+        <layout>Case Payment Layout</layout>
+        <sections>
+            <label><!-- CU-1 Fields --></label>
+            <section>CU-1 Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PAGA Case Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Read Only</layout>
+        <sections>
+            <label><!-- CU-1 Fields --></label>
+            <section>CU-1 Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- BOFE Case Payments --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- PAGA Case Payments --></description>
+        <label><!-- PAGA --></label>
+        <name>PAGA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prevents editing of a Case Payment that has been applied (or posted). --></description>
+        <label><!-- Posted --></label>
+        <name>Posted</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Payments against WCA case issues --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Hold Review Date and Hold Explanation are required when a Hold amount is entered --></errorMessage>
+        <name>HoldAmount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the value of Payment Terms = Other, then the Payment Terms - Other field cannot be blank. --></errorMessage>
+        <name>Payment_Terms_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A deputy must be assigned to the case before a payment may be recorded against the case. --></errorMessage>
+        <name>Require_Deputy</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_WCA_Documents --></label>
+        <name>Generate_WCA_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Liability_Payment_Details --></label>
+        <name>Liability_Payment_Details</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recommend_Post --></label>
+        <name>Recommend_Post</name>
+    </webLinks>
+</CustomObjectTranslation>

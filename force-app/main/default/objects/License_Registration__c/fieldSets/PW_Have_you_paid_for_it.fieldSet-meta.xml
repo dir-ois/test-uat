@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Have_you_paid_for_it</fullName>
+    <description>PW Registration Form</description>
+    <displayedFields>
+        <field>Have_you_paid_for_it__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>PW Have you paid for it</label>
+</FieldSet>

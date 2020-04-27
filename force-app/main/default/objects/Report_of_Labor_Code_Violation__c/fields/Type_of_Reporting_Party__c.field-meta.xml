@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Reporting_Party__c</fullName>
+    <description>Different entities may have different roles within a case. This defines the type this entity plays on this RLCV</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select what role this Reporting Party plays in this RLCV.</inlineHelpText>
+    <label>Type of Reporting Party</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Witness</fullName>
+                <default>false</default>
+                <label>Witness</label>
+            </value>
+            <value>
+                <fullName>Advocate</fullName>
+                <default>false</default>
+                <label>Advocate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

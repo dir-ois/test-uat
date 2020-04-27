@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discovery</fullName>
+    <active>true</active>
+    <label>Discovery</label>
+    <picklistValues>
+        <picklist>Discovery_Type__c</picklist>
+        <values>
+            <fullName>Debtor Exam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposition - Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposition - Non-Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposition - Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Productions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interrogatories - Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interrogatories - Special</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigative Subpoena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment Debtor Exam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice to Produce %28CCP 1987%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requests for Admission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requests for Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena Duces Tecum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Subpoena</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issued_By__c</picklist>
+        <values>
+            <fullName>Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Labor Commissioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opposing Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motion_Application_Type__c</picklist>
+        <values>
+            <fullName>Application %28Misc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application for Judgment Debtor Examination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application for OSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application for Service by Publication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Default Prove-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demurrer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex Parte App to Shorten Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion %28Misc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion In Limine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion for Assignment Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion for Charging Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion for Consolidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion for Relief from Stay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion for Terminating Sanctions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Amend Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Appoint Receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Compel Arbitration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Compel Discovery Responses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Convert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Deem RFAs Admitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Determine Claim of Exemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Dismiss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Quash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Remove Mechanic%27s Lien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Vacate Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion to Withdraw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motion%2FApp for Right to Attach Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opposition to Claim of Exemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opposition to Motion%2FApplication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Brief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Ex Parte App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reply to Opposition to Motion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Default</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Dismissal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summary Judgment Motion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Notice_Type__c</picklist>
+        <values>
+            <fullName>Acknowledgment of Assignment of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acknowledgment of Satisfaction of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management Conference Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibit List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jury Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice %28Misc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Appearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Association of Attorney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Bankruptcy Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Mediator Assignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Related Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Ruling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice of Stay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporters Transcript Filed %28Appeal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statement of Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status Conference Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substitution of Attorney Change of Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial Brief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Type__c</picklist>
+        <values>
+            <fullName>Assignment Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Amending Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Appointing Receiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Compelling Discovery Responses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Determining Claim of Exemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Overruling Demurrer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Sustaining Demurrer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Vacating Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order for Sanctions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order to Appear at Judgment Debtor Examination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order to Compel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order to Show Cause</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Right to Attach Order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pleading_Type__c</picklist>
+        <values>
+            <fullName>Abstract of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amended Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amended Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bankruptcy Petition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chapter 11 Plan %28Bankruptcy%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chapter 13 Plan %28Bankruptcy%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claim of Exemption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross-Answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross-Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demurrer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memorandum of Costs after Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Objection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petition to Compel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proof of Claim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal of Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stipulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ of Attachment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Writ of Execution</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finalized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Granted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by Court</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Served</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

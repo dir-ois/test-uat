@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date Cure or Employer Response was submitted online. --></help>
+    <label><!-- Employer Response/Cure Submission Date --></label>
+    <name>Cure_Employer_Response_Submission_Date__c</name>
+</CustomFieldTranslation>

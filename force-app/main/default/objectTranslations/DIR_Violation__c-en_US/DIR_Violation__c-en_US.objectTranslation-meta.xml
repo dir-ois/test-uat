@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Issue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Issues</value>
+    </caseValues>
+    <layouts>
+        <layout>Case Violation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DIR Violation Layout</layout>
+        <sections>
+            <label><!-- Case Issue Summary --></label>
+            <section>Case Issue Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PAGA Issue Layout</layout>
+        <sections>
+            <label><!-- Case Issue Summary --></label>
+            <section>Case Issue Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Issue Layout</layout>
+        <sections>
+            <label><!-- Case Issue Summary --></label>
+            <section>Case Issue Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA Violation Layout</layout>
+        <sections>
+            <label><!-- Case Issue Summary --></label>
+            <section>Case Issue Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Violations assessed on BOFE cases --></description>
+        <label><!-- BOFE Violations --></label>
+        <name>BOFE_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- JEU Violations --></label>
+        <name>JEU_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PAGA Violations --></label>
+        <name>PAGA_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration Violations --></label>
+        <name>Registration_Violations</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Violations related to WCA cases --></description>
+        <label><!-- WCA Violations --></label>
+        <name>WCA_Violations</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only hearing officers can update status to affirmed, modified, or dismissed. --></errorMessage>
+        <name>Only_Hearing_Officers_can_set_certain_st</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must have JEU Permission to edit this field --></errorMessage>
+        <name>Only_JEU_Can_Edit_Interest_Rate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only a Legal User or Senior BOFE Deputy may set a Case Violation Status to Settled. JEU may only set to Settled with a Settlement Type of &quot;JEU&quot; --></errorMessage>
+        <name>Only_Legal_and_Senior_Deputy_Can_Settle</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Senior Deputies can Cancel a Case Issue --></errorMessage>
+        <name>Only_Senior_Deputies_Cancel_Invalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only BOFE Senior Deputies can update the status of Case Violations to Administrative Dismissal. --></errorMessage>
+        <name>Only_Sr_Deputies_Can_dismiss_liability</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the hearing in the &quot;Decided at Meeting&quot; field at which the due date for the wages were decided --></errorMessage>
+        <name>Req_Decided_At</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the settlement type when marking the violation settled. --></errorMessage>
+        <name>Require_Settlement_Type_when_Settled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Legacy Closed is reserved for migrated cases. --></errorMessage>
+        <name>Restrict_usage_of_Legacy_Closed_status</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Edit --></label>
+        <name>Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Violation_Calculations --></label>
+        <name>Edit_Violation_Calculations</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Violation_Document --></label>
+        <name>Generate_Violation_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

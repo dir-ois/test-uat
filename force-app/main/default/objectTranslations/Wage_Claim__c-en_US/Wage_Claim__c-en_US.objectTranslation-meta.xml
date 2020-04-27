@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Wage Claim</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Wage Claims</value>
+    </caseValues>
+    <layouts>
+        <layout>Wage Claim Layout</layout>
+        <sections>
+            <label><!-- Closing Summary --></label>
+            <section>Closing Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Conference &amp; Hearing Reports --></label>
+            <section>Conference &amp; Hearing Reports</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- F1 Fields --></label>
+            <section>F1 Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Legacy Data --></label>
+            <section>Legacy Data</section>
+        </sections>
+        <sections>
+            <label><!-- Transmittal --></label>
+            <section>Transmittal</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter a date if you have already filed a Retaliation Complaint --></errorMessage>
+        <name>If_Retaliated_Enter_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Refer_Wage_Claim_to_BOFE --></label>
+        <name>Refer_Wage_Claim_to_BOFE</name>
+    </webLinks>
+</CustomObjectTranslation>

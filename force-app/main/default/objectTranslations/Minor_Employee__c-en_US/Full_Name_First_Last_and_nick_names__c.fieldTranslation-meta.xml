@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Full Name of the Minor Employee including first and last name and any &quot;nick&quot; names --></help>
+    <label><!-- Full Name (First, Last, and nick names) --></label>
+    <name>Full_Name_First_Last_and_nick_names__c</name>
+</CustomFieldTranslation>

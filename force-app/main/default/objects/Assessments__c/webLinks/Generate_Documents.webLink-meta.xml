@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Documents</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Documents</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Assessments__c.Id}
+&amp;queryid=[CaseMGTAsment]a0md0000008uSKaAAM?pv0={!Assessments__c.Case_ManagementId__c}, 
+[ViolationTypes]a0md0000008uSKZAA2?pv0={!Assessments__c.Id}, 
+[Governor]a0md0000003l2S0, 
+[OFFICE]a0md0000008uSKdAAM?pv0={!Assessments__c.Id}
+&amp;TemplateGroup=Assessment-BOFE 8
+&amp;sc0=1
+&amp;sc1=Attachments 
+&amp;AttachmentParentID={!DIR_Case__c.Id} 
+&amp;AC0=1</url>
+</WebLink>

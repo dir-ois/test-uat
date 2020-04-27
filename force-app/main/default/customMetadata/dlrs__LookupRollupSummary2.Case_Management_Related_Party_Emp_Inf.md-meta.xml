@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case Management Related Party Emp Inf</label>
+    <protected>false</protected>
+    <values>
+        <field>dlrs__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>dlrs__AggregateAllRows__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>dlrs__AggregateOperation__c</field>
+        <value xsi:type="xsd:string">Concatenate</value>
+    </values>
+    <values>
+        <field>dlrs__AggregateResultField__c</field>
+        <value xsi:type="xsd:string">Person_Carrying_Out_Adverse_Action__c</value>
+    </values>
+    <values>
+        <field>dlrs__CalculationMode__c</field>
+        <value xsi:type="xsd:string">Realtime</value>
+    </values>
+    <values>
+        <field>dlrs__CalculationSharingMode__c</field>
+        <value xsi:type="xsd:string">User</value>
+    </values>
+    <values>
+        <field>dlrs__ChildObject__c</field>
+        <value xsi:type="xsd:string">Related_Party__c</value>
+    </values>
+    <values>
+        <field>dlrs__ConcatenateDelimiter__c</field>
+        <value xsi:type="xsd:string">;</value>
+    </values>
+    <values>
+        <field>dlrs__Description__c</field>
+        <value xsi:type="xsd:string">Roll up for RCI that populates the &quot;Person Carrying out Adverse Action&quot; field in case management from the related party object&#39;s &quot;Combined First Name and Last Name&quot; formula field</value>
+    </values>
+    <values>
+        <field>dlrs__FieldToAggregate__c</field>
+        <value xsi:type="xsd:string">Combined_First_and_Last_Name__c</value>
+    </values>
+    <values>
+        <field>dlrs__FieldToOrderBy__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>dlrs__ParentObject__c</field>
+        <value xsi:type="xsd:string">DIR_Case__c</value>
+    </values>
+    <values>
+        <field>dlrs__RelationshipCriteriaFields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>dlrs__RelationshipCriteria__c</field>
+        <value xsi:type="xsd:string">Role__c = &#39;Client Employer&#39;</value>
+    </values>
+    <values>
+        <field>dlrs__RelationshipField__c</field>
+        <value xsi:type="xsd:string">Case_Management__c</value>
+    </values>
+    <values>
+        <field>dlrs__RowLimit__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>dlrs__TestCode2__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>dlrs__TestCodeSeeAllData__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>dlrs__TestCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

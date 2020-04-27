@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_can_only_have_numbers</fullName>
+    <active>true</active>
+    <description>Prevents a user from entering non-number characters into a phone field.</description>
+    <errorConditionFormula>OR(
+    AND(
+        NOT(ISBLANK( Business_Phone__c )),
+        NOT(REGEX( Business_Phone__c , &quot;\\D*?(\\d\\D*?){10}&quot;)),
+        ISPICKVAL( Physical_Business_Country__c, &quot;United States of America&quot;)
+    ),
+    AND (
+        NOT(ISBLANK( Mobile_Phone__c )),
+        NOT(REGEX( Mobile_Phone__c, &quot;\\D*?(\\d\\D*?){10}&quot;)),
+        ISPICKVAL( Physical_Business_Country__c , &quot;United States of America&quot;),
+        Registration__r.RecordType.DeveloperName != &quot;Entertainment_Work&quot;
+    ),
+    AND(
+        NOT(ISBLANK( Residential_Phone__c )),
+        NOT(REGEX( Residential_Phone__c , &quot;\\D*?(\\d\\D*?){10}&quot;)),
+        ISPICKVAL( Residential_Country__c, &quot;United States of America&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>Please enter a 10-digit phone number with no characters or spaces.</errorMessage>
+</ValidationRule>

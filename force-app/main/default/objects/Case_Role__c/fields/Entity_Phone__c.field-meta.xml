@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entity_Phone__c</fullName>
+    <description>Business Account&#39;s phone, or Person Account&#39;s mobile phone number.</description>
+    <externalId>false</externalId>
+    <formula>IF(Entity__r.IsPersonAccount,
+     IF(ISBLANK(Entity__r.PersonContact.MobilePhone),
+           Entity__r.PersonContact.HomePhone ,
+           Entity__r.PersonContact.MobilePhone),
+     Entity__r.Phone)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Business Account&#39;s phone, or Person Account&#39;s mobile phone number.</inlineHelpText>
+    <label>Entity Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

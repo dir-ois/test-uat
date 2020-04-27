@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Claimant Claiming Penalties --></label>
+    <name>Claimant_Claiming_Penalties__c</name>
+    <picklistValues>
+        <masterLabel>&quot;Bounced&quot; checks [Labor Code 203.1]</masterLabel>
+        <translation><!-- &quot;Bounced&quot; checks [Labor Code 203.1] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting time penalties [Labor Code 203]</masterLabel>
+        <translation><!-- Waiting time penalties [Labor Code 203] --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

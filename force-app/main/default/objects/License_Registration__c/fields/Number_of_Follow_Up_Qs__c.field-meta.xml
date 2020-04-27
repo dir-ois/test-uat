@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Follow_Up_Qs__c</fullName>
+    <externalId>false</externalId>
+    <label>Number of Follow Up Qs</label>
+    <summaryForeignKey>Follow_Up_Question__c.Registration_Question_ID__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

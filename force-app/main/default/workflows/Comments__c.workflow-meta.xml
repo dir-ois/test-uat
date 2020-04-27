@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Comment_from_Contact_Field</fullName>
+        <description>To update comment from Comment field into Comments from Contact field.</description>
+        <field>Comments_from_Contact__c</field>
+        <formula>Notes__c</formula>
+        <name>Update Comment from Contact Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Contact__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Copy comments to Contact</fullName>
+        <actions>
+            <name>Update_Comment_from_Contact_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Comments__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This rule will copy the notes from the comment object to the Contact object.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

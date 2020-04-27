@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Registration for business / owner / or other individual related to this case.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Registration for business / owner / or other individual related to this case.</inlineHelpText>
+    <label>Registration</label>
+    <referenceTo>License_Registration__c</referenceTo>
+    <relationshipLabel>Case Management</relationshipLabel>
+    <relationshipName>Case_Management</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

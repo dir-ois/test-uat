@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The cell phone, or other contact phone number of the reporting party --></help>
+    <label><!-- Reporting Party Cell/Other Phone --></label>
+    <name>Reporting_Party_Cell_Other_Phone__c</name>
+</CustomFieldTranslation>

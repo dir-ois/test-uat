@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>10124</label>
+    <protected>false</protected>
+    <values>
+        <field>Error_ID__c</field>
+        <value xsi:type="xsd:string">10124</value>
+    </values>
+    <values>
+        <field>Technical_Message__c</field>
+        <value xsi:type="xsd:string">&quot;Only authonly, sales and voids may be captured. An attempt was made to settle a transaction that can not be captured. This error will occur if you attempt to capture an echeck transaction.&quot;</value>
+    </values>
+    <values>
+        <field>User_Message__c</field>
+        <value xsi:type="xsd:string">Unsupported transaction type.</value>
+    </values>
+</CustomMetadata>

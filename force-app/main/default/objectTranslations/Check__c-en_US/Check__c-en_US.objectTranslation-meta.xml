@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Check</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Checks</value>
+    </caseValues>
+    <layouts>
+        <layout>Approved Check Layout</layout>
+        <sections>
+            <label><!-- Check Approval Info --></label>
+            <section>Check Approval Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Void Request --></label>
+            <section>Void Request</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Check Layout</layout>
+        <sections>
+            <label><!-- Check Approval Info --></label>
+            <section>Check Approval Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Void Request --></label>
+            <section>Void Request</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Normal page layout for check record type --></description>
+        <label><!-- Check --></label>
+        <name>Check</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type to lock fields on layout when check is approved --></description>
+        <label><!-- Check Approved --></label>
+        <name>Check_Approved</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only check batch approver can approve the checks --></errorMessage>
+        <name>Cannot_Approve_the_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once status has been changed to printed the value of this field cannot be changed. --></errorMessage>
+        <name>Cannot_be_voided_if_status_is_printed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change the Status once printed --></errorMessage>
+        <name>PrintedValidationRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must provide a Reason for the Void Request. --></errorMessage>
+        <name>Require_Description_on_void_request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Secondary Approver and Secondary Approval Date is required --></errorMessage>
+        <name>Secondary_Approver</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The check cannot be added to the check batch because the check batch is VOID --></errorMessage>
+        <name>Void_Check_Batch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once voided, canceled or stopped, a check status may only be modified by a Senior Cashier and may only be set to Printed. --></errorMessage>
+        <name>Void_Check_Status_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change the status away from Void Requested. --></errorMessage>
+        <name>Void_Requested</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Generate_Document --></label>
+        <name>Generate_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

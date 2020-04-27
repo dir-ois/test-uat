@@ -1,0 +1,100 @@
+<apex:page controller="PAGAPrintController" sidebar="false" showHeader="false" applyBodyTag="false" applyHtmlTag="false" renderAs="pdf">
+    <html>
+    <head>
+        <style>
+           
+            @page {  
+                     size: A4 landscape; /* ISO/JIS A4 (210mm�297mm) */  
+                     margin-top: 140px;
+                     margin-bottom: 50px;
+                     @top-center {
+                    content: element(header);
+                }
+                     @bottom-left {
+                         content: element(footer);
+                     }
+                  } 
+            div.header {
+                     padding: 10px;
+                     
+                     position: running(header);
+            }
+            div.content{
+                    
+                     font-size:8pt;
+            }
+            div.footer {
+                     display: block;
+                     padding: 5px;
+                     position: running(footer);
+            }
+            .pagenumber:before {
+                     content: counter(page);
+            }
+            .pagecount:before {
+                     content: counter(pages);
+            }
+            table {
+                -fs-table-paginate: paginate;
+            }
+            table tr{
+                page-break-inside:avoid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <apex:image url="{!URLFOR($Resource.PAGA_Search_PDF_Logo)}" />
+                <center><h4>PAGA NOTICE PUBLIC SEARCH</h4></center>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div>{!MONTH(TODAY())}/{!DAY(TODAY())}/{!YEAR(TODAY())}  | Page <span class="pagenumber"/> of <span class="pagecount"/></div>
+        </div>
+        <div class="content">
+        
+        <!--<h3>PAGA Cases - Search Results</h3>-->
+            <table id="theTableC" border="1" valign="center" cellspacing="0" width="100%">
+                <thead>
+                    <tr> 
+                        <th style="width:10%;">LWDA #</th>
+                        <th style="width:15%;">Plaintiff <br />for PAGA Case</th>
+                        <th style="width:15%;">Employer <br />Name</th>
+                        <th style="width:15%;">Employer <br />City</th>
+                        <th style="width:1%;">Employer Postal Code</th>
+                        <th style="width:15%;">Filer/Attorney <br />for PAGA Case</th>
+                        <th style="width:15%;">Law Firm for<br /> PAGA Plaintiff</th>
+                        <th style="width:15%;">Employer <br />Filer</th>
+                        <th style="width:15%;">Employer Filer Firm</th>
+                        <th style="width:10%;">Court <br />Case #</th>
+                        <th style="width:10%;">Submission <br />Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!allResultCases}" var="r">
+                        <tr>
+                            <td>{!r.Case_Number__c}</td>
+                            <td>{!r.Plaintiff_for_PAGA_Case_Text__c}</td>
+                            <td>{!r.Employer__r.Name}</td>
+                            <td align="center">{!r.Employer__r.ShippingCity}</td>
+                            <td align="center">{!r.Employer__r.ShippingPostalCode}</td>
+                            <td>{!r.Filer_Attorney_for_PAGA_Case__r.Name}</td>
+                            <td>{!r.Law_Firm_for_PAGA_Case__c}</td>
+                            <td>{!r.Employer_Filer__r.Name}</td>
+                            <td>{!r.Employer_Filer_Firm__c}</td>
+                            <td align="center">{!r.PAGA_Court_Case_Number__c}</td>
+                            <td align="center">
+                                <apex:outputText value="{0,date,MM/dd/yy}"> 
+                                    <apex:param value="{!r.Notice_Filing_Date__c}" /> 
+                                </apex:outputText>
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+</apex:page>

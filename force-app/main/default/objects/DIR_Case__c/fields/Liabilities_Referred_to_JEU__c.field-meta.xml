@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liabilities_Referred_to_JEU__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Populated when a liability has been referred to JEU, so we it is known at the Case level if their is a JEU referral. Read-only</description>
+    <externalId>false</externalId>
+    <label>Liabilities Referred to JEU</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

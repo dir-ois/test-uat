@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Second 30-minute off-duty meal period not provided when working more than 10 hours --></help>
+    <label><!-- No Second 30-minute off-duty meal period --></label>
+    <name>Violation_Second_30_minute_off_duty_meal__c</name>
+</CustomFieldTranslation>

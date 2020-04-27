@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Request Type --></label>
+    <name>Account_Request_Type__c</name>
+    <picklistValues>
+        <masterLabel>Change to Existing User Account</masterLabel>
+        <translation><!-- Change to Existing User Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delete Account</masterLabel>
+        <translation><!-- Delete Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New User Account</masterLabel>
+        <translation><!-- New User Account --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

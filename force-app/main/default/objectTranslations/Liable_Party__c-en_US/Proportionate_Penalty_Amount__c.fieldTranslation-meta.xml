@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Proportionate amount of liability owed by this party --></help>
+    <label><!-- Proportionate Penalty Amount --></label>
+    <name>Proportionate_Penalty_Amount__c</name>
+</CustomFieldTranslation>

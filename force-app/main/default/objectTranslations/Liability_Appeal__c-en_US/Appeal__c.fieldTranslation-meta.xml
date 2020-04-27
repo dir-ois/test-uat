@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Relationship to the appeal for this liability --></help>
+    <label><!-- Appeal --></label>
+    <name>Appeal__c</name>
+    <relationshipLabel><!-- Liability Appeals --></relationshipLabel>
+</CustomFieldTranslation>

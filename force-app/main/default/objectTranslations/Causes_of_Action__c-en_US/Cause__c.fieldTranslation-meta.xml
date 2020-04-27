@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cause --></label>
+    <name>Cause__c</name>
+    <picklistValues>
+        <masterLabel>Contract Obligations_§2810</masterLabel>
+        <translation><!-- Contract Obligations_§2810 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to Provide Meal Period §510</masterLabel>
+        <translation><!-- Failure to Provide Meal Period §510 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to Provide Meal Period §558</masterLabel>
+        <translation><!-- Failure to Provide Meal Period §558 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to Provide Rest Period IWC Order §12</masterLabel>
+        <translation><!-- Failure to Provide Rest Period IWC Order §12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to Provide Rest Period §558</masterLabel>
+        <translation><!-- Failure to Provide Rest Period §558 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to pay wages 204</masterLabel>
+        <translation><!-- Failure to pay wages 204 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indemnification for business expenses §2802</masterLabel>
+        <translation><!-- Indemnification for business expenses §2802 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Itemized Wage Stmt §226(a)</masterLabel>
+        <translation><!-- Itemized Wage Stmt §226(a) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Itemized Wage Stmt §226(e)</masterLabel>
+        <translation><!-- Itemized Wage Stmt §226(e) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kickbacks §221</masterLabel>
+        <translation><!-- Kickbacks §221 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage Violation §1194</masterLabel>
+        <translation><!-- Minimum Wage Violation §1194 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage Violation §1194.2</masterLabel>
+        <translation><!-- Minimum Wage Violation §1194.2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage Violation §1197.1</masterLabel>
+        <translation><!-- Minimum Wage Violation §1197.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non‐negotiable wage payment §212</masterLabel>
+        <translation><!-- Non‐negotiable wage payment §212 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overtime Wage Violation  §558</masterLabel>
+        <translation><!-- Overtime Wage Violation  §558 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overtime Wages Violation §510</masterLabel>
+        <translation><!-- Overtime Wages Violation §510 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalties per §210 for violating 204</masterLabel>
+        <translation><!-- Penalties per §210 for violating 204 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalties per §225.5 for §212/§221 violation</masterLabel>
+        <translation><!-- Penalties per §225.5 for §212/§221 violation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory Penalties §203.1</masterLabel>
+        <translation><!-- Statutory Penalties §203.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Violation of Reporting Time Pay ‐ IWC Order §5</masterLabel>
+        <translation><!-- Violation of Reporting Time Pay ‐ IWC Order §5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Violation of Split Shift Premium ‐ IWC Order §4(c)</masterLabel>
+        <translation><!-- Violation of Split Shift Premium ‐ IWC Order §4(c) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Violation of Split Shift Premium ‐ penalty</masterLabel>
+        <translation><!-- Violation of Split Shift Premium ‐ penalty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WARN Act violation §1402</masterLabel>
+        <translation><!-- WARN Act violation §1402 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WARN Act violation §1403</masterLabel>
+        <translation><!-- WARN Act violation §1403 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting Time Penalties §203</masterLabel>
+        <translation><!-- Waiting Time Penalties §203 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

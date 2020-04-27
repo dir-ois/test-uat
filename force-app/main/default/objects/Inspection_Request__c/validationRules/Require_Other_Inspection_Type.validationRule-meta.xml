@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Other_Inspection_Type</fullName>
+    <active>true</active>
+    <description>If &quot;other&quot; is selected as the type of request, require that the &quot;other inspection type&quot; be populated.</description>
+    <errorConditionFormula>ISPICKVAL ( Type_of_Request__c , &quot;Other&quot;)&amp;&amp; ISBLANK (Other_Inspection_Type__c )</errorConditionFormula>
+    <errorDisplayField>Other_Inspection_Type__c</errorDisplayField>
+    <errorMessage>Please enter the &quot;Other Inspection Type&quot; when selecting &quot;Other&quot; as the Type of Request.</errorMessage>
+</ValidationRule>

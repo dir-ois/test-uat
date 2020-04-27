@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of weekdays between today and the appeal deadline. --></help>
+    <label><!-- Appeal Timeframe --></label>
+    <name>Appeal_Timeframe__c</name>
+</CustomFieldTranslation>

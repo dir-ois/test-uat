@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>After_55_days_Affirmed_Modified__c</fullName>
+    <description>This hidden field indicates whether the 55 days that a liability is subject to writ has passed. Used in PB Case Issue Status Changed Affirmed or Modify.</description>
+    <externalId>false</externalId>
+    <label>After 55 days Affirmed Modified</label>
+    <length>3</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

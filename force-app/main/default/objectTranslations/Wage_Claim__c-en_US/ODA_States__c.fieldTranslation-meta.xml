@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ODA States --></label>
+    <name>ODA_States__c</name>
+    <picklistValues>
+        <masterLabel>Affirmed</masterLabel>
+        <translation><!-- Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Set aside and vacated, and hearing shall be reset, noticed and heard on the original complaint herein.</masterLabel>
+        <translation><!-- Set aside and vacated, and hearing shall be reset, noticed and heard on the original complaint herein. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

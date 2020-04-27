@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Illegal_charges_for_cash__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Illegal charges for cash shortages, breakage, or loss of equipment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Illegal charges for cash shortages, breakage, or loss of equipment</inlineHelpText>
+    <label>Illegal charges for cash shortages</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

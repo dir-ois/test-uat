@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Keeping_Violations__c</fullName>
+    <description>Suspected Violation of Employer - Record Keeping Violations</description>
+    <externalId>false</externalId>
+    <label>Record Keeping Violations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No daily time records or inaccurate</fullName>
+                <default>false</default>
+                <label>No daily time records or inaccurate</label>
+            </value>
+            <value>
+                <fullName>No payroll records or inaccurate</fullName>
+                <default>false</default>
+                <label>No payroll records or inaccurate</label>
+            </value>
+            <value>
+                <fullName>No notice to new hires (L.C.S 2810.5)</fullName>
+                <default>false</default>
+                <label>No notice to new hires (L.C.S 2810.5)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

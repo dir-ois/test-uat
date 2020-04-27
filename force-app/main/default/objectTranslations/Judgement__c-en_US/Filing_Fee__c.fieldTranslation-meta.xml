@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Filing fee for the court for filing the judgment --></help>
+    <label><!-- Filing Fees --></label>
+    <name>Filing_Fee__c</name>
+</CustomFieldTranslation>

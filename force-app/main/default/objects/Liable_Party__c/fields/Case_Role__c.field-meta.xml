@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Role__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The liable party is related to a case role on the record. This field holds the value of that case role and is used for generating output document based on the party.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Case role of the liable party</inlineHelpText>
+    <label>Case Role</label>
+    <referenceTo>Case_Role__c</referenceTo>
+    <relationshipLabel>Liable Parties</relationshipLabel>
+    <relationshipName>Liable_Parties</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

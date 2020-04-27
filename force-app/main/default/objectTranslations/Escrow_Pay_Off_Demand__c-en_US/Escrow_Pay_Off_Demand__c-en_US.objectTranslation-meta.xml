@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Escrow/Pay-Off Demand</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Escrow/Pay-Off Demands</value>
+    </caseValues>
+    <layouts>
+        <layout>Claim for Excess/Surplus Funds Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Demand for Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Escrow / Pay-Off Demand Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Release of Lien Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Request for Demand Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Claim for Excess/Surplus Funds --></label>
+        <name>Claim_for_Excess_Surplus_Funds</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Demand for Payment --></label>
+        <name>Demand_for_Payment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Release of Lien --></label>
+        <name>Release_of_Lien</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Request for Demand --></label>
+        <name>Request_for_Demand</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Asset released should be referenced. --></errorMessage>
+        <name>Assets_Released</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Demand_or_Release --></label>
+        <name>New_Demand_or_Release</name>
+    </webLinks>
+</CustomObjectTranslation>

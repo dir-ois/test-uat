@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Bond_Certification_Expiration</fullName>
+        <description>Contain notice to be sent out to Applicant 45 days before Bond Certification Expiration</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Expiration_of_the_Bond</template>
+    </alerts>
+    <alerts>
+        <fullName>Business_license_Expiration</fullName>
+        <description>Contain notice to be sent out to applicant 45 days before business license Expiration</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Expiration_of_the_Business_License</template>
+    </alerts>
+    <alerts>
+        <fullName>CBA_Expiration</fullName>
+        <description>Contain notice to be sent out to Applicant 45 days before CBA Expiration</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Expiration_of_the_CBA</template>
+    </alerts>
+    <alerts>
+        <fullName>Cure_Dispute_Notification_for_unmatched_documents</fullName>
+        <description>Cure Dispute Notification for unmatched documents</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PAGA_Attorney</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>PAGA_Screeners</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>julia.johnson@labor.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>PAGA_Email_Templates/Unmatched_Cure_Dispute_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Cure_Dispute_Pending_Review</fullName>
+        <description>Cure Dispute Pending Review</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PAGA_Attorney</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>mjanatpour@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PAGA_Email_Templates/Cure_Dispute_Review_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Employer_Response_Notification</fullName>
+        <description>Employer Response Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccastellano@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mjanatpour@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>msmith3@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pkelly@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PAGA_Email_Templates/Employer_Response_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>In_Forma_Pauperis_Submitted</fullName>
+        <description>In Forma Pauperis Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccastellano@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>msmith3@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pkelly@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PAGA_Email_Templates/In_Forma_Pauperis_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Notice_to_Paga_attorney_group_on_unmatched_settlement</fullName>
+        <description>Notice to Paga attorney group on unmatched settlement</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PAGA_Attorney</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>PAGA_Screeners</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PAGA_Email_Templates/Unmatched_Settlement_Pending_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Settlement_Pending_Review</fullName>
+        <description>Settlement Pending Review</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PAGA_Attorney</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>mjanatpour@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>lwdadonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>PAGA_Email_Templates/Settlement_Pending_Review</template>
+    </alerts>
+    <alerts>
+        <fullName>Workers_Comp_Insurance_Certification_Expiration</fullName>
+        <description>Contain notice to be sent out to Applicant 45 days before WCI Certification Expiration</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Expiration_of_the_Workers_Compensation_Insurance</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Account_Email_field</fullName>
+        <field>Account_Email__c</field>
+        <formula>Registration__r.Account__r.Email__c</formula>
+        <name>Update Account Email field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_ID_on_Attachment_Plus</fullName>
+        <description>Set the Record ID on Attachments Plus Object.</description>
+        <field>Record_ID__c</field>
+        <formula>CASESAFEID(Case_Management__c)</formula>
+        <name>Update Record ID on Attachment Plus</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Settlement_Disposition</fullName>
+        <field>Settlement_Disposition1__c</field>
+        <literalValue>No agency comment of response</literalValue>
+        <name>Update Settlement Disposition</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>45 Days before Bond Certification Expiration</fullName>
+        <active>false</active>
+        <formula>IF(( (ISPICKVAL( Type__c ,&quot;Bond Certification&quot;)) &amp;&amp; ( Expiration_Date__c - TODAY() = 45)),  TRUE, FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Bond_Certification_Expiration</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Attachments_Plus__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>45 Days before Business License Expiration</fullName>
+        <active>false</active>
+        <formula>IF(( (ISPICKVAL( Type__c ,&quot;Business License&quot;)) &amp;&amp; ( Expiration_Date__c - TODAY() = 45)),  TRUE, FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Business_license_Expiration</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Attachments_Plus__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>45 Days before CBA Expiration</fullName>
+        <active>false</active>
+        <formula>IF(( (ISPICKVAL( Type__c ,&quot;Bond Collective Bargaining Agreement (CBA&quot;)) &amp;&amp; ( Expiration_Date__c - TODAY() = 45)),  TRUE, FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>CBA_Expiration</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Attachments_Plus__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>45 Days before Workers Compensation Certification Expiration</fullName>
+        <active>false</active>
+        <formula>IF(( (ISPICKVAL( Type__c ,&quot;Worker&#39;s Compensation Insurance (WCI)&quot;)) &amp;&amp; ( Expiration_Date__c - TODAY()= 45)),  TRUE, FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Workers_Comp_Insurance_Certification_Expiration</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Attachments_Plus__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Cure Dispute Notification for unmatched CM record</fullName>
+        <actions>
+            <name>Cure_Dispute_Notification_for_unmatched_documents</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notifies PAGA Attorney group when a cure dispute is submitted without a matching CM record</description>
+        <formula>ISBLANK( Case_Management__c ) &amp;&amp; ISPICKVAL( Type__c , &quot;Cure Dispute&quot;)&amp;&amp;  Primary_document__c = TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Employer Response Notification</fullName>
+        <actions>
+            <name>Employer_Response_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Attachments_Plus__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Employer Response/Cure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Attachments_Plus__c.Attachment_Name__c</field>
+            <operation>notContain</operation>
+            <value>Additional</value>
+        </criteriaItems>
+        <description>Notifies PAGA group when new Employer Responses have been submitted.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Flag Attachments for Updating Record ID</fullName>
+        <actions>
+            <name>Update_Record_ID_on_Attachment_Plus</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populates the A+ record ID with a case safe 18 character ID to avoid duplication of CM links.</description>
+        <formula>(NOT(ISBLANK(Case_Management__c)) &amp;&amp;   ISBLANK(Record_ID__c)) || ( LEN(Record_ID__c) = 15) ||  ISCHANGED(Case_Management__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>In Forma Pauperis Notification</fullName>
+        <actions>
+            <name>In_Forma_Pauperis_Submitted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Attachments_Plus__c.Type__c</field>
+            <operation>equals</operation>
+            <value>In Forma Pauperis</value>
+        </criteriaItems>
+        <description>Notifies PAGA group when an In Forma Pauperis application is submitted.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify PAGA Unit Person%2FCurrent Reviewer when a Cure Response is submitted</fullName>
+        <active>false</active>
+        <description>Notify the PAGA unit person or the current reviewer/investigator when a cure response is submitted.</description>
+        <formula>AND( ISPICKVAL(Type__c, &quot;Employer Response/Cure&quot;), ISPICKVAL(Case_Management__r.Status__c, &quot;Under PAGA Investigation&quot;) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Settlement Disposition based on Type</fullName>
+        <actions>
+            <name>Update_Settlement_Disposition</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Attachments_Plus__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Settlement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Attachments_Plus__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Proposed Settlement</value>
+        </criteriaItems>
+        <description>If Type is Settlement or Proposed Settlement, set the Settlement Disposition to &quot;No agency comment of response&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Settlement Notification for unmatched CM record</fullName>
+        <actions>
+            <name>Notice_to_Paga_attorney_group_on_unmatched_settlement</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notifies PAGA Attorney group when a Settlement is submitted without a matching CM record</description>
+        <formula>ISBLANK( Case_Management__c ) &amp;&amp; ISPICKVAL( Type__c , &quot;Proposed Settlement&quot;)&amp;&amp;  Primary_document__c = TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdateAccount Email field on Attachment Plus</fullName>
+        <actions>
+            <name>Update_Account_Email_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Attachments_Plus__c.Account_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

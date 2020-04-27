@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>00026</label>
+    <protected>false</protected>
+    <values>
+        <field>Error_ID__c</field>
+        <value xsi:type="xsd:string">00026</value>
+    </values>
+    <values>
+        <field>Technical_Message__c</field>
+        <value xsi:type="xsd:string">The specified transaction has already been settled. Once a transaction has been sent in for settlement it can not be voided.</value>
+    </values>
+    <values>
+        <field>User_Message__c</field>
+        <value xsi:type="xsd:string">The batch has already been closed. Please apply a credit instead.</value>
+    </values>
+</CustomMetadata>

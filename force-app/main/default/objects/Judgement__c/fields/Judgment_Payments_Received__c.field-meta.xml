@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Judgment_Payments_Received__c</fullName>
+    <description>Rollup Summary of judgment payments received and captured on apply payment page. Rolls up all Judgment Payments applied to Judgment Amount</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total of all payments received against case issues that are a part of this judgment</inlineHelpText>
+    <label>Judgment Payments Received</label>
+    <summarizedField>Judgment_Payment__c.Allocated_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Judgment_Payment__c.Apply_Payment_To__c</field>
+        <operation>equals</operation>
+        <value>Judgment Amount</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Judgment_Payment__c.Judgment__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

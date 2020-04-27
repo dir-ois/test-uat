@@ -1,0 +1,23 @@
+<apex:page standardController="Support_Request__c">
+    <script>function setFocusOnLoad(){}</script>
+    <apex:form >
+        <apex:outputPanel rendered="{!Support_Request__c.Id == null}">
+            <apex:sectionHeader title="New User Account Request" />
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{!Support_Request__c.Id != null}">
+            <apex:sectionHeader title="New User Account Request Edit" subtitle="{!Support_Request__c.name}" />
+        </apex:outputPanel>
+        <apex:pageBlock title="New User Account Detail" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit Request" action="{!save}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Support_Request__c.Subject__c}" />
+                <apex:inputField value="{!Support_Request__c.Priority__c}"/>
+                <apex:inputField value="{!Support_Request__c.Description__c}"/><apex:inputField value="{!Support_Request__c.Support_Request_For__c}"/>
+                <apex:inputField value="{!Support_Request__c.Steps_to_Reproduce__c}"/> 
+             </apex:pageBlockSection>
+           </apex:pageBlock> 
+     </apex:form>  
+</apex:page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not paid wages due on termation paga --></help>
+    <label><!-- Not Paid Wages Due on Termination --></label>
+    <name>PAGA_Not_Paid_Wages_Due_on_Termination__c</name>
+</CustomFieldTranslation>

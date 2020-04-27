@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Attorney will select the Referral Outcome from the list of options then set the Request Status to Closed. --></help>
+    <label><!-- Referral Outcome --></label>
+    <name>Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Case Settled</masterLabel>
+        <translation><!-- Case Settled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citation</masterLabel>
+        <translation><!-- Citation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denied by Court</masterLabel>
+        <translation><!-- Denied by Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue/Granted by Court</masterLabel>
+        <translation><!-- Issue/Granted by Court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgement against DLSE</masterLabel>
+        <translation><!-- Judgement against DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment in favor of DLSE</masterLabel>
+        <translation><!-- Judgment in favor of DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawsuit</masterLabel>
+        <translation><!-- Lawsuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Litigation Pending/Filed</masterLabel>
+        <translation><!-- Litigation Pending/Filed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Citation</masterLabel>
+        <translation><!-- No Citation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Completed</masterLabel>
+        <translation><!-- Request Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request Declined by Legal</masterLabel>
+        <translation><!-- Request Declined by Legal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_PAGA_Case_for_Review_with_Response</fullName>
+    <columns>NAME</columns>
+    <columns>Filer_Attorney_for_PAGA_Case__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Status__c</columns>
+    <columns>Plaintiff_for_PAGA_Case_Text__c</columns>
+    <columns>PAGA_Manual_Screened__c</columns>
+    <columns>IFP_Claimed__c</columns>
+    <columns>Notice_Filing_Date__c</columns>
+    <columns>PAGA_Postmark_Date__c</columns>
+    <columns>Investigation_Decision_Deadline_Date__c</columns>
+    <columns>Cure_Dispute_Review_Deadline__c</columns>
+    <columns>PAGA_Cure_Response_Deadline_Date__c</columns>
+    <columns>Cure_Employer_Response_Submission_Date__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.PAGA_Case</value>
+    </filters>
+    <filters>
+        <field>Cure_Employer_Response_Submission_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>New PAGA Case for Review with Response</label>
+    <queue>PAGA_Queue</queue>
+</ListView>

@@ -1,0 +1,4 @@
+<apex:page standardcontroller="Report_of_Labor_Code_Violation__c">
+  <b>Reports of Labor Law Violation only be created from a BOFE 1 form being 
+      submitted via the web interface or via the flow on the home page</b>
+</apex:page>

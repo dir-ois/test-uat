@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_Instructions__c</fullName>
+    <externalId>false</externalId>
+    <label>Mailing Instructions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>include Defendant letter</fullName>
+                <default>false</default>
+                <label>include Defendant letter</label>
+            </value>
+            <value>
+                <fullName>include itemized wage statement</fullName>
+                <default>false</default>
+                <label>include itemized wage statement</label>
+            </value>
+            <value>
+                <fullName>include letter and ack of rct</fullName>
+                <default>false</default>
+                <label>include letter and ack of rct</label>
+            </value>
+            <value>
+                <fullName>include letter, ack of rct, and itemized wage stmt</fullName>
+                <default>false</default>
+                <label>include letter, ack of rct, and itemized wage stmt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

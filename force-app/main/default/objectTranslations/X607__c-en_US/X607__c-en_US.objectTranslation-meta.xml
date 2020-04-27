@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>607</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>607s</value>
+    </caseValues>
+    <layouts>
+        <layout>607 Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_Position_Modifications --></label>
+        <name>Add_Position_Modifications</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Position_Modifications --></label>
+        <name>View_Position_Modifications</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Fill_Out_607</name>
+        <subject><!-- Fill Out 607 --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Testing_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Testing Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Waiting to be tested</fullName>
+                <default>false</default>
+                <label>Waiting to be tested</label>
+            </value>
+            <value>
+                <fullName>In testing</fullName>
+                <default>false</default>
+                <label>In testing</label>
+            </value>
+            <value>
+                <fullName>Tested</fullName>
+                <default>false</default>
+                <label>Tested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

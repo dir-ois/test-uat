@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total of payments received and allocated to interest on case issues on this case --></help>
+    <label><!-- Total Interest Payments Received --></label>
+    <name>Total_Interest_Payments_Received__c</name>
+</CustomFieldTranslation>

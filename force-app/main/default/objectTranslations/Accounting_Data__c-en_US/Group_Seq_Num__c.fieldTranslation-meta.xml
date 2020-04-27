@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Must be a unique number within a Group ID. The GROUP_SEQ_NUM should start with 1 and increment for each additional open item. --></help>
+    <label><!-- Group_Seq_Num --></label>
+    <name>Group_Seq_Num__c</name>
+</CustomFieldTranslation>

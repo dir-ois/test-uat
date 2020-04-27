@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Separation --></label>
+    <name>Type_of_Separation__c</name>
+    <picklistValues>
+        <masterLabel>120 Position # change</masterLabel>
+        <translation><!-- 120 Position # change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>405 Time Base Change</masterLabel>
+        <translation><!-- 405 Time Base Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>565-IDL</masterLabel>
+        <translation><!-- 565-IDL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>565-TD</masterLabel>
+        <translation><!-- 565-TD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reallocation (A20)</masterLabel>
+        <translation><!-- Reallocation (A20) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S01-Resignation</masterLabel>
+        <translation><!-- S01-Resignation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S05-Resignation Without Fault</masterLabel>
+        <translation><!-- S05-Resignation Without Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S21-AWOL</masterLabel>
+        <translation><!-- S21-AWOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S31-No Layoff</masterLabel>
+        <translation><!-- S31-No Layoff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S40-Termination with fault</masterLabel>
+        <translation><!-- S40-Termination with fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S41-Dismissal</masterLabel>
+        <translation><!-- S41-Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S49-NDI</masterLabel>
+        <translation><!-- S49-NDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S50-Leave of Absence</masterLabel>
+        <translation><!-- S50-Leave of Absence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S50-SDI Leave of Absence</masterLabel>
+        <translation><!-- S50-SDI Leave of Absence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S51-Military</masterLabel>
+        <translation><!-- S51-Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S57 Pending Disability</masterLabel>
+        <translation><!-- S57 Pending Disability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S70-Service Retirement</masterLabel>
+        <translation><!-- S70-Service Retirement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S71-Disability Retirement</masterLabel>
+        <translation><!-- S71-Disability Retirement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S80 Termination-Illegal Appointment</masterLabel>
+        <translation><!-- S80 Termination-Illegal Appointment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S85-Adverse Suspension</masterLabel>
+        <translation><!-- S85-Adverse Suspension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S90-Probe Rejection</masterLabel>
+        <translation><!-- S90-Probe Rejection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S95-Death</masterLabel>
+        <translation><!-- S95-Death --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPC-Special Change</masterLabel>
+        <translation><!-- SPC-Special Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer to another Agency/Department</masterLabel>
+        <translation><!-- Transfer to another Agency/Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer/Promotion within DIR</masterLabel>
+        <translation><!-- Transfer/Promotion within DIR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

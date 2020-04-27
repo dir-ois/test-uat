@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Legal Action</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Legal Actions</value>
+    </caseValues>
+    <layouts>
+        <layout>Court Order</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Discovery</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Legal Action Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Motion/Application</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Notice</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pleading/Process</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Court Order --></label>
+        <name>Court_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Discovery --></label>
+        <name>Discovery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Motion/Application --></label>
+        <name>Motion_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Notice --></label>
+        <name>Notice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pleading/Process --></label>
+        <name>Pleading_Process</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

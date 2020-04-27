@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bug</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bugs</value>
+    </caseValues>
+    <layouts>
+        <layout>Bug Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can only assign the Bug to one person; either remove the Assign To (Business Team) or Assign To (Support Team) --></errorMessage>
+        <name>Cannot_be_assigned_to_multiple_people</name>
+    </validationRules>
+</CustomObjectTranslation>

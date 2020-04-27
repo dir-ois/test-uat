@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case__c</fullName>
+    <description>This is the Case that the L&amp;R Request is Tied To.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the Case that the L&amp;R Request is Tied To.</inlineHelpText>
+    <label>Case</label>
+    <referenceTo>DIR_Case__c</referenceTo>
+    <relationshipName>License_and_Registration_Requests</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

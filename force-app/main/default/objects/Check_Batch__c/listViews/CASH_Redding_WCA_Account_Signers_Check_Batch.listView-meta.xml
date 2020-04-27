@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CASH_Redding_WCA_Account_Signers_Check_Batch</fullName>
+    <filterScope>Queue</filterScope>
+    <label>CASH Redding WCA Account Signers</label>
+    <queue>CASH_Redding_WCA_Account_Signers</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

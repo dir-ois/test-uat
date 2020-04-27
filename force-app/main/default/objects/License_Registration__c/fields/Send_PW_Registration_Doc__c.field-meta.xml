@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_PW_Registration_Doc__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;templateid=a0nt0000000s8jP&quot; +
+&quot;&amp;defaultpdf=1&quot; +
+&quot;&amp;queryid=[Education]a0mt00000000sKw,[Disclaimer]a0mt00000001R1N?pv1=&quot; + Record_Type_Name__c + &quot;,[REG]a0mt00000000sKq,[REGACT]a0mt0000000J0uD,[Bond]a0mt00000000sKv,[Owner]a0mt00000000sKr,[Manager]a0mt00000000sKt, [Reglocation]a0mt00000000sKx,[FUQues]a0mt00000000sKu,[Ques]a0mt00000000sKs,[Attach]a0mt00000000sKy,[Trade]a0mt0000000J0uI,[Document]a0mt00000000sKp&quot; +
+IF(Status_of_Payment__c=&quot;Paid / No Balance Due&quot;,&quot;&amp;CongaEmailTemplateId=a0lt0000000XBan&quot;,&quot;&amp;CongaEmailTemplateId=a0lt0000000XBas&quot;) +
+&quot;&amp;EmailAdditionalTo=&quot; + Applicant_s_Email__c +
+&quot;&amp;EmailFromID=0D2d0000000Gr2j&quot; +
+&quot;&amp;qmode=SendEmail&quot; +
+&quot;&amp;SC0=1&quot; +
+&quot;&amp;SC1=Attachments&quot; +
+&quot;&amp;OFN=Affidavit PDF for &quot; + License_Registration_Number__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Send PW Registration Doc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Instructions_to_create_history_config_trigger</fullName>
+        <description>Instructions to create history config trigger</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/Object_History_Tracking</template>
+    </alerts>
+    <rules>
+        <fullName>New History Object Config</fullName>
+        <actions>
+            <name>Instructions_to_create_history_config_trigger</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Triggers actions to perform on the creation of a new history object configuration</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

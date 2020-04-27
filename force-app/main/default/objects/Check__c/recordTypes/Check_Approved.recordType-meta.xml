@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Approved</fullName>
+    <active>true</active>
+    <description>Record type to lock fields on layout when check is approved</description>
+    <label>Check Approved</label>
+    <picklistValues>
+        <picklist>Buyback_Type__c</picklist>
+        <values>
+            <fullName>NSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Stop Payment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Check_Delivery_Method__c</picklist>
+        <values>
+            <fullName>Hand Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disbursement_Type__c</picklist>
+        <values>
+            <fullName>Apprenticeship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attorney Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAC Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conceded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDD Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photo Copy Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaintiff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund Garment Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return Taxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Defendant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena Cost Recovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Lien</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Assignee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unpaid Wage Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Witness Fees</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hand_Delivery_Signature__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>JEU_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Full_or_Partial__c</picklist>
+        <values>
+            <fullName>Full</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Approval</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Printed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Approval Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stopped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncleared</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Void Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voided</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

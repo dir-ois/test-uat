@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Documents Sent --></label>
+    <name>Documents_Sent__c</name>
+    <picklistValues>
+        <masterLabel>Amended Complaint</masterLabel>
+        <translation><!-- Amended Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amended Order, Decision or Award</masterLabel>
+        <translation><!-- Amended Order, Decision or Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal</masterLabel>
+        <translation><!-- Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Satisfaction of Judgment</masterLabel>
+        <translation><!-- Full Satisfaction of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Satisfaction of Judgment, Release of Lien and Original Lien</masterLabel>
+        <translation><!-- Full Satisfaction of Judgment, Release of Lien and Original Lien --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Copy and Notice of Entry of Judgment</masterLabel>
+        <translation><!-- Judgment Copy and Notice of Entry of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment Set Aside</masterLabel>
+        <translation><!-- Judgment Set Aside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment and Collections Instructions Letter</masterLabel>
+        <translation><!-- Judgment and Collections Instructions Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment and Wage Claimant Post-Hearing Worksheet</masterLabel>
+        <translation><!-- Judgment and Wage Claimant Post-Hearing Worksheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment, Assignment Letter and Assignment</masterLabel>
+        <translation><!-- Judgment, Assignment Letter and Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment, Lien(s) and Collection Instruction Letter</masterLabel>
+        <translation><!-- Judgment, Lien(s) and Collection Instruction Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment, Lien(s) and Notice of Entry of Judgment</masterLabel>
+        <translation><!-- Judgment, Lien(s) and Notice of Entry of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment, Lien(s), Assignment Letter and Assignment</masterLabel>
+        <translation><!-- Judgment, Lien(s), Assignment Letter and Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter Denying Continuance</masterLabel>
+        <translation><!-- Letter Denying Continuance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Continuance Granted</masterLabel>
+        <translation><!-- Notice of Continuance Granted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Continuance/Reset</masterLabel>
+        <translation><!-- Notice of Continuance/Reset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Continuance/Reset, Amended Complaint and Answer</masterLabel>
+        <translation><!-- Notice of Continuance/Reset, Amended Complaint and Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Continuance/Reset, Amended Complaint, Attachments and Answer</masterLabel>
+        <translation><!-- Notice of Continuance/Reset, Amended Complaint, Attachments and Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Continuance/Reset, Complaint and Answer</masterLabel>
+        <translation><!-- Notice of Continuance/Reset, Complaint and Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing Time Change</masterLabel>
+        <translation><!-- Notice of Hearing Time Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing and Complaint</masterLabel>
+        <translation><!-- Notice of Hearing and Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing pursuant to Labor Code Section 98(f)</masterLabel>
+        <translation><!-- Notice of Hearing pursuant to Labor Code Section 98(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing, Amended Complaint and Answer</masterLabel>
+        <translation><!-- Notice of Hearing, Amended Complaint and Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing, Complaint and Answer</masterLabel>
+        <translation><!-- Notice of Hearing, Complaint and Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing, Complaint, Answer and Attachment</masterLabel>
+        <translation><!-- Notice of Hearing, Complaint, Answer and Attachment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Hearing, Complaint, Answer and Suspended Corporation Letter</masterLabel>
+        <translation><!-- Notice of Hearing, Complaint, Answer and Suspended Corporation Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Reset of Hearing pursuant to Labor Code Section 98(f)</masterLabel>
+        <translation><!-- Notice of Reset of Hearing pursuant to Labor Code Section 98(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order On Application For Relief</masterLabel>
+        <translation><!-- Order On Application For Relief --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order On Application For Relief Under Labor Code Section 98(f)</masterLabel>
+        <translation><!-- Order On Application For Relief Under Labor Code Section 98(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order, Decision or Award</masterLabel>
+        <translation><!-- Order, Decision or Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order, Decision or Award Nunc Pro Tunc</masterLabel>
+        <translation><!-- Order, Decision or Award Nunc Pro Tunc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order, Decision or Award by Settlement</masterLabel>
+        <translation><!-- Order, Decision or Award by Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order, Decision or Award, Notice of Payment Due &amp; Appeal Bond Requirement</masterLabel>
+        <translation><!-- Order, Decision or Award, Notice of Payment Due &amp; Appeal Bond Requirement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Satisfaction of Judgment</masterLabel>
+        <translation><!-- Partial Satisfaction of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Release of Lien, Acknowledgment and Original Lien(s)</masterLabel>
+        <translation><!-- Release of Lien, Acknowledgment and Original Lien(s) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

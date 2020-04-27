@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submit_for_Approval</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Submit for Approval</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/Check_Batch_Submit_for_Approval?vCheckBatchId={!Check_Batch__c.Id}&amp;vBatchStatus={!Check_Batch__c.Status__c}&amp;vUserId={!$User.Id}&amp;retURL=/{!Check_Batch__c.Id}</url>
+</WebLink>

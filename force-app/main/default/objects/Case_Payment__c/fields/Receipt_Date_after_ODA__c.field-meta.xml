@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receipt_Date_after_ODA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISNULL(Case__r.ODA_Decision_Date__c))&amp;&amp;(Case__r.ODA_Decision_Date__c&lt; DATEVALUE(Receipt__r.CreatedDate)),TRUE,FALSE)</formula>
+    <label>Receipt Date after ODA</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

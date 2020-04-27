@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Defect_Response_Time__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  RecordType.DeveloperName, 
+      &#39;Child_Performer_Services&#39;, &#39;60&#39;,
+      &#39;Car_Wash&#39;, &#39;30&#39;,
+      &#39;Janitorial&#39;, &#39;30&#39;,
+      &#39;Entertainment_Work&#39;, &#39;30&#39;,
+      &#39;&#39;
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Defect Response Time</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inspection Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inspection Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Inspection Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>License and Registration Request Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Entity Information --></label>
+            <section>Entity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notes and Recommendations --></label>
+            <section>Notes and Recommendations</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Requests for inspections from Licenses and Registrations --></description>
+        <label><!-- License and Registration --></label>
+        <name>License_and_Registration</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- In order to submit this Inspection Request, you must include the L&amp;R File Number --></errorMessage>
+        <name>Must_Populate_LR_File_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the &quot;Other Inspection Type&quot; when selecting &quot;Other&quot; as the Type of Request. --></errorMessage>
+        <name>Require_Other_Inspection_Type</name>
+    </validationRules>
+</CustomObjectTranslation>

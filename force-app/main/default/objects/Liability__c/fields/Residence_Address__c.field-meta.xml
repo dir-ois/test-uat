@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Residence_Address__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the residence from locations already in the system. If the address does not exist, you need to create it associated to the employer first. Displayed on certain citation documents.</inlineHelpText>
+    <label>Residence Address</label>
+    <referenceTo>Address__c</referenceTo>
+    <relationshipLabel>Liability (Residence Address)</relationshipLabel>
+    <relationshipName>Liability_Residence</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

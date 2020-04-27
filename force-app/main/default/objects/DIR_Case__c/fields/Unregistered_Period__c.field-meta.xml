@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unregistered_Period__c</fullName>
+    <description>Field to capture all unregistered period dates for a Case and its corresponding Liable Parties; used to produce output primarily for form 633 29 Issues, Findings, and Assessments.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date periods for which this employer was not registered. The value you enter in this field will be merged in to output documents directly, so type exactly as you want the dates listed. e.g. (1/1/2014 - 5/4/2014 and 6/14/2015 - 7/5/2015</inlineHelpText>
+    <label>Unregistered Period</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

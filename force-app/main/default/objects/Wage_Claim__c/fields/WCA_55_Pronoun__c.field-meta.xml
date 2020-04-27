@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_55_Pronoun__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 55 Pronoun</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>He is</fullName>
+                <default>false</default>
+                <label>He is</label>
+            </value>
+            <value>
+                <fullName>He was</fullName>
+                <default>false</default>
+                <label>He was</label>
+            </value>
+            <value>
+                <fullName>She is</fullName>
+                <default>false</default>
+                <label>She is</label>
+            </value>
+            <value>
+                <fullName>She was</fullName>
+                <default>false</default>
+                <label>She was</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

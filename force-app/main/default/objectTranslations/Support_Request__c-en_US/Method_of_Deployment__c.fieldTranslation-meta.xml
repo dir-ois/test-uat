@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Method of Deployment --></label>
+    <name>Method_of_Deployment__c</name>
+    <picklistValues>
+        <masterLabel>ANT</masterLabel>
+        <translation><!-- ANT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change Set</masterLabel>
+        <translation><!-- Change Set --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gearset</masterLabel>
+        <translation><!-- Gearset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A - Configuration Data</masterLabel>
+        <translation><!-- N/A - Configuration Data --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

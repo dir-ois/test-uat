@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Draft Prepared</masterLabel>
+        <translation><!-- Draft Prepared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expired</masterLabel>
+        <translation><!-- Expired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filed/In-Effect</masterLabel>
+        <translation><!-- Filed/In-Effect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Litigation</masterLabel>
+        <translation><!-- In Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released</masterLabel>
+        <translation><!-- Released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Served</masterLabel>
+        <translation><!-- Served --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed/Issued</masterLabel>
+        <translation><!-- Signed/Issued --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of wage paid to employees --></help>
+    <label><!-- Wage Type --></label>
+    <name>Wage_Type__c</name>
+    <picklistValues>
+        <masterLabel>Commission</masterLabel>
+        <translation><!-- Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hourly</masterLabel>
+        <translation><!-- Hourly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Piece Rate</masterLabel>
+        <translation><!-- Piece Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salary - Daily</masterLabel>
+        <translation><!-- Salary - Daily --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salary - Monthly</masterLabel>
+        <translation><!-- Salary - Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salary - Weekly</masterLabel>
+        <translation><!-- Salary - Weekly --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

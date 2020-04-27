@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Name_or_Vacant__c</fullName>
+    <description>This field is hidden from page layout and is for HR vacancy report. See Help Text</description>
+    <externalId>false</externalId>
+    <formula>IF((TEXT(Position__r.Status__c) == &quot;Filled&quot;) || (TEXT(Position__r.Status__c) == &quot;Temporarily Vacant&quot;) &amp;&amp;  Most_Recent_Start_Date_Flag__c  == &quot;1&quot; ,Employee_Contact__r.FirstName + &quot; &quot; + Employee_Contact__r.LastName ,&quot;VACANT&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field check whether a position status is &quot;Vacant&quot;. If it is then output the word &quot;VACANT&quot;, if not get the first and last name of the employee who filled the position.</inlineHelpText>
+    <label>Employee Name or Vacant</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

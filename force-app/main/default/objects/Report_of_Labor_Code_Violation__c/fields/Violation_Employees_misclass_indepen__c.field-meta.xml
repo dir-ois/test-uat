@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Employees_misclass_indepen__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Employees misclassified as independent contractors</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Employees misclassified as independent contractors</inlineHelpText>
+    <label>Employees misclassified as independent</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

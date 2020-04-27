@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Check_Approval</fullName>
+        <description>Check Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cashiering_Email_Templates/Check_Approval_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Large_Check_Approval</fullName>
+        <description>Large Check Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>System_Wide_Email_Tempates/Large_Check_Approval_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Void_Requst_Denied</fullName>
+        <description>Void Requst Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Initial_Submitter__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Cashiering_Email_Templates/Void_Request_Denied</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Submitters_Email</fullName>
+        <description>Email address stamped for the submission of the void request.</description>
+        <field>Initial_Submitter__c</field>
+        <formula>$User.Email</formula>
+        <name>Submitters Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uncheck_Void_Request</fullName>
+        <description>Unchecks the void request check box upon approval.</description>
+        <field>Void_Request__c</field>
+        <literalValue>0</literalValue>
+        <name>Uncheck Void Request</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_to_Voided</fullName>
+        <description>Voids the status upon approval.</description>
+        <field>Status__c</field>
+        <literalValue>Voided</literalValue>
+        <name>Update Status to Voided</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

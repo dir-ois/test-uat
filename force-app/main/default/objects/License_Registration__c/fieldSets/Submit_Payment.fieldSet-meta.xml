@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submit_Payment</fullName>
+    <description>Registration form</description>
+    <displayedFields>
+        <field>Submit_Payment__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Submit Payment</label>
+</FieldSet>

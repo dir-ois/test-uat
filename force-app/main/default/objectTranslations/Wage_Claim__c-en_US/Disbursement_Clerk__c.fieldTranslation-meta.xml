@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Disbursement Clerk --></label>
+    <name>Disbursement_Clerk__c</name>
+    <relationshipLabel><!-- Wage Claims (Disbursement Clerk) --></relationshipLabel>
+</CustomFieldTranslation>

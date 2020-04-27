@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Required for Determination Approval process. --></help>
+    <label><!-- Determination Summary --></label>
+    <name>Determination_Summary__c</name>
+    <picklistValues>
+        <masterLabel>Add’l staff training</masterLabel>
+        <translation><!-- Add’l staff training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change in nature of termination</masterLabel>
+        <translation><!-- Change in nature of termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conf. terms ND</masterLabel>
+        <translation><!-- Conf. terms ND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal</masterLabel>
+        <translation><!-- Dismissal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution of written materials</masterLabel>
+        <translation><!-- Distribution of written materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Front pay monitary amts</masterLabel>
+        <translation><!-- Front pay monitary amts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LTR of Recommendation.</masterLabel>
+        <translation><!-- LTR of Recommendation. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost wages monitary amts</masterLabel>
+        <translation><!-- Lost wages monitary amts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neutral job reference</masterLabel>
+        <translation><!-- Neutral job reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Posting a notice</masterLabel>
+        <translation><!-- Posting a notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI video</masterLabel>
+        <translation><!-- RCI video --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-instate</masterLabel>
+        <translation><!-- Re-instate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reimbursement of lost benefits</masterLabel>
+        <translation><!-- Reimbursement of lost benefits --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

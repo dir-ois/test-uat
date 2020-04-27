@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office_Unit__c</fullName>
+    <description>Picklist field that allows user to designate the Office Unit on the Payment record.</description>
+    <externalId>false</externalId>
+    <label>Office Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CCU 32</fullName>
+                <default>false</default>
+                <label>CCU 32</label>
+            </value>
+            <value>
+                <fullName>JEU</fullName>
+                <default>false</default>
+                <label>JEU</label>
+            </value>
+            <value>
+                <fullName>WCA 1</fullName>
+                <default>false</default>
+                <label>WCA 1</label>
+            </value>
+            <value>
+                <fullName>WCA 4</fullName>
+                <default>false</default>
+                <label>WCA 4</label>
+            </value>
+            <value>
+                <fullName>WCA 5</fullName>
+                <default>false</default>
+                <label>WCA 5</label>
+            </value>
+            <value>
+                <fullName>WCA 6</fullName>
+                <default>false</default>
+                <label>WCA 6</label>
+            </value>
+            <value>
+                <fullName>WCA 7</fullName>
+                <default>false</default>
+                <label>WCA 7</label>
+            </value>
+            <value>
+                <fullName>WCA 8</fullName>
+                <default>false</default>
+                <label>WCA 8</label>
+            </value>
+            <value>
+                <fullName>WCA 9</fullName>
+                <default>false</default>
+                <label>WCA 9</label>
+            </value>
+            <value>
+                <fullName>WCA 10</fullName>
+                <default>false</default>
+                <label>WCA 10</label>
+            </value>
+            <value>
+                <fullName>WCA 11</fullName>
+                <default>false</default>
+                <label>WCA 11</label>
+            </value>
+            <value>
+                <fullName>WCA 12</fullName>
+                <default>false</default>
+                <label>WCA 12</label>
+            </value>
+            <value>
+                <fullName>WCA 13</fullName>
+                <default>false</default>
+                <label>WCA 13</label>
+            </value>
+            <value>
+                <fullName>WCA 14</fullName>
+                <default>false</default>
+                <label>WCA 14</label>
+            </value>
+            <value>
+                <fullName>WCA 15</fullName>
+                <default>false</default>
+                <label>WCA 15</label>
+            </value>
+            <value>
+                <fullName>WCA 17</fullName>
+                <default>false</default>
+                <label>WCA 17</label>
+            </value>
+            <value>
+                <fullName>WCA 18</fullName>
+                <default>false</default>
+                <label>WCA 18</label>
+            </value>
+            <value>
+                <fullName>WCA 23</fullName>
+                <default>false</default>
+                <label>WCA 23</label>
+            </value>
+            <value>
+                <fullName>WCA 633</fullName>
+                <default>false</default>
+                <label>WCA 633</label>
+            </value>
+            <value>
+                <fullName>RCI</fullName>
+                <default>false</default>
+                <label>RCI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

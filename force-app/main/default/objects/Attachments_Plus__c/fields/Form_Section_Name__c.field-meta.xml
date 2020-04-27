@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_Section_Name__c</fullName>
+    <description>Refers to the form wizard section by the name of the section on which this should appear. Should be entered exactly as the template section named</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the form section that this record should appear on</inlineHelpText>
+    <label>Form Section Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

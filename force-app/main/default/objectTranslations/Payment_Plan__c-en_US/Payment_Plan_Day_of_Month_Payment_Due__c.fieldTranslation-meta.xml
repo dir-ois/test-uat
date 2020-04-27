@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specify the day of the month that the Payment Plan is due. This applies only to monthly payments. --></help>
+    <label><!-- Day of Month Payment Due (Monthly) --></label>
+    <name>Payment_Plan_Day_of_Month_Payment_Due__c</name>
+</CustomFieldTranslation>

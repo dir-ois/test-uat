@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Are you contracting with the employee leasing company as the employer? --></help>
+    <label><!-- Contracting Employee Leasing Co? --></label>
+    <name>Employee_Leasing__c</name>
+</CustomFieldTranslation>

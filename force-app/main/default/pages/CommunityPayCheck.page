@@ -1,0 +1,210 @@
+<apex:page controller="CommunityPayCheck" title="Pay Check" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+    <style>
+        .helptext {
+            font-size: 12px;
+            font-style: italic;
+            color: #999999;
+        }
+    </style>
+    
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li>My Registrations</li>
+                    <li class="active">Submit Payment</li>
+                </ol>
+                
+                <h1>Submit Payment - Pay Check</h1>
+                <br />
+                <apex:outputPanel id="errorPanel">
+                    <div style="display:{!errorDisplay}" class="{!errortype}">
+                        <center>{!errormessage}</center> 
+                    </div>
+                </apex:outputPanel>
+                <br />
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <label for="{!$Component.PaymentMethod}">Payment Method</label>
+                        <apex:inputField id="PaymentMethod" value="{!ChargentOrder.ChargentOrders__Payment_Method__c}" html-disabled="true" label="Payment Method" styleclass="form-control" />
+                        <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Payment_Method__c.InlineHelpText}</span>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.BankAccountType}">Bank Account Type</label>
+                            <apex:inputField id="BankAccountType" value="{!ChargentOrder.ChargentOrders__Bank_Account_Type__c}"  label="Bank Account Type" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Bank_Account_Type__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.Bank_Name}">Bank Name</label>
+                            <apex:inputField id="Bank_Name" value="{!ChargentOrder.ChargentOrders__Bank_Name__c}" label="Bank Name" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Bank_Name__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+               </div>
+               <div class="row mb">     
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.Bank_Account_Number}">Bank Account Number</label>
+                            <apex:inputField id="Bank_Account_Number" value="{!ChargentOrder.ChargentOrders__Bank_Account_Number__c}" label="Bank Account Number" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Bank_Account_Number__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                    
+                        
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.RoutingNumber}">Routing Number</label>
+                            <apex:inputField id="RoutingNumber" value="{!ChargentOrder.ChargentOrders__Bank_Routing_Number__c}" label="Routing Number" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Bank_Routing_Number__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <label for="{!$Component.Company}">Company</label>
+                        <apex:inputField id="Company" value="{!ChargentOrder.ChargentOrders__Billing_Company__c}" label="Company" styleclass="form-control" />
+                        <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Company__c.InlineHelpText}</span> 
+                    </div>
+                    
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <label for="{!$Component.CheckNumber}">Check Number</label>
+                        <apex:inputField id="CheckNumber" value="{!ChargentOrder.ChargentOrders__Check_Number__c}" label="Check Number" styleclass="form-control" />
+                        <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Check_Number__c.InlineHelpText}</span>
+                    
+                    </div>
+                </div>
+                <div class="row mb">    
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <apex:image value="{!URLFOR($Resource.Pay_Check_Image,'')}"/>
+                    </div>
+                    
+                </div>
+                
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                        <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.firstName}">First Name</label>
+                            <apex:inputField id="firstName" value="{!ChargentOrder.ChargentOrders__Billing_First_Name__c}" label="First Name" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_First_Name__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.lastName}">Last Name</label>
+                            <apex:inputField id="lastName" value="{!ChargentOrder.ChargentOrders__Billing_Last_Name__c}" label="Last Name" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Last_Name__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.Email}">Email</label>
+                            <apex:inputField id="Email" value="{!ChargentOrder.ChargentOrders__Billing_Email__c}" label="Email" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Email__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+               </div>
+               <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                        <label for="{!$Component.phone}">Phone</label>
+                        <apex:inputField id="phone" value="{!ChargentOrder.ChargentOrders__Billing_Phone__c}" label="Phone" styleclass="form-control" required="true" />
+                        <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Phone__c.InlineHelpText}</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5"> 
+                        <div class="form-group required">
+                            <label for="{!$Component.Address}">Address</label>
+                            <apex:inputField id="Address" value="{!ChargentOrder.ChargentOrders__Billing_Address__c}" label="Address" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Address__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <label for="{!$Component.Address_Line_2}">Address Line 2</label>
+                        <apex:inputField id="Address_Line_2" value="{!ChargentOrder.ChargentOrders__Billing_Address_Line_2__c}" label="Address Line 2" styleclass="form-control" />
+                        <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Address_Line_2__c.InlineHelpText}</span>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <div class="form-group required">
+                            <label for="{!$Component.City}">City</label>
+                            <apex:inputField id="City" value="{!ChargentOrder.ChargentOrders__Billing_City__c}" label="CityLine 2" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_City__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group required">
+                            <label for="{!$Component.State}">State</label>
+                            <apex:inputField id="State" value="{!ChargentOrder.ChargentOrders__Billing_State__c}" label="State" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_State__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group required">
+                            <label for="{!$Component.zip}">ZIP</label>
+                            <apex:inputField id="zip" value="{!ChargentOrder.ChargentOrders__Billing_Zip_Postal__c}" label="Zip" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Zip_Postal__c.InlineHelpText}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <div class="form-group required">
+                            <label for="{!$Component.Country}">Country</label>
+                            <apex:inputField id="Country" value="{!ChargentOrder.ChargentOrders__Billing_Country__c}" label="Country" styleclass="form-control" required="true" />
+                            <span class="helptext">{!$ObjectType.ChargentOrders__ChargentOrder__c.fields.ChargentOrders__Billing_Country__c.InlineHelpText}</span>
+                        </div>
+                    </div> 
+                </div>
+                <br />
+                <div class="row mb">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <apex:commandLink action="{!CancelPayment}" value="Cancel Payment" style="text-decoration:none;" styleclass="btn btn-custom" immediate="true" />
+                    </div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-1">
+                        <apex:commandLink action="{!NextPayment}" value="Next" style="text-decoration:none;" styleclass="btn btn-custom" />
+                    </div>
+                </div>
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

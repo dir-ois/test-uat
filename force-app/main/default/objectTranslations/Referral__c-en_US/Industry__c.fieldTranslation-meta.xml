@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry --></label>
+    <name>Industry__c</name>
+    <picklistValues>
+        <masterLabel>Agriculture</masterLabel>
+        <translation><!-- Agriculture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Wash</masterLabel>
+        <translation><!-- Car Wash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation><!-- Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment</masterLabel>
+        <translation><!-- Garment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel</masterLabel>
+        <translation><!-- Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janitorial</masterLabel>
+        <translation><!-- Janitorial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Residential Care</masterLabel>
+        <translation><!-- Residential Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

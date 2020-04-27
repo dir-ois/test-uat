@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Report of Labor Law Violation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reports of Labor Law Violations</value>
+    </caseValues>
+    <layouts>
+        <layout>PAGA Notice</layout>
+        <sections>
+            <label><!-- Claim Type --></label>
+            <section>Claim Type</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Information --></label>
+            <section>Employer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notice Filer Information --></label>
+            <section>Notice Filer Information</section>
+        </sections>
+        <sections>
+            <label><!-- PAGA Violations --></label>
+            <section>PAGA Violations</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Report of Labor Law Violation Layout</layout>
+        <sections>
+            <label><!-- Advocate Information --></label>
+            <section>Advocate Information</section>
+        </sections>
+        <sections>
+            <label><!-- Business Expense Violations --></label>
+            <section>Business Expense Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Child Labor Violations --></label>
+            <section>Child Labor Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Information --></label>
+            <section>Employer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Failure To Post Violations --></label>
+            <section>Failure To Post Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Licensing/Registration Violations --></label>
+            <section>Licensing/Registration Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Meal  &amp; Rest Period Violations --></label>
+            <section>Meal  &amp; Rest Period Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Minimum Wage Violations --></label>
+            <section>Minimum Wage Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Misclassification Violations --></label>
+            <section>Misclassification Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Other Violations --></label>
+            <section>Other Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Overtime Violations --></label>
+            <section>Overtime Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Pay Day Violations --></label>
+            <section>Pay Day Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Pay Stub Violations --></label>
+            <section>Pay Stub Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Payroll Information --></label>
+            <section>Payroll Information</section>
+        </sections>
+        <sections>
+            <label><!-- Record Keeping Violations --></label>
+            <section>Record Keeping Violations</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting Party --></label>
+            <section>Reporting Party</section>
+        </sections>
+        <sections>
+            <label><!-- Unpaid Wages --></label>
+            <section>Unpaid Wages</section>
+        </sections>
+        <sections>
+            <label><!-- Wage Referral Information --></label>
+            <section>Wage Referral Information</section>
+        </sections>
+        <sections>
+            <label><!-- Work Schedule --></label>
+            <section>Work Schedule</section>
+        </sections>
+        <sections>
+            <label><!-- Workers&apos; Compensation Violations --></label>
+            <section>Workers&#39; Compensation Violations</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- BOFE RLLV --></label>
+        <name>BOFE_RLLV</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- 7-15: PAGA Notice --></description>
+        <label><!-- PAGA Notice --></label>
+        <name>PAGA_Notice</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must complete the Source of the RLLV. --></errorMessage>
+        <name>Require_RLCV_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When LETF Call/Email is selected as the Violation Source, you must enter Team # --></errorMessage>
+        <name>Require_Team_if_Source_is_LETF</name>
+    </validationRules>
+</CustomObjectTranslation>

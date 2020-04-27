@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Read_Only_Non_IFP_for_Public</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Read Only Non-IFP for Public</label>
+        <sharedTo>
+            <group>PAGA_Public_User</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>IFP_Claimed__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Not_Subject_to_PRA__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Confidential__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Attorney_Client_Privilege__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_non_IFP_with_ALL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share non-IFP with ALL</label>
+        <sharedTo>
+            <roleAndSubordinates>System_Administrators</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IFP_Claimed__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_non_IFP_with_INTERNAL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share non-IFP with INTERNAL</label>
+        <sharedTo>
+            <roleAndSubordinates>System_Administrators</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IFP_Claimed__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Share_All_with_internal_PAGA_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share All with internal PAGA Users</label>
+        <sharedTo>
+            <role>PAGA_Unit_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>System_Administrators</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,430 @@
+<apex:page controller="RegistrationCPSresultsController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false">
+    <style>
+        .btn-group-lg>.btn, .btn-md {
+            padding: 8px 12px;
+            font-size: 15px;
+            line-height: 1.42857143;
+            border-radius: 6px;
+        }
+        .dateFormat  {
+            display:none;visibility:hidden;
+        }
+        th { font-size: 12px; }
+        td { font-size: 12px; }
+        a.disabled {
+            background: linear-gradient(to bottom, #A9A9A9 100%,#D3D3D3 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A9A9A9', endColorstr='#D3D3D3',GradientType=0 );
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 0;
+            padding: 8px 12px;
+            font-size: 15px;
+            line-height: 1.42857143;
+            pointer-events: none;
+            cursor: default;
+        }
+    </style>
+    <script>
+        $j = jQuery.noConflict();
+        $j( document ).ready(function() {
+            // hides warning message div
+            document.getElementById('messageWarning').style.display = "none";
+            // calls js function as soon as the page loads
+            getRemoteRegistrations();
+        });
+    </script> 
+    <apex:composition template="CommunityRegistrationTemplate">
+        
+        <apex:define name="body">
+            
+            <apex:form >
+                <ol class="breadcrumb">
+                    <li><a href="https://www.dir.ca.gov/dlse/dlse.html">Department of Industrial Relations (DIR)</a></li>
+                    <li class="active">Registrations Search Results</li>
+                </ol>
+                
+                <h1>Registrations Search Results</h1>
+                <br/>
+                <apex:outputPanel id="filters"> 
+                    <div class="row mb">
+                        <apex:outputPanel rendered="{!filtersMap['searchString']}">
+                            <div class="form-group col-md-5">
+                                <label for="{!$Component.searchName}">Search by Last Name/Legal Name</label>
+                                <apex:inputText id="searchName" value="{!searchString}" styleclass="form-control" disabled="true" />
+                                
+                            </div>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!filtersMap['License_Registration_Number']}">
+                            <div class="form-group col-md-5">
+                                <label for="{!$Component.lrdNum}">Search by Registration ID#</label>
+                                <apex:inputField id="lrdNum" value="{!dummyLicenseRegistration.License_Registration_Number__c}" html-disabled="true" styleclass="form-control" />
+                            </div>
+                        </apex:outputPanel>
+                    </div>  
+                    <div class="row mb">
+                        <apex:outputPanel rendered="{!filtersMap['License_Registration_Type']}">
+                            <div class="form-group col-md-5">
+                                <label for="{!$Component.lrType}">Search by Registration Type</label>
+                                <apex:inputField id="lrType" value="{!dummyLicenseRegistration.License_Registration_Type__c}" html-disabled="true" styleclass="form-control" />
+                            </div>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!filtersMap['Mailing_City__c']}">
+                            <div class="form-group col-md-5">
+                                <label for="{!$Component.city}">Search by city</label>
+                                <apex:inputField id="city" value="{!dummyLicenseRegistration.Mailing_City__c}" html-disabled="true" styleclass="form-control" />
+                            </div>
+                        </apex:outputPanel>
+                    </div> 
+                    <apex:outputPanel rendered="{!OR(filtersMap['Submitted_Date__c'], filtersMap['Received_Date__c'])}">
+                        <div class="row mb">
+                            <div class="col-md-5">
+                                <div class="panel row">
+                                    <div class="panel-body">
+                                        <div class="col-xs-12">
+                                            <label><b>Search by date or date range when the Registration Application was submitted</b></label>
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-6">
+                                            <label for="{!$Component.startDate}">From</label>
+                                            <apex:inputField id="startDate" value="{!dummyLicenseRegistration.Submitted_Date__c}" html-disabled="true" styleclass="form-control" style="width:100%!important;" />
+                                            
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-6">
+                                            <label for="{!$Component.endDate}">Until</label>
+                                            <apex:inputField id="endDate" value="{!dummyLicenseRegistration.Received_Date__c}" html-disabled="true" styleclass="form-control" style="width:100%!important;"/>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </apex:outputPanel>    
+                </apex:outputPanel>    
+                 <div class="row" id="messageWarning">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                        <div class="alert alert-warning" id="responseErrors">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <apex:commandLink action="{!BackToSearch}" style="text-decoration:none;" styleclass="btn-custom btn-md"><span class="glyphicon glyphicon-search"></span> Back to Search</apex:commandLink>
+                        <br /><br />
+                    </div>
+                </div>
+                <apex:outputPanel id="tablePanel">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="table-responsive">
+                                <table id="table" class="cell-border stripe" cellspacing="0">
+                                    <!-- table header -->
+                                    <thead>
+                                        <tr>
+                                            <th>Registration #</th>
+                                            <th>Registration Type</th>
+                                            <th>First Name</th>
+                                            <th>Middle Name</th>
+                                            <th>Last Name</th>
+                                            <th>City</th>
+                                            <th>State</th>
+                                            <th>Zip Code</th>
+                                            <th>Status</th>
+                                            <th>Expiration Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="theTableBodyC"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </apex:outputPanel>
+                <apex:inputHidden value="{!searchClassObj.registrationNumberStr}" id="registrationNumberStr"/>
+                <apex:inputHidden value="{!searchClassObj.firstNameStr}" id="firstNameStr"/>               
+                <apex:inputHidden value="{!searchClassObj.middleNameStr}" id="middleNameStr"/>
+                <apex:inputHidden value="{!searchClassObj.lastNameStr}" id="lastNameStr"/>
+                <apex:inputHidden value="{!searchClassObj.locationCityStr}" id="locationCityStr"/>
+                <apex:inputHidden value="{!searchClassObj.locationStateStr}" id="locationStateStr"/>
+                <apex:inputHidden value="{!searchClassObj.locationZipStr}" id="locationZipStr"/>
+                <apex:inputHidden value="{!effectiveDateStart}" id="effectiveDateStart"/> 
+                <apex:inputHidden value="{!effectiveDateEnd}" id="effectiveDateEnd"/> 
+                <apex:inputHidden value="{!expirationDateStart}" id="expirationDateStart"/>
+                <apex:inputHidden value="{!expirationDateEnd}" id="expirationDateEnd"/>
+                <apex:inputHidden value="{!searchClassObj.selectedRecordType}" id="selectedRecordType"/>
+                <apex:inputHidden value="{!searchClassObj.selectedStatus}" id="selectedStatus"/>
+                
+                <script type="text/javascript">
+                
+                    function validDate(d) {
+                        var date = new Date(d);
+                        var day = ''+date.getDate();
+                        //if( day.length == 1)day = '0'+day;
+                        var month = '' +( date.getMonth() + 1);
+                        //if( month.length == 1)month = '0'+month;
+                        var year = '' + date.getFullYear();
+                        
+                        return ((month + '/' + day + '/' + year) == d);
+                    }
+                    function getRemoteRegistrations() {
+                   
+                    
+                        var registrationNumberStr = '';                        
+                        var firstNameStr = '';
+                        var middleNameStr = '';
+						var lastNameStr = '';
+                        var locationCityStr = '';
+                        var locationStateStr = '';
+                        var locationZipStr = '';                        
+                        var effectiveDateStart = '';
+                        var effectiveDateEnd = '';                        
+                        var expirationDateStart = '';
+                        var expirationDateEnd = '';
+                        var selectedRecordType = '';
+                        var selectedStatus = '';
+                        
+                        <!-- get values from the input fields by element id -->
+                        if(document.getElementById('{!$Component.registrationNumberStr}') != null)
+                            registrationNumberStr = document.getElementById('{!$Component.registrationNumberStr}').value; 
+                        
+                        if(document.getElementById('{!$Component.firstNameStr}') != null)
+                            firstNameStr = document.getElementById('{!$Component.firstNameStr}').value;
+                        if(document.getElementById('{!$Component.middleNameStr}') != null)
+                            middleNameStr = document.getElementById('{!$Component.middleNameStr}').value;
+                        if(document.getElementById('{!$Component.lastNameStr}') != null)
+                            lastNameStr = document.getElementById('{!$Component.lastNameStr}').value;
+                        if(document.getElementById('{!$Component.locationCityStr}') != null)
+                            locationCityStr = document.getElementById('{!$Component.locationCityStr}').value;
+                        if(document.getElementById('{!$Component.locationStateStr}') != null)
+                            locationStateStr = document.getElementById('{!$Component.locationStateStr}').value;
+                        if(document.getElementById('{!$Component.locationZipStr}') != null)
+                            locationZipStr = document.getElementById('{!$Component.locationZipStr}').value;
+                        if(document.getElementById('{!$Component.selectedRecordType}') != null)
+                            selectedRecordType = document.getElementById('{!$Component.selectedRecordType}').value;
+                        if(document.getElementById('{!$Component.selectedStatus}') != null)
+                            selectedStatus = document.getElementById('{!$Component.selectedStatus}').value; 
+                        
+                        
+                        if(document.getElementById('{!$Component.effectiveDateStart}') != null)
+                            effectiveDateStart = document.getElementById('{!$Component.effectiveDateStart}').value;
+                        if(document.getElementById('{!$Component.effectiveDateEnd}') != null)
+                            effectiveDateEnd = document.getElementById('{!$Component.effectiveDateEnd}').value;                   
+                        if(document.getElementById('{!$Component.expirationDateStart}') != null)
+                            expirationDateStart = document.getElementById('{!$Component.expirationDateStart}').value; 
+                        if(document.getElementById('{!$Component.expirationDateEnd}') != null)
+                            expirationDateEnd = document.getElementById('{!$Component.expirationDateEnd}').value;                        
+                                                                                                                                                                                                                      
+                        <!-- if there are no criteria to filter by display warning message -->
+                        var noCriteria = 'false';
+                        var incorrectRange = 'false';
+                        var incorrectBondRange = 'false';
+                        var incorrectDate = 'false';
+                        document.getElementById('messageWarning').style.display = "none";
+                        document.getElementById("responseErrors").innerHTML = "";
+                        if(registrationNumberStr == '' && firstNameStr == '' && middleNameStr == '' && lastNameStr == ''&&  locationCityStr == '' && locationStateStr == '' 
+                            && locationZipStr == ''&& effectiveDateStart == '' && effectiveDateEnd == '' && expirationDateStart == '' && expirationDateEnd == '') {
+                            document.getElementById("responseErrors").innerHTML = "<center><strong>Warning!</strong> Please enter at least one search criteria to perform a search.</center>";
+                            document.getElementById('messageWarning').style.display = "block";
+                            noCriteria = 'true';
+                        }
+                                                
+                        if(selectedRecordType == 'Select'){
+                            document.getElementById("responseErrors").innerHTML = "<center><strong>Warning!</strong> Please select a Registration Type to perform a search.</center>";
+                            document.getElementById('messageWarning').style.display = "block";
+                            noCriteria = 'true';
+                        }
+                        if(expirationDateStart != '' && expirationDateEnd != '') {
+                            var stDate = new Date(expirationDateStart);
+                            var enDate = new Date(expirationDateEnd);
+                            
+                            if(stDate > enDate) {
+                                document.getElementById("responseErrors").innerHTML = "<center><strong>Error!</strong> Expiration Date range incorrect. Start date should be before end date.</center>";
+                                document.getElementById('messageWarning').style.display = "block";
+                                incorrectRange = 'true';
+                            }
+                        }
+                        if(effectiveDateStart != '' && effectiveDateEnd != '') {
+                            var bstDate = new Date(effectiveDateStart);
+                            var benDate = new Date(effectiveDateEnd);
+                            
+                            if(bstDate > benDate) {
+                                document.getElementById("responseErrors").innerHTML = "<center><strong>Error!</strong> Effective Date range incorrect. Start date should be before end date.</center>";
+                                document.getElementById('messageWarning').style.display = "block";
+                                incorrectBondRange = 'true';
+                            }
+                        }
+                        <!-- disable "Filter" button as soon as it is clicked -->       
+                        //var filterButton = document.getElementById('{!$Component.filterButton}');
+                        //filterButton.setAttribute('class','disabled');
+                        
+                        if(incorrectRange == 'true' || incorrectDate == 'true' || incorrectBondRange == 'true') {
+                            var registrationNumberStr = '';
+                            var firsNameStr = '';
+                            var middleNameStr = '';
+                            var lastNameStr = '';
+                            var locationCityStr = '';
+                            var locationStateStr = '';
+                            var locationZipStr = '';                            
+                            var effectiveDateStart = '';
+                            var effectiveDateEnd = '';                            
+                            var expirationDateStart = '';
+                            var expirationDateEnd = '';
+                            var selectedRecordType = '';
+                            var selectedStatus = '';           
+                        }
+                        
+                        <!-- call PAGAResultsController.getAllCases() method -->
+                        Visualforce.remoting.Manager.invokeAction(
+                            '{!$RemoteAction.RegistrationCPSresultsController.getAllRegistrations}',
+                            <!-- getAllCases() parameters -->
+                            registrationNumberStr, selectedRecordType, selectedStatus, firstNameStr, middleNameStr, lastNameStr, locationCityStr, locationStateStr, locationZipStr, effectiveDateStart, effectiveDateEnd, expirationDateStart, expirationDateEnd, 
+                            function(results, event) {
+                                if (!event.status) return;
+                               
+                                var html = '';
+                                <!-- if there are more than 2000 records display warning message -->
+                                if(results.length > 2000) {
+                                    document.getElementById("responseErrors").innerHTML = "<strong>Warning!</strong> More than 2000 records to display - please narrow the search criteria by adding another search component to obtain a shorter list.";
+                                    document.getElementById('messageWarning').style.display = "block";
+                                }
+                                <!-- if there are no results  but there is at least one criteria to filter by display warning message -->
+                                if(results.length < 1 && noCriteria == 'false' && incorrectRange == 'false' && incorrectDate == 'false') {
+                                    document.getElementById("responseErrors").innerHTML = "<center><strong>Warning!</strong> No matching records found.</center>";
+                                    document.getElementById('messageWarning').style.display = "block";
+                                }
+                                <!-- populate table with results -->
+                                for (var n=0; n < results.length; n++) {
+                                    var result = results[n];
+                                    
+                                   html += 
+                                        '<tr>'+           
+                                    '<td>' + result.License_Registration_Number__c + '</td>';
+                                    //<!--'<td><u><a href="/RegistrationSearch/RegistrationResults?registrationNumberStr=' + result.License_Registration_Number__c + '" target="_blank">' + result.License_Registration_Number__c + '</a></u></td>';-->
+                                    //html += '<td data-order="' + initialDate + '">' + result.Expiration_Date__c+ '</td>';       
+                                            if(result.License_Registration_Type__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + result.License_Registration_Type__c  + '</td>';
+                                            }
+                                   	
+                                    if(result.Registration_Accounts__r === undefined){
+                                        html += '<td>-</td>';
+                                        html += '<td>-</td>';
+                                        html += '<td>-</td>';
+                                        html += '<td>-</td>';
+                                        html += '<td>-</td>';
+                                        html += '<td>-</td>';
+                                        html += '<td>-</td>';
+                                    }
+                                    else{
+                                        for (var x=0; x < result.Registration_Accounts__r.length; x++) {
+                                            var allNames = result.Registration_Accounts__r[x];
+                                            
+                                            if(allNames.First_Name__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + allNames.First_Name__c + '</td>';
+                                            }
+                                            if(allNames.Middle_Name__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + allNames.Middle_Name__c + '</td>';
+                                            }
+                                            if(allNames.Last_Name__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + allNames.Last_Name__c + '</td>';
+                                            }  
+                                            if(allNames.Residential_City__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + allNames.Residential_City__c + '</td>';
+                                            }
+                                            if(allNames.Residential_State__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + allNames.Residential_State__c + '</td>';
+                                            }
+                                            if(allNames.Residential_Zip_Code__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                html += '<td>' + allNames.Residential_Zip_Code__c + '</td>';
+                                            } 
+                                        }  
+                                    }
+
+                                            if(result.Expiration_Date__c === undefined) {
+                                                html += '<td>-</td>';
+                                            } else {
+                                                var initialDate = result.Expiration_Date__c;
+                                                var d = new Date(result.Expiration_Date__c);
+                                                var utcDate = new Date(d.toUTCString());
+                                                utcDate.setHours(utcDate.getHours()+14);
+                                                
+                                                result.Expiration_Date__c = '' + (utcDate.getMonth() + 1) + '/' + utcDate.getDate() + '/' + utcDate.getFullYear();
+                                                html += '<td data-order="' + initialDate + '">' + result.Expiration_Date__c+ '</td>';
+                                            }
+                                        html += '</tr>';
+                                       /*if(n == results.length-1 ) {
+                                           var filterButton = document.getElementById('{!$Component.filterButton}');
+                                           filterButton.setAttribute('class','btn-custom btn-md');
+                                       }*/
+                                }
+                                
+                                <!-- enable "Filter" button as soon as the results are displayed -->
+                                /*if(results.length == 0){
+                                   var filterButton = document.getElementById('{!$Component.filterButton}');
+                                   filterButton.setAttribute('class','btn-custom btn-md');
+                                }*/
+                                
+                                <!-- initialize datatable -->
+                                document.getElementById("theTableBodyC").innerHTML = html;
+                                $j('#table').DataTable({
+                                    responsive: true,
+                                    destroy: true,
+                                    select: true,
+                                    "bPaginate": true,
+                                    "bLengthChange": false,
+                                    "bFilter": false,
+                                    "bSort": true,
+                                    "order": [[ 1, "asc" ]],
+                                    "bInfo": true,
+                                    "bAutoWidth": true,
+                                    "pageLength": 10,
+                                    "lengthMenu": [5, 50, 100],
+                                    "language": {
+                                      "emptyTable": "No matching records found"
+                                    }
+                                });
+                            },
+                            {escape: true}
+                        );
+                    }
+                    
+                </script>
+                <!-- press enter to apply filter -->
+                <script type="text/javascript">
+                    $j(document).keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                             document.getElementById('{!$Component.filterButton}').click();
+                             
+                        }
+                    });
+                    
+                </script>
+                <!-- press enter to apply filter --> 
+                <!--<script type="text/javascript">
+                $(document).ready(function(){
+                    $('#table').DataTable({
+                        "bPaginate": true,
+                        "bLengthChange": false,
+                        "bFilter": false,
+                        "bSort": true,
+                    });
+                });
+                </script>-->
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+</apex:page>

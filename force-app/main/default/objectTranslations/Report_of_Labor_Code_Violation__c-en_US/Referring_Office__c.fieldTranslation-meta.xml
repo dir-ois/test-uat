@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Office from which the RLLV was referred. --></help>
+    <label><!-- Referring Office --></label>
+    <name>Referring_Office__c</name>
+    <relationshipLabel><!-- Reports of Labor Law Violations (Referring Office) --></relationshipLabel>
+</CustomFieldTranslation>

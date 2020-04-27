@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Courthouse__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field to allow users to relate a meeting record to an Office location as well as a Courthouse location.  Courthouse locations are merged into some Conga output documents (i.e. ODA)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select a courthouse where the meeting is set to take place (if applicable).</inlineHelpText>
+    <label>Courthouse</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Office__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Courthouse</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Office__c</referenceTo>
+    <relationshipLabel>Meetings (Courthouse)</relationshipLabel>
+    <relationshipName>Meetings</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

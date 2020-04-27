@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Terms --></label>
+    <name>Payment_Terms__c</name>
+    <picklistValues>
+        <masterLabel>Employer Concedes Amount</masterLabel>
+        <translation><!-- Employer Concedes Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer Concedes-Restrictive Endorsement</masterLabel>
+        <translation><!-- Employer Concedes-Restrictive Endorsement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employer Correspondence</masterLabel>
+        <translation><!-- Employer Correspondence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Payment</masterLabel>
+        <translation><!-- Full Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Payment Pursuant to the ODA</masterLabel>
+        <translation><!-- Full Payment Pursuant to the ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Payment per Settlement</masterLabel>
+        <translation><!-- Full Payment per Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Payment per Settlement</masterLabel>
+        <translation><!-- Partial Payment per Settlement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

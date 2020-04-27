@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canceled_SRs</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Queue</filterScope>
+    <label>Canceled SRs</label>
+    <queue>Canceled_SR</queue>
+    <sharedTo>
+        <role>System_Administrators</role>
+    </sharedTo>
+</ListView>

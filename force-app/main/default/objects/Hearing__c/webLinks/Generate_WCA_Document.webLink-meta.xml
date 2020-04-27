@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_Document</fullName>
+    <availability>online</availability>
+    <description>Generates various WCA Conga output documents from the Meeting object.
+
+Update 10/2/15 - Per Jeremy&#39;s request and DIR team feedback, this button that launches the ODA documents is to be migrated to the Liability object.
+
+Update 10/20/15 - Per additional feedback from the DIR team, repurposed this button to launch and generate all Hearing Notifications.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate WCA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Hearing__c.Id}
+&amp;qvar0id=a0md00000064cjEAAQ
+&amp;qvar0format=21010
+&amp;qvar1id=a0mt0000000653L
+&amp;qvar1format=21010
+&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0={!Hearing__c.CaseId__c},
+[CompServAdd]a0md00000064cjG?pv0={qvar1},
+[CompAttny]a0mt0000000653G?pv0={!Hearing__c.Id},
+[Defendant]a0md00000064cjRAAQ?pv0={!Hearing__c.CaseId__c},
+[DefandJoint]a0md00000064cj8AAA?pv0={!Hearing__c.CaseId__c},
+[VioTable]a0md00000064cjSAAQ?pv0={!Hearing__c.CaseId__c},
+[Guarantor]a0md00000064cjNAAQ?pv0={!Hearing__c.CaseId__c},
+[Successor]a0md00000064cjLAAQ?pv0={!Hearing__c.CaseId__c},
+[WCAOffice]a0md00000064cjOAAQ?pv0={!Hearing__c.CaseId__c},
+[HearingInfo]a0md00000064cjuAAA?pv0={!Hearing__c.CaseId__c},
+[Conference]a0md00000064g2z?pv0={!Hearing__c.CaseId__c},
+[CaseInfo]a0md00000064cjCAAQ?pv0={!Hearing__c.CaseId__c},
+[EMP]a0md00000064cj2AAA?pv0={!Hearing__c.CaseId__c}~pv1=&quot;Case employer&quot;,
+[GUAR]a0md00000064cj2AAA?pv0={!Hearing__c.CaseId__c}~pv1=&quot;Guarantor&quot;,
+[StateSeal]a0md00000064cjlAAA,
+[Governor]a0md0000003l2S0,
+[BermanInfo]a0md00000064cjDAAQ,
+[ServiceAddress]a0md00000064cjG?pv0={qvar0},
+&amp;TemplateGroup=WCAHearing
+&amp;SCHP=2
+&amp;OFN={Template.Label} + {!Hearing__c.Case__c} + {!Hearing__c.Case_Employer__c}
+&amp;DS6=1
+&amp;SC0=1
+&amp;SC1=Attachments</url>
+</WebLink>

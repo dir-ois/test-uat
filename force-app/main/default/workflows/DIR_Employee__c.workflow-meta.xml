@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Email</fullName>
+        <field>Email__c</field>
+        <formula>User__r.Email</formula>
+        <name>Update Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Name</fullName>
+        <field>Name</field>
+        <formula>User__r.FirstName +&quot; &quot;+  User__r.LastName</formula>
+        <name>Update Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Phone</fullName>
+        <field>Phone__c</field>
+        <formula>User__r.Phone</formula>
+        <name>Update Phone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Auto-Populate Field</fullName>
+        <actions>
+            <name>Update_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Phone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Auto-Populate Field from the User object</description>
+        <formula>User__r.Username != &#39;tdputy@dir.ca.gov&#39; &amp;&amp;  Active__c != False</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

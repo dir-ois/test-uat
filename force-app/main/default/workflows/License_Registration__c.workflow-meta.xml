@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Application_Changes_Not_Submitted</fullName>
+        <description>Application_Changes_Not_Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Application_Changes_Not_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Submitted_Successfully</fullName>
+        <description>Application Submitted Successfully</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Application_Successfully_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Successfully_Re_Submitted_no_fees_due</fullName>
+        <description>Application Successfully Re-Submitted - no fees due</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Application_Successfully_Re_Submitted_no_fees_due</template>
+    </alerts>
+    <alerts>
+        <fullName>Application_Successfully_Submitted_for_Renewal</fullName>
+        <description>Application Successfully Submitted for Renewal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Application_Successfully_Submitted_for_Renewal</template>
+    </alerts>
+    <alerts>
+        <fullName>Notice_of_Effective_or_Expiration_Date_Change</fullName>
+        <description>REG: Notice of Effective or Expiration Date Change</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Notice_of_Effective_or_Expiration_Date_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Public_Works_Public_Works_Application_Unpaid</fullName>
+        <description>Public Works: Public Works Application Unpaid</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Public_Works_Registration_Templates/Public_Works_Application_Unpaid</template>
+    </alerts>
+    <alerts>
+        <fullName>Public_Works_Renewal_Email_Alert</fullName>
+        <description>Public Works: Renewal Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Public_Works_Registration_Templates/Public_Works_Renewal_Email_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Public_Works_Renewal_Email_Alert_2nd_Notice</fullName>
+        <description>Public Works: Renewal Email Alert 2nd Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Public_Works_Registration_Templates/Public_Works_Renewal_Email_Alert_2nd_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>REG_Application_Ready_for_Payment</fullName>
+        <description>REG: Application Ready for Payment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/REG_Application_Ready_for_Payment</template>
+    </alerts>
+    <alerts>
+        <fullName>REG_Exams_are_required</fullName>
+        <description>REG: Exams are required</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Registration_Exams_are_Required</template>
+    </alerts>
+    <alerts>
+        <fullName>REG_Final_Application_Submission</fullName>
+        <description>REG: Final Application Submission</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/REG_Final_Submission</template>
+    </alerts>
+    <alerts>
+        <fullName>REG_Internal_Submission_Notice</fullName>
+        <description>REG: Internal User Application Submission Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Internal_User_Application_Submission_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>REG_Send_Violation_Letter</fullName>
+        <description>REG: Send Violation Letter</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/REG_Audit_Violation</template>
+    </alerts>
+    <alerts>
+        <fullName>REG_Send_payment_reminder_email</fullName>
+        <description>REG: Send payment reminder email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/REG_Payment_Still_Pending</template>
+    </alerts>
+    <alerts>
+        <fullName>WCI_Expiration_Email_Alert</fullName>
+        <description>WCI Expiration Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/Expiration_of_the_Workers_Compensation_Insurance</template>
+    </alerts>
+    <alerts>
+        <fullName>X15_day_renewal_notice_for_different_license_types</fullName>
+        <description>15 day renewal notice for different license types</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/X15_day_renewal_notice_for_different_license_type</template>
+    </alerts>
+    <alerts>
+        <fullName>X30_day_renewal_notice_for_different_license_types</fullName>
+        <description>30 day renewal notice for different license types</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/X30_day_renewal_notice_for_different_license_type</template>
+    </alerts>
+    <alerts>
+        <fullName>X60_day_renewal_notice_for_different_license_types</fullName>
+        <description>60 day renewal notice for different license types</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/X60_day_renewal_notice_for_different_license_type</template>
+    </alerts>
+    <alerts>
+        <fullName>X90_day_renewal_notice_for_different_license_types</fullName>
+        <description>90 day renewal notice for different license types</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Applicant__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>Account_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlseregistrationservices@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Registration_Templates/X90_day_renewal_notice_for_different_license_type</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_Owner_to_Car_Wash_Registration_Qu</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Car_Wash_Registrations</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Change Owner to Car Wash Registration Qu</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Expiration_Date_WF_Fired</fullName>
+        <field>Expiration_Date_WF_Fired__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Expiration Date WF Fired</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PW_Lapse_in_Reg_Cert_Cleared</fullName>
+        <field>Lapse_in_Registration_Certification__c</field>
+        <name>PW Lapse in Reg Cert Cleared</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PW_Ready_to_submit_Cleared</fullName>
+        <field>Ready_to_Resubmit__c</field>
+        <name>PW Ready to submit Cleared</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PW_Submitted_Date_Cleared</fullName>
+        <field>VIP_Date_Time_Submitted__c</field>
+        <name>PW Submitted Date Cleared</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REG_Approved_TRUE</fullName>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>REG: Approved = TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REG_Check_Submitted_Box</fullName>
+        <field>Submitted__c</field>
+        <literalValue>1</literalValue>
+        <name>REG: Check Submitted Box</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REG_Set_Status_to_Resubmitted</fullName>
+        <field>Status__c</field>
+        <literalValue>Resubmitted</literalValue>
+        <name>REG: Set Status to Resubmitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REG_Set_Status_to_Submitted</fullName>
+        <field>Status__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>REG: Set Status to Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REG_Update_Approval_Date_Time</fullName>
+        <description>Update approval time when reg status set to &#39;Approved&#39;, this is for auto renewal identification</description>
+        <field>Approval_Date_Time__c</field>
+        <formula>NOW()</formula>
+        <name>REG Update Approval Date Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>REG_Update_Payment_Date_Time</fullName>
+        <description>Update payment time when reg payment status set to &#39;PAID&#39;, this is for auto renewal identification</description>
+        <field>Payment_Date_Time__c</field>
+        <formula>NOW()</formula>
+        <name>REG Update Payment Date Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Replace_Workers_Comp_Selection</fullName>
+        <field>Workers_Comp_Selection__c</field>
+        <name>Update Workers Comp Selection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Registration_Send_Application</fullName>
+        <field>Registration_Send_Application__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Registration Send Application</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Send_Application</fullName>
+        <description>Resets send application to false so it can be resent as needed.</description>
+        <field>Send_Application__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Send Application</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Send_License_Registration_Permit</fullName>
+        <description>Resets Send_License_Registration_Permit_Boolean__c to false so it can be resent as needed.</description>
+        <field>Send_License_Registration_Permit_Boolean__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Send License Registration Permit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Send_PW_Affidavit</fullName>
+        <field>Send_PW_Affidavit__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Send PW Affidavit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Send_PW_Registration</fullName>
+        <field>Send_PW_Registration__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Send PW Registration</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reset_Send_Renewal_Application</fullName>
+        <field>Send_Renewal_Application__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Send Renewal Application</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Effective_Date_to_TODAY</fullName>
+        <field>Effective_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Set Effective Date to TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Expiration_date_to_one_year</fullName>
+        <field>Expiration_Date__c</field>
+        <formula>IF(
+AND(Month(TODAY())=2,Day(TODAY())=29),
+DATE(YEAR(TODAY()) + 1, Month(TODAY()),Day(TODAY())-1),
+DATE(YEAR(TODAY()) + 1, Month(TODAY()),Day(TODAY()))
+)</formula>
+        <name>Set Expiration date to one year</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Reg_Effective_Date</fullName>
+        <field>Registration_Effective_Date__c</field>
+        <literalValue>July 1</literalValue>
+        <name>Set Reg Effective Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Submitted_Date_to_TODAY</fullName>
+        <field>Submitted_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Set Submitted Date to TODAY</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_expiration_date_to_three_months</fullName>
+        <field>Expiration_Date__c</field>
+        <formula>DATE( 
+YEAR( TODAY() ) + FLOOR( ( MONTH ( TODAY()) + 3 - 1 ) / 12 ), 
+MOD( MONTH ( TODAY()) + 3 - 1 + 
+IF( DAY ( TODAY()) &gt; CASE( MOD( MONTH( TODAY()) + 3 - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 1, 0 ), 12 ) + 1, 
+IF( DAY( TODAY()) &gt; CASE( MOD( MONTH( TODAY()) + 3 - 1, 12 ) + 1, 
+2, 28, 
+4, 30, 
+6, 30, 
+9, 30, 
+11, 30, 
+31 ), 
+1, DAY( TODAY()) 
+) 
+)</formula>
+        <name>Set expiration date to three months</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_re_approved_to_TRUE</fullName>
+        <field>Re_approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Set re-approved to TRUE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Account_Email_Field</fullName>
+        <field>Account_Email__c</field>
+        <formula>Account__r.Email__c</formula>
+        <name>Update Account Email Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Reg_Effective_Date</fullName>
+        <field>Registration_Effective_Date__c</field>
+        <literalValue>Today</literalValue>
+        <name>Update Reg Effective Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Workers_Comp_Selection</fullName>
+        <description>Update Workers Comp Selection</description>
+        <field>Workers_Comp_Selection__c</field>
+        <name>Update Workers Comp Selection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>REG_PW_Send_Affidavit</fullName>
+        <apiVersion>45.0</apiVersion>
+        <description>Conga Workflow: to attach Affidavit PDF</description>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_PW_Affidavit_Doc__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: PW Send Affidavit</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>REG_PW_Send_Registration</fullName>
+        <apiVersion>45.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_PW_Registration_Doc__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: PW Send Registration</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>REG_Registration_Send_Application</fullName>
+        <apiVersion>44.0</apiVersion>
+        <description>Conga Workflow: to attach Registration PDF for new and renewals.</description>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Registration_Send_Document__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: Registration Send Application</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>REG_Renewal_Registration</fullName>
+        <apiVersion>42.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Registration_Renewal_Doc__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: Renewal Registration</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>REG_Send_License_Registration_Permit</fullName>
+        <apiVersion>47.0</apiVersion>
+        <description>Sends the registration, license, or permit pdf to the applicant.
+Triggered from CommunityRegistration.vfp when the users clicks email PDF.</description>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_License_Registration_Permit_PDF__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: Send License Registration Permit</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>REG_Send_New_License_Approved</fullName>
+        <apiVersion>41.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_New_License_Approved__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: Send New License - Approved</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>REG_send_application</fullName>
+        <apiVersion>42.0</apiVersion>
+        <description>Sends the application pdf to the applicant</description>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_Registration_Document__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>REG: send application</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>Send_New_License</fullName>
+        <apiVersion>41.0</apiVersion>
+        <endpointUrl>https://workflow.congamerge.com/OBMListener.ashx</endpointUrl>
+        <fields>Id</fields>
+        <fields>Send_New_License__c</fields>
+        <includeSessionId>true</includeSessionId>
+        <integrationUser>cbae@dir.ca.gov.integ</integrationUser>
+        <name>Send New License</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>15 day renewal notice for different license type</fullName>
+        <active>true</active>
+        <formula>Recalculate__c     ||      (         (Expiration_Date__c - TODAY() &lt;= 15)         &amp;&amp; (Expiration_Date__c &gt;= Today())         &amp;&amp; ISBLANK( Registration_Renewal_Rollup__c )         &amp;&amp; !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39;)         &amp;&amp; ISPICKVAL(Status__c, &#39;Approved&#39;)         &amp;&amp; RecordType.DeveloperName &lt;&gt; &#39;Entertainment_Work&#39;         &amp;&amp; !ISPICKVAL( Registration_Duration__c , &#39;10 Days - Temporary Permit&#39;)         &amp;&amp; !ISPICKVAL( Imported_From__c , &#39;LR-EWP&#39;)     )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X15_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>30 day renewal notice for different license type</fullName>
+        <active>true</active>
+        <formula>Recalculate__c     ||      (         (Expiration_Date__c - TODAY() &lt;= 30)         &amp;&amp; (Expiration_Date__c &gt;= Today())         &amp;&amp; ISBLANK( Registration_Renewal_Rollup__c )         &amp;&amp; !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39;)         &amp;&amp; ISPICKVAL(Status__c, &#39;Approved&#39;)         &amp;&amp; RecordType.DeveloperName &lt;&gt; &#39;Entertainment_Work&#39;         &amp;&amp; !ISPICKVAL( Registration_Duration__c , &#39;10 Days - Temporary Permit&#39;)         &amp;&amp; !ISPICKVAL( Imported_From__c , &#39;LR-EWP&#39;)     )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X30_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>45 Day WCI Cert Expiration Notice</fullName>
+        <active>true</active>
+        <description>Emails Registration Applicant 45 days prior to workers&#39; comp insurance cert expiration date.</description>
+        <formula>IF( WCI_Expiration_Date__c - TODAY()= 45, TRUE, FALSE)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>WCI_Expiration_Email_Alert</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.WCI_Expiration_Date__c</offsetFromField>
+            <timeLength>-45</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>60 day renewal notice for different license type</fullName>
+        <active>true</active>
+        <formula>Recalculate__c     ||      (         (Expiration_Date__c - TODAY() &lt;= 60)         &amp;&amp; (Expiration_Date__c &gt;= Today())         &amp;&amp; ISBLANK( Registration_Renewal_Rollup__c )         &amp;&amp; !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39;)         &amp;&amp; ISPICKVAL(Status__c, &#39;Approved&#39;)         &amp;&amp; RecordType.DeveloperName &lt;&gt; &#39;Entertainment_Work&#39;         &amp;&amp; !ISPICKVAL( Registration_Duration__c , &#39;10 Days - Temporary Permit&#39;)         &amp;&amp; !ISPICKVAL( Imported_From__c , &#39;LR-EWP&#39;)     )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X60_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>90 day renewal notice for different license type</fullName>
+        <active>true</active>
+        <formula>Recalculate__c     ||      (         (Expiration_Date__c - TODAY() &lt;= 90)         &amp;&amp; (Expiration_Date__c &gt;= Today())         &amp;&amp; ISBLANK( Registration_Renewal_Rollup__c )         &amp;&amp; !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39;)         &amp;&amp; ISPICKVAL(Status__c, &#39;Approved&#39;)         &amp;&amp; RecordType.DeveloperName &lt;&gt; &#39;Entertainment_Work&#39;         &amp;&amp; !ISPICKVAL( Registration_Duration__c , &#39;10 Days - Temporary Permit&#39;)         &amp;&amp; !ISPICKVAL( Imported_From__c , &#39;LR-EWP&#39;)     )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X90_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-90</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Clear Workers Comp Selection</fullName>
+        <actions>
+            <name>Replace_Workers_Comp_Selection</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(ISPICKVAL(PRIORVALUE  (Function_as_Employee_Leasing_Co__c),  &#39;No&#39;), ISCHANGED(Function_as_Employee_Leasing_Co__c), NOT(ISBLANK(TEXT(Workers_Comp_Selection__c))),NOT(ISNULL(TEXT( Workers_Comp_Selection__c )) ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Public Works Refund</fullName>
+        <actions>
+            <name>PW_Lapse_in_Reg_Cert_Cleared</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>PW_Ready_to_submit_Cleared</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>PW_Submitted_Date_Cleared</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>License_Registration__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Public Works</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Refund</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG - Change Owner to Car Wash Registration Queue</fullName>
+        <actions>
+            <name>Change_Owner_to_Car_Wash_Registration_Qu</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>License_Registration__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.License_Registration_Type__c</field>
+            <operation>equals</operation>
+            <value>Car Wash</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Capture Approval DateTime</fullName>
+        <actions>
+            <name>REG_Update_Approval_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Capture Approval DateTime and compare with Renewal DateTime to determine if it&#39;s a autorenewal.</description>
+        <formula>AND( ISCHANGED( Status__c ), ISPICKVAL( Status__c , &#39;Approved&#39;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Capture Payment DateTime</fullName>
+        <actions>
+            <name>REG_Update_Payment_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED( Status_of_Payment__c), Status_of_Payment__c = &#39;Paid / No Balance Due&#39; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Payment Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>License_Registration__c.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Public Works</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Payment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Balance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>Reminds applicant that payment is still pending 24 hrs after registration submission.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>REG_Send_payment_reminder_email</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>REG_Send_payment_reminder_email</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>REG%3A Renewal Application</fullName>
+        <actions>
+            <name>Reset_Send_Renewal_Application</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_Renewal_Registration</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>License_Registration__c.Send_Renewal_Application__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Workflow to reset renewal and trigger registration document on renewals.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send Application</fullName>
+        <actions>
+            <name>Reset_Registration_Send_Application</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_Registration_Send_Application</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow to reset Registration_Send_Application__c and trigger registration document on new and renewal registrations.</description>
+        <formula>Registration_Send_Application__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send PW Affidavit</fullName>
+        <actions>
+            <name>Reset_Send_PW_Affidavit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_PW_Send_Affidavit</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>Send_PW_Affidavit__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send PW Registration</fullName>
+        <actions>
+            <name>Reset_Send_PW_Registration</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_PW_Send_Registration</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow to reset checkbox used for PW affidavit/registration document</description>
+        <formula>Send_PW_Registration__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send new license once approved</fullName>
+        <actions>
+            <name>REG_Approved_TRUE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_Send_New_License_Approved</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>!ISPICKVAL( Registration_Duration__c , &#39;6 Months - Permit&#39;) &amp;&amp; !ISNEW()   &amp;&amp; ISPICKVAL ( Status__c , &#39;Approved&#39;)  &amp;&amp; Approved__c == False  &amp;&amp; ISCHANGED ( Status__c )  &amp;&amp; !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39;)  &amp;&amp; !ISBLANK ( Effective_Date__c )  &amp;&amp; !ISBLANK ( Expiration_Date__c )  &amp;&amp; !ISBLANK ( Account_Email__c  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send new license once re-approved</fullName>
+        <actions>
+            <name>Set_re_approved_to_TRUE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Send_New_License</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(!ISPICKVAL( Registration_Duration__c , &#39;6 Months - Permit&#39;), ISPICKVAL(Status__c, &quot;Approved&quot;), NOT(ISBLANK(Date_First_Approved__c)), NOW() &gt; Date_First_Approved__c + 0.1, Re_approved__c = FALSE, NOT(ISNEW())  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send new license when effective date changes</fullName>
+        <actions>
+            <name>Send_New_License</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>NOT(ISNULL(PRIORVALUE(Effective_Date__c)))
+NOT(ISNULL(PRIORVALUE(Expiration_Date__c)))</description>
+        <formula>AND(         !ISPICKVAL( Registration_Duration__c , &#39;6 Months - Permit&#39;)     , ISPICKVAL(Status__c, &#39;Approved&#39;)     ,  Expiration_Date_WF_Fired__c = TRUE     , !ISNEW()     , OR( AND( !ISNEW() 			, ISCHANGED(Effective_Date__c) 			, NOT(ISBLANK(Effective_Date__c)) 			, NOT(ISBLANK(PRIORVALUE(Effective_Date__c))) ) 		,  AND( ISCHANGED(Expiration_Date__c)                 , NOT(ISBLANK(Expiration_Date__c)) 				, NOT(ISBLANK(PRIORVALUE(Expiration_Date__c)))                 )           ) 	)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Send temporary license once approved</fullName>
+        <actions>
+            <name>REG_Approved_TRUE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_Send_New_License_Approved</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <formula>!ISNEW() &amp;&amp; ISPICKVAL ( Status__c , &#39;Approved&#39; ) &amp;&amp; ISCHANGED ( Status__c ) &amp;&amp; Approved__c == False &amp;&amp; ISPICKVAL ( Service_Type__c , &#39;Temporary&#39; ) &amp;&amp; !ISBLANK ( Expiration_Date__c ) &amp;&amp; !ISBLANK ( Effective_Date__c ) &amp;&amp; !ISBLANK ( Account_Email__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>REG%3A Set temporary license effective dates</fullName>
+        <actions>
+            <name>Check_Expiration_Date_WF_Fired</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Effective_Date_to_TODAY</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_expiration_date_to_three_months</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>License_Registration__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Expiration_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Service_Type__c</field>
+            <operation>equals</operation>
+            <value>Temporary</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Effective_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Expiration_Date_WF_Fired__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Sets effective and expiration dates if date fields are blank.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Registration Period is equal to 1</fullName>
+        <actions>
+            <name>Update_Reg_Effective_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>License_Registration__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Public Works</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.PW_FormTest_SetRegistrationPeriod__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Registration Period is equal to 3</fullName>
+        <actions>
+            <name>Set_Reg_Effective_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>License_Registration__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Public Works</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.PW_FormTest_SetRegistrationPeriod__c</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Registration renewal notices</fullName>
+        <active>false</active>
+        <description>Sends renewal notices at specified intervals based on the expiration of the registration.</description>
+        <formula>Recalculate__c || ( Expiration_Date__c &gt;= Today()  &amp;&amp; ( ( !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39;) &amp;&amp; ISPICKVAL ( Status__c , &#39;Approved&#39; ) ) || ( !ISPICKVAL ( Service_Type__c , &#39;Temporary&#39; ) &amp;&amp; ISPICKVAL ( Service_Type__c , &#39;Approved&#39; ) &amp;&amp; Expiration_Date__c - Today() &lt; 90 ) ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X60_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X30_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X90_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-90</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>X15_day_renewal_notice_for_different_license_types</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>License_Registration__c.Expiration_Date__c</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Send Application</fullName>
+        <actions>
+            <name>Reset_Send_Application</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_send_application</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>Sets the Send Application field and triggers the application document to be sent to the applicant</description>
+        <formula>Send_Application__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send License Registration Permit PDF</fullName>
+        <actions>
+            <name>Reset_Send_License_Registration_Permit</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>REG_Send_License_Registration_Permit</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>true</active>
+        <description>Triggered from CommunityRegistration.vfp when the users clicks email PDF.
+Sets Boolean Send_License_Registration_Permit_Boolean__c to true.
+Triggers Send License Registration Permit PDF workflow rule to be sent to the applicant.</description>
+        <formula>Send_License_Registration_Permit_Boolean__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Expiration date to one year</fullName>
+        <actions>
+            <name>Check_Expiration_Date_WF_Fired</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Effective_Date_to_TODAY</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Expiration_date_to_one_year</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>License_Registration__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Service_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Temporary</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Expiration date to three months</fullName>
+        <actions>
+            <name>Check_Expiration_Date_WF_Fired</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Effective_Date_to_TODAY</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_expiration_date_to_three_months</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>License_Registration__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>License_Registration__c.Service_Type__c</field>
+            <operation>equals</operation>
+            <value>Temporary</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Account Email</fullName>
+        <actions>
+            <name>Update_Account_Email_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>License_Registration__c.Account_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

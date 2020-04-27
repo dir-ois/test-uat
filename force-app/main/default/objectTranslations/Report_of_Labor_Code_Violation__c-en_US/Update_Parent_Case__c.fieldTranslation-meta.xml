@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Hidden Field to Update Parent Case --></help>
+    <label><!-- Update Parent Case --></label>
+    <name>Update_Parent_Case__c</name>
+    <picklistValues>
+        <masterLabel>Close Case Review</masterLabel>
+        <translation><!-- Close Case Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed by PAGA</masterLabel>
+        <translation><!-- Closed by PAGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cure Dispute</masterLabel>
+        <translation><!-- Cure Dispute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Litigation</masterLabel>
+        <translation><!-- In Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgement on Appeal</masterLabel>
+        <translation><!-- Judgement on Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New AutoRefer</masterLabel>
+        <translation><!-- New AutoRefer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New TBR</masterLabel>
+        <translation><!-- New TBR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order / Judgement Received</masterLabel>
+        <translation><!-- Order / Judgement Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Payment Received</masterLabel>
+        <translation><!-- Partial Payment Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Closure</masterLabel>
+        <translation><!-- Pending Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requires Manual Screening</masterLabel>
+        <translation><!-- Requires Manual Screening --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Screened / Pending Unit Review</masterLabel>
+        <translation><!-- Screened / Pending Unit Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement Pending</masterLabel>
+        <translation><!-- Settlement Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under PAGA Investigation</masterLabel>
+        <translation><!-- Under PAGA Investigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Litigation</masterLabel>
+        <translation><!-- Waiting for Litigation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Penalty</masterLabel>
+        <translation><!-- Waiting for Penalty --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

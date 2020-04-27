@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Defined__c</fullName>
+    <description>Indicates if the distribution accounting line is a User Defined Line (e.g. a revenue / reimbursement / abatement distribution line) or an AR line</description>
+    <externalId>false</externalId>
+    <formula>IF( OR( Account__c = &#39;1109300&#39;,Account__c = &#39;1200000&#39;,Account__c = &#39;1209900&#39;,Account__c = &#39;1209400&#39;), &#39;A&#39;,&#39;U&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Entry Type:  DR &amp;&amp; Monetary: + =  A
+Entry Type:  DR &amp;&amp; Monetary: -  =  U
+Entry Type:  CR &amp;&amp; Monetary: + =  U
+Entry Type:  DR &amp;&amp; Monetary: -  =  A</inlineHelpText>
+    <label>System_Defined</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

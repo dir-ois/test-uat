@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Relationship to the DIR Employee object creating a hierarchial relationship between an employee and his or her manager. Used in code to modify the role hierarchy and dynamically build teams</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the employee&#39;s manager.</inlineHelpText>
+    <label>Manager</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Manages these Employees</relationshipLabel>
+    <relationshipName>DIR_Employees</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

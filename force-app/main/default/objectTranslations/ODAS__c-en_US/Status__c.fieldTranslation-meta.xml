@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Appealed</masterLabel>
+        <translation><!-- Appealed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entered Judgment</masterLabel>
+        <translation><!-- Entered Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid</masterLabel>
+        <translation><!-- Paid --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

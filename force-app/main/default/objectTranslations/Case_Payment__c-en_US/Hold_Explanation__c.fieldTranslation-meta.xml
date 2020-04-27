@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For the information of Auditors, continued holding of undisbursed funds is justified for the for the following reasons: --></help>
+    <label><!-- Hold Explanation --></label>
+    <name>Hold_Explanation__c</name>
+</CustomFieldTranslation>

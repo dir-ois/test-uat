@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Agricultural_Labor_Relations__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Agricultural Labor Relations for PAGA violation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Agricultural Labor Relations for PAGA violation.</inlineHelpText>
+    <label>Agricultural Labor Relations</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

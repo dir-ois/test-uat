@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the date the case referred to the outside agency --></help>
+    <label><!-- Date Referred to Outside Agency --></label>
+    <name>Date_Referred_to_Outside_Agency__c</name>
+</CustomFieldTranslation>

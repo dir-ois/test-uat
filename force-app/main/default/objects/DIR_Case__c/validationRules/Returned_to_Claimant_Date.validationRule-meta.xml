@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returned_to_Claimant_Date</fullName>
+    <active>true</active>
+    <description>WCA, Garment cases returned to the claimant require returned to claimant date.</description>
+    <errorConditionFormula>ISPICKVAL( Status__c , &#39;Pending - Incomplete&#39; )
+&amp;&amp;
+ISBLANK (  Returned_to_Claimant_Date__c )
+&amp;&amp;
+(
+  RecordType.DeveloperName = &#39;WCA&#39;
+  ||
+  RecordType.DeveloperName = &#39;Garment&#39;
+)</errorConditionFormula>
+    <errorMessage>Please enter the Returned to Claimant Date</errorMessage>
+</ValidationRule>

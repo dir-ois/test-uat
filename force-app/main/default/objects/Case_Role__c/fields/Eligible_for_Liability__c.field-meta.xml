@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_for_Liability__c</fullName>
+    <description>Used in query on the violation engine to provide a subset of case roles eligible for a liability</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+	(
+		CASE ( Role__c ,
+			&#39;Business&#39; , &#39;TRUE&#39; , 
+			&#39;CEO&#39; , &#39;TRUE&#39; , 
+			&#39;CFO&#39; , &#39;TRUE&#39; , 
+			&#39;Chief&#39; , &#39;TRUE&#39; , 
+			&#39;Corporate Officer&#39; , &#39;TRUE&#39; , 
+			&#39;Guarantor&#39; , &#39;TRUE&#39; , 
+			&#39;Manager&#39; , &#39;TRUE&#39; , 
+			&#39;Managing Member&#39; , &#39;TRUE&#39; , 
+			&#39;Owner&#39; , &#39;TRUE&#39; , 
+			&#39;Secretary&#39; , &#39;TRUE&#39; , 
+			&#39;Subsidiary&#39; , &#39;TRUE&#39; , 
+                        &#39;Treasurer&#39; , &#39;TRUE&#39; , 
+                        &#39;President&#39; , &#39;TRUE&#39; ,
+                        &#39;Vice President&#39; , &#39;TRUE&#39; , 
+                        &#39;Case Employer&#39; , &#39;TRUE&#39; ,      
+                        &#39;Partner&#39; , &#39;TRUE&#39; ,
+                        &#39;Partnership&#39; , &#39;TRUE&#39; ,
+			&#39;FALSE&#39; ) = &#39;TRUE&#39;
+	||	 
+	( CONTAINS ( TEXT ( Role__c ), &#39;Defendant&#39; ) &amp;&amp; !CONTAINS ( TEXT ( Role__c ) , &#39;Attorney&#39; ) &amp;&amp; !CONTAINS ( TEXT ( Role__c ) , &#39;Representative&#39; ))
+	||
+	CONTAINS ( TEXT ( Role__c ), &#39;Successor&#39; )
+        ||
+	CONTAINS ( TEXT ( Role__c ), &#39;Employer&#39; )
+
+	) , 
+TRUE, FALSE )
+&amp;&amp; (  !ISPICKVAL(Case_Role_Status__c, &#39;No Longer Active On Case&#39;) )</formula>
+    <inlineHelpText>This field is set by a formula. contact your administrator if you need to add or remove roles from those eligible to be liable parties.</inlineHelpText>
+    <label>Eligible for Liability</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

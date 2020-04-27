@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clone_2</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Clone</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/{!Form_1__c.Id}/e?clone=1&amp;retURL=%2Fa{!Form_1__c.Id}&amp;00Nt0000000WqQO={!IF(  Form_1__c.Canceled_Old_Form1_ID_2__c &lt;&gt;null,1,0)}&amp;00Nt0000000WqQR={!IF( Form_1__c.Canceled_Old_Form1_ID_2__c &lt;&gt;null,Form_1__c.Name,&quot;&quot;)}</url>
+</WebLink>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Program --></label>
+    <name>Program__c</name>
+    <picklistValues>
+        <masterLabel>BOFE</masterLabel>
+        <translation><!-- BOFE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CMU</masterLabel>
+        <translation><!-- CMU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EEEC</masterLabel>
+        <translation><!-- EEEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EETF</masterLabel>
+        <translation><!-- EETF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LETF</masterLabel>
+        <translation><!-- LETF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PW</masterLabel>
+        <translation><!-- PW --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

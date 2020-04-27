@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total of all payments allocated to interest on violations on this assessment --></help>
+    <label><!-- Total Interest Paid --></label>
+    <name>Total_Interest_Paid__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PAGA Decision Letter Date --></help>
+    <label><!-- PAGA Decision Letter Date --></label>
+    <name>PAGA_Decision_Letter_Date__c</name>
+</CustomFieldTranslation>

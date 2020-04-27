@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_Authorization_Confirmation__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;By entering my name as a digital signature below, I understand that my authorization will remain in effect until further notice and that the information will be handled confidentially and in compliance with applicable laws.&quot;
+&amp;BR()
+&amp;BR()&amp;
+&quot;I understand that I may revoke the authorization at any time by written and dated communication. I have read and understand the nature of this release. I declare under penalty of perjury by the laws of the State of California that the foregoing is true and correct.&quot;
+&amp;BR()
+&amp;BR()&amp;
+&quot;I certify that all of the content in this release is true and that this e-signature is both legal and binding.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Agent Authorization Confirmation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

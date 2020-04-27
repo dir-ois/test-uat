@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BOFE_Registration_related_case_issue_30_day_reminder</fullName>
+        <description>BOFE Registration related case issue 30 day reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Registration_related_case_issue_30_day_reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_Dismissal_on_Violation</fullName>
+        <description>Request Dismissal on Violation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Request_Dismissal_on_Violation</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Case_Violation_Dismissed_Date</fullName>
+        <description>Sets the Dismissed Date to Today.</description>
+        <field>Dismissed_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Case Violation: Dismissed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reporting_Category_Transfer</fullName>
+        <field>Reporting_Category_Sort_Order_c__c</field>
+        <formula>Violation_Type__r.Reporting_Category_Sort_Order__c</formula>
+        <name>Reporting Category Transfer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Violation_Status_to_Open</fullName>
+        <description>Sets Case Violation Status on new case violations to open</description>
+        <field>Status__c</field>
+        <literalValue>Open</literalValue>
+        <name>Set Case Violation Status to Open</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Citation_Date</fullName>
+        <description>Sets citation date to today&#39;s date for BOFE Violations when violation is created</description>
+        <field>Citation_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Set Citation Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Form_Number</fullName>
+        <description>Sets the form number on the violation to the form number of the parent violation type</description>
+        <field>Citation_Form_Number__c</field>
+        <formula>IF( 
+  NOT ( 
+    ISPICKVAL ( Violation_Type__r.Violation_Type__c, &#39;&#39; ) 
+    ) 
+  , TEXT ( Violation_Type__r.Violation_Type__c ), NULL 
+  )</formula>
+        <name>Set Form Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Payment_Due_Date_Appeal</fullName>
+        <description>Sets the payment due date to the appeal finding date</description>
+        <field>Payment_Due_Date__c</field>
+        <formula>Appeal_Finding_Date__c</formula>
+        <name>Set Payment Due Date - Appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Payment_Due_Date_Citation</fullName>
+        <description>Sets the payment due date to the citation date</description>
+        <field>Payment_Due_Date__c</field>
+        <formula>Citation_Date__c</formula>
+        <name>Set Payment Due Date to Citation Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lost_Wages_Field</fullName>
+        <field>Lost_Wages__c</field>
+        <formula>1</formula>
+        <name>Update Lost Wages Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Report_Category</fullName>
+        <field>Report_Category_OLD__c</field>
+        <formula>TEXT(Violation_Type__r.X731_Report_Category__c)</formula>
+        <name>Update Report Category</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status_change_date</fullName>
+        <field>Status_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update status change date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Violation_Status</fullName>
+        <description>Sets the violation status to closed</description>
+        <field>Status__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Violation Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Zero_Out_Penalty_Assessment</fullName>
+        <description>Zero out penalty assessment.</description>
+        <field>Citation_Amount__c</field>
+        <formula>0</formula>
+        <name>Zero Out Penalty Assessment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Zero_Out_Wage_Assessment</fullName>
+        <description>Zero out Wage Assessment.</description>
+        <field>Wages_Due__c</field>
+        <name>Zero Out Wage Assessment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Admin Dismissal Set Values</fullName>
+        <actions>
+            <name>Zero_Out_Penalty_Assessment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Zero_Out_Wage_Assessment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Violation__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Administrative Dismissal</value>
+        </criteriaItems>
+        <description>Zero out assessments on Case Violation when status of Case Violation set to Administrative Dismissal.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Appeal Findings Populated</fullName>
+        <actions>
+            <name>Set_Payment_Due_Date_Appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Performs actions necessary when appeal findings date is populated</description>
+        <formula>ISCHANGED (  Appeal_Finding_Date__c )  &amp;&amp; NOT ( ISBLANK ( Appeal_Finding_Date__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Issue Create or Update</fullName>
+        <actions>
+            <name>Update_Report_Category</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Garment,Legacy Garment Case,Legacy WCA Case,WCA</value>
+        </criteriaItems>
+        <description>Any time a case issue is created or update</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case Issue Status Date</fullName>
+        <actions>
+            <name>Update_status_change_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( Status__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Citation Date Set no appeal</fullName>
+        <actions>
+            <name>Set_Payment_Due_Date_Citation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Performs actions necessary when citation date is set.</description>
+        <formula>NOT ( ISBLANK (  Citation_Date__c ) ) &amp;&amp; ISBLANK (  Appeal_Finding_Date__c )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Case Violations</fullName>
+        <actions>
+            <name>Set_Case_Violation_Status_to_Open</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Form_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow will set the status of new case violations to Open</description>
+        <formula>NOT(ISBLANK( CreatedDate))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>RCI - Update Lost Wages</fullName>
+        <actions>
+            <name>Update_Lost_Wages_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>(Violation_Type__r.Lost_Wages__c = TRUE) &amp;&amp; (RecordType.Name=&quot;RCI&quot;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Registration related case issue 30 day reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Violation__c.Citation_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Violation__c.Violation_Short_Description_Conga__c</field>
+            <operation>contains</operation>
+            <value>Registration</value>
+        </criteriaItems>
+        <description>Reminds deputy to check the registration status of an Entity 30 days after issuance of citation.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>BOFE_Registration_related_case_issue_30_day_reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>DIR_Violation__c.Citation_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Reporting Category Transfer</fullName>
+        <actions>
+            <name>Reporting_Category_Transfer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Report_Category</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Transfers the Reporting Category Sort Order field value from the Violation Type to the Case Issue record; used in SOQL query for ODA Table output and ordering.</description>
+        <formula>OR(ISNEW() , ISCHANGED(Violation_Type__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Citation Date on create</fullName>
+        <actions>
+            <name>Set_Citation_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sets the Citation Date field when the violation is created</description>
+        <formula>RecordType.DeveloperName = &#39;BOFE_Violations&#39; &amp;&amp; ISBLANK ( Citation_Date__c ) &amp;&amp; ISPICKVAL ( Imported_From__c , &#39;&#39;)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Violation%3A Dismissed Date</fullName>
+        <actions>
+            <name>Case_Violation_Dismissed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Violation__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Dismissed,Administrative Dismissal</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DIR_Violation__c.Dismissed_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Automatically sets the Dismissed Date to todays date if it is not populated upon the status being changed to Dismissed or Administratively Dismissed.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Violations paid actions</fullName>
+        <actions>
+            <name>Violation_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Performs actions necessary when a violation is paid</description>
+        <formula>Case__r.RecordType.DeveloperName = &#39;BOFE_Investigation&#39; &amp;&amp;  Penalty_Balance_Due__c = 0 &amp;&amp;  Wage_Balance_Due__c = 0 &amp;&amp;  Interest_Balance_Due__c = 0 &amp;&amp;  NOT ( ISPICKVAL ( Status__c , &#39;Dismissed&#39; ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

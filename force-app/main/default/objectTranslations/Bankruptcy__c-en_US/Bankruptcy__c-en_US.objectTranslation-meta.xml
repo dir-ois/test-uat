@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bankruptcy</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bankruptcies</value>
+    </caseValues>
+    <layouts>
+        <layout>Bankruptcy Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter the Date of Discharge --></errorMessage>
+        <name>Date_of_Discharge_Cannot_be_Blank</name>
+    </validationRules>
+</CustomObjectTranslation>

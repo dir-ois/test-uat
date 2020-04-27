@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_New_Probe_Period_on_Appointment</fullName>
+    <active>true</active>
+    <description>Field &quot;New Probation Period Required&quot; is required on new appointment</description>
+    <errorConditionFormula>AND ( (NOT(CONTAINS($Profile.Name,&#39;System Administrator&#39;))),
+(
+
+AND ( ISBLANK( TEXT(New_Probation_Period_Required__c )), ISBLANK( TEXT(Type_of_Separation__c )) )
+
+)
+)</errorConditionFormula>
+    <errorMessage>Please select a value for field &quot;New Probation Period Required?&quot;</errorMessage>
+</ValidationRule>

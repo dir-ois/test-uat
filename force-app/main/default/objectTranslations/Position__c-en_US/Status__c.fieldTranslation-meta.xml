@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>607 Pending Finance Approval</masterLabel>
+        <translation><!-- 607 Pending Finance Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abolished</masterLabel>
+        <translation><!-- Abolished --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filled</masterLabel>
+        <translation><!-- Filled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Position on Loan</masterLabel>
+        <translation><!-- Position on Loan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temporarily Vacant</masterLabel>
+        <translation><!-- Temporarily Vacant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacant</masterLabel>
+        <translation><!-- Vacant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

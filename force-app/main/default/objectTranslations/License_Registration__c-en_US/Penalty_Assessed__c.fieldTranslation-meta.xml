@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Penalty Assessed --></label>
+    <name>Penalty_Assessed__c</name>
+    <picklistValues>
+        <masterLabel>Penalty 1</masterLabel>
+        <translation><!-- Penalty 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penalty 2</masterLabel>
+        <translation><!-- Penalty 2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

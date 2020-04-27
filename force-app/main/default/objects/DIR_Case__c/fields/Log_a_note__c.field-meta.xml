@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_a_note__c</fullName>
+    <description>17421 - Input Notes here to be added to running list of notes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>17421 - Input Notes here to be added to running list of notes.</inlineHelpText>
+    <label>Log a note</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>8</visibleLines>
+</CustomField>

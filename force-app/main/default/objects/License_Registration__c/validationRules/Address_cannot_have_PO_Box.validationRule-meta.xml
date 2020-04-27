@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_cannot_have_PO_Box</fullName>
+    <active>true</active>
+    <description>Does not allow P.O Boxes to be added in address fields.</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( Physical_Business_Address_Line_1__c )
+||
+ISCHANGED ( Physical_Business_Address_Line_2__c )
+||
+ISCHANGED ( Residential_Address_Line_1__c )
+||
+ISCHANGED ( Residential_Address_Line_2__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+(
+OR(
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;PO BOX&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;PO BOX&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;PO BOX&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;PO BOX&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P.O Box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P.O Box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P.O Box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P.O Box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P.O. Box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P.O. Box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P.O. Box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P.O. Box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;po box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;po box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;po box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;po box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P.O. box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P.O. box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P.O. box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P.O. box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;p.o. box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;p.o. box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;p.o. box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;p.o. box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;PO Box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;PO Box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;PO Box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;PO Box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P. O. box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P. O. box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P. O. box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P. O. box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;p. o. box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;p. o. box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;p. o. box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;p. o. box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;p o box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;p o box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;p o box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;p o box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P. O. Box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P. O. Box&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P. O. Box&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P. O. Box&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P. O. BOX&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P. O. BOX&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P. O. BOX&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P. O. BOX&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P.O. BOX&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P.O. BOX&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P.O. BOX&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P.O. BOX&quot;),
+CONTAINS( Physical_Business_Address_Line_1__c , &quot;P.O.Box&quot;),
+CONTAINS( Physical_Business_Address_Line_2__c, &quot;P.O.BOX&quot;),
+CONTAINS( Residential_Address_Line_1__c, &quot;P.O.BOX&quot;),
+CONTAINS( Residential_Address_Line_2__c, &quot;P.O.BOX&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>P.O. Boxes are not accepted addresses. Please change to a physical location before moving forward.</errorMessage>
+</ValidationRule>

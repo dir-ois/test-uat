@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Separation__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Separation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>120 Position # change</fullName>
+                <default>false</default>
+                <label>120 Position # change</label>
+            </value>
+            <value>
+                <fullName>405 Time Base Change</fullName>
+                <default>false</default>
+                <label>405 Time Base Change</label>
+            </value>
+            <value>
+                <fullName>565-IDL</fullName>
+                <default>false</default>
+                <label>565-IDL</label>
+            </value>
+            <value>
+                <fullName>565-TD</fullName>
+                <default>false</default>
+                <label>565-TD</label>
+            </value>
+            <value>
+                <fullName>Reallocation-(A20)</fullName>
+                <default>false</default>
+                <label>Reallocation (A20)</label>
+            </value>
+            <value>
+                <fullName>S01-Resignation</fullName>
+                <default>false</default>
+                <label>S01-Resignation</label>
+            </value>
+            <value>
+                <fullName>S05-Resignation Without Fault</fullName>
+                <default>false</default>
+                <label>S05-Resignation Without Fault</label>
+            </value>
+            <value>
+                <fullName>S21-AWOL</fullName>
+                <default>false</default>
+                <label>S21-AWOL</label>
+            </value>
+            <value>
+                <fullName>S31-No Layoff</fullName>
+                <default>false</default>
+                <label>S31-No Layoff</label>
+            </value>
+            <value>
+                <fullName>S40-Termination with fault</fullName>
+                <default>false</default>
+                <label>S40-Termination with fault</label>
+            </value>
+            <value>
+                <fullName>S41-Dismissal</fullName>
+                <default>false</default>
+                <label>S41-Dismissal</label>
+            </value>
+            <value>
+                <fullName>S49-NDI</fullName>
+                <default>false</default>
+                <label>S49-NDI</label>
+            </value>
+            <value>
+                <fullName>S50-Leave of Absence</fullName>
+                <default>false</default>
+                <label>S50-Leave of Absence</label>
+            </value>
+            <value>
+                <fullName>S50-SDI Leave of Absence</fullName>
+                <default>false</default>
+                <label>S50-SDI Leave of Absence</label>
+            </value>
+            <value>
+                <fullName>S51-Military</fullName>
+                <default>false</default>
+                <label>S51-Military</label>
+            </value>
+            <value>
+                <fullName>S57 Pending Disability</fullName>
+                <default>false</default>
+                <label>S57 Pending Disability</label>
+            </value>
+            <value>
+                <fullName>S70-Service Retirement</fullName>
+                <default>false</default>
+                <label>S70-Service Retirement</label>
+            </value>
+            <value>
+                <fullName>S71-Disability Retirement</fullName>
+                <default>false</default>
+                <label>S71-Disability Retirement</label>
+            </value>
+            <value>
+                <fullName>S80 Termination-Illegal Appointment</fullName>
+                <default>false</default>
+                <label>S80 Termination-Illegal Appointment</label>
+            </value>
+            <value>
+                <fullName>S85-Adverse Suspension</fullName>
+                <default>false</default>
+                <label>S85-Adverse Suspension</label>
+            </value>
+            <value>
+                <fullName>S90-Probe Rejection</fullName>
+                <default>false</default>
+                <label>S90-Probe Rejection</label>
+            </value>
+            <value>
+                <fullName>S95-Death</fullName>
+                <default>false</default>
+                <label>S95-Death</label>
+            </value>
+            <value>
+                <fullName>SPC-Special Change</fullName>
+                <default>false</default>
+                <label>SPC-Special Change</label>
+            </value>
+            <value>
+                <fullName>Transfer/Promotion within DIR</fullName>
+                <default>false</default>
+                <label>Transfer/Promotion within DIR</label>
+            </value>
+            <value>
+                <fullName>Transfer to another Agency/Department</fullName>
+                <default>false</default>
+                <label>Transfer to another Agency/Department</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

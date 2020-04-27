@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEIN_must_be_8_numbers</fullName>
+    <active>true</active>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( State_Employer_Identification_Number__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+OR( 
+AND( 
+LEN( State_Employer_Identification_Number__c ) &lt;&gt; 8, 
+NOT(ISBLANK( State_Employer_Identification_Number__c )), 
+RecordType.Name &lt;&gt; &quot;Management Individual&quot; 
+), 
+AND( 
+NOT(ISNUMBER( State_Employer_Identification_Number__c )), 
+NOT(ISBLANK(State_Employer_Identification_Number__c )), 
+RecordType.Name &lt;&gt; &quot;Management Individual&quot; 
+) 
+)</errorConditionFormula>
+    <errorMessage>SEIN must be 8 numbers. Please correct to continue.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Location</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Locations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Location Registration Form Fields --></label>
+        <name>Location_Registration_Form_Fields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Address Locked</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Location Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Locations are changed to this record type so that the locked page layout is used as the location is created. --></description>
+        <label><!-- Location Locked --></label>
+        <name>Location_Locked</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for when a location is created only. Changed to Location Locked after creation --></description>
+        <label><!-- New Location --></label>
+        <name>New_Location</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter an Address or Approximate Location in order to save an address record. --></errorMessage>
+        <name>Address_or_Intersection_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a description for the address or select another address type --></errorMessage>
+        <name>Req_Other_Add_Desc</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Check_Address --></label>
+        <name>Check_Address</name>
+    </webLinks>
+</CustomObjectTranslation>

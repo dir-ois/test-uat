@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommendations__c</fullName>
+    <description>Deputy uses this to specify the recommendations on the Inspection Request related to the Inspection.  Once populated click Submit for Approval to send to the Senior Deputy for Approval.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Deputy uses this to specify the recommendations on the Inspection Request related to the Inspection.  Once populated click Submit for Approval to send to the Senior Deputy for Approval.</inlineHelpText>
+    <label>Recommendations</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

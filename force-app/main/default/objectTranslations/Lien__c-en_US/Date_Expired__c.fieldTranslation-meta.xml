@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date Lien Expires: 10 years for real property, 5 years for personal-property/UCC, etc --></help>
+    <label><!-- Date Expired --></label>
+    <name>Date_Expired__c</name>
+</CustomFieldTranslation>

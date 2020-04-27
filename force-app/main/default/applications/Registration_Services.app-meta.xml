@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Contains the common tabs for performing the work of the registration services group</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Registration Services</label>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>License_Registration__c</tabs>
+    <tabs>Defect__c</tabs>
+    <tabs>Rejection__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>Support_Request__c</tabs>
+    <tabs>Registration_Location__c</tabs>
+    <tabs>Registration_Account__c</tabs>
+</CustomApplication>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Type --></label>
+    <name>Service_Type__c</name>
+    <picklistValues>
+        <masterLabel>CERTIFIED</masterLabel>
+        <translation><!-- CERTIFIED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIRST CLASS</masterLabel>
+        <translation><!-- FIRST CLASS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PERSONAL SERVICE</masterLabel>
+        <translation><!-- PERSONAL SERVICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAIVER - FIRST CLASS</masterLabel>
+        <translation><!-- WAIVER - FIRST CLASS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

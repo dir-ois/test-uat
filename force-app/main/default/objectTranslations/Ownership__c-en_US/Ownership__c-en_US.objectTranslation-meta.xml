@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ownership</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ownership</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Owner Registration - Joint Venture --></label>
+        <name>Owner_Registration_Joint_Venture</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Owner_Registration_Joint_Venture TA --></label>
+        <name>Owner_Registration_Joint_Venture_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ownership Registration Form Fields --></label>
+        <name>Ownership_Registration_Form_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Ownership Registration Form Fields TA --></label>
+        <name>Ownership_Registration_Form_Fields_TA</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Registration Ownership - slim --></label>
+        <name>Registration_Ownership_slim</name>
+    </fieldSets>
+    <layouts>
+        <layout>Ownership Layout</layout>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Ownership --></label>
+        <name>Ownership</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- P.O. Boxes are not accepted addresses. Please change to a physical location before moving forward. --></errorMessage>
+        <name>Address_cannot_have_PO_Box</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a 10-digit phone number with no characters or spaces. --></errorMessage>
+        <name>Phone_can_only_have_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- US phone numbers must be 10 numbers. Please correct to continue. --></errorMessage>
+        <name>Phone_must_be_10_numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- U.S. Zip codes must have 5 digits or 9 digits with a dash between the 5th and 6th digit. --></errorMessage>
+        <name>Require_formatting_for_US_zip_codes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that SSN and Re-typed SSN match. --></errorMessage>
+        <name>SSN_Verification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Social Security numbers must have 9 numbers. --></errorMessage>
+        <name>SSN_must_be_9_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ownership percentage cannot be greater than 100 --></errorMessage>
+        <name>ownership_100_max</name>
+    </validationRules>
+</CustomObjectTranslation>

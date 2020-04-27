@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the text that can be searched in the case issue wizard when looking for issues to add. --></help>
+    <label><!-- Wizard Search Text --></label>
+    <name>Wizard_Search_Text__c</name>
+</CustomFieldTranslation>

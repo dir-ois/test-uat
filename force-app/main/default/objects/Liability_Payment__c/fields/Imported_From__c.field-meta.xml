@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Imported_From__c</fullName>
+    <externalId>false</externalId>
+    <label>Imported From</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BOFE AR</fullName>
+                <default>false</default>
+                <label>BOFE AR</label>
+            </value>
+            <value>
+                <fullName>BOFE AR Import 2</fullName>
+                <default>false</default>
+                <label>BOFE AR Import 2</label>
+            </value>
+            <value>
+                <fullName>LBO_AR</fullName>
+                <default>false</default>
+                <label>LBO_AR</label>
+            </value>
+            <value>
+                <fullName>BOFE-TIPP</fullName>
+                <default>false</default>
+                <label>BOFE-TIPP</label>
+            </value>
+            <value>
+                <fullName>FM-TIPP</fullName>
+                <default>false</default>
+                <label>FM-TIPP</label>
+            </value>
+            <value>
+                <fullName>08-116</fullName>
+                <default>false</default>
+                <label>08-116</label>
+            </value>
+            <value>
+                <fullName>Import 2</fullName>
+                <default>false</default>
+                <label>Import 2</label>
+            </value>
+            <value>
+                <fullName>STK-WCA</fullName>
+                <default>false</default>
+                <label>STK-WCA</label>
+            </value>
+            <value>
+                <fullName>SAC-WCA</fullName>
+                <default>false</default>
+                <label>SAC-WCA</label>
+            </value>
+            <value>
+                <fullName>FRE-WCA</fullName>
+                <default>false</default>
+                <label>FRE-WCA</label>
+            </value>
+            <value>
+                <fullName>11-119</fullName>
+                <default>false</default>
+                <label>11-119</label>
+            </value>
+            <value>
+                <fullName>32-117</fullName>
+                <default>false</default>
+                <label>32-117</label>
+            </value>
+            <value>
+                <fullName>SFO-WCA</fullName>
+                <default>false</default>
+                <label>SFO-WCA</label>
+            </value>
+            <value>
+                <fullName>BAK-WCA</fullName>
+                <default>false</default>
+                <label>BAK-WCA</label>
+            </value>
+            <value>
+                <fullName>SRO-WCA</fullName>
+                <default>false</default>
+                <label>SRO-WCA</label>
+            </value>
+            <value>
+                <fullName>Garment</fullName>
+                <default>false</default>
+                <label>Garment</label>
+            </value>
+            <value>
+                <fullName>SBR-WCA</fullName>
+                <default>false</default>
+                <label>SBR-WCA</label>
+            </value>
+            <value>
+                <fullName>VNO-WCA</fullName>
+                <default>false</default>
+                <label>VNO-WCA</label>
+            </value>
+            <value>
+                <fullName>RDG-WCA</fullName>
+                <default>false</default>
+                <label>RDG-WCA</label>
+            </value>
+            <value>
+                <fullName>BOFE FM Import 2</fullName>
+                <default>false</default>
+                <label>BOFE FM Import 2</label>
+            </value>
+            <value>
+                <fullName>SBA-WCA</fullName>
+                <default>false</default>
+                <label>SBA-WCA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

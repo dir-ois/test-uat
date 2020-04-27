@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Settlement Grade --></label>
+    <name>Settlement_Grade__c</name>
+    <picklistValues>
+        <masterLabel>Fail</masterLabel>
+        <translation><!-- Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Pass</masterLabel>
+        <translation><!-- High Pass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marginal Pass</masterLabel>
+        <translation><!-- Marginal Pass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pass</masterLabel>
+        <translation><!-- Pass --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

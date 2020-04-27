@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_outcome_on_close</fullName>
+    <active>true</active>
+    <description>When status is closed, require an outcome.</description>
+    <errorConditionFormula>ISPICKVAL ( Request_Status__c , &#39;closed&#39; ) 
+&amp;&amp;
+ISPICKVAL (  Outcome__c, &#39;&#39; )
+&amp;&amp;
+CONTAINS(RecordType.DeveloperName, &quot;BOFE&quot;)</errorConditionFormula>
+    <errorMessage>Please enter an outcome in order to close a request</errorMessage>
+</ValidationRule>

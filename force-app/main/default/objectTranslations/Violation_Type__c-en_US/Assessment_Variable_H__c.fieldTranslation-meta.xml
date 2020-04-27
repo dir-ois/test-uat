@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Variable &quot;H&quot; in the Assessment Calculation. You may reference other fields using {!Object.FieldName} Notation. Use {!Input} to specify User Input --></help>
+    <label><!-- Assessment Variable H --></label>
+    <name>Assessment_Variable_H__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Needed__c</fullName>
+    <description>Dictates the approval that is needed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Dictates the approval that is needed.</inlineHelpText>
+    <label>Approval Needed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>true</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>BOFE Deputy</fullName>
+                <default>false</default>
+                <label>BOFE Deputy</label>
+            </value>
+            <value>
+                <fullName>BOFE Sr. Deputy</fullName>
+                <default>false</default>
+                <label>BOFE Sr. Deputy</label>
+            </value>
+            <value>
+                <fullName>Wage Deputy</fullName>
+                <default>false</default>
+                <label>Wage Deputy</label>
+            </value>
+            <value>
+                <fullName>Wage Sr. Deputy</fullName>
+                <default>false</default>
+                <label>Wage Sr. Deputy</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

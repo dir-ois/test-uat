@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter additional information to request from the employee/claimaint. This will merge into forms being sent out. --></help>
+    <label><!-- Additional Information Requested --></label>
+    <name>Additional_Information_Requested__c</name>
+</CustomFieldTranslation>

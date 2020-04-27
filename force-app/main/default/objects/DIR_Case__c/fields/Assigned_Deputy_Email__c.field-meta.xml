@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Deputy_Email__c</fullName>
+    <description>Used to send emails to assigned deputy about events related to the case. Set by wfr when a case is assigned to a deputy and pushed down to child records where necessary to send emails related to child records only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Holds the assigned deputy&#39;s email address for us in emails via wfrs</inlineHelpText>
+    <label>Assigned Deputy Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

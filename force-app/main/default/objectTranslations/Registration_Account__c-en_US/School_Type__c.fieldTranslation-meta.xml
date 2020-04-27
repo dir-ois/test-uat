@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- School Type --></label>
+    <name>School_Type__c</name>
+    <picklistValues>
+        <masterLabel>Home School</masterLabel>
+        <translation><!-- Home School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online/Virtual School</masterLabel>
+        <translation><!-- Online/Virtual School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private School</masterLabel>
+        <translation><!-- Private School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public School</masterLabel>
+        <translation><!-- Public School --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

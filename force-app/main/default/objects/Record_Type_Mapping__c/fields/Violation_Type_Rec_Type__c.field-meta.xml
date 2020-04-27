@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type_Rec_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the record type of the violation types that should display in the violation engine for the related case rec type.</inlineHelpText>
+    <label>Violation Type Rec Type</label>
+    <length>50</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

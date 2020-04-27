@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Initial payment made when plan was created --></help>
+    <label><!-- Down Payment --></label>
+    <name>Payment_Plan_Down__c</name>
+</CustomFieldTranslation>

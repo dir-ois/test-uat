@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Threat Documentation --></label>
+    <name>Threat_Documentation__c</name>
+    <picklistValues>
+        <masterLabel>Call log</masterLabel>
+        <translation><!-- Call log --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email copy</masterLabel>
+        <translation><!-- Email copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter copy</masterLabel>
+        <translation><!-- Letter copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone recording</masterLabel>
+        <translation><!-- Phone recording --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Text copy</masterLabel>
+        <translation><!-- Text copy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

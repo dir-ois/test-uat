@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Deductions__c</fullName>
+    <description>Roll up summary that sums up all the Deductions of Bond Deductions related to a Bond record.</description>
+    <externalId>false</externalId>
+    <label>Total Deductions</label>
+    <summarizedField>Bond_Deduction__c.Amount__c</summarizedField>
+    <summaryForeignKey>Bond_Deduction__c.Bond__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

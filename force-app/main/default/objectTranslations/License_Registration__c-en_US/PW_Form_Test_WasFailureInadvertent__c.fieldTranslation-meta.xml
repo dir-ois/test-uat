@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PW Form Test - WasFailureInadvertent --></label>
+    <name>PW_Form_Test_WasFailureInadvertent__c</name>
+    <picklistValues>
+        <masterLabel>Yes - July2 - Oct1 Period</masterLabel>
+        <translation><!-- Yes - July2 - Oct1 Period --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

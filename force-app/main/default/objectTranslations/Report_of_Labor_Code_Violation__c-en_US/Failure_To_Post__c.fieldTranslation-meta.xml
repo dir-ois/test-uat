@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Full First Choice is Applicable Industrial Welfare Commission Order not posted.
+Full Last Choice is Rate of compensation not posted (for farmworkers only) --></help>
+    <label><!-- Failure To Post --></label>
+    <name>Failure_To_Post__c</name>
+    <picklistValues>
+        <masterLabel>Applicable Industrial Welfare Com.Order</masterLabel>
+        <translation><!-- Applicable Industrial Welfare Com.Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimum Wage Order 2001 not posted</masterLabel>
+        <translation><!-- Minimum Wage Order 2001 not posted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay day notice not posted</masterLabel>
+        <translation><!-- Pay day notice not posted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rate of compensation not posted (farms)</masterLabel>
+        <translation><!-- Rate of compensation not posted (farms) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers comp insurance notice not posted</masterLabel>
+        <translation><!-- Workers comp insurance notice not posted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

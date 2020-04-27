@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subpoena43_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id + 
+&quot;&amp;reportid=[Employee]00Od0000004pzun?pv2=&quot; + Case__r.Id 
++ &quot;,[Employors]00Od0000004pzuo?pv2=&quot; + Case__r.Id 
++ &quot;,[All]00Od0000004pzup?pv2=&quot; + Case__r.Id + 
+&quot;&amp;queryid=[WCAOffice]a0md00000064cjOAAQ?pv0=&quot; + Case__r.Id
++ &quot;,[Complainant]a0md00000064cjQAAQ?pv0=&quot; + Case__r.Id
++ &quot;,[Defendant]a0md00000064cjRAAQ?pv0=&quot; + Case__r.Id
++ &quot;,[HearingInfo]a0md00000064cjuAAA?pv0=&quot; + Case__r.Id 
++ &quot;,[Governor]a0md0000003l2S0&quot;
++ &quot;&amp;qmode=Download&quot;
++ &quot;&amp;DefaultPDF=0&quot;
++ &quot;&amp;templateId=a0nd0000005OSvH&quot; 
++ &quot;&amp;OFN={Template.Label}&quot; + &quot; &quot; + Case__r.Case_Number__c + &quot; &quot; + Case_Role__r.Account_Name__c
++ &quot;&amp;SC0=1&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subpoena43 URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

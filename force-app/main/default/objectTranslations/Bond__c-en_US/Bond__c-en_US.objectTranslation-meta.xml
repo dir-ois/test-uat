@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bond</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bonds</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Registration Form Bond Field Set --></label>
+        <name>Registration_Form_Bond_Field_Set</name>
+    </fieldSets>
+    <layouts>
+        <layout>Bond Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Total Deductions and Balance --></label>
+            <section>Total Deductions and Balance</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registration Bond Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Total Deductions and Balance --></label>
+            <section>Total Deductions and Balance</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Generate_Bond_Documents --></label>
+        <name>Generate_Bond_Documents</name>
+    </webLinks>
+</CustomObjectTranslation>

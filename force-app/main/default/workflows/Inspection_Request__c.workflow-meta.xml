@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Deputy_Not_Assigned_to_Inspection_Request_after_5_Days</fullName>
+        <description>Deputy Not Assigned to Inspection Request after 5 Days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Not_Assigned_After_5_Days</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Assignment</fullName>
+        <description>Inspection Request Assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Closed_Notify_Reporting_Party</fullName>
+        <description>Inspection Request Closed Notify Reporting Party</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Requesting_Party_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Status_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Created</fullName>
+        <description>Inspection Request Created</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Requesting_Party_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Created_New_Case</fullName>
+        <description>Inspection Request Created - New Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Requesting_Party_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Not_Complete</fullName>
+        <description>Inspection Request Not Complete</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Not_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Recommendation_Approved</fullName>
+        <description>Inspection Request Recommendation Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Recommendation_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_Recommendation_Rejected</fullName>
+        <description>Inspection Request Recommendation Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Inspection_Request_Recommendation_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Inspection_Request_has_been_assigned_to_you</fullName>
+        <description>Inspection Request has been assigned to you</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Deputy_assigned_inspection_request</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Case_Management_L_R_True</fullName>
+        <description>L&amp;R Request = True on Case Management (Used for when an Inspection Request is Created0</description>
+        <field>L_R_Request__c</field>
+        <literalValue>1</literalValue>
+        <name>Case Management L&amp;R True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>Case__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Completion_Date_Today</fullName>
+        <description>Inspection Request Completion Date is Today</description>
+        <field>Completion_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Completion Date Today</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IR_Due_Date_30_Days</fullName>
+        <description>Sets the Inspection Request Due Date to 30 days from Today.</description>
+        <field>Due_Date__c</field>
+        <formula>TODAY()+30</formula>
+        <name>IR Due Date 30 Days</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Inspection_Request_Completion_Date</fullName>
+        <description>Sets the Inspection Request Completion Date to Today.</description>
+        <field>Completion_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Inspection Request Completion Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Recomendation_Approved_True</fullName>
+        <description>Sets Recomendation Approved</description>
+        <field>Recommendation_Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Recomendation Approved True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>IR%3A Populate Due Date If Blank</fullName>
+        <actions>
+            <name>IR_Due_Date_30_Days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Inspection_Request__c.Due_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Automatically populates the Due Date 30 days from TODAY if not populated by the user.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Assigned To You</fullName>
+        <actions>
+            <name>Inspection_Request_has_been_assigned_to_you</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notifies when Inspection Request is assigned to the Deputy</description>
+        <formula>AND(ISCHANGED ( Assigned_Deputy__c ), NOT(ISBLANK(PRIORVALUE(Assigned_Deputy__c))) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Closed Actions</fullName>
+        <actions>
+            <name>Inspection_Request_Closed_Notify_Reporting_Party</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Inspection_Request_Completion_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Inspection_Request__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>Actions to perform on an Inspection Request Closing: Populating the Completed Date, Sending a Notification to the Requestor</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Complete Date</fullName>
+        <actions>
+            <name>Completion_Date_Today</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Inspection_Request__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Inspection Complete</value>
+        </criteriaItems>
+        <description>Inspection Request Complete Date populated once Status is Complete</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Created</fullName>
+        <actions>
+            <name>Inspection_Request_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Inspection_Request__c.Assigned_Senior_Deputy__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notifies the BOFE Senior Deputy upon the Inspection Request being Created and the Senior Deputy being assigned.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Created - New Case</fullName>
+        <actions>
+            <name>Inspection_Request_Created_New_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Inspection_Request__c.Requesting_Party_User__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Inspection_Request__c.Assigned_Deputy__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notifies the Requester upon the Inspection Request being Created</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Deadlines</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>DIR_Case__c.Assigned_Deputy_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Inspection_Request__c.Due_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notifies the Deputy and Senior Deputy with specific updates based on timelines.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Deputy_Not_Assigned_to_Inspection_Request_after_5_Days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Deadlines Assigned</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Inspection_Request__c.Due_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Inspection_Request__c.Assigned_Deputy__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Inspection_Request__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <description>Notifies the Deputy and Senior Deputy with specific updates based on timelines. This is for Assigned Cases that have not been closed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Inspection_Request_Not_Complete</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Inspection_Request__c.Due_Date__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Inspection_Request_Not_Complete</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Inspection_Request__c.Due_Date__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Inspection_Request_Not_Complete</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Inspection_Request__c.Due_Date__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Inspection_Request_Not_Complete</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Inspection_Request__c.Due_Date__c</offsetFromField>
+            <timeLength>-5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Deputy Not Assigned</fullName>
+        <active>true</active>
+        <description>Notifies the Case Management Owner (who should be a Senior Deputy) that they have not assigned a Deputy to the Case within 5 days of an Inspection Request being Created.</description>
+        <formula>ISBLANK (Case__r.Assigned_Deputy__c) || ISBLANK (Assigned_Senior_Deputy__c)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Deputy_Not_Assigned_to_Inspection_Request_after_5_Days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Inspection Request Update L%26R Field on Case</fullName>
+        <actions>
+            <name>Case_Management_L_R_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sets the L&amp;R Checkbox on the Case to True once an L&amp;R Request is Made</description>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

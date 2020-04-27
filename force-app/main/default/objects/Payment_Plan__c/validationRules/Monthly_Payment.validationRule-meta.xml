@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monthly_Payment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(Imported_From__c), 
+TEXT(Frequency__c) = &#39;Monthly&#39;,
+ISBLANK( Payment_Plan_Day_of_Month_Payment_Due__c)
+)</errorConditionFormula>
+    <errorMessage>If Frequency = Monthly, then Day of Month Payment Due is required.</errorMessage>
+</ValidationRule>

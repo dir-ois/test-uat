@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check if exceptions Loggin is enabled for the org --></help>
+    <label><!-- Exceptions Enabled --></label>
+    <name>ExceptionsEnabled__c</name>
+</CustomFieldTranslation>

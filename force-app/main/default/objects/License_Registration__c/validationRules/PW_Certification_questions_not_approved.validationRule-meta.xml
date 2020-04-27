@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Certification_questions_not_approved</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ISPICKVAL(CSLB_Certification__c,&quot;No&quot;),
+ISPICKVAL(Debarment_Certification__c, &quot;No&quot;),
+ISPICKVAL(Liability_Certification__c, &quot;No&quot;)
+)</errorConditionFormula>
+    <errorMessage>Your Contractor Certification information prevents you from registering with Public Works. Contractors who do not meet this business condition are ineligible for registration. Please email Publicworks@dir.ca.gov for registration eligibility questions.</errorMessage>
+</ValidationRule>

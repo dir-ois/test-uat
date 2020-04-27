@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please enter the same business name as is registered with the CA Secretary of State. For sole proprietorship the Contractor Legal Name must match the full name on driver’s license. --></help>
+    <label><!-- Legal Entity Name --></label>
+    <name>Legal_Entity_Name__c</name>
+</CustomFieldTranslation>

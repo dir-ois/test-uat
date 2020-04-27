@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_explain_if_not_in_good_standing</fullName>
+    <active>true</active>
+    <description>If an applicant selects &quot;No&quot; to answer whether they are in good standing with the secretary of state, then they must also fill out an explanation as to why.</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  !ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( Not_in_good_standing_explanation__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+AND(
+ISBLANK( Not_in_good_standing_explanation__c ),
+ISPICKVAL( Good_standing_with_CA_Secretary_of_State__c , &quot;No&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please explain why this business is not in good standing with the Secretary of State.</errorMessage>
+</ValidationRule>

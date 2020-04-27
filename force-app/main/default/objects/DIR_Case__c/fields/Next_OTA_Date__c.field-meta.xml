@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_OTA_Date__c</fullName>
+    <description>Next Order to Appear date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the date of the next interview resulting from an &#39;Order To Appear.&#39; LETF uses this date to coordinate their efforts with the assigned deputy.</inlineHelpText>
+    <label>LETF OTA Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

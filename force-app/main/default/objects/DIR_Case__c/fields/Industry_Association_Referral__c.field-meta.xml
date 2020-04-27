@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Association_Referral__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>used for setting priority. Set by trigger when an RLCV has been submitted from an Industry Association</description>
+    <externalId>false</externalId>
+    <inlineHelpText>An RLCV has been submitted from an Industry Association.</inlineHelpText>
+    <label>Industry Association Referral</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

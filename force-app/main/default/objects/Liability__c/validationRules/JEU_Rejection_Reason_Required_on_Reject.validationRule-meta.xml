@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JEU_Rejection_Reason_Required_on_Reject</fullName>
+    <active>true</active>
+    <description>Requires that the JEU Reject Reason is once the case is marked as Rejected by JEU</description>
+    <errorConditionFormula>IF (ISBLANK ( JEU_Reject_Reason__c ) &amp;&amp; ISPICKVAL(Refer_to_JEU__c , &quot;Rejected&quot;), TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>JEU_Reject_Reason__c</errorDisplayField>
+    <errorMessage>You must specify the reason this case is being rejected by the JEU</errorMessage>
+</ValidationRule>

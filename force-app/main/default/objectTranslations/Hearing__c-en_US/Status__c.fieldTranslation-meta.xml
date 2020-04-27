@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Appeal Withdrawn</masterLabel>
+        <translation><!-- Appeal Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuance Rejected</masterLabel>
+        <translation><!-- Continuance Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuance Requested</masterLabel>
+        <translation><!-- Continuance Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continued</masterLabel>
+        <translation><!-- Continued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deny License Renewal</masterLabel>
+        <translation><!-- Deny License Renewal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed</masterLabel>
+        <translation><!-- Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed-Def FTA</masterLabel>
+        <translation><!-- Dismissed-Def FTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed–Div FTA</masterLabel>
+        <translation><!-- Dismissed–Div FTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure to Appear</masterLabel>
+        <translation><!-- Failure to Appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meeting Approved</masterLabel>
+        <translation><!-- Meeting Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meeting Rejected</masterLabel>
+        <translation><!-- Meeting Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Off Calendar</masterLabel>
+        <translation><!-- Off Calendar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid Pre-Hearing</masterLabel>
+        <translation><!-- Paid Pre-Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Approval</masterLabel>
+        <translation><!-- Pending Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postponed</masterLabel>
+        <translation><!-- Postponed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Hearing - Claimant only appeared</masterLabel>
+        <translation><!-- Referred to Hearing - Claimant only appeared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred to Hearing - No Settlement</masterLabel>
+        <translation><!-- Referred to Hearing - No Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rescheduled</masterLabel>
+        <translation><!-- Rescheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revoke License</masterLabel>
+        <translation><!-- Revoke License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled</masterLabel>
+        <translation><!-- Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled Pre-Hearing</masterLabel>
+        <translation><!-- Settled Pre-Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrawn</masterLabel>
+        <translation><!-- Withdrawn --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

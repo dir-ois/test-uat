@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- nunc pro tunc --></label>
+    <name>nunc_pro_tunc__c</name>
+    <picklistValues>
+        <masterLabel>Amended</masterLabel>
+        <translation><!-- Amended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nunc Pro Tunc</masterLabel>
+        <translation><!-- Nunc Pro Tunc --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

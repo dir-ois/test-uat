@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_must_equal_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>Location__r.Entity__c &lt;&gt;  Case_Role__r.Entity__c</errorConditionFormula>
+    <errorMessage>The Account on both Location and Case Role must be the same</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Indicates the decision by BOFE whether they will investigate or not. --></help>
+    <label><!-- PAGA Decision --></label>
+    <name>PAGA_Decision__c</name>
+    <picklistValues>
+        <masterLabel>BOFE Will Investigate</masterLabel>
+        <translation><!-- BOFE Will Investigate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Will Not Investigate</masterLabel>
+        <translation><!-- BOFE Will Not Investigate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

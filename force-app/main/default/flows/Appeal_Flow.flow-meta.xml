@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>chatter_on_registration</name>
+        <label>chatter on registration</label>
+        <locationX>459</locationX>
+        <locationY>270</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varRegistrationID</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>The case related to this registration has had an appeal filed</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Input_Variables</name>
+        <label>Input Variables</label>
+        <locationX>220</locationX>
+        <locationY>110</locationY>
+        <assignmentItems>
+            <assignToReference>varRegistrationID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varCaseID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varAppealID</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Registration_populated</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Registration_populated</name>
+        <label>Registration populated</label>
+        <locationX>217</locationX>
+        <locationY>266</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Registration_on_Case</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegistrationID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>chatter_on_registration</targetReference>
+            </connector>
+            <label>Registration on Case</label>
+        </rules>
+    </decisions>
+    <description>Handles all actions related to an appeal.
+
+Current functionality only chatters on registration when registration is populated on case being appealed. Logic to launch flow is in Process Builder</description>
+    <interviewLabel>Appeal Flo {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Appeal Flow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Registration_populated</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>ID of appeal that triggered flow</description>
+        <name>varAppealID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of case being Appealed</description>
+        <name>varCaseID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>ID of registration related to case being appealed.</description>
+        <name>varRegistrationID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

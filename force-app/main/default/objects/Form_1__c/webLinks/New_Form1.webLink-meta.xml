@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Form1</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Form1</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/a0J/e?
+CF00NK0000000XZcg={!URLENCODE(Position__c.Name)}&amp;
+CF00NK0000000XZcg_lkid={!Position__c.Id}&amp;
+retURL=%2F{!Position__c.Id}
+&amp;00NK0000000XZdE={!Position__c.Location__c}</url>
+</WebLink>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This application is to manage projects and support requests.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Service Management</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>BOFE User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>DIR Cashiering</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>JEU User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>PAGA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Public Works User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RCI User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>DLSE Restricted User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>System Administrator LTD</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>WCA User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>BOFE User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>DIR Cashiering</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>DLSE Restricted User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>JEU User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>PAGA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Public Works User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>RCI User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>System Administrator LTD</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>DLSE Restricted User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>JEU User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>PAGA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Public User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>RCI User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>System Administrator LTD</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>WCA User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>BOFE User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>DIR Cashiering</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>DLSE Restricted User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Change_Request</recordType>
+        <type>Flexipage</type>
+        <profile>WCA User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>BOFE User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>DIR Cashiering</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>DLSE Restricted User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>JEU User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>BOFE User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Bug_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Bug__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>DIR Cashiering</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>JEU User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>PAGA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Public Works User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>RCI User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>System Administrator LTD</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Support_Request</recordType>
+        <type>Flexipage</type>
+        <profile>WCA User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>BOFE User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>DIR Cashiering</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>DLSE Restricted User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>JEU User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>PAGA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Public Works User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>System Administrator LTD</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>WCA User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>PAGA Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Public Works User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>RCI User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>System Administrator LTD</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.Sub_Project</recordType>
+        <type>Flexipage</type>
+        <profile>WCA User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Service_Request_Record</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Support_Request__c</pageOrSobjectType>
+        <recordType>Support_Request__c.User_Account_Request</recordType>
+        <type>Flexipage</type>
+        <profile>RCI User</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>Support_Request__c</tabs>
+    <tabs>Release__c</tabs>
+    <tabs>Projects__c</tabs>
+    <tabs>Bug__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

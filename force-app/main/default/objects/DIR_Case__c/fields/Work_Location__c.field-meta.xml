@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>For cases where a single location is pertinent (such as WCA, Garment) this field will hold the location where the work was performed. This field is used to set the office to which a case is assigned.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Location where work was performed by the worker</inlineHelpText>
+    <label>Work Location</label>
+    <referenceTo>Address__c</referenceTo>
+    <relationshipLabel>Case Management</relationshipLabel>
+    <relationshipName>Case_Management</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

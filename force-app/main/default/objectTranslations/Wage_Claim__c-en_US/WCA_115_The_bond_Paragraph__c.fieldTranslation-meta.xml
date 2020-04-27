@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 115 The bond Paragraph --></label>
+    <name>WCA_115_The_bond_Paragraph__c</name>
+</CustomFieldTranslation>

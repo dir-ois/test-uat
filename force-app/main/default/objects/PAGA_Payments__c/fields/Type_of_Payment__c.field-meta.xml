@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Payment__c</fullName>
+    <description>Type of Payment for the PAGA Payment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Payment for the PAGA Payment</inlineHelpText>
+    <label>Type of Payment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Penalty Payment</fullName>
+                <default>false</default>
+                <label>Penalty Payment</label>
+            </value>
+            <value>
+                <fullName>Filing Fee</fullName>
+                <default>false</default>
+                <label>Filing Fee from PAGA Filer</label>
+            </value>
+            <value>
+                <fullName>Filing Fee from PAGA Employer</fullName>
+                <default>false</default>
+                <label>Filing Fee from PAGA Employer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Joint_Liability__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag set when saving an ODA for parties that are jointly liable or joint employers. Allows for the production of output documents that combine the liable parties and name them appropriately</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there are multiple entities that are party to this ODA and they are jointly liable, this field will be checked.</inlineHelpText>
+    <label>Joint Liability</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

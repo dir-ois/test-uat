@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_required_for_Other_Mod_Type</fullName>
+    <active>true</active>
+    <description>Comment required when choosing them &quot;Other&quot; Modification Type.</description>
+    <errorConditionFormula>( ISPICKVAL(Modification_Type__c, &quot;Other&quot;))&amp;&amp;(ISBLANK( Comment__c ))</errorConditionFormula>
+    <errorMessage>Comment required when Modification Type is &quot;Other&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Registration Document Type --></label>
+    <name>Registration_Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Affidavit of Character</masterLabel>
+        <translation><!-- Affidavit of Character --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Articles of Incorporation/Organization</masterLabel>
+        <translation><!-- Articles of Incorporation/Organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bond Certification</masterLabel>
+        <translation><!-- Bond Certification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business License</masterLabel>
+        <translation><!-- Business License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Tax Registration Certificate aka Zoning permit</masterLabel>
+        <translation><!-- Business Tax Registration Certificate aka Zoning permit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certificate of Limited Partnership</masterLabel>
+        <translation><!-- Certificate of Limited Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collective Bargaining Agreement (CBA)</masterLabel>
+        <translation><!-- Collective Bargaining Agreement (CBA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Driver License or Photo ID</masterLabel>
+        <translation><!-- Driver License or Photo ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Leasing WCI</masterLabel>
+        <translation><!-- Employee Leasing WCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exclusive Contract</masterLabel>
+        <translation><!-- Exclusive Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Employer Identification Number (FEIN)</masterLabel>
+        <translation><!-- Federal Employer Identification Number (FEIN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fee Schedule</masterLabel>
+        <translation><!-- Fee Schedule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fictitious Business Name Statement for DBA</masterLabel>
+        <translation><!-- Fictitious Business Name Statement for DBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IRS Clearance Letter</masterLabel>
+        <translation><!-- IRS Clearance Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Waste Discharge Permit Certificate</masterLabel>
+        <translation><!-- Industrial Waste Discharge Permit Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous Documents</masterLabel>
+        <translation><!-- Miscellaneous Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Exclusive Contract</masterLabel>
+        <translation><!-- Non-Exclusive Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Required Document</masterLabel>
+        <translation><!-- Other Required Document --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Record</masterLabel>
+        <translation><!-- Personal Record --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premise Certification</masterLabel>
+        <translation><!-- Premise Certification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premise Certification - Main Location</masterLabel>
+        <translation><!-- Premise Certification - Main Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sample Leasing Contract</masterLabel>
+        <translation><!-- Sample Leasing Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed Employee Leasing Contract</masterLabel>
+        <translation><!-- Signed Employee Leasing Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Employer Identification Number (SEIN)</masterLabel>
+        <translation><!-- State Employer Identification Number (SEIN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statement of Information</masterLabel>
+        <translation><!-- Statement of Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workers Compensation Insurance (WCI)</masterLabel>
+        <translation><!-- Workers Compensation Insurance (WCI) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

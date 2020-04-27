@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCI_Initial_Cert_Date_in_past</fullName>
+    <active>true</active>
+    <description>Require that the initial certification date of WCI be in today date or in the past</description>
+    <errorConditionFormula>/* Evaluate in these conditions */
+(
+ (/* Exempt new imported records */
+  ISNEW() &amp;&amp; !ISBLANK(TEXT (Imported_From__c))
+ )
+||
+/* or ready to submit */
+ISPICKVAL( Ready_to_Submit__c, &#39;Yes&#39; )
+
+/* Or the field value has changed */
+||
+ISCHANGED ( WCI_Initial_Certification_Date__c )
+)
+
+&amp;&amp;
+/* Core of validation rule */
+
+WCI_Initial_Certification_Date__c &gt; Today()</errorConditionFormula>
+    <errorMessage>The initial certification date for Workers&#39; Compensation Insurance must be in today date or in the past.</errorMessage>
+</ValidationRule>

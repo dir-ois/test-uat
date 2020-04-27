@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check if this location is believed to be active for the company --></help>
+    <label><!-- Active Location --></label>
+    <name>Active_Location__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_3B_Paragraph_3__c</fullName>
+    <defaultValue>&#39;The case arises out of the claim you filed with this office seeking to recover unpaid wages.  Our review of the materials and information provided reveals that the employer named in the claim is insolvent.  Proceedings against insolvent employers are generally ineffectual.  After carefully considering the circumstances of this case, it is our conclusion that proceeding against this insolvent employer would constitute an inappropriate utilization of this agency’s limited administrative resources.&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 3B Insolvent</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

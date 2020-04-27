@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Sum__c</fullName>
+    <description>For deposits, this is the sum of all eligible RCTs. Populated on record creation by the recordDeposits_Controller apex class. If Transaction type is adjustment, this is populated by Transaction Flow by taking the deposit total and adding it here.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of all payments in this transaction.</inlineHelpText>
+    <label>Transaction Sum</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

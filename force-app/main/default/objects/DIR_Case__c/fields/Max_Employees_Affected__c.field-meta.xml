@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Employees_Affected__c</fullName>
+    <description>Rolls up the max of the number of employees affected on RLCVs for BOFE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Rolls up the max of the number of employees affected reported on all RLCVs on this case.</inlineHelpText>
+    <label>Max Employees Affected</label>
+    <summarizedField>Report_of_Labor_Code_Violation__c.Max_Affected_Employees__c</summarizedField>
+    <summaryForeignKey>Report_of_Labor_Code_Violation__c.DIR_Case__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

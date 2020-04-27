@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_Up_Question_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>Follow Up Question Detail</label>
+    <referenceTo>Follow_Up_Question_Detail__c</referenceTo>
+    <relationshipLabel>Follow Up Question Data</relationshipLabel>
+    <relationshipName>Follow_Up_Question_Data</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

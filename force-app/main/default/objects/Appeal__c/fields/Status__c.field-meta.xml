@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Received - Timely</fullName>
+                <default>true</default>
+                <label>Received - Timely</label>
+            </value>
+            <value>
+                <fullName>Received - Untimely</fullName>
+                <default>false</default>
+                <label>Received - Untimely</label>
+            </value>
+            <value>
+                <fullName>Sent to Calendar Clerk</fullName>
+                <default>false</default>
+                <label>Sent to Calendar Clerk</label>
+            </value>
+            <value>
+                <fullName>Hearing Scheduled</fullName>
+                <default>false</default>
+                <label>Hearing Scheduled</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Referred</fullName>
+                <default>false</default>
+                <label>Referred</label>
+            </value>
+            <value>
+                <fullName>Accepted Representation</fullName>
+                <default>false</default>
+                <label>Accepted Representation</label>
+            </value>
+            <value>
+                <fullName>Trial Pending</fullName>
+                <default>false</default>
+                <label>Trial Pending</label>
+            </value>
+            <value>
+                <fullName>Court Decision</fullName>
+                <default>false</default>
+                <label>Court Decision</label>
+            </value>
+            <value>
+                <fullName>Settled</fullName>
+                <default>false</default>
+                <label>Settled</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Affirmed</fullName>
+                <default>false</default>
+                <label>Affirmed</label>
+            </value>
+            <value>
+                <fullName>Modified - Affirmed</fullName>
+                <default>false</default>
+                <label>Modified - Affirmed</label>
+            </value>
+            <value>
+                <fullName>Remanded for Investigation</fullName>
+                <default>false</default>
+                <label>Remanded for Investigation</label>
+            </value>
+            <value>
+                <fullName>Reversed and Dismissed</fullName>
+                <default>false</default>
+                <label>Reversed and Dismissed</label>
+            </value>
+            <value>
+                <fullName>Reversed to Cause</fullName>
+                <default>false</default>
+                <label>Reversed to Cause</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

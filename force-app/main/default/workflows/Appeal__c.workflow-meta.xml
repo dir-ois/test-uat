@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Appeal</fullName>
+        <description>Appeal</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Hearing_Officer_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Hearing_Officer_Senior_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Hearing_Not_Set_For_Appea</template>
+    </alerts>
+    <alerts>
+        <fullName>Appeal_Rejected</fullName>
+        <description>Appeal Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Appeal_BOFE_Rejected_appeal</template>
+    </alerts>
+    <alerts>
+        <fullName>Appeal_Withdrawn_Notification_Assigned_Deputy_Hearing_Officer</fullName>
+        <description>Appeal Withdrawn Notification-Assigned Deputy, Hearing Officer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Hearing_Officer_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Appeal_Withdrawn_Notification_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_on_Appeal</fullName>
+        <description>Notification on Appeal</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Deputy_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Assigned_Senior_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Hearing_Officer_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Notification_on_Appeal</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Appeal_Hearing_Must_Be_Set_No_Later_Than</fullName>
+        <description>Appeal hearing must be set no later than 30 days after the request of the receipt of the appeal.</description>
+        <field>Hearing_Must_Be_Set_No_Later_Than__c</field>
+        <formula>Request_Receipt_Date__c + 30</formula>
+        <name>Appeal Hearing Must Be Set No Later Than</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_Deputy_Email_to_Appeal</fullName>
+        <field>Assigned_Deputy_Email__c</field>
+        <formula>Case__r.Assigned_Deputy__r.Email__c</formula>
+        <name>Copy Deputy Email to Appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_H_O_Senior_Email_to_Appeal</fullName>
+        <field>Hearing_Officer_Senior_Email__c</field>
+        <formula>Hearing_Officer__r.Manager__r.Email__c</formula>
+        <name>Copy H.O. Senior Email to Appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_Hearing_Officer_to_Appeal</fullName>
+        <description>To copy Hearing Officer&#39;s email from CM to Appeal. The email is for withdrawn appeal notification. This field is to remain hidden.</description>
+        <field>Hearing_Officer_Email__c</field>
+        <formula>Hearing_Officer__r.Email__c</formula>
+        <name>Copy Hearing Officer to Appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_Senior_Email_to_Appeal</fullName>
+        <field>Assigned_Senior_Email__c</field>
+        <formula>Case__r.Senior_Deputy_Email__c</formula>
+        <name>Copy Senior Email to Appeal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Hearing_Schedule_Overdue</fullName>
+        <field>Overdue_Date__c</field>
+        <formula>Request_Receipt_Date__c</formula>
+        <name>Hearing Schedule Overdue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Overdue_Date</fullName>
+        <description>Sets the overdue date field to 30 days after the request for hearing.</description>
+        <field>Overdue_Date__c</field>
+        <formula>Overdue_Date__c + 30</formula>
+        <name>Update Overdue Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Appeal Hearing Must Be Set By</fullName>
+        <actions>
+            <name>Appeal_Hearing_Must_Be_Set_No_Later_Than</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Appeal__c.Request_Receipt_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appeal__c.Scheduled_Hearing_Date_and_Time__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appeal__c.Waive_Time_Limit__c</field>
+            <operation>notEqual</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appeal__c.Imported_From__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Appeal hearing must be within 30 days of the Appeal request being made.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Appeal</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Appeal__c.Hearing_Must_Be_Set_No_Later_Than__c</offsetFromField>
+            <timeLength>-10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Appeal Hearing NOT Set</fullName>
+        <actions>
+            <name>Hearing_Schedule_Overdue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Appeal__c.Request_Receipt_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appeal__c.Scheduled_Hearing_Date_and_Time__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appeal__c.Imported_From__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Appeal__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Withdrawn</value>
+        </criteriaItems>
+        <description>Appeal hearing not set 30 days of the Appeal request being made. To send email alert to: WCA Senior, Assigned Deputy and the Senior Dep, and HO.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Appeal</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Update_Overdue_Date</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Appeal__c.Overdue_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Appeal Test</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Appeal__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Withdrawn</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Appeal Withdrawn Notification</fullName>
+        <actions>
+            <name>Appeal_Withdrawn_Notification_Assigned_Deputy_Hearing_Officer</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>When the appeal is withdrawn, the assigned deputy and assigned hearing officer shall be notified.</description>
+        <formula>ISPICKVAL(Status__c, &#39;Withdrawn&#39;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copy Deputy Email to Appeal</fullName>
+        <actions>
+            <name>Copy_Deputy_Email_to_Appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copy_Hearing_Officer_to_Appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>To copy assigned deputy&#39;s email from CM to Appeal. The email is for withdrawn appeal notification</description>
+        <formula>true</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copy Senior Email to Appeal</fullName>
+        <actions>
+            <name>Copy_H_O_Senior_Email_to_Appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Copy_Senior_Email_to_Appeal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>To copy assigned SENIOR deputy&#39;s email from CM to Appeal. The email is for appeals not set.</description>
+        <formula>true</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

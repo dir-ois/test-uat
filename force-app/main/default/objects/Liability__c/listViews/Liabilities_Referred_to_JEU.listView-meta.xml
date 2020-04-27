@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liabilities_Referred_to_JEU</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Employer__c</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Citation_Number__c</columns>
+    <columns>Refer_to_JEU_Date__c</columns>
+    <columns>Penalty_Balance_Due__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Refer_to_JEU__c</field>
+        <operation>equals</operation>
+        <value>Referred</value>
+    </filters>
+    <filters>
+        <field>JEU_Number__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Liabilities Referred to JEU for Review</label>
+</ListView>

@@ -1,0 +1,474 @@
+<apex:page controller="FieldUpdateConfigController" showheader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+	<html>
+    	<head>    
+	        <link rel="stylesheet" href="{!URLFOR($Resource.jquery_mobile, 'jquery.mobile-1.4.5.min.css')}" id="cssId"/>
+	        <script src="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"></script>
+	        <script src="{!URLFOR($Resource.jquery_mobile,'jquery.mobile-1.4.5.min.js')}"></script>
+			<meta http-equiv="Cache-Control" content="no-store" />
+	        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	    </head>
+	    <style>
+	    	tr {
+			    border-bottom: 1px solid #d6d6d6;
+			}
+			th {
+			    border-bottom: 1px solid #d6d6d6;
+			}
+			
+			tr:nth-child(even) {
+			    background: #e9e9e9;
+			}
+			.custPopup{
+	            background-color: white;
+	            border-width: 2px;
+	            border-style: solid;
+	            z-index: 9999;
+	            left: 50%;
+	            padding:10px;
+	            position: absolute;
+	            width: 1000px;
+	            margin-left: -500px;
+	            top:100px;
+	        }
+	        .popupBackground{
+	            background-color:black;
+	            opacity: 0.20;
+	            filter: alpha(opacity = 20);
+	            position: absolute;
+	            width: 100%;
+	            height: 100%;
+	            top: 0;
+	            left: 0;
+	            z-index: 9998;
+	        }
+			</style>
+    	<body>
+    		<apex:form id="theForm">
+    			<apex:actionFunction name="newFilter" action="{!addNewFilter}" rerender="attPanel" />
+    			<apex:actionFunction name="editFilter" action="{!editFilter}" rerender="attPanel" >
+                    <apex:param name="attId" value="" id="attParamStr" assignTo="{!selectedAttId}"/>
+                </apex:actionFunction>
+                <!--  
+                <apex:actionFunction name="removeFilter" action="{!removeFilter}" rerender="attPanel" >
+                    <apex:param name="attRemId" value="" id="attRemStr" assignTo="{!selectedAttId}"/>
+                </apex:actionFunction>
+                -->
+                <apex:actionFunction name="saveFilter" action="{!saveFilter}" rerender="attPanel" onComplete="$('#myTable2').table(); $('secondStepDiv').trigger('create'); $.mobile.back();">
+                    <apex:param name="attSaveId" value="" id="attSaveStr" assignTo="{!selectedAttId}"/>
+                </apex:actionFunction>
+    			<apex:actionFunction name="getSelected" action="{!getSelected}" rerender="step1OP" onComplete="$('#firststepDiv').trigger('create');"/>
+    			<apex:actionFunction name="renderSecondStep" action="{!renderSecondStep}" rerender="step1OP, step2OP" onComplete="$('#firststepDiv').trigger('create');"/>
+	    	    <div data-role="page" data-rel="dialog">
+	    	    
+	    	    <!-- POPUPS -->
+	    	    <div id="popups" >
+	    	    	<apex:repeat value="{!attList}" var="att">
+	    	    		<!--  
+		    			<div data-role="popup" id="popupDelete{!att.thisAtt.Id}" data-position-to="window" data-transition="flow" data-overlay-theme="a">
+							<div data-role="header">
+								<h1>Are You Sure?</h1>
+							</div>
+							<div data-role="main" class="ui-content">
+								<p>Deactivating this filter will cause disable the creation of Attachments Plus records for Attachments that meet this filter criteria. Do you wish to proceed?</p>
+								<table>
+									<tr>
+										<td>
+											<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Cancel</a>
+										</td>
+										<td>
+											<apex:commandButton value="Continue" styleClass="ui-btn ui-corner-all ui-shadow ui-btn-inline" onClick="removeFilter('{!att.thisAtt.Id}')" rerender="attPanel" onComplete="$('#myTable2').table(); $('secondStepDiv').trigger('create');">
+												
+											</apex:commandButton>
+											
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						-->
+						<div data-role="popup" id="popup{!att.thisAtt.Id}" data-position-to="window" data-transition="flow" data-overlay-theme="a" data-dismissible="false">
+							<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+							<h3>Edit Attachment</h3>
+							<table cellSpacing="20%" data-role="table" class="ui-responsive ui-shadow">
+								<thead>
+									<tr>
+										<th>Criteria</th>
+										<th>Operator</th>
+										<th>Type</th>
+										<th>Attorney Client Privilege</th>
+										<th>Not Subject to PRA</th>
+										<th>Confidential</th>
+										<th>Active</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<apex:inputField value="{!att.thisAtt.Attachment_Criteria__c}" />
+										</td>
+										<td>
+											<apex:inputField value="{!att.thisAtt.Attachment_Operator__c}" />
+										</td>
+										<td>
+											<apex:inputField value="{!att.thisAtt.Type__c}" />
+										</td>
+										<td >
+											<apex:inputField value="{!att.thisAtt.Attorney_Client_Privilege__c}" />
+										</td>
+										<td >
+											<apex:inputField value="{!att.thisAtt.Not_Subject_to_PRA__c}" />
+										</td>
+										<td >
+											<apex:inputField value="{!att.thisAtt.Confidential__c}" />
+										</td>
+										<td>
+											<apex:inputField value="{!att.thisAtt.Active__c}" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table>
+								<tr>
+									<td>
+										<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Cancel</a>
+									</td>
+									<td>
+										<apex:commandButton value="save" onClick="saveFilter('{!att.thisAtt.Id}');" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</apex:repeat>
+					<div data-role="popup" id="popupNewFilter" data-position-to="window" data-transition="flow" data-overlay-theme="a" data-dismissible="false">
+						<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<h3>New Filter</h3>
+						<table cellSpacing="20%" data-role="table" class="ui-responsive ui-shadow">
+							<thead>
+								<tr>
+									<th>Criteria</th>
+									<th>Operator</th>
+									<th>Type</th>
+									<th>Attorney Client Privilege</th>
+									<th>Not Subject to PRA</th>
+									<th>Confidential</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<apex:inputField value="{!newFilter.Attachment_Criteria__c}" />
+									</td>
+									<td>
+										<apex:inputField value="{!newFilter.Attachment_Operator__c}" />
+									</td>
+									<td>
+										<apex:inputField value="{!newFilter.Type__c}" />
+									</td>
+									<td >
+										<apex:inputField value="{!newFilter.Attorney_Client_Privilege__c}" />
+									</td>
+									<td >
+										<apex:inputField value="{!newFilter.Not_Subject_to_PRA__c}" />
+									</td>
+									<td >
+										<apex:inputField value="{!newFilter.Confidential__c}" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br/><br/>
+						<table>
+							<tr>
+								<td>
+									<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Cancel</a>
+								</td>
+								<td>
+									<apex:commandButton value="save" onClick="saveFilter('NEW');" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					</div>
+					<!-- END POPUPS -->
+					
+	        	    <div data-role="header" data-add-back-btn="true">
+		            	<h1>
+		                	Field History Configuration
+		                </h1>
+		            </div>
+		            <div>
+		            	<apex:pageMessages />
+		            </div>
+	    			<br/><br/>
+	            	<div data-role="content" id="theDiv">
+	           			<apex:outputPanel id="step1OP" layout="block">
+	           				<apex:outputPanel rendered="{!firstStep}">
+	           					<div id="firststepDiv">
+									<apex:outputPanel id="landingPanel" layout="block">
+										<div align="center">
+											<table width="40%">
+												<tr>
+													<td>
+														<apex:outputText value="Select Which Configuration Type" rendered="{!NOT(renderFieldUpdate)}"/>
+														<apex:outputText value="Select Which Object and RecordType to Configure" rendered="{!renderFieldUpdate}"/>
+													</td>
+													<td>
+														<apex:selectList size="1" value="{!selectedType}" multiselect="false" rendered="{!NOT(renderFieldUpdate)}" onChange="getSelected();">
+									                        <apex:selectOption itemLabel="Attachment" itemvalue="att" />
+									                        <apex:selectOption itemLabel="Activity" itemvalue="act" />
+									                        <apex:selectOption itemLabel="Field Update" itemvalue="fu" />
+									                    </apex:selectList>
+									                    <apex:selectList size="1" value="{!selectedObject}" rendered="{!renderFieldUpdate}">
+															<apex:selectOptions value="{!availObjects}" />
+														</apex:selectList>
+									                </td>
+									                <!--  
+									                <td>
+									                	<apex:selectList size="1" value="{!selectedRT}" rendered="{!renderFieldUpdate}" disabled="{!NOT(hasSelected)}">
+															<apex:selectOptions value="{!availRTs}" />
+														</apex:selectList>
+									                </td>
+									                -->
+								                </tr>
+						                    </table>
+										</div>
+									</apex:outputPanel>
+									<div align="center">
+										<apex:outputPanel id="breakPanel"><br/><br/></apex:outputPanel>
+										<apex:outputPanel id="buttonPanel" layout="block">
+											<table width="40%">
+												<tr>
+													<td>
+														<apex:commandButton value="Back" action="{!resetView}" rerender="step1OP" onComplete="$('#firststepDiv').trigger('create');" rendered="{!AND(renderFieldUpdate, firstStep)}"/>
+													</td>
+													<td>
+														<apex:commandButton value="Next" action="{!renderSecondStep}" rerender="step1OP, step2OP" onComplete="$('secondStepDiv').trigger('create'); $('#myTable').table(); $('#myTable2').table(); $('#myTable3').table(); $('#myTable4').table(); $('#myTable5').table(); $('#myTable').floatThead();"/> 
+													</td>
+												</tr>
+											</table>
+										</apex:outputPanel>
+									</div>
+								</div>
+							</apex:outputPanel>
+							<apex:outputPanel id="step2OP" layout="block" rendered="{!secondStep}">
+								<div id="secondStepDiv" >
+									<apex:outputPanel layout="block" rendered="{!renderFieldUpdate}">
+										<div id="searchDiv">
+					            			<input id="filterTB" type="text" placeholder="Search for fields" />
+					            			<script type="text/javascript">
+					            				$(function() {
+					            					$('#filterTB').keydown(function (e) {
+									        			var code = (e.keyCode ? e.keyCode : e.which);
+													    if (code == 13) {
+													    	e.preventDefault();
+													    	return;
+													    }
+													}); 
+													$('#filterTB').keyup(function (e) {
+									        			var needle = $('#filterTB').val().toLowerCase();
+									        			$('#myTable').find('tbody').each(function() {
+									        				console.log($(this));
+									        				$(this).find('tr').each(function() {
+										        				$(this).hide();
+										        				var haystack = $(this).find('td').text().toLowerCase();
+										        				if (haystack.indexOf(needle) > -1) {
+										        					$(this).show();
+										        				}
+											        		});
+									        			});
+									        		});
+									        	});
+								        	</script>
+										</div>
+										<br/><br/>
+										<div style="height: 600px;border:1px solid black; overflow-y: scroll;" id="contentContainer">
+											<apex:variable value="{!4}" var="rowNum"/>
+											<table cellSpacing="20%" data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable">
+												<thead>
+													<tr id="headerRow">
+														<!--<th align="left" data-priority="1">Select</th>-->
+														<th align="left" data-priority="2" >Field Name</th>
+														<th align="left" data-priority="3">API Name</th>
+														<apex:repeat value="{!rtList}" var="rt" rendered="{!IF(ISNULL(rtList), false, true)}">
+															<th align="left" data-priority="{!rowNum}">{!rt.Name}</th>
+															<apex:variable var="rowNum" value="{!rowNum + 1}"/>
+														</apex:repeat>
+													</tr>
+												</thead>
+												<tbody>
+													<apex:repeat value="{!fwList}" var="fw">
+														<tr>
+														<!-- 
+															<td align="left">
+																<apex:inputCheckbox id="fwSelect" value="{!fw.selected}" />
+															</td>
+														 -->
+															<td align="left" class="searchField">
+																<apex:outputText value="{!fw.devName}" />
+															</td>
+															<td align="left">
+																<apex:outputText value="{!fw.apiName}" />
+															</td>
+															<apex:repeat value="{!rtList}" var="recType" >
+																<td align="left">
+																	<apex:inputCheckBox value="{!fw.rtMap[recType.Id].selected}" rendered="{!NOT(ISNULL(recType.Id))}"/>
+																	<apex:inputCheckBox value="{!fw.rtMap['ALL'].selected}" rendered="{!ISNULL(recType.Id)}"/>
+																</td>
+															</apex:repeat>
+															<apex:outputPanel >
+																<td align="left">
+																	<apex:inputCheckBox value="{!fw.selected}"/>
+																</td>
+															</apex:outputPanel>
+														</tr>
+							            			</apex:repeat>
+						            			</tbody>
+						            		</table>
+										</div>
+										<br/><br/>
+										<div align="center">
+											<table cellSpacing="20%">
+												<tr>
+													<td><apex:commandButton value="Cancel" action="{!resetView}" rerender="step1OP, step2OP" onComplete="$('#firststepDiv').trigger('create');"/></td>
+													<td><apex:commandButton value="Save" action="{!saveSelected}" rerender="step1OP, step2OP" html-data-ajax="false" onComplete="$('#firststepDiv').trigger('create');"/></td>
+												</tr>
+											</table>
+										</div>
+									</apex:outputPanel>
+									<apex:outputPanel layout="block" rendered="{!renderAttachmentUpdate}" id="attPanel">
+										<fieldset data-role="controlgroup" data-mini="true" data-corners="false" id="attPlusFilterList" style="margin: 0px; width:95%;">
+											<header><h2>Attachment Filters</h2></header>
+											<div style="height: 600px; width: 100%; border:1px solid black; overflow-y: scroll;">
+												<apex:variable value="{!3}" var="rowNum"/>
+												<table cellSpacing="20%" data-role="none" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable2" width="100%">
+													<a href="#popupNewFilter" data-rel="popup" class="ui-btn ui-btn-inline" data-theme="b">New Attachment Filter</a>
+													<thead>
+														<tr>
+															<th align="left" data-priority="2">Filter Name</th>
+															<th align="left" data-priority="2">Criteria</th>
+															<th align="left" data-priority="2">Operator</th>
+															<th align="left" data-priority="2">Type</th>
+															<th align="left" data-priority="2">Attorney Client Privilege</th>
+															<th align="left" data-priority="2">Not Subject to PRA</th>
+															<th align="left" data-priority="2">Confidential</th>
+															<th align="left" data-priority="2">Active</th>
+														</tr>
+													</thead>
+													<tbody>
+														<apex:repeat value="{!attList}" var="att">
+															<tr>
+																<td align="left">
+																	<a href="#popup{!att.thisAtt.Id}" data-rel="popup">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+																	<!--<a href="#popupDelete{!att.thisAtt.Id}" data-rel="popup">Delete</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+																	<apex:outputText value="{!att.thisAtt.Name}" />
+																</td>
+																<td align="left">
+																	<apex:outputText value="{!att.thisAtt.Attachment_Criteria__c}" />
+																</td>
+																<td align="left">
+																	<apex:outputText value="{!att.thisAtt.Attachment_Operator__c}" />
+																</td>
+																<td align="left">
+																	<apex:outputText value="{!att.thisAtt.Type__c}" />
+																</td>
+																<td align="left">
+																	<apex:outputText value="{!att.thisAtt.Attorney_Client_Privilege__c}" />
+																</td>
+																<td align="left">
+																	<apex:outputText value="{!att.thisAtt.Not_Subject_to_PRA__c}" />
+																</td>
+																<td align="left">
+																	<apex:outputText value="{!att.thisAtt.Confidential__c}" />
+																</td>
+																<td align="left">
+																	<apex:inputCheckbox value="{!att.thisAtt.Active__c}" disabled="true" />
+																</td>
+															</tr>
+								            			</apex:repeat>
+							            			</tbody>
+							            		</table>
+											</div>
+										</fieldset>
+										
+										<br/><br/>
+					            		<div align="center">
+											<table cellSpacing="20%">
+												<tr>
+													<td><apex:commandButton value="Return" action="{!resetView}" rerender="breakPanel"/></td>
+												</tr>
+											</table>
+										</div>
+										</apex:outputPanel>
+									<apex:outputPanel layout="block" rendered="{!renderActivityUpdate}">
+									<header><h2>Tasks</h2></header>
+										<div style="height: 300px; width: 100%; border:1px solid black; overflow-y: scroll;">
+											<apex:variable value="{!3}" var="rowNum"/>
+											<table cellSpacing="20%" data-role="none" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable5" width="100%">
+												<thead>
+													<tr>
+														<th align="left" data-priority="2">Task Type</th>
+														<apex:repeat value="{!statusList}" var="stat">
+															<th align="left" data-priority="{!rowNum}">{!stat}</th>
+															<apex:variable var="rowNum" value="{!rowNum + 1}"/>
+														</apex:repeat>
+													</tr>
+												</thead>
+												<tbody>
+													<apex:repeat value="{!twList}" var="tw">
+															<tr>
+															<td align="left">
+															  <apex:outputText value="{!tw.activityType}" />
+															</td>
+															<apex:repeat value="{!statusList}" var="st">
+																<td>
+																	<apex:inputCheckBox value="{!tw.statusMap[st].selected}" />
+																</td>
+															</apex:repeat>
+														</tr>
+							            			</apex:repeat>
+						            			</tbody>
+						            		</table>
+										</div>
+										<header><h2>Events</h2></header>
+										<div style="height: 300px; width: 100%; border:1px solid black; overflow-y: scroll;">
+											<table cellSpacing="20%" data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable4" width="100%">
+												<thead>
+													<tr>
+														<th align="left" data-priority="1">Select</th>
+														<th align="left" data-priority="2">Event Type</th>
+													</tr>
+												</thead>
+												<tbody>
+													<apex:repeat value="{!ewList}" var="ew">
+														<tr>
+															<td align="left">
+																<apex:inputCheckbox id="ewSelect" value="{!ew.selected}" />
+															</td>
+															<td align="left">
+																<apex:outputText value="{!ew.activityType}" />
+															</td>
+														</tr>
+							            			</apex:repeat>
+						            			</tbody>
+						            		</table>
+										</div>
+										<br/><br/>
+										<div align="center">
+											<table cellSpacing="20%">
+												<tr>
+													<td><apex:commandButton value="Return" action="{!resetView}" rerender="step1OP, step2OP" onComplete="$('#firststepDiv').trigger('create');"/></td>
+													<td><apex:commandButton value="Save" action="{!saveActivityConfig}" rerender="step1OP, step2OP" html-data-ajax="false" onComplete="$('#firststepDiv').trigger('create');"/></td>
+												</tr>
+											</table>
+										</div>
+									</apex:outputPanel>
+								</div>
+							</apex:outputPanel>
+						</apex:outputPanel>
+	                </div>
+	        	</div>
+        	</apex:form>
+    	</body>
+    </html>
+</apex:page>

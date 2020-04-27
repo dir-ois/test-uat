@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Entity being described in this Case Role. Links to the Account Object. - Not Reparentable --></help>
+    <label><!-- Account --></label>
+    <name>Entity__c</name>
+    <relationshipLabel><!-- Case Roles --></relationshipLabel>
+</CustomFieldTranslation>

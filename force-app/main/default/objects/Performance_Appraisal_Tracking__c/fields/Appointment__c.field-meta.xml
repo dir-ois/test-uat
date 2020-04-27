@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment__c</fullName>
+    <description>master detail to appt</description>
+    <externalId>false</externalId>
+    <label>Appointment</label>
+    <referenceTo>Appointment__c</referenceTo>
+    <relationshipLabel>Performance Appraisal Trackings</relationshipLabel>
+    <relationshipName>Performance_Appraisal_Trackings</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

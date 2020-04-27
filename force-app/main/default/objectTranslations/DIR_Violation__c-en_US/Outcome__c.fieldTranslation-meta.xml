@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Outcome --></label>
+    <name>Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Discharge in Bankruptcy</masterLabel>
+        <translation><!-- Discharge in Bankruptcy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIF Interest/Cost Waived</masterLabel>
+        <translation><!-- PIF Interest/Cost Waived --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIF with Interest/Cost</masterLabel>
+        <translation><!-- PIF with Interest/Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled/Offer in Compromise</masterLabel>
+        <translation><!-- Settled/Offer in Compromise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacated/Withdrawn</masterLabel>
+        <translation><!-- Vacated/Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Write Off - Collection Infeasible</masterLabel>
+        <translation><!-- Write Off - Collection Infeasible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Write Off - Debtor Closed/Dissolved</masterLabel>
+        <translation><!-- Write Off - Debtor Closed/Dissolved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Write Off - Debtor Deceased</masterLabel>
+        <translation><!-- Write Off - Debtor Deceased --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Write Off - Other Reason</masterLabel>
+        <translation><!-- Write Off - Other Reason --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

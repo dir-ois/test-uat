@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DIR Lawsuit Outcome --></label>
+    <name>DIR_Lawsuit_Outcome__c</name>
+    <picklistValues>
+        <masterLabel>Dismissed</masterLabel>
+        <translation><!-- Dismissed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Favor of DIR</masterLabel>
+        <translation><!-- In Favor of DIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Favor of Employer</masterLabel>
+        <translation><!-- In Favor of Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settlement</masterLabel>
+        <translation><!-- Settlement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

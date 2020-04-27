@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cert List Expiration Date --></label>
+    <name>Date_Certification_List_Expiration__c</name>
+</CustomFieldTranslation>

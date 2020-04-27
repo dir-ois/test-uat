@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payroll_Record__c</fullName>
+    <description>Parent Payroll record. Indicates the period for which this detail applies</description>
+    <externalId>false</externalId>
+    <label>Payroll Record</label>
+    <referenceTo>Payroll_Record__c</referenceTo>
+    <relationshipLabel>Payroll Record Details</relationshipLabel>
+    <relationshipName>Payroll_Record_Details</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

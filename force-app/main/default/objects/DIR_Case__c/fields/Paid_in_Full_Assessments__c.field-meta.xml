@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_in_Full_Assessments__c</fullName>
+    <description>The number of paid in full assessments on this case.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of paid in full assessments on this case.</inlineHelpText>
+    <label>Paid in Full Assessments</label>
+    <summaryFilterItems>
+        <field>Assessments__c.Assessment_Paid__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Assessments__c.Case_Management__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

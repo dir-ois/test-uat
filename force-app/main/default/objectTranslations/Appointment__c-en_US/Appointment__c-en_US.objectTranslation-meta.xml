@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Appointment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Appointments</value>
+    </caseValues>
+    <layouts>
+        <layout>Appointment Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Type of Appointment --></label>
+            <section>Type of Appointment</section>
+        </sections>
+        <sections>
+            <label><!-- Type of Separation --></label>
+            <section>Type of Separation</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill in Appointment Type field --></errorMessage>
+        <name>Appointment_Type_Required_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select or Enter a Bilingual Language --></errorMessage>
+        <name>Bilingual_With_Date_but_no_Language</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an Effective Date for Bilingual Pay --></errorMessage>
+        <name>Bilingual_With_No_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Bilingual Language --></errorMessage>
+        <name>Bilingual_With_No_Language_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select  &quot;New to DIR&quot; or &quot;Current DIR Employee&quot; --></errorMessage>
+        <name>Current_or_New_to_DIR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide Previous Position Number and Transferred from Division or Dept. --></errorMessage>
+        <name>Hiring_Type_Current_DIR_EE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in Hiring Type field --></errorMessage>
+        <name>Hiring_Type_Required_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide &quot;Transferred from Division or Dept&quot; information. --></errorMessage>
+        <name>Hiring_Type_Transfer_From_Other_Dept</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a value for field &quot;New Probation Period Required?&quot; --></errorMessage>
+        <name>Require_New_Probe_Period_on_Appointment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide &apos;Vacated Position&apos; information. --></errorMessage>
+        <name>Separation_Not_Transfer_Promo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select Type of Separation --></errorMessage>
+        <name>Separation_Type_Required_when_Appt_Ends</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide &apos;Transferred to Division or Dept&apos; and &apos;Vacated Position&apos; information&apos; --></errorMessage>
+        <name>Separation_Type_State_Transfer_Promo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in &quot;Supervisor (Contact)&quot; field --></errorMessage>
+        <name>Supervisor_Contact_is_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

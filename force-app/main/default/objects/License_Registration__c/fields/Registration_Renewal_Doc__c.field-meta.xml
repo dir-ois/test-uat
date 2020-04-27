@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registration_Renewal_Doc__c</fullName>
+    <description>1/22/19 DK -Can be deprecated. Field only attaches for renewals and not new applications.</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;templateid=a0nt000000028PZ&quot; +
+&quot;&amp;defaultpdf=1&quot; +
+&quot;&amp;queryid=[Education]a0mt00000000sKw,[Disclaimer]a0mt00000001R1N?pv1=&quot; + Record_Type_Name__c + &quot;,[REG]a0mt00000000sKq,[Bond]a0mt00000000sKv,[Reglocation]a0mt00000000sKq,[Owner]a0mt00000000sKr,[Manager]a0mt00000000sKt,[FUQues]a0mt00000000sKu,[Ques]a0mt00000000sKs,[Attach]a0mt00000000sKy,[Document]a0mt00000000sKp&quot; +
+&quot;&amp;qmode=Attachments&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Registration Renewal Doc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

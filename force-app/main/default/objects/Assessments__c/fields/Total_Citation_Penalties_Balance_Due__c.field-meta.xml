@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Citation_Penalties_Balance_Due__c</fullName>
+    <description>Total_Citation_Penalties_Assessed__c -  Total_Citation_Penalties_Paid__c</description>
+    <externalId>false</externalId>
+    <formula>Total_Citation_Penalties_Assessed__c - Total_Citations_Penalties_Paid__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total_Citation_Penalties_Assessed__c -  Total_Citation_Penalties_Paid__c</inlineHelpText>
+    <label>Total Citation Penalties Balance Due</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

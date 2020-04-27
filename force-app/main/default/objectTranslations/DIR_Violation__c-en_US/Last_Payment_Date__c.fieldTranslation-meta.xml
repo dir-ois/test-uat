@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date of last payment on this violation. Set automatically when payment is recorded. --></help>
+    <label><!-- Last Payment Date --></label>
+    <name>Last_Payment_Date__c</name>
+</CustomFieldTranslation>

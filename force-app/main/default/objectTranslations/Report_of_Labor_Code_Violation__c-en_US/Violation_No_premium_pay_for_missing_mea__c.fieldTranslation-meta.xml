@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- No premium pay for missing meal or rest periods. --></help>
+    <label><!-- No premium pay for missing meal or rest --></label>
+    <name>Violation_No_premium_pay_for_missing_mea__c</name>
+</CustomFieldTranslation>

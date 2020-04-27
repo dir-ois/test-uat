@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- IC Determination at Hearing --></label>
+    <name>IC_Determination_at_Hearing__c</name>
+    <picklistValues>
+        <masterLabel>Employee status established</masterLabel>
+        <translation><!-- Employee status established --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC established</masterLabel>
+        <translation><!-- IC established --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled - no IC determination made</masterLabel>
+        <translation><!-- Settled - no IC determination made --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

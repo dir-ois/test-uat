@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appeal_Timeframe__c</fullName>
+    <description>Calculates the number of weekdays between today and the appeal deadline</description>
+    <externalId>false</externalId>
+    <formula>CASE(MOD( Assessment__r.Appeal_Deadline_Days__c , 7),
+  0 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),1,0,2,0,3,0,4,0,5,1,6,2,0),
+  1 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),0,0,1,0,2,0,3,0,4,0,5,2,2),
+  2 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),0,0,1,0,2,0,3,1,2),
+  3 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),0,0,1,0,2,1,2),
+  4 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),0,0,1,1,2),
+  5 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),0,1,2),
+  6 , CASE( MOD( Assessment__r.Appeal_Deadline_Days__c, 7),6,2,1),
+  999)
+  +
+  (FLOOR((  Appeal_Deadline__c  + Assessment__r.Appeal_Deadline_Days__c - Today() )/7)*2)
++ Assessment__r.Appeal_Deadline_Days__c 
++ 
+IF ( Assessment__r.Appeal_Deadline_Days__c  &gt; 7 , 
+CASE ( 
+MOD(  Appeal_Deadline__c  - DATE( 1900, 1, 7 ), 7 ),
+  3, 2,
+  4, 2,
+  5, 2,
+  6, 1,
+  0
+), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Number of weekdays between today and the appeal deadline.</inlineHelpText>
+    <label>Appeal Timeframe</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

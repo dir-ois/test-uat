@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NAICS Code Entered on PAGA Intake form. --></help>
+    <label><!-- PAGA NAICS Code --></label>
+    <name>PAGA_NAICS_Code__c</name>
+</CustomFieldTranslation>

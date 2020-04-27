@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Role Status --></label>
+    <name>Case_Role_Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>De Novo Appeal</masterLabel>
+        <translation><!-- De Novo Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal - Claimant</masterLabel>
+        <translation><!-- Dismissal - Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal - Deputy</masterLabel>
+        <translation><!-- Dismissal - Deputy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissal - Ineffective service</masterLabel>
+        <translation><!-- Dismissal - Ineffective service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Longer Active On Case</masterLabel>
+        <translation><!-- No Longer Active On Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA - Defendant</masterLabel>
+        <translation><!-- ODA - Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA - Plaintiff</masterLabel>
+        <translation><!-- ODA - Plaintiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA by Settlement</masterLabel>
+        <translation><!-- ODA by Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Settled</masterLabel>
+        <translation><!-- Settled --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

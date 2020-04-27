@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Account_Name</fullName>
+        <description>Sets the account name from the liable party account so it can be searched on.</description>
+        <field>Liable_Party_Account_Name__c</field>
+        <formula>Entity__r.Name</formula>
+        <name>Account Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Role_Non_Formula_Population</fullName>
+        <field>Case_Role_Full_Output_Non_Formula__c</field>
+        <formula>Case_Role_Entity_Full_Output__c</formula>
+        <name>Case Role Non Formula Population</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Liable_Party_Account_Name</fullName>
+        <description>Updates the field when both business and person accounts are updated</description>
+        <field>Liable_Party_Account_Name__c</field>
+        <formula>IF( ISBLANK(Entity__r.Name), Entity__r.FirstName+&quot; &quot;+Entity__r.LastName, Entity__r.Name )</formula>
+        <name>Liable Party Account Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Role Non Formula Population</fullName>
+        <actions>
+            <name>Case_Role_Non_Formula_Population</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liable_Party__c.Case_Role_Entity_Full_Output__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Workflow rule to populate the &quot;Case Role Full Output Non-Formula&quot; field with the value in the &quot;Case Role Entity Full Output&quot; on the Liable Party object.  Used to aggregate liable parties in the output of the 633 75 ODA</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Liable Party Set Search Account and Contact Fields</fullName>
+        <actions>
+            <name>Liable_Party_Account_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sets values of the search fields for liable parties of both business and person accounts when they are updated.</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Liable Party Set Search Fields</fullName>
+        <actions>
+            <name>Account_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sets values of the search fields for liable parties when they are updated.</description>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

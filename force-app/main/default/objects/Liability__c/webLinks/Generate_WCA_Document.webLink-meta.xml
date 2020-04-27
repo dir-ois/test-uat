@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_Document</fullName>
+    <availability>online</availability>
+    <description>No longer used. 6-22-16 DK
+Button migrated from Meeting object to produce ODA documents (WCA 77 and 633 75)</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate WCA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Liability__c.Id}
+&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[Defendant]a0md00000064cjRAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[DefandJoint]a0md00000064cj8AAA?pv0={!Liability__c.Case_ManagementId__c}, 
+[Occupation]a0md00000064cjPAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[VioTable]a0md00000064cjSAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[Guarantor]a0md00000064cjNAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[Successor]a0md00000064cjLAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[WCAOffice]a0md00000064cjOAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[HearingInfo]a0md00000064cjuAAA?pv0={!Liability__c.Case_ManagementId__c},
+[CaseInfo]a0md00000064cjCAAQ?pv0={!Liability__c.Case_ManagementId__c},
+[EMP]a0md00000064cj2AAA?pv0={!Liability__c.Case_ManagementId__c}~pv1=&quot;Case employer&quot;,
+[GUAR]a0md00000064cj2AAA?pv0={!Liability__c.Case_ManagementId__c}~pv1=&quot;Guarantor&quot;,
+[ODATable]a0md00000064cjmAAA?pv0={!Liability__c.Case_ManagementId__c},
+[CourtHO]a0md00000064cjMAAQ
+&amp;TemplateGroup=WCALiability
+&amp;OFN={Template.Label} + {!Liability__c.Case_Number__c} + {!Liability__c.Case_Employer__c}
+&amp;sc0=1 
+&amp;sc1=Attachments</url>
+</WebLink>

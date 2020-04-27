@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Assigned_Stockton</fullName>
+    <columns>Case_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_Case_Received__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Date_Assigned__c</columns>
+    <columns>Days_Elapsed_Since_Assigned__c</columns>
+    <columns>Status__c</columns>
+    <columns>Deadline__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Assigned_Deputy__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Office__c</field>
+        <operation>equals</operation>
+        <value>Stockton BOFE</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Rejected</value>
+    </filters>
+    <label>BOFE Assigned - Stockton</label>
+    <sharedTo>
+        <roleAndSubordinates>BOFE</roleAndSubordinates>
+    </sharedTo>
+</ListView>

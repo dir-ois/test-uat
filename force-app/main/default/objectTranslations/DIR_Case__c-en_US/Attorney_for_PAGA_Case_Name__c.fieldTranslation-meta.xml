@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- First and Last Name of Attorney. --></help>
+    <label><!-- Attorney for PAGA Case Name --></label>
+    <name>Attorney_for_PAGA_Case_Name__c</name>
+</CustomFieldTranslation>

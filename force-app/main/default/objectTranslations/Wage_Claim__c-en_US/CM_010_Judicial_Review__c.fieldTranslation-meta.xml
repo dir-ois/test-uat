@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CM-010 Judicial Review --></label>
+    <name>CM_010_Judicial_Review__c</name>
+    <picklistValues>
+        <masterLabel>Asset forfeiture</masterLabel>
+        <translation><!-- Asset forfeiture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other judicial review</masterLabel>
+        <translation><!-- Other judicial review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Petition re: arbitration award</masterLabel>
+        <translation><!-- Petition re: arbitration award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Writ of mandate</masterLabel>
+        <translation><!-- Writ of mandate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

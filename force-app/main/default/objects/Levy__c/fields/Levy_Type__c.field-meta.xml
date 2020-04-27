@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Levy_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Levy Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank Garnishment</fullName>
+                <default>false</default>
+                <label>Bank Garnishment</label>
+            </value>
+            <value>
+                <fullName>Accounts Receivable Garnishment</fullName>
+                <default>false</default>
+                <label>Accounts Receivable Garnishment</label>
+            </value>
+            <value>
+                <fullName>Rents Garnishment</fullName>
+                <default>false</default>
+                <label>Rents Garnishment</label>
+            </value>
+            <value>
+                <fullName>Wage Garnishment</fullName>
+                <default>false</default>
+                <label>Wage Garnishment</label>
+            </value>
+            <value>
+                <fullName>Other Garnishment</fullName>
+                <default>false</default>
+                <label>Other Garnishment</label>
+            </value>
+            <value>
+                <fullName>Till Tap</fullName>
+                <default>false</default>
+                <label>Till Tap</label>
+            </value>
+            <value>
+                <fullName>Keeper</fullName>
+                <default>false</default>
+                <label>Keeper</label>
+            </value>
+            <value>
+                <fullName>Vehicle</fullName>
+                <default>false</default>
+                <label>Vehicle</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>Other Personal Property (e.g., jewelry, paintings)</fullName>
+                <default>false</default>
+                <label>Other Personal Property (e.g., jewelry, paintings)</label>
+            </value>
+            <value>
+                <fullName>Real Estate – Residential Investment</fullName>
+                <default>false</default>
+                <label>Real Estate – Residential Investment</label>
+            </value>
+            <value>
+                <fullName>Real Estate – Residential Owner Occupied</fullName>
+                <default>false</default>
+                <label>Real Estate – Residential Owner Occupied</label>
+            </value>
+            <value>
+                <fullName>Real Estate – Commercial Properties</fullName>
+                <default>false</default>
+                <label>Real Estate – Commercial Properties</label>
+            </value>
+            <value>
+                <fullName>Real Estate -- Other</fullName>
+                <default>false</default>
+                <label>Real Estate -- Other</label>
+            </value>
+            <value>
+                <fullName>Stocks</fullName>
+                <default>false</default>
+                <label>Stocks</label>
+            </value>
+            <value>
+                <fullName>Legal Claim</fullName>
+                <default>false</default>
+                <label>Legal Claim</label>
+            </value>
+            <value>
+                <fullName>Annuity/Insurance</fullName>
+                <default>false</default>
+                <label>Annuity/Insurance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

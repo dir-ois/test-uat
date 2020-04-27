@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_All_Agent_Required_Fields</fullName>
+    <active>true</active>
+    <description>Requires all required fields to be filled out before a user can save an Agent record in the form tool.</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;Agent&quot;, Registration__r.Record_Type_Name__c &lt;&gt; &quot;Public_Works&quot;,
+OR(
+ISBLANK( First_Name__c ),
+ISBLANK( Last_Name__c ),
+ISBLANK( Relationship_to_me__c ),
+ISBLANK( Email_Address__c ),
+ISBLANK( Business_Phone__c ),
+ISBLANK( Mailing_Street__c ),
+ISBLANK( Mailing_City__c ),
+ISBLANK( TEXT(Mailing_State__c )),
+ISBLANK( Mailing_Zip_Code__c ),
+ISBLANK( TEXT(Mailing_Country__c ))
+))</errorConditionFormula>
+    <errorMessage>Please fill out all required fields.</errorMessage>
+</ValidationRule>

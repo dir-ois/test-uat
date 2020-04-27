@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Category_Sort_Order_Non_Form__c</fullName>
+    <description>Non-formula field to capture the Reporting Category Sort Order for Order By command in SOQL.</description>
+    <externalId>false</externalId>
+    <label>Reporting Category Sort Order - Non Form</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

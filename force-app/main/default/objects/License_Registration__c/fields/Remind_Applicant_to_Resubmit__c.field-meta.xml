@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remind_Applicant_to_Resubmit__c</fullName>
+    <description>Referenced in Registration Approval Flow</description>
+    <externalId>false</externalId>
+    <formula>AND(
+LastModifiedDate &gt;  Date_First_Approved__c,
+ External_User__c = 1,
+ISPICKVAL(Status__c, &quot;Approved&quot;)
+)</formula>
+    <label>Remind Applicant to Resubmit?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Attorney_Email_Field__c</fullName>
+    <description>Hidden Field to hold the Email of the Assigned Attorney for purposes of email alerts.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Hidden Field to hold the Email of the Assigned Attorney for purposes of email alerts.</inlineHelpText>
+    <label>Assigned Attorney Email Field</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

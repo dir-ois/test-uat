@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payees</value>
+    </caseValues>
+    <layouts>
+        <layout>Payee Layout</layout>
+        <sections>
+            <label><!-- Amounts --></label>
+            <section>Amounts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Form 40 Info --></label>
+            <section>Form 40 Info</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If &apos;Payee Heir or Successor&apos; checkbox is checked, the &apos;Name of Heir or Successor&apos; field must be filled, and vice versa. --></errorMessage>
+        <name>Payee_deceased</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- BOFE_19_V_L --></label>
+        <name>BOFE_19_V_L</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Documents --></label>
+        <name>Generate_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Std_204 --></label>
+        <name>Generate_Std_204</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Office_Verification_Letters --></label>
+        <name>Office_Verification_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_Checks --></label>
+        <name>Request_Checks</name>
+    </webLinks>
+</CustomObjectTranslation>

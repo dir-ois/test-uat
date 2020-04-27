@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActiveViolationTypes</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>Appeal_Deadline_Days__c</columns>
+    <columns>Appeal_Deadline_Selector__c</columns>
+    <columns>NAME</columns>
+    <columns>Help_Text__c</columns>
+    <columns>Violation_Type__c</columns>
+    <columns>Short_Description__c</columns>
+    <columns>Penalty_Assessment_Description__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Appeal_Deadline_Days__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>ActiveViolationTypes</label>
+</ListView>

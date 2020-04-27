@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Threat_Method__c</fullName>
+    <externalId>false</externalId>
+    <label>Threat Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Oral, in person</fullName>
+                <default>false</default>
+                <label>Oral, in person</label>
+            </value>
+            <value>
+                <fullName>Oral, over the phone</fullName>
+                <default>false</default>
+                <label>Oral, over the phone</label>
+            </value>
+            <value>
+                <fullName>In writing, text</fullName>
+                <default>false</default>
+                <label>In writing, text</label>
+            </value>
+            <value>
+                <fullName>In writing, email</fullName>
+                <default>false</default>
+                <label>In writing, email</label>
+            </value>
+            <value>
+                <fullName>In writing, letter</fullName>
+                <default>false</default>
+                <label>In writing, letter</label>
+            </value>
+            <value>
+                <fullName>ICE Inquiry</fullName>
+                <default>false</default>
+                <label>ICE Inquiry</label>
+            </value>
+            <value>
+                <fullName>ICE in Labor Commissioner’s Office</fullName>
+                <default>false</default>
+                <label>ICE in Labor Commissioner’s Office</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

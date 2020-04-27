@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Class for Madatory Training Type --></label>
+    <name>Class_for_Madatory_Training_Type__c</name>
+    <picklistValues>
+        <masterLabel>700</masterLabel>
+        <translation><!-- 700 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>700-S-M</masterLabel>
+        <translation><!-- 700-S-M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exempt</masterLabel>
+        <translation><!-- Exempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rank and File</masterLabel>
+        <translation><!-- Rank and File --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervisor</masterLabel>
+        <translation><!-- Supervisor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What day is Pay Day? This field specifies the interval. A separate field will collect specifics. --></help>
+    <label><!-- What day is pay day? (interval) --></label>
+    <name>What_day_is_pay_day_interval__c</name>
+    <picklistValues>
+        <masterLabel>Bi-Weekly On (Once every two weeks)</masterLabel>
+        <translation><!-- Bi-Weekly On (Once every two weeks) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daily</masterLabel>
+        <translation><!-- Daily --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly On</masterLabel>
+        <translation><!-- Monthly On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semi-Monthly On (Twice a month)</masterLabel>
+        <translation><!-- Semi-Monthly On (Twice a month) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly On</masterLabel>
+        <translation><!-- Weekly On --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

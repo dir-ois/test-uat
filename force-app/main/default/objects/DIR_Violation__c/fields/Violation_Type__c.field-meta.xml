@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Link to the type of violation from the list of available violations</description>
+    <externalId>false</externalId>
+    <label>Case Issue Type</label>
+    <referenceTo>Violation_Type__c</referenceTo>
+    <relationshipLabel>Case Issues</relationshipLabel>
+    <relationshipName>Case_Violations</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

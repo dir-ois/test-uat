@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workers_Compensation_Selection_Required</fullName>
+    <active>true</active>
+    <description>Used in the form tool to make Workers_Comp_Selection__c required.</description>
+    <errorConditionFormula>OR(
+RecordType.DeveloperName = &quot;Car_Wash&quot;,
+RecordType.DeveloperName = &quot;Janitorial&quot;
+)
+&amp;&amp;
+AND(
+ISPICKVAL(Function_as_Employee_Leasing_Co__c, &quot;No&quot;),
+ISBLANK(TEXT(Workers_Comp_Selection__c))
+)</errorConditionFormula>
+    <errorMessage>Error: This question is required; Do you have current workers’ compensation insurance coverage? Select workers’ compensation insurance coverage type below</errorMessage>
+</ValidationRule>

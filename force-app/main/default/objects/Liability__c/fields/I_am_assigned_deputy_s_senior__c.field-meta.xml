@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_am_assigned_deputy_s_senior__c</fullName>
+    <description>To Filter all Liabilities assigned to the deputies who show the logged in user as their Manager</description>
+    <externalId>false</externalId>
+    <formula>$User.Id = Case_Management__r.Assigned_Deputy__r.Manager__r.User__r.Id</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>I am assigned deputy&#39;s senior</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

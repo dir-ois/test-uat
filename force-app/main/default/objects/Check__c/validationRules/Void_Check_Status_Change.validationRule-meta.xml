@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Void_Check_Status_Change</fullName>
+    <active>false</active>
+    <description>Allows only the sr cashier to change a check status once set to void, canceled or stopped and can only change status to printed</description>
+    <errorConditionFormula>(
+ISCHANGED (  Status__c )
+&amp;&amp; !ISPICKVAL ( Status__c , &#39;Printed&#39; )
+&amp;&amp; (
+ISPICKVAL ( PRIORVALUE ( Status__c ) , &#39;Voided&#39; ) 
+|| ISPICKVAL ( PRIORVALUE ( Status__c ) , &#39;Canceled&#39; )
+|| ISPICKVAL ( PRIORVALUE ( Status__c ) , &#39;Stopped&#39; )
+)
+)
+&amp;&amp; 
+(!$Permission.DLSE_Sr_Cashier
+|| NOT( CONTAINS($Profile.Name, &quot;System Administrator&quot;) )
+)</errorConditionFormula>
+    <errorMessage>Once voided, canceled or stopped, a check status may only be modified by a Senior Cashier and may only be set to Printed.</errorMessage>
+</ValidationRule>

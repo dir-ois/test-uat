@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Type of complaint filed --></help>
+    <label><!-- Complaint Screening Question --></label>
+    <name>Complaint_Screening_Question__c</name>
+    <picklistValues>
+        <masterLabel>EPA (Equal Pay Act)</masterLabel>
+        <translation><!-- EPA (Equal Pay Act) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retaliation</masterLabel>
+        <translation><!-- Retaliation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

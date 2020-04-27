@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Title --></label>
+    <name>Title__c</name>
+    <picklistValues>
+        <masterLabel>Assistant Chief</masterLabel>
+        <translation><!-- Assistant Chief --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attorney</masterLabel>
+        <translation><!-- Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Labor Commissioner</masterLabel>
+        <translation><!-- Deputy Labor Commissioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Officer</masterLabel>
+        <translation><!-- Hearing Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Relations Representative</masterLabel>
+        <translation><!-- Industrial Relations Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Secretary</masterLabel>
+        <translation><!-- Legal Secretary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management Services Technician</masterLabel>
+        <translation><!-- Management Services Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office Assistant</masterLabel>
+        <translation><!-- Office Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office Technician</masterLabel>
+        <translation><!-- Office Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payroll Auditor</masterLabel>
+        <translation><!-- Payroll Auditor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional Manager</masterLabel>
+        <translation><!-- Regional Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Deputy Labor Commissioner</masterLabel>
+        <translation><!-- Senior Deputy Labor Commissioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staff Service Analyst</masterLabel>
+        <translation><!-- Staff Service Analyst --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

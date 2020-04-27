@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_Day_selector</fullName>
+    <active>true</active>
+    <description>Require the user to select business or calendar days when setting appeal deadline</description>
+    <errorConditionFormula>RecordType.DeveloperName = &#39;BOFE_Violations&#39;
+&amp;&amp; NOT(ISBLANK( Appeal_Deadline_Days__c ))
+&amp;&amp; ISPICKVAL( Appeal_Deadline_Selector__c ,&#39;&#39;)</errorConditionFormula>
+    <errorMessage>Select the appeal deadline selector as &quot;Business Days&quot; or &quot;Calendar Days&quot; when setting an appeal deadline.</errorMessage>
+</ValidationRule>

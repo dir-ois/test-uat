@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Start_Date__c</fullName>
+    <description>Largest Start Date</description>
+    <externalId>false</externalId>
+    <label>Max Start Date</label>
+    <summarizedField>Appointment__c.Start_Date__c</summarizedField>
+    <summaryForeignKey>Appointment__c.Position__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

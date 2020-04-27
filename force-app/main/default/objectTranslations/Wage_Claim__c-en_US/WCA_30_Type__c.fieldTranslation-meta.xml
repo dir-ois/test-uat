@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 30 Type --></label>
+    <name>WCA_30_Type__c</name>
+    <picklistValues>
+        <masterLabel>NOTICE OF CONFERENCE CANCELLATION</masterLabel>
+        <translation><!-- NOTICE OF CONFERENCE CANCELLATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOTICE OF CONFERENCE CANCELLATION AND RESCHEDULE</masterLabel>
+        <translation><!-- NOTICE OF CONFERENCE CANCELLATION AND RESCHEDULE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOTICE OF HEARING CANCELLATION</masterLabel>
+        <translation><!-- NOTICE OF HEARING CANCELLATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOTICE OF HEARING CANCELLATION AND RESCHEDULE</masterLabel>
+        <translation><!-- NOTICE OF HEARING CANCELLATION AND RESCHEDULE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

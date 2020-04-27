@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of meeting if it applies --></help>
+    <label><!-- Meeting Type --></label>
+    <name>Meeting_Type__c</name>
+    <picklistValues>
+        <masterLabel>98(f)</masterLabel>
+        <translation><!-- 98(f) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin</masterLabel>
+        <translation><!-- Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Hearing</masterLabel>
+        <translation><!-- BOFE Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Berman Hearing</masterLabel>
+        <translation><!-- Berman Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing conference</masterLabel>
+        <translation><!-- Closing conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing conference Claimant</masterLabel>
+        <translation><!-- Closing conference Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing conference Claimant representative</masterLabel>
+        <translation><!-- Closing conference Claimant representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing conference Defendant</masterLabel>
+        <translation><!-- Closing conference Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing conference Defendant representative</masterLabel>
+        <translation><!-- Closing conference Defendant representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference</masterLabel>
+        <translation><!-- Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference, investigative</masterLabel>
+        <translation><!-- Conference, investigative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference, other</masterLabel>
+        <translation><!-- Conference, other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference, settlement</masterLabel>
+        <translation><!-- Conference, settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conference, wage companion case</masterLabel>
+        <translation><!-- Conference, wage companion case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR Ordered</masterLabel>
+        <translation><!-- DIR Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H&amp;S</masterLabel>
+        <translation><!-- H&amp;S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing, Health &amp; Safety</masterLabel>
+        <translation><!-- Hearing, Health &amp; Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing, citation</masterLabel>
+        <translation><!-- Hearing, citation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing, other</masterLabel>
+        <translation><!-- Hearing, other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing, wage companion case</masterLabel>
+        <translation><!-- Hearing, wage companion case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-person interview Claimant</masterLabel>
+        <translation><!-- In-person interview Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-person interview Defendant</masterLabel>
+        <translation><!-- In-person interview Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-person interview other</masterLabel>
+        <translation><!-- In-person interview other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-person interview witness</masterLabel>
+        <translation><!-- In-person interview witness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interview</masterLabel>
+        <translation><!-- Interview --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LC Ordered</masterLabel>
+        <translation><!-- LC Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meet and Confer</masterLabel>
+        <translation><!-- Meet and Confer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order to Appear</masterLabel>
+        <translation><!-- Order to Appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order to Show Cause</masterLabel>
+        <translation><!-- Order to Show Cause --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Claimant</masterLabel>
+        <translation><!-- Phone Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Claimant representative</masterLabel>
+        <translation><!-- Phone Claimant representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Defendant</masterLabel>
+        <translation><!-- Phone Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Defendant representative</masterLabel>
+        <translation><!-- Phone Defendant representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone interview Claimant</masterLabel>
+        <translation><!-- Phone interview Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone interview Defendant</masterLabel>
+        <translation><!-- Phone interview Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone interview other</masterLabel>
+        <translation><!-- Phone interview other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone interview witness</masterLabel>
+        <translation><!-- Phone interview witness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone other</masterLabel>
+        <translation><!-- Phone other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone settlement conference Claimant</masterLabel>
+        <translation><!-- Phone settlement conference Claimant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone settlement conference Defendant</masterLabel>
+        <translation><!-- Phone settlement conference Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-hearing Conference</masterLabel>
+        <translation><!-- Pre-hearing Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rebuttal</masterLabel>
+        <translation><!-- Rebuttal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sick Leave</masterLabel>
+        <translation><!-- Sick Leave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Ordered</masterLabel>
+        <translation><!-- Sr. Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subpoena</masterLabel>
+        <translation><!-- Subpoena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness Prep</masterLabel>
+        <translation><!-- Witness Prep --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

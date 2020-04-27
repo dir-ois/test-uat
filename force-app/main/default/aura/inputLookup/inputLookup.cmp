@@ -1,0 +1,28 @@
+<aura:component controller="InputLookUpController">
+    <ltng:require scripts="/resource/jquery214" />
+    <aura:registerevent name="loadrequire" type="c:requireJSLoaded" />
+    <aura:handler event="c:ResetFormEvent" action="{!c.letsReset}" />
+    <aura:attribute name="type" type="String" description="Sobject Type" required="true" />
+    <aura:attribute name="value" type="String" description="Source / Destination value" />
+    <aura:attribute name="unicId" type="String" description="unic name" required="true" />
+    <aura:attribute name="searchValues" type="SObject[]" />
+    <aura:attribute name="activeRecordId" type="String" />
+    <aura:attribute name="activeRecordName" type="String" />
+    
+    <!-- PRIVATE ATTRS -->
+    <aura:attribute name="nameValue" type="String" description="Name of the current lookup 'name' field: loaded by controller" />
+    <aura:attribute name="isLoading" type="Boolean" description="Loading component" default="true" />
+    <div>
+        <input id="{!v.unicId +'_typeahead'}" type="text" class="slds-input payor" onkeyup="{!c.onInputKeyUp}" />
+        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+        <div class="{!v.unicId + '_tt-menu tt-menu'}" style="display:none;">
+            <ul class="tt-dataset">
+                <aura:iteration items="{!v.searchValues}" var="record">
+                    <li class="{!'tt-suggestion' + (v.activeRecordId == record.Id ? ' is-active' : '')}" title="{!record.Name}">
+                        <a href="#" data-id="{!record.Id}" data-name="{!record.Name}" onclick="{!c.onRecordClick}">{!record.Name}</a>
+                    </li>
+                </aura:iteration>
+            </ul>
+        </div>
+    </div>
+</aura:component>

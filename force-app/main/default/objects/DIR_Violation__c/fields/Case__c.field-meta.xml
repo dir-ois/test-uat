@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case__c</fullName>
+    <description>This creates a master detail relationship between a Violation and the Case that it is against.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This creates a master detail relationship between a Violation and the Case that it is against.</inlineHelpText>
+    <label>Case</label>
+    <referenceTo>DIR_Case__c</referenceTo>
+    <relationshipLabel>Case Issues</relationshipLabel>
+    <relationshipName>DIR_Violations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

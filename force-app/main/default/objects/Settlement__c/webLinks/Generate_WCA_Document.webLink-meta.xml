@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_Document</fullName>
+    <availability>online</availability>
+    <description>Button created on Settlement object to launch and generate WCA 77 ODA document.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate WCA Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Settlement__c.Id}
+&amp;queryid=[Complainant]a0md00000064cjQAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[Defendant]a0md00000064cjRAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[CompAttny]a0mt00000006Hbo?pv0={!Settlement__c.Case_ManagementId__c},
+[DefandJoint]a0md00000064cj8AAA?pv0={!Settlement__c.Case_ManagementId__c},
+[Occupation]a0md00000064cjPAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[VioTable]a0md00000064cjSAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[Guarantor]a0md00000064cjNAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[Successor]a0md00000064cjLAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[WCAOffice]a0md00000064cjOAAQ?pv0={!Settlement__c.Case_ManagementId__c},
+[HearingInfo]a0md00000064cjuAAA?pv0={!Settlement__c.Case_ManagementId__c},
+[CaseInfo]a0md00000064cj3?pv0={!Settlement__c.Case_ManagementId__c},
+[EMP]a0md00000064cj2AAA?pv0={!Settlement__c.Case_ManagementId__c}~pv1=&quot;Case employer&quot;,
+[GUAR]a0md00000064cj2AAA?pv0={!Settlement__c.Case_ManagementId__c}~pv1=&quot;Guarantor&quot;,
+[StateSeal]a0md00000064cjlAAA,
+[Governor]a0md0000003l2S0,
+[BermanInfo]a0md0000003l2Rl?pv0={!DIR_Case__c.Berman_ClerkId__c},
+[SettlingParties]a0md00000064cjFAAQ,
+[PaymentPlan]a0md00000064cjg?pv0={!Settlement__c.Payment_PlanId__c}
+&amp;reportid=[DEFSERVICE]00Od0000004pzuW?pv0={!Settlement__c.Case_ManagementId__c},
+[DEFPARTICIPANT]00Od0000004pzua
+&amp;TemplateGroup=WCASettlement
+&amp;SCHP=2
+&amp;OFN={Template.Label} + {!Settlement__c.Case_Number__c} + {!Settlement__c.Case_Employer__c}
+&amp;sc0=1 
+&amp;sc1=Attachments</url>
+</WebLink>

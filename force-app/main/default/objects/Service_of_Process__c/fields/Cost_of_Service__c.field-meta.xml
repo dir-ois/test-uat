@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_of_Service__c</fullName>
+    <description>When Professional Process Server = True</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Costs paid to process server</inlineHelpText>
+    <label>Cost of Service</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

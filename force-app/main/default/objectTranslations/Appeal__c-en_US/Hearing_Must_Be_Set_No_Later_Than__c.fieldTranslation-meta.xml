@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the date that the hearing must be set by. --></help>
+    <label><!-- Hearing Must Be Set No Later Than --></label>
+    <name>Hearing_Must_Be_Set_No_Later_Than__c</name>
+</CustomFieldTranslation>

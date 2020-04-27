@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Linking_to_the_Wrong_Release</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(Add_to_a_Release__r.Status__c,&#39;Released&#39;)</errorConditionFormula>
+    <errorMessage>You are trying to link the Support Request to a completed Release</errorMessage>
+</ValidationRule>

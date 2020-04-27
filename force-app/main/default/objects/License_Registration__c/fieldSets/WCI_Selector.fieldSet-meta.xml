@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCI_Selector</fullName>
+    <description>Workers Comp section of form wizard</description>
+    <displayedFields>
+        <field>Workers_Comp_Selection__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>WCI Selector</label>
+</FieldSet>

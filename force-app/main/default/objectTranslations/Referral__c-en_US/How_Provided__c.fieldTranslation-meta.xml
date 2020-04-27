@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How Plaintiff Received Payment --></label>
+    <name>How_Provided__c</name>
+    <picklistValues>
+        <masterLabel>Mailed</masterLabel>
+        <translation><!-- Mailed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff Picked Up</masterLabel>
+        <translation><!-- Plaintiff Picked Up --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

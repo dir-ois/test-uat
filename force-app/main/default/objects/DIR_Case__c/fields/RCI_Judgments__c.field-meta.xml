@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Judgments__c</fullName>
+    <description>RCI</description>
+    <externalId>false</externalId>
+    <label>RCI Judgments</label>
+    <summarizedField>Judgement__c.Judgment__c</summarizedField>
+    <summaryFilterItems>
+        <field>Judgement__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>RCI</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Judgement__c.Case_Management__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

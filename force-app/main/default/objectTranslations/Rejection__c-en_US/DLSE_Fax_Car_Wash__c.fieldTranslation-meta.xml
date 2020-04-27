@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DLSE&apos;s current fax number for the Car Wash Dept. Change default value here to update contact details that populate defect letter headers. --></help>
+    <label><!-- DLSE Fax - Car Wash --></label>
+    <name>DLSE_Fax_Car_Wash__c</name>
+</CustomFieldTranslation>

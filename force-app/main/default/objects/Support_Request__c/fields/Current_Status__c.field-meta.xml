@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Status__c , 
+&#39;New&#39;, &#39;Pending&#39;,
+&#39;Confirmed&#39;, &#39;Pending&#39;,
+&#39;In Development&#39;, &#39;Pending&#39;,
+&#39;In User Validation&#39;, &#39;Pending&#39;,
+&#39;Waiting for User Response&#39;, &#39;Pending&#39;,
+&#39;Added to a Project&#39;, &#39;Pending&#39;,
+&#39;Added to a Release&#39;, &#39;Completed&#39;,
+&#39;Ready for Stating&#39;, &#39;Completed&#39;,
+&#39;Closed&#39;, &#39;Completed&#39;,
+&#39;Merged to Deployment Package&#39;, &#39;Completed&#39;,
+&#39;Accepted&#39;, &#39;Completed&#39;,
+&#39;Duplicate/Canceled/Other&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Current Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

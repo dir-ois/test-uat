@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UWF_Payee_Office__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(Payee__r.DIR_Office__c, &#39;BOFE&#39;), &#39;Statewide BOFE&#39;, Payee__r.DIR_Office__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UWF Payee Office</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

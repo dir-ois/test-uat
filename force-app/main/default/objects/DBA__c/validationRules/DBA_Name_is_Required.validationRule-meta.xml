@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DBA_Name_is_Required</fullName>
+    <active>true</active>
+    <description>Requires DBA Name upon record creation in Registration forms.</description>
+    <errorConditionFormula>ISBLANK( Name )</errorConditionFormula>
+    <errorMessage>Please enter a DBA name.</errorMessage>
+</ValidationRule>

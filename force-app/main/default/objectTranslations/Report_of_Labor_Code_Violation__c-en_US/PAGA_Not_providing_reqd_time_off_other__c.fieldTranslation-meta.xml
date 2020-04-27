@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not providing required time off, other PAGA --></help>
+    <label><!-- Not providing required time off, other --></label>
+    <name>PAGA_Not_providing_reqd_time_off_other__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Deputy_Fax__c</fullName>
+    <description>Used by Conga to pull fax number from the Office record related to the Internal Employee record related to the Case.</description>
+    <externalId>false</externalId>
+    <formula>Assigned_Deputy__r.Office__r.Fax__c</formula>
+    <label>Assigned Deputy Fax</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

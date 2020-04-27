@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reporting_Category_Sort_Order__c</fullName>
+    <description>For ODA output documents: Text field to allow users to enter a number between 0 and 99999 in order to sort allow for report categories to be properly sorted in the output.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a number between 0 and 99999 for sorting the issue types in ODA documents.</inlineHelpText>
+    <label>Reporting Category Sort Order</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_Works_Record_Change</fullName>
+    <active>false</active>
+    <description>Only PW users can change a PW record. Includes Community profiles.</description>
+    <errorConditionFormula>(RecordType.Name=&quot;Public Works&quot;) &amp;&amp;
+
+($Profile.Id&lt;&gt;&quot;00er0000000Dxm6&quot;) &amp;&amp; 
+
+($Profile.Id&lt;&gt;&quot;00ed00000013xgX&quot;) &amp;&amp;
+
+($Profile.Id&lt;&gt;&quot;00et0000000gja0&quot;) &amp;&amp;
+
+($Profile.Id&lt;&gt;&quot;00et0000000Hhd3&quot;)</errorConditionFormula>
+    <errorMessage>Only Public Works users may edit a Public Works record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Court --></label>
+    <lookupFilter>
+        <errorMessage><!-- The value entered must be an Office record of record type &apos;Courthouse&apos; or &apos;County Registrar&apos; --></errorMessage>
+    </lookupFilter>
+    <name>Court__c</name>
+    <relationshipLabel><!-- Judgments (Court) --></relationshipLabel>
+</CustomFieldTranslation>

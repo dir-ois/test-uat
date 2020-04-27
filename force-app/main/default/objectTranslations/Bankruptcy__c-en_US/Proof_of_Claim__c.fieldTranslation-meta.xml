@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lookup to a Legal Actions record. --></help>
+    <label><!-- Proof of Claim --></label>
+    <name>Proof_of_Claim__c</name>
+    <relationshipLabel><!-- Bankruptcies --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the path to get to the Case Management object. .Case__r should be at the end of each string.
+
+Example: If you are going from Meeting Participant object to Case it would be Meeting_Participant__r.Meeting__r.Case__r --></help>
+    <label><!-- Path to Case --></label>
+    <name>Path_to_Case__c</name>
+</CustomFieldTranslation>

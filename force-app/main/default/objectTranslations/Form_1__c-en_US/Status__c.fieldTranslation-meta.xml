@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Approval Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled Due to Amendment</masterLabel>
+        <translation><!-- Canceled Due to Amendment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold</masterLabel>
+        <translation><!-- Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Submitted</masterLabel>
+        <translation><!-- Not Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Analyst Approval</masterLabel>
+        <translation><!-- Pending Analyst Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Division Approval</masterLabel>
+        <translation><!-- Pending Division Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Manager Approval</masterLabel>
+        <translation><!-- Pending Manager Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by Division</masterLabel>
+        <translation><!-- Rejected by Division --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by HR Analyst</masterLabel>
+        <translation><!-- Rejected by HR Analyst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected by HR Manager</masterLabel>
+        <translation><!-- Rejected by HR Manager --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

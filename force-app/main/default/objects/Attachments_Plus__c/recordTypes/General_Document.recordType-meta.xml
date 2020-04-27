@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Document</fullName>
+    <active>true</active>
+    <label>General Document</label>
+    <picklistValues>
+        <picklist>Attachment_Needed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cure_Dispute_Status__c</picklist>
+        <values>
+            <fullName>Evaluated%2FCure Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated%2FEmployer Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated%2FNo Cure Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened%2FNo Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened%2FTo be evaluated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manual_Screen_Status__c</picklist>
+        <values>
+            <fullName>Not Screened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screened</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Settlement_Disposition1__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No agency comment of response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Amended Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Articles of Incorporation%2FOrganization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond Certification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bond Collective Bargaining Agreement %28CBA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cashiering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certificate of Limited Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint Inquiry Letter%2FResponse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court Order%2FJudgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cure Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Leasing WCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employer Response%2FCure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Employer Identification Number %28FEIN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IRS Clearance Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Forma Pauperis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Waste Discharge Permit Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%26R%2FRCI%2FCIU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Litter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other PAGA Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Required Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposed Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Leasing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed Employee Leasing Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Employer Identification Number %28SEIN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers Compensation Insurance %28WCI%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

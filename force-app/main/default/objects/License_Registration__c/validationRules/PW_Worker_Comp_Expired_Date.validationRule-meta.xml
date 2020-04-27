@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Worker_Comp_Expired_Date</fullName>
+    <active>true</active>
+    <description>Used for the PW record type</description>
+    <errorConditionFormula>Record_Type_Name__c =&#39;Public_Works&#39; &amp;&amp;
+
+ISCHANGED(WCI_Expiration_Date__c) &amp;&amp;
+WCI_Expiration_Date__c &lt; Today()</errorConditionFormula>
+    <errorDisplayField>WCI_Expiration_Date__c</errorDisplayField>
+    <errorMessage>You many not enter an expired Workers Comp Policy</errorMessage>
+</ValidationRule>

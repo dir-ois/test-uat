@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source Sandbox --></label>
+    <name>Source_Sandbox__c</name>
+    <picklistValues>
+        <masterLabel>N/A - Configuration Data</masterLabel>
+        <translation><!-- N/A - Configuration Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Support Environment</masterLabel>
+        <translation><!-- Production Support Environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staging</masterLabel>
+        <translation><!-- Staging --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

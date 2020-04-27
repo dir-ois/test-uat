@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>A_New_Bug_has_been_submitted</fullName>
+        <description>A New Bug has been submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>drosales@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jkakadia@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mdpadua@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tken@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>uparker@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Support_Request/New_Bug_Was_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Bug_Assignment_Notification</fullName>
+        <description>Bug Assignment Notification - Support Team</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_To_Support_Team__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/A_New_Bug_Was_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Bug_Assignment_Notification_Busincess</fullName>
+        <description>Bug Assignment Notification - Business Team</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_To_Business_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/A_New_Bug_Was_Assigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Bug_Has_Been_Accepted</fullName>
+        <description>Bug Has Been Accepted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_To_Support_Team__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sfdcdonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>System_Wide_Email_Tempates/A_New_Bug_Was_Assigned</template>
+    </alerts>
+    <rules>
+        <fullName>New Bug Was Submitted</fullName>
+        <actions>
+            <name>A_New_Bug_has_been_submitted</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Bug__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

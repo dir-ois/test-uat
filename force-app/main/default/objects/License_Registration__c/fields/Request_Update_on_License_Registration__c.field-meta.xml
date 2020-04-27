@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Update_on_License_Registration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Wage/garment users select this checkbox in order to submit a request to L &amp; R to research and verify the licensing data for an Account.  Senior deputies are informed of the requests via the &quot;All License &amp; Registration Update Requests&quot; report.</description>
+    <externalId>false</externalId>
+    <label>Request Update on License/Registration</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

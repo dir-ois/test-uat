@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Address where you worked, if different from Employer / Business address. --></help>
+    <label><!-- Other Street Address --></label>
+    <name>Other_Street_Address__c</name>
+</CustomFieldTranslation>

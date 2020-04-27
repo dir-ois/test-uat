@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date the Live Scan was conducted. Found on the live scan certification. --></help>
+    <label><!-- Date Completed --></label>
+    <name>Date_Completed__c</name>
+</CustomFieldTranslation>

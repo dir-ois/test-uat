@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Itemized wage deduction statement not provided at least semi-monthly --></help>
+    <label><!-- Itemized wage deduction statement --></label>
+    <name>Violation_Itemized_deduction_statement__c</name>
+</CustomFieldTranslation>

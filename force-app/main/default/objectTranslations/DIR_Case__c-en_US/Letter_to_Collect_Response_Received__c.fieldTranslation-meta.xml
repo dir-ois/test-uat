@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date that the Letter to Collect has been received. --></help>
+    <label><!-- Letter to Collect Response Received --></label>
+    <name>Letter_to_Collect_Response_Received__c</name>
+</CustomFieldTranslation>

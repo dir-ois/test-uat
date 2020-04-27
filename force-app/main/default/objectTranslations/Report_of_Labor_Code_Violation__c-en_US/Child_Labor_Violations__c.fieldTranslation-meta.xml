@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Child Labor Violations --></label>
+    <name>Child_Labor_Violations__c</name>
+    <picklistValues>
+        <masterLabel>Minor work excessive or prohibited hours</masterLabel>
+        <translation><!-- Minor work excessive or prohibited hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor work in hazardous conditions</masterLabel>
+        <translation><!-- Minor work in hazardous conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No valid entertainment work permit(s)</masterLabel>
+        <translation><!-- No valid entertainment work permit(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No valid work permit(s)</masterLabel>
+        <translation><!-- No valid work permit(s) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

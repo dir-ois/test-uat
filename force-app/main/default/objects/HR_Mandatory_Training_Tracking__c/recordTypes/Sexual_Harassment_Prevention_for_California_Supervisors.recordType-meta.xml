@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sexual_Harassment_Prevention_for_California_Supervisors</fullName>
+    <active>true</active>
+    <description>Sexual Harassment Prevention for California Supervisors training</description>
+    <label>Sexual Harassment Prevention for California Supervisors</label>
+</RecordType>

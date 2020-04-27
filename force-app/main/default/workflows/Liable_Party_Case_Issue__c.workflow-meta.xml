@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Reporting_Category_Population</fullName>
+        <field>Reporting_Category_Group_Field__c</field>
+        <formula>Reporting_Category__c</formula>
+        <name>Reporting Category Population</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reporting_Category_Sort_Order_Transfer</fullName>
+        <field>Reporting_Category_Sort_Order_Non_Form__c</field>
+        <formula>Reporting_Category_Sort_Order__c</formula>
+        <name>Reporting Category Sort Order Transfer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>633 75 Table Data Workflow</fullName>
+        <actions>
+            <name>Reporting_Category_Population</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Reporting_Category_Sort_Order_Transfer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Liable_Party_Case_Issue__c.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Workflow designed to migrate the data needed to form the Violations table in the 633 75 ODA form from formula fields on the Liable Party Case Issue object: Reporting Category, Reporting Category Sort Order, Balance Due to Employee(s), and Interest Due.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

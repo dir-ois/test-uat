@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Employees Misclassification --></label>
+    <name>Employees_Misclassification__c</name>
+    <picklistValues>
+        <masterLabel>Misclassified as independent contractors</masterLabel>
+        <translation><!-- Misclassified as independent contractors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salaried misclassified as exempt</masterLabel>
+        <translation><!-- Salaried misclassified as exempt --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

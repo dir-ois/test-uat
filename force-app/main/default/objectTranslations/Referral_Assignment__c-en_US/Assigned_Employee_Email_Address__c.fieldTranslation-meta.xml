@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Assigned Employee Email Address --></label>
+    <name>Assigned_Employee_Email_Address__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CM-010 Miscellaneous Civil Complaint --></label>
+    <name>CM_010_Miscellaneous_Civil_Complaint__c</name>
+    <picklistValues>
+        <masterLabel>Other complaint</masterLabel>
+        <translation><!-- Other complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RICO</masterLabel>
+        <translation><!-- RICO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

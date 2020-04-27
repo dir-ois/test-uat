@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RCI Only</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RCI Only</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Acknowledgement --></label>
+        <name>Acknowledgement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Date of Separation --></label>
+        <name>DateofSeparation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Immigration Threat Card --></label>
+        <name>ImmigrationThreatCard</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- In Writing --></label>
+        <name>In_Writing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Others Threatened --></label>
+        <name>Others_Threatened</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Others Threatened 2 --></label>
+        <name>Others_Threatened_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Others Threatened Conditional 1 --></label>
+        <name>Others_Threatened_Conditional_1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Others Threatened Conditional 2 --></label>
+        <name>Others_Threatened_Conditional_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Protected Activity 1.2 --></label>
+        <name>ProtectedActivity12</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Protected Activity 2.2 --></label>
+        <name>ProtectedActivity22</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Protected Activity 1 --></label>
+        <name>Protected_Activity_1</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Protected Activity 2 --></label>
+        <name>Protected_Activity_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Protected Activity 3 --></label>
+        <name>Protected_Activity_3</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Protected Activity 3.2 --></label>
+        <name>Protected_Activity_3_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recording --></label>
+        <name>Recording</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Reporting Investigator --></label>
+        <name>Reporting_Investigator</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Still Employed Here --></label>
+        <name>StillEmployedHere</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Summary --></label>
+        <name>Summary</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Threat Reported Date --></label>
+        <name>ThreatReportedDate</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Threat Dates --></label>
+        <name>Threat_Dates</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Threat In Person --></label>
+        <name>Threat_In_Person</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Threat Location Other --></label>
+        <name>Threat_Location_Other</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- When 2 --></label>
+        <name>When_2</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- When Info --></label>
+        <name>When_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Who Info --></label>
+        <name>Who_Info</name>
+    </fieldSets>
+    <layouts>
+        <layout>Immigration Threat</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Employer --></label>
+            <section>Employer</section>
+        </sections>
+        <sections>
+            <label><!-- Threat Details --></label>
+            <section>Threat Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RCI Only Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>New_Task_Custom</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Immigration Threat --></label>
+        <name>Immigration_Threat</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Your Sr must approve this first. --></errorMessage>
+        <name>Cannot_Convert_without_SR_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must confirm the Advocate, Employer and Claimant before setting status to Convert to Case. --></errorMessage>
+        <name>Cannot_convert_case</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Open_in_Form_Wizard --></label>
+        <name>Open_in_Form_Wizard</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Your_Immigration_Threat_Request_was_Rejected</name>
+        <subject><!-- Your Immigration Threat Request was Rejected --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Your_Request_for_Immigration_Threat_has_been_Approved</name>
+        <subject><!-- Your Request for Immigration Threat has been Approved --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

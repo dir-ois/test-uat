@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SysAd LTD WCA</label>
+    <protected>false</protected>
+    <values>
+        <field>Condition_Field_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Condition_Field__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>DIR_Case_Recordtype_Name__c</field>
+        <value xsi:type="xsd:string">WCA</value>
+    </values>
+    <values>
+        <field>Message__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Permission_Set__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Post_Button_Rendering__c</field>
+        <value xsi:type="xsd:string">Active</value>
+    </values>
+    <values>
+        <field>Recommend_Button_Rendering__c</field>
+        <value xsi:type="xsd:string">Active</value>
+    </values>
+    <values>
+        <field>Third_Button_Rendering__c</field>
+        <value xsi:type="xsd:string">Active</value>
+    </values>
+    <values>
+        <field>User_Profile__c</field>
+        <value xsi:type="xsd:string">System Administrator LTD</value>
+    </values>
+</CustomMetadata>

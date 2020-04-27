@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>A referral for Civil Litigation may result in a payment plan that is related to the Referral record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A referral for Civil Litigation may result in a payment plan that is related to the Referral record.</inlineHelpText>
+    <label>Referral</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Referral__c.Case__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Case__c</valueField>
+        </filterItems>
+        <infoMessage>You may relate this payment plan with a Referral on the same case.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Referral__c</referenceTo>
+    <relationshipLabel>Payment Plans</relationshipLabel>
+    <relationshipName>Payment_Plans</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

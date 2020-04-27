@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_Senior_Deputy__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>F0009: WCA Senior Deputy on referral</description>
+    <externalId>false</externalId>
+    <inlineHelpText>F0009: WCA Senior Deputy on referral</inlineHelpText>
+    <label>WCA Senior Deputy</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Reports_of_Labor_Law_Violations1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

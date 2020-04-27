@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearing_Officer_Employee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The internal employee that will serve as the hearing officer/ deputy or senior deputy</description>
+    <externalId>false</externalId>
+    <label>Meeting Held By</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only employees with the hearing officer position can be selected.</errorMessage>
+        <filterItems>
+            <field>DIR_Employee__c.Position__c</field>
+            <operation>equals</operation>
+            <value>Senior Deputy, Deputy, Hearing Officer, Legal</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Hearings</relationshipLabel>
+    <relationshipName>Hearings</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

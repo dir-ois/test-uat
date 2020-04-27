@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please enter your 8-digit SEIN number using only numbers (no dashes or spaces.) --></help>
+    <label><!-- State Employer Identification Number --></label>
+    <name>State_Employer_Identification_Number_c__c</name>
+</CustomFieldTranslation>

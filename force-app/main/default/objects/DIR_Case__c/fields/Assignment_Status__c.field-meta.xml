@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignment_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Pre-Investigation Disposition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Additional information</fullName>
+                <default>false</default>
+                <label>Additional information</label>
+            </value>
+            <value>
+                <fullName>Accept &amp; Assign INV</fullName>
+                <default>false</default>
+                <label>Accept &amp; Assign INV</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – No Protected Activity</fullName>
+                <default>false</default>
+                <label>Admin Closure – No Protected Activity</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – No Causal Link</fullName>
+                <default>false</default>
+                <label>Admin Closure – No Causal Link</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – No employer knowledge</fullName>
+                <default>false</default>
+                <label>Admin Closure – No employer knowledge</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – No Adverse Action</fullName>
+                <default>false</default>
+                <label>Admin Closure – No Adverse Action</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Untimely</fullName>
+                <default>false</default>
+                <label>Admin Closure – Untimely</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Insufficient Information</fullName>
+                <default>false</default>
+                <label>Admin Closure – Insufficient Information</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Other</fullName>
+                <default>false</default>
+                <label>Admin Closure – Other</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Lack of Jurisdiction</fullName>
+                <default>false</default>
+                <label>Admin Closure – Lack of Jurisdiction</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Lack of Jurisdiction – DFEH</fullName>
+                <default>false</default>
+                <label>Admin Closure – Lack of Jurisdiction – DFEH</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Lack of Jurisdiction – Atty Referral</fullName>
+                <default>false</default>
+                <label>Admin Closure – Lack of Jurisdiction – Atty Referral</label>
+            </value>
+            <value>
+                <fullName>Admin Closure – Lack of Jurisdiction – Other</fullName>
+                <default>false</default>
+                <label>Admin Closure – Lack of Jurisdiction – Other</label>
+            </value>
+            <value>
+                <fullName>Admin Closure</fullName>
+                <default>false</default>
+                <label>Admin Closure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

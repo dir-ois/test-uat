@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ordered That: --></label>
+    <name>AWARD_TAKE_NOTHING__c</name>
+    <picklistValues>
+        <masterLabel>Plaintiff recover from Defendant.</masterLabel>
+        <translation><!-- Plaintiff recover from Defendant. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plaintiff take nothing by virtue of his/her complaint.</masterLabel>
+        <translation><!-- Plaintiff take nothing by virtue of his/her complaint. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

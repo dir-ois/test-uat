@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authorization_Inclusions__c</fullName>
+    <description>Used in Registration forms.</description>
+    <externalId>false</externalId>
+    <formula>&quot;This authorization grants the below designated agent(s) to:&quot; 
+&amp;BR()&amp; 
+&quot; - obtain verbal information on my behalf from the DLSE Licensing &amp; Registration Unit concerning the status of my application&quot; 
+&amp;BR()&amp; 
+&quot; - obtain a copy of my defect letters&quot; 
+&amp;BR()&amp; 
+&quot; - obtain any additional information and/or materials that I specify for each agent&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Authorization Inclusions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

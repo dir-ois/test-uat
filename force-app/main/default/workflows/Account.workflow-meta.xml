@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Alert_DIR_SF_support_on_Account_RT_convert_request</fullName>
+        <description>Account: Alert DIR SF support on Account RT convert request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ble@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Account_Account_RT_Convert</template>
+    </alerts>
+    <alerts>
+        <fullName>Duplicate_Account_Alert</fullName>
+        <ccEmails>MTeixeira@dir.ca.gov</ccEmails>
+        <ccEmails>TNegussay@dir.ca.gov</ccEmails>
+        <description>Account: Notify SF Support Team on Duplicate Accounts Merge Request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ble@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>cbae@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dkwon@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hleake@dir.ca.gov</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Duplicate_Account_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Confirmation</fullName>
+        <description>Email Confirmation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WCA_Email_Templates/Advocate_Notification_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Change_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>ble@dir.ca.gov.dupaccountowner</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Change Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_City</fullName>
+        <field>ShippingCity</field>
+        <formula>Primary_City_Placeholder__c</formula>
+        <name>Primary City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_State_Update</fullName>
+        <field>ShippingState</field>
+        <formula>Primary_State_Placeholder__c</formula>
+        <name>Primary State Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Street_Update</fullName>
+        <field>ShippingStreet</field>
+        <formula>Primary_Street_Placeholder__c</formula>
+        <name>Primary Street Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Primary_Zip_Update</fullName>
+        <field>ShippingPostalCode</field>
+        <formula>Primary_Zip_Placeholder__c</formula>
+        <name>Primary Zip Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Low_Wage_True</fullName>
+        <description>Sets the Low-wage Industry field to &quot;Yes&quot;</description>
+        <field>Low_wage_Industry__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Set Low Wage True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Test2</fullName>
+        <field>Legacy_ID__c</field>
+        <formula>Merge_Into_Account__r.Id</formula>
+        <name>Test2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Business_Account_Name</fullName>
+        <description>Update Business Account Name with Prefix ***Conflict Record Type Duplicate*** for Duplicate Accounts  that have different record types</description>
+        <field>Name</field>
+        <formula>&quot;*Duplicate*&quot; &amp; Name</formula>
+        <name>Update Business Account Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Conflict_RT_Duplicate_Checkbox</fullName>
+        <description>Update Conflict RT Duplicate Checkbox when there are duplicates of different RTs</description>
+        <field>Conflict_RT_Duplicate__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Conflict RT Duplicate Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Dup_Person_Account_Name</fullName>
+        <description>Update Person Account Last Name with Prefix *Duplicate* for Duplicate Accounts that have different record</description>
+        <field>FirstName</field>
+        <formula>&quot;*Duplicate* &quot; &amp;  FirstName</formula>
+        <name>Update Dup Person Account Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Business_Account</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Business_Account</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update to Business Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account%3A Account RT Convert</fullName>
+        <actions>
+            <name>Account_Alert_DIR_SF_support_on_Account_RT_convert_request</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Convert_Account_Type__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>This WF triggers email notification sent to DIR sf support group when an account RT conversion is requested</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Alert Admin Team of Duplicate Account Merge Request</fullName>
+        <actions>
+            <name>Duplicate_Account_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Alert Admin Team of Duplicate Account Merge Request</description>
+        <formula>((NOT( ISBLANK( Merge_Into_Account__c )))  ||   Mark_as_duplicate__c   = TRUE)
+&amp;&amp;  NOT(CONTAINS(Name, &quot;***&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deleted Accounts</fullName>
+        <actions>
+            <name>Change_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>contains</operation>
+            <value>***DELETED</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.FirstName</field>
+            <operation>contains</operation>
+            <value>***DELETED</value>
+        </criteriaItems>
+        <description>When account name or person account first name contains &quot;***DELETED&quot;, change the owner name to &#39;Integration User&quot;. This wf is for account dedup.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Low Wage Industry</fullName>
+        <actions>
+            <name>Set_Low_Wage_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Uses the NAICS code to set the low wage industry selection</description>
+        <formula>IF ( LEFT ( NAICS_Code__r.Name, 3) = &#39;111&#39;, TRUE,  IF ( LEFT ( NAICS_Code__r.Name, 4)  = &#39;8111&#39;, TRUE,  IF ( NAICS_Code__r.Name = &#39;811192&#39;, TRUE,  IF ( LEFT ( NAICS_Code__r.Name, 2) = &#39;23&#39;, TRUE,  IF ( LEFT ( NAICS_Code__r.Name, 3) = &#39;315&#39;, TRUE,  IF ( LEFT ( NAICS_Code__r.Name, 5) = &#39;56172&#39;, TRUE,  IF ( LEFT ( NAICS_Code__r.Name, 4) = &#39;7225&#39;, TRUE,  IF ( LEFT ( NAICS_Code__r.Name, 5) = &#39;44-45&#39;, TRUE,  IF ( NAICS_Code__r.Name = &#39;493110&#39;, TRUE,  FALSE)))))))))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Primary Address from Placeholder</fullName>
+        <actions>
+            <name>Primary_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_State_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Street_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Primary_Zip_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISNEW() &amp;&amp;  ISPICKVAL(Imported_From__c, &quot;PAGA&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update record type on account</fullName>
+        <actions>
+            <name>Update_to_Business_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Entity_Type__c</field>
+            <operation>equals</operation>
+            <value>Individual/Sole Proprietor</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

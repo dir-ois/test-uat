@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office_Account_Required</fullName>
+    <active>true</active>
+    <description>Office Account must be selected on a Transaction</description>
+    <errorConditionFormula>ISBLANK( Office_Account__c )</errorConditionFormula>
+    <errorDisplayField>Agency_Name__c</errorDisplayField>
+    <errorMessage>Office Account must be selected on all transactions</errorMessage>
+</ValidationRule>

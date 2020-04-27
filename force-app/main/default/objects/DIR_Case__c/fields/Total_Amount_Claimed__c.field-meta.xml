@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Amount_Claimed__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Amount Claimed</label>
+    <summarizedField>Wages_Compensation__c.Amount_Claimed__c</summarizedField>
+    <summaryForeignKey>Wages_Compensation__c.Case__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

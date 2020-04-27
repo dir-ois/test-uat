@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 121 Notice Type --></label>
+    <name>WCA_121_Notice_Type__c</name>
+    <picklistValues>
+        <masterLabel>Notice of Findings on Civil Penalty Citation / Assessment</masterLabel>
+        <translation><!-- Notice of Findings on Civil Penalty Citation / Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Findings on Penalty Assessment</masterLabel>
+        <translation><!-- Notice of Findings on Penalty Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Findings on Stop Order</masterLabel>
+        <translation><!-- Notice of Findings on Stop Order --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registration Questions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registration Questions</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Eligibility Notification --></label>
+        <name>Eligibility_Notification</name>
+    </fieldSets>
+    <layouts>
+        <layout>Registration Questions Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eligibility Information --></label>
+            <section>Eligibility Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CheckBox --></label>
+        <name>CheckBox</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Long Text --></label>
+        <name>Long_Text</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Text --></label>
+        <name>Text</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- YesNo --></label>
+        <name>YesNo</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

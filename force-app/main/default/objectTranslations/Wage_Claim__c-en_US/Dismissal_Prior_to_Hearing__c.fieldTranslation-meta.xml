@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dismissal Prior to Hearing --></label>
+    <name>Dismissal_Prior_to_Hearing__c</name>
+    <picklistValues>
+        <masterLabel>Dismissed - Full Payment by Defendant</masterLabel>
+        <translation><!-- Dismissed - Full Payment by Defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - Lack of Jurisdiction</masterLabel>
+        <translation><!-- Dismissed - Lack of Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - Other</masterLabel>
+        <translation><!-- Dismissed - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - Plaintiff Failed to Appear</masterLabel>
+        <translation><!-- Dismissed - Plaintiff Failed to Appear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - Stipulated Settlement</masterLabel>
+        <translation><!-- Dismissed - Stipulated Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed - Withdrawal</masterLabel>
+        <translation><!-- Dismissed - Withdrawal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

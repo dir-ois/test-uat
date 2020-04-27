@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For work days between 3.5 hours and up to 6 hours per day, not allowed to take a 10-minute rest break --></help>
+    <label><!-- For work days between 3.5 and 6 hours --></label>
+    <name>Violation_For_work_days_between_35_and_6__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCI_Health_and_Safety_Input</fullName>
+    <active>true</active>
+    <description>RCI - H&amp;S Date required if Yes is selected</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;RCI&quot; &amp;&amp;
+Closed__c=FALSE &amp;&amp;
+ISPICKVAL(H_S_Input__c,&quot;YES&quot;) &amp;&amp;
+ISBLANK(SH_H_S_Report_Date__c)</errorConditionFormula>
+    <errorMessage>If H&amp;S Input is Yes, please provide a H&amp;S Report Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Violation_Document</fullName>
+    <availability>online</availability>
+    <description>BOFE Citation filtered by Citation Form on Assessment</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Citation Document</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Liability__c.Id}
+&amp;queryid=[ViolationTable]a0md0000003l2RW?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1={!Liability__c.Citation_Form_Assessment_Conga__c},
+[HeaderInfo]a0md0000003l2Rb?pv0={!Liability__c.Id},
+[LiableHead]a0md0000006mCik?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1={!Liability__c.Id},
+[Employerinfo]a0md0000008uSKf?pv0={!Liability__c.Assessment_ID_Conga__c}~pv1={!Liability__c.Id},
+[Governor]a0md0000003l2S0,
+[OFFICE]a0md0000008uSKeAAM?pv0={!Liability__c.Id}
+&amp;TemplateGroup=Violation%20-%20{!Liability__c.Citation_Form_Assessment_Conga__c}{!Liability__c.BOFE8A__c}
+&amp;FP0=1
+&amp;AC0=1
+&amp;DS6=1
+&amp;DS0=1
+&amp;OFN={!Liability__c.Citation_Form_Assessment_Conga__c}+-+{!Liability__c.Citation_Number__c}
+&amp;sc0=1
+&amp;sc1=Attachments
+&amp;AttachmentParentID={!DIR_Case__c.Id}</url>
+</WebLink>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Wages are not paid at the contracted rate --></help>
+    <label><!-- Wages are not paid at the contracted rat --></label>
+    <name>Violation_Wages_are_not_paid_at_contract__c</name>
+</CustomFieldTranslation>

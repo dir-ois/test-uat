@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secured_License_Registration_Number__c</fullName>
+    <description>Encrypted field that hides the value from standard users. Used in combination with the Secured License/Registration Type and validation rule to ensure the proper field is populated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Encrypted value of the license and registration number.</inlineHelpText>
+    <label>Secured License/Registration Number</label>
+    <length>175</length>
+    <maskChar>asterisk</maskChar>
+    <maskType>all</maskType>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>EncryptedText</type>
+</CustomField>

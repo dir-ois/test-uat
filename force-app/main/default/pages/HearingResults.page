@@ -1,0 +1,124 @@
+<apex:page standardController="Hearing__c" extensions="HearingResults">
+
+    <link rel="stylesheet" href="{!URLFOR($Resource.jquery_mobile, 'jquery-ui.min.css')}" />
+    <link rel="stylesheet" href="{!URLFOR($Resource.jquery_mobile, 'jquery-ui.theme.min.css')}" />
+    <script src="{!URLFOR($Resource.jquery_mobile,'jquery.min.js')}"></script>
+    <script src="{!URLFOR($Resource.jquery_mobile,'jquery-ui.min.js')}"></script>
+
+    <apex:form >
+    
+        <apex:pageBlock title="Hearing Results">
+        
+            <apex:pageBlockSection columns="2">
+                
+                <apex:pageBlockSectionItem >
+                    Case Number
+                    <apex:outputField value="{!hearing.Appeal__r.Case__r.Case_Number__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Hearing Date
+                    <apex:outputField value="{!hearing.Hearing_Date__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSection />
+                <apex:pageBlockSectionItem >
+                    Hearing
+                    <apex:outputField value="{!hearing.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Hearing Effective Date
+                    <apex:inputField value="{!hearing.Effective_Date__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Appeal
+                    <apex:outputField value="{!hearing.Appeal__r.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Estimated Length Of Meeting
+                    <apex:outputField value="{!hearing.Appeal__r.Estimated_Length_of_Hearing_In_Minutes__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Deputy
+                    <apex:outputText value="{!hearing.Appeal__r.Case__r.Assigned_Deputy__r.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Actual Length of Meeting (Minutes)
+                    <apex:inputText value="{!hearing.Length_of_Hearing__c}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Senior Deputy
+                    <apex:outputText value="{!hearing.Appeal__r.Case__r.Assigned_Deputy__r.Manager__r.Name}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Length of Minutes to Write Findings
+                    <apex:inputText value="{!hearing.Minutes_to_Write_Findings__c}" />
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <div id="accordion">
+                <apex:repeat value="{!liabilities}" var="liab">
+                    <h3>{!liab.liability.Liability_Appeal__r.Liability__r.Citation_Number__c}</h3>
+                    <div>
+                    <apex:pageBlockSection columns="2">
+                            <apex:pageBlockSectionItem >
+                            <!-- Next 1 line edited by S. Thornton 2/4/2016 -->
+                                Liability Status After Hearing
+                                <apex:inputField value="{!liab.liability.Results__c}" />
+                            </apex:pageBlockSectionItem>
+                            <apex:pageBlockSectionItem >
+                                Hearing Notes
+                                <apex:inputField value="{!liab.liability.Hearing_Notes__c}" />
+                            </apex:pageBlockSectionItem>
+                        </apex:pageBlockSection>
+                        <apex:pageBlockTable value="{!liab.violations}" var="viol">
+                            <apex:column headerValue="Violation">
+                                {!viol.Violation_Type__r.Name}
+                            </apex:column>
+                            <apex:column headerValue="Civil Penalty Section">
+                                {!viol.Civil_Penalty_Section_Conga__c}
+                            </apex:column>
+                             <!-- Next 3 lines added by S. Thornton 2/4/2016 -->
+                            <apex:column headerValue="Case Violation Status">
+                                <apex:inputField value="{!viol.Status__c}" />
+                            </apex:column>
+                            <apex:column headerValue="Original Penalty Assessment Amount">
+                                {!viol.Original_Penalty_Assessment_Amount__c}
+                            </apex:column>
+                            <apex:column headerValue="Modified Penalty Assessment">
+                                <apex:inputField value="{!viol.Citation_Amount__c}" />
+                            </apex:column>
+                            <apex:column headerValue="Original Wage Assessment Amount">
+                                {!viol.Original_Wage_Assessment_Amount__c}
+                            </apex:column>
+                            <apex:column headerValue="Modified Wage Assessment Amount">
+                                <apex:inputField value="{!viol.Wages_Due__c}" />
+                            </apex:column>
+                        </apex:pageBlockTable>
+                    </div>
+                </apex:repeat>
+            </div> 
+
+            <script>
+                $(function() {
+                    $("#accordion").accordion();
+                });
+            </script>
+            
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    Failure to Appear
+                    <apex:inputField value="{!hearing.Failure_to_Appear__c}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageMessages />
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!SaveHearing}" />
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+    
+    </apex:form>
+
+</apex:page>

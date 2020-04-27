@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Workers_Comp_Exempt_Out_of_State</fullName>
+    <description>PW Registration Form</description>
+    <displayedFields>
+        <field>Insurance_Carrier__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>PW Workers Comp Exempt Out of State</label>
+</FieldSet>

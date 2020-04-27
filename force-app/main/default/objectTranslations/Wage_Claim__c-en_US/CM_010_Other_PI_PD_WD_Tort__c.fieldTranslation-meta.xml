@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CM-010 Other PI/PD/WD Tort --></label>
+    <name>CM_010_Other_PI_PD_WD_Tort__c</name>
+    <picklistValues>
+        <masterLabel>Asbestos</masterLabel>
+        <translation><!-- Asbestos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical malpractice</masterLabel>
+        <translation><!-- Medical malpractice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other PI/PD/WD</masterLabel>
+        <translation><!-- Other PI/PD/WD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product liability</masterLabel>
+        <translation><!-- Product liability --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

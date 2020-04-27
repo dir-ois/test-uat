@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What did they say to the claimant? --></help>
+    <label><!-- Communication with Claimant --></label>
+    <name>Communication_with_Claimant__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_Office_and_Unit</fullName>
+    <active>true</active>
+    <description>Requires that the office and the unit on the office be populated before saving the office account</description>
+    <errorConditionFormula>ISBLANK ( Office__c )
+|| ISBLANK ( Office__r.RecordTypeId )</errorConditionFormula>
+    <errorMessage>The office must be populated and the office must have a record type before you can save this record.</errorMessage>
+</ValidationRule>

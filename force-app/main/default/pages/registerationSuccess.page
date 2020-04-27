@@ -1,0 +1,19 @@
+<apex:page controller="registerationSuccessController" docType="HTML-5.0" applyHtmlTag="false" applyBodyTag="false" sidebar="false" showHeader="false" standardStylesheets="false" tabStyle="My_Registrations__tab">
+
+    <apex:composition template="CommunityRegistrationTemplate">
+        <apex:define name="body">
+            <apex:form >
+                <br></br><apex:outputPanel >{!$Label.VIP_Confirmation_Text}</apex:outputPanel><br></br>
+                <apex:outputPanel rendered="{!showMoreDetails}"><br/>
+                    Registration Effective Date:&nbsp; <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!newReg.Effective_Date__c}" /> </apex:outputText> <br></br>
+                    Number of Years: {!newReg.No_of_Years__c} <br></br>
+                    Expiration Date: &nbsp; <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!newReg.Expiration_Date__c}" /> </apex:outputText> <br></br>
+                    
+                    </apex:outputPanel>
+                     <br></br><apex:commandLink action="{!redirectToHomePage}" value="Return to home" style="text-decoration:none;" styleclass="btn btn-custom" /> <br></br><br></br>
+               
+            </apex:form>
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

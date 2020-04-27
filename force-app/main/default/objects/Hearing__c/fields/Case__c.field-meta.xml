@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case__c</fullName>
+    <description>Lookup to parent case. Used for easy identification and for rules related to referrals that deal with hearing dates.</description>
+    <externalId>false</externalId>
+    <label>Case</label>
+    <referenceTo>DIR_Case__c</referenceTo>
+    <relationshipLabel>Meetings</relationshipLabel>
+    <relationshipName>Hearings</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

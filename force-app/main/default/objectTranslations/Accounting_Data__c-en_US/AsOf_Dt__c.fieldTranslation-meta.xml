@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ACCOUNTING_DT must fall within an open accounting period for the Business Unit indicated.
+
+ACCOUNTING_DT can not be prior to &quot;Since&quot; date on the Customer General Information.
+
+If left blank, this field will default to the Group Accounting Date. --></help>
+    <label><!-- AsOf_Dt --></label>
+    <name>AsOf_Dt__c</name>
+</CustomFieldTranslation>

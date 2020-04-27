@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Deputy_only_can_accept_case</fullName>
+    <active>true</active>
+    <description>Only the assigned deputy can accept a case</description>
+    <errorConditionFormula>Case_Accepted__c 
+&amp;&amp; PriorValue(Case_Accepted__c) = false
+&amp;&amp;  Assigned_Deputy__r.User__c &lt;&gt;  $User.Id</errorConditionFormula>
+    <errorMessage>Only the assigned deputy can accept a case.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Possible Related EPA claim --></label>
+    <name>Possible_Related_EPA_claim__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>DIR_Case__c</entityName>
+    <fieldName>Case_Status_Progress_Bar__c</fieldName>
+    <masterLabel>RCI Case Management Progress Bar</masterLabel>
+    <recordTypeName>RCI</recordTypeName>
+</PathAssistant>

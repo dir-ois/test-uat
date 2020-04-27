@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deputy_Making_Referral__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>F0008: Deputy Making Referral from wage claim.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>F0008: Deputy Making Referral from wage claim.</inlineHelpText>
+    <label>Deputy Making Referral</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Reports_of_Labor_Law_Violations</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

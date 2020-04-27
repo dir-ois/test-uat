@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Section__c</fullName>
+    <description>Defines the section of the Inspection that the question should display in. Dependent list based on the inspection type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the section in which the question should be displayed.</inlineHelpText>
+    <label>Inspection Section</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Inspection_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Header</fullName>
+                <default>false</default>
+                <label>Header</label>
+            </value>
+            <value>
+                <fullName>Primary Employer</fullName>
+                <default>false</default>
+                <label>Primary Employer</label>
+            </value>
+            <value>
+                <fullName>Interviewee</fullName>
+                <default>false</default>
+                <label>Interviewee</label>
+            </value>
+            <value>
+                <fullName>License Information</fullName>
+                <default>false</default>
+                <label>License Information</label>
+            </value>
+            <value>
+                <fullName>Worker&#39;s Compensation Insurance Information</fullName>
+                <default>false</default>
+                <label>Worker&#39;s Compensation Insurance Information</label>
+            </value>
+            <value>
+                <fullName>Employer/Principle Information</fullName>
+                <default>false</default>
+                <label>Employer/Principle Information</label>
+            </value>
+            <value>
+                <fullName>Wage Information</fullName>
+                <default>false</default>
+                <label>Wage Information</label>
+            </value>
+            <value>
+                <fullName>IWC Order</fullName>
+                <default>false</default>
+                <label>IWC Order</label>
+            </value>
+            <value>
+                <fullName>Primary Employer Detail</fullName>
+                <default>false</default>
+                <label>Primary Employer Detail</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Header</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Primary Employer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Interviewee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>License Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Worker&#39;s Compensation Insurance Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Employer/Principle Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Wage Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>IWC Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BOFE</controllingFieldValue>
+            <valueName>Primary Employer Detail</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

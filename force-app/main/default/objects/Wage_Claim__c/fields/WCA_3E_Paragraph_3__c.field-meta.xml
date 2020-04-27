@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_3E_Paragraph_3__c</fullName>
+    <defaultValue>&#39;The case arises out of the claim you filed with this office seeking to recover unpaid wages.  Our review of the materials and information provided reveals that the individual named as your employer in the claim is now deceased.  Legal proceedings involving deceased parties require unique and specialized procedures.  The procedures available in proceedings before the Labor Commissioner are generally speaking not designed to accommodate claims against deceased employers.  After carefully considering the circumstances of this case, it is our conclusion that a Labor Commissioner proceeding does not provide an appropriate forum in which to pursue the instant claim against your deceased former employer.&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 3E Deceased Employer</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

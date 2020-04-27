@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Roles</value>
+    </caseValues>
+    <layouts>
+        <layout>Case Role Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wage Case Roles</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- BOFE Roles --></description>
+        <label><!-- BOFE --></label>
+        <name>BOFE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Garment --></label>
+        <name>Garment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- PAGA Roles --></description>
+        <label><!-- PAGA --></label>
+        <name>PAGA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RCI --></label>
+        <name>RCI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- If you have already created a meeting and wish this case role to be a Meeting Participant, you must also add it to the Meeting as a Meeting Participant. --></description>
+        <label><!-- WCA --></label>
+        <name>WCA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Reason No Longer Active is required --></errorMessage>
+        <name>Reason_No_Longer_Active</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- BOFE_Documents --></label>
+        <name>BOFE_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga --></label>
+        <name>Conga</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Config --></label>
+        <name>Conga_Config</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Subpoena_old --></label>
+        <name>Create_Subpoena_old</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Case_Role_Document --></label>
+        <name>Generate_Case_Role_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Subpoena --></label>
+        <name>Subpoena</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Subpoena_II --></label>
+        <name>Subpoena_II</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- WCA_114 --></label>
+        <name>WCA_114</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- WCA_115 --></label>
+        <name>WCA_115</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- WCA_42_Subpeona_Personal --></label>
+        <name>WCA_42_Subpeona_Personal</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Response_Due_from_Garnishee__c</fullName>
+    <description>Default value = Garnishee Date Issued + 15 days</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Defaults to 15 days from the Date Issued by DLSE</inlineHelpText>
+    <label>Date Response Due from Garnishee</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

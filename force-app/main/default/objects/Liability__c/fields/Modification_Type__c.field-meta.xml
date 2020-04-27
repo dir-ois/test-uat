@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modification_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Modification Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hearing Modification</fullName>
+                <default>false</default>
+                <label>Hearing Modification</label>
+            </value>
+            <value>
+                <fullName>JEU</fullName>
+                <default>false</default>
+                <label>JEU</label>
+            </value>
+            <value>
+                <fullName>Legal Settlement</fullName>
+                <default>false</default>
+                <label>Legal Settlement</label>
+            </value>
+            <value>
+                <fullName>Offer in Compromise</fullName>
+                <default>false</default>
+                <label>Offer in Compromise</label>
+            </value>
+            <value>
+                <fullName>Tolling Agreement</fullName>
+                <default>false</default>
+                <label>Tolling Agreement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DISPUTE_AMOUNT is required when DISPUTE_CHKBOX is &apos;Y&apos;.
+
+DISPUTE_AMOUNT must be blank when DISPUTE_CHKBOX is &apos;N&apos;. --></help>
+    <label><!-- Dispute_Amount --></label>
+    <name>Dispute_Amount__c</name>
+</CustomFieldTranslation>

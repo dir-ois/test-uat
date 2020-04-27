@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Master violation type variable for which this value applies --></help>
+    <label><!-- Violation Type Variable --></label>
+    <name>Violation_Type_Variable__c</name>
+    <relationshipLabel><!-- Violation Variables --></relationshipLabel>
+</CustomFieldTranslation>

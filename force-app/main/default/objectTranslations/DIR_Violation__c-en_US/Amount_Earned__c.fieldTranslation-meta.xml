@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Current amount earned or accrued for this case issue including modifications (if any). --></help>
+    <label><!-- Amount Earned --></label>
+    <name>Amount_Earned__c</name>
+</CustomFieldTranslation>

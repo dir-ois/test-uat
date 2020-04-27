@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name or title of legal document or action, e.g., Subpoena Duces Tecum, Civil Compliant for Fraudulent Transfer, Labor Commissioner&apos;s Petition to Enforce Subpoena, Writ of Execution, etc --></help>
+    <label><!-- Title --></label>
+    <name>Title__c</name>
+</CustomFieldTranslation>

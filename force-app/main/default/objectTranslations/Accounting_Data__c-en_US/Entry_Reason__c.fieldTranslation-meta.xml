@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entry Reason --></label>
+    <name>Entry_Reason__c</name>
+    <picklistValues>
+        <masterLabel>APEAL</masterLabel>
+        <translation><!-- APEAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AROT</masterLabel>
+        <translation><!-- AROT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTG</masterLabel>
+        <translation><!-- CONTG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DECRS</masterLabel>
+        <translation><!-- DECRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM</masterLabel>
+        <translation><!-- DM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ERROR</masterLabel>
+        <translation><!-- ERROR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FEDRL</masterLabel>
+        <translation><!-- FEDRL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIN</masterLabel>
+        <translation><!-- FIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INCRS</masterLabel>
+        <translation><!-- INCRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEGAL</masterLabel>
+        <translation><!-- LEGAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MISC</masterLabel>
+        <translation><!-- MISC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSF</masterLabel>
+        <translation><!-- NSF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAR</masterLabel>
+        <translation><!-- PAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMT</masterLabel>
+        <translation><!-- PMT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMT-UA</masterLabel>
+        <translation><!-- PMT-UA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNLTY</masterLabel>
+        <translation><!-- PNLTY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCLAS</masterLabel>
+        <translation><!-- RCLAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIMI</masterLabel>
+        <translation><!-- REIMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIMO</masterLabel>
+        <translation><!-- REIMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIMP</masterLabel>
+        <translation><!-- REIMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REIMS</masterLabel>
+        <translation><!-- REIMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RVPMT</masterLabel>
+        <translation><!-- RVPMT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RVREV</masterLabel>
+        <translation><!-- RVREV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAIVE</masterLabel>
+        <translation><!-- WAIVE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

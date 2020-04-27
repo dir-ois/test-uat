@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- File Output Field - Case # and Employer --></label>
+    <name>File_Output_Field_Case_and_Employer__c</name>
+</CustomFieldTranslation>

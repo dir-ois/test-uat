@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Low Wage Occupation --></label>
+    <name>Low_Wage_Occupation__c</name>
+    <picklistValues>
+        <masterLabel>Agricultural Employee</masterLabel>
+        <translation><!-- Agricultural Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannabis</masterLabel>
+        <translation><!-- Cannabis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Car Wash Employee</masterLabel>
+        <translation><!-- Car Wash Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation><!-- Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Day laborer</masterLabel>
+        <translation><!-- Day laborer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic Worker</masterLabel>
+        <translation><!-- Domestic Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food processing</masterLabel>
+        <translation><!-- Food processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garment Employee</masterLabel>
+        <translation><!-- Garment Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel worker</masterLabel>
+        <translation><!-- Hotel worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janitorial</masterLabel>
+        <translation><!-- Janitorial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nail salon worker</masterLabel>
+        <translation><!-- Nail salon worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other - Paid at minimum wage rate or less</masterLabel>
+        <translation><!-- Other - Paid at minimum wage rate or less --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other - Paid via piece rate</masterLabel>
+        <translation><!-- Other - Paid via piece rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Port</masterLabel>
+        <translation><!-- Port --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Residential Care worker</masterLabel>
+        <translation><!-- Residential Care worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security guard</masterLabel>
+        <translation><!-- Security guard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse</masterLabel>
+        <translation><!-- Warehouse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

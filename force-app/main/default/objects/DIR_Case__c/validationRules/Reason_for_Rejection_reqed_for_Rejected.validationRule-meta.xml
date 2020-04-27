@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Rejection_reqed_for_Rejected</fullName>
+    <active>true</active>
+    <description>From Req 17388, a &quot;Reason for Rejection&quot; when case status is set to &quot;Rejected&quot;</description>
+    <errorConditionFormula>AND (
+     ISPICKVAL( Status__c , &quot;Rejected&quot;),
+ISBLANK( Reason_for_Rejection__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Rejection__c</errorDisplayField>
+    <errorMessage>A Reason for Rejection is required for rejected cases. Please fill out the &quot;Reason for Rejection&quot; and then reject the case again.</errorMessage>
+</ValidationRule>

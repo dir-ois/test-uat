@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Exchange --></label>
+    <name>Payment_Exchange__c</name>
+    <picklistValues>
+        <masterLabel>Deduction</masterLabel>
+        <translation><!-- Deduction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Payment</masterLabel>
+        <translation><!-- Direct Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Division Payment</masterLabel>
+        <translation><!-- Division Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Party to Party</masterLabel>
+        <translation><!-- Party to Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reversal</masterLabel>
+        <translation><!-- Reversal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

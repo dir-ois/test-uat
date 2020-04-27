@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Not paid at all for overtime hours worked --></help>
+    <label><!-- Not paid at all for overtime hours worke --></label>
+    <name>Violation_Not_paid_at_all_for_overtime__c</name>
+</CustomFieldTranslation>

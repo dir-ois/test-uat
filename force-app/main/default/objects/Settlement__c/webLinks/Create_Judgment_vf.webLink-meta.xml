@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Judgment_vf</fullName>
+    <availability>online</availability>
+    <description>Launches the vfp wrapper of the create judgment flow passing in the parameters as needed</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Create Judgment</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/CreateJudgmentFromSettlement?vObjectType=Settlement&amp;vCaseId={!Settlement__c.Case_ManagementId__c}&amp;varRecordId={!Settlement__c.Id}</url>
+</WebLink>

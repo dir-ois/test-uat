@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Litter</fullName>
+                <default>false</default>
+                <label>Litter</label>
+            </value>
+            <value>
+                <fullName>Intake</fullName>
+                <default>false</default>
+                <label>Intake</label>
+            </value>
+            <value>
+                <fullName>Investigation</fullName>
+                <default>false</default>
+                <label>Investigation</label>
+            </value>
+            <value>
+                <fullName>Liability</fullName>
+                <default>false</default>
+                <label>Liability</label>
+            </value>
+            <value>
+                <fullName>Hearing</fullName>
+                <default>false</default>
+                <label>Hearing</label>
+            </value>
+            <value>
+                <fullName>Audit</fullName>
+                <default>false</default>
+                <label>Audit</label>
+            </value>
+            <value>
+                <fullName>Cashiering</fullName>
+                <default>false</default>
+                <label>Cashiering</label>
+            </value>
+            <value>
+                <fullName>Settlement</fullName>
+                <default>false</default>
+                <label>Settlement</label>
+            </value>
+            <value>
+                <fullName>Payment</fullName>
+                <default>false</default>
+                <label>Payment</label>
+            </value>
+            <value>
+                <fullName>Subpoena</fullName>
+                <default>false</default>
+                <label>Subpoena</label>
+            </value>
+            <value>
+                <fullName>OTA</fullName>
+                <default>false</default>
+                <label>OTA</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>Photos</fullName>
+                <default>false</default>
+                <label>Photos</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>JEU</fullName>
+                <default>false</default>
+                <label>JEU</label>
+            </value>
+            <value>
+                <fullName>L&amp;R/RCI/CIU</fullName>
+                <default>false</default>
+                <label>L&amp;R/RCI/CIU</label>
+            </value>
+            <value>
+                <fullName>Cure Dispute</fullName>
+                <default>false</default>
+                <label>Cure Dispute</label>
+            </value>
+            <value>
+                <fullName>Court Complaint</fullName>
+                <default>false</default>
+                <label>Court Complaint</label>
+            </value>
+            <value>
+                <fullName>Proposed Settlement</fullName>
+                <default>false</default>
+                <label>Proposed Settlement</label>
+            </value>
+            <value>
+                <fullName>PAGA Notice</fullName>
+                <default>false</default>
+                <label>PAGA Notice</label>
+            </value>
+            <value>
+                <fullName>Other PAGA Document</fullName>
+                <default>false</default>
+                <label>Other PAGA Document</label>
+            </value>
+            <value>
+                <fullName>Employer Response/Cure</fullName>
+                <default>false</default>
+                <label>Employer Response/Cure</label>
+            </value>
+            <value>
+                <fullName>Amended Notice</fullName>
+                <default>false</default>
+                <label>Amended Notice</label>
+            </value>
+            <value>
+                <fullName>In Forma Pauperis</fullName>
+                <default>false</default>
+                <label>In Forma Pauperis</label>
+            </value>
+            <value>
+                <fullName>Court Order/Judgment</fullName>
+                <default>false</default>
+                <label>Court Order/Judgment</label>
+            </value>
+            <value>
+                <fullName>Workers Compensation Insurance (WCI)</fullName>
+                <default>false</default>
+                <label>Workers Compensation Insurance (WCI)</label>
+            </value>
+            <value>
+                <fullName>Bond Collective Bargaining Agreement (CBA)</fullName>
+                <default>false</default>
+                <label>Bond Collective Bargaining Agreement (CBA)</label>
+            </value>
+            <value>
+                <fullName>Sample Leasing Contract</fullName>
+                <default>false</default>
+                <label>Sample Leasing Contract</label>
+            </value>
+            <value>
+                <fullName>Signed Employee Leasing Contract</fullName>
+                <default>false</default>
+                <label>Signed Employee Leasing Contract</label>
+            </value>
+            <value>
+                <fullName>Employee Leasing WCI</fullName>
+                <default>false</default>
+                <label>Employee Leasing WCI</label>
+            </value>
+            <value>
+                <fullName>Industrial Waste Discharge Permit Certificate</fullName>
+                <default>false</default>
+                <label>Industrial Waste Discharge Permit Certificate</label>
+            </value>
+            <value>
+                <fullName>IRS Clearance Letter</fullName>
+                <default>false</default>
+                <label>IRS Clearance Letter</label>
+            </value>
+            <value>
+                <fullName>Federal Employer Identification Number (FEIN)</fullName>
+                <default>false</default>
+                <label>Federal Employer Identification Number (FEIN)</label>
+            </value>
+            <value>
+                <fullName>State Employer Identification Number (SEIN)</fullName>
+                <default>false</default>
+                <label>State Employer Identification Number (SEIN)</label>
+            </value>
+            <value>
+                <fullName>Certificate of Limited Partnership</fullName>
+                <default>false</default>
+                <label>Certificate of Limited Partnership</label>
+            </value>
+            <value>
+                <fullName>Articles of Incorporation/Organization</fullName>
+                <default>false</default>
+                <label>Articles of Incorporation/Organization</label>
+            </value>
+            <value>
+                <fullName>Bond Certification</fullName>
+                <default>false</default>
+                <label>Bond Certification</label>
+            </value>
+            <value>
+                <fullName>Business License</fullName>
+                <default>false</default>
+                <label>Business License</label>
+            </value>
+            <value>
+                <fullName>Other Required Document</fullName>
+                <default>false</default>
+                <label>Other Required Document</label>
+            </value>
+            <value>
+                <fullName>Complaint Inquiry Letter/Response</fullName>
+                <default>false</default>
+                <label>Complaint Inquiry Letter/Response</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hearing_Output_Type__c</fullName>
+    <description>For use in the Notice of Hearing templates; defendant can either be served as an individual, operating under name, or on behalf of an Employer.  Selecting the value desired in the output will update the formula preview.</description>
+    <externalId>false</externalId>
+    <label>Hearing Output Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>An Individual</fullName>
+                <default>false</default>
+                <label>An Individual</label>
+            </value>
+            <value>
+                <fullName>Operating Under Fictitious Name</fullName>
+                <default>false</default>
+                <label>Operating Under Fictitious Name</label>
+            </value>
+            <value>
+                <fullName>On Behalf of Employer</fullName>
+                <default>false</default>
+                <label>On Behalf of Employer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

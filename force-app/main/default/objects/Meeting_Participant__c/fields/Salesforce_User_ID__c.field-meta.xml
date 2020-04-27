@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_User_ID__c</fullName>
+    <description>Pulls the salesforce User ID down to the meeting participant so that it can be used in flow to create events</description>
+    <externalId>false</externalId>
+    <formula>Internal_Employee__r.User__c</formula>
+    <label>Salesforce User ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

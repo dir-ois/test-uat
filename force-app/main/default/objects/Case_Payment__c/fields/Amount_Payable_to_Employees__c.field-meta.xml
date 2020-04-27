@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Payable_to_Employees__c</fullName>
+    <description>Rolls the amount payable to employees from the related liability payments using dlrs. This is the amount rolled up to the case.</description>
+    <externalId>false</externalId>
+    <label>Amount Payable to Employees</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

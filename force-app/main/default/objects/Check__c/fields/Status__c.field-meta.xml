@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Approval</fullName>
+                <default>true</default>
+                <label>Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Secondary Approval Needed</fullName>
+                <default>false</default>
+                <label>Secondary Approval Needed</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Not Approved</fullName>
+                <default>false</default>
+                <label>Not Approved</label>
+            </value>
+            <value>
+                <fullName>Void Requested</fullName>
+                <default>false</default>
+                <label>Void Requested</label>
+            </value>
+            <value>
+                <fullName>Voided</fullName>
+                <default>false</default>
+                <label>Voided</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>Stopped</fullName>
+                <default>false</default>
+                <label>Stopped</label>
+            </value>
+            <value>
+                <fullName>Printed</fullName>
+                <default>false</default>
+                <label>Printed</label>
+            </value>
+            <value>
+                <fullName>Uncleared</fullName>
+                <default>false</default>
+                <label>Uncleared</label>
+            </value>
+            <value>
+                <fullName>Cleared</fullName>
+                <default>false</default>
+                <label>Cleared</label>
+            </value>
+            <value>
+                <fullName>UWF Allocation</fullName>
+                <default>false</default>
+                <label>UWF Allocation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

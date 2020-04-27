@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>must_enter_minor_information</fullName>
+    <active>true</active>
+    <description>EWP registrations must enter 1 minor</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName=&#39;Entertainment_Work&#39;,
+OR(
+ISPICKVAL(Ready_to_Submit__c, &quot;Yes&quot;),
+ISPICKVAL( Ready_to_Resubmit__c , &quot;Yes&quot;)),
+OR( 
+Number_of_Permit_Individual__c &lt; 1
+))</errorConditionFormula>
+    <errorMessage>Please enter the Minor&#39;s information.  Change the answer below to &quot;No&quot;, return to the Minors tab, and complete all required information to continue.</errorMessage>
+</ValidationRule>

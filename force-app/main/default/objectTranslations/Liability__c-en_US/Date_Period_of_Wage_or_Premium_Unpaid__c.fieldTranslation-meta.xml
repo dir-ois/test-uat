@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the period during which the wages or premiums were unpaid. This is rendered on certain citation documents. --></help>
+    <label><!-- Date/Period of Wage or Premium Unpaid --></label>
+    <name>Date_Period_of_Wage_or_Premium_Unpaid__c</name>
+</CustomFieldTranslation>

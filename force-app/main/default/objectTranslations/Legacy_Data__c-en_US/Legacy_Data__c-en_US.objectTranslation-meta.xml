@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Legacy Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Legacy Data</value>
+    </caseValues>
+    <layouts>
+        <layout>Legacy Data</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Legacy Data Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WCA_Garment ODA</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wage Claim ODA</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- This will hold the Employer ODA migrated from AB633 --></description>
+        <label><!-- Garment - Employer ODA --></label>
+        <name>Garment_Employer_ODA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This will hold the Guarantor ODA migrated from AB633 --></description>
+        <label><!-- Garment - Guarantor ODA --></label>
+        <name>Garment_Guarantor_ODA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This will hold the Successor ODA migrated from AB633 --></description>
+        <label><!-- Garment - Successor ODA --></label>
+        <name>Garment_Successor_ODA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This will hold the legacy ODA data migrated from FileMaker --></description>
+        <label><!-- WCA ODA --></label>
+        <name>WCA_ODA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This will hold the legacy ODA data migrated from Saleforce --></description>
+        <label><!-- Wage Claim ODA --></label>
+        <name>Wage_Claim_ODA</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

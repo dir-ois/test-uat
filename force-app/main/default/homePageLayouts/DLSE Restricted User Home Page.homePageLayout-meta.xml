@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>standard-CreateNew</narrowComponents>
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <narrowComponents>DLSE Restricted User</narrowComponents>
+    <narrowComponents>BOFE Deputy Resources Library</narrowComponents>
+    <narrowComponents>WCA Deputy Resources Library</narrowComponents>
+    <narrowComponents>Cashiering</narrowComponents>
+    <narrowComponents>WCA Links</narrowComponents>
+    <narrowComponents>Service Requests</narrowComponents>
+    <wideComponents>standard-Calendar</wideComponents>
+    <wideComponents>standard-Tasks</wideComponents>
+</HomePageLayout>

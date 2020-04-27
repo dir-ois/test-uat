@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appeal_Deadline_Selector__c</fullName>
+    <externalId>false</externalId>
+    <label>Appeal Deadline Selector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Days</fullName>
+                <default>false</default>
+                <label>Business Days</label>
+            </value>
+            <value>
+                <fullName>Calendar Days</fullName>
+                <default>false</default>
+                <label>Calendar Days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

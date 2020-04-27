@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_License_Expiration</fullName>
+    <active>true</active>
+    <description>Require the business license expiration to be at least 14 days in the future for external users</description>
+    <errorConditionFormula>(
+(
+
+ISNEW() 
+&amp;&amp;
+ISBLANK(TEXT(Imported_From__c))
+)
+
+||
+ISCHANGED(Business_License_Expiration__c)
+)
+
+&amp;&amp;
+
+/* Core of validation rule */
+ 
+!ISPICKVAL ( $Profile.UserType , &#39;Standard&#39; )
+&amp;&amp;
+
+ Business_License_Expiration__c &lt; (Today() + 14)
+&amp;&amp; 
+NOT(ISBLANK(Business_License_Expiration__c))
+&amp;&amp; 
+ Registration__r.Renewal__c = FALSE</errorConditionFormula>
+    <errorMessage>Business License Expiration Date must be at least 14 days in the future</errorMessage>
+</ValidationRule>

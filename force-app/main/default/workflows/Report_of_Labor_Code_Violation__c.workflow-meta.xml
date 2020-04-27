@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Accepted_Notification_RLLV</fullName>
+        <description>Case Accepted Notification - RLLV</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Making_Referral__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>WCA_Senior_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/Case_Accepted_Notification_RLLV</template>
+    </alerts>
+    <alerts>
+        <fullName>Wage_Claim_Referral_Rejected_By_Senior_Wage_Deputy</fullName>
+        <description>Wage Claim Referral Rejected By Senior Wage Deputy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Deputy_Making_Referral__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>BOFE_Email_Templates/Wage_Claim_Referral_Rejected_By_Sr_Wage_Deputy</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Advocate_Address_City</fullName>
+        <field>Advocate_City__c</field>
+        <formula>Advocate__r.Account__r.ShippingCity</formula>
+        <name>Advocate Address City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advocate_Address_State</fullName>
+        <field>Advocate_State__c</field>
+        <literalValue>CA</literalValue>
+        <name>Advocate Address State</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advocate_Adress_Zip</fullName>
+        <field>Advocate_Zip_Code__c</field>
+        <formula>Advocate__r.Account__r.ShippingPostalCode</formula>
+        <name>Advocate Adress Zip</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advocate_Email_Address</fullName>
+        <field>Advocate_Email_Address__c</field>
+        <formula>Advocate__r.Account__r.Email__c</formula>
+        <name>Advocate Email Address</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advocate_Name</fullName>
+        <field>Advocate_Name__c</field>
+        <formula>Advocate__r.Account__r.Name</formula>
+        <name>Advocate Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Advocate_Street_Address</fullName>
+        <field>Advocate_Address_1__c</field>
+        <formula>Advocate__r.Account__r.ShippingStreet</formula>
+        <name>Advocate Street Address</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Needed_Approved</fullName>
+        <description>Sets the Approval Needed field to Approved.</description>
+        <field>Approval_Needed__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Needed: Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approval_Needed_Rejected</fullName>
+        <field>Approval_Needed__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Approval Needed: Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_Name</fullName>
+        <field>Employer_Business_Name__c</field>
+        <formula>Account__r.Business_Name1__c</formula>
+        <name>Business Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Employer_Cell</fullName>
+        <field>Employer_Phone__c</field>
+        <formula>Account__r.Phone</formula>
+        <name>Employer_Cell</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Employer_City</fullName>
+        <field>Employer_City__c</field>
+        <formula>Account__r.ShippingCity</formula>
+        <name>Employer_City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Employer_PostalCode</fullName>
+        <field>Employer_Zip__c</field>
+        <formula>Account__r.ShippingPostalCode</formula>
+        <name>Employer_PostalCode</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Employer_State</fullName>
+        <field>Employer_State__c</field>
+        <literalValue>CA</literalValue>
+        <name>Employer_State</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Employer_Street</fullName>
+        <field>Employer_Address_1__c</field>
+        <formula>Account__r.ShippingStreet</formula>
+        <name>Employer_Street</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Employer_s_Vehicle_License_Plate_Number</fullName>
+        <field>Employer_s_Vehicle_License_Plate_Number__c</field>
+        <formula>Account__r.Vehicle_License_Plate__c</formula>
+        <name>Employer&#39;s Vehicle License Plate Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Phone_Number</fullName>
+        <field>Advocate_Cell_Other_Phone__c</field>
+        <formula>Advocate__r.Account__r.Phone</formula>
+        <name>Phone Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RLCV_Date_Signed</fullName>
+        <description>Sets the Date Signed field to Today</description>
+        <field>Date_Signed__c</field>
+        <formula>TODAY()</formula>
+        <name>RLCV: Date Signed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>RLLV_Set_WCA_Referral_Date</fullName>
+        <description>Sets the Referral date to today for RLLVs created by a WCA referral</description>
+        <field>Date_of_Referral__c</field>
+        <formula>Today()</formula>
+        <name>RLLV: Set WCA Referral Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Test_field_update</fullName>
+        <description>Test update of field on RLLV</description>
+        <field>Reporting_Party_Address_1__c</field>
+        <formula>&quot;abc123&quot;</formula>
+        <name>Test field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Total_Employees</fullName>
+        <field>Total_Employees__c</field>
+        <formula>Account__r.NumberOfEmployees</formula>
+        <name>Total Employees</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Investigation_Decision_Deadline</fullName>
+        <field>Investigation_Decision_Deadline_Date__c</field>
+        <formula>CreatedDate + 60</formula>
+        <name>Update Investigation Decision Deadline</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>DIR_Case__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Wage_Referral_Public_Works</fullName>
+        <field>Public_Works__c</field>
+        <literalValue>No</literalValue>
+        <name>Wage Referral - Public Works</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Accepted Notification - RLLV</fullName>
+        <actions>
+            <name>Case_Accepted_Notification_RLLV</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Report_of_Labor_Code_Violation__c.Case_Accepted__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>This workflow sends an email to the WCA Senior Deputy and Deputy Making Referral users on a RLLV that a case has been accepted by a user and is being worked on.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>RLCV%3A New BOFE 1 Form</fullName>
+        <actions>
+            <name>RLCV_Date_Signed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Report_of_Labor_Code_Violation__c.Source__c</field>
+            <operation>equals</operation>
+            <value>Employee (BOFE 1)</value>
+        </criteriaItems>
+        <description>Populates the Date Signed automatically on a new BOFE 1 form being populated by an Employee.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>RLLV%3A Set WCA Referral Date</fullName>
+        <actions>
+            <name>RLLV_Set_WCA_Referral_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sets the referral date on the RLLV for the date the referral was made from Wage</description>
+        <formula>ISPICKVAL( Source__c , &quot;WCA&quot; )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Advocate Info on RLLV</fullName>
+        <actions>
+            <name>Advocate_Address_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Advocate_Address_State</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Advocate_Adress_Zip</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Advocate_Email_Address</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Advocate_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Advocate_Street_Address</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Phone_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This will update the Advocate information when a Wage Claim is reffered to BOFE</description>
+        <formula>ISPICKVAL(Source__c, &#39;WCA&#39;) &amp;&amp; (ISBLANK(Advocate__c) = False)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Employer%27s Info on RLLV</fullName>
+        <actions>
+            <name>Business_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Employer_Cell</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Employer_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Employer_PostalCode</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Employer_State</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Employer_Street</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Employer_s_Vehicle_License_Plate_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Total_Employees</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This will update the Employer&#39;s Address and Affiliation Information if Source = &quot;WCA&quot;</description>
+        <formula>ISPICKVAL( Source__c, &#39;WCA&#39;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

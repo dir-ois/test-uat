@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ACCOUNTING_DT must be within the open accounting period for the specified pending group transaction type and Business Unit.        
+
+If a date is not provided it will  default to current date. --></help>
+    <label><!-- Accounting_Dt --></label>
+    <name>Accounting_Dt__c</name>
+</CustomFieldTranslation>

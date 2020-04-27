@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vacant_900_Pos__c</fullName>
+    <description>For position vacancy report: this field indicate whether the position is greater than 900 AND vacant.</description>
+    <externalId>false</externalId>
+    <formula>if(((VALUE(Serial_Number__c) &gt; 900) &amp;&amp;  TEXT(Status__c) = &quot;Vacant&quot;), &quot;Yes&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Vacant_900_Pos</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

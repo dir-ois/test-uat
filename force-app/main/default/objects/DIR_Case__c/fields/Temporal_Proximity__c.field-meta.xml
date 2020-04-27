@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Temporal_Proximity__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(FLOOR((Adverse_Action_Date__c-Protected_Activity_Date__c)/365.2425)) &amp; &quot; year(s)&quot;&amp;&quot;, &quot; &amp; 
+
+TEXT(FLOOR(MOD((Adverse_Action_Date__c-Protected_Activity_Date__c),365.2425)/30)) &amp; &quot; month(s)&quot;&amp;&quot;, &quot;&amp; 
+
+TEXT(Floor(MOD(Floor(MOD((Adverse_Action_Date__c-Protected_Activity_Date__c),365.2425)),30))) &amp; &quot; day(s)&quot;&amp;&quot;; total of &quot;&amp;
+
+TEXT(Adverse_Action_Date__c - Protected_Activity_Date__c)&amp;&quot; day(s)&quot;</formula>
+    <inlineHelpText>Calculates Adverse Action Date minus Protected Activity Date</inlineHelpText>
+    <label>Temporal Proximity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Violation_Workers_compensation_insuranc__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Workers’ compensation insurance notice not posted</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Workers’ compensation insurance notice not posted</inlineHelpText>
+    <label>Workers’ compensation insurance notice</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

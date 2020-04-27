@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Labor_Commissioner_Explanation_Conditio</fullName>
+    <description>Retaliation Complaint Form</description>
+    <displayedFields>
+        <field>SH_Interview_with_LC_Inv_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>SH_Interview_with_LC_Inv__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Labor Commissioner Explanation (Conditional)</label>
+</FieldSet>

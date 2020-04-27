@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Printed_Checks</fullName>
+    <columns>NAME</columns>
+    <columns>Check_Batch__c</columns>
+    <columns>Office_Account__c</columns>
+    <columns>Status__c</columns>
+    <columns>Issue_Date__c</columns>
+    <columns>Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Printed</value>
+    </filters>
+    <label>Printed Checks</label>
+</ListView>

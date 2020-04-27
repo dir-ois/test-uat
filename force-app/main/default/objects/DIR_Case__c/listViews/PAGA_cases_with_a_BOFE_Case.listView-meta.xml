@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_cases_with_a_BOFE_Case</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Related_BOFE_Case__c</columns>
+    <columns>Status__c</columns>
+    <columns>Notice_Filing_Date__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Related_BOFE_Case__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.PAGA_Case</value>
+    </filters>
+    <label>PAGA cases with a BOFE Case</label>
+</ListView>

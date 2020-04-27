@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box if Cash Pay 226 is indicated on this case. --></help>
+    <label><!-- Cash Pay 226 --></label>
+    <name>Cash_Pay_226__c</name>
+</CustomFieldTranslation>

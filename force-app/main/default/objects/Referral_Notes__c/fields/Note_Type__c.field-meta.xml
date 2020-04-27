@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_Type__c</fullName>
+    <description>Allows the quick identification of the note type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a type of note for easy classification</inlineHelpText>
+    <label>Note Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Status Update</fullName>
+                <default>false</default>
+                <label>Status Update</label>
+            </value>
+            <value>
+                <fullName>Case Conclusion</fullName>
+                <default>false</default>
+                <label>Case Conclusion</label>
+            </value>
+            <value>
+                <fullName>Rejection Reason</fullName>
+                <default>false</default>
+                <label>Rejection Reason</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

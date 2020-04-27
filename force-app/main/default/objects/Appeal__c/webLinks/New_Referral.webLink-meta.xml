@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Referral</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Referral</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/a1b/e?CF00Nd0000008S8Fl={!Appeal__c.Name}&amp;CF00Nd0000008S8Fl_lkid={!Appeal__c.Id}&amp;retURL=%2F{!Appeal__c.Id}&amp;RecordType=012d00000019PP8&amp;ent={!Appeal__c.Id}&amp;CF00Nd0000007jjd7_lkid={!Appeal__c.CaseId__c}&amp;CF00Nd0000007jjd7={!Appeal__c.Case__c}</url>
+</WebLink>

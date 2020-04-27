@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scheduled</fullName>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Meeting_Type__c</columns>
+    <columns>Case__c</columns>
+    <columns>Meeting_Scheduled_For__c</columns>
+    <columns>Meeting_Start_Date_Time__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Scheduled</value>
+    </filters>
+    <label>Scheduled Hearings</label>
+</ListView>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_Violations</fullName>
+    <active>true</active>
+    <description>Violations related to WCA cases</description>
+    <label>WCA Violations</label>
+    <picklistValues>
+        <picklist>Accounting_Modification__c</picklist>
+        <values>
+            <fullName>4172220</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Accounting_Write_off__c</picklist>
+        <values>
+            <fullName>Applied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Eligible</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Written Off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Citation_Type__c</picklist>
+        <values>
+            <fullName>Car Wash Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Labor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deduction Statement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment Records Keeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lactation Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meal Period Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minimum Wage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misclassification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overtime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting Time or Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rest Period Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split Shift Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlicensed FLC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers%E2%80%99 Comp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Imported_From__c</picklist>
+        <values>
+            <fullName>32-117</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BAK-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE -AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE AR IMPORT 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE FM Import 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOFE-AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM-TIPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Import 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LBO_AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDG-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAC-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBA-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STK-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIPP-FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VNO-WCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wage Claim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interest_Type__c</picklist>
+        <values>
+            <fullName>Need values</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome__c</picklist>
+        <values>
+            <fullName>Discharge in Bankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIF Interest%2FCost Waived</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIF with Interest%2FCost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled%2FOffer in Compromise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacated%2FWithdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write Off - Collection Infeasible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write Off - Debtor Closed%2FDissolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write Off - Debtor Deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Write Off - Other Reason</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Received_For__c</picklist>
+        <values>
+            <fullName>Civil Penalties Due to Claimant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Penalties Due to State</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost of Suit Incurred for Recording and Tracking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Damages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wages</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Settlement_Type__c</picklist>
+        <values>
+            <fullName>JEU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal - Citation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal - Writ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Canceled - Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claimant Withdrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De Novo Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed at Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed at Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Judgment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Paid in Full</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restitution Fund %28no Judgment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- County Registrar --></label>
+    <name>County_Registrar__c</name>
+    <relationshipLabel><!-- Wage Claims (County Registrar) --></relationshipLabel>
+</CustomFieldTranslation>

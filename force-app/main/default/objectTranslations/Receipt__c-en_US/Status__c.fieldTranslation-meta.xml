@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Deposit Pending</masterLabel>
+        <translation><!-- Deposit Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deposited</masterLabel>
+        <translation><!-- Deposited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mailed to Employee</masterLabel>
+        <translation><!-- Mailed to Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restitution Warrant sent to JEU</masterLabel>
+        <translation><!-- Restitution Warrant sent to JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned</masterLabel>
+        <translation><!-- Returned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned to Sender</masterLabel>
+        <translation><!-- Returned to Sender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voided</masterLabel>
+        <translation><!-- Voided --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

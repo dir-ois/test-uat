@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box if the mailing address is the same as the physical business address. If checking this box, you do not need to fill out any mailing address fields. --></help>
+    <label><!-- Mailing Address Same as Physical --></label>
+    <name>Mailing_Address_Same_as_Physical__c</name>
+</CustomFieldTranslation>

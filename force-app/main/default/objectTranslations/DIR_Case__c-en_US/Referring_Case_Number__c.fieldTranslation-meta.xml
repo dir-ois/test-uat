@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The case number of a BOFE, Wage, etc., case from which a referral was made to RCI --></help>
+    <label><!-- Referring Case Number --></label>
+    <name>Referring_Case_Number__c</name>
+</CustomFieldTranslation>

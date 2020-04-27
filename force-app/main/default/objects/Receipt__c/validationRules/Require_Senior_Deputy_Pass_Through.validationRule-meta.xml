@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Senior_Deputy_Pass_Through</fullName>
+    <active>true</active>
+    <description>Requires that a Senior Deputy be selected before it can be marked as Wage Passthrough.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Payment_Exchange__c ,&quot;Add Wage Passthrough&quot;),ISBLANK( Senior_Deputy__c ))</errorConditionFormula>
+    <errorDisplayField>Senior_Deputy__c</errorDisplayField>
+    <errorMessage>A senior deputy must be selected.</errorMessage>
+</ValidationRule>

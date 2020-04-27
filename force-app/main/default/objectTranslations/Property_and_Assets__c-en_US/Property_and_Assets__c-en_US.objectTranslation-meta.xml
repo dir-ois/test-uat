@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property and Assets</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Property and Assets</value>
+    </caseValues>
+    <layouts>
+        <layout>Accounts Receivable/Third Party Payor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Annuity/Insurance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Bank or Brokerage Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Equipment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Farm Prod Animals Mineral Rights Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Intellectual Property Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Jewelry Artwork Collectable Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lawsuit/Legal Claim Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Liquor Licence/Govt Franchise Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property and Assets Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Real Property Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rent/Royalty Payments Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales/Business Receipts Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Stocks/Partnership Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vehicle/Vessel Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Wages/Salary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Accounts Receivable/Third-Party Payors --></label>
+        <name>Accounts_Receivable_Third_Party_Payors</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Annuities &amp; Insurance --></label>
+        <name>Annuities_Insurance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Auto --></label>
+        <name>Auto</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Bank Account or Brokerage Account --></label>
+        <name>Bank_Account_or_Brokerage_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Equipment --></label>
+        <name>Equipment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Farm Products Animals &amp; Mineral Rights --></label>
+        <name>Farm_Products_Animals_Mineral_Rights</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Intellectual Property --></label>
+        <name>Intellectual_Property</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inventory --></label>
+        <name>Inventory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Jewelry Artworks &amp; Collectables --></label>
+        <name>Jewelry_Artworks_Collectables</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lawsuit/Legal Claim --></label>
+        <name>Lawsuit_Legal_Claim</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Liquor Licence or Other Gov&apos;t Franchise --></label>
+        <name>Liquor_Licence_or_Other_Gov_t_Franchise</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Real Property --></label>
+        <name>Real_Property</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rent/Royalty Payments --></label>
+        <name>Rent_Royalty_Payments</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales/Business Receipts --></label>
+        <name>Sales_Business_Receipts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Stocks/Partnership Interests --></label>
+        <name>Stocks_Partnership_Interests</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vehicle/Vessel --></label>
+        <name>Vehicle_Vessel</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wages/Salary --></label>
+        <name>Wages_Salary</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Garnishee address must be selected when adding Garnishee. --></errorMessage>
+        <name>Select_Location</name>
+    </validationRules>
+</CustomObjectTranslation>

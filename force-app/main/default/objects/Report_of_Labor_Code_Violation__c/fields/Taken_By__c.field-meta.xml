@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Taken_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>DIR Employee who took report</description>
+    <externalId>false</externalId>
+    <inlineHelpText>DIR Employee who took report</inlineHelpText>
+    <label>Taken By</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipName>Reports_of_Labor_Code_Violations</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

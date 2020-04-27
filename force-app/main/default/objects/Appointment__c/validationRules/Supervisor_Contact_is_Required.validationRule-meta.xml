@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supervisor_Contact_is_Required</fullName>
+    <active>true</active>
+    <description>Fire if Supervisor Contact is not filled when appointment is not separation</description>
+    <errorConditionFormula>ISBLANK(Supervisor_Contact__c)= true
+&amp;&amp;
+ISPICKVAL(Type_of_Separation__c,&quot;&quot;)</errorConditionFormula>
+    <errorMessage>Please fill in &quot;Supervisor (Contact)&quot; field</errorMessage>
+</ValidationRule>

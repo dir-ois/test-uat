@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_a_Closed_Case</fullName>
+    <active>false</active>
+    <description>RCI</description>
+    <errorConditionFormula>AND(
+NOT(ISNULL(Closed_On__c)),
+(NOW() &gt; Closed_On__c + 1/1440),
+RecordType.DeveloperName =&quot;RCI&quot;,
+NOT(ISCHANGED(Case_Re_Open_Reason__c))
+)</errorConditionFormula>
+    <errorMessage>Closed cases may not be edited. Please fill out Case Re-Open Reason and submit your case for Sr Deputy approval.</errorMessage>
+</ValidationRule>

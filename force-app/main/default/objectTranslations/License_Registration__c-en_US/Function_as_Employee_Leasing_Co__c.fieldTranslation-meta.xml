@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Function as Employee Leasing Co --></label>
+    <name>Function_as_Employee_Leasing_Co__c</name>
+</CustomFieldTranslation>

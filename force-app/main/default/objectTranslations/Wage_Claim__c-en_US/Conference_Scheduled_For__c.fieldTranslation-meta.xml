@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Conference Scheduled For --></label>
+    <name>Conference_Scheduled_For__c</name>
+    <relationshipLabel><!-- Wage Claims (Conference Scheduled For) --></relationshipLabel>
+</CustomFieldTranslation>

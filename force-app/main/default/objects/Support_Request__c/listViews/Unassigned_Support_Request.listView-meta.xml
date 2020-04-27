@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unassigned_Support_Request</fullName>
+    <columns>NAME</columns>
+    <columns>Priority__c</columns>
+    <columns>Create_Date_Time__c</columns>
+    <columns>Support_Request_For__c</columns>
+    <columns>Submitted_By__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Project__c</columns>
+    <columns>Priority_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Type__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Support_Request__c.Support_Request</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed,Canceled,Duplicate,Rejected</value>
+    </filters>
+    <label>Unassigned - Support Request</label>
+    <queue>Salesforce_Support_Team</queue>
+    <sharedTo>
+        <group>CalAtlas_Business_Team</group>
+        <role>System_Administrators</role>
+    </sharedTo>
+</ListView>

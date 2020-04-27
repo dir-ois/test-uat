@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If you are represented by a lawyer or other advocate, enter your ADVOCATE and ORGANIZATION information: --></help>
+    <label><!-- Advocate --></label>
+    <name>Advocate__c</name>
+    <relationshipLabel><!-- Reports of Labor Law Violations (Advocate) --></relationshipLabel>
+</CustomFieldTranslation>

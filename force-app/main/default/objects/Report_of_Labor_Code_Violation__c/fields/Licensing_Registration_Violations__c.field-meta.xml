@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licensing_Registration_Violations__c</fullName>
+    <description>Suspected Violations of Employer - Licensing/Registration Violations</description>
+    <externalId>false</externalId>
+    <label>Licensing/Registration Violations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unlicensed construction contractor</fullName>
+                <default>false</default>
+                <label>Unlicensed construction contractor</label>
+            </value>
+            <value>
+                <fullName>Contract w/unlicensed construction Contr</fullName>
+                <default>false</default>
+                <label>Contract w/unlicensed construction Contr</label>
+            </value>
+            <value>
+                <fullName>Unlicensed farm labor contractor</fullName>
+                <default>false</default>
+                <label>Unlicensed farm labor contractor</label>
+            </value>
+            <value>
+                <fullName>Unregistered garment or manufacturer</fullName>
+                <default>false</default>
+                <label>Unregistered garment or manufacturer</label>
+            </value>
+            <value>
+                <fullName>Unregistered car wash</fullName>
+                <default>false</default>
+                <label>Unregistered car wash</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

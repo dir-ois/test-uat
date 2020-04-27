@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this document has an expiration date or will need to be renewed by a certain date, please enter that date here. --></help>
+    <label><!-- Expiration Date --></label>
+    <name>Expiration_Date__c</name>
+</CustomFieldTranslation>

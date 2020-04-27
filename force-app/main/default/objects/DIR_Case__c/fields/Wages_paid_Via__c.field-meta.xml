@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wages_paid_Via__c</fullName>
+    <externalId>false</externalId>
+    <label>How were your wages paid?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>By Check</fullName>
+                <default>true</default>
+                <label>By Check</label>
+            </value>
+            <value>
+                <fullName>By Cash</fullName>
+                <default>false</default>
+                <label>By Cash</label>
+            </value>
+            <value>
+                <fullName>By Both Check &amp; Cash</fullName>
+                <default>false</default>
+                <label>By Both Check &amp; Cash</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

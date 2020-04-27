@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closure_Reason_Required_to_Close_LR</fullName>
+    <active>true</active>
+    <description>Requires Closure Reason if a &quot;Closed&quot; status is selected.</description>
+    <errorConditionFormula>AND( 
+ISBLANK(Closure_Reason__c),
+OR(
+ISPICKVAL(Status__c, &quot;Closed_Suspended&quot;),
+ISPICKVAL(Status__c, &quot;Closed - Revoked&quot;),
+ISPICKVAL(Status__c, &quot;Closed - Denied&quot;),
+ISPICKVAL(Status__c, &quot;Closed - Inactive&quot;),
+ISPICKVAL(Status__c, &quot;Closed - Withdrawn&quot;),
+ISPICKVAL(Status__c, &quot;Closed - Rejected&quot;)
+))</errorConditionFormula>
+    <errorDisplayField>Closure_Reason__c</errorDisplayField>
+    <errorMessage>Please add a closure reason before closing the Registration.</errorMessage>
+</ValidationRule>

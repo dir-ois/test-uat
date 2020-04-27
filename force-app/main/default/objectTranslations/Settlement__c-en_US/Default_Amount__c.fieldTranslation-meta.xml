@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This amount is calculated using the amounts that accrue interest, those that do not, and the interest due on the settlement. --></help>
+    <label><!-- Default Amount --></label>
+    <name>Default_Amount__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEC2 Transaction Type --></label>
+    <name>SEC2_Transaction_Type__c</name>
+    <picklistValues>
+        <masterLabel>Change of Present Position</masterLabel>
+        <translation><!-- Change of Present Position --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Establishment of New Position</masterLabel>
+        <translation><!-- Establishment of New Position --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limited Term Appointment from Temporary Help Funds</masterLabel>
+        <translation><!-- Limited Term Appointment from Temporary Help Funds --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

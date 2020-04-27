@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bugs_Janitorial_Services</fullName>
+    <columns>NAME</columns>
+    <columns>Bug_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>Assigned_To_Business_User__c</columns>
+    <columns>Assigned_To_Support_Team__c</columns>
+    <columns>Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project__c</field>
+        <operation>equals</operation>
+        <value>Janitorial Services</value>
+    </filters>
+    <label>Bugs - Janitorial Services</label>
+</ListView>

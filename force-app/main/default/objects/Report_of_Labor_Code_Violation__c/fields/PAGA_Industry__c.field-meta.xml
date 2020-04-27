@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>PAGA Industry</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Auto Repair</fullName>
+                <default>false</default>
+                <label>Auto Repair</label>
+            </value>
+            <value>
+                <fullName>Car Wash</fullName>
+                <default>false</default>
+                <label>Car Wash</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Garment</fullName>
+                <default>false</default>
+                <label>Garment</label>
+            </value>
+            <value>
+                <fullName>Janitorial</fullName>
+                <default>false</default>
+                <label>Janitorial</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>Other-Low-Wage</fullName>
+                <default>false</default>
+                <label>Other-Low-Wage</label>
+            </value>
+            <value>
+                <fullName>Other-Not-Low-Wage</fullName>
+                <default>false</default>
+                <label>Other-Not-Low-Wage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

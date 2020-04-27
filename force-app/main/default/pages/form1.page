@@ -1,0 +1,897 @@
+<apex:page standardController="Form_1__c" extensions="form1_Controller" sidebar="false" showHeader="{!renderMode==''}" standardStylesheets="false" renderAs="{!renderMode}" >
+
+    <html>
+        <head>
+            <style>
+                @page { margin:0.2cm 1cm 0.2cm 1cm }
+                .regularText { padding:0px; margin:0px; font-family:sans-serif; font-size:8pt }
+                .output { padding:0px; margin:0px; font-family:sans-serif; font-size:10pt; font-weight:bold }
+                td.leftcell { border-right:solid 1px; border-top:solid 1px; border-bottom:solid 1px }
+                td.middlecell { border-right:solid 1px; border-top:solid 1px; border-bottom:solid 1px; border-left:solid 1px }
+                td.rightcell { border-top:solid 1px; border-bottom:solid 1px; border-left:solid 1px }
+                td.bottomleftcell { border-right:solid 1px; border-top:solid 1px; border-bottom:solid 3px }
+                td.bottommiddlecell { border-right:solid 1px; border-top:solid 1px; border-bottom:solid 3px; border-left:solid 1px }
+                td.bottomrightcell { border-top:solid 1px; border-bottom:solid 3px; border-left:solid 1px }
+            </style>
+        </head>
+        <body>
+        <apex:form >
+            <apex:pageBlock >
+
+            
+            <apex:pageBlockButtons rendered="{!fw1.form1.Id!=null&&renderMode==''}" location="top">
+                <apex:commandButton value="Delete" action="{!deleteForm1}" immediate="true" rendered="{!$Profile.Name == 'HR Personnel Analyst User'}" />
+                <apex:commandButton value="Delete" action="{!deleteForm1}" immediate="true" rendered="{!$Profile.Name == 'HR Personnel Specialist User'}" />
+                <apex:commandButton value="Delete" action="{!deleteForm1}" immediate="true" rendered="{!$Profile.Name == 'HR System Administrator'}" />
+                <apex:commandButton value="Delete" action="{!deleteForm1}" immediate="true" rendered="{!$Profile.Name == 'HR View Only'}" />
+
+                
+                <!-- Bao commented here 11/29/2016 <apex:commandButton rendered="{!approvalStatus=='Not Submitted'}" value="Submit for Approval" action="{!submitForApproval}" /> -->
+
+            <apex:commandButton value="Cancel Approved Form 1" action="{!Cancel_Approved_Form1}" immediate="true" rendered="{!$Profile.Name == 'HR Personnel Analyst User'}" />
+            <apex:commandButton value="Cancel Approved Form 1" action="{!Cancel_Approved_Form1}" immediate="true" rendered="{!$Profile.Name == 'HR Personnel Specialist User'}" />
+            <apex:commandButton value="Cancel Approved Form 1" action="{!Cancel_Approved_Form1}" immediate="true" rendered="{!$Profile.Name == 'HR System Administrator'}" />
+            <apex:commandButton value="Cancel Approved Form 1" action="{!Cancel_Approved_Form1}" immediate="true" rendered="{!$Profile.Name == 'HR View Only'}" />
+
+            <apex:commandButton value="Create 607" action="{!create607}" immediate="true" rendered="{!$Profile.Name == 'HR Personnel Analyst User'}"/>
+            <apex:commandButton value="Create 607" action="{!create607}" immediate="true" rendered="{!$Profile.Name == 'HR Personnel Specialist User'}"/>
+            <apex:commandButton value="Create 607" action="{!create607}" immediate="true" rendered="{!$Profile.Name == 'HR System Administrator'}"/>
+            <apex:commandButton value="Create 607" action="{!create607}" immediate="true" rendered="{!$Profile.Name == 'HR View Only'}"/>
+                
+                <apex:commandButton value="Print PDF" onClick="window.open('{!pdfURL}')" />
+                <apex:commandButton value="Detail Page" action="{!detailPage}"/>
+            </apex:pageBlockButtons>
+            <apex:outputPanel rendered="{!renderMode==''}" >
+                <apex:outputText style="font-size:18pt;font-family:sans-serif;font-weight:bold" value="{!pageTitle}" /><br/>
+                <!-- Bao added 1 lines below 12/06/2016-->
+                
+                <apex:outputText style="font-size:14pt;font-family:sans-serif" value="{!'Approval Status: '}" />
+                <apex:inputField rendered="{!renderMode==''}" value="{!fw1.form1.Status__c}"/>
+            </apex:outputPanel>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td style="width:60%;border-bottom: solid 3px;border-right:solid 3px">
+                        <p class="regularText" style="padding-bottom:10px" >
+                            This form is to be submitted in duplicate by the<br/>
+                            division to the personnel section when requesting:<br/>
+                        </p>
+                        <p class="regularText" style="padding-left:10px">
+                            1) Approval to fill a position<br/>
+                            2) Change in an established position<br/>
+                            3) Establishment of a new position<br/>
+                            4) Use temporary help funds<br/>
+                        </p>
+                        <p class="regularText" style="padding-bottom:5px" >
+                            Attach statement of duties in all cases. Attach organization chart if<br/>
+                            requesting position is supervisory or managerial.<br/><br/>
+                            A copy of this <b>Position Control form</b> will be returned to the<br/>
+                            division, indicating whether or not the request is approved.<br/><br/>
+                            DO NOT TAKE ANY ACTION UNTIL YOU RECEIVE THIS COPY!
+                        </p>
+                    </td>
+                    <td style="border-bottom: solid 3px">
+                        <p class="regularText" style="text-align:center;font-size:12pt">
+                            Department of Industrial Relations
+                        </p>
+                        <p class="regularText" style="padding-top:30px;padding-bottom:20px;text-align:center;font-size:18pt">
+                            <b>POSITION CONTROL</b>
+                        </p>
+                        <p class="regularText" style="text-align:center;font-size:12pt">
+                            <apex:outputPanel rendered="{!renderMode==''}" >
+                            
+                            <!-- Bao changed " value="{!fw1.form1.Name}" to " value="{!fw1.form1.Form_1_Unique_Number__c}", below, 12/27/2016 -->
+                                <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.form1.Form_1_Unique_Number__c}" maxlength="15" size="18" />  
+                            </apex:outputPanel>
+                            
+                            <!-- Bao changed " value="{!fw1.form1.Name}" to " value="{!fw1.form1.Form_1_Unique_Number__c}", below, 12/27/2016 -->
+                                <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.form1.Form_1_Unique_Number__c}" />
+                        </p>
+                        <p class="regularText" style="margin-left:30px;margin-right:30px;margin-bottom:10px;margin-top:10px;padding-bottom:20px;text-align:center;border:solid 1px">
+                            Requested Effective Date<br/>
+                            
+                            
+                            <apex:inputText value="{!fw1.Requested_Effective_Date}" maxlength="10" size="10" />
+                            
+
+                            <apex:outputText style="color:red" rendered="{!WFD_Requested_Effective_Date==false&&renderMode==''}" value="{!dateFormatError}"/>
+                            <apex:outputText style="font-size:12pt" rendered="{!fw1.Requested_Effective_Date!=''&&renderMode=='PDF'}" value="{!fw1.Requested_Effective_Date}"/>
+                            <apex:outputPanel rendered="{!fw1.Requested_Effective_Date==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            
+            <table style="width:100%;border-collapse:collapse">
+                <tr>
+                    <td colspan="3">
+                        <p class="regularText" style="padding-top:2px;padding-bottom:3px;font-size:12pt">
+                            <b>Section I.&nbsp;&nbsp;Present Position Information</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftcell" style="width:22%">
+                        <p class="regularText">
+                            Position Number<br/>
+                        </p>
+                        <p class="output">
+                            <apex:outputPanel rendered="{!renderMode==''}">
+                                <apex:inputText value="{!fw1.SEC1_Position_Number_Part1}" maxlength="3" size="3" />-
+                                <apex:inputText value="{!fw1.SEC1_Position_Number_Part2}" maxlength="3" size="3" />-
+                                <apex:inputText value="{!fw1.SEC1_Position_Number_Part3}" maxlength="4" size="4" >
+                                    <apex:actionSupport event="onkeyup" action="{!searchClassification}" rerender="classTitle" />
+                                </apex:inputText>-
+                                <apex:inputText value="{!fw1.SEC1_Position_Number_Part4}" maxlength="3" size="3" />
+                            </apex:outputPanel>
+                            <apex:outputText rendered="{!fw1.SEC1_Position_Number!=''&&renderMode=='PDF'}" value="{!fw1.SEC1_Position_Number}" />
+                            <apex:outputPanel rendered="{!fw1.SEC1_Position_Number==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                            <apex:outputPanel styleClass="regularText" rendered="{!positionDoesntExistError!=''&&renderMode==''}" >
+                                <br/><apex:outputText style="color:red" value="{!positionDoesntExistError}"/>
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="middlecell" style="width:43%">
+                        <p class="regularText">
+                            Class Title<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText id="classTitle" rendered="{!renderMode==''}" value="{!fw1.SEC1_Class_Title}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC1_Class_Title}" />
+                            <apex:outputPanel rendered="{!fw1.SEC1_Class_Title==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell">
+                        <p class="regularText">
+                            Name of Present or last Incumbent<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC1_Name_of_Incumbent}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC1_Name_of_Incumbent}" />
+                            <apex:outputPanel rendered="{!fw1.SEC1_Name_of_Incumbent==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell" style="width:55%" >
+                        <p class="regularText">
+                            Working Headquarters<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC1_Working_Headquarters}" maxlength="50" size="58" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC1_Working_Headquarters}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC1_Working_Headquarters==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell" >
+                        <!--<p class="regularText">
+                            If Typist
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC1_Typist}" >
+                                <apex:selectOptions value="{!TypistOptions}"/>
+                            </apex:selectRadio>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC1_Typist=='Range A'}" style="padding-left:45px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC1_Typist!='Range A'}" style="padding-left:45px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Range A
+                                <apex:image rendered="{!fw1.SEC1_Typist=='Range B (over 50% dictaphone)'}" style="padding-left:20px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC1_Typist!='Range B (over 50% dictaphone)'}" style="padding-left:20px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Range B (over 50% dictaphone)
+                            </p>
+                        </apex:outputPanel>
+                    --></td>
+                </tr>
+                <tr>
+                    <td class="bottomleftcell" >
+                        <p class="regularText">
+                            Time Base
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC1_Time_Base}" >
+                                <apex:selectOptions value="{!TimeBaseOptions}"/>
+                            </apex:selectRadio>
+                            Fraction: <apex:inputText value="{!fw1.SEC1_Part_Time_Fraction}" maxlength="7" size="7" />
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC1_Time_Base=='Full Time'}" style="padding-left:70px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC1_Time_Base!='Full Time'}" style="padding-left:70px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Full Time
+                                <apex:image rendered="{!fw1.SEC1_Time_Base=='Part Time'}" style="padding-left:70px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC1_Time_Base!='Part Time'}" style="padding-left:70px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Part Time&nbsp;&nbsp;&nbsp;&nbsp;Fraction&nbsp;&nbsp;
+                                <span class="output">
+                                    <apex:outputText value="{!fw1.SEC1_Part_Time_Fraction}"/>
+                                </span>
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                    <td class="bottomrightcell" >
+                        <p class="regularText">
+                            Tenure
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio value="{!fw1.SEC1_Tenure}" >
+                                <apex:selectOptions value="{!TenureOptions}"/>
+                            </apex:selectRadio>
+                            Months: <apex:inputText value="{!fw1.SEC1_Limited_Term_Months}" maxlength="6" size="6" />
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC1_Tenure=='Permanent'}" style="padding-left:40px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC1_Tenure!='Permanent'}" style="padding-left:40px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Permanent
+                                <apex:image rendered="{!fw1.SEC1_Tenure=='Limited Term'}" style="padding-left:15px;padding-right:5px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC1_Tenure!='Limited Term'}" style="padding-left:15px;padding-right:5px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Limited Term&nbsp;&nbsp;&nbsp;&nbsp;Months&nbsp;&nbsp;
+                                <span class="output">
+                                    <apex:outputText value="{!fw1.SEC1_Limited_Term_Months}"/>
+                                </span>
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td>
+                        <p class="regularText" style="padding-top:2px;padding-bottom:3px;font-size:12pt">
+                            <b>Section II. Nature of Request</b>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell">
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <apex:image rendered="{!fw1.SEC2_Top==true}" style="padding-left:0px;padding-right:20px;padding-bottom:0px" height="30" width="30" value="{!URLFOR($Resource.boxImages, 'bigCrossedBox.png')}"/>
+                            <apex:image rendered="{!fw1.SEC2_Top==false}" style="padding-left:0px;padding-right:20px;padding-bottom:0px" height="30" width="30" value="{!URLFOR($Resource.boxImages, 'bigUncrossedBox.png')}"/>
+                        </apex:outputPanel>
+                        <!--<apex:inputCheckBox rendered="{!renderMode==''}" value="{!fw1.SEC2_Top}"/>-->
+                        <apex:inputCheckBox rendered="{!renderMode==''}" value="{!fw1.SEC2_Top}" >
+                            <apex:actionSupport event="onchange" action="{!null}" rerender="fillAbove"/>
+                        </apex:inputCheckBox>
+                        
+                    </td>
+                    <td class="middlecell">
+                        <p class="regularText">
+                            Fill above Position
+                        </p>
+                        <!--<apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC2_Fill_Type}" >-->
+                        <apex:selectRadio id="fillAbove" disabled="{!fw1.SEC2_Top==false}" rendered="{!renderMode==''}" value="{!fw1.SEC2_Fill_Type}" >
+                            <apex:selectOptions value="{!TenureOptions}"/>
+                        </apex:selectRadio>
+                        
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC2_Fill_Type=='Permanent'}" style="padding-left:10px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Fill_Type!='Permanent'}" style="padding-left:10px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Permanent
+                                <apex:image rendered="{!fw1.SEC2_Fill_Type=='Limited Term'}" style="padding-left:10px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Fill_Type!='Limited Term'}" style="padding-left:10px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Limited Term
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                    <td class="rightcell" style="width:50%">
+                        <!--<p class="regularText">
+                            Are the Duties Substantially the Same as the Last Incumbent?<br/>
+                        </p>
+                        <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC2_Duties_Same}" >
+                            <apex:selectOptions value="{!DutiesSameOptions}"/>
+                        </apex:selectRadio>
+                        
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC2_Duties_Same=='Yes'}" style="padding-left:2px;padding-right:2px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Duties_Same!='Yes'}" style="padding-left:2px;padding-right:2px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Yes
+                                <apex:image rendered="{!fw1.SEC2_Duties_Same=='No'}" style="padding-left:20px;padding-right:2px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Duties_Same!='No'}" style="padding-left:20px;padding-right:2px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                No (If no, also attach copy of previous duty statement)
+                            </p>
+                        </apex:outputPanel>
+                    --></td>
+                </tr>
+                <tr>
+                    <td class="leftcell">
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <apex:image rendered="{!fw1.SEC2_Bottom==true}" style="padding-left:0px;padding-right:20px;padding-bottom:0px" height="30" width="30" value="{!URLFOR($Resource.boxImages, 'bigCrossedBox.png')}"/>
+                            <apex:image rendered="{!fw1.SEC2_Bottom==false}" style="padding-left:0px;padding-right:20px;padding-bottom:0px" height="30" width="30" value="{!URLFOR($Resource.boxImages, 'bigUncrossedBox.png')}"/>
+                        </apex:outputPanel>
+                        <!--<apex:inputCheckBox rendered="{!renderMode==''}" value="{!fw1.SEC2_Bottom}"/>-->
+                        <apex:inputCheckBox rendered="{!renderMode==''}" value="{!fw1.SEC2_Bottom}" >
+                            <apex:actionSupport event="onchange" action="{!null}" rerender="transactionType"/>
+                        </apex:inputCheckBox>
+                    </td>
+                    <td class="rightcell" colspan="2">
+                        <p class="regularText">
+                            <!--<apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC2_Transaction_Type}" >-->
+                            <apex:selectRadio id="transactionType" disabled="{!fw1.SEC2_Bottom==false}" rendered="{!renderMode==''}" value="{!fw1.SEC2_Transaction_Type}" >
+                                <apex:selectOptions value="{!TransactionTypeOptions}"/>
+                            </apex:selectRadio>
+                        
+                            <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                                <apex:image rendered="{!fw1.SEC2_Transaction_Type=='Establishment of New Position'}" style="padding-left:2px;padding-right:2px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Transaction_Type!='Establishment of New Position'}" style="padding-left:2px;padding-right:2px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Establishment of New Position
+                                <apex:image rendered="{!fw1.SEC2_Transaction_Type=='Limited Term Appointment from Temporary Help Funds'}" style="padding-left:10px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Transaction_Type!='Limited Term Appointment from Temporary Help Funds'}" style="padding-left:10px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Limited Term Appointment from Temporary Help Funds
+                                <apex:image rendered="{!fw1.SEC2_Transaction_Type=='Change of Present Position'}" style="padding-left:8px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Transaction_Type!='Change of Present Position'}" style="padding-left:8px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Change of Present Position
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell" style="width:43%">
+                        <p class="regularText">
+                            Class Title 2
+                        </p>
+                        <p class="output">
+                            <apex:inputText id="classTitle2" rendered="{!renderMode==''}" value="{!fw1.SEC2_Class_Title2}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC2_Class_Title2}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC2_Class_Title2==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="middlecell" style="width:25%">
+                        <p class="regularText">
+                            Position Number
+                        </p>
+                        <p class="output">
+                            <apex:outputPanel rendered="{!renderMode==''}">
+                                <apex:inputText value="{!fw1.SEC2_Position_Number_Part1}" maxlength="3" size="3" />-
+                                <apex:inputText value="{!fw1.SEC2_Position_Number_Part2}" maxlength="3" size="3" />-
+                                <apex:inputText value="{!fw1.SEC2_Position_Number_Part3}" maxlength="4" size="4" >
+                                    <apex:actionSupport event="onkeyup" action="{!searchClassification2}" rerender="classTitle2" />
+                                </apex:inputText>-
+                                <apex:inputText value="{!fw1.SEC2_Position_Number_Part4}" maxlength="3" size="3" />
+                            </apex:outputPanel>
+                            <apex:outputText rendered="{!fw1.SEC2_Position_Number!=''&&renderMode=='PDF'}" value="{!fw1.SEC2_Position_Number}" />
+                            <apex:outputPanel rendered="{!fw1.SEC2_Position_Number==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                            <apex:outputPanel styleClass="regularText" rendered="{!positionAlreadyExistsError!=''&&renderMode==''}" >
+                                <br/><apex:outputText style="color:red" value="{!positionAlreadyExistsError}"/>
+                            </apex:outputPanel>
+                            <apex:outputPanel styleClass="regularText" rendered="{!positionCannotBeEmptyError!=''&&renderMode==''}" >
+                                <br/><apex:outputText style="color:red" value="{!positionCannotBeEmptyError}"/>
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell">
+                        <p class="regularText">
+                            Source of Funds
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC2_Source_of_Funds}" maxlength="25" size="30" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC2_Source_of_Funds}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC2_Source_of_Funds==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell" style="width:55%" >
+                        <p class="regularText">
+                            Working Headquarters<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC2_Working_Headquarters}" maxlength="50" size="58" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC2_Working_Headquarters}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC2_Working_Headquarters==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell" >
+                        <!--<p class="regularText">
+                            If Typist
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC2_Typist}" >
+                                <apex:selectOptions value="{!TypistOptions}"/>
+                            </apex:selectRadio>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC2_Typist=='Range A'}" style="padding-left:45px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Typist!='Range A'}" style="padding-left:45px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Range A
+                                <apex:image rendered="{!fw1.SEC2_Typist=='Range B (over 50% dictaphone)'}" style="padding-left:20px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Typist!='Range B (over 50% dictaphone)'}" style="padding-left:20px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Range B (over 50% dictaphone)
+                            </p>
+                        </apex:outputPanel>
+                    --></td>
+                </tr>
+                <tr>
+                    <td class="bottomleftcell" >
+                        <p class="regularText">
+                            Time Base
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC2_Time_Base}" >
+                                <apex:selectOptions value="{!TimeBaseOptions}"/>
+                            </apex:selectRadio>
+                            Fraction: <apex:inputText value="{!fw1.SEC2_Part_Time_Fraction}" maxlength="7" size="7" />
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC2_Time_Base=='Full Time'}" style="padding-left:70px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Time_Base!='Full Time'}" style="padding-left:70px;padding-right:10px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Full Time
+                                <apex:image rendered="{!fw1.SEC2_Time_Base=='Part Time'}" style="padding-left:30px;padding-right:10px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Time_Base!='Part Time'}" style="padding-left:30px;padding-right:10px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Part Time&nbsp;&nbsp;&nbsp;&nbsp;Fraction&nbsp;&nbsp;
+                                <span class="output">
+                                    <apex:outputText value="{!fw1.SEC2_Part_Time_Fraction}"/>
+                                </span>
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                    <td class="bottomrightcell" >
+                        <p class="regularText">
+                            Tenure
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio value="{!fw1.SEC2_Tenure}" >
+                                <apex:selectOptions value="{!TenureOptions}"/>
+                            </apex:selectRadio>
+                            Months: <apex:inputText value="{!fw1.SEC2_Limited_Term_Months}" maxlength="6" size="6" />
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC2_Tenure=='Permanent'}" style="padding-left:40px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Tenure!='Permanent'}" style="padding-left:40px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Permanent
+                                <apex:image rendered="{!fw1.SEC2_Tenure=='Limited Term'}" style="padding-left:15px;padding-right:5px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC2_Tenure!='Limited Term'}" style="padding-left:15px;padding-right:5px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Limited Term&nbsp;&nbsp;&nbsp;&nbsp;Months&nbsp;&nbsp;
+                                <span class="output">
+                                    <apex:outputText value="{!fw1.SEC2_Limited_Term_Months}"/>
+                                </span>
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td >
+                        <p class="regularText" style="padding-top:2px;padding-bottom:3px;font-size:12pt">
+                            <b>Section III.&nbsp;&nbsp;Justification and Remarks</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:solid 3px; border-top:solid 1px" >
+                        <p class="regularText">
+                            Justify if Requesting: 1) Overlap; 2) Limited Term; 3) Reclassification; and/or 4) Change in Established Position.
+                        </p>
+                        <p class="output" style="line-height:12pt">
+                            <apex:inputTextarea rendered="{!renderMode==''}" cols="110" rows="5" value="{!fw1.SEC3_Remarks}" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC3_Remarks}" escape="false" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td >
+                        <p class="regularText" style="padding-top:2px;padding-bottom:3px;font-size:12pt">
+                            <b>Section IV.&nbsp;&nbsp;Special Instructions</b>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell" style="width:16%">
+                        <p class="regularText">
+                            Request Certification
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC4_Request_Certification}" >
+                                <apex:selectOptions value="{!RequestOptions}"/>
+                            </apex:selectRadio>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC4_Request_Certification=='Yes'}" style="padding-left:3px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC4_Request_Certification!='Yes'}" style="padding-left:3px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Yes
+                                <apex:image rendered="{!fw1.SEC4_Request_Certification=='No'}" style="padding-left:25px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC4_Request_Certification!='No'}" style="padding-left:25px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                No
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                    <td class="middlecell" style="width:32%">
+                        <p class="regularText">
+                            If no, please explain
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Explanation}" maxlength="20" size="20" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Explanation}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Explanation==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell" >
+                        <p class="regularText">
+                            Request Informal List (no hiring commitments allowed)
+                        </p>
+                        <apex:outputPanel rendered="{!renderMode==''}">
+                            <apex:selectRadio rendered="{!renderMode==''}" value="{!fw1.SEC4_Request_Informal_List}" >
+                                <apex:selectOptions value="{!RequestOptions}"/>
+                            </apex:selectRadio>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!renderMode=='PDF'}">
+                            <p class="regularText" style="padding-bottom:3px">
+                                <apex:image rendered="{!fw1.SEC4_Request_Informal_List=='Yes'}" style="padding-left:20px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC4_Request_Informal_List!='Yes'}" style="padding-left:20px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Yes
+                                <apex:image rendered="{!fw1.SEC4_Request_Informal_List=='No'}" style="padding-left:70px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC4_Request_Informal_List!='No'}" style="padding-left:70px;padding-right:3px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                No
+                            </p>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell" style="width:16%" rowspan="3">
+                        <p class="regularText">
+                            Applicants to be<br/>
+                            interviewed by:<br/>
+                        </p>
+                    </td>
+                    <td class="middlecell" style="width:45%">
+                        <p class="regularText" style="text-align:center">
+                            Name
+                        </p>
+                    </td>
+                    <td class="middlecell" style="width:20%">
+                        <p class="regularText" style="text-align:center">
+                            Telephone No.
+                        </p>
+                    </td>
+                    <td class="rightcell" >
+                        <p class="regularText" style="text-align:center">
+                            Room No.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="middlecell">
+                        <p class="output" style="padding-top:8px">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Name1}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Name1}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Name1==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="middlecell" style="padding-top:8px">
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Phone1}" maxlength="16" size="16" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Phone1}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Phone1==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell" style="padding-top:8px">
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_RoomNo1}" maxlength="20" size="20" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_RoomNo1}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_RoomNo1==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="middlecell">
+                        <p class="output" style="padding-top:8px">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Name2}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Name2}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Name2==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="middlecell" style="padding-top:8px">
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Phone2}" maxlength="16" size="16" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Phone2}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Phone2==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="rightcell" style="padding-top:8px">
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_RoomNo2}" maxlength="20" size="20" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_RoomNo2}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_RoomNo2==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="leftcell" style="width:50%">
+                        <p class="regularText" >
+                            Requested by (Authorized Signature)
+                        </p>
+                        <p class="output">
+                            <br/>
+                        </p>
+                    </td>
+                    <td class="rightcell" >
+                        <p class="regularText" >
+                            Title<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Title}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Title}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Title==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bottomleftcell" >
+                        <p class="regularText" >
+                            Division<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Division}" maxlength="40" size="48" />
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Division}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Division==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td class="bottomrightcell" >
+                        <p class="regularText" >
+                            Date<br/>
+                        </p>
+                        <p class="output">
+                            <apex:inputText rendered="{!renderMode==''}" value="{!fw1.SEC4_Special_Instructions_Date}" maxlength="10" size="10" />
+                            <apex:outputPanel styleClass="regularText" rendered="{!WFD_Special_Instructions_Date==false&&renderMode==''}">
+                                <br /><apex:outputText style="color:red" value="{!dateFormatError}"/>
+                            </apex:outputPanel>
+                            <apex:outputText rendered="{!renderMode=='PDF'}" value="{!fw1.SEC4_Special_Instructions_Date}"/>
+                            <apex:outputPanel rendered="{!fw1.SEC4_Special_Instructions_Date==''&&renderMode=='PDF'}">
+                                <br />
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td >
+                        <p class="regularText" style="padding-top:2px;padding-bottom:3px;font-size:12pt">
+                            <b>Section V.&nbsp;&nbsp;For Personnel Section Use</b>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin:0px;padding:0px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td class="bottomleftcell" style="width:21%">
+                        <p class="regularText" style="line-height:12pt">
+                            MGR List&nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                            
+                            
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_MGR_List}" maxlength="10" size="10" />
+
+                            
+                            
+                            
+                            
+                            <apex:outputPanel rendered="{!fw1.SEC5_MGR_List==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;<apex:outputText value="{!fw1.SEC5_MGR_List}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                            Position Open&nbsp;&nbsp;&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Position_Open}" maxlength="10" size="10" />
+                            <apex:outputPanel rendered="{!fw1.SEC5_Position_Open==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Position_Open!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;<apex:outputText value="{!fw1.SEC5_Position_Open}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                            Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Position_Open_Date}" maxlength="10" size="10" />
+                            <apex:outputPanel rendered="{!WFD_Position_Open_Date==false&&renderMode==''}">
+                                <br /><apex:outputText style="color:red" value="{!dateFormatError}"/>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Position_Open_Date==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Position_Open_Date!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;<apex:outputText value="{!fw1.SEC5_Position_Open_Date}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                        </p>
+                    </td>
+                    <td class="bottommiddlecell" style="width:24%">
+                        <p class="regularText" style="padding-left:15px;line-height:12pt">
+                            Job Order Placed or<br/>
+                            Certification Requested<br/>
+                            Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Certification_Date}" maxlength="10" size="10" />
+                            <apex:outputPanel rendered="{!WFD_Certification_Date==false&&renderMode==''}">
+                                <br /><apex:outputText style="color:red" value="{!dateFormatError}"/>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Certification_Date==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Certification_Date!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;<apex:outputText value="{!fw1.SEC5_Certification_Date}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                        </p>
+                    </td>
+                    <td class="bottommiddlecell" style="width:18%">
+                        <p class="regularText" style="padding-left:15px;line-height:12pt">
+                            <br/>
+                            Form 607&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Form_607_Number}" maxlength="6" size="6" />
+                            <apex:outputPanel rendered="{!fw1.SEC5_Form_607_Number==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Form_607_Number!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">&nbsp;
+                                <apex:outputText value="{!fw1.SEC5_Form_607_Number}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                            Date:&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Form_607_Date}" maxlength="10" size="10" />
+                            <apex:outputPanel rendered="{!WFD_Form_607_Date==false&&renderMode==''}">
+                                <br /><apex:outputText style="color:red" value="{!dateFormatError}"/>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Form_607_Date==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Form_607_Date!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">&nbsp;
+                                <apex:outputText value="{!fw1.SEC5_Form_607_Date}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                        </p>
+                    </td>
+                    <td class="bottomrightcell" style="width:21%">
+                        <p class="regularText" style="padding-left:8px;padding-top:5px;line-height:12pt">
+                            <apex:outputPanel rendered="{!renderMode==''}">
+                            
+                            
+                            
+                                <apex:selectRadio disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Approval}" >
+                                
+                                
+                                
+                                
+                                    <apex:selectOptions value="{!ApprovalOptions}"/>
+                                </apex:selectRadio>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!renderMode=='PDF'}">  
+                            
+                            
+                            
+                            
+                                <apex:image rendered="{!fw1.SEC5_Approval=='Approved as Requested'}" style="padding-left:0px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC5_Approval!='Approved as Requested'}" style="padding-left:0px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Approved as Requested<br/>
+                                <apex:image rendered="{!fw1.SEC5_Approval=='Approved as modified'}" style="padding-left:0px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC5_Approval!='Approved as modified'}" style="padding-left:0px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Approved as modified<br/>
+                                <apex:image rendered="{!fw1.SEC5_Approval=='Disapproved'}" style="padding-left:0px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'crossedBox.png')}"/>
+                                <apex:image rendered="{!fw1.SEC5_Approval!='Disapproved'}" style="padding-left:0px;padding-right:5px;padding-bottom:0px" height="15" width="15" value="{!URLFOR($Resource.boxImages, 'uncrossedBox.png')}"/>
+                                Disapproved
+                                
+
+                            </apex:outputPanel>
+                        </p>
+                    </td>
+                    <td style="border-top:solid 1px; border-bottom:solid 3px" >
+                        <p class="regularText" style="line-height:12pt">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Initials&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Initials}" maxlength="4" size="4" />
+                            <apex:outputPanel rendered="{!fw1.SEC5_Initials==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Initials!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;<apex:outputText value="{!fw1.SEC5_Initials}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                            <br/>
+                            Date:&nbsp;&nbsp;
+                            <apex:inputText disabled="{!$Permission.HR_Division_Form_1_PS}" value="{!fw1.SEC5_Approval_Date}" maxlength="10" size="10" />
+                            <apex:outputPanel rendered="{!WFD_Approval_Date==false&&renderMode==''}">
+                                <br /><apex:outputText style="color:red" value="{!dateFormatError}"/>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Approval_Date==''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!fw1.SEC5_Approval_Date!=''&&renderMode=='PDF'}" layout="inline" styleClass="output" style="text-decoration:underline">
+                                &nbsp;<apex:outputText value="{!fw1.SEC5_Approval_Date}"/>&nbsp;
+                            </apex:outputPanel><br/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top:8px;width:100%;border-collapse:collapse">
+                <tr>
+                    <td style="padding-left:60px">
+                        <p class="regularText">
+                            A2-1 (rev 09/89)
+                        </p>
+                        <p class="regularText">
+                            <br/>
+                        </p>
+                        <p class="regularText">
+                            <!--<b>PosControlNoFull&nbsp;&nbsp;&nbsp;&nbsp; 11-</b>-->
+                            <br/>
+                        </p>
+                    </td>
+                    <td style="padding-left:90px">
+                        <p class="regularText">
+                            DESTROY AFTER 2 YEARS
+                        </p>
+                        <p class="regularText">
+                            <br/>
+                        </p>
+                        <p class="regularText">
+                            <br/>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="regularText" style="padding-right:15px;text-align:right">
+                            State of California
+                        </p>
+                        <p class="regularText">
+                            <br/>
+                        </p>
+                        <p class="regularText">
+                            <br/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <apex:commandButton rendered="{!renderMode==''}" action="{!saveForm1}" value="Save Form" />
+            </apex:pageBlock>
+            </apex:form>
+        </body>
+    </html>
+</apex:page>

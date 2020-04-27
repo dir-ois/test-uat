@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If(Entry Type = Misc or Appeal, Item Line =1)
+If(Entry Type = Contg, Item line = 2)
+if(Entry Type = Arot, Item line = 3) --></help>
+    <label><!-- Item_Line --></label>
+    <name>Item_Line__c</name>
+</CustomFieldTranslation>

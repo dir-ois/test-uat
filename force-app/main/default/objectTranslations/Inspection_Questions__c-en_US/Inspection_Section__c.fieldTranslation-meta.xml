@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the section in which the question should be displayed. --></help>
+    <label><!-- Inspection Section --></label>
+    <name>Inspection_Section__c</name>
+    <picklistValues>
+        <masterLabel>Employer/Principle Information</masterLabel>
+        <translation><!-- Employer/Principle Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Header</masterLabel>
+        <translation><!-- Header --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IWC Order</masterLabel>
+        <translation><!-- IWC Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interviewee</masterLabel>
+        <translation><!-- Interviewee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License Information</masterLabel>
+        <translation><!-- License Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Employer</masterLabel>
+        <translation><!-- Primary Employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary Employer Detail</masterLabel>
+        <translation><!-- Primary Employer Detail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Information</masterLabel>
+        <translation><!-- Wage Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worker&#39;s Compensation Insurance Information</masterLabel>
+        <translation><!-- Worker&apos;s Compensation Insurance Information --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

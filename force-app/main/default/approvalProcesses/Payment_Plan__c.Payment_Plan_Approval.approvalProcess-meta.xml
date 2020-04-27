@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>RCIINTAKE</submitter>
+        <type>role</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Case__c</field>
+        <field>Number_of_Payments__c</field>
+        <field>Payment_Plan_Total_Amount_Due__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Payment_Plan_Approved</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <label>Payment Plan Approved</label>
+        <name>Payment_Plan_Approved</name>
+        <rejectionActions>
+            <action>
+                <name>Payment_Plan_Rejected</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>For more than 12 payments</description>
+    <emailTemplate>Payment_Plan_Email_Templates/Payment_Plan_More_Than_12</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>(Case__r.RecordType.DeveloperName=&quot;RCI&quot;) &amp;&amp;
+(Number_of_Payments__c &gt; 12) &amp;&amp;
+(Due_Date__c &gt; TODAY())</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Approval_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Approval_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Number_of_Payments_0</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Rejected_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Rejected_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Approval_Status_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Payment Plan Approval</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

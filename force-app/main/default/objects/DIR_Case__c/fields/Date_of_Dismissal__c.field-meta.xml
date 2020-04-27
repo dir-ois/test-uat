@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_Dismissal__c</fullName>
+    <description>This will be the date when the Case Management Status changes to Dismissed, required field, and when a user changes the status to dismissed, they are required to complete the date.</description>
+    <externalId>false</externalId>
+    <label>Date of Dismissal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

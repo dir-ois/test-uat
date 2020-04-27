@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Court__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Court</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <errorMessage>The value entered must be an Office record of record type &#39;Courthouse&#39; or &#39;County Registrar&#39;</errorMessage>
+        <filterItems>
+            <field>Office__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Courthouse</value>
+        </filterItems>
+        <filterItems>
+            <field>Office__c.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>County Registrar</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Office__c</referenceTo>
+    <relationshipLabel>Judgments (Court)</relationshipLabel>
+    <relationshipName>Court</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

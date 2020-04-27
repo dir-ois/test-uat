@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Writ_Assigned_to_Attorney_Notification</fullName>
+        <description>Writ Assigned to Attorney Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Assigned_Attorney_Email_Field__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Writ_Assigned_to_Attorney</template>
+    </alerts>
+    <alerts>
+        <fullName>Writ_Created_Notify_Deputy</fullName>
+        <description>Writ: Created Notify Deputy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/New_Writ_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Writ_Updated_Notify_Deputy</fullName>
+        <description>Writ Updated Notify Deputy</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Assigned_Deputy__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>dlsedonotreply@dir.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management_Email_Templates/Writ_Updated_Notify_Deputy</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_Assigned_Attorney_Email_Field</fullName>
+        <field>Assigned_Attorney_Email_Field__c</field>
+        <formula>Assigned_Attorney__r.Email__c</formula>
+        <name>Set Assigned Attorney Email Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_CM_Name</fullName>
+        <description>Populates a hidden text field so users can search for Writ by DIR_Case_Name</description>
+        <field>CM_Name__c</field>
+        <formula>Case_Management__r.Name</formula>
+        <name>Update CM Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Assigned Attorney Changed</fullName>
+        <actions>
+            <name>Writ_Assigned_to_Attorney_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify the new Assigned Attorney of the Writ</description>
+        <formula>ISCHANGED (Assigned_Attorney__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Assigned Attorney not blank</fullName>
+        <actions>
+            <name>Set_Assigned_Attorney_Email_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set Email Fields on Writs</description>
+        <formula>NOT(ISBLANK(Assigned_Attorney__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Writ Created</fullName>
+        <active>false</active>
+        <description>New Writ Created, notify Deputy and Sr. Deputy on Case</description>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Writ Final Legal Outcome Notify</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Writ__c.Final_Legal_Outcome__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Notify the Deputy after the Final Legal Outcome</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Writ Status or Final Legal Outcome Changed Notification</fullName>
+        <actions>
+            <name>Writ_Updated_Notify_Deputy</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notifies the Deputy on the Case assigned to the Writ of updates to the Status or the Final Legal Outcome of the Writ</description>
+        <formula>ISCHANGED ( Status__c ) || ISCHANGED ( Final_Legal_Outcome__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Writ%3AUpdate CM Name</fullName>
+        <actions>
+            <name>Update_CM_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populates a hidden text field so users can search for Writ by DIR_Case_Name</description>
+        <formula>NOT(ISBLANK( Case_Management__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

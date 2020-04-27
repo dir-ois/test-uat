@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hours_Spent_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Status__c) &amp;&amp; ISPICKVAL(Status__c, &quot;Released&quot;) &amp;&amp;  RecordType.Name &lt;&gt; &quot;PROD Data Change Release&quot;
+&amp;&amp;
+ISBLANK(Estimated_Hours_Spent__c )</errorConditionFormula>
+    <errorDisplayField>Estimated_Hours_Spent__c</errorDisplayField>
+    <errorMessage>You must complete the Estimated Hours Spent</errorMessage>
+</ValidationRule>

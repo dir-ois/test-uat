@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_applicant_effective_date_30days</fullName>
+    <active>true</active>
+    <description>Effective date for Permit applicant can not be past 30 days into future.</description>
+    <errorConditionFormula>IF(AND(RecordType.DeveloperName  = &#39;Entertainment_Work&#39; 
+,Effective_Date__c &gt; (TODAY() + 30)),True,False)</errorConditionFormula>
+    <errorMessage>Effective Date should not be greater than 30 day from current date</errorMessage>
+</ValidationRule>

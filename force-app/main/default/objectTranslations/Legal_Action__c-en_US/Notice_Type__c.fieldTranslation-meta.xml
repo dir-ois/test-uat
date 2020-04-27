@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notice Type --></label>
+    <name>Notice_Type__c</name>
+    <picklistValues>
+        <masterLabel>Acknowledgment of Assignment of Judgment</masterLabel>
+        <translation><!-- Acknowledgment of Assignment of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acknowledgment of Satisfaction of Judgment</masterLabel>
+        <translation><!-- Acknowledgment of Satisfaction of Judgment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Management Conference Statement</masterLabel>
+        <translation><!-- Case Management Conference Statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhibit List</masterLabel>
+        <translation><!-- Exhibit List --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jury Instructions</masterLabel>
+        <translation><!-- Jury Instructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice (Misc.)</masterLabel>
+        <translation><!-- Notice (Misc.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Appeal</masterLabel>
+        <translation><!-- Notice of Appeal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Appearance</masterLabel>
+        <translation><!-- Notice of Appearance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Association of Attorney</masterLabel>
+        <translation><!-- Notice of Association of Attorney --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Bankruptcy Case</masterLabel>
+        <translation><!-- Notice of Bankruptcy Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Mediator Assignment</masterLabel>
+        <translation><!-- Notice of Mediator Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Related Case</masterLabel>
+        <translation><!-- Notice of Related Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Ruling</masterLabel>
+        <translation><!-- Notice of Ruling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Settlement</masterLabel>
+        <translation><!-- Notice of Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Stay</masterLabel>
+        <translation><!-- Notice of Stay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporters Transcript Filed (Appeal)</masterLabel>
+        <translation><!-- Reporters Transcript Filed (Appeal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statement of Case</masterLabel>
+        <translation><!-- Statement of Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status Conference Statement</masterLabel>
+        <translation><!-- Status Conference Statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substitution of Attorney Change of Address</masterLabel>
+        <translation><!-- Substitution of Attorney Change of Address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trial Brief</masterLabel>
+        <translation><!-- Trial Brief --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Witness List</masterLabel>
+        <translation><!-- Witness List --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

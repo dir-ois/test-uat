@@ -1,0 +1,38 @@
+<!--
+// @author: Oswin Correa
+// @date: 4/4/2018
+// @description: Parent container of the Attachmnents + lightning component functionality
+-->
+<aura:component controller="A_Plus_Controller"
+	implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+	access="global">
+	<aura:attribute name="isNotConfigured" type="Boolean" default="true"
+		description="To detect if Attachment + is configured properly for the context record" />
+	<aura:attribute name="searchKey" type="String" default=""
+		description="Key entered in global search" />
+
+	<aura:handler name="init" value="{!this}"
+		action="{!c.formDataTypeSections}"
+		description="init method that runs on component load" />
+
+	<lightning:spinner aura:id="loadspinner" class="slds-hide" />
+	<aura:if isTrue="{!v.isNotConfigured}">
+		<div class="slds-box">
+			<p>No proper configuration found for this recordtype.</p>
+		</div>
+		<aura:set attribute="else">
+			<lightning:card>
+				<aura:set attribute="title">
+					<lightning:input type="search" label="Search" name="search"
+						class="search" value="{!v.searchKey}"
+						onchange="{!c.onSearchClear}" />
+				</aura:set>
+				<aura:set attribute="actions">
+					<lightning:button variant="brand" label="Search"
+						onclick="{!c.formDataTypeSections}" class="slds-m-left_medium" />
+				</aura:set>
+			</lightning:card>
+            {!v.body} 
+        </aura:set>
+	</aura:if>
+</aura:component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2810_4_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>2810.4 Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affirmed on list</fullName>
+                <default>false</default>
+                <label>Affirmed on list</label>
+            </value>
+            <value>
+                <fullName>Remove from list</fullName>
+                <default>false</default>
+                <label>Remove from list</label>
+            </value>
+            <value>
+                <fullName>Appeal withdrawn/dismissed</fullName>
+                <default>false</default>
+                <label>Appeal withdrawn/dismissed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Substituted_Service_Name_of_on_Envelope__c</fullName>
+    <description>Default value = Name of Person Served</description>
+    <externalId>false</externalId>
+    <label>Substituted Service-Name of on Envelope</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

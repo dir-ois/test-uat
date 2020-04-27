@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_of_Incorporation__c</fullName>
+    <description>Mapped to State_of_Incorporation__c Account field.</description>
+    <externalId>false</externalId>
+    <label>State of Incorporation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>State_Abbreviations</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Provides mapping for record types for the creation of records based on a parent case&#39;s record type.
+
+Defines which violation types to display in the violation engine for which case type, based on record types, and which case violation rec type should be created as a result.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Record Type Mapping</label>
+    <visibility>Public</visibility>
+</CustomObject>

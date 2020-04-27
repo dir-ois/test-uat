@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IC_Determination__c</fullName>
+    <description>IC Determination</description>
+    <externalId>false</externalId>
+    <label>IC Information/AB-5</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IC established - dismissed</fullName>
+                <default>false</default>
+                <label>IC established - dismissed</label>
+            </value>
+            <value>
+                <fullName>Settled - No IC determination made</fullName>
+                <default>false</default>
+                <label>Settled - No IC determination made</label>
+            </value>
+            <value>
+                <fullName>Settled - Employee status established</fullName>
+                <default>false</default>
+                <label>Settled - Employee status established</label>
+            </value>
+            <value>
+                <fullName>Referred to hearing for IC determination</fullName>
+                <default>false</default>
+                <label>Referred to hearing for IC determination</label>
+            </value>
+            <value>
+                <fullName>Claim Closed - No determination made</fullName>
+                <default>false</default>
+                <label>Claim Closed - No determination made</label>
+            </value>
+            <value>
+                <fullName>AB5 RLLV</fullName>
+                <default>false</default>
+                <label>AB5 RLLV</label>
+            </value>
+            <value>
+                <fullName>AB5 Assigned</fullName>
+                <default>false</default>
+                <label>AB5 Assigned</label>
+            </value>
+            <value>
+                <fullName>AB5 Not 226.8</fullName>
+                <default>false</default>
+                <label>AB5 Not 226.8</label>
+            </value>
+            <value>
+                <fullName>AB5 Final</fullName>
+                <default>false</default>
+                <label>AB5 Final</label>
+            </value>
+            <value>
+                <fullName>Defendant alleges IC status</fullName>
+                <default>false</default>
+                <label>Defendant alleges IC status</label>
+            </value>
+            <value>
+                <fullName>Plaintiff reports IC misclassification</fullName>
+                <default>false</default>
+                <label>Plaintiff reports IC misclassification</label>
+            </value>
+            <value>
+                <fullName>Commonly misclassified worker</fullName>
+                <default>false</default>
+                <label>Commonly misclassified worker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

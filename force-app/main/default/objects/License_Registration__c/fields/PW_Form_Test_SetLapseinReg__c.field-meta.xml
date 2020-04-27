@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW_Form_Test_SetLapseinReg__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(PW_Form_Test_LapseinReg__c,&quot;New / Early Renewal&quot;),&quot;1&quot;,
+IF(
+ISPICKVAL(PW_Form_Test_LapseinReg__c,&quot;Renewal Grace Period&quot;),&quot;2&quot;,
+IF(
+ISPICKVAL(PW_Form_Test_LapseinReg__c,&quot;Renewal After Grace Period&quot;),&quot;3&quot;, null)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PW Form Test - SetLapseinReg</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

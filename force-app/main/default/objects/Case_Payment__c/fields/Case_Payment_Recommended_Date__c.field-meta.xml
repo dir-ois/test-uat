@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Payment_Recommended_Date__c</fullName>
+    <description>Date payment allocations were recommended, before being Applied (aka Posted). Populated by ApplyCasePayment apex code.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date this Case Payment&#39;s allocations to Case Issues or Judgments were recommended, before being Applied (aka Posted).</inlineHelpText>
+    <label>Case Payment Recommended Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

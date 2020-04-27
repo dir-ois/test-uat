@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deputy__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to the deputy performing inspection. For BOFE, the VF page sets this value by getting the user record and locating the employee record for the user performing the inspection</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Deputy Performing Inspection</inlineHelpText>
+    <label>Deputy</label>
+    <referenceTo>DIR_Employee__c</referenceTo>
+    <relationshipLabel>Inspections</relationshipLabel>
+    <relationshipName>Inspections</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role Type --></label>
+    <name>Role_Type__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation><!-- Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Auditor</masterLabel>
+        <translation><!-- BOFE Auditor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Auditor/Clerk</masterLabel>
+        <translation><!-- BOFE Auditor/Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Clerk</masterLabel>
+        <translation><!-- BOFE Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE DLC II</masterLabel>
+        <translation><!-- BOFE DLC II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Dep</masterLabel>
+        <translation><!-- BOFE Dep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE IRR</masterLabel>
+        <translation><!-- BOFE IRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE MST</masterLabel>
+        <translation><!-- BOFE MST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE RM</masterLabel>
+        <translation><!-- BOFE RM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOFE Sr Dep</masterLabel>
+        <translation><!-- BOFE Sr Dep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIU</masterLabel>
+        <translation><!-- CIU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashiering</masterLabel>
+        <translation><!-- Cashiering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashiering Disbursing</masterLabel>
+        <translation><!-- Cashiering Disbursing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashiering Receipting</masterLabel>
+        <translation><!-- Cashiering Receipting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cashiering Sr</masterLabel>
+        <translation><!-- Cashiering Sr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Counter</masterLabel>
+        <translation><!-- Counter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HQ</masterLabel>
+        <translation><!-- HQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR BOFE Restricted User</masterLabel>
+        <translation><!-- HR BOFE Restricted User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Certification Unit</masterLabel>
+        <translation><!-- HR Certification Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Division User</masterLabel>
+        <translation><!-- HR Division User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Personnel Analyst</masterLabel>
+        <translation><!-- HR Personnel Analyst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Personnel Specialist</masterLabel>
+        <translation><!-- HR Personnel Specialist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Position Control Administrator</masterLabel>
+        <translation><!-- HR Position Control Administrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR View Only</masterLabel>
+        <translation><!-- HR View Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU DLC II</masterLabel>
+        <translation><!-- JEU DLC II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Disbursing</masterLabel>
+        <translation><!-- JEU Disbursing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Legal</masterLabel>
+        <translation><!-- JEU Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Legal Support</masterLabel>
+        <translation><!-- JEU Legal Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU Receipting</masterLabel>
+        <translation><!-- JEU Receipting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L&amp;R</masterLabel>
+        <translation><!-- L&amp;R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Support</masterLabel>
+        <translation><!-- Legal Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Atty</masterLabel>
+        <translation><!-- PAGA Atty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA Unit</masterLabel>
+        <translation><!-- PAGA Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAGA User (Div Screeners)</masterLabel>
+        <translation><!-- PAGA User (Div Screeners) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Works</masterLabel>
+        <translation><!-- Public Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Clerk</masterLabel>
+        <translation><!-- RCI Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Dep</masterLabel>
+        <translation><!-- RCI Dep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI IRR</masterLabel>
+        <translation><!-- RCI IRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI MST</masterLabel>
+        <translation><!-- RCI MST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Manager</masterLabel>
+        <translation><!-- RCI Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Sr Dep</masterLabel>
+        <translation><!-- RCI Sr Dep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registration Services</masterLabel>
+        <translation><!-- Registration Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Systems Administrator</masterLabel>
+        <translation><!-- Systems Administrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA Cashiering Disbursing</masterLabel>
+        <translation><!-- WCA Cashiering Disbursing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA Cashiering Receipting</masterLabel>
+        <translation><!-- WCA Cashiering Receipting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA Clerk</masterLabel>
+        <translation><!-- WCA Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA DLC II (non-HO)</masterLabel>
+        <translation><!-- WCA DLC II (non-HO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA Dep</masterLabel>
+        <translation><!-- WCA Dep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA HO</masterLabel>
+        <translation><!-- WCA HO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA IRR</masterLabel>
+        <translation><!-- WCA IRR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA MST</masterLabel>
+        <translation><!-- WCA MST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA RM</masterLabel>
+        <translation><!-- WCA RM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA Sr Dep</masterLabel>
+        <translation><!-- WCA Sr Dep --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

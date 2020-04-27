@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For HR Division User Request Only --></help>
+    <label><!-- Division --></label>
+    <name>Division__c</name>
+    <picklistValues>
+        <masterLabel>Acctng</masterLabel>
+        <translation><!-- Acctng --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BSO</masterLabel>
+        <translation><!-- BSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budget</masterLabel>
+        <translation><!-- Budget --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHSWC</masterLabel>
+        <translation><!-- CHSWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM</masterLabel>
+        <translation><!-- CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAS</masterLabel>
+        <translation><!-- DAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR/SB</masterLabel>
+        <translation><!-- DIR/SB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE</masterLabel>
+        <translation><!-- DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOSH</masterLabel>
+        <translation><!-- DOSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DWC</masterLabel>
+        <translation><!-- DWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODA</masterLabel>
+        <translation><!-- ODA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODLN</masterLabel>
+        <translation><!-- ODLN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODLS</masterLabel>
+        <translation><!-- ODLS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODPIO</masterLabel>
+        <translation><!-- ODPIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ODR</masterLabel>
+        <translation><!-- ODR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OIS</masterLabel>
+        <translation><!-- OIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHAB</masterLabel>
+        <translation><!-- OSHAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTWSP</masterLabel>
+        <translation><!-- RTWSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP</masterLabel>
+        <translation><!-- SIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCAB</masterLabel>
+        <translation><!-- WCAB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

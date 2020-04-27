@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the dollar amount of wages for the period specified in Wage Type, or the percentage for Commission. --></help>
+    <label><!-- Wages --></label>
+    <name>Wages__c</name>
+</CustomFieldTranslation>

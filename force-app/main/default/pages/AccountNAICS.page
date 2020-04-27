@@ -1,0 +1,98 @@
+<apex:page standardController="Account" extensions="AccountNAICS_Extension">
+    <apex:form >
+        <apex:pageBlock title="NAICS Codes">
+            <apex:pageBlockbuttons >
+                <apex:commandButton value="Save" action="{!save}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockbuttons>
+            
+            <apex:pageBlockSection columns="2">
+                <apex:inputField id="naicsCode" label="Code" value="{!thisAccount.NAICS_Code__c}" />
+                <apex:actionstatus id="codeStatus" stopText="">
+                       <apex:facet name="start">
+                           <apex:outputpanel >
+                               <apex:image value="/img/loading.gif"/>&nbsp;&nbsp;Please wait...
+                           </apex:outputpanel>
+                       </apex:facet>
+                   </apex:actionstatus>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable id="level1Table" value="{!level1}" var="l1">
+                <apex:column >                  
+                    <apex:commandButton rendered="{!level1Opened[l1]==false}" value="+" action="{!openLevel1}" rerender="level1Table" status="codeStatus">
+                        <apex:param name="level1ToOpen" assignTo="{!level1ToOpen}" value="{!l1.Id}" />
+                    </apex:commandButton>
+                    <apex:commandButton rendered="{!level1Opened[l1]==true}" value="-" action="{!closeLevel1}" rerender="level1Table" status="codeStatus">
+                        <apex:param name="level1ToClose" assignTo="{!level1ToClose}" value="{!l1.Id}" />
+                    </apex:commandButton>
+                    &nbsp;
+                    <apex:commandLink value="{!l1.Name} {!l1.NAICS_Title__c}" action="{!selectCode}" rerender="naicsCode" status="codeStatus">
+                        <apex:param name="selectedCodeId" assignTo="{!selectedCodeId}" value="{!l1.Id}" />
+                    </apex:commandLink>
+                    <br/>
+                    <apex:pageBlockTable id="level2Table" style="padding-left:30px" value="{!level1[l1]}" var="l2" rendered="{!level1Opened[l1]==true}" >
+                        <apex:column >
+                            <apex:outputPanel id="level2Column">
+                                <apex:commandButton rendered="{!level2Opened[l2]==false}" value="+" action="{!openLevel2}" rerender="level2Column" status="codeStatus">
+                                    <apex:param name="level2ToOpen" assignTo="{!level2ToOpen}" value="{!l2.Id}" />
+                                </apex:commandButton>
+                                <apex:commandButton rendered="{!level2Opened[l2]==true}" value="-" action="{!closeLevel2}" rerender="level2Column" status="codeStatus">
+                                    <apex:param name="level2ToClose" assignTo="{!level2ToClose}" value="{!l2.Id}" />
+                                </apex:commandButton>
+                                &nbsp;
+                                <apex:commandLink value="{!l2.Name} {!l2.NAICS_Title__c}" action="{!selectCode}" rerender="naicsCode" status="codeStatus">
+                                    <apex:param name="selectedCodeId" assignTo="{!selectedCodeId}" value="{!l2.Id}" />
+                                </apex:commandLink>
+                                <br/>
+                                <apex:pageBlockTable id="level3Table" style="padding-left:30px" value="{!level1[l1][l2]}" var="l3" rendered="{!level2Opened[l2]==true}" >
+                                    <apex:column >
+                                        <apex:outputPanel id="level3Column">
+                                            <apex:commandButton rendered="{!level3Opened[l3]==false}" value="+" action="{!openLevel3}" rerender="level3Column" status="codeStatus">
+                                                <apex:param name="level3ToOpen" assignTo="{!level3ToOpen}" value="{!l3.Id}" />
+                                            </apex:commandButton>
+                                            <apex:commandButton rendered="{!level3Opened[l3]==true}" value="-" action="{!closeLevel3}" rerender="level3Column" status="codeStatus">
+                                                <apex:param name="level3ToClose" assignTo="{!level3ToClose}" value="{!l3.Id}" />
+                                            </apex:commandButton>
+                                            &nbsp;
+                                            <apex:commandLink value="{!l3.Name} {!l3.NAICS_Title__c}" action="{!selectCode}" rerender="naicsCode" status="codeStatus">
+                                                <apex:param name="selectedCodeId" assignTo="{!selectedCodeId}" value="{!l3.Id}" />
+                                            </apex:commandLink>
+                                            <br/>
+                                            <apex:pageBlockTable id="level4Table" style="padding-left:30px" value="{!level1[l1][l2][l3]}" var="l4" rendered="{!level3Opened[l3]==true}" >
+                                                <apex:column >
+                                                    <apex:outputPanel id="level4Column">
+                                                        <apex:commandButton rendered="{!level4Opened[l4]==false}" value="+" action="{!openLevel4}" rerender="level4Column" status="codeStatus">
+                                                            <apex:param name="level4ToOpen" assignTo="{!level4ToOpen}" value="{!l4.Id}" />
+                                                        </apex:commandButton>
+                                                        <apex:commandButton rendered="{!level4Opened[l4]==true}" value="-" action="{!closeLevel4}" rerender="level4Column" status="codeStatus">
+                                                            <apex:param name="level4ToClose" assignTo="{!level4ToClose}" value="{!l4.Id}" />
+                                                        </apex:commandButton>
+                                                        &nbsp;
+                                                        <apex:commandLink value="{!l4.Name} {!l4.NAICS_Title__c}" action="{!selectCode}" rerender="naicsCode" status="codeStatus">
+                                                            <apex:param name="selectedCodeId" assignTo="{!selectedCodeId}" value="{!l4.Id}" />
+                                                        </apex:commandLink>
+                                                        <br/>
+                                                        <apex:outputPanel id="level5">
+                                                        <apex:repeat value="{!level1[l1][l2][l3][l4]}" var="l5" rendered="{!level4Opened[l4]==true}" >
+                                                            <apex:outputPanel style="padding-left:30px">
+                                                            &nbsp;
+                                                            <apex:commandLink value="{!l5.Name} {!l5.NAICS_Title__c}" action="{!selectCode}" rerender="naicsCode" status="codeStatus">
+                                                                <apex:param name="selectedCodeId" assignTo="{!selectedCodeId}" value="{!l5.Id}" />
+                                                            </apex:commandLink>
+                                                            <br/>
+                                                            </apex:outputPanel>
+                                                        </apex:repeat>
+                                                        </apex:outputPanel>
+                                                    </apex:outputPanel>
+                                                </apex:column>
+                                            </apex:pageBlockTable>
+                                        </apex:outputPanel>
+                                    </apex:column>
+                                </apex:pageBlockTable>
+                            </apex:outputPanel>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

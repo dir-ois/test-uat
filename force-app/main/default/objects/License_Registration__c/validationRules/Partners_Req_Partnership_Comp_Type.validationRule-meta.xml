@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partners_Req_Partnership_Comp_Type</fullName>
+    <active>true</active>
+    <description>Used to require atleast 2 partners with a company type of partnership for Public Works</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &#39;Public Works&#39;,
+ISPICKVAL(Company_Type__c,&#39;General Partnership&#39;),
+Number_of_Partners__c = 2)</errorConditionFormula>
+    <errorMessage>You are required to have at least 2 partners.</errorMessage>
+</ValidationRule>

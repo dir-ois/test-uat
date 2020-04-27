@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Deputy_Must_have_user</fullName>
+    <active>true</active>
+    <description>Assigned deputy must be associated with a sf user</description>
+    <errorConditionFormula>( 
+ISBLANK ( Assigned_Deputy__r.User__c ) 
+&amp;&amp; RecordType.Name = &#39;BOFE Investigation&#39; 
+) 
+&amp;&amp; ISPICKVAL( Imported_From__c, &#39;&#39; )</errorConditionFormula>
+    <errorMessage>The Assigned Deputy must be a Salesforce User.</errorMessage>
+</ValidationRule>

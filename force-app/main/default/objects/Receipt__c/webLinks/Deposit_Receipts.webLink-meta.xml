@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deposit_Receipts</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Deposit Receipts</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>//NOTE: MUST UPDATE FOR PRODUCTION TO USE POST
+//https://force201.wordpress.com/2014/07/23/how-to-pass-a-large-number-of-selections-from-a-standard-list-view-to-a-visualforce-page/
+
+var ids = {!GETRECORDIDS($ObjectType.Receipt__c)};
+if (ids.length){
+	var currURL = window.location.href;
+	var form = document.createElement(&quot;form&quot;); 
+	form.setAttribute(&quot;method&quot;, &quot;POST&quot;);
+
+	var aProtocol = window.location.protocol; 
+	var aDomain = window.location.hostname.substring(0,window.location.hostname.indexOf(&quot;.&quot;)).toLowerCase(); 
+	var aVFPage = &quot;.visual.force.com/apex/DepositReceiptsVFP&quot;; 
+
+	if (aDomain == &quot;cadir&quot;) { 
+		var aServerLocation = &quot;na21&quot;;	
+	} else { 
+		var aServerLocation = window.location.hostname.substring(aDomain.length+1,window.location.hostname.indexOf(&quot;.my&quot;)); 
+	} 
+	var aURL = aProtocol + &quot;//&quot; + aDomain + &quot;--c.&quot; + aServerLocation + aVFPage; 
+
+	form.setAttribute(&quot;action&quot;, aURL); 
+
+    //UPDATE TO STATIC URL WITH CORRECT INSTATNCE
+	//form.setAttribute(&quot;action&quot;, &quot;https://cadir--uat--c.cs60.visual.force.com/apex/recordDeposits&quot;); 
+	//form.setAttribute(&quot;action&quot;, &quot;https://cadir--c.visual.force.com/apex/recordDeposits&quot;);
+	//form.setAttribute(&quot;action&quot;, &quot;https://cadir--c.na21.visual.force.com/apex/recordDeposits&quot;);
+
+
+    var hiddenField = document.createElement(&quot;input&quot;);
+    hiddenField.setAttribute(&quot;type&quot;, &quot;hidden&quot;);
+    hiddenField.setAttribute(&quot;name&quot;, &quot;ids&quot;);
+    hiddenField.setAttribute(&quot;value&quot;, ids.join(&#39;,&#39;));
+
+    var hiddenURL = document.createElement(&quot;input&quot;);
+    hiddenURL.setAttribute(&quot;type&quot;, &quot;hidden&quot;);
+    hiddenURL.setAttribute(&quot;name&quot;, &quot;retURL&quot;);
+    hiddenURL.setAttribute(&quot;value&quot;, currURL);
+
+    form.appendChild(hiddenField);
+    form.appendChild(hiddenURL);
+    document.body.appendChild(form);
+    form.submit();
+}else{
+	alert(&#39;Select one or more payments&#39;);
+}</url>
+</WebLink>

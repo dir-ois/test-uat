@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date appeal request was received. --></help>
+    <label><!-- Request Receipt Date --></label>
+    <name>Request_Receipt_Date__c</name>
+</CustomFieldTranslation>

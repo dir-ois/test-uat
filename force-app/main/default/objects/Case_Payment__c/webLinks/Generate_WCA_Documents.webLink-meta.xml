@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_WCA_Documents</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate WCA Documents</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Case_Payment__c.Id}
+&amp;queryid=[Plaintiff]a0md00000064cj4AAA?pv0={!Case_Payment__c.CaseId__c},
+[Defendant]a0md00000064cjRAAQ?pv0={!Case_Payment__c.CaseId__c},
+[GovName]a0md0000003l2S0,
+&amp;TemplateGroup=Payments
+&amp;SCHP=2
+&amp;OFN={Template.Label} + {!DIR_Case__c.Case_Number__c} + {!Case_Payment__c.Payor__c}</url>
+</WebLink>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Default</masterLabel>
+        <translation><!-- Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External</masterLabel>
+        <translation><!-- External --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installment</masterLabel>
+        <translation><!-- Installment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Irregular</masterLabel>
+        <translation><!-- Irregular --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Mediated w/ Conf</masterLabel>
+        <translation><!-- RCI Mediated w/ Conf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI Mediated w/o Conf</masterLabel>
+        <translation><!-- RCI Mediated w/o Conf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Conference</masterLabel>
+        <translation><!-- Wage Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wage Hearing</masterLabel>
+        <translation><!-- Wage Hearing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

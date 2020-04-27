@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Progress__c</fullName>
+    <description>Progress - Shows images based on case stage showing the progress</description>
+    <externalId>false</externalId>
+    <formula>CASE( Case_Stage__c , 
+&quot;Investigation&quot;,  IMAGE(&#39;/resource/Investigation&#39;,&quot;Investigation&quot;), 
+&quot;Conference&quot;,  IMAGE(&#39;/resource/Conference&#39;,&quot;Conference&quot;), 
+&quot;Hearing&quot;,  IMAGE(&#39;/resource/Hearing&#39;,&quot;Hearing&quot;), 
+&quot;Judgment&quot;,  IMAGE(&#39;/resource/Judgment&#39;,&quot;Judgment&quot;), 
+&quot;JEU Referral&quot;,  IMAGE(&#39;/resource/JEUReferral&#39;,&quot;JEUReferral&quot;), 
+&quot;Closed&quot;,  IMAGE(&#39;/resource/Closed&#39;,&quot;Closed&quot;), 
+&quot; &quot;)</formula>
+    <label>Progress</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

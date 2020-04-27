@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total of all Case Payments applied to this Payment Plan. Does not include down payment. --></help>
+    <label><!-- Total Payments Made --></label>
+    <name>Total_Payment_Amount__c</name>
+</CustomFieldTranslation>

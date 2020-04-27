@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>X001_Entered_flow</name>
+        <label>001 Entered flow</label>
+        <locationX>88</locationX>
+        <locationY>175</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Trim_input_and_get_separator_length</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varSourceRecord</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>001 Entered splt string flow</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X002_Add_and_End</name>
+        <label>002 Add and End</label>
+        <locationX>1451</locationX>
+        <locationY>685</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Add_remaining_item_and_Exit</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varSourceRecord</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>asdf</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X003_Add_Next</name>
+        <label>003 Add Next</label>
+        <locationX>976</locationX>
+        <locationY>742</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Add_left_item_to_collection</targetReference>
+        </connector>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varSourceRecord</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>txtAddNextItem</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X004_Ending_Flow</name>
+        <label>004 Ending Flow</label>
+        <locationX>322</locationX>
+        <locationY>481</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varSourceRecord</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>004 Ending Split String Flow</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>X005_Inputs_not_valid</name>
+        <label>005 Inputs not valid</label>
+        <locationX>555</locationX>
+        <locationY>86</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varSourceRecord</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>txtInvalidInputs</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <name>Add_left_item_to_collection</name>
+        <label>Add left item to collection</label>
+        <locationX>970</locationX>
+        <locationY>601</locationY>
+        <assignmentItems>
+            <assignToReference>colStringItems</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>flaNextItemInString</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Temp_String</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_remaining_item_and_Exit</name>
+        <label>Add remaining item and Exit</label>
+        <locationX>1256</locationX>
+        <locationY>769</locationY>
+        <assignmentItems>
+            <assignToReference>colStringItems</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>varInputString</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_temp_string_to_input_string</name>
+        <label>Assign temp string to input string</label>
+        <locationX>540</locationX>
+        <locationY>480</locationY>
+        <assignmentItems>
+            <assignToReference>varInputString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varTempString</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Validate_Length</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Create_Temp_String</name>
+        <label>Create Temp String</label>
+        <locationX>730</locationX>
+        <locationY>482</locationY>
+        <assignmentItems>
+            <assignToReference>varTempString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaRemoveItemFromList</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_temp_string_to_input_string</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Remove_separator_from_End</name>
+        <label>Remove separator from End</label>
+        <locationX>1251</locationX>
+        <locationY>438</locationY>
+        <assignmentItems>
+            <assignToReference>varInputString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaRemoveSepFromEnd</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Find_Next_Separator_Location</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Remove_Separator_from_start</name>
+        <label>Remove Separator from start</label>
+        <locationX>1008</locationX>
+        <locationY>262</locationY>
+        <assignmentItems>
+            <assignToReference>varInputString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaRemoveSepFromStart</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Separator_at_End</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Trim_input_and_get_separator_length</name>
+        <label>Trim input and get separator length</label>
+        <locationX>277</locationX>
+        <locationY>266</locationY>
+        <assignmentItems>
+            <assignToReference>varInputString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaTrimInputString</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varSeparatorLen</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>flaGetSeparatorLen</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Validate_Length</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Find_Next_Separator_Location</name>
+        <label>Find Next Separator Location</label>
+        <locationX>1252</locationX>
+        <locationY>605</locationY>
+        <defaultConnector>
+            <targetReference>Add_left_item_to_collection</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Continue</defaultConnectorLabel>
+        <rules>
+            <name>End</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>flaNextSeparatorLocation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_remaining_item_and_Exit</targetReference>
+            </connector>
+            <label>End</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Separator_at_End</name>
+        <label>Is Separator at End?</label>
+        <locationX>1009</locationX>
+        <locationY>441</locationY>
+        <defaultConnector>
+            <targetReference>Find_Next_Separator_Location</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Separator at End</defaultConnectorLabel>
+        <rules>
+            <name>Separator_at_End</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>flaSeparatorAtEnd</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Remove_separator_from_End</targetReference>
+            </connector>
+            <label>Separator at End</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Separator_at_start_of_String</name>
+        <label>Is Separator at start of String?</label>
+        <locationX>744</locationX>
+        <locationY>269</locationY>
+        <defaultConnector>
+            <targetReference>Is_Separator_at_End</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No sep at start</defaultConnectorLabel>
+        <rules>
+            <name>Sep_at_start</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>flaSeparatorAtStart</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Remove_Separator_from_start</targetReference>
+            </connector>
+            <label>Separator at Start</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valid_Inputs</name>
+        <label>Valid Inputs</label>
+        <locationX>280</locationX>
+        <locationY>93</locationY>
+        <defaultConnectorLabel>Invalid</defaultConnectorLabel>
+        <rules>
+            <name>Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varInputString</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varInputString</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varSeparator</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varSeparator</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Trim_input_and_get_separator_length</targetReference>
+            </connector>
+            <label>Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Validate_Length</name>
+        <label>Validate Length</label>
+        <locationX>474</locationX>
+        <locationY>267</locationY>
+        <defaultConnectorLabel>Invalid Length</defaultConnectorLabel>
+        <rules>
+            <name>Valid_Length</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>flaInputLen</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Separator_at_start_of_String</targetReference>
+            </connector>
+            <label>Valid Length</label>
+        </rules>
+    </decisions>
+    <description>Takes a separated string of values (e.g. comma, semi-colon separated text field) and splits it into a list of strings as the output variable from the flow
+- removed debugs</description>
+    <formulas>
+        <description>calculates the length of the separator string</description>
+        <name>flaGetSeparatorLen</name>
+        <dataType>Number</dataType>
+        <expression>LEN ( {!varSeparator} )</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <description>calculates the length of the input string</description>
+        <name>flaInputLen</name>
+        <dataType>Number</dataType>
+        <expression>LEN ( {!varInputString} )</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <description>gets the next item in the list</description>
+        <name>flaNextItemInString</name>
+        <dataType>String</dataType>
+        <expression>LEFT ( {!varInputString} , FIND ( {!varSeparator} , {!varInputString} ) - 1 )</expression>
+    </formulas>
+    <formulas>
+        <description>Gets the location of the next separator character from the input</description>
+        <name>flaNextSeparatorLocation</name>
+        <dataType>Number</dataType>
+        <expression>FIND ( {!varSeparator} , {!varInputString} )</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <description>Removes the next item from the input list. Used after adding item to collection</description>
+        <name>flaRemoveItemFromList</name>
+        <dataType>String</dataType>
+        <expression>RIGHT ( {!varInputString} , LEN ( {!varInputString} ) - {!flaNextSeparatorLocation} - {!varSeparatorLen} + 1 )</expression>
+    </formulas>
+    <formulas>
+        <description>Removes the separator character(s) from the end of the string.</description>
+        <name>flaRemoveSepFromEnd</name>
+        <dataType>String</dataType>
+        <expression>LEFT ( {!varInputString} , LEN ( {!varInputString} ) - {!varSeparatorLen} )</expression>
+    </formulas>
+    <formulas>
+        <description>Removes the separator from the start of the string</description>
+        <name>flaRemoveSepFromStart</name>
+        <dataType>String</dataType>
+        <expression>RIGHT ( {!varInputString} , LEN( {!varInputString} ) - {!flaNextSeparatorLocation} - {!varSeparatorLen} + 1 )</expression>
+    </formulas>
+    <formulas>
+        <description>Determines if the string has the separator character(s) at the end of the string</description>
+        <name>flaSeparatorAtEnd</name>
+        <dataType>Boolean</dataType>
+        <expression>IF ( RIGHT ( {!varInputString} , {!varSeparatorLen} ) = {!varSeparator}, TRUE , FALSE )</expression>
+    </formulas>
+    <formulas>
+        <description>checks to see if the separator is at the start of the string</description>
+        <name>flaSeparatorAtStart</name>
+        <dataType>Boolean</dataType>
+        <expression>IF ( LEFT ( {!varInputString} , {!varSeparatorLen} ) = {!varSeparator} , TRUE , FALSE )</expression>
+    </formulas>
+    <formulas>
+        <description>Trims the input string of preceeding and trailing spaces</description>
+        <name>flaTrimInputString</name>
+        <dataType>String</dataType>
+        <expression>TRIM( {!varInputString} )</expression>
+    </formulas>
+    <interviewLabel>Split String {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Split String</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Valid_Inputs</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>txtAddEndDebug</name>
+        <text>002
+Adding {!varInputString} to collection and ending flow</text>
+    </textTemplates>
+    <textTemplates>
+        <name>txtAddNextItem</name>
+        <text>002
+Adding Next Item: {!flaNextItemInString}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>txtInvalidInputs</name>
+        <text>005 inputs not valid for split string
+IF ( ISNULL ( {!varInputString} ) , &#39;input string null&#39; , &#39;Input String: &#39; + {!varInputString})
+IF ( ISNULL ({!varSeparator} ) , &#39;Separator is null&#39; , &#39;Separator: &#39; + {!varSeparator})</text>
+    </textTemplates>
+    <variables>
+        <description>Each item separated into a collection from the delimitted input string</description>
+        <name>colStringItems</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>entire string that needs to be separated</description>
+        <name>varInputString</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>separator for the list of inputs</description>
+        <name>varSeparator</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Length of the separator</description>
+        <name>varSeparatorLen</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>record id of source record that started flow. Used to debug</description>
+        <name>varSourceRecord</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Temporary string holding remaining string after adding item to collection</description>
+        <name>varTempString</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

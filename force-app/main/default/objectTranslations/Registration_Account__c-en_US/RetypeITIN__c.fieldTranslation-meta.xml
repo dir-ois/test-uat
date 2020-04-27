@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please re-type your Individual Taxpayer Identification Number with no dashes or spaces. --></help>
+    <label><!-- Re-type ITIN --></label>
+    <name>RetypeITIN__c</name>
+</CustomFieldTranslation>

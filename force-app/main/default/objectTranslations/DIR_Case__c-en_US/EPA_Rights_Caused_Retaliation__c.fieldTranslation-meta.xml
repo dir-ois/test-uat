@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Possible Related RCI claim --></label>
+    <name>EPA_Rights_Caused_Retaliation__c</name>
+</CustomFieldTranslation>

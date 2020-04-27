@@ -1,0 +1,312 @@
+<apex:page sidebar="true" showHeader="true" controller="Inspections" tabstyle="DIR_Case__c" docType="html-5.0">
+    <apex:includeScript value="{!URLFOR($Resource.OrangeTheme, 'jquery-1.8.0.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.OrangeTheme, 'jquery-ui-1.8.23.custom.min.js')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.OrangeTheme, 'jquery-ui-1.8.23.custom.css')}"/>
+    <script type="text/javascript">
+       var j$ = jQuery.noConflict();
+    </script>
+    <apex:form >
+        <apex:outputPanel rendered="{!showError == true}">
+            <script type="text/javascript">
+                j$('<div></div>').appendTo('body')
+                .html('<div><h6>Unable to successfully locate your Deputy record. Please contact a System Administrator to ensure that your Internal Employee record is properly configured.</h6></div>')
+                .dialog({
+                         modal: true, title: 'Error', zIndex: 10000, autoOpen: true,
+                         width: 'auto', resizable: false,
+                         buttons: {
+                                  'OK': function () {
+                                      hitOK();
+                                      j$(this).dialog("close");
+                                  }
+                         },
+                         close: function (event, ui) {
+                                  hitOK();
+                                  j$(this).dialog("close");
+                         }
+                })
+                                
+                </script>
+        </apex:outputPanel>
+        <apex:actionFunction name="hitOK" action="{!cancel}" immediate="true"/>
+        <apex:messages />
+        <apex:pageBlock >
+            
+            <apex:pageblockButtons >
+                <apex:commandButton value="Save Inspection" action="{!save}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" immediate="true"/>
+            </apex:pageblockButtons>
+             
+            <apex:pageBlockSection title="Inspection" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                                 
+                        <tr>
+                            <td>
+                                <b>Inspection Type</b>&nbsp;&nbsp;
+                            </td>
+                            <td>
+                                <apex:selectList value="{!typeValue}" size="1">
+                                    <apex:selectOptions value="{!typeItems}"/>
+                                </apex:selectList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Begin Date</b>&nbsp;&nbsp;
+                            </td>
+                            <td>
+                                <apex:inputField value="{!inspection.Begin_Date__c}" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>End Date</b>&nbsp;&nbsp;
+                            </td>
+                            <td>
+                                <apex:inputField value="{!inspection.End_Date__c}" />
+                            </td>
+                        </tr>
+                       
+                    </table>
+                </apex:outputPanel> 
+                
+            </apex:pageBlockSection>
+            
+             <apex:pageBlockSection title="Interviewee" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!intervieweeList}" var="i">
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!i.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[i.Id]}" rendered="{!typeMap[i.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[i.Id]}" rendered="{!typeMap[i.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[i.Id]}" rendered="{!typeMap[i.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[i.Id]}" rendered="{!typeMap[i.Id] == 'Picklist'}" size="1">
+                                        <apex:selectOptions value="{!itemsMap[i.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[i.Id].BirthDate}" rendered="{!typeMap[i.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(i.Source_Data__c != null, i.Source_Data__c != '', i.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                        
+                    </table>
+                </apex:outputPanel>
+             </apex:pageBlockSection>
+            <apex:pageBlockSection title="Primary Employer" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!employerList}" var="e">
+                            <tr> 
+                                <td>
+                                    <apex:outputText value="{!e.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[e.Id]}" rendered="{!typeMap[e.Id] == 'Text'}"/>
+                                    <!--<apex:outputText value="{!textMap[e.ID]}" rendered="{!AND(typeMap[e.Id] == 'Text', e.Source_Data__c != null, e.Source_Data__c !='', e.Update_Parent_Record__c = false)}" /> -->
+                                    <apex:inputText value="{!numberMap[e.Id]}" rendered="{!typeMap[e.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[e.Id]}" rendered="{!typeMap[e.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[e.Id]}" rendered="{!typeMap[e.Id] == 'Picklist'}" >
+                                        <apex:selectOptions value="{!itemsMap[e.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[e.Id].BirthDate}" rendered="{!typeMap[e.Id] == 'Date'}"/>
+                                    
+                                    <apex:outputPanel rendered="{!AND(e.Source_Data__c != null, e.Source_Data__c != '', e.Update_Parent_Record__c = false)}">
+                                        * 
+                                    </apex:outputPanel>
+                                    
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                        
+                    </table>
+                </apex:outputPanel>
+                
+                  <apex:pageBlockSection columns="1">
+                * Modifying the value will NOT update the parent Account record. Please update manually.
+            </apex:pageBlockSection>
+            </apex:pageBlockSection>
+               <apex:pageBlockSection title="Primary Employer Detail" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!employerDetail}" var="ed">
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!ed.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[ed.Id]}" rendered="{!typeMap[ed.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[ed.Id]}" rendered="{!typeMap[ed.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[ed.Id]}" rendered="{!typeMap[ed.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[ed.Id]}" rendered="{!typeMap[ed.Id] == 'Picklist'}">
+                                        <apex:selectOptions value="{!itemsMap[ed.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[ed.Id].BirthDate}" rendered="{!typeMap[ed.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(ed.Source_Data__c != null, ed.Source_Data__c != '', ed.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                        
+                    </table>
+                </apex:outputPanel>
+       
+         <apex:pageBlockSection columns="1">
+                * Modifying the value will NOT update the parent Account record. Please update manually.
+             </apex:pageBlockSection>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Employer/Principal Information" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!employerPrincipalList}" var="ep">
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!ep.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[ep.Id]}" rendered="{!typeMap[ep.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[ep.Id]}" rendered="{!typeMap[ep.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[ep.Id]}" rendered="{!typeMap[ep.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[ep.Id]}" rendered="{!typeMap[ep.Id] == 'Picklist'}">
+                                        <apex:selectOptions value="{!itemsMap[ep.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[ep.Id].BirthDate}" rendered="{!typeMap[ep.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(ep.Source_Data__c != null, ep.Source_Data__c != '', ep.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                        
+                    </table>
+                </apex:outputPanel>
+            </apex:pageBlockSection>            
+       
+            <apex:pageBlockSection title="License Information" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!licenseList}" var="l">
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!l.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[l.Id]}" rendered="{!typeMap[l.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[l.Id]}" rendered="{!typeMap[l.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[l.Id]}" rendered="{!typeMap[l.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[l.Id]}" rendered="{!typeMap[l.Id] == 'Picklist'}" size="1">
+                                        <apex:selectOptions value="{!itemsMap[l.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[l.Id].BirthDate}" rendered="{!typeMap[l.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(l.Source_Data__c != null, l.Source_Data__c != '', l.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                       
+                    </table>
+                </apex:outputPanel>
+               
+                 <apex:pageBlockSection columns="1">
+                 * Modifying the value will NOT update the parent Account record. Please update manually.
+            </apex:pageBlockSection> 
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Workers' Compensation Insurance Information" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!compensationList}" var="c" >
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!c.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[c.Id]}" rendered="{!typeMap[c.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[c.Id]}" rendered="{!typeMap[c.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[c.Id]}" rendered="{!typeMap[c.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[c.Id]}" rendered="{!typeMap[c.Id] == 'Picklist'}" size="1">
+                                        <apex:selectOptions value="{!itemsMap[c.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[c.Id].BirthDate}" rendered="{!typeMap[c.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(c.Source_Data__c != null, c.Source_Data__c != '', c.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                </apex:outputPanel>
+                  <apex:pageBlockSection columns="1">
+                * Modifying the value will NOT update the parent Account record. Please update manually.
+            </apex:pageBlockSection>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Wage Information" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!wageList}" var="w">
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!w.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[w.Id]}" rendered="{!typeMap[w.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[w.Id]}" rendered="{!typeMap[w.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[w.Id]}" rendered="{!typeMap[w.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[w.Id]}" rendered="{!typeMap[w.Id] == 'Picklist'}" size="1">
+                                        <apex:selectOptions value="{!itemsMap[w.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[w.Id].BirthDate}" rendered="{!typeMap[w.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(w.Source_Data__c != null, w.Source_Data__c != '', w.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="IWC Order" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                        <apex:repeat value="{!iwcList}" var="iwc">
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!iwc.Inspection_Question__c}" label=""/>&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <apex:inputText value="{!textMap[iwc.Id]}" rendered="{!typeMap[iwc.Id] == 'Text'}"/>
+                                    <apex:inputText value="{!numberMap[iwc.Id]}" rendered="{!typeMap[iwc.Id] == 'Number'}"/>
+                                    <apex:inputCheckbox value="{!checkboxMap[iwc.Id]}" rendered="{!typeMap[iwc.Id] == 'Checkbox'}"/>
+                                    <apex:selectList value="{!listValueMap[iwc.Id]}" rendered="{!typeMap[iwc.Id] == 'Picklist'}" size="1">
+                                        <apex:selectOptions value="{!itemsMap[iwc.Id]}"/>
+                                    </apex:selectList>
+                                    <apex:inputField value="{!dateMap[iwc.Id].BirthDate}" rendered="{!typeMap[iwc.Id] == 'Date'}"/>
+                                    <apex:outputPanel rendered="{!AND(iwc.Source_Data__c != null, iwc.Source_Data__c != '', iwc.Update_Parent_Record__c = false)}">
+                                        *
+                                    </apex:outputPanel>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </table>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+         <apex:pageBlockSection title="Comments" columns="1">
+                <apex:outputPanel layout="block">
+                    <table>
+                          <tr>
+                            <td>
+                                <apex:inputField value="{!inspection.Comments__c}" style="width:360px" />
+                            </td>
+                        </tr>
+                    </table>
+                </apex:outputPanel>                     
+            </apex:pageBlockSection> 
+            </apex:pageBlock> 
+    </apex:form>
+</apex:page>

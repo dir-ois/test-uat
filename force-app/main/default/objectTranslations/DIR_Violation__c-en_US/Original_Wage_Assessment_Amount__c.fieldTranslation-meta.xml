@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The original amount of the wage assessment. Will remain the same even if the cited amount is modified by an appeal. --></help>
+    <label><!-- Original Amount Payable to EE(s) --></label>
+    <name>Original_Wage_Assessment_Amount__c</name>
+</CustomFieldTranslation>

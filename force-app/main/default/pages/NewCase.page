@@ -1,0 +1,25 @@
+<apex:page standardController="DIR_Case__c" extensions="NewCase" action="{!RedirectOrMessage}">
+
+	<apex:form >
+	
+		<apex:pageBlock rendered="{!step == 1}">
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Continue" action="{!RedirectOrMessage}" />
+			</apex:pageBlockButtons>
+			<apex:pageBlockSection columns="1">
+				<apex:inputField value="{!cs.Employer__c}" required="true" />
+			</apex:pageBlockSection>
+            <apex:pageBlockSection columns="1">
+				<apex:inputCheckbox label="Duplicate case"  value="{!dup}" title="Select if there is an existing case for the above employer" />
+	        </apex:pageBlockSection>
+		</apex:pageBlock>
+	
+		<apex:pageBlock rendered="{!step == 3}">
+			<apex:pageBlockSection columns="1">
+				An open case already exists for this employer. Please add to the existing case located <a href="{!caseURL}">here </a>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+	
+	</apex:form>
+
+</apex:page>

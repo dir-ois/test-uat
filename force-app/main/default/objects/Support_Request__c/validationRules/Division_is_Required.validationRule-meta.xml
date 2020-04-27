@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division_is_Required</fullName>
+    <active>true</active>
+    <description>When users select the Division User option for Role type they must select the Division Name</description>
+    <errorConditionFormula>ISPICKVAL(Role_Type__c, &quot;Division User&quot;) 
+
+&amp;&amp; 
+
+ISPICKVAL(Division__c, &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Division__c</errorDisplayField>
+    <errorMessage>You must select the Division Name</errorMessage>
+</ValidationRule>

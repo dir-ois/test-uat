@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hiring Type --></label>
+    <name>Hiring_Type__c</name>
+    <picklistValues>
+        <masterLabel>Current DIR EE</masterLabel>
+        <translation><!-- Current DIR EE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New to State</masterLabel>
+        <translation><!-- New to State --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Previous State EE</masterLabel>
+        <translation><!-- Previous State EE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer from other Dept</masterLabel>
+        <translation><!-- Transfer from other Dept --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

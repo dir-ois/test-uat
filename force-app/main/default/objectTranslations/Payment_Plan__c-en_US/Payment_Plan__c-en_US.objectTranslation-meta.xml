@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Plans</value>
+    </caseValues>
+    <layouts>
+        <layout>Payment Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Self-Audit Details --></label>
+            <section>Self-Audit Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can not refer a case to JEU when the payment plan is current. --></errorMessage>
+        <name>JEU_Refer_can_not_be_Current</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Frequency = Monthly, then Day of Month Payment Due is required. --></errorMessage>
+        <name>Monthly_Payment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Plans cannot be created/edited for a closed case. Please submit the case for approval to be re-opened. --></errorMessage>
+        <name>No_Payment_Plans_on_Closed_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may not edit the record while the Payment Plan is Pending Approval. --></errorMessage>
+        <name>RCI_to_JEU_Approval_Status_Pending</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only two days may be selected for Semi-Monthly Payment Plans. --></errorMessage>
+        <name>Semi_Monthly_Payment_Plan_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Approve_Reg_with_Defects</fullName>
+    <active>true</active>
+    <description>Defects must be fixed prior to approval. Reviewers should not be be able to approve applications where the defects have not been addressed. Any defect should prevent approval status from being applied.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Status__c, &quot;Approved&quot;),
+  Number_of_Unresolved_Defects__c &gt; 0
+)</errorConditionFormula>
+    <errorMessage>Defects must be fixed prior to approval. Please resolve all defects prior to approving the registration.</errorMessage>
+</ValidationRule>

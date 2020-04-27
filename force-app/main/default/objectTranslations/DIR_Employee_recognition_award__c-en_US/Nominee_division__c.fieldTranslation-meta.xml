@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nominee division --></label>
+    <name>Nominee_division__c</name>
+    <picklistValues>
+        <masterLabel>DAS</masterLabel>
+        <translation><!-- DAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR HR</masterLabel>
+        <translation><!-- DIR HR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIR IT</masterLabel>
+        <translation><!-- DIR IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLSE</masterLabel>
+        <translation><!-- DLSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOSH</masterLabel>
+        <translation><!-- DOSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DWC</masterLabel>
+        <translation><!-- DWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director&#39;s Office</masterLabel>
+        <translation><!-- Director&apos;s Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHAB</masterLabel>
+        <translation><!-- OSHAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSHSB</masterLabel>
+        <translation><!-- OSHSB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSIP</masterLabel>
+        <translation><!-- OSIP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

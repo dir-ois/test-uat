@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Levy_Response_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Levy Response Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Memorandum of Garnishee</fullName>
+                <default>false</default>
+                <label>Memorandum of Garnishee</label>
+            </value>
+            <value>
+                <fullName>Memorandum of Garnishee with Notice of Joint Accountholder</fullName>
+                <default>false</default>
+                <label>Memorandum of Garnishee with Notice of Joint Accountholder</label>
+            </value>
+            <value>
+                <fullName>Other Garnishee Response</fullName>
+                <default>false</default>
+                <label>Other Garnishee Response</label>
+            </value>
+            <value>
+                <fullName>Claim of Exemption</fullName>
+                <default>false</default>
+                <label>Claim of Exemption</label>
+            </value>
+            <value>
+                <fullName>Third Party Claim</fullName>
+                <default>false</default>
+                <label>Third Party Claim</label>
+            </value>
+            <value>
+                <fullName>Other Debtor Response</fullName>
+                <default>false</default>
+                <label>Other Debtor Response</label>
+            </value>
+            <value>
+                <fullName>Other Response</fullName>
+                <default>false</default>
+                <label>Other Response</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

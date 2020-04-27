@@ -1,0 +1,153 @@
+<apex:page standardController="Contact" extensions="ABTActViewExtension" doctype="HTML-5.0" standardstylesheets="true" showheader="false"> 
+<style>
+.main{
+width:100%
+}
+</style>
+<apex:pageMessages />
+<div class="main">
+<apex:pageBlock mode="maindetail">
+            <apex:pageBlockSection columns="2">
+            	<apex:pageBlock mode="maindetail" id="leftpanel">
+            	<center>Look up or Quick Create</center><hr/>
+            	<apex:form >
+
+				<apex:actionFunction name="setVisible" action="{!doNothing}" rerender="leftpanel, existing, newInd, newBus, newIndBtn"/>
+				
+				<apex:selectRadio value="{!affType}" onChange="setVisible()" style="width:100%;" html-class="well text-center">
+					<apex:selectOption itemLabel="Look up Existing C/A" itemValue="Look up Existing C/P"/>
+					<apex:selectOption itemLabel="Create New Contact" itemValue="Create New Contact"/>
+					<apex:selectOption itemLabel="Create New Account" itemValue="Create New Account"/>
+					
+				</apex:selectRadio>
+				
+				<apex:outputPanel rendered="{!affType=='Look up Existing C/P'}" id="existing"> 
+					<table>
+						<tr>
+							<td>
+								Affiliate With:
+							</td>
+							<td>
+								<b style="color:red; font-size:large;">|</b>
+								<apex:selectList value="{!accOrCont}" size="1">
+                                	<apex:selectOptions value="{!accOrContItems}"/>
+                                	<apex:actionSupport event="onchange" rerender="existing"/>
+                                </apex:selectList>
+							</td>
+						</tr>
+						<tr>
+							<td>Enter a search term and click the look up icon.</td>
+							<td style="padding-left:5px"><b style="color:red; font-size:large;">|</b>
+								<apex:inputField value="{!aff1.Affiliated_Account__c}" required="false" rendered="{!accOrCont == 'Account'}"/>
+								<apex:inputField value="{!aff1.Affiliated_Contact__c}" required="false" rendered="{!accOrCont == 'Contact'}"/>
+							</td>
+						</tr>
+						<tr>
+							<td>Select an Affiliation Type</td>
+							<td><b style="color:red; font-size:large;">|</b>
+								<apex:selectList value="{!affPair}" size="1">
+                                	<apex:selectOptions value="{!pairs}"/>
+                                </apex:selectList>
+                                <br/><br/>
+                                <apex:commandButton value="Affiliate" action="{!createSearchAffNew}" style="width:100%;"/>
+                            </td>							
+						</tr>
+					</table>         		
+            	</apex:outputPanel>
+ 
+ 				<apex:outputPanel rendered="{!affType=='Create New Contact'}" id="newInd"> 
+ 								<table>
+                                    <tr>
+                                        <td>First Name</td>
+                                        <td><b style="color:red; font-size:large;">|</b><apex:inputField value="{!newContact.firstName}" type="text" required="false"/></td>
+                                        <td>Email</td>
+                                        <td><b style="color:red; font-size:large;">|</b><apex:inputField value="{!newContact.Email}" required="false"/></td>
+                                        <td>Title</td>
+                                        <td><b style="color:red; font-size:large;">|</b><apex:inputField value="{!newContact.Title}" type="text" required="false"/></td>
+                                    </tr>
+                                    <tr>
+                                    	<td>Last Name</td>
+                                        <td><b style="color:red; font-size:large;">|</b><apex:inputField value="{!newContact.lastName}" type="text" required="false"/></td>
+                                        <td>Phone</td>
+                                        <td><b style="color:red; font-size:large;">|</b><apex:inputField value="{!newContact.Phone}" type="tel" required="false"/></td>
+                                        <td>Type</td>
+                                        <td><b style="color:red; font-size:large;">|</b>
+                                        <apex:selectList value="{!affPair}" size="1" >
+                                                <apex:selectOptions value="{!pairs}"/>
+                                            </apex:selectList>
+                                        </td> 
+                                    </tr>
+                                    <tr>
+                                      	<td></td>
+                                      	<td></td>
+                                      	<td></td>
+                                      	<td></td>
+                                      	<td></td>
+                                      	<td>
+                                      		<apex:commandButton action="{!createIndNew}" value="Create" style="width:100%;" id="newIndBtn"/> 
+                                      	</td>  
+                                                                  
+                                    </tr>
+                                                                                                            
+                                </table>
+                                     		
+            	</apex:outputPanel>
+            	
+            	<apex:outputPanel rendered="{!affType=='Create New Account'}" id="newBus"> 
+					<table>
+						<tr>
+							<td>Name</td>
+							<td>
+								<b style="color:red; font-size:large;">|</b>
+								<apex:inputField value="{!newAccount.Name}" required="false"/>
+							</td>
+							<td>Type</td>
+                            <td>
+                            	<b style="color:red; font-size:large;">|</b>
+                                <apex:selectList value="{!affPair}" size="1">
+                	                <apex:selectOptions value="{!pairs}"/>
+                                </apex:selectList>
+                           </td> 
+						</tr>
+						<tr>
+							<td>Phone</td>
+							<td>
+								<b style="color:red; font-size:large;">|</b>
+								<apex:inputField value="{!newAccount.Phone}"/>
+							</td>		
+							<td></td>
+							<td>
+								<apex:commandButton action="{!createBusNew}" value="Create" style="width:100%;"/> 
+							</td>					
+						</tr>
+					</table>
+            	</apex:outputPanel>           	 
+            	</apex:form>
+            	</apex:pageBlock>
+
+            
+                
+                <apex:outputPanel layout="block" style="overflow-y:scroll;height:200px;">
+                <apex:pageBlockTable value="{!affs}" var="aff" rows="5">
+                    <apex:column >
+                    	<apex:outputPanel rendered="{!aff.Affiliated_Account__c != null}">
+                        	<a href="/{!aff.Affiliated_Account__c}" target="_blank">{!aff.Affiliated_Account__r.Name}</a>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!aff.Affiliated_Contact__c != null}">
+                        	<a href="/{!aff.Affiliated_Contact__c}" target="_blank">{!aff.Affiliated_Contact__r.Name}</a>
+                        </apex:outputPanel>
+                    </apex:column>
+                    <apex:column value="{!aff.Affiliation_Type__c}"/>
+                    <apex:column headerValue="Edit or Delete">
+                        <apex:outputLink value="/apex/ABTAffiliationEdit?id={!aff.id}" target="_blank">Detail</apex:outputLink>
+                    </apex:column>
+                </apex:pageBlockTable>  
+                <!-- 
+                    <apex:outputLink rendered="{!affs.size>5}" target="_parent" value="/apex/AffiliationsFull?id={!Account.Id}" style="color:red;">Show {!affs.size-5} More</apex:outputLink>
+                 -->  
+                
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+   </div>
+</apex:page>

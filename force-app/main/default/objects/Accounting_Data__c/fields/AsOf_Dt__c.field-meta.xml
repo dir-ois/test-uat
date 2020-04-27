@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsOf_Dt__c</fullName>
+    <description>As of Date
+
+Date when the receivable was established /invoiced.  
+
+This date will  be used for aging the receivable.</description>
+    <externalId>false</externalId>
+    <formula>IF(MONTH(Case_Issue__r.Citation_Date__c) &lt; 10, &quot;0&quot;, &quot;&quot;)+ TEXT(MONTH(Case_Issue__r.Citation_Date__c) )+IF(DAY(Case_Issue__r.Citation_Date__c) &lt; 10, &quot;0&quot;, &quot;&quot;)+ TEXT(DAY(Case_Issue__r.Citation_Date__c))
++TEXT(YEAR(Case_Issue__r.Citation_Date__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>ACCOUNTING_DT must fall within an open accounting period for the Business Unit indicated.
+
+ACCOUNTING_DT can not be prior to &quot;Since&quot; date on the Customer General Information.
+
+If left blank, this field will default to the Group Accounting Date.</inlineHelpText>
+    <label>AsOf_Dt</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Employer_ID__c</fullName>
+    <description>Pulls the case employer down to the referral for use in initiating flows</description>
+    <externalId>false</externalId>
+    <formula>Case__r.Employer__c</formula>
+    <label>Case Employer ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

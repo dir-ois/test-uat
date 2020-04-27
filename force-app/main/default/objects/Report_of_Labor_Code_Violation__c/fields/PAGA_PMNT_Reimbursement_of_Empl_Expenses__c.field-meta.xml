@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_PMNT_Reimbursement_of_Empl_Expenses__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>PAGAPayment or Reimbursement of Employee Expenses</description>
+    <externalId>false</externalId>
+    <inlineHelpText>PAGA Payment or Reimbursement of Employee Expenses</inlineHelpText>
+    <label>PMNT Reimbursement of Empl Expenses</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

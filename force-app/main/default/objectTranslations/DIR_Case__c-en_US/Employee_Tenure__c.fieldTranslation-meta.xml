@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Adverse Action Date Minus Date of Hire. If Adverse Action Date is blank, leave field blank. --></help>
+    <label><!-- Employee Tenure --></label>
+    <name>Employee_Tenure__c</name>
+</CustomFieldTranslation>

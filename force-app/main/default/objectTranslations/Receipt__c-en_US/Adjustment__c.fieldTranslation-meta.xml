@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Populated by the ReturnedVoidedReceipt class. A check here most likely means this record is a negating record, but this field could possibly be checked manually for other reasons. --></help>
+    <label><!-- Adjustment --></label>
+    <name>Adjustment__c</name>
+</CustomFieldTranslation>

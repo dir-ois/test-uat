@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Attorneys: Indicate date referral completed. --></help>
+    <label><!-- Legal Ref. Closing Date --></label>
+    <name>Legal_Ref_Closing_Date__c</name>
+</CustomFieldTranslation>

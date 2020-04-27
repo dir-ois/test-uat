@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reporting Party State --></label>
+    <name>Reporting_Party_State__c</name>
+    <picklistValues>
+        <masterLabel>CA</masterLabel>
+        <translation><!-- CA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

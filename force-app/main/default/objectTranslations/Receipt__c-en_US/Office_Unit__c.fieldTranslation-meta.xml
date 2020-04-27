@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Office Unit --></label>
+    <name>Office_Unit__c</name>
+    <picklistValues>
+        <masterLabel>CCU 32</masterLabel>
+        <translation><!-- CCU 32 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JEU</masterLabel>
+        <translation><!-- JEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCI</masterLabel>
+        <translation><!-- RCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 1</masterLabel>
+        <translation><!-- WCA 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 10</masterLabel>
+        <translation><!-- WCA 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 11</masterLabel>
+        <translation><!-- WCA 11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 12</masterLabel>
+        <translation><!-- WCA 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 13</masterLabel>
+        <translation><!-- WCA 13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 14</masterLabel>
+        <translation><!-- WCA 14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 15</masterLabel>
+        <translation><!-- WCA 15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 17</masterLabel>
+        <translation><!-- WCA 17 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 18</masterLabel>
+        <translation><!-- WCA 18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 23</masterLabel>
+        <translation><!-- WCA 23 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 4</masterLabel>
+        <translation><!-- WCA 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 5</masterLabel>
+        <translation><!-- WCA 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 6</masterLabel>
+        <translation><!-- WCA 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 633</masterLabel>
+        <translation><!-- WCA 633 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 7</masterLabel>
+        <translation><!-- WCA 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 8</masterLabel>
+        <translation><!-- WCA 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCA 9</masterLabel>
+        <translation><!-- WCA 9 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_3C_Paragraph_3__c</fullName>
+    <defaultValue>&#39;Our review of the claim you have filed in this case indicates you are seeking to enforce certain statutory liens.  Legal proceedings that involve statutory liens require unique and specialized procedures.  The procedures available in proceedings before the Labor Commissioner are generally speaking not designed to accommodate claims that call for the enforcement of statutory liens.  After carefully considering the circumstances of this case, it is our conclusion that the administrative process afforded by the Labor Commissioner does not provide an appropriate forum in which to enforce the statutory liens presented by the instant claim.&#39;</defaultValue>
+    <externalId>false</externalId>
+    <label>WCA 3C Statutory Liens</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

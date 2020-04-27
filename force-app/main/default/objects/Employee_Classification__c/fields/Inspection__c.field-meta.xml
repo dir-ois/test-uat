@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection__c</fullName>
+    <description>Parent Inspection</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The inspection this classification belongs to</inlineHelpText>
+    <label>Inspection</label>
+    <referenceTo>DIR_Inspection__c</referenceTo>
+    <relationshipLabel>Employee Classifications</relationshipLabel>
+    <relationshipName>Employee_Classifications</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

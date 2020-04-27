@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BOFE_Int_Cas_Tri_All_Pending</fullName>
+    <columns>Case_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_Case_Received__c</columns>
+    <columns>Priority_Level__c</columns>
+    <columns>Case_Source__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Account_DBA__c</columns>
+    <columns>Assigned_Deputy__c</columns>
+    <columns>Date_Assigned__c</columns>
+    <columns>Days_Elapsed_Since_Assigned__c</columns>
+    <columns>Status__c</columns>
+    <columns>Deadline__c</columns>
+    <columns>BoFE_Office_Location_City__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>DIR_Case__c.BOFE_Intake,DIR_Case__c.BOFE_Inspection_Request</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending</value>
+    </filters>
+    <label>BOFE Intake Case Triage - All Pending</label>
+</ListView>

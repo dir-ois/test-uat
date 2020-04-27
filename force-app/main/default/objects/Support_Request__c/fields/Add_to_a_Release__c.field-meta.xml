@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_to_a_Release__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Release</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Release__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Scheduled</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Release__c</referenceTo>
+    <relationshipLabel>Service Requests</relationshipLabel>
+    <relationshipName>Support_Requests</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

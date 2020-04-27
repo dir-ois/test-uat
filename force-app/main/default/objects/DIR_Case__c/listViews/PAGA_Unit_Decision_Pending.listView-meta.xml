@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAGA_Unit_Decision_Pending</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Filer_Attorney_for_PAGA_Case__c</columns>
+    <columns>Employer__c</columns>
+    <columns>PAGA_Priority__c</columns>
+    <columns>Status__c</columns>
+    <columns>Investigation_Decision_Deadline_Date__c</columns>
+    <columns>Plaintiff_for_PAGA__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>IFP_Claimed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Investigation_Decision_Deadline_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>New AutoRefer,New TBR,Screened / Pending Unit Review,Cure Dispute</value>
+    </filters>
+    <label>PAGA Unit Decision Pending</label>
+</ListView>

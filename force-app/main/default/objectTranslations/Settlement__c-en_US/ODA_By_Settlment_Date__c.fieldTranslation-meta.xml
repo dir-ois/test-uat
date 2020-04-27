@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the date you issued an ODA by settlement. --></help>
+    <label><!-- ODA By Settlement Date --></label>
+    <name>ODA_By_Settlment_Date__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout Defendant</layout>
+        <sections>
+            <label><!-- Additional Business Locations --></label>
+            <section>Additional Business Locations</section>
+        </sections>
+        <sections>
+            <label><!-- Affiliations --></label>
+            <section>Affiliations</section>
+        </sections>
+        <sections>
+            <label><!-- Business Background Information --></label>
+            <section>Business Background Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BOFE Employer</layout>
+        <sections>
+            <label><!-- Affiliations --></label>
+            <section>Affiliations</section>
+        </sections>
+        <sections>
+            <label><!-- Background Information --></label>
+            <section>Background Information</section>
+        </sections>
+        <sections>
+            <label><!-- NAICS Code --></label>
+            <section>NAICS Code</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of DLSE Business</layout>
+        <sections>
+            <label><!-- Affiliations --></label>
+            <section>Affiliations</section>
+        </sections>
+        <sections>
+            <label><!-- Background Information --></label>
+            <section>Background Information</section>
+        </sections>
+        <sections>
+            <label><!-- NAICS Code --></label>
+            <section>NAICS Code</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of DLSE Person</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Affiliations --></label>
+            <section>Affiliations</section>
+        </sections>
+        <sections>
+            <label><!-- Business Background Info (for sole proprietor/individual employer) --></label>
+            <section>Business Background Info (for sole proprietor/individual employer)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DLSE Business</layout>
+        <sections>
+            <label><!-- Affiliations --></label>
+            <section>Affiliations</section>
+        </sections>
+        <sections>
+            <label><!-- Background Information --></label>
+            <section>Background Information</section>
+        </sections>
+        <sections>
+            <label><!-- NAICS Code --></label>
+            <section>NAICS Code</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DLSE Person</layout>
+        <layoutType>PersonAccount</layoutType>
+        <sections>
+            <label><!-- Addresses --></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- Business Background Info (for sole proprietor/individual employer) --></label>
+            <section>Business Background Info (for sole proprietor/individual employer)</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

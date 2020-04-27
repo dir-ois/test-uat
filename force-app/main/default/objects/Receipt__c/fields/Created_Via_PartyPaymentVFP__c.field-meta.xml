@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_Via_PartyPaymentVFP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Not on any page layout. Used by PartyPaymentController and Case Payment Process to differentiate RCTs and CPs created through the PartyPaymentVFP as opposed to the ICL. Used to determine if a Task should be sent to the Deputy to Recommend CPs to Case Issues and/or Judgments--PartyPaymentVFP creates LPs and JPs, so a Task is not needed.</description>
+    <externalId>false</externalId>
+    <label>Created Via PartyPaymentVFP</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- To be printed on certain citation documents --></help>
+    <label><!-- Dates or Period Uninsured --></label>
+    <name>Dates_or_Period_Uninsured__c</name>
+</CustomFieldTranslation>

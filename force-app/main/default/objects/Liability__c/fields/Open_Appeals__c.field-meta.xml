@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Appeals__c</fullName>
+    <description>Counts the open appeals so that they can be used in rules.</description>
+    <externalId>false</externalId>
+    <label>Open Appeals</label>
+    <summaryFilterItems>
+        <field>Liability_Appeal__c.Appeal_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed, Withdrawn, Received - Untimely</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Liability_Appeal__c.Liability__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

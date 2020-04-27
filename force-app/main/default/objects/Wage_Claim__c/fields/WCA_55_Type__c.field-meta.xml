@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_55_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>WCA 55 Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COMPLAINT</fullName>
+                <default>true</default>
+                <label>COMPLAINT</label>
+            </value>
+            <value>
+                <fullName>AMENDED COMPLAINT</fullName>
+                <default>false</default>
+                <label>AMENDED COMPLAINT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

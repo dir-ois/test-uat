@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Child_Relationship_Names_Custom__c</fullName>
+    <description>Child Relationship Names (Custom : Comma separated)</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Child Relationship Names (Custom : Comma separated)</inlineHelpText>
+    <label>Child Relationship Names (Custom)</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

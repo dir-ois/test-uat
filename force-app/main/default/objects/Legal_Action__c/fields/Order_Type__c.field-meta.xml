@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assignment Order</fullName>
+                <default>false</default>
+                <label>Assignment Order</label>
+            </value>
+            <value>
+                <fullName>Order Amending Judgment</fullName>
+                <default>false</default>
+                <label>Order Amending Judgment</label>
+            </value>
+            <value>
+                <fullName>Order Appointing Receiver</fullName>
+                <default>false</default>
+                <label>Order Appointing Receiver</label>
+            </value>
+            <value>
+                <fullName>Order Compelling Discovery Responses</fullName>
+                <default>false</default>
+                <label>Order Compelling Discovery Responses</label>
+            </value>
+            <value>
+                <fullName>Order Determining Claim of Exemption</fullName>
+                <default>false</default>
+                <label>Order Determining Claim of Exemption</label>
+            </value>
+            <value>
+                <fullName>Order for Sanctions</fullName>
+                <default>false</default>
+                <label>Order for Sanctions</label>
+            </value>
+            <value>
+                <fullName>Order Overruling Demurrer</fullName>
+                <default>false</default>
+                <label>Order Overruling Demurrer</label>
+            </value>
+            <value>
+                <fullName>Order Sustaining Demurrer</fullName>
+                <default>false</default>
+                <label>Order Sustaining Demurrer</label>
+            </value>
+            <value>
+                <fullName>Order to Appear at Judgment Debtor Examination</fullName>
+                <default>false</default>
+                <label>Order to Appear at Judgment Debtor Examination</label>
+            </value>
+            <value>
+                <fullName>Order to Compel</fullName>
+                <default>false</default>
+                <label>Order to Compel</label>
+            </value>
+            <value>
+                <fullName>Order to Show Cause</fullName>
+                <default>false</default>
+                <label>Order to Show Cause</label>
+            </value>
+            <value>
+                <fullName>Order Vacating Judgment</fullName>
+                <default>false</default>
+                <label>Order Vacating Judgment</label>
+            </value>
+            <value>
+                <fullName>Other Order</fullName>
+                <default>false</default>
+                <label>Other Order</label>
+            </value>
+            <value>
+                <fullName>Right to Attach Order</fullName>
+                <default>false</default>
+                <label>Right to Attach Order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

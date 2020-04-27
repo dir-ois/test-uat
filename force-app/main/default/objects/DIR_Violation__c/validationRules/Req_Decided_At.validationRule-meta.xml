@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_Decided_At</fullName>
+    <active>true</active>
+    <description>for WCA/Garment violations, when the wages due date is populated, the meeting must be populated so that the interest may be calculated.</description>
+    <errorConditionFormula>RecordType.Name = &#39;WCA_Violations&#39;
+&amp;&amp; NOT( ISBLANK ( Wages_Due_Date__c ) )
+&amp;&amp; ISBLANK (  Decided_at_Meeting__c )</errorConditionFormula>
+    <errorMessage>Please enter the hearing in the &quot;Decided at Meeting&quot; field at which the due date for the wages were decided</errorMessage>
+</ValidationRule>

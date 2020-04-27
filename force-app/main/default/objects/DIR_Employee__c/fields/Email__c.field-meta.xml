@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email__c</fullName>
+    <description>Employee&#39;s email address</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Email address for Salesforce users will be set automatically.
+If the employee is NOT a Salesforce user, please enter their email address here.</inlineHelpText>
+    <label>Email</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

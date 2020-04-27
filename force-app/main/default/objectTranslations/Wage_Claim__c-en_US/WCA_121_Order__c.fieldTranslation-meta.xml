@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- WCA 121 Order --></label>
+    <name>WCA_121_Order__c</name>
+    <picklistValues>
+        <masterLabel>Affirmed</masterLabel>
+        <translation><!-- Affirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Affirmed in part as set forth in the findings</masterLabel>
+        <translation><!-- Affirmed in part as set forth in the findings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismissed</masterLabel>
+        <translation><!-- Dismissed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

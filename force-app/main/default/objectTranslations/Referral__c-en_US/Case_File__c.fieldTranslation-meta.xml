@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case File --></label>
+    <name>Case_File__c</name>
+    <picklistValues>
+        <masterLabel>Electronic</masterLabel>
+        <translation><!-- Electronic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mixed</masterLabel>
+        <translation><!-- Mixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paper</masterLabel>
+        <translation><!-- Paper --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

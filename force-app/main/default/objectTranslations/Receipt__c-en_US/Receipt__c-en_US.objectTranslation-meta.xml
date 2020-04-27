@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Receipt</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Receipts</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ReceiptFieldSet --></label>
+        <name>ReceiptFieldSet</name>
+    </fieldSets>
+    <layouts>
+        <layout>Receipt Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Return and Void Info --></label>
+            <section>Return and Void Info</section>
+        </sections>
+        <sections>
+            <label><!-- Returned Payment Reasons --></label>
+            <section>Returned Payment Reasons</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Bank Location is req. if type = Check --></errorMessage>
+        <name>Bank_Location</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change the Status away from Void. --></errorMessage>
+        <name>CannotChangeVoid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The sum of the Case Payments cannot be more than this Receipt&apos;s Payment Amount. --></errorMessage>
+        <name>Cannot_Allocate_More_Than_Payment_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item can not be marked Returned if the Status is not Deposited. --></errorMessage>
+        <name>Cant_Be_Returned_If_Not_Deposited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date Received cannot be in the future --></errorMessage>
+        <name>Date_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the Paid Date, and Check Number to mark this field. --></errorMessage>
+        <name>Paid_In_Full_Reason_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If  &quot;Other&quot; is checked in the Returned Payment Reasons then you must provide additional information in the &quot;Other Reason Payment Cannot Be Processed&quot; field in order to save the record. --></errorMessage>
+        <name>Reason_Payment_Cannot_Be_Processed_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the reason for voiding this receipt --></errorMessage>
+        <name>Receipt_void_reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A senior deputy must be selected. --></errorMessage>
+        <name>Require_Senior_Deputy_Pass_Through</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When Payment Cannot Be Processed is checked True, please indicate why you are returning the payment to the sender. --></errorMessage>
+        <name>Returned_Payment_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To mark an item returned, you must select a Returned Reason --></errorMessage>
+        <name>Returned_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the status away from Deposited. --></errorMessage>
+        <name>Status_Cannot_Change_from_Deposited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Transaction ID cannot be assigned to a deduction Receipt --></errorMessage>
+        <name>Transaction_ID_in_Deduction_RCT</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Deposit_Receipts --></label>
+        <name>Deposit_Receipts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Documents --></label>
+        <name>Generate_Documents</name>
+    </webLinks>
+</CustomObjectTranslation>

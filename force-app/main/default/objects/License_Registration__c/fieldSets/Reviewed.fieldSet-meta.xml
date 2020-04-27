@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reviewed</fullName>
+    <description>Used on the Registration Services form</description>
+    <displayedFields>
+        <field>Reviewed__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Reviewed</label>
+</FieldSet>

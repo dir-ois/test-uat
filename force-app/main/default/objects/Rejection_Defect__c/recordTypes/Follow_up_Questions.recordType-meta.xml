@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_up_Questions</fullName>
+    <active>true</active>
+    <label>Follow up Questions</label>
+</RecordType>

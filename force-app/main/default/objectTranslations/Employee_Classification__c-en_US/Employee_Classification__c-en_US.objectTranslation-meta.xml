@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee Classification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employee Classifications</value>
+    </caseValues>
+    <layouts>
+        <layout>Employee Classification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select a wage type when entering a wage. --></errorMessage>
+        <name>Require_wage_type_for_wages</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set by process when the Assignment Status field is changed.  If you wish to modify the date, please use the calendar pop-up to select a date (do not type out the date in this field because a necessary process rule will over-write it). --></help>
+    <label><!-- Screening Completed Date --></label>
+    <name>Screening_Completed_Date__c</name>
+</CustomFieldTranslation>

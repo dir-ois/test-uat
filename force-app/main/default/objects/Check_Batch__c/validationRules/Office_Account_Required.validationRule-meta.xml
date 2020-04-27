@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office_Account_Required</fullName>
+    <active>true</active>
+    <description>This requires an office account be selected in order to submit for approval.</description>
+    <errorConditionFormula>AND( OR(ISPICKVAL(Status__c,&quot;Pending Approval&quot;),ISPICKVAL(Status__c,&quot;Under Review&quot;), ISPICKVAL(Status__c,&quot;Void Requested&quot;)),  ISBLANK( Office_Account__c ) )</errorConditionFormula>
+    <errorDisplayField>Office_Account__c</errorDisplayField>
+    <errorMessage>You must select an office account to submit for approval.</errorMessage>
+</ValidationRule>

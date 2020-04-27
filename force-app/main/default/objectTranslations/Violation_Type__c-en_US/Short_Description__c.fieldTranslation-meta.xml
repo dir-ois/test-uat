@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the short description of the violation. This value will be shown on the New Violations page and on the Citation document in the &quot;Description&quot; field on the list of violations. --></help>
+    <label><!-- Short Description --></label>
+    <name>Short_Description__c</name>
+</CustomFieldTranslation>

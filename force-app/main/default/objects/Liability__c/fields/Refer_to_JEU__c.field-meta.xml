@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refer_to_JEU__c</fullName>
+    <description>Use this to set the status of the JEU Referral.  Other information may be required based on the selection.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The status of the JEU referral. The actual referral to JEU should be submitted using the &quot;Refer to JEU&quot; button at the top of the page.</inlineHelpText>
+    <label>Refer to JEU</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>true</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Referred</fullName>
+                <default>false</default>
+                <label>Referred</label>
+            </value>
+            <value>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+                <label>Accepted</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+                <label>Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Rejected-Sr</fullName>
+                <default>false</default>
+                <label>Rejected-Sr</label>
+            </value>
+            <value>
+                <fullName>Rejected-JEU</fullName>
+                <default>false</default>
+                <label>Rejected-JEU</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Pending-JEU</fullName>
+                <default>false</default>
+                <label>Pending-JEU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If you select July 1, your registration will become active the following registration period. --></help>
+    <label><!-- Registration Effective Date --></label>
+    <name>Registration_Effective_Date__c</name>
+    <picklistValues>
+        <masterLabel>July 1</masterLabel>
+        <translation><!-- July 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Today</masterLabel>
+        <translation><!-- Today --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

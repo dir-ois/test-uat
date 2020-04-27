@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Cases_WCA</fullName>
+    <columns>NAME</columns>
+    <columns>Case_Number__c</columns>
+    <columns>Employer__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Days_Elapsed_Since_Assigned__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>I_am_assigned_deputy__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Open Cases</label>
+    <sharedTo>
+        <group>WCA_Deputies</group>
+        <group>WCA_Senior</group>
+    </sharedTo>
+</ListView>

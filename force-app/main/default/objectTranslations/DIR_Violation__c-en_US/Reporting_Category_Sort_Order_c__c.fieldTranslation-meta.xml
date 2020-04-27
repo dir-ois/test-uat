@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reporting Category Sort Order --></label>
+    <name>Reporting_Category_Sort_Order_c__c</name>
+</CustomFieldTranslation>

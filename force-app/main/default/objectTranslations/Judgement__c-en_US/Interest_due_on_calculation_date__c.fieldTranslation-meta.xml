@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Interest amount due on the date specified in the Interest Calculation Date field --></help>
+    <label><!-- Interest Due On Calculation Date --></label>
+    <name>Interest_due_on_calculation_date__c</name>
+</CustomFieldTranslation>

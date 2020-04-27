@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retaliation Complaint Method --></label>
+    <name>Retaliation_Complaint_Method__c</name>
+    <picklistValues>
+        <masterLabel>In person authorization</masterLabel>
+        <translation><!-- In person authorization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone authorization</masterLabel>
+        <translation><!-- Phone authorization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

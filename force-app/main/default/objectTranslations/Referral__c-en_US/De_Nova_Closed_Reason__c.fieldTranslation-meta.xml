@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- De Novo Closed Reason --></label>
+    <name>De_Nova_Closed_Reason__c</name>
+    <picklistValues>
+        <masterLabel>An Acknowledgment of Full Satisfaction of Judgment has been filed and entered by the court</masterLabel>
+        <translation><!-- An Acknowledgment of Full Satisfaction of Judgment has been filed and entered by the court --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defendant’s appeal has been dismissed. Request is hereby made for district office to enter judgment on underlying ODA and record Certificate of lien</masterLabel>
+        <translation><!-- Defendant’s appeal has been dismissed. Request is hereby made for district office to enter judgment on underlying ODA and record Certificate of lien --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment entered for the plaintiff who chose to pursue collection of judgment on his/her own behalf (see Reassignment of Claim)</masterLabel>
+        <translation><!-- Judgment entered for the plaintiff who chose to pursue collection of judgment on his/her own behalf (see Reassignment of Claim) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment for the plaintiff but no known bank assets for defendant employer</masterLabel>
+        <translation><!-- Judgment for the plaintiff but no known bank assets for defendant employer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Judgment in plaintiff’s favor has been partially satisfied. No other known assets of the defendant</masterLabel>
+        <translation><!-- Judgment in plaintiff’s favor has been partially satisfied. No other known assets of the defendant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The case has been settled and plaintiff has received the full settlement amount</masterLabel>
+        <translation><!-- The case has been settled and plaintiff has received the full settlement amount --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

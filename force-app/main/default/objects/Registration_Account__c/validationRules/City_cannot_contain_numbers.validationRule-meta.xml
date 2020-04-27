@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City_cannot_contain_numbers</fullName>
+    <active>true</active>
+    <description>Prevents a user from entering numbers in the city field.</description>
+    <errorConditionFormula>OR( 
+NOT ( REGEX ( Physical_Business_City__c ,&quot;[a-zA-Z ]*&quot; )), 
+NOT ( REGEX ( Physical_Business_City__c ,&quot;[a-zA-Z ]*&quot; )), 
+NOT ( REGEX ( Residential_City__c ,&quot;[a-zA-Z ]*&quot; )) 
+)</errorConditionFormula>
+    <errorMessage>Please enter a valid city name.</errorMessage>
+</ValidationRule>

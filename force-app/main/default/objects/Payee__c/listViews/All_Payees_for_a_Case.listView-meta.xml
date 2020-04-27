@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Payees_for_a_Case</fullName>
+    <columns>NAME</columns>
+    <columns>Payee_Name__c</columns>
+    <columns>Verification_Letter_Sent__c</columns>
+    <columns>Status__c</columns>
+    <columns>Verification_Letter_Sent_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Management__c</field>
+        <operation>equals</operation>
+        <value>CM-099336,CM-259020</value>
+    </filters>
+    <label>All Payees for a Case</label>
+</ListView>

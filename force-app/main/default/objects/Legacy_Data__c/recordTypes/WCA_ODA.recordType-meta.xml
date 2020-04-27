@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WCA_ODA</fullName>
+    <active>true</active>
+    <description>This will hold the legacy ODA data migrated from FileMaker</description>
+    <label>WCA ODA</label>
+    <picklistValues>
+        <picklist>Amounts_Found_Due__c</picklist>
+        <values>
+            <fullName>By Assigned Deputy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per ODA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Joint_and_Several_Liability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

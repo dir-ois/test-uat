@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PY__c</fullName>
+    <defaultValue>1</defaultValue>
+    <description>Person Years</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the number of PYs for this position.</inlineHelpText>
+    <label>PY</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

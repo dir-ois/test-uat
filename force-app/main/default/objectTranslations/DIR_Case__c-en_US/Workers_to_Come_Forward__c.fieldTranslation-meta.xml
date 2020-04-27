@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box when a group of users has agreed to come forward t o assist in the investigation. --></help>
+    <label><!-- Workers to Come Forward? --></label>
+    <name>Workers_to_Come_Forward__c</name>
+</CustomFieldTranslation>

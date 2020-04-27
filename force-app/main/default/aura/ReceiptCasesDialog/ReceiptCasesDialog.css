@@ -1,0 +1,84 @@
+.THIS {
+}
+
+.THIS.modal-pop-up {
+    display:none;
+}
+
+.THIS.slds-button.casses-btn{
+    margin-top:10px;
+}
+
+.THIS .delimg{
+    display: block;
+    width: 20px;
+    text-align: center;
+    background: #E6717C;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.THIS .allocErr{
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+    position: relative;	
+}
+
+.THIS #lbl_AmtBal{
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.THIS .search_case {
+    width: 50%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+} 
+
+.THIS .caseHead{
+    font-weight: bold;
+}
+
+.THIS #lbl_SearchRes{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.THIS #lbl_CaseAdd{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.THIS .addBtn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.THIS .err-caseAmount{
+	border: solid 1px red;
+}
+
+.THIS .customW {
+    width:160px;
+    padding-right:0!important;
+}
+.THIS .customW1 {
+    width:133px;
+    padding-right:0!important;
+}
+
+.THIS.slds-table {
+    width:470px!important;
+}
+
+.THIS .tableModal {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+.THIS .amtIP{
+    width: 125px;
+}

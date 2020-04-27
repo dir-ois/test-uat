@@ -1,0 +1,9 @@
+<!--
+// @author: Oswin Correa
+// @date: 4/4/2018
+// @description: Application event fetch the data to be displayed in the datatable coressponding to the file type accordion section 
+-->
+<aura:event type="APPLICATION">
+	<aura:attribute name="fileType" type="String"
+		description="File type specifier when passed obtains attachment data of corresponding file Type for the context record" />
+</aura:event>

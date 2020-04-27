@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this to specify a Manual Citation Number due to a paper citation being entered.  This value is searchable. --></help>
+    <label><!-- Manual Citation Number --></label>
+    <name>Manual_Citation_Number__c</name>
+</CustomFieldTranslation>

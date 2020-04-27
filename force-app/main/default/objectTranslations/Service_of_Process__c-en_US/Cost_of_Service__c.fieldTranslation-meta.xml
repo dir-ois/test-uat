@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Costs paid to process server --></help>
+    <label><!-- Cost of Service --></label>
+    <name>Cost_of_Service__c</name>
+</CustomFieldTranslation>

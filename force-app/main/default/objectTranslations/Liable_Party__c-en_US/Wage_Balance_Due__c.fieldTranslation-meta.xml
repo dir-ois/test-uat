@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Balance due related to wagess for this party related to this liability --></help>
+    <label><!-- Wage Balance Due --></label>
+    <name>Wage_Balance_Due__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Surety_Type__c</fullName>
+    <description>Used for defining what type of surety is required for a registration</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the method by which you provide surety</inlineHelpText>
+    <label>Surety Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+            <value>
+                <fullName>Bond</fullName>
+                <default>false</default>
+                <label>Bond</label>
+            </value>
+            <value>
+                <fullName>Collective Bargaining Agreement</fullName>
+                <default>false</default>
+                <label>Collective Bargaining Agreement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

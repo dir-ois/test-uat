@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The organization name that the Advocate belongs to. --></help>
+    <label><!-- Advocate Organization Name --></label>
+    <name>Advocate_Organization_Name__c</name>
+</CustomFieldTranslation>

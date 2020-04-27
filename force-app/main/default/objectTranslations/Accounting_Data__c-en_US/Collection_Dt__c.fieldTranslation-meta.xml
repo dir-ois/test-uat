@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- COLLECTION_DT is required when COLLECTION_CHKBOX is &apos;Y&apos;.
+
+COLLECTION_DT must be blank when COLLECTION_CHKBOX is &apos;N&apos;. --></help>
+    <label><!-- Collection_Dt --></label>
+    <name>Collection_Dt__c</name>
+</CustomFieldTranslation>
